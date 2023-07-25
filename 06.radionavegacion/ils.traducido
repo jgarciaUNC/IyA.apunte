@@ -1,0 +1,261 @@
+Sistema de aterrizaje por instrumentos
+
+El sistema de aterrizaje por instrumentos (ILS) se utiliza para aproximaciones y aterrizajes de precisión. El sistema utiliza una combinación de ondas de radio VHF y UHF y ha estado en funcionamiento desde 1946. En este capítulo veremos los principios y hardware de ILS en detalle, concluyendo con la forma en que ILS se combina con el sistema de control de vuelo automático (AFCS) para proporcionar aproximación y aterrizaje totalmente automáticos.
+
+12.1 Descripción general de ILS
+
+El sistema de aterrizaje por instrumentos se utiliza para la aproximación final y se basa en haces direccionales propagados desde dos transmisores en el aeródromo, ver Figura 12.1. Un transmisor (la pendiente de planeo) proporciona orientación en el plano vertical y tiene un rango de aproximadamente 10 nm.
+
+El segundo transmisor (el localizador) guía la aeronave en el plano horizontal. Además de las vigas direccionales, dos o tres balizas de señalización están ubicadas en puntos clave en la línea central extendida de la pista definida por el localizador, ver Figura 12.4.
+
+12.2 Equipos de tierra ILS
+
+12.2.1 Transmisor localizador
+
+El localizador transmite en el rango de frecuencia VHF, 108 a 112 MHz en incrementos de 0,5 MHz. Tenga en cuenta que este es el mismo rango de frecuencia utilizado por el sistema VOR (consulte el Capítulo 10). Aunque los dos sistemas son completamente independientes y funcionan con principios totalmente diferentes, a menudo comparten el mismo receptor. Los dos sistemas se diferencian por sus asignaciones de frecuencia dentro de este rango. Las frecuencias ILS se asignan a las décimas impares de cada incremento de 0,5 MHz, p. 109,10 MHz, 109,15 MHz, 109,30 MHz, etc.
+
+Las frecuencias VOR se asignan a las décimas pares de cada incremento de 0,5 MHz, p. 109,20 MHz, 109,40 MHz, 109,60 MHz, etc. La Tabla 12.1 proporciona una ilustración de cómo se asignan estas frecuencias dentro del rango de 109 MHz. Este patrón se aplica de 108 a 111.95 MHz.
+
+La antena del localizador está ubicada en el extremo más alejado de la pista y transmite dos lóbulos a la izquierda y a la derecha de la línea central de la pista modulada a 90 Hz y 150 Hz respectivamente. En la línea central extendida de la pista, ver Figura 12.2, la profundidad combinada de modulación es igual. Cualquier lado de la línea central producirá una diferencia en la profundidad de modulación (DDM); Esta diferencia es directamente proporcional a la desviación a ambos lados de la línea central extendida de la pista. El localizador también transmite un identificador de código Morse de dos o tres letras que la tripulación puede escuchar en sus paneles de audio.
+
+Punto clave
+
+El sistema de aterrizaje por instrumentos se basa en haces direccionales propagados desde dos transmisores en el aeródromo: localizador y pendiente de planeo.
+
+Pon a prueba tu comprensión 12.1
+
+¿Qué bandas de frecuencia usan el localizador y la pendiente de planeo?
+
+12.2.2 Antena de pendiente de planeo
+
+La antena de pendiente de planeo transmite en la banda de frecuencia UHF, de 328,6 a 335 MHz a una separación de 150 kHz. Los lóbulos superior e inferior están modulados a 90 HZ y 150 Hz, respectivamente. Cuando se ve desde un lado, vea la Figura 12.3, los dos lóbulos se superponen y producen una trayectoria de aproximación inclinada en un ángulo fijo entre 2.5 y 3.5 grados. La frecuencia de la pendiente de planeo se selecciona automáticamente cuando la tripulación sintoniza la frecuencia del localizador.
+
+12.2.3 Balizas marcadoras
+
+Dos o tres balizas están ubicadas en la línea central extendida de la pista a distancias precisas; estos se especifican en los cuadros de aproximación para pistas específicas. Estas balizas funcionan a 75 MHz e irradian aproximadamente 3 a 4 W de potencia. Las balizas proporcionan señales visuales y audibles a la tripulación para confirmar su progreso en el ILS, ver Figura 12.4. El marcador exterior se encuentra entre cuatro y siete millas del umbral de la pista; transmite guiones de código Morse a una frecuencia de tono de 400 Hz e ilumina una luz azul (o el icono cian 'OM' para pantallas electrónicas) cuando el avión pasa sobre la baliza.
+
+El marcador externo proporciona el punto aproximado en el que una aeronave en el localizador interceptará la pendiente de planeo. Algunos aeródromos usan balizas no direccionales (NDB) junto con (o en lugar de) el marcador externo. Estos se conocen como balizas de localización (localizador de brújula en los EE. UU.).
+
+
+El marcador central está ubicado aproximadamente a 3500 pies del umbral de la pista. Al pasar sobre el marcador del medio, la tripulación recibe un código Morse alterno de puntos / rayas modulados a 1300 Hz, y se ilumina una luz ámbar correspondiente (o el icono amarillo 'MM' para pantallas electrónicas). El marcador del medio coincide con el avión a 200 pies sobre el punto de aterrizaje de la pista.
+
+Las pistas que se utilizan para aproximaciones y aterrizajes de baja visibilidad (ver más adelante en este capítulo) tienen un tercer marcador interno. Al pasar sobre el marcador interno, la tripulación recibe puntos de código Morse modulados a 3000 Hz en el sistema de audio, y se ilumina una luz blanca correspondiente (o el icono 'IM' para pantallas electrónicas). El sistema de baliza de marcadores se está eliminando gradualmente con la introducción de enfoques DME y GPS.
+
+12.3 equipos aerotransportados ILS
+
+El equipo aerotransportado comprende antenas de localización y pendiente de planeo, receptor ILS, receptor marcador y controles y pantallas de la plataforma de vuelo. La mayoría de las aeronaves están equipadas con dos o tres sistemas ILS independientes (generalmente llamados izquierda, centro y derecha).
+
+El localizador y las frecuencias de la pendiente de planeo están en diferentes bandas de ondas; la tripulación sintoniza la frecuencia del localizador (a través del panel de control "Nav") y esto sintoniza automáticamente una frecuencia de pendiente de planeo para una pista en particular.
+
+12.3.1 Antenas
+
+La instalación típica de la antena ILS en un avión de transporte se ilustra en la Figura 12.5. En esta instalación, se utilizan dos antenas de doble canal para el localizador y dos antenas de doble canal para la pendiente de planeo. No se utiliza un canal de cada una de las antenas; Las señales recibidas se envían al receptor ILS correspondiente.
+
+12.3.2 Receptores
+
+Los receptores ILS a menudo se combinan con otras funciones de radio navegación, p. Rango omnidireccional de VHF (VOR); estos se encuentran en la bahía del equipo de aviónica, consulte la Figura 12.6. Los receptores ILS se basan en el principio superheterodino con sintonización remota desde el panel de control. La señal recibida desde la antena del localizador se modula con tonos de 90 y 150 Hz para la desviación izquierda / derecha; un tono de 1020 Hz contiene la identificación de ayuda a la navegación en código Morse. Los filtros en el receptor ILS separan los tonos de 90 y 150 Hz para el localizador y la pendiente de deslizamiento. La señal de identificación está integrada con el sistema de audio.
+
+La función de baliza de marcador a menudo se incorpora con otros receptores de radio navegación, p. una unidad combinada de baliza VOR y marcador, como se ilustra en la Figura 12.6 (b). El receptor de baliza marcadora filtra el tono de 75 MHz y envía la señal a un amplificador de RF.
+
+Luego se emplean tres filtros de paso de banda a 400 Hz, 1300 Hz y 3000 Hz para identificar el marcador específico. Las señales resultantes se envían a un amplificador de audio y luego se integran en el sistema de audio. Las salidas discretas controlan las luces de advertencia visuales (o los iconos PFD).
+
+12.3.3 Controles y pantallas
+
+Un panel de control se ubica típicamente en el pedestal central en aviones más grandes, ver Figura 12.7 (a); Esto se utiliza para seleccionar el rumbo de la pista y la frecuencia ILS. Alternativamente, en una aeronave de Aviación General (GA), puede ser una combinación de navegación / controlador y pantalla, consulte la Figura 12.7 (b). Las salidas del receptor marcador se envían a tres luces indicadoras (o iconos PFD) y al sistema de audio de la tripulación, como se describe en la sección anterior.
+
+El método de selección y visualización del rumbo de pista seleccionado depende del tipo de ajuste aviónico. Los instrumentos electromecánicos incluyen el selector omnidireccional (OBS), el indicador de desviación de rumbo (CDI), el indicador de situación horizontal (HSI) y el indicador electrónico de situación horizontal (EHSI), ver Figura 12.8. Estos instrumentos varían ligeramente en su diseño y disposición; Sin embargo, tienen algunas características comunes. El selector omni-bearing se usa para rotar la tarjeta del curso. Esta tarjeta está calibrada de 0 a 360 ° e indica el rumbo de la pista seleccionada. Cada punto en la escala representa una desviación de 2º del rumbo de pista seleccionado.
+Un segundo puntero muestra la desviación de la pendiente de planeo; Los indicadores se utilizan para indicar cuándo: las señales de pendiente de localización y / o deslizamiento están más allá del rango de recepción El piloto no ha seleccionado una frecuencia ILS El sistema ILS está apagado o no funciona.
+
+(a) Panel de control ILS (pedestal central) Tenga en cuenta que estos indicadores también se pueden usar con el sistema de navegación VOR; consulte el Capítulo 10 para obtener una descripción detallada de este sistema.
+
+Un puntero se mueve hacia la izquierda / derecha sobre una escala de desviación para mostrar información de guía lateral. El puntero de desviación de la pendiente de planeo se mueve hacia arriba / abajo sobre una escala para indicar la desviación vertical. La fuerza de los tonos de 90 Hz y 150 Hz se suma para confirmar la presencia de transmisiones de pendiente de deslizamiento y localizador; esta salida sumada se muestra en forma de una "bandera". Si alguna de las dos transmisiones no está presente, se muestra el indicador de advertencia.
+
+Punto clave
+
+Las frecuencias ILS se seleccionan sintonizando el localizador, que selecciona automáticamente la pendiente de planeo.
+
+Punto clave
+
+El sistema de baliza marcadora está siendo eliminado y reemplazado por enfoques GPS / DME.
+
+Punto clave
+
+La pendiente de planeo ILS está inclinada en un ángulo fijo entre 2.5 y 3.5 grados desde el suelo.
+
+12.4 Radioaltímetro de bajo rango
+
+El radioaltímetro de bajo rango (LRRA) descrito en el Capítulo 8 es una parte integral del ILS; La mayoría de las aeronaves están equipadas con dos o más sistemas independientes. El LRRA incorpora un error de altitud ajustable que crea una advertencia visual o auditiva para el piloto cuando el avión alcanza la altitud seleccionada. Típicamente, el piloto abortará la aproximación si la pista no es visible cuando se alcanza la altura de decisión.
+
+Pon a prueba tu comprensión 12.2
+¿Dónde están ubicadas las antenas de localización y pendiente de planeo?
+
+Pon a prueba tu comprensión 12.3
+¿Qué tipo de sistema de radar se utiliza para el radioaltímetro de bajo rango (LRRA)?
+
+Pon a prueba tu comprensión 12.4
+
+(a) Al volar sobre las balizas de señalización ILS, ¿qué indicaciones se proporcionan a la tripulación?
+
+(b) ¿Cuál es la secuencia preferida para capturar el localizador y la pendiente de planeo?
+
+(c) ¿Cuáles son las alturas de decisión para los desembarques de Categoría 1, 2 y 3?
+
+
+12.5 enfoque ILS
+
+El procedimiento normal es capturar primero el localizador y luego la pendiente de planeo. La tripulación selecciona la frecuencia ILS en el panel de control de navegación como se describe anteriormente. El rumbo de la pista también debe enviarse al receptor ILS; La forma de lograrlo depende del ajuste aviónico del avión.
+
+El rumbo deseado de la pista puede seleccionarse en un CDI / HSI o mediante un selector remoto ubicado en un panel de control separado. La desviación del localizador y la pendiente de planeo se monitorea a lo largo del enfoque junto con la confirmación de la posición de las balizas de marcador. El ILS puede usarse para guiar a la tripulación en la aproximación usando instrumentos cuando vuela con buena visibilidad.
+
+En el caso de que la visibilidad no sea buena, entonces el enfoque se realiza utilizando el AFCS. La tripulación selecciona el localizador y la pendiente de planeo como los respectivos modos de balanceo y cabeceo en el panel de control del modo AFCS (MCP), ver Figura 12.9. Con un equipo terrestre y aéreo aprobado, la tripulación calificada puede continuar la aproximación hasta un aterrizaje automático. Para completar un aterrizaje automático (aterrizaje automático), los modos de cabeceo y balanceo necesitan una medición precisa de la altitud sobre el suelo; esto es proporcionado por la LRRA. Un escenario típico de aproximación y aterrizaje se ilustra en la Figura 12.10.
+
+Un enfoque ILS alternativo es la luz de fondo del localizador, o curso posterior (BC). Todas las antenas localizadoras en realidad transmiten en dos direcciones; con lóbulos primario (curso avanzado) y secundario (curso posterior), consulte la Figura 12.11. En lugar de tener un ILS separado para cada dirección de pista, los enfoques de back-course utilizan el mismo rayo localizador. Para los enfoques de curso inverso, las pantallas del localizador se invierten; esto se identifica en la pantalla de navegación con una bandera 'BC'. Tenga en cuenta que la mayoría de los enfoques de rumbo posterior no tienen pendientes de planeo.
+
+12.6 Autoland
+
+El desarrollo de equipos aerotransportados y terrestres, junto con la capacitación de la tripulación, condujo a la realización de pruebas sobre la efectividad y confiabilidad de los aterrizajes totalmente automáticos utilizando el ILS. En 1947, la Unidad Experimental de Aterrizaje Ciego (BLEU) se estableció dentro del Establecimiento Royal Aircraft del Reino Unido. El primer aterrizaje completamente automático del mundo se logró en 1950. El equipo y los procedimientos se desarrollaron aún más, lo que llevó al primer aterrizaje automático del mundo en un avión que transportaba pasajeros (el Tridente HS121) en julio de 1965.
+
+Las autoridades certificadoras clasifican la aproximación automática y los aterrizajes en función del equipo terrestre, el equipo aerotransportado y la capacitación de la tripulación. Las categorías se citan en términos de altura de decisión (DH) y alcance visual en la pista (RVR). Estas categorías se resumen en la Tabla 12.2; JAR OPS proporciona más detalles y notas. Las cifras de la categoría 3 dependen del tipo de aeronave y del equipo del aeródromo, p. calidad de las señales ILS y la iluminación de la pista (línea central, bordes, calles de rodaje, etc.).
+
+
+Un operador debe contar con la aprobación de las autoridades reguladoras antes de poder operar sus aeronaves con aproximaciones y aterrizajes automáticos de Categoría 2 y 3. Esto se aplica en particular a las alturas de decisión de Categoría 3.
+
+Los enfoques automáticos generalmente se realizan capturando primero el localizador (LOC) y luego capturando la pendiente de deslizamiento (GS), consulte la Figura 12.10. El localizador se intercepta desde un modo de retención de rumbo en el AFCS, con LOC activado en el sistema. El modo de tono activo en este punto será la retención de altitud, con el modo GS armado.
+
+Una vez establecida en el localizador, la pendiente de deslizamiento se captura y se convierte en el modo de inclinación activa. El enfoque continúa con las desviaciones de la línea central y la pendiente de planeo detectadas por el receptor ILS; Estas desviaciones se envían a los canales de balanceo y cabeceo del AFCS, con la sensibilidad de los modos de cabeceo y balanceo modificada por la altitud de radio. El acelerador automático controla la velocidad deseada. Dependiendo del tipo de aeronave, se activarán dos o tres canales AFCS para aterrizajes completamente automáticos, lo que proporciona niveles de Aunque la antena de pendiente de planeo se encuentra adyacente al punto de toma de contacto en la pista, se aleja de la ruta de guía en línea recta por debajo de 100 pies . El enfoque continúa con la velocidad de radio de altitud / descenso que es la entrada de control predominante en el canal de tono. Aproximadamente a 50 pies, los estranguladores se retrasan y la velocidad de descenso de la aeronave y la velocidad del aire se reducen por el modo de 'llamarada', es decir, una actitud gradual hacia arriba que se mantiene hasta el aterrizaje. La última maniobra de lanzamiento es poner la nariz del avión en la pista. El localizador aún proporciona orientación lateral en
+este punto hasta el momento en que la tripulación tome el control de la aeronave.
+
+
+12.7 Aspectos operacionales del ILS
+
+Los ILS permanecen instalados en todo el mundo y son la base de aproximación y aterrizaje automáticos para muchos tipos de aeronaves. Las limitaciones de ILS son las rutas de aproximación única desde la pendiente de planeo y el localizador; Esto puede ser un problema para los aeródromos ubicados en regiones montañosas.
+
+Además, cualquier vehículo o aeronave que se acerque o cruce la pista puede causar una perturbación en el haz del localizador, que el equipo aerotransportado podría interpretar como una señal poco confiable. Esto a menudo hace que un canal AFCS se desconecte, con la posibilidad de un enfoque perdido. El terreno local también puede tener un efecto en el rendimiento de ILS, p. los errores de múltiples rutas pueden ser causados u200bu200bpor reflexiones del localizador; El ángulo de inclinación de deslizamiento de tres grados puede no ser posible en regiones montañosas o en ciudades con edificios altos. Estas limitaciones llevaron al desarrollo del Sistema de aterrizaje por microondas (MLS); ver Capítulo 13.
+
+Los enfoques de ILS, junto con el aterrizaje automático, se describen más detalladamente en Instrumentos de vuelo de aeronaves y sistemas de guía (AFIGS).
+
+Punto clave
+
+Se puede lograr una toma de contacto positiva mediante la programación del Altímetro de radio de bajo rango (LRRA) para 'apuntar' por menos 20 pies. El modo 'Flare' se inicia a 50 pies (típico), seguido por el acelerador automático que se reduce a inactivo a 15 pies. En un sistema típico, cuando el LRRA se reduce a cero pies, los interruptores de peso sobre el volante se hacen cargo, modificando las leyes de control para aliviar el efecto del suelo. (Autoland está cubierto con más detalle en Instrumentos de vuelo de aeronaves y Sistemas de guía - consulte
+Prefacio notas.)
+
+Punto clave
+
+Cuando el avión ha aterrizado con un aterrizaje automático, el ILS continúa proporcionando orientación lateral a través del localizador.
+
+
+12.8 Preguntas de opción múltiple
+
+1. Las bandas de frecuencia para ILS son:
+
+(a) localizador (UHF) y pendiente de planeo (VHF)
+
+(b) localizador (VHF) y pendiente de planeo (VHF)
+
+(c) localizador (VHF) y pendiente de planeo (UHF).
+
+2. Los transmisores del localizador se encuentran:
+
+(a) en el umbral de la pista, adyacente al punto de toma de contacto
+
+(b) al final de la pista, en la línea central
+
+(c) en tres ubicaciones en la línea central extendida de la pista.
+
+3. La LRRA proporciona:
+
+(a) desviación de la línea central de la pista
+
+(b) desviación del ángulo de la trayectoria de planeo
+
+(c) altitud en pies sobre el suelo.
+
+4. Algunos aeródromos usan NDB junto con
+
+(o en lugar de) el:
+
+(a) localizador
+
+(b) pendiente de planeo
+
+(c) marcador exterior.
+
+5. Cuando se ve desde la antena, el localizador se caracteriza por dos lóbulos modulados:
+
+(a) 90 Hz a la derecha, 150 Hz a la izquierda de la línea central
+
+(b) 150 Hz a la derecha, 90 Hz a la izquierda de la línea central
+
+(c) igualmente a ambos lados de la línea central.
+
+6. Las frecuencias ILS se seleccionan sintonizando:
+
+(a) la pendiente de planeo que selecciona automáticamente el localizador
+
+(b) el localizador que selecciona automáticamente la pendiente de planeo
+
+(c) el localizador y las frecuencias de la pendiente de planeo independientemente.
+
+7. La pendiente de planeo ILS está inclinada en un ángulo fijo entre:
+
+(a) 2.5 y 3.5 grados
+
+(b) cero y 2.5 grados
+
+(c) 2.5 grados y más.
+
+8. La pendiente de planeo se caracteriza por dos lóbulos modulados:
+
+(a) 90 Hz arriba, 150 Hz debajo del ángulo de inclinación de planeo
+
+(b) 150 Hz por encima, 90 Hz por debajo del ángulo de inclinación de planeo
+
+(c) igualmente a cada lado del ángulo de inclinación de planeo.
+
+9. ¿Las balizas marcadoras transmiten en qué frecuencia?
+
+(a) 75 MHz
+
+(b) 1300 Hz
+
+(c) 400 Hz.
+
+10. Con tres balizas de marcadores instaladas en un sistema ILS, se encontrarán a lo largo del enfoque como:
+
+(a) exterior, medio, interior
+
+(b) interior, medio, exterior
+
+(c) exterior, interior, medio.
+
+11. Las salidas de baliza marcadora están dadas por:
+
+(a) luces de colores y tonos de código Morse
+
+(b) desviaciones de la línea central de la pista
+
+(c) desviaciones de la pendiente de planeo.
+
+12. La altura de decisión y el rango visual de la pista para una aproximación automática de Categoría 2 son:
+
+(a) 100 pies y 300 m respectivamente
+
+(b) 200 pies y 550 m respectivamente
+
+(c) menos de 100 pies y 200 m respectivamente.
+
+13. El marcador externo se muestra en la pantalla principal de vuelo como un icono de color que es:
+
+(un amarillo
+
+(b) blanco
+
+(c) cian.
+
+14. Cuando el avión aterrizó con un aterrizaje automático, el ILS continúa proporcionando:
+
+(a) control lateral a través del localizador
+
+(b) control lateral a través de la pendiente de planeo
+
+(c) control vertical a través de la LRRA.

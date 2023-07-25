@@ -1,0 +1,70 @@
+8.6
+Radar Sensors
+
+Civil aircraft carry a number of radar sensors that permit the aircraft to derive data concerning the flight of the aircraft. The principle radar sensors in use on civil aircraft are:
+
+• radar altimeter;
+• weather radar.
+
+8.6.1
+Radar Altimeter
+
+The radar altimeter (Rad Alt) uses radar transmissions to reflect off the surface of the sea or the ground immediately below the aircraft. The radar altimeter therefore provides an absolute reading of altitude with regard to the terrain directly beneath the aircraft. This contrasts with the barometric or air data altimeter where the altitude may be referenced to sea-level or some other datum such as the local terrain, where it is referred to as height. The radar altimeter is therefore of particular value in warning the pilot that he is close to the terrain and to warn him if necessary to take corrective action. Alternatively the radar altimeter may provide the flight crew with accurate altitude with respect to terrain during the final stages of a precision approach. Comparison of barometric and radar altitude is shown in Figure 8.30.
+
+Radar altimeters may operate using CW/FM (continuous wave/frequency modulated) or pulsed signal techniques. CW/FM techniques lose accuracy above a range of 5000 feet, so many radio altimeters are limited to an operational range of 5000 feet. Above this, pulsed techniques have to be used. The radar altimeter principle of operation is shown in Figure 8.31.
+
+The oscillator and modulator provide the necessary signals to the transmitter and transmit antennae, which direct radar energy towards the terrain beneath aircraft. Reflected energy is received by the receive antenna and passed to a frequency counter. The frequency counter demodulates the received signal and provides a radar altimeter reading to a dedicated display.
+
+
+The radar altimeter measures actual altitude of the aircraft relative to the terrain underneath, as opposed to the air data altimeter which measures the height relative to sea-level or some other datum • The radar altitude is determined by the  time taken for a radar pulse transmitted from the aircraft to return reflected from the terrain
+
+• Most common type used today is the Frequency Modulated Continuous Wave (FMCW)
+
+• Radar altimeters transmit in the range 4250 to 4350 MHz
+
+• Radar altimeters may have dedicated displays; the latest systems display radar altitude on the EFIS • Military/UAVs may also use laser altimeters
+
+
+Alternatively and more usually, the information may be presented on an EFIS. In modern
+systems, radar altitude will be provided to a range of systems such as FMS, EGPWS, autopilot, and so on, as well as being displayed directly to the flight crew. Radar altimeters usually operate over a maximum range of zero to 5000 feet.
+
+Most radar altimeters use a triangular modulated frequency technique on the transmitted energy, as shown in Figure 8.32, although as mentioned earlier this typically limits the operational range to 5000 feet. The transmitter/receiver generates a continuous wave (CW) signal varying from 4250 to 4350 MHz, modulated at 100 Hz (period = 0.01 sec). Comparison of the frequency of the reflected energy with the transmitted energy – F1 versus F2 in the figure yields a frequency difference that is proportional to the time taken for the radiated energy to return, hence radar altitude may be calculated.
+
+Radar altimeter installations are calibrated to allow for the aircraft installation delay, which varies from aircraft to aircraft. This allows compensation for the height of the antenna above the landing gear and any lengthy runs of coaxial cable in the aircraft electrical installation.
+
+The zero reading of the radar altimeter is set such that it coincides with the point at which the aircraft landing gear is just making contact with the runway. A useful reference regarding radar altimeter installations is Reference [12].
+
+8.6.2 Weather Radar
+
+The weather radar has been in use for over 40 years to alert the flight crew to the presence of adverse weather or terrain in the aircraft’s flight path. The weather radar radiates energy in a narrow beam with a beamwidth of ∼3 ◦ which may be reflected from clouds or terrain ahead of the aircraft. The radar beam is scanned either side of the aircraft centre line to give a radar picture of objects ahead of the aircraft. The antenna may also be tilted in elevation by around ±15 ◦ from the horizontal to scan areas above and below the aircraft.
+
+The principle of operation of a weather radar is shown in Figure 8.33. This shows a storm cloud directly ahead of the aircraft, with some precipitation below and also steadily rising terrain. Precipitation can be indicative of severe vertical wind-shear which can cause a hazard to the aircraft.
+
+The radar beam is directly ahead of the aircraft with the antenna in its mid or datum position and will detect the storm cloud through which the aircraft is about to fly. By referring to his weather radar display, the pilot will be able to see whether the storm cells can be avoided by altering course left or right. The use of the antenna tilt function is crucial. In the example given, if the antenna is fully raised, the crew will not gain complete information relating to storm cloud precipitation as they will only be looking at the top of the cloud formation. If the antenna is fully depressed, the radar will detect the rising terrain in preference to the storm cloud or precipitation ahead. For this reason, many weather radars incorporate an automatic tilt feature so that the radar returns are optimised for the flight crew depending upon the returns that are received.
+
+Most modern weather radars can use Doppler processing to detect turbulence ahead of the
+aircraft. This is a very useful feature, as maximum wind-shear does not necessarily occur coincidentally with the heaviest precipitation. In fact, some of the most dangerous wind-shear can occur in clear air with the aircraft flying nowhere near any clouds or precipitation.
+
+The radar picture is usually displayed on a dedicated radar display or overlaid on the
+pilot or first officer’s navigation display. Displays are typically in colour, which helps the flight crew to interpret the radar data. Displays have various selectable range markers and are usually referenced to the aircraft heading. Separate displays may be provided for weather or turbulence modes. Useful information regarding operational use of weather radar may be found in Reference [13], which provides pilot guidance for the operation of the Honeywell RDR-4B weather radar. The transmitter operates at 9.345 GHz and the system has three basic modes of operation:
+
+• weather and map with a maximum range of 320 nm;
+
+• turbulence (TURB) mode out to 40 nm;
+
+• wind-shear detection out to 5 nm.
+
+Weather radars may also be used in a terrain avoidance mode in certain circumstances, as shown in Figure 8.34. When flying precision approaches into airfields surrounded by high terrain, the weather radar can provide an independent cross-check on the information provided by the Terrain Avoidance Warning System (TAWS). The captain can view TAWS information on his navigation display (ND) while being monitored by the first officer with a weather display overlaid on his ND. In Reference [14] the text explains why the weather radar was added to the aircraft minimum equipment list (MEL) for such flights.
+
+Mapping radar uses a specially shaped beam to ‘paint’ the terrain ahead of the aircraft
+
+• A detailed radar map of the terrain and other man-made features ahead of the aircraft
+may be compiled
+
+• By positioning the mapping radar antenna at a fixed depression angle, some degree of
+terrain avoidance guidance may be provided • Mapping radars are most commonly used in
+military aircraft as part of the offensive weapons suite
+
+• Mapping radars are used on civil aircraft to
+illustrate terrain in a terrain-avoidance mode
+Figure 8.34 Use of weather radar in mapping/terrain avoidance mode

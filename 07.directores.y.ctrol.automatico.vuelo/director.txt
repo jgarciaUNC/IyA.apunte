@@ -1,0 +1,15 @@
+Typical flight directors use one of two display systems for steerage. The first is a set of command bars, one horizontal and one vertical. The command bars in this configuration are maintained in a centered position (much like a centered glideslope). The second uses a miniature aircraft aligned to a command cue.
+
+[1mLos directores de vuelo típicos usan uno de los dos sistemas de visualización para el manejo. El primero es un conjunto de barras de comando, una horizontal y otra vertical. Las barras de comando en esta configuración se mantienen en una posición centrada (muy similar a una pendiente deslizante centrada). El segundo usa un avión en miniatura alineado a una señal de comando.[22m
+
+Traducciones de [4mTypical flight directors use one of two display systems for steerage. The first is a set of command bars, one horizontal and one vertical. The command bars in this configuration are maintained in a centered position (much like a centered glideslope). The second uses a miniature aircraft aligned to a command cue.[24m
+[ [4mEnglish[24m -> [1mEspañol[22m ]
+
+[4mTypical flight directors use one of two display systems for steerage.[24m
+    [1mLos directores de vuelo típicos usan uno de los dos sistemas de visualización para el manejo.[22m, [1mdirectores de vuelo típicas utilizan uno de los dos sistemas de visualización de tercera clase.[22m
+[4mThe first is a set of command bars, one horizontal and one vertical.[24m
+    [1mEl primero es un conjunto de barras de comando, una horizontal y otra vertical.[22m, [1mEl primero es un conjunto de barras de comandos, uno horizontal y otro vertical.[22m
+[4mThe command bars in this configuration are maintained in a centered position (much like a centered glideslope).[24m
+    [1mLas barras de comando en esta configuración se mantienen en una posición centrada (muy similar a una pendiente deslizante centrada).[22m, [1mLas barras de comandos en esta configuración se mantienen en una posición centrada (como un glideslope centrado).[22m
+[4mThe second uses a miniature aircraft aligned to a command cue.[24m
+    [1mEl segundo usa un avión en miniatura alineado a una señal de comando.[22m, [1mEl segundo utiliza un avión miniatura alineado a una señal de comando.[22m

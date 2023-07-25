@@ -1,0 +1,190 @@
+Antennas
+
+It may not be apparent from an inspection of the
+external profile of an aircraft that most large
+aircraft carry several dozen antennas of different
+types. To illustrate this point, Figure 2.1 shows
+just a few of the antennas carried by a Boeing
+757. What should be apparent from this is that
+many of the antennas are of the low-profile
+variety which is essential to reduce drag.
+Antennas are used both for transmission and
+reception. A transmitting antenna converts the
+high frequency electrical energy supplied to it
+into electromagnetic energy which is launched or
+radiated into the space surrounding the antenna.
+A receiving antenna captures the electromagnetic
+energy in the surrounding space and converts this
+into high frequency electrical energy which is
+then passed on to the receiving system. The law
+of reciprocity indicates that an antenna will have
+the same gain and directional properties when
+used for transmission as it does when used for
+reception.
+
+2.1 The isotropic radiator
+The most fundamental form of antenna (which
+cannot be realised in practice) is the isotropic
+radiator. This theoretical type of antenna is often
+used for comparison purposes and as a reference
+when calculating the gain and directional
+characteristics of a real antenna.
+Isotropic antennas radiate uniformly in all
+directions. In other words, when placed at the
+centre of a sphere such an antenna would
+illuminate the internal surface of the sphere
+uniformly, as shown in Figure 2.2(a). All
+practical antennas have directional characteristics
+as illustrated in Figure 2.2(b). Furthermore, such
+characteristics may be more or less pronounced
+according to the antenna’s application. We shall
+look at antenna gain and directivity in more detail
+later on, but before we do that we shall introduce
+you to some common types of antenna.
+
+2.2 The half-wave dipole
+
+The half-wave dipole is one of the most
+fundamental types of antenna. The half-wave
+dipole antenna (Figure 2.3) consists of a single
+conductor having a length equal to one-half of the
+length of the wave being transmitted or received.
+The conductor is then split in the centre to enable
+connection to the feeder. In practice, because of
+the capacitance effects between the ends of the
+antenna and ground, the antenna is cut a
+little shorter than a half wavelength.
+
+The length of the antenna (from end to end) is
+equal to one half wavelength, hence:
+
+Now since v = f λ we can conclude that, for a
+half-wave dipole:
+
+Note that l is the electrical length of the antenna
+rather than its actual physical length. End effects, or capacitance effects at the ends of the antenna
+require that we reduce the actual length of the
+aerial, and a 5% reduction in length is typically
+required for an aerial to be resonant at the centre
+of its designed tuning range.
+Figure 2.4 shows the distribution of current
+and voltage along the length of a half-wave
+dipole aerial. The current is maximum at the
+centre and zero at the ends. The voltage is zero at
+the centre and maximum at the ends. This implies that the impedance is not constant along
+the length of aerial but varies from a maximum at
+the ends (maximum voltage, minimum current)
+to a minimum at the centre.
+The dipole antenna has directional properties,
+illustrated in Figures 2.5 to 2.7. Figure 2.5 shows
+the radiation pattern of the antenna in the plane
+of the antenna’s electric field (i.e. the E-field
+plane) whilst Figure 2.6 shows the radiation
+pattern in the plane of the antenna’s magnetic
+field (i.e. the H-field plane).
+The 3D plot shown in Figure 2.7 combines
+these two plots into a single ‘doughnut’ shape.
+Things to note from these three diagrams are
+that:
+
+in the case of Figure 2.5, minimum radiation
+occurs along the axis of the antenna whilst the
+two zones of maximum radiation are at 90°
+(i.e. are ‘normal to’) the dipole elements
+
+in the case of Figure 2.6, the antenna radiates
+uniformly in all directions.
+
+Hence, a vertical dipole will have omni-
+directional characteristics whilst a horizontal
+dipole will have a bi-directional radiation
+pattern. This is an important point as we shall see
+later.
+
+Example 2.1
+
+Determine the length of a half-wave dipole
+antenna for use at a frequency of 150 MHz.
+
+The length of a half-wave dipole for 150 MHz
+can be determined from:
+
+Test your understanding 2.1
+
+Determine the length of a half-wave dipole for
+frequencies of (a) 121 MHz and (b) 11.25 MHz.
+
+2.3 Impedance and radiation resistance
+
+Because voltage and current appear in an antenna
+(a minute voltage and current in the case of a
+receiving antenna and a much larger voltage and
+current in the case of a transmitting antenna) an
+aerial is said to have impedance. Here it’s worth
+remembering that impedance is a mixture of
+resistance, R, and reactance, X, both measured in
+ohms (Ω). Of these two quantities, X varies with
+frequency whilst R remains constant. This is an
+important concept because it explains why
+antennas are often designed for operation over a
+restricted range of frequencies.
+
+The impedance, Z, of an aerial is the ratio of
+the voltage, E, across its terminals to the current,
+I, flowing in it. Hence:
+
+You might infer from Figure 2.7 that the
+impedance at the centre of the half-wave dipole
+should be zero. In practice the impedance is
+usually between 70 Ω and 75 Ω. Furthermore, at
+resonance the impedance is purely resistive and
+contains no reactive component (i.e. inductance and capacitance). In this case X is negligible
+compared with R. It is also worth noting that the
+DC resistance (or ohmic resistance) of an
+antenna is usually very small in comparison with
+its impedance and so it may be ignored. Ignoring
+the DC resistance of the antenna, the impedance
+of an antenna may be regarded as its radiation
+resistance, R r (see Figure 2.8).
+
+Radiation resistance is important because it is
+through this resistance that electrical power is
+transformed into radiated electromagnetic energy
+(in the case of a transmitting antenna) and
+incident electromagnetic energy is transformed
+into electrical power (in the case of a receiving
+aerial).
+
+The equivalent circuit of an antenna is shown
+in Figure 2.9. The three series-connected
+components that make up the antenna’s
+impedance are:
+
+the DC resistance, R d.c.
+
+the radiation resistance, R r
+
+the ‘off-tune’ reactance, X.
+
+Note that when the antenna is operated at a
+frequency that lies in the centre of its pass-band
+(i.e. when it is on-tune) the off-tune reactance is
+zero. It is also worth bearing in mind that the
+radiation resistance of a half-wave dipole varies
+according to its height above ground. The 70 Ω
+to 75 Ω impedance normally associated with a
+half-wave dipole is only realised when the
+antenna is mounted at an elevation of 0.2
+wavelengths, or more.
+
+Test your understanding 2.2
+A half-wave dipole is operated at its centre
+frequency (zero off-tune reactance). If the antenna
+has a total DC loss resistance of 2.5 Ω and is
+supplied with a current of 2 A and a voltage of
+25 V, determine:
+(a) the radiation resistance of the antenna
+(b) the power loss in the antenna.
+
+2.4 Radiated power and efficiency
+

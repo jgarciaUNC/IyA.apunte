@@ -1,0 +1,27 @@
+Fibre-optic buses
+
+The examples described so far relate to electrically signalled (conducting) data buses.
+
+Fibre-optic interconnections offer an alternative to the electrically signalled bus that is much faster and more robust in terms of electromagnetic interference (EMI). Fibre-optic techniques are widely used in the telecommunications industry, and those used in cable networks serving domestic applications may typically operate at around 50–100 MHz.
+
+A major problem with fibre-optic communication is that it is unidirectional (half-duplex). That is, the signal may only pass in one direction, and if bidirectional (full duplex) communication is required then two fibres are needed. There is also no ‘T-junction’ in fibre optics, and communication networks have to be formed by ‘Y-junctions’ or ring topologies. An example of the ring topology is shown in Fig. 2.22, in which the bidirectional interconnection between four terminals requires a total of eight unidirectional fibres. This network does have the property that inter-unit communication is maintained should any terminal or fibre fail. Fibre optics also allow the use of wavelength division multiplexing, which allows many channels of data transfer including full duplex (bidirectional) transfers if required.
+
+This particular topology is similar to that adopted by the Raytheon Control-By-Light™ (CBL™) system which has been demonstrated in flight, controlling the engine and thrust reversers of a Raytheon business jet. In this application the data rate is a modest 1.25 Mbit/s, which is no real improvement over conventional buses such as MIL-STD-1553B and indeed is slower than A629. A fibre-optic bus does have the capability of operating at much higher data rates. It appears that the data rate in this case may have been limited by the protocol (control philosophy) which is an adaptation of a US PC/industrial Local Area Network (LAN) protocol widely used in the United States. 
+
+Fibre-optic standards have been agreed and utilized on a small scale within the avionics community, usually for On-board Maintenance System (OMS) applications. The Boeing 777 uses a 10 Mbit/s FDDI, as described in Chapter 10.
+
+Avionics packaging – Line Replaceable Units
+
+Line Replaceable Units (LRUs) were developed as a way of removing functional elements from an avionics system with minimum disruption. LRUs have logical functional boundaries associated with the task they perform in the aircraft. LRU formats were standardized to the following standards:
+
+1. Air Transport Radio (ATR). The origins of ATR standardization may be traced back to the 1930s when United Airlines and ARINC established a standard racking system called the air transport radio (ATR) unit case. ARINC 11 identified three sizes defined by box width: 1 / 2 ATR, 1 ATR, 1 1 / 2 ATR, with the same height and length. In a similar time-scale, standard connector and pin sizes were specified for the wiring connections at the rear of the unit. The use of standardized form boxes led to the use of standard card sizes, connector types, mounting tray assemblies, and internal layout design. The US military and the military authorities in the United Kingdom adopted these standards although to differing degrees, and they are still in use in military parlance today. Over the period of usage, ATR ‘short’ ~ 12.5" length and ATR ‘long’ ~ 19.5" length have also been derived. ARINC 404A developed the standard to the point where connector and cooling duct positioning were specified to give true interchangeability between units from different suppliers. The relatively dense packaging of modern electronics means the ATR ‘long’ boxes are seldom used. The range of module sizes increased to include half-height boxes known as dwarf and elfin.
+
+2. Modular Concept Unit (MCU). The civil airline community took the standardization argument further by developing the MCU. An 8 MCU box is virtually equivalent to 1 ATR width, and boxes are sized in MCU units. A typical small aircraft systems control unit today might be 2 MCU, while a larger avionics unit such as an Air Data and Inertial Reference System (ADIRS), combining the Inertial Reference System (IRS) with the air data computer function, may be 8 or 10 MCU (1 MCU is roughly equivalent to ~ 1 1 / 4 ", but the true method of sizing an MCU unit is given in Fig. 2.23). An 8 MCU box will therefore be 7.64" high  12.76" deep  10.37" wide. 
+
+The adoption of this concept was in conjunction with the most recent ARINC 600 standard, which specifies connectors, cooling air inlets, etc., in the same way as ARINC 404A did earlier.
+
+Typical LRU architecture
+
+The architecture of a typical avionics LRU is shown in Fig. 2.24. This shows the usual interfaces and component elements. The unit is powered by a Power Supply Unit (PSU) which converts either 115 VAC or 28 V DC aircraft electrical power to low-voltage DC levels (+5 V and +/- 15 V are typical) for the predominant microelectronic devices. In some cases where commercially driven technology is used, +3.3 V may also be required. The processor/memory module communicates with the various I/O modules via the processor bus. The ‘real world’ to the left of the LRU interfaces with the processor bus via a variety of I/O devices which convert true analogue values to/from a digital format. The right portion of the LRU interfaces with other LRUs by means of digital data buses; in this example, A429 is shown, and it is certainly the most common data bus in use in civil avionics systems today.
+
+

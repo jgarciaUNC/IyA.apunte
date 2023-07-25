@@ -1,0 +1,131 @@
+Buscador automático de dirección
+
+Las ondas de radio tienen características direccionales como hemos visto en capítulos anteriores. Esta es la base del buscador automático de dirección (ADF); Una de las primeras formas de radionavegación que todavía se usa en la actualidad. ADF es un sistema de navegación de corto / medio alcance (200 nm) que proporciona información direccional; opera dentro del rango de frecuencia de 190-1750 kHz, es decir, bandas de frecuencia baja y media. El término "automático" es algo engañoso en los términos de hoy; esto se refiere a la introducción de equipos electromecánicos para reemplazar dispositivos operados manualmente.
+
+En este capítulo veremos los antecedentes históricos de la navegación por radio, revisaremos el hardware típico del ADF y concluiremos con algunos aspectos prácticos asociados con el uso operativo del ADF.
+
+9.1 Introducción de ADF
+
+Los primeros aviadores usaron ayudas visuales para guiarlos a lo largo de su ruta; Estas ayudas visuales habrían incluido ríos, carreteras, vías férreas, costas, etc. Este tipo de navegación no es posible con poca visibilidad, por lo que se introdujeron brújulas magnéticas. Las brújulas magnéticas son poco fiables a corto plazo, es decir, durante las maniobras de giro. Los giroscopios direccionales son confiables a corto plazo, pero derivan durante períodos de tiempo más largos. Una brújula magnética combinada estabilizada por un giroscopio direccional (denominada brújula giromagnética) puede superar estas deficiencias. La brújula giromagnética, junto con un indicador de velocidad del aire, permitió
+tripulación para navegar por cálculo muerto, es decir, estimar su posición extrapolando desde un
+posición conocida y luego teniendo en cuenta la dirección y la distancia recorrida. Instrumentación
+los errores conducen inevitablemente a desviaciones entre las posiciones reales y calculadas de la aeronave; Estas desviaciones se acumulan con el tiempo. Por lo tanto, las tripulaciones deben poder confirmar y actualizar su posición por medio de una referencia terrestre fija.
+
+Los primeros sistemas de navegación en el aire que usaban ayudas de navegación terrestres consistían en una antena de bucle fijo en la aeronave sintonizada a una estación de transmisión de radio comercial de modulación de amplitud (AM). Los pilotos sabrían la ubicación de la estación de radio (de hecho, invariablemente se habría ubicado cerca o incluso en la ciudad / ciudad a la que la tripulación quería volar). La antena de bucle fijo se alineó con el eje longitudinal de la aeronave, con el piloto girando la aeronave hasta que recibió la señal mínima (lectura nula). Al mantener una lectura nula, el piloto podía estar seguro de que estaba volando hacia la estación. Este giro constante fue ineficiente en términos de consumo de combustible y causó problemas de navegación inherentes para mantener
+¡Nota de la posición del avión durante estas maniobras! Los efectos del viento cruzado complicaron este proceso ya que el rumbo del avión no está alineado con su trayectoria.
+
+9.2 Principios del ADF
+La introducción de un sistema de "buscador automático de direcciones" (ADF) soluciona este problema. Una antena de bucle que el piloto podría girar a mano resuelve algunos de estos problemas; sin embargo, esto aún requiere mucha atención por parte de la tripulación. Desarrollos posteriores del equipo utilizaron un motor eléctrico para rotar la antena de bucle. La intensidad de la señal recibida es una función del ángulo
+posición del bucle con respecto al rumbo y rumbo de la aeronave a la estación, ver Figuras 9.1 (a) y (b). Si se hace una gráfica del ángulo del bucle y la intensidad de la señal, el resultado es una onda sinusoidal, como se muestra en la Figura 9.1 (c). El punto nulo es más fácil de determinar que la intensidad máxima de la señal, ya que la tasa de cambio es más alta. Girar la antena (en lugar de girar el avión) para determinar la lectura nula de la estación de radio fue una gran ventaja del sistema. El piloto leyó la diferencia angular entre el rumbo de la aeronave y la dirección de la estación de radio, vea la Figura 9.2 (a), desde una escala graduada, y luego se pudo determinar el rumbo hacia la estación.
+
+El impulso de la industria hacia componentes de estado sólido, es decir, sin partes móviles, ha llevado al equipo descrito en la Sección 9.3. La navegación basada en ADF (que usa estaciones de radio comerciales AM que emiten en el rango de frecuencia de 540–1620 kHz) se convirtió en un método establecido para viajar a través del país.
+
+Con el crecimiento de los viajes aéreos, se instalaron ayudas de navegación por radio dedicadas a lo largo de vuelos populares
+rutas de transporte. Estas estaciones de radio, conocidas como balizas no direccionales (NDB), gradualmente
+complementado las estaciones de radio comerciales y una red de NDB surgió en las naciones
+desarrollando su infraestructura aeronáutica.
+
+Estos NDB emiten en el rango de baja frecuencia (LF) de 190 a 415 kHz y el rango de frecuencia media (MF) de 510 a 535 kHz. A medida que aumentaba la cantidad de NDB, se producían cartas de navegación aérea y los NDB se identificaban mediante un código alfa de dos o tres letras vinculado a la ubicación y la frecuencia. En la Figura 9.2 (c), el NDB ubicado en Mackel en Bélgica transmite en 360.5 kHz y es
+identificado como MAK; tenga en cuenta el código Morse, los detalles de latitud y longitud en el gráfico. Las balizas son
+desplegado con diferentes salidas de potencia clasificadas como alta (2 kW), media (50W a 2 kW) y baja (menos de 50 W).
+
+La Tabla 9.1 proporciona una lista de los NDB típicos asociados con aeropuertos y ciudades en un país europeo típico (tenga en cuenta que estos se proporcionan solo con fines ilustrativos). Las balizas marcadas con un asterisco en esta tabla se denominan balizas de localización; son parte de los procedimientos de aproximación final para un aeródromo (ver Capítulo 12).
+
+9.3 Equipos ADF
+
+9.3.1 Antena
+
+La antena de bucle giratorio fue reemplazada finalmente por una antena fija que consta de dos bucles.
+combinado en un solo artículo; uno alineado con la línea central del fuselaje, el otro en ángulo recto, como se muestra en la Figura 9.3. Esta antena ortogonal todavía se conoce como la antena de 'bucle'. La medición de la intensidad de la señal de cada uno de los bucles y la derivación de una posición angular en un receptor ADF dedicado determina la dirección de la baliza seleccionada (o estación de radio comercial). La antena de bucle resuelve la señal direccional; Por lo tanto, una segunda antena de 'sentido' essin embargo, esto puede tener dos posibles soluciones separadas 180 grados. 
+requerido para detectar señales direccionales de ondas de radio no direccionales desde la antena de bucle a
+Producir una única solución direccional. El diagrama polar para una antena de bucle y detección se muestra en la Figura 9.4; Cuando se combinan los dos patrones, se forma un cardioide. La mayoría de las aeronaves de transporte comercial están equipadas con dos sistemas ADF independientes, típicamente identificados como izquierdo y derecho. Punto clave Cuando el bucle ADF está en ángulo recto con el transmisor, Figura 9.1, la onda de RF se detecta simultáneamente por ambos lados de la antena de bucle, lo que resulta en corriente cero, es decir, un punto nulo. Cuando el bucle está en ángulo con la baliza, la onda de RF se detecta primero por un lado del bucle; el otro lado del bucle estará fuera de fase, generando así
+una corriente. Por lo tanto, el punto de señal nulo se utiliza para determinar la dirección de la onda de RF de la baliza.
+
+Los componentes de bucle y sentido se combinan algebraicamente, con la magnitud y polaridad de
+antena de detección dispuesta para ser idéntica a la antena de bucle. El diagrama polar resultante, Figura 9.4, es un cardioide, es decir, solo tiene un punto nulo desde la baliza; Esta señal se combina con las señales direccionales de la antena de bucle para producir una única solución direccional. El diagrama polar para una antena de bucle y detección se muestra en la Figura 9.4; Cuando se combinan los dos patrones, se forma un cardioide. La mayoría de las aeronaves de transporte comercial están equipadas con dos sistemas ADF independientes, típicamente identificados como izquierdo y derecho
+
+Punto clave
+
+Cuando el bucle del ADF está en ángulo recto con el transmisor, Figura 9.1, la onda de RF se detecta simultáneamente por ambos lados de la antena del bucle, lo que resulta en corriente cero, es decir, un punto nulo. Cuando el bucle está en ángulo con la baliza, la onda de RF se detecta primero por un lado del bucle; el otro lado del bucle estará fuera de fase, generando así una corriente. Por lo tanto, el punto de señal nulo se utiliza para determinar la dirección de la onda de RF de la baliza.
+Los componentes de bucle y sentido se combinan algebraicamente, con la magnitud y polaridad de
+antena de detección dispuesta para ser idéntica a la antena de bucle. El diagrama polar resultante, Figura 9.4, es un cardioide, es decir, solo tiene un punto nulo.
+
+sistemas; Las ubicaciones de las antenas para un avión de transporte típico se muestran en la Figura 9.5.
+
+9.3.2 Receptor
+
+Los receptores ADF están ubicados en la bahía del equipo de aviónica. La señal recibida en la antena está acoplada al receptor de tres maneras:
+
+La señal de los sentidos
+
+Una señal de bucle proporcional en amplitud al coseno del ángulo relativo de la línea central del avión y la señal recibida
+
+Una señal de bucle proporcional en amplitud al seno del ángulo relativo de la línea central del avión y la señal recibida.
+
+La señal de antena de detección se procesa en el receptor a través de un receptor superhet (vea la página 56) que permite identificar señales débiles junto con la discriminación de frecuencias adyacentes. La salida del receptor superhet se integra luego en el sistema de audio del avión.
+
+Las señales de antena de bucle se suman con la señal de antena de detección; esto forma una señal portadora modulada en fase (PM). La frecuencia intermedia superétrica (IF) está acoplada con la señal PM en una etapa de demodulador coherente que detecta la presencia de una señal de antena de detección desde la etapa IF. El componente PM de la señal se recupera del circuito de bloqueo de fase del oscilador controlado por voltaje (VCO) (consulte la página 63). Esta señal recuperada contiene la información de rumbo recibida por la antena y se compara con una señal de control de modulación de referencia.
+
+Los receptores basados u200bu200ben tecnología analógica envían datos de rumbo a las pantallas de la cubierta de vuelo utilizando sistemas sincronizados. Los receptores digitales transmiten datos de rumbo a las pantallas utilizando un sistema de bus de datos, típicamente ARINC 429. El receptor ADF a menudo se incorpora en un receptor multimodo junto con otros sistemas de radio navegación.
+
+9.3.3 Control panel
+
+Las aeronaves con aviónica analógica (electromecánica) tienen un panel de control ADF dedicado, ubicado en el pedestal central, ver Figura 9.6 (a). Un panel alternativo que se muestra en la Figura 9.6 (b) permite a la tripulación seleccionar un rango de funciones que incluyen: selectores / pantallas de frecuencia y el oscilador de frecuencia de latido (BFO). Esta función se utiliza cuando desean crear una frecuencia de audio para transmisiones de onda portadora a través de su panel de audio.
+
+Las ondas portadoras NDB que no están moduladas con un componente de audio utilizan el circuito BFO en el receptor ADF. Para producir una salida de audio, el receptor heterodinos (late) la señal de onda portadora con una señal separada derivada de un oscilador en el receptor.
+
+Algunos paneles ADF tienen un interruptor ADF / ANT donde 'ADF' selecciona el funcionamiento normal, es decir, antenas combinadas de detección y bucle; y 'ANT' selecciona la antena de detección por sí misma para que la tripulación pueda confirmar que una estación está transmitiendo, es decir, sin buscar un valor nulo. Los productos de aviación general combinan el panel de control y el receptor en un solo elemento, consulte la Figura 9.6 (c). Se utiliza un interruptor de cambio para seleccionar las frecuencias activas y en espera.
+
+9.3.4 Pantalla del rodamiento ADF
+
+La salida del receptor ADF se transmite a una pantalla que proporciona al piloto dirección y dirección magnéticas al NDB sintonizado; este puede ser un instrumento ADF dedicado, como se muestra en la Figura 9.7 (a), o un indicador radio magnético (RMI), consulte la Figura 9.7 (b).
+
+En el RMI, dos punteros de rodamientos (de color rojo y verde) están asociados con los dos sistemas ADF y permiten a la tripulación sintonizar dos NDB diferentes al mismo tiempo. Los RMI pueden tener un doble propósito; los pilotos usan un interruptor en el RMI para seleccionar los cojinetes de rango omnidireccional (VOR) ADF y / o VHF (ver el Capítulo 10 para este último). En referencia a la Figura 9.7 (c), algunas aeronaves tienen un indicador de fuente de apoyo (ubicado adyacente al RMI) que confirma la selección de ADF o VOR.
+
+La evolución de la electrónica digital, junto con la integración de otros sistemas, ha llevado a la introducción de la unidad de visualización de control (CDU) del sistema de gestión de vuelo (FMS: véase el Capítulo 19) que se utiliza para gestionar el sistema ADF.
+
+Las aeronaves equipadas con sistemas de instrumentos electrónicos de vuelo (EFIS) tienen iconos NDB verdes que se muestran en el indicador electrónico de situación horizontal (EHSI), como se muestra en la Figura 9.7 (e).
+
+Punto clave
+
+ADF es un sistema de navegación de corto / medio alcance (200 nm) que opera dentro del rango de frecuencia 190
+a 1750 kHz, es decir, bandas de frecuencia baja y media. El sistema ADF utiliza una antena ortogonal que consta de dos bucles; uno alineado con la línea central del fuselaje, el otro en ángulo recto.
+
+
+Pon a prueba tu comprensión 9.1
+
+¿Por qué el sistema ADF busca una intensidad de señal nula en lugar de la máxima de una estación transmisora?
+
+Pon a prueba tu comprensión 9.2
+
+Explique la función del interruptor ADF / ANT que está presente en algunos paneles ADF.
+
+
+Pon a prueba tu comprensión 9.3
+
+Explica el propósito de un oscilador de frecuencia de latido (BFO) y por qué se necesita en un receptor ADF.
+
+9.4 Aspectos operacionales de ADF
+
+Las ondas de radio ADF se propagan como ondas de tierra y / u ondas de cielo. Los problemas asociados con ADF son inherentes al rango de frecuencia que utiliza el sistema. Las transmisiones ADF son susceptibles a errores de:
+
+Condiciones atmosféricas: la altura y la profundidad de la ionosfera variarán según la actividad solar. Las ondas del cielo (ver Figura 9.8) se verán afectadas en consecuencia, ya que sus distancias de salto asociadas variarán debido a la refracción en la ionosfera. Esto es particularmente notable al amanecer y al atardecer.
+
+Aspectos físicos del terreno: las montañas y los valles reflejarán las ondas de radio, causando la recepción de múltiples caminos. Refracción costera: ondas de baja frecuencia que se propagan a través de la superficie de la tierra ya que las ondas terrestres exhibirán características diferentes cuando viajen sobre tierra versus agua. Esto se debe a que la atenuación de la onda de tierra es diferente sobre la tierra y el agua. La dirección de una onda de radio a través de la tierra cambiará (ver Figura 9.9) cuando llegue a la costa y luego viaje sobre el agua.
+
+Este efecto depende del ángulo entre la onda de radio y la costa.
+
+Error cuadrantal (QE): muchas partes de la estructura de la aeronave, p. El fuselaje y las alas están estrechamente relacionados en tamaño físico con la longitud de onda de las transmisiones de radio ADF. La energía radiada es absorbida en la célula y re-radiada, causando interferencia; Esto depende del ángulo relativo entre la dirección de desplazamiento, los aspectos físicos de la aeronave y la ubicación del transmisor ADF. Se pueden hacer correcciones para QE en el receptor.
+
+Interferencia: esto puede surgir de tormentas eléctricas, otras transmisiones de radio, construcción estática
+arriba / descargas y otros equipos eléctricos en la aeronave.
+
+La precisión de un sistema de navegación ADF es del orden de 5 grados para las balizas de localización y de 10 grados para las balizas en ruta. Cualquiera de las condiciones anteriores conducirá a errores en la información de demora que se muestra en el RMI. Si estas condiciones ocurren en combinación, los errores de navegación serán significativos. Los pilotos no pueden usar el ADF para la navegación de precisión debido a estas limitaciones.
+
+La mayor necesidad de una mayor precisión y fiabilidad de los sistemas de navegación condujo a una nueva generación de radioayudas para la navegación en ruta; Esto se trata en el próximo capítulo. Mientras tanto, los transmisores ADF permanecen instalados en todo el mundo y el sistema se utiliza como una ayuda secundaria de navegación por radio. El equipo permanece instalado en aviones modernos, aunque integrado con otros sistemas de radio navegación.
+
+
+Punto clave
+
+Las ondas de radio ADF se propagan como ondas de tierra y / u ondas de cielo. Los problemas asociados con ADF son inherentes al rango de frecuencia que utiliza el sistema.
+

@@ -1,0 +1,108 @@
+\documentclass[a4paper,12pt,twoside]{article}
+
+\usepackage{../IyA.estilo.2019}
+%\usepackage{acronym}	% Inclusi\'on acr\'onimos
+			%Definicion acronimo
+			%\acrodef{label}[acronym]{written out form}	
+
+%\usepackage[acronym]{glossaries,ifthen,xkeyval,xfor,amsgen}
+			%Siempre despues del paquete hyperref
+
+%---------------incorpora acronimos
+\newcommand{\acronimo}[1]{\gloss[word]{#1} (\gloss[short]{#1})}
+\makegloss
+
+
+%-------------------para incluir archivos graficos .gif------%
+\epstopdfDeclareGraphicsRule{.gif}{png}{.png}{%
+  convert gif:#1 png:\OutputFile
+}
+\AppendGraphicsExtensions{.gif}
+
+\title{S\'intesis de las comunicaciones de a bordo}
+\author{Ing. Jorge O. Garc\'ia (jgarcia@efn.uncor.edu)}
+\date{\today}
+
+\newcommand{\fullref}[1]{\ref{#1} de la p\'agina \pageref{#1}}
+
+\begin{document}
+
+\renewcommand{\tablename}{Tabla}
+\newcommand{\ESPACIO}{\rule{0in}{3ex}}
+
+\maketitle
+\thispagestyle{fancy}
+
+\tableofcontents
+
+\newpage
+
+% Capítulo 9. Síntesis de las comunicaciones de a bordo
+
+% 9.1 Comunicaciones en VHF
+% 9.2 Comunicaciones en HF
+
+
+
+%\input{tex/acronimos.tex}
+
+\input{tex.U09/U09.01.2020.introduccion.tex}
+
+\input{tex.U09/U09.02.2020.espectro.frecuencias.tex}
+
+\input{tex.U09/U09.03.2020.transceptor.tex}
+
+%\input{tex/glosario.tex}
+
+\newpage
+\printgloss{glsbase,tex/comunicaciones-glosario}
+
+%\printglossaries
+
+\newpage
+
+\bibliographystyle{plain}
+\bibliography{../IyA}
+%\bibliographystyle{plain}
+%\bibliography{sample}
+
+\end{document}
+
+
+%
+%  Asi se citan las direcciones web
+%
+%Example usage
+%
+%In the preamble:
+%---------------
+%
+%\usepackage{url}
+%
+%% Define a new 'leo' style for the package that will use a smaller font.
+%\makeatletter
+%\def\url@leostyle{
+%  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+%\makeatother
+%
+% Now actually use the newly defined style.
+%
+%\urlstyle{leo}
+%
+%
+%In a BibTeX entry:
+%------------------
+%
+%@misc{
+%    c.elmohamed,
+%    author = "Saleh Elmohamed",
+%    title = "Examples in {H}igh {P}erformance {F}ortran",
+%    howpublished = "Website",
+%    year = {1996},
+%    note = {\url{http://www.npac.syr.edu/projects/
+%                    cpsedu/summer98summary/ examples/hpf/hpf.html}}
+%}
+
+
+
+

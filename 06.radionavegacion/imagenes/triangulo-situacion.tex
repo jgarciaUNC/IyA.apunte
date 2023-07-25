@@ -1,0 +1,35 @@
+\begin{tikzpicture}[scale=1]
+\usetikzlibrary{snakes}
+\usetikzlibrary{calc}
+
+%  \draw[help lines, green!70, step=0.5] (0,0) grid (9,4);
+	% Impulso tiempo t0
+
+	\node[circle, 
+				shading=ball, 
+				fill=red!50, 
+				ball color=red,
+				text=white
+				] (M) at (0,0) {$\bf M$};
+
+	\node[circle,
+				shading=ball, 
+				ball color=green!20,
+%				text=white
+				] (E) at (8,0) {$\bf E$};
+
+	\node[circle,
+				shading=ball,
+%				ball color=black,
+				text=white
+				] (A) at (1.5,3) {$\bf A$};
+
+	\draw (M) ++(0.0,-0.5) node[anchor=north] {Estaci\'on Maestra}; 
+	\draw (E) ++(0.0,-0.5) node[anchor=north] {Estaci\'on Esclava}; 
+	\draw (A) ++(0.0,1.0) node[anchor=north] {Avi\'on}; 
+
+	\draw (M) -- (A) node[midway, above,anchor=east] {\large $r_1$};
+	\draw (E) -- (A) node[midway, above,anchor=south west] {\large $r_2$};
+	\draw (M) -- (E) node[midway, above,anchor=north] {\large $d$};
+
+\end{tikzpicture}

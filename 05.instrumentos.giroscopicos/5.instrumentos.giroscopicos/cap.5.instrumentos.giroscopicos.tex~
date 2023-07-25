@@ -1,0 +1,466 @@
+\makeatletter\let\ifGm@compatii\relax\makeatother
+% Problemas con el paquete geometry se solucionan con la anterior
+% sentencia. 18/5/2015
+\documentclass[10pt]{beamer}
+
+\usetheme{Warsaw}
+
+\usecolortheme{beaver}
+
+%\usepackage[utf8]{inputenc}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+
+\usepackage{amsmath} 
+\usepackage{amsfonts}
+\usepackage{latexsym}
+\usepackage{siunitx}	% Notacion cientifica
+
+\usepackage{textcomp}	% para poner  \textdegree º
+
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{url}
+
+\usepackage{appendix}
+\usepackage{pdflscape}	%rotacion 90Âº paginas y las muestra rotadas
+\usepackage[square]{natbib}
+\usepackage{rotating}
+
+\usepackage{tcolorbox}	%Crear cajas de colores como block en beamer
+
+
+\epstopdfDeclareGraphicsRule{.gif}{png}{.png}{%
+  convert gif:#1 png:\OutputFile
+}
+\AppendGraphicsExtensions{.gif}
+
+
+\newcommand{\gt}{>}
+
+
+%-----------------Titulo y autores
+
+\title{Cap\'itulo 5 \\
+	Instrumentos Girosc\'opicos}
+\subtitle{Instrumentos y Avi\'onica}
+\author{ Ing. Jorge Garcia}
+\institute{
+	\includegraphics[height=1.5cm]{imagenes/logos/400-anios} \hspace{3mm}	
+	\includegraphics[height=1cm]{imagenes/logos/logoUNC} \hspace{1mm}	
+	\includegraphics[height=1cm]{imagenes/logos/fcefyn} \hspace{1mm}	
+	\includegraphics[height=1cm]{imagenes/logos/dpto-aero-logo}
+	\\
+%	Departamento de Aeron\'autica \\
+%	Facultad de Ciencias Exactas, F\'isicas y Naturales \\
+%	Universidad Nacional de C\'ordoba
+	}
+\date{A\~no 2016}
+
+
+%----------------------------------CONTENIDO------------------
+
+% Capítulo 5. Instrumentos giroscópicos
+% 5.1.Propiedades giroscópicas aplicadas al instrumental aeron\'autico de a bordo.
+% 5.2    Indicadores de virajes, neum\'aticos, de CC y CA .
+% 5.3    Indicadores de actitud en dos ejes con giróscopo integrado, y remoto.
+% 5.4    Magnetismo terrestre, brújula, giróscopo direccional libre.
+% 5.5    Comp\'as giroscópico auto-corregido, indicador con giróscopo integrado, y remoto.
+% 5.6    Central giroscópica para la indicación de actitud en tres ejes y toda actitud.
+% 5.7    Giróscopo LASER                                                                
+
+
+\begin{document}
+
+%----------- titlepage -----------%
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section{Cap\'itulo 5. Instrumentos Girosc\'opicos}
+\label{sec:capitulo.5.instrumentos.giroscopicos}
+
+\begin{frame}{Cap\'itulo 5. Instrumentos Girosc\'opicos}
+
+\tableofcontents[pausesections]
+  
+\end{frame}
+
+
+\subsection{Propiedades girosc\'opicas aplicadas al instrumental aeron\'autico de a bordo}
+\label{sec:Propiedades.giroscopicas.aplicadas.al.instrumental.aeronautico.de.a.bordo.}
+
+\begin{frame}{Propiedades girosc\'opicas aplicadas al 
+	instrumental aeron\'autico de a bordo}
+  \begin{block}{Gir\'oscopo}
+    \begin{columns}
+      \begin{column}{0.65\textwidth}
+        \includegraphics[width=\linewidth]{imagenes/5.1.propiedades.giroscopicas/giroscopo.jpg}
+      \end{column}
+      \begin{column}{0.35\textwidth}
+	Es un dispositivo mec\'anico formado esencialmente por un cuerpo 
+	con simetr\'ia de rotación que gira alrededor de su eje de simetr\'ia
+      \end{column}
+    \end{columns}
+
+	\vspace{3mm}
+        \includegraphics[width=0.07\textwidth]{imagenes/iconos/video.jpg}
+	{\tiny \url{https://www.youtube.com/watch?v=cquvA_IpEsA}}
+  \end{block}
+
+\end{frame}
+
+\begin{frame}{Propiedades girosc\'opicas aplicadas al 
+	instrumental aeron\'autico de a bordo}
+  \begin{block}{Propiedades fundamentales}
+    \begin{itemize}
+    \item la {\bf inercia girosc\'opica} o ``{\it rigidez en el
+        espacio}''
+    \item y la {\bf precesi\'on}, que es la inclinaci\'on del eje en
+      \'angulo recto ante cualquier fuerza que tienda a cambiar el
+      plano de rotaci\'on
+    \end{itemize}
+        \includegraphics[width=0.07\textwidth]{imagenes/iconos/video.jpg}
+	\url{https://www.youtube.com/watch?v=JnKloSdUJLo}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Propiedades girosc\'opicas aplicadas al 
+	instrumental aeron\'autico de a bordo}
+  
+	
+\end{frame}
+
+% \begin{frame}{Propiedades girosc\'opicas aplicadas al instrumental aeron\'autico de a bordo}
+  
+% \end{frame}
+
+
+\begin{frame}{Propiedades girosc\'opicas aplicadas al instrumental aeron\'autico de a bordo}
+
+{\large Sistemas neum\'aticos para gir\'oscopos}
+
+	\includegraphics[width=0.85\textwidth]{imagenes/vacuum_system_venturi.png}
+
+        \includegraphics[width=0.07\textwidth]{imagenes/iconos/video.jpg}
+	\url{https://www.youtube.com/watch?v=q2Zgvxn4rSA}
+
+\end{frame}
+
+\begin{frame}{Propiedades girosc\'opicas aplicadas al instrumental aeron\'autico de a bordo}
+
+	{\large Sistemas neum\'aticos para gir\'oscopos}
+
+ 	\includegraphics[width=0.75\textwidth]{imagenes/vacuum_system_pump-driven.png}
+\end{frame}
+      
+\begin{frame}{Propiedades girosc\'opicas aplicadas al instrumental aeron\'autico de a bordo}
+
+	{\large Sistemas neum\'aticos para gir\'oscopos}
+
+ 	\includegraphics[width=0.55\textwidth]{imagenes/vacuum_system_pump-driven-twin_engine.png}
+
+\end{frame}
+
+
+      
+\subsection{Indicadores de virajes, neum\'aticos, de CC y CA}
+\label{sec:indicadores.viraje}
+
+\begin{frame}{Indicadores de virajes, neum\'aticos, de CC y CA}
+
+  \begin{block}{Coordinador de giro. Indicador de viraje}
+
+        \includegraphics[width=0.95\linewidth]{imagenes/5.2.indicadores.viraje/indicador_giro_viraje.png}
+
+      \end{block}
+
+\end{frame}
+
+
+\begin{frame}{Indicadores de virajes, neum\'aticos, de CC y CA}
+
+  \begin{block}{Indicador de viraje}
+    \begin{columns}
+      \begin{column}{0.45\textwidth}
+        \includegraphics[width=\linewidth]{imagenes/5.2.indicadores.viraje/indicador_viraje_01.png}
+      \end{column}
+      \begin{column}{0.45\textwidth}
+        \includegraphics[width=\linewidth]{imagenes/5.2.indicadores.viraje/indicador_viraje_02.png}
+      \end{column}
+
+    \end{columns}
+
+  \end{block}
+
+\end{frame}
+
+\begin{frame}{Indicadores de virajes, neum\'aticos, de CC y CA}
+
+  \begin{block}{Indicador de viraje}
+       \includegraphics[width=0.85\linewidth]{imagenes/5.2.indicadores.viraje/indicador_viraje_03.jpg}
+     \end{block}
+\end{frame}
+
+
+\begin{frame}{Indicadores de virajes, neum\'aticos, de CC y CA}
+
+  \begin{block}{Coordinador de giro}
+    \begin{columns}
+      \begin{column}{0.45\textwidth}
+        \includegraphics[width=\linewidth]{imagenes/5.2.indicadores.viraje/coordinador-de-virajes-1.jpg}
+      \end{column}
+      \begin{column}{0.45\textwidth}
+        \includegraphics[width=\linewidth]{imagenes/5.2.indicadores.viraje/coordinador-de-virajes-2.jpg}
+
+        \includegraphics[width=0.4\linewidth]{imagenes/5.2.indicadores.viraje/coordinador_viraje.jpg}
+      \end{column}
+
+    \end{columns}
+
+  \end{block}
+
+\end{frame}
+
+
+
+\begin{frame}{Indicadores de virajes, neum\'aticos, de CC y CA}
+  \begin{block}{Coordinador de giro}
+       \includegraphics[width=0.65\linewidth]{imagenes/5.2.indicadores.viraje/coordinador_viraje_02.png}
+     \end{block}
+
+{\tiny
+        \includegraphics[width=0.07\textwidth]{imagenes/iconos/video.jpg}
+	\url{https://https://www.youtube.com/watch?v=HahloQh716Q}
+}
+\end{frame}
+      
+\begin{frame}{Indicadores de virajes, neum\'aticos, de CC y CA}
+
+       \includegraphics[width=0.75\linewidth]{imagenes/5.2.indicadores.viraje/slipping_skidding.jpg}
+\end{frame}
+
+
+      
+\subsection{Indicadores de actitud en dos ejes con gir\'oscopo integrado, y remoto}          
+\label{sec:indicadores.actitud.2.ejes.con.giroscopo.integrado.y.remoto}
+
+
+\begin{frame}{Indicadores de actitud en dos ejes con gir\'oscopo integrado, y remoto}
+  
+Ver apunte de horizonte artificial
+\end{frame}
+
+\subsection{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}
+\label{sec:Magnetismo.terrestre.brujula.giroscopo.direccional.libre}
+
+\begin{frame}{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}
+  \begin{center}
+    \includegraphics[width=0.55\linewidth]{imagenes/5.4.brujua.giroscopo.direccional/tierra_campo_magnetico.png}
+    \includegraphics[width=0.35\linewidth]{imagenes/5.4.brujua.giroscopo.direccional/desviacion_polos.png}
+  \end{center}
+
+{\tiny
+        \includegraphics[width=0.07\textwidth]{imagenes/iconos/video.jpg}
+	\url{https://www.youtube.com/watch?v=5qDI3O-aKiw} \qquad
+	\url{https://www.youtube.com/watch?v=DwshhZq6T8Q}
+}
+\end{frame}
+
+\begin{frame}{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}
+
+  \begin{center}
+    \includegraphics[width=0.65\linewidth]{imagenes/5.4.brujua.giroscopo.direccional/brujula_magnetica.png}
+    \includegraphics[width=0.45\linewidth]{imagenes/5.4.brujua.giroscopo.direccional/MagneticCompass.jpg}
+  \end{center}
+  
+\end{frame}
+
+\begin{frame}{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}
+
+  	\begin{center}
+    	\includegraphics[width=0.95\linewidth]{imagenes/5.4.brujua.giroscopo.direccional/brujula_magnetica_construccion.gif}
+
+	\end{center}
+\end{frame}
+
+\begin{frame}{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}
+
+  \begin{center}
+    \includegraphics[width=0.85\linewidth]{imagenes/5.4.brujua.giroscopo.direccional/brujula_magnetica_desviacion.png}
+  \end{center}
+  
+\end{frame}
+
+\begin{frame}{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}
+
+  \begin{alertblock}{Errores br\'ujula magn\'etica. Aceleraci\'on}
+	\centering
+    \includegraphics[width=0.75\linewidth]{imagenes/5.4.brujua.giroscopo.direccional/brujula_error_aceleracion.jpg}
+    
+  \end{alertblock}
+
+{\tiny
+        \includegraphics[width=0.07\textwidth]{imagenes/iconos/video.jpg}
+	\url{https://www.youtube.com/watch?v=vUz09IpYCuY} 
+}
+
+\end{frame}
+
+\begin{frame}{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}
+
+  \begin{alertblock}{Errores br\'ujula magn\'etica. Giro}
+	\centering
+    \includegraphics[width=0.75\linewidth]{imagenes/5.4.brujua.giroscopo.direccional/brujula_error_aceleracion_02.jpg}
+    
+  \end{alertblock}
+
+{\tiny
+        \includegraphics[width=0.07\textwidth]{imagenes/iconos/video.jpg}
+	\url{https://www.youtube.com/watch?v=WqXujnDw-kE}
+}
+
+\end{frame}
+
+\begin{frame}{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}
+
+
+ El Directional Gyro Indicator (DGI) o Direction Indicator (DI)
+  es un instrumento que consiste en un giróscopo compuesto por una masa que gira rápidamente, libre para moverse sobre uno o dos ejes, perpendicular a los ejes de rotación y el uno de otro. Es una brújula que mira siempre al polo geográfico. \\
+      A principios del siglo XX, un
+      problema militar importante fue el control y la navegación de
+      los barcos, que cada vez presentaban diseños más
+      avanzados. Entre los primeros avances a este respecto destacó el
+      diseño de sensores que posibilitaran el control en lazo cerrado.\\
+      En 1903 el alemán Herman Anschütz-Kaempfe construyó un
+      girocompás que funcionaba y obtuvo una patente sobre su
+      diseño. En 1908, el alemán, junto al estadounidense Elmer
+      Ambrose Sperry patentaron el instrumento en los Estados Unidos y
+      Gran Breta\~na. 
+
+\end{frame}
+    
+\begin{frame}{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}
+  
+	Para la Primera Guerra Mundial, Sperry quizo vender el invento a los alemanes, y su compañero Anschütz-Kaempfe no estuvo de acuerdo. Este hecho marcó el inicio de una pugna legal por violación de patente entre ambos investigadores; que concluyó en 1915, cuando Anschütz-Kaempfe ganó el caso.
+
+	A partir de entonces el girocompás fue empleado para controlar la dirección de los barcos. Fue también significativo en esta área, el aporte de N. Minosrsky (1922), quien introdujo su controlador de tres términos para posibilitar dicho control de la dirección. Fue el primero en usar el controlador PID (Proporcional-Integral-Derivativo) y consideró efectos no lineales en los sistemas de lazo cerrado. 
+\end{frame}
+
+\begin{frame}{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}
+
+	Los girocompases tienen dos ventajas principales sobre la brújula magnética:
+
+	\begin{itemize}
+	\item Pueden señalar al norte geográfico, es decir, la dirección del eje de
+  	rotación de la Tierra, y no al norte magnético.
+	\item No se ven afectados
+  	por el metal del casco de los barcos.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}
+  \begin{center}
+    \includegraphics[width=0.85\linewidth]{imagenes/5.4.brujua.giroscopo.direccional/giroscopo_direccional.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}
+  \begin{block}{Control de la desviaci\'on}
+    \begin{itemize}
+    \item {\bf Desv\'io o precesi\'on real:} la fricci\'on de los rodamientos
+	sobre los que giran el motor y las cunas puede originar, con el tiempo,
+	desequilibrios de las cunas, lo que ocasiona desv\'ios del sistema
+	card\'anico, los cuales resultan pr\'acticamente inapreciables.
+      \item {\bf Desv\'io o precesi\'on aparente:} mientras el eje de rotaci\'on
+	del gir\'oscopo se halla apuntando al Norte, el movimiento de rotaci\'on
+	de la tierra provoca una desviaci\'on aparente del eje del rotor,
+	aproximadamente 15 º/hora x sen latitud.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}
+  \begin{block}{Equilibrado de la cuna}
+    
+  \end{block}
+\end{frame}
+
+\begin{frame}{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}
+  \begin{block}{Dispositivo de erecci\'on}
+    
+  \end{block}
+\end{frame}
+
+\begin{frame}{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}
+  \begin{block}{Errores card\'anicos (gimball errors}
+    Al nombrase la p\'erdida de perpendicularidad entre los ejes, se considera que no
+	mantienen su perpendicularidad en ninguno de los planos que las contiene,
+	
+  \end{block}
+\end{frame}
+
+\begin{frame}{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}
+
+\end{frame}
+
+\begin{frame}{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}
+
+\end{frame}
+
+\subsection{Comp\'as girosc\'opico auto-corregido, indicador con gir\'oscopo integrado, y remoto}
+\label{sec:Compas.giroscopico.auto-corregido.indicador.con.giroscopo.integrado.y.remoto}
+
+\begin{frame}{Comp\'as girosc\'opico auto-corregido, indicador con gir\'oscopo integrado, 
+	y remoto}
+
+
+\end{frame}
+
+\begin{frame}{Comp\'as girosc\'opico auto-corregido, indicador con gir\'oscopo integrado, 
+	y remoto}
+
+
+%{\tiny Ref: \url{https://www.ecured.cu/Br%C3%BAjula_girosc%C3%B3pica}}
+
+\end{frame}
+
+\begin{frame}{Comp\'as girosc\'opico auto-corregido, indicador con gir\'oscopo integrado, 
+	y remoto}
+  
+
+\end{frame}
+
+\begin{frame}{Comp\'as girosc\'opico auto-corregido, indicador con gir\'oscopo integrado, 
+	y remoto}
+  
+\end{frame}
+
+\begin{frame}{Comp\'as girosc\'opico auto-corregido, indicador con gir\'oscopo integrado, 
+	y remoto}
+  
+\end{frame}
+
+
+\subsection{Central girosc\'opica para la indicaci\'on de actitud en tres ejes y toda actitud}
+\label{sec:Central.giroscopica.para.la.indicacion.de.actitud.en.tres.ejes.y.toda.actitud}
+
+\begin{frame}{Central girosc\'opica para la indicaci\'on de actitud en tres ejes y toda actitud}
+  
+\end{frame}
+
+\subsection{Gir\'oscopo laser}
+\label{sec:Giroscopo.laser}
+
+\begin{frame}{Gir\'oscopo laser}
+  
+\end{frame}
+
+\begin{frame}{Bibliografia}
+	
+\end{frame}
+
+ \end{document}

@@ -1,0 +1,36 @@
+\section{Introducci\'on}
+\label{sec:comunicaciones.a.bordo.introduccion}
+
+Hubo \'epocas en la aviaci\'on en las cuales los pilotos se encontraban volando solos, librados a su suerte, sin posibilidad de comunicarse con otros que se encontraban en tierra o en vuelo.
+
+Con el correr del tiempo se desarrollaron medios de comunicaci\'on utilizando las ondas electromagn\'eticas, con lo cual se logr\'o la transmisi\'on de gran cantidad de informaci\'on a los pilotos, las cuales no consisten s\'olo en comunicaci\'on verbal sino tambi\'en datos necesarios para la seguridad del vuelo.
+
+Hoy en d\'ia resulta dif\'icil imaginar una aeronave, independiente de su tama\~no, sin un sistema de comunicaciones a bordo. A\'un las m\'as peque\~nas pueden contar con un simple transmisor-receptor de radio para sus comunicaciones con tierra.
+
+\begin{figure}[!h]
+  \centering
+   \includegraphics[width=\textwidth]{Imagenes/U09.Imagenes/comunicaciones.gif}
+  \caption{Esquema de comunicaciones actuales}
+  \label{fig:esquema.comunicaciones.actual}
+\end{figure}
+
+El gran desarrollo tecnol\'ogico de la \'epoca ha hecho posible disponer de equipos de radio aeron\'auticas de diversos tipos, tama\~nos reducidos y gran variedad de posibilidades. 
+
+Los equipos de radios pueden transmitir desde la voz hasta datos y, tambi\'en, modificar de forma aleatoria las frecuencias de emisi\'on (Have Quick), codificando sus transmisiones con claves secretas de forma que s\'olo los equipos que disponen de las mismas puedan comunicarse.
+
+
+Un equipo de radio a bordo de la aeronave tiene como funci\'on principal comunicarse con los controles de tr\'afico a\'ereo que se encuentran en tierra, \acronimo{ATC}, de forma de proveer un flujo de aeronaves controlado en las operaciones de decolaje y aterrizaje en los aer\'odromos. 
+
+El esquema b\'asico de un sistema de comunicaciones por voz se muestra en la Figura \ref{fig:sistema.radio.x.voz}.
+
+\begin{figure}[!h]
+  \centering
+  \subfigure[ Emisor de amplitud modulada]{
+	\includegraphics[height=6cm]{Imagenes/emisor-am.gif}
+	}
+  \subfigure[ Receptor de amplitud modulada]{
+	\includegraphics[height=6cm]{Imagenes/receptor-am.gif}
+	}
+  \caption{Sistema de radio por voz}
+  \label{fig:sistema.radio.x.voz}
+\end{figure}

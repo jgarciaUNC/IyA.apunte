@@ -1,0 +1,179 @@
+Transmisores y receptores
+
+
+Los transmisores y receptores se utilizan ampliamente en los sistemas de comunicación y navegación de aeronaves.
+
+Junto con una o más antenas, son responsables de implementar el enlace vital entre la aeronave, las estaciones terrestres, otras aeronaves y satélites. Este capítulo proporciona una introducción general a los principios básicos y el funcionamiento de los transmisores y receptores. Estos temas se desarrollan más en los capítulos 4 y 5.
+
+3.1 Un sistema de radio simple
+
+
+La Figura 31 muestra un sistema de comunicación por radio simple que comprende un transmisor y un receptor para usar con señales de onda continua (CW). La comunicación se logra simplemente activando o desactivando la señal de radiofrecuencia. La codificación se puede lograr interrumpiendo el suministro a la etapa del amplificador de potencia o incluso a la etapa del oscilador; sin embargo, normalmente se aplica dentro de la etapa del conductor que opera a un nivel de potencia más modesto. La codificación de la etapa del oscilador generalmente da como resultado una estabilidad de frecuencia deteriorada. Por otro lado, intentar interrumpir las corrientes y / o voltajes apreciables que aparecen en la etapa del amplificador de potencia también puede resultar algo problemático.
+
+La forma más simple de receptor CW consiste en nada más que un amplificador de radiofrecuencia (que proporciona ganancia y selectividad) seguido de un detector y un amplificador de audio. La etapa del detector mezcla una señal de radiofrecuencia generada localmente producida por el oscilador de frecuencia de latido (BFO) con la señal entrante para producir una señal que se encuentra dentro del rango de frecuencia de audio (típicamente entre 300 Hz y 3.4 kHz).
+
+Como ejemplo, suponga que la señal entrante está a una frecuencia de 1 00 kHz y que el BFO u200bu200bestá produciendo una señal a 99 kHz. Aparecerá una señal en la diferencia entre estas dos frecuencias (1 kHz) en la salida de la etapa del detector. Esto se amplificará dentro de la etapa de audio antes de ser alimentado al altavoz.
+
+Ejemplo 3.1.1
+
+Una onda de radio tiene una frecuencia de 1 62. 5 kHz. Si se va a obtener una frecuencia de tiempo de 1,25 kHz, determine las dos posibles frecuencias de BFO.
+
+
+El B FO puede ser superior o inferior a la frecuencia de la señal entrante en una cantidad que es igual a la frecuencia del latido (es decir, la señal audible que resulta del 'latido' de las dos frecuencias y que aparece en la salida de la etapa del detector).
+
+Por lo tanto,] sFO u003d! RF Â ±] AF desde el cual:
+
+fsFO u003d (1 62.5 ± 1 .25) kHz u003d 1 60.75 o 1 63 .25 kHz
+
+Pon a prueba tu comprensión 3.1
+
+Se produce una señal de frecuencia de audio de 850 Hz cuando un BFO se establece en 455.5 kHz. ¿Cuál es la frecuencia de la señal de entrada al detector?
+
+3.1 .1 Código Morse
+
+Los transmisores y receptores para la operación CW son extremadamente simples pero, sin embargo, pueden ser extremadamente eficientes. Esto los hace particularmente útiles para la comunicación de desastres y emergencias o para cualquier situación que requiera el uso óptimo de equipos de baja potencia. Las señales se transmiten utilizando el código inventado por Samuel Morse (ver Figuras 3 .2 y 3. 3).
+
+Figura 3.3 Señal de código Morse para la letra C
+
+3.2 Modulación y demodulación
+
+Para transmitir información utilizando una portadora de radiofrecuencia, la información de la señal debe superponerse o 'modularse' en la portadora.
+
+Modulación es el nombre dado al proceso de cambiar una propiedad particular de la onda portadora en simpatía con la señal instantánea de voltaje (o corriente).
+
+Los métodos de modulación más utilizados son la modulación de amplitud (AM) y la modulación de frecuencia (FM). En el primer caso, la amplitud de la portadora (su voltaje máximo) varía de acuerdo con el voltaje, en cualquier instante, de la señal de modulación. En el último caso, la frecuencia portadora varía de acuerdo con el voltaje, en cualquier instante, de la señal de modulación.
+
+La figura 3 .4 muestra el efecto de la amplificación y la modulación de frecuencia de una portadora sinusoidal (tenga en cuenta que la señal de modulación es en este caso también sinusoidal). En la práctica; ocurrirían muchos más ciclos de la portadora de RF en el lapso de tiempo de un ciclo de la señal de modulación. El proceso de modulación de un portador se realiza mediante un circuito modulador, como se muestra en la Figura 3.5. Las formas de onda de entrada y salida para circuitos moduladores de amplitud y frecuencia se muestran en la Figura 3.6.
+
+La demodulación es el reverso de la modulación y es el medio por el cual la información de la señal se recupera de la portadora modulada.
+
+La demodulación se logra por medio de un demodulador (a veces también llamado detector).
+
+La salida de un demodulador consiste en una versión reconstruida de la información de la señal original presente en la entrada de la etapa del modulador dentro del transmisor. Las formas de onda de entrada y salida para circuitos moduladores de amplitud y frecuencia se muestran en la Figura 3 .6. Veremos cómo funciona esto un poco más tarde.
+
+3.3. Transmisores de AM
+
+La figura 3.7 muestra el esquema de bloques de un simple transmisor de AM. Un oscilador de RF preciso y estable genera la señal portadora de radiofrecuencia. La salida de esta etapa se amplifica y pasa a una etapa de amplificador de potencia de RF modulada. La inclusión de un amplificador entre el oscilador de RF y la etapa modulada también ayuda a mejorar la estabilidad de la frecuencia.
+
+La señal de bajo nivel del micrófono se amplifica utilizando un amplificador AF antes de pasar a un amplificador de potencia AF. La salida del amplificador de potencia se alimenta como el suministro a la etapa del amplificador de potencia de RF modulada.
+
+Aumentar y reducir el suministro a esta etapa es fundamental para aumentar y reducir la amplitud de su señal de salida de RF.
+
+La señal de RF modulada se pasa a través de una unidad de acoplamiento de antena. Esta unidad hace coincidir la antena con el amplificador de potencia de RF y también ayuda a reducir el nivel de cualquier componente armónico no deseado que pueda estar presente. El transmisor de AM que se muestra en la Figura 3.7 usa modulación de alto nivel en la cual la señal de modulación se aplica a la etapa final del amplificador de potencia de RF.
+
+En la figura 3.8 se muestra una alternativa a la modulación de alto nivel de la onda portadora. En esta disposición, la modulación se aplica a una etapa de amplificador de RF de baja potencia y la señal modulada en amplitud se amplifica aún más por la etapa final del amplificador de potencia de RF. Para evitar la distorsión de la forma de onda modulada, esta etapa final debe funcionar en modo lineal (la forma de onda de salida debe ser una réplica fiel de la forma de onda de entrada). La modulación de bajo nivel evita la necesidad de un amplificador de potencia AF.
+
+
+3.4 transmisores FM
+
+La figura 3 .9 muestra el esquema de bloques de un simple transmisor FM. Una vez más, un oscilador de RF preciso y estable genera la señal portadora Y de radiofrecuencia. Al igual que con el transmisor de AM, la salida de esta etapa se amplifica y pasa a una etapa de amplificador de potencia de RF. Una vez más, la inclusión de un amplificador entre el oscilador de RF y la etapa de potencia de RF ayuda a mejorar la estabilidad de la frecuencia.
+
+La señal de bajo nivel del micrófono se amplifica utilizando un amplificador AF antes de pasar a un elemento de reactancia variable (consulte el Capítulo 4) dentro del circuito sintonizado del oscilador de RF. La aplicación de la señal de AF al elemento de reactancia variable hace que la frecuencia del oscilador de RF aumente y disminuya en la simpatía con la señal de AF.
+
+Al igual que con el transmisor de AM, la señal de RF final del amplificador de potencia se pasa a través de una unidad de acoplamiento de antena que hace coincidir la antena con: el amplificador de potencia de RF y también ayuda a reducir el nivel de cualquier componente armónico no deseado que pueda estar presente. Se encontrará más información sobre los emisores ï¿½ en los Capítulos 4 y 5.
+
+3.5 receptores de radio sintonizados
+
+Los receptores de radiofrecuencia sintonizados (TRF) proporcionan un medio para recibir señales locales utilizando bastante: circuitería mínima. El esquema de bloque simplificado. de un receptor TRF se muestra en la Figura 3.9.
+
+La señal de la antena se aplica a una etapa de amplificador de RF. Esta etapa proporciona una cantidad moderada de ganancia en la frecuencia de la señal. También proporciona selectividad al incorporar uno o más circuitos sintonizados a la frecuencia de la señal. Esto ayuda al receptor a rechazar las señales que pueden estar presentes en los canales adyacentes.
+
+La salida de la etapa del amplificador de RF se aplica al demodulador. Esta etapa recupera la señal de frecuencia de audio de la señal de RF modulada.
+
+La etapa de demodulador también puede incorporar un circuito sintonizado para mejorar aún más la selectividad del receptor.
+
+La salida de la etapa del demodulador se alimenta a la entrada de la etapa del amplificador AF. Esta etapa aumenta el nivel de la señal de audio del demodulador para que sea suficiente para conducir un altavoz.
+
+Los receptores TRF tienen una serie de limitaciones con respecto a la sensibilidad y la selectividad y esto hace que este tipo de receptor de radio en general no sea adecuado para su uso en equipos de radio comerciales.
+
+3.6 receptores Superhet
+Los receptores Superhet proporcionan ambos mejorados
+sensibilidad (la capacidad de recibir señales débiles)
+y selectividad mejorada (la capacidad de
+discriminar señales en canales adyacentes) cuando
+en comparación con los receptores TRF. Receptores Superhet
+se basan en el supersónico-heterodino
+principio donde la señal de entrada deseada es
+convertido a una frecuencia intermedia fija (IF)
+en el cual la mayoría de la ganancia y selectividad es
+aplicado. La frecuencia intermedia elegida es
+generalmente 455 kHz o 1 .6 MHz para receptores AM
+y 1 0.7 MHz para comunicaciones y FM
+receptores El esquema de bloque simplificado de un
+El receptor superhet simple se muestra en la Figura 3. Yo yo
+La señal de la antena se aplica a un
+Etapa amplificadora de RF. Al igual que con el receptor TRF,
+esta etapa proporciona una cantidad moderada de ganancia en
+La frecuencia de la señal. El escenario también proporciona
+selectividad incorporando uno o más sintonizados
+circuitos a la frecuencia de la señal.
+Se aplica la salida de la etapa del amplificador de RF
+a la mesa de mezclas. Esta etapa combina la RF
+señal con la señal derivada del local
+etapa del oscilador (LO) para producir una señal
+en la frecuencia intermedia (IF). Vale la pena
+observando que la señal de salida producida por el
+mezclador en realidad contiene una serie de señales
+componentes, incluida la suma y diferencia de
+la señal y las frecuencias del oscilador local también
+como las señales originales más los componentes armónicos.
+La señal deseada (es decir, la que corresponde a
+el IF) se pasa (generalmente por alguna forma de filtro)
+vea la página 48) a la etapa del amplificador IF. Este escenario
+proporciona amplificación, así como un alto grado de
+selectividad.
+La salida de la etapa IF ifier ampl se alimenta a
+La etapa del demodulador. Al igual que con el receptor TRF,
+esta etapa se usa para recuperar la frecuencia de audio
+señal de la señal de RF modulada.
+Finalmente, la señal AF del demodulador
+la etapa se alimenta al amplificador AF. Como antes, esto
+etapa aumenta el nivel de la señal de audio de
+el demodulador para que sea suficiente conducir un
+altoparlante.
+Para hacer frente a una amplia variación en la señal
+amplitud,
+Superhit
+receptores
+invariablemente
+incorporar alguna forma de ganancia automática
+control (AGC). En la mayoría de los circuitos, se utiliza el nivel de CC del demodulador de AM (consulte la página 5 1)
+para controlar la ganancia del amplificador IF y RF
+etapas A medida que aumenta el nivel de señal, el nivel de CC
+desde la etapa de demodulador aumenta y esto es
+Se utiliza para reducir la ganancia de RF e IF
+amplificadores
+La frecuencia intermedia del receptor superhet
+JiF es la diferencia entre la frecuencia de la señal,
+fRF, y la frecuencia del oscilador local, fw. los
+la frecuencia deseada del oscilador local puede ser
+calculado a partir de la relación:
+fw fRF ± frF
+u003d
+Tenga en cuenta que en la mayoría de los casos (y para simplificar
+arreglos de sintonización) el oscilador local funciona
+por encima de la frecuencia de la señal, es decir, Ao u003d! RF +! IF Entonces,
+por ejemplo, un receptor superhet con 1 .6 MHz
+SI está sintonizado para recibir una señal a 5.5 MHz
+operar con un LO a (5.5 + 1 .6) u003d 7. 1 MHz.
+Figura 3 . 1 0 muestra la relación entre el
+frecuencias que entran y salen de una etapa de mezcla.
+
+Ejemplo 3ï¿½2
+Un receptor FM VHF Band II con 1 0. 7 MHz I F
+cubre el rango de frecuencia de señal 88 M H z a 1 08
+Megahercio. Sobre qué rango de frecuencia debe el local
+oscilador se sintoniza?
+Usando fw! RF + JiF cuando! RF
+88 MHz da
+88
+MHz
++
+1
+0.7
+MHz
+98.7
+MHz
+fw
+u003d
+u003d

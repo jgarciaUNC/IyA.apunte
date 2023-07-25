@@ -1,0 +1,463 @@
+David Harris et al. Flight instruments & automatic flight control systems
+-------------------------------------------------------------------------
+
+Cap. 4. 
+
+Instrumentación Electrónica
+
+A medida que la operación de las aeronaves de transporte y sus sistemas se ha ido automatizando cada vez más y, al mismo tiempo, se ha reducido el número de miembros de la tripulación de la cabina de vuelo, se ha vuelto imposible para la tripulación monitorear y controlar los procesos automatizados utilizando pantallas de instrumentos convencionales. Para superar esta situación, la forma tradicional del instrumento ha sido reemplazada casi por completo por pantallas generadas por computadora proyectadas sobre unas pocas pantallas de tubo de rayos catódicos (CRT). Estas pantallas suelen combinar las características de una serie de instrumentos convencionales y, especialmente en el caso de las pantallas de motor y sistema, normalmente solo muestran la información más esencial, y los pilotos seleccionan la información menos crítica solo según sea necesario.
+
+Los principales sistemas de visualización electrónica en uso son el Sistema electrónico de instrumentos de vuelo (EFIS) para la presentación y el control de la información de navegación y, para la presentación de información de motores y sistemas, el Sistema de alerta de tripulación e indicación de motores (EICAS) o el Monitoreo centralizado de aeronaves. (ECAM). EICAS se utiliza generalmente en aeronaves de fabricación estadounidense y ECAM en aeronaves de Airbus Industries.
+
+
+Sistemas electrónicos de instrumentos de vuelo (EFIS)
+
+El EFIS consta de dos sistemas idénticos que proporcionan al capitán y al primer oficial información de navegación en dos pantallas cada uno, montadas una encima de la otra. La pantalla superior es un indicador electrónico de actitud y dirección (EADI) y la pantalla inferior es un indicador electrónico de situación horizontal (EHSI). La pantalla de cada piloto tiene su propio panel de control y un generador de símbolos a partir del cual se generan las representaciones electrónicas en las pantallas. Un tercer generador de símbolos actúa como una unidad de reserva y puede suministrar cualquiera de las pantallas del piloto en caso de falla.
+
+Cada generador de símbolos recibe entradas de todas las fuentes de navegación, tanto internas como externas, e interactúa entre estas entradas y las pantallas de visualización para presentar la información en un formato estándar. Además, los generadores de símbolos realizan las funciones de seguimiento y control del EFIS. En la Figura 4.1 se muestra un diagrama de bloques del proceso EFIS.
+
+Se verá en la Figura 4.1 que tanto la pantalla del capitán como la del primer oficial están provistas de un panel de control y una unidad de sensor de luz remota. El panel de control se utiliza para controlar las pantallas EADI y EHSI y el sensor de luz remoto ajusta automáticamente el brillo de las pantallas de acuerdo con el nivel de luz en la cabina de vuelo. Un panel de control EFIS típico se ilustra en la Figura 4.2.
+
+El indicador electrónico de actitud y dirección (EADI)
+
+La pantalla de EADI muestra la actitud de la aeronave en cabeceo y balanceo en el formato convencional de un horizonte artificial dividido horizontalmente, con la mitad superior de color azul y la mitad inferior de color amarillo (o arena). Los datos fuente para la indicación de actitud son los sistemas de referencia inercial de la aeronave. La pantalla también incluye barras de comando del director de vuelo, indicaciones de desviación del localizador y senda de planeo del ILS, e indicación de desviación de una velocidad aerodinámica seleccionada.
+
+La altitud de radio, la altura de decisión y los modos de funcionamiento de los sistemas de vuelo automático y acelerador automático también se muestran en la pantalla EADI.
+
+Entre 1000 pies y 2500 pies, la altitud de radio se muestra solo en formato digital, pero por debajo de 1000 pies sobre el nivel del suelo (agl) la pantalla cambia para incluir una
+
+Visualización de escala circular analógica también. A medida que la altura agl disminuye, los segmentos de la escala circular blanca se eliminan progresivamente en sentido contrario a las agujas del reloj. La altura de decisión (DH) se puede establecer mediante una perilla de control en el panel de control de EFIS y la DH seleccionada se muestra digitalmente en la pantalla EADI y aparece un marcador de color magenta en la altura seleccionada en la escala circular. A 50 pies por encima de la DH, comienza a sonar una campana sonora y su frecuencia aumenta hasta que se alcanza la DH. En este punto, la escala de altitud de radio circular y el marcador DH cambian de color a ámbar (amarillo) y parpadean durante varios segundos. Esta alerta se puede cancelar presionando un botón en el panel de control de EFIS.
+
+
+La visualización tanto en esta como en la pantalla EHSI está en color y los colores utilizados siguen las convenciones establecidas en JAR Ops 25 como se indica a continuación:
+
+Las características de la pantalla deben estar codificadas por colores de la siguiente manera:
+
+Advertencias
+
+Sobres de vuelo y límites del sistema
+
+Precauciones, fuentes anormales
+
+Tierra
+
+Cielo
+
+Modos comprometidos
+
+Puntero de desviación ILS
+
+barra de director de vuelo
+
+Rojo
+
+Rojo
+
+amarillo/ámbar
+
+Bronceado/marrón
+
+Cian/azul
+
+Verde
+
+Magenta
+
+Magenta/verde
+
+A las funciones de visualización especificadas se les deben asignar colores de uno de los siguientes conjuntos de colores:
+
+Símbolos de referencia fijos
+
+Datos actuales, valores
+
+Modos armados
+
+Datos seleccionados, valores
+
+Encabezado seleccionado
+
+Ruta/plan de vuelo activo
+
+Serie 1
+
+Blanco
+
+Blanco
+
+Blanco
+
+Verde
+
+Magenta
+
+Magenta
+
+conjunto 2
+
+Amarillo
+
+Verde
+
+cian
+
+cian
+
+cian
+
+Blanco
+
+Se desaconseja el uso extensivo del amarillo para otra información que no sea de precaución/anormal.
+
+En el conjunto de colores 1, se pretende que el magenta se asocie con aquellos parámetros analógicos que constituyen información de tipo "volar hacia" o "mantener centrado".
+
+Las áreas de precipitación y turbulencia pronosticada deben codificarse con colores de la siguiente manera:
+
+Precipitación (mm/h)
+
+Turbulencia
+
+0 a 1
+
+1 a 4
+
+4 a 12
+
+12 a 50
+
+Por encima de 50
+
+Negro
+
+Verde
+
+amarillo/ámbar
+
+Rojo
+
+Magenta
+
+Blanco o magenta
+
+En la Figura 4.3 se muestra una pantalla de visualización típica de EADI.
+
+El indicador electrónico de situación horizontal (EHSI)
+
+La más baja de las dos pantallas EFIS, la EHSI, presenta una pantalla de información de navegación de vuelo y el progreso en uno de los nueve modos posibles, seleccionados desde la sección HSI del panel de control EFIS. Los modos disponibles son los siguientes:
+
+
+
+MAPA. La pantalla utilizada para la información de navegación en ruta y la más comúnmente seleccionada en vuelos de crucero. La pantalla muestra características por delante de la aeronave, y el símbolo de la aeronave aparece en la parte inferior de la pantalla. Esto se ilustra en la Figura 4.4.
+
+MAPA CTR. Esencialmente lo mismo que MAP, pero la pantalla se centra en la posición actual de la aeronave, con un símbolo de aeronave en el centro de la pantalla.
+
+PLAN. Esta pantalla muestra la ruta planificada con waypoints y se utiliza principalmente cuando se ingresan waypoints en la computadora del sistema de gestión de vuelo (FMS) antes del vuelo o cuando se realizan cambios en la ruta planificada. Se ilustra en la Figura 4.5.
+
+VOR COMPLETO/ILS COMPLETO. Estas pantallas son básicamente idénticas y muestran una rosa de los vientos con indicaciones de rumbo y desviación que siguen formatos convencionales. Se utilizan cuando se comprueba la trayectoria de la aeronave con un VOR o un localizador ILS. La pantalla con ILS seleccionado se muestra en la Figura 4.6. Con VOR seleccionado, la pantalla sería esencialmente la misma, excepto que el VOR en uso se indicaría en la esquina inferior izquierda, donde aparece ILS en el diagrama.
+
+EXP VOR/ILS. En el modo ampliado, la información que se muestra es la misma que en el modo completo, pero en formato de semimapa. Solo el segmento relevante de la rosa de los vientos se muestra en la parte superior de la pantalla, con un puntero de rumbo. La trayectoria actual (instantánea) de la aeronave se muestra como una línea sólida que se extiende desde el símbolo de la aeronave hasta el arco de la brújula. El rumbo de la radioayuda seleccionada, ILS o VOR, se muestra como una línea sólida que se extiende desde el centro de la escala de desviación hasta el arco de la brújula. La pantalla con ILS seleccionado se muestra en la Figura 4.7. Una vez más, la pantalla con VOR seleccionado es esencialmente la misma. En cualquier caso, la imagen del radar meteorológico se puede superponer a la pantalla, si es necesario.
+
+EXP NAV/NAV COMPLETO. Estos dos modos muestran información de navegación lateral y vertical en el mismo formato que un HSI convencional. El modo NAV ampliado muestra un arco de la brújula, mientras que el modo NAV completo
+muestra una rosa de los vientos completa y no permite que la pantalla del radar meteorológico se superponga, exactamente como con los modos VOR/ILS ampliado y completo.
+
+Visualización del modo de mapa
+
+Entre las latitudes 658S y 738N, la rosa de los vientos expandida puede estar referenciada al norte magnético o verdadero, según se requiera; por encima de esas latitudes, solo puede estar referenciada al norte verdadero. La información del encabezado es proporcionada por
+los sistemas de referencia inercial de la aeronave; los punteros de rumbo y track, por supuesto, solo se alinearán cuando no haya deriva.
+
+La escala y el puntero de desviación vertical indican si la aeronave está por encima o por debajo de la trayectoria de vuelo planificada y la escala y el puntero de desviación lateral si está a la derecha o a la izquierda de la trayectoria de vuelo planificada. La velocidad del viento se indica digitalmente en la esquina inferior izquierda de la pantalla, con una flecha que indica la dirección del viento. La flecha está orientada a la visualización del mapa, que está orientada a la trayectoria de la aeronave, por lo que la dirección del viento se muestra en relación con la trayectoria.
+
+La trayectoria instantánea aparece como una línea sólida que se extiende desde el vértice del símbolo triangular del avión hasta la rosa de los vientos. La escala de rango seleccionada se superpone y, cuando se está produciendo un cambio de altitud planificado, aparece un arco que indica el rango hasta la siguiente altitud (a la tasa actual de cambio de altitud) contra esta escala.
+
+Durante el cambio de rumbo, aparece un vector de tendencia discontinuo y curvo que muestra el rumbo previsto al final de los 30, 60 y 90 segundos desde el momento actual. La ruta de vuelo planificada aparece como una línea continua desde el vértice del símbolo de la aeronave hasta los puntos de ruta siguientes y subsiguientes.
+
+Las características terrestres de navegación, como las ayudas de navegación por radio y los aeropuertos, se colocan en la pantalla mediante el sistema de gestión de vuelo (FMS) a partir de los datos obtenidos de las estaciones VOR/DME y la posición de la aeronave se basa en estas entradas junto con las del INS/IRS de la aeronave. . Cuando está fuera del alcance de la cobertura VOR/DME, la posición de la aeronave se actualiza solo desde INS/IRS, pero se puede actualizar manualmente si es necesario.
+
+La presentación del radar meteorológico puede superponerse a la presentación del MAP, con la intensidad de los retornos del radar indicada en verde, amarillo y rojo en orden de intensidad. Algunas pantallas también indicarán la turbulencia pronosticada, basada en retornos de muy alta intensidad, en blanco o magenta.
+
+Visualización del modo PLAN
+
+La pantalla del modo PLAN, ilustrada en la Figura 4.5, se utiliza principalmente al ingresar o modificar el plan de vuelo lateral con la inserción de puntos de ruta. La ruta activa, de waypoint a waypoint, se muestra en la parte inferior de la pantalla, con funciones de navegación significativas, como aeropuertos y radiobalizas, incluidas en sus ubicaciones en relación con la ruta planificada. Cabe señalar que, en este modo, la pantalla está orientada al norte verdadero. La velocidad y dirección del viento y la visualización del radar meteorológico no se pueden superponer en el modo PLAN. En la parte superior de la pantalla se mantiene la rosa de los vientos ampliada con la ruta y el rumbo como en la pantalla MAP, junto con la distancia y el tiempo hasta el siguiente waypoint.
+
+Esta pantalla es particularmente útil como medio de verificación al insertar coordenadas de waypoint, antes de ingresarlas en la computadora de gestión de vuelo.
+
+Pantallas de modo ILS
+
+En el modo ILS hay dos visualizaciones de pantalla posibles, completa y extendida. Estas pantallas se utilizan principalmente durante la aproximación para el aterrizaje. En el modo ILS completo, una rosa de los vientos completa llena la parte central de la pantalla, con un símbolo de aeronave, una escala de desviación y un puntero de desviación que indica la posición de la aeronave en relación con el haz del localizador ILS superpuesto, como se ilustra en la Figura 4.6.
+
+La rosa de los vientos, impulsada por la entrada del sistema de referencia inercial, gira contra un puntero de rumbo fijo a medida que cambia el rumbo de la aeronave. El encabezado, magnético o verdadero, aparece digitalmente dentro del puntero. El rango DME seleccionado se muestra en la esquina superior izquierda de la pantalla, con la velocidad y dirección del viento en la esquina inferior izquierda. Aquí también se muestra el tipo de radiobaliza seleccionado, en este caso ILS, con la frecuencia de la baliza en la esquina inferior derecha. En el lado derecho de la pantalla se encuentra una escala de desviación vertical y un puntero para indicar la posición de la aeronave en relación con la trayectoria de planeo.
+
+Con el modo ILS ampliado (EXP) seleccionado, se muestra un arco de compás ampliado en la parte superior de la pantalla, como en los modos MAP y PLAN, con el rumbo de la aeronave mostrado en formato digital y analógico como antes. El rango DME seleccionado aparece en la esquina superior izquierda de la pantalla, mientras que la velocidad y la dirección del viento, y un recordatorio de que la pantalla se basa en transmisiones ILS, aparecen en la esquina inferior izquierda. La frecuencia ILS seleccionada aparece en la esquina inferior derecha.
+
+Una pantalla de semi-mapa llena la parte inferior de la pantalla, con el símbolo de un avión triangular colocado cerca de la parte inferior de la pantalla. Una escala de desviación lateral con un puntero de desviación se cruza con el vértice del símbolo de la aeronave y una línea sólida se extiende desde la barra central de la escala de desviación lateral hasta el arco de la brújula, lo que indica el rumbo del transmisor del localizador. Una segunda línea sólida, con una escala de alcance, se extiende desde el vértice del símbolo de la aeronave hasta el arco de la brújula, indicando la trayectoria actual (instantánea) de la aeronave. Cuando se selecciona un nuevo rumbo establecido, aparece brevemente una línea de puntos desde el vértice del símbolo de la aeronave hasta el error de rumbo. En el modo ILS, una escala de desviación vertical, con un puntero que indica la posición de la aeronave en relación con la trayectoria de planeo, se encuentra en el lado derecho de la pantalla. Los retornos del radar meteorológico se pueden superponer a la pantalla si es necesario. La pantalla ILS ampliada se ilustra en la Figura 4.7.
+
+Pantallas de modo VOR
+
+Las pantallas de modo VOR completo y ampliado son esencialmente las mismas que las pantallas ILS descritas anteriormente. Estas pantallas son útiles cuando se verifica la trayectoria y el rumbo de la aeronave en relación con un VOR/DME seleccionado y las principales diferencias en las características de la pantalla son que identificarán la baliza seleccionada e indicarán si la aeronave está siguiendo hacia (TO) o alejándose de (FROM). el faro En los modos VOR, por supuesto, no hay indicación de desviación vertical.
+
+Sistema de indicación de motores y alerta a la tripulación (EICAS)
+
+El sistema EICAS es una pantalla electrónica que consta de dos pantallas CRT montadas verticalmente, una encima de la otra, y generalmente ubicadas en el centro de la consola de la cabina, donde son fácilmente visibles para cualquier piloto. Las pantallas son capaces de presentar todos los datos operativos del motor y del sistema que tradicionalmente se muestran mediante una gran cantidad de diales en la estación de un ingeniero de vuelo, con instalaciones para mostrar mucha más información además. La parte superior de las dos pantallas, conocida como pantalla principal, normalmente muestra solo información esencial (es decir, principal) del motor, como la relación de presión del motor (EPR), la velocidad del carrete de la turbina (N 1 ) y la temperatura de los gases de escape (EGT). La pantalla más baja de las dos, conocida como pantalla secundaria, se puede usar para mostrar información menos importante (secundaria) y detalles de condiciones anormales de funcionamiento del motor o del sistema.
+
+Las pantallas EICAS son generadas por dos computadoras que reciben continuamente datos operativos de los motores y los diversos sistemas de la aeronave. En un momento dado, solo una computadora está operando el sistema, mientras que la otra funciona como reserva. Un panel de selección de pantalla permite a los pilotos seleccionar uno de los dos modos operativos, operativo o de estado. Un tercer modo, mantenimiento, está disponible en tierra, específicamente para uso del personal de mantenimiento. En la Figura 4.8 se muestra un diagrama esquemático de bloques de un EICAS típico.
+
+Modo operacional
+
+Este es el modo en el que se utiliza el sistema durante el vuelo. En este modo, la pantalla superior muestra la información principal del motor enumerada anteriormente y la pantalla inferior permanece en blanco mientras todos los parámetros operativos del motor y del sistema sean normales. En caso de que se desarrolle una condición anormal, aparecerá un mensaje de alerta en la pantalla superior y la pantalla inferior mostrará los detalles de la condición anormal en formato analógico y digital.
+
+La Figura 4.9 muestra la visualización de la pantalla superior con condiciones normales.
+
+La pantalla EICAS está codificada por colores, siguiendo los códigos JAR Ops 25 enumerados anteriormente para las pantallas EFIS.
+Cuando se desarrolla una condición de funcionamiento anormal del motor o del sistema, aparecerá un mensaje de advertencia o precaución apropiado en el lado izquierdo de la pantalla superior junto con una fila de punteros que dirigen la atención a la pantalla inferior, donde una pantalla analógica y digital detalla la naturaleza del problema. falla o condición crítica. Los mensajes de alerta relacionados con condiciones anormales son priorizados por la computadora EICAS para que aparezcan en orden de importancia y grado de respuesta de la tripulación requerida. Los mensajes de advertencia, que requieren una acción correctiva inmediata, aparecen en la parte superior de la pantalla en rojo.
+
+Los mensajes de precaución, que requieren el conocimiento inmediato de la tripulación y una posible acción correctiva, aparecen debajo de los mensajes de advertencia en amarillo (ámbar). Tanto los mensajes de advertencia como los de precaución van acompañados de una alerta sonora, como una campana de incendio o un tono repetido. Los mensajes de aviso, que solo requieren el conocimiento de la tripulación, están marcados en la pantalla y también aparecen en ámbar. Ninguna alerta auditiva acompaña a estos mensajes.
+
+En la Figura 4.10 se ilustra una pantalla EICAS con alertas primarias y pantalla secundaria.
+
+Modo de estado
+
+Este modo se utiliza principalmente durante la preparación de la aeronave para el vuelo y muestra el estado de los sistemas de la aeronave y su preparación para el vuelo. La información está relacionada con la lista de equipo mínimo de la aeronave. La pantalla aparece en la pantalla inferior del EICAS y muestra las posiciones de la superficie de control de vuelo en formato analógico, con información del estado del sistema en formato de mensaje digital. La cantidad de información disponible es demasiado grande para una sola visualización y está disponible seleccionando 'páginas' sucesivas. El número de la página que se está viendo se muestra en la pantalla. En la Figura 4.11 se muestra una pantalla de modo de estado típica.
+
+Modo de mantenimiento
+
+Este modo está disponible para los ingenieros de mantenimiento para el diagnóstico de fallas de funcionamiento. Contiene registros de las condiciones de funcionamiento del motor y del sistema y solo está disponible con la aeronave en tierra. Se proporciona un panel de control separado para la visualización de los datos de mantenimiento.
+
+Mostrar panel de selección
+
+Este panel, ilustrado en la Figura 4.12, se usa para seleccionar el tipo de pantalla EICAS requerida y generalmente se encuentra en la consola central junto a las pantallas de visualización. La función de los distintos controles es la siguiente:
+
+Pulsadores de pantalla. Cuando se presiona el botón de visualización del motor, aparece información secundaria en la pantalla inferior. Al presionar el botón pulsador de estado, se selecciona el modo de estado al que se hace referencia anteriormente.
+
+Pulsador de registro de eventos. Las fallas del motor o del sistema en vuelo se registran automáticamente y se almacenan en la memoria de la computadora EICAS. Si la tripulación de vuelo tiene motivos para sospechar que se ha producido una falla transitoria, al presionar el botón de registro de eventos se resaltarán los datos relevantes en los registros almacenados en la computadora para que el personal de mantenimiento los investigue posteriormente. Este último se conoce como evento manual.
+
+Interruptor giratorio de la computadora. Esto se utiliza para seleccionar la computadora en uso del sistema. En la posición AUTO, la computadora izquierda normalmente estará en uso; el cambio a la computadora correcta ocurrirá automáticamente en caso de falla. Las posiciones IZQUIERDA o DERECHA se utilizan para la selección manual de la computadora en uso.
+
+Control de brillo. Este es un interruptor giratorio doble. La perilla interna controla la intensidad de la pantalla y la perilla externa controla el balance de brillo entre las dos pantallas.
+
+Ajuste de referencia de empuje. Este también es un interruptor giratorio doble. La perilla exterior se usa para seleccionar un motor y la perilla interior se tira y gira para colocar un cursor en la escala circular EPR o N 1.
+
+Puesta a cero del indicador de máxima. Si un parámetro medido, como la temperatura del aceite del motor, excede un límite preestablecido, aparecerá una alerta en la pantalla del EICAS. El botón pulsador de restablecimiento del indicador máximo se presiona para borrar la alerta cuando se ha rectificado la condición de exceso.
+
+fallas del sistema
+
+Ya se ha explicado que, en caso de fallo de un ordenador, el ordenador de reserva tomará el relevo automáticamente o mediante selección de piloto. Si la pantalla de visualización inferior falla mientras se muestra información secundaria, la información se transfiere a la mitad inferior de la pantalla superior en formato digital abreviado. Esto se conoce como pantalla compacta y se ilustra en la figura 4.13. La falla de una pantalla inhibe el uso del modo de estado. Si ambas pantallas fallan, un indicador de motor en espera muestra datos esenciales de rendimiento del motor en una pantalla de diodo de cristal líquido (LCD), como se ilustra en la Figura 4.14. El indicador tiene un interruptor de control de dos posiciones. Con este interruptor en la posición AUTO, el indicador de espera está funcionando, pero no muestra ningún dato a menos que las pantallas CRT no estén funcionando. Con el interruptor en la posición ON, la unidad muestra continuamente. El interruptor de prueba tiene tres posiciones y se usa para probar las fuentes de alimentación alternativas al indicador.
+
+La falla del panel de selección de pantalla se indica en la pantalla superior del EICAS, que continúa mostrando la información principal del motor. La información secundaria sigue apareciendo automáticamente en la pantalla inferior, pero los interruptores de control del panel no funcionan.
+
+Seguimiento electrónico centralizado de aeronaves (ECAM)
+
+El sistema ECAM se desarrolló para el avión Airbus A310 y el diagrama esquemático de bloques de la figura 4.15 ilustra esa versión del sistema. Es principalmente un medio de visualización de sistemas de aeronaves, con información del motor principal que se muestra en instrumentos tradicionales. Las pantallas de visualización de ECAM están montadas una al lado de la otra y ambas están en uso continuo. La pantalla izquierda muestra información sobre el estado de los sistemas, las advertencias y las acciones correctivas requeridas en formato de lista de verificación. La pantalla derecha muestra información asociada en pantallas analógicas.
+
+Panel de control
+
+El panel de control de ECAM se ilustra en la Figura 4.16. Las perillas de control de pantalla izquierda y derecha son para encender las pantallas y ajustar el brillo de la pantalla. Las funciones de los diversos interruptores de botón son las siguientes:
+
+Seleccione SGU. En el funcionamiento normal del sistema, ambas unidades generadoras de símbolos (SGU) funcionan. En caso de que un circuito de autocomprobación de la SGU detecte una falla, se ilumina una leyenda de falla en el interruptor correspondiente. Al soltar el interruptor, se aísla la SGU afectada y se apaga el título de falla, iluminando el título APAGADO en su lugar.
+
+Borrar (CLR). Este es un interruptor claro, que se iluminará cada vez que aparezca una advertencia o un mensaje de estado en la pantalla izquierda. Al presionar el interruptor se borra el mensaje.
+
+Estado (STS). Presionar este interruptor permite la selección manual de las pantallas de estado del sistema de la aeronave, siempre que no se muestre ningún mensaje de advertencia.
+
+Recuperación (RCL). Si se borra un mensaje de advertencia mientras aún existe su condición de falla asociada, se puede recuperar presionando el botón RCL.
+
+Visualizaciones sinópticas. Los diagramas sinópticos de cada uno de los 12 sistemas de aeronaves se muestran en la pantalla derecha, siempre que no se muestre ningún mensaje de advertencia, presionando el interruptor de visualización sinóptica correspondiente.
+
+Modos de funcionamiento
+
+El sistema tiene cuatro modos de operación, conocidos como NORMAL, AVISO, FALLA y MANUAL. Además de los últimos mencionados, los modos de visualización se seleccionan automáticamente.
+.
+Modo normal. Este modo está relacionado con el vuelo y es el modo en el que el sistema funciona normalmente durante todo el progreso del vuelo, desde las comprobaciones previas al vuelo hasta las posteriores al vuelo. En este modo, la pantalla izquierda muestra los estados del sistema en formato de lista de verificación y la pantalla derecha contiene una visualización pictórica relevante. Por ejemplo, durante las comprobaciones posteriores al arranque del motor, la pantalla de la izquierda normalmente enumeraría el estado de cada uno de los sistemas de la aeronave y la pantalla de la derecha mostraría gráficamente los diversos estados del sistema (p. ej., hidráulico, eléctrico, presurización, etc.). Estas pantallas se seleccionan presionando el botón apropiado en el panel de control de ECAM, ilustrado en la Figura 4.16.
+
+Modo CONSEJO. La pantalla cambia automáticamente a este modo cuando cambia el estado de un sistema. Por ejemplo, iniciar la APU hará que aparezca un mensaje a tal efecto en la pantalla izquierda. La pantalla derecha seguirá mostrando el diagrama seleccionado. Modo de fallo. Este modo tiene prioridad sobre todos los demás y es seleccionado automáticamente por el sistema ECAM en caso de que se excedan los parámetros normales de operación en cualquiera de los sistemas de la aeronave. Aparece un mensaje de advertencia apropiado en la pantalla izquierda, acompañado de una alerta sonora. Debajo de este mensaje, se enumeran las acciones correctivas requeridas por la tripulación de cabina de vuelo. En la pantalla derecha, una visualización esquemática del sistema afectado ilustra la falla. Cuando se ha tomado la acción correctiva, las pantallas cambian para ilustrar esto. En las Figuras 4.17 y 4.18 se muestran ejemplos de estas pantallas. En el ejemplo que se muestra, la frecuencia del generador n.º 2 está fuera de los límites permitidos y se requiere la desconexión del variador de velocidad constante, y la situación se muestra gráficamente en la pantalla de la derecha. Cuando se ha tomado la acción correctiva, la pantalla izquierda cambia para mostrar que el generador n.° 2 está desconectado y la pantalla derecha muestra el nuevo estado del generador de CA. sistema eléctrico.
+
+Modo manual. Siempre que no se muestren mensajes de advertencia en la pantalla izquierda, los diagramas relacionados con los sistemas de la aeronave se pueden recuperar en la pantalla derecha presionando cualquiera de los 12 botones sinópticos en el panel de control.
+
+Ejemplos de preguntas
+
+1. La pantalla EFIS comprende:
+
+una. ¿Dos pantallas montadas una al lado de la otra en una consola central?
+
+b. ¿Un par de pantallas montadas una encima de la otra frente a cada piloto?
+
+C. ¿Una pantalla superior que muestra la situación horizontal y una pantalla inferior que muestra la actitud y la dirección?
+d. ¿Una pantalla izquierda que muestra información de navegación y una pantalla derecha que muestra el motor y los sistemas?
+
+2. Los símbolos de color magenta en la pantalla EFIS indican:
+
+una. ¿Información de advertencia?
+b. ¿Información de comando?
+C. ¿Información de precaución?
+d. ¿Información de la situación actual?
+
+3. Por debajo de los 1000 pies sobre el nivel del mar, la visualización de altitud por radio en el EADI es:
+
+una. ¿Una pantalla solo digital?
+
+b. ¿Una pantalla analógica de un puntero que se mueve alrededor de una escala circular?
+
+C. ¿Una pantalla analógica y digital con la altura de decisión seleccionada mostrada solo en formato digital?
+
+d. ¿Una pantalla analógica que consiste en una escala circular en la que los segmentos desaparecen a medida que disminuye la altura, con la altura agl mostrada digitalmente?
+
+4. A 50 pies por encima de la altura de decisión:
+
+una. Suena una alerta sonora y su frecuencia aumenta hasta que se alcanza DH, momento en el que la escala circular y el marcador DH cambian de color a ámbar y parpadean durante varios segundos.
+
+b. Suena una alerta sonora y su frecuencia aumenta hasta que se alcanza el DH, momento en el que la escala circular y el marcador del DH cambian de color a rojo y parpadean continuamente hasta que se cancelan.
+
+C. Suena una alerta sonora y continúa hasta que se cancela. En DH, la escala circular desaparece y el marcador DH cambia de color a ámbar.
+
+d. Una alerta de campanilla sonora suena durante varios segundos. Cuando se alcanza la DH, la escala circular y el marcador de DH cambian de color a magenta y parpadean hasta que toca el suelo.
+
+5. En el modo MAP, una línea discontinua curva que se extiende desde el vértice del símbolo de la aeronave indica:
+
+una. ¿Velocidad de cambio del rumbo de la aeronave?
+
+b. ¿Alcance a la altitud seleccionada?
+
+C. ¿Rumbo previsto al final de 30, 60 y 90 segundos desde el tiempo preestablecido?
+
+d. ¿Desviación de la pista deseada?
+
+6. Los retornos del radar meteorológico están disponibles en los siguientes modos EFIS EHSI (respuesta a, b, c o d):
+
+1. MAPA
+
+2. PLANIFICAR
+
+3. EXP ILS
+
+4. ILS COMPLETO
+
+5. FRONTAL COMPLETO
+
+6. EXP ANTES
+
+una. 1, 2, 3, 4, 5, 6?
+
+b. 1, 2, 3?
+
+C. 1, 3, 6?
+
+d. 1, 2, 4, 6?
+
+7. La rosa de los vientos ampliada en los modos EFIS EHSI puede hacer referencia a:
+
+una. ¿Norte magnético o verdadero entre las latitudes 658S y 738N?
+
+b. ¿El norte verdadero solo por encima de las latitudes 638N o S?
+
+C. ¿Norte magnético o verdadero entre las latitudes 638S y 758N?
+
+d. ¿Norte magnético o verdadero entre las latitudes 758S y 758N?
+
+8. En el modo PLAN, la ruta planificada muestra:
+
+a. ¿Está orientado a la trayectoria actual del avión?
+b. ¿Está orientado al norte verdadero?
+c. ¿Está orientado al rumbo actual de la aeronave?
+d. ¿Está orientado al norte magnético?
+
+9. Un círculo de color cian en la pantalla EFIS MAP indica:
+
+una. ¿Un waypoint fuera de ruta?
+
+b. ¿Un waypoint activo?
+
+C. ¿Un aeropuerto?
+
+d. ¿Una radiobaliza?
+
+10. En el sistema de indicación de motor y alerta a la tripulación:
+
+una. ¿Hay dos computadoras, las cuales están funcionando en todo momento?
+
+b. ¿Hay dos computadoras, pero ambas solo funcionarán simultáneamente si se seleccionan manualmente?
+
+C. ¿Hay tres computadoras, dos en funcionamiento y una en espera en cualquier momento?
+
+d. ¿Hay dos computadoras, normalmente una está funcionando y la otra está en modo de espera?
+
+11. EICAS cuenta con:
+
+una. ¿Tres modos, todos disponibles durante el vuelo?
+
+b. ¿Tres modos, de los cuales solo dos están disponibles durante el vuelo?
+
+C. ¿Cuatro modos, todos los cuales están disponibles durante el vuelo?
+
+d. ¿Cuatro modos, todos disponibles durante el vuelo y el cuarto solo en tierra?
+
+12. Mensajes de aviso del EICAS:
+
+una. ¿Aparecer en la pantalla principal en formato analógico, de color amarillo?
+
+b. ¿Aparecer en la pantalla secundaria en formato digital y analógico?
+
+C. ¿Aparecer en la pantalla principal en formato digital, con sangría y de color rojo?
+
+d. ¿Aparecer en la pantalla principal en forma digital, con sangría y de color amarillo?
+
+13. En caso de falla de una pantalla de visualización EICAS:
+
+una. ¿La información primaria y secundaria se mostrará en la pantalla restante en forma compacta?
+
+b. ¿La información del motor principal solo aparecerá en el indicador del motor de reserva?
+
+C. ¿Aparecerá información primaria y secundaria limitada en el indicador del motor de reserva?
+
+d. ¿La información principal del motor solo aparecerá en la pantalla CRT restante?
+
+
+14. La falla del panel de selección de pantalla EICAS:
+
+una. ¿Hacer que todo el sistema quede inoperativo?
+
+b. ¿Reducir la pantalla al indicador del motor de reserva solamente?
+
+C. ¿No afectará a las pantallas principal y secundaria, pero se indicará en la pantalla principal?
+
+d. ¿Reducir la pantalla a una versión compacta en una sola pantalla?
+
+15. El sistema ECAM tiene cuatro modos de funcionamiento:
+
+una. ¿El modo utilizado principalmente durante el vuelo se conoce como modo operativo?
+
+b. ¿El modo manual solo se puede seleccionar en tierra?
+
+C. ¿El modo consultivo solo se puede seleccionar durante el vuelo?
+
+d. ¿El modo de falla tiene prioridad sobre todos los demás modos?
+
+16. Los mensajes de advertencia en las pantallas CRT deben estar coloreados:
+
+
+una. ¿Rojo?
+
+b. ¿Amarillo?
+
+C. ¿Cian?
+
+d. ¿Magenta?
+
+17. Un modo armado en una pantalla EFIS EADI aparecerá como:
+
+una. ¿Un símbolo magenta?
+
+b. ¿Una característica analógica blanca?
+
+C. ¿Un mensaje alfanumérico blanco?
+
+d. ¿Un mensaje digital cian?
+
+18. La turbulencia pronosticada aparecerá en la pantalla del radar meteorológico EHSI como un área de:
+
+una. ¿Rojo o cian?
+
+b. ¿Rojo o magenta?
+
+C. ¿Blanco o magenta?
+
+d. ¿Rojo o blanco?
+

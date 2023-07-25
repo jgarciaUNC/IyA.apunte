@@ -1,0 +1,70 @@
+8.6
+Sensores de radar
+
+Las aeronaves civiles llevan una serie de sensores de radar que permiten que la aeronave obtenga datos sobre el vuelo de la aeronave. Los principales sensores de radar en uso en aeronaves civiles son:
+
+â € ¢ altímetro de radar;
+â € ¢ radar meteorologico.
+
+8.6.1
+Altímetro de radar
+
+El altímetro de radar (Rad Alt) utiliza transmisiones de radar para reflejarse en la superficie del mar o el suelo inmediatamente debajo de la aeronave. Por lo tanto, el altímetro de radar proporciona una lectura absoluta de altitud con respecto al terreno directamente debajo de la aeronave. Esto contrasta con el altímetro barométrico o de datos aéreos donde la altitud puede ser referenciada al nivel del mar o algún otro dato como el terreno local, donde se conoce como altura. Por lo tanto, el altímetro de radar tiene un valor particular para advertir al piloto que está cerca del terreno y para advertirle si es necesario que tome medidas correctivas. Alternativamente, el altímetro de radar puede proporcionar a la tripulación de vuelo una altitud precisa con respecto al terreno durante las etapas finales de una aproximación de precisión. La comparación de la altitud barométrica y de radar se muestra en la Figura 8.30.
+
+Los altímetros de radar pueden operar usando CW / FM (onda continua / frecuencia modulada) o técnicas de señal pulsada. Las técnicas CW / FM pierden precisión por encima de un rango de 5000 pies, por lo que muchos radioaltímetros están limitados a un rango operativo de 5000 pies. Por encima de esto, se deben utilizar técnicas pulsadas. El principio de funcionamiento del altímetro radar se muestra en la Figura 8.31.
+
+El oscilador y el modulador proporcionan las señales necesarias para el transmisor y las antenas de transmisión, que dirigen la energía del radar hacia el terreno debajo de la aeronave. La antena refleja la energía reflejada y la pasa a un contador de frecuencia. El contador de frecuencia demodula la señal recibida y proporciona una lectura de altímetro de radar a una pantalla dedicada.
+
+
+El altímetro de radar mide la altitud real de la aeronave en relación con el terreno debajo, a diferencia del altímetro de datos aéreos que mide la altura en relación con el nivel del mar o algún otro dato â € ¢ La altitud del radar se determina por el tiempo necesario para un radar pulso transmitido desde el avión para regresar reflejado desde el terreno
+
+â € ¢ El tipo mÃ¡s comun usado hoy en día es la onda continua modulada en frecuencia (FMCW)
+
+â € ¢ Los altímetros de radar transmiten en el rango de 4250 a 4350 MHz
+
+â € ¢ Los altímetros de radar pueden tener pantallas dedicadas; los últimos sistemas muestran la altitud del radar en el EFIS • Los militares / UAV también pueden usar altímetros láser
+
+
+Alternativamente y más habitualmente, la información puede presentarse en un EFIS. En moderno
+En los sistemas, la altitud del radar se proporcionará a una gama de sistemas como FMS, EGPWS, piloto automático, etc., y se mostrará directamente a la tripulación de vuelo. Los altímetros de radar generalmente operan en un rango máximo de cero a 5000 pies.
+
+La mayoría de los altímetros de radar utilizan una técnica de frecuencia modulada triangular en la energía transmitida, como se muestra en la Figura 8.32, aunque como se mencionó anteriormente, esto típicamente limita el rango operativo a 5000 pies. El transmisor / receptor genera una señal de onda continua (CW) que varía de 4250 a 4350 MHz, modulada a 100 Hz (período u003d 0.01 seg). La comparación de la frecuencia de la energía reflejada con la energía transmitida: F1 versus F2 en la figura arroja una diferencia de frecuencia que es proporcional al tiempo que tarda la energía radiada en regresar, por lo tanto, se puede calcular la altitud del radar.
+
+Las instalaciones de altímetro de radar están calibradas para permitir el retraso de la instalación de la aeronave, que varía de una aeronave a otra. Esto permite compensar la altura de la antena sobre el tren de aterrizaje y cualquier largo recorrido de cable coaxial en la instalación eléctrica de la aeronave.
+
+La lectura cero del altímetro del radar se establece de modo que coincida con el punto en el que el tren de aterrizaje de la aeronave solo está haciendo contacto con la pista. Una referencia útil sobre las instalaciones de altímetro de radar es la Referencia [12].
+
+8.6.2 Radar meteorológico
+
+El radar meteorológico ha estado en uso durante más de 40 años para alertar a la tripulación de vuelo sobre la presencia de condiciones climáticas o terrenos adversos en la ruta de vuelo de la aeronave. El radar meteorológico irradia energía en un haz estrecho con un ancho de haz de ˆ¼3 â ... ¦ que puede reflejarse en las nubes o en el terreno delante del avión. El rayo del radar se escanea a ambos lados de la línea central del avión para dar una imagen de radar de los objetos delante del avión. La antena también puede inclinarse en elevación alrededor de ± 15… desde la horizontal para escanear áreas arriba y abajo de la aeronave.
+
+El principio de funcionamiento de un radar meteorológico se muestra en la figura 8.33. Esto muestra una nube de tormenta directamente delante del avión, con algo de precipitación debajo y también terreno en constante aumento. La precipitación puede ser indicativa de una fuerte cizalladura vertical del viento que puede causar un peligro a la aeronave.
+
+El rayo del radar está directamente delante del avión con la antena en su posición media o de referencia y detectará la nube de tormenta a través de la cual el avión está a punto de volar. Al referirse a su pantalla de radar meteorológico, el piloto podrá ver si las celdas de tormenta pueden evitarse alterando el rumbo hacia la izquierda o hacia la derecha. El uso de la función de inclinación de la antena es crucial. En el ejemplo dado, si la antena está completamente elevada, la tripulación no obtendrá información completa relacionada con la precipitación de nubes de tormenta, ya que solo mirarán la parte superior de la formación de nubes. Si la antena está completamente deprimida, el radar detectará el terreno ascendente con preferencia a la nube de tormenta o la precipitación que se avecina. Por esta razón, muchos radares meteorológicos incorporan una función de inclinación automática para que los retornos del radar estén optimizados para la tripulación de vuelo, dependiendo de los retornos recibidos.
+
+La mayoría de los radares meteorológicos modernos pueden usar el procesamiento Doppler para detectar turbulencias antes de
+aeronave. Esta es una característica muy útil, ya que la cizalladura máxima del viento no necesariamente ocurre casualmente con la mayor precipitación. De hecho, algunas de las cizalladuras del viento más peligrosas pueden ocurrir en aire despejado con el avión volando en ninguna parte cerca de nubes o precipitaciones.
+
+La imagen del radar generalmente se muestra en una pantalla de radar dedicada o se superpone en el
+pantalla de navegación del piloto o primer oficial. Las pantallas son típicamente en color, lo que ayuda a la tripulación de vuelo a interpretar los datos del radar. Las pantallas tienen varios marcadores de rango seleccionables y generalmente se refieren al rumbo de la aeronave. Se pueden proporcionar pantallas separadas para el clima o los modos de turbulencia. Se puede encontrar información útil sobre el uso operativo del radar meteorológico en la Referencia [13], que proporciona una guía piloto para la operación del radar meteorológico Honeywell RDR-4B. El transmisor funciona a 9.345 GHz y el sistema tiene tres modos básicos de operación:
+
+â € ¢ clima y mapa con un rango maximo de 320 nm;
+
+â € ¢ modo turbulencia (TURB) a 40 nm;
+
+â € ¢ detección de cizalladura del viento a 5 nm.
+
+Los radares meteorológicos también pueden usarse en un modo de evitación del terreno en ciertas circunstancias, como se muestra en la Figura 8.34. Cuando el vuelo de precisión se aproxima a aeródromos rodeados de terreno elevado, el radar meteorológico puede proporcionar una verificación cruzada independiente de la información proporcionada por el Sistema de advertencia de evitación del terreno (TAWS). El capitán puede ver la información de TAWS en su pantalla de navegación (ND) mientras es monitoreado por el primer oficial con una pantalla meteorológica superpuesta en su ND. En la Referencia [14], el texto explica por qué se agregó el radar meteorológico a la lista de equipo mínimo (MEL) de la aeronave para dichos vuelos.
+
+El radar de mapeo utiliza un haz especialmente diseñado para "pintar" el terreno delante del avión
+
+â € ¢ Un mapa detallado del radar del terreno y otras funciones hechas por el hombre delante del avión
+puede ser compilado
+
+â € ¢ Al colocar la antena de radar de mapeo en un angulo fijo de depresiÃ³n, cierto grado de
+se puede proporcionar orientación para evitar el terreno â € ¢ Los radares de mapeo se usan con mayor frecuencia en
+aviones militares como parte de la suite de armas ofensivas
+
+â € ¢ Los radares de mapeo se utilizan en aeronaves civiles para
+ilustrar el terreno en un modo de evasión del terreno
+Figura 8.34 Uso del radar meteorológico en modo mapeo / evitación del terreno

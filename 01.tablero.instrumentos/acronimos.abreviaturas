@@ -1,0 +1,555 @@
+A[edit]
+A/P: Autopilot
+ABAS: Aircraft-Based Augmentation System
+ACARS: Aircraft Communications Addressing and Reporting System
+ACAS: Airborne collision avoidance system
+ACC: Area Control Centre
+ACE: Actuator Control Electronics
+ACMS: Aircraft Condition Monitoring System
+ACP: Audio Control Panel
+ACS: Audio Control System
+ADAHRS: Air Data And Attitude Heading Reference System
+ADC: Air data computer
+ADF: Automatic direction finder
+ADI: Attitude director indicator
+ADIRS: Air Data Inertial Reference System
+ADIRU: Air data inertial reference unit
+ADM: Air data module
+ADS: Either; Automatic Dependent Surveillance or air data system
+ADS-A: Automatic Dependent Surveillance-Address
+ADS-B: Automatic Dependent Surveillance-Broadcast
+ADS-C: Automatic Dependent Surveillance-Contract
+AESA: Active electronically scanned array
+AFCS: Automatic flight control system
+AFD: Autopilot flight director
+AFDC: Autopilot flight director computer
+AFDS: Autopilot flight director system
+AFDX Avionics Full-Duplex Switched Ethernet
+AFIS: Either; Automatic flight information service or airborne flight information system
+AGACS: Automatic ground–air communications system, is also known as ATCSS or data link
+AGC: Automatic gain control
+AGDL: Air-Ground Data Link
+AHC: Attitude Heading Control
+AHRS: Attitude and Heading Reference Systems
+AHRU: Attitude and Heading Reference Unit
+AIDS: Aircraft Integrated Data System
+AIXM: Aeronautical Information eXchange Model
+ALC: Automatic Level Control
+ALT: Either; altimeter or altitude
+ALT Hold: Altitude Hold Mode
+ALTS: Altitude Select
+AMLCD: Active-matrix liquid crystal display
+AMS: Air Management System
+ANC: Active Noise Cancellation
+ANN: Annunciator – caution warning system normally containing visual and audio alerts to the pilot
+ANR: Active Noise Reduction
+ANT: Antenna
+AOC: Aeronautical Operational Control
+AOP: Airport Operating Plan
+APARS: Automatic Pressure Altitude Reporting System
+APIRS: Attitude and Positioning Inertial Reference System
+APOA: Airport of Arrival
+APC: Auto Pilot Computer
+APOD: Airport of Departure
+APM: Aircraft Personality Module
+APS: Auto Pilot System
+APU: Auxiliary Power Unit
+ARINC: Aeronautical Radio, Incorporated
+ASD: Aircraft situation display
+ASDL: Aeronautical satellite data link
+ASR: Airport surveillance radar
+ASU: Avionics switching unit
+AT: Auto Throttle
+ATC: Air traffic control
+ATCT: Airport Traffic Control Tower
+ATCRBS: Air Traffic Control Radar Beacon System
+ATCSS: Air traffic control signalling system
+ATIS: Automated Terminal Information Service
+ATSAW: Airborne Traffic Situational AWareness
+ATSU: Air Traffic Services Unit
+ATT: Attitude
+Avionics: Aviation electronics
+AWOS: Automated Weather Observation System
+AWACS: Advanced Warning And Control Systems
+ALNA: AirLine Network Architecture
+B[edit]
+B RNAV: Basic area navigation
+BARO: Barometric indication, setting or pressure
+BITE: Built-In Test Equipment
+BCRS: Back course
+BDI: Bearing distance indicator
+BGAN: Broadcast Global Area Network
+BER: Beyond Economic Repair
+C[edit]
+CAI: Caution annunciator indicator
+CAS: Calibrated airspeed
+CAT I: Operational performance Category 1
+CAT I Enhanced Allows for lower minimums than CAT I in some cases to CAT 2 minimums
+CAT II: Operational performance Category II
+CAT IIIa: Operational performance Category IIIa
+CAT IIIb: Operational performance Category IIIb
+CAT IIIc: Operational performance Category IIIc
+CDA: Continuous descent approach
+CDI: Course deviation indicator
+CDTI: Cockpit display of traffic information
+CFIT: Controlled flight into terrain
+CHT: Cylinder Head Temperature
+CNS: Communication, navigation, surveillance
+CNS/ATM: Communication, navigation, surveillance/air traffic Management[1]
+CODEC: Coder/decoder
+COMM or COM: Communications receiver
+COTS: Commercial off-the-shelf
+CPDLC: Controller–pilot data link communications
+CPS: Cycles per second
+CRT: Cathode ray tube
+CTAF: Common traffic advisory frequency
+CV/DFDR: Cockpit voice and digital flight data recorder
+CVR: Cockpit voice recorder
+CWS: Control wheel steering
+D[edit]
+DA: Decision altitude
+DA: Drift angle
+DAPs: Downlink of aircraft parameters
+DCDU: Data link control and display unit
+DCL: Departure Clearance via CPDLC
+DCP: Display control panel
+DFMC: Dual Frequency Multiple Constellation
+DG: Directional gyroscope
+DGPS: Differential global positioning system
+DH: Decision height
+DLR: Data link recorder
+DME: Distance measuring equipment
+DNC: Direct noise canceling
+DP: Departure procedures
+DSP: Digital signal processing
+DTU: Data transfer unit
+DUAT: Direct user access terminal
+DVE: Degraded Visual Environment
+E[edit]
+EADI: Electronic attitude director indicator
+ECU: Engine Control Unit (=EEC)
+EEC: Electronic Engine Control
+EFD: Electronic flight display
+EFIS: Electronic flight instrument system
+EGI: Embedded GPS Inertial
+EGPWS: Enhanced ground proximity warning system
+EGT: Exhaust gas temperature
+EHS: Enhanced surveillance
+EHSI: Electronic horizontal situation indicator
+EICAS: Engine indication crew alerting system
+ELT: Emergency locator transmitter
+ENC: Electronic noise canceling
+ENG: Engine
+ENR: Electronic noise reduction
+EPR: Engine pressure ratio
+ETOP(S): Extended-range twin-engine operation(s)
+F[edit]
+FAA: Federal Aviation Administration
+FADEC: Full authority digital engine control
+FAF: Final approach fix
+FANS: Future Air Navigation System
+FAT: Free air temperature
+FBW: Fly-by-wire
+FCC: Flight Control Computer
+FCS: Flight Control System
+FD: Flight Director
+FDPS: Flight plan Data Processing System
+FDR: Flight Data Recorder
+FDRS: Flight data recorder system
+FDU: Flux detector unit
+FF: Fuel flow
+FG: Flight Guidance
+FIC: Flight Information Centre
+FIS-B: Flight information services – broadcast
+FLIR: Forward-looking infra-red
+FLTA: Forward-looking terrain avoidance
+FMA: Flight Mode Annunciator
+FMGS: Flight Management & Guidance System
+FMS: Flight management system
+FOB: Fuel On-Board
+FREQ: Frequency
+FSS: Flight service station
+FWS: Flight warning system
+FYDS: Flight director/ Yaw damper system
+G[edit]
+GA: Go Around
+GAST: GBAS Approach Service Type
+GBAS: Ground based augmentation system
+GCAS: Ground collision avoidance system
+GCU: Generator control unit
+GDOP: Geometric dilution of precision
+GGS: Global positioning system ground station
+GHz: Gigahertz
+GLNS: GPS Landing and Navigation System
+GLNU: GPS landing and navigation unit
+GLONASS: Global Navigation Satellite System
+GLS: GBAS Landing System
+GLU: GPS landing unit
+GMT: Greenwich Mean Time
+GND: Ground
+GNSS: Global Navigation Satellite System
+GO: Go Around
+GPS: Global Positioning System
+GPWC: Ground proximity warning computer
+GPWS: Ground proximity warning system
+G/S: Glide Slope
+GS: Ground speed
+H[edit]
+"Hg: Inch of Mercury
+HDG: Heading
+HDG SEL: Heading select
+HDOP: Horizontal dilution of precision
+HF: High frequency
+HHLD: Heading hold
+HIRF: High intensity radiated field
+HMD: Helmet-mounted display
+HPR: High Pressure Rotor
+HSD: High-speed data
+HSI: Horizontal situation indicator
+HSL: Heading select
+HUMS: Health and usage monitoring systems
+HUD: Head-up display
+Hz: Hertz
+I[edit]
+IAP: Instrument approach procedure
+IAS: Indicated airspeed
+ID: Identify/Identification or identifier
+IDENT: Identify/identifier
+IDS: Information display system or integrated display system
+IFE: In-flight entertainment
+IFF: Identification Friend or Foe
+IFICS: [(Integrated Flight Instrument and Control System)][2]
+IFR: Instrument Flight Rules
+ILS: Instrument landing system
+IMC: Instrument meteorological conditions
+IND: Indicator
+InHg: Inch of Mercury
+INS: Inertial Navigation System
+IRS: Inertial Reference System
+ISA: International Standard Atmosphere
+ISP: Integrated switching panel
+ISIS: Integrated standby instrument system
+ITT: Interstage turbine temperature
+IVSI: Instantaneous vertical speed indicator
+J[edit]
+JTIDS: Joint Tactical Information Distribution System
+K[edit]
+KTAS: Knots true airspeed
+L[edit]
+LAAS: Local Area Augmentation System
+LADGPS: Local Area Differential GPS
+LCD: Liquid crystal display
+LDGPS: Local area differential global positioning satellite
+LED: Light-emitting diode
+LMM: Locator middle marker
+LOC: Localizer
+LOM: Locator outer marker
+LOPA: Location of Passenger Accommodations
+LORAN: Long-range navigation
+LPR: Low Pressure Rotor
+LPV: Localizer performance with vertical guidance
+LRU: Line-replaceable unit
+LTE: Loss of Tail Rotor Effectiveness Helicopters
+LVP: Low visibility procedures, a designated state of operations at aerodromes where instrument approaches and low visibility takeoff procedures are using during inclement weather
+LX: Lightning
+M[edit]
+MAP: Manifold absolute pressure or missed approach point
+MAPS: Minimum Aviation Performance Standards
+MB: Marker beacon
+MCBF: Mean cycles between failures
+MCDU: Multi-purpose/Multi-function Control and Display Unit
+MDA: Minimum decent altitude
+MEL: Minimum equipment list
+MCP: Mode control panel
+MF: Medium frequency
+MFD: Multi-function display
+MFDS: Multi-function display system
+MIC: Microphone
+MIDS: Multifunctional information distribution system
+MILSPEC: Military specification
+MKP: Multi-function Keypad
+MKR: Marker beacon
+MLS: Microwave landing system
+MM: Middle marker
+MMD: Moving map display
+MNPS: [Minimmum navigation performance specifications]
+MOA: Military operations area
+Mode A: Transponder pulse-code reporting
+Mode C: Transponder code and altitude reporting
+Mode S: Transponder code, altitude, and TCAS reporting
+MOPS: Minimum Operational Performance Standard
+MOSArt: Modular Open System Architecture
+MSA: Minimum safe altitude
+MSG: Message
+MSP: Modes S-Specific Protocol
+MSSS: Mode S-Specific Services
+MTBF: Mean time between failures
+MTBUR: Mean time between unscheduled removals
+MTTF: Mean time to failure
+MVA: Minimum vectoring altitude
+MVFR: Marginal visual flight rules
+N[edit]
+N1: Low Pressure rotor (spool) speed (see Jet engine)
+N2: High Pressure rotor (spool) speed (see Jet engine)
+NAS: National Airspace System
+NAV: Navigation receiver
+Navaid: Navigational aid
+NAVCOMM: Navigation and communications equipment or receiver
+NAVSTAR-GPS: NAVigation Satellite Timing And Ranging (The formal name for the space-borne or satellite navigation system)
+NCATT: National Center for Aircraft Technician Training
+ND: Navigation display
+NDB: Non-directional radio beacon
+NFF: No fault found
+NM or NMI: Nautical mile
+NORDO: No radio
+NoTAM: Notice to Airmen
+NPA: Non-precision approach
+NVD: Night vision device
+NVG: Night vision goggles
+O[edit]
+OAT: Outside air temperature
+OBS: Omnibearing selector
+OCC: Operations control center
+OM: Outer marker
+OWE/OEW: Operating Weight Empty/Operating empty weight
+P[edit]
+PA: Public address system
+PAEW: Personnel and equipment working
+PAL: Pilot Activated Lighting
+PAPI: Precision approach path indicator
+PAR: Precision approach radar
+PCL: Pilot Controlled Lighting
+P-Code: GPS precision code
+PD: Profile descent
+PDC: Pre-Departure Clearance
+PDOP: Position dilution of precision
+PESA: Passive electronically scanned array
+PFD: Primary flight display or primary flight director
+PMG: Permanent magnet generator
+PND: Primary navigation display
+PNR: Passive noise reduction
+POF: Phase of flight
+POS: Position
+P-RNAV: precision area navigation
+PRA: Pre-recorded announcement
+PSR: Primary surveillance radar
+PSU: Passenger service unit
+PTT: Push-to-talk
+Q[edit]
+QAR: Quick Access Recorder
+QNH: Barometric pressure adjusted to sea level
+QRH: Quick Reference Handbook
+R[edit]
+RA: Resolution advisory (TCAS)
+Rad Alt: Radio Altitude
+RAI: Radio altimeter indicator
+RAIM: Receiver-autonomous integrity monitoring, also remote autonomous integrity monitoring
+RALT: Radar or radio altimeter
+RAT: Ram air turbine
+RCR: Reverse current relay
+RCVR: Receiver
+RDMI: Radio distance magnetic indicator
+RDP: Radar data processing system
+RDR: Radar
+REF: Reference
+REIL: Runway end identifier lights
+REL: Relative
+RF: Radio frequency
+RFI: Radio frequency interference
+RHSM: Reduced horizontal separation minimal
+RLG: Ring laser gyroscope
+RLY: Relay
+RMI: Radio magnetic indicator
+R-NAV: Area navigation
+RNG: Range
+RNP: Required navigation performance
+ROC: Rate of climb
+ROD: Rate of descent
+RPA: Remotely piloted aircraft (Unmanned aerial vehicle)
+RPM: Revolutions per minute
+RSP: Reversion switch panel
+RTE: Route
+RVR: Runway visual range
+RVSM: Reduced vertical separation minimum
+RX: Receiver
+S[edit]
+SAR: Search and Rescue, Smart ACMS Recorder
+SAT: Static air temperature
+SATCOM: Satellite communication
+SATNAV: Satellite navigation
+SD: Secure digital
+SDF: Simplified directional facility
+SELCAL: Selective calling
+SID: Standard instrument departure
+SIU: Satellite interface unit
+SMS: Short Messaging Service
+SNR: Signal-to-noise ratio
+SPKR: Speaker
+SQ or SQL: Squelch
+SRS: Speed Reference System
+SSCV/DR: Solid-state cockpit voice/data recorder
+SSCVR: Solid-state cockpit voice recorder
+SSFDR: Solid-state flight data recorder
+SSR: Secondary surveillance radar
+STAR: Standard terminal arrival route
+STARS: Standard Terminal Automation Replacement System
+STC: Supplemental Type Certificate
+STCA: Short-Term Conflict Alert
+STP: Standard temperature and pressure
+SUA: Special use airspace
+T[edit]
+TA: Traffic advisory (see TCAS)
+TACAN: Tactical air navigation system
+Tach: Tachometer
+TAD: Terrain awareness display
+TAF: Terminal area forecast
+TAS: True airspeed
+TAT: True air temperature, or total air temperature
+TAWS: Terrain awareness warning system
+TBO: Time before overhaul, or time between overhaul
+TCA: Throttle control assembly, or terminal control area
+TCAS: Traffic collision avoidance system
+TCF: Terrain clearance floor
+TCN: TACAN
+TCU: TACAN control unit
+TDOP: Time dilution of precision
+TDR: Transponder (in some cases)
+TERPS: Terminal instrument procedures, or terminal en route procedures
+TFR: Temporary flight restrictions
+TFT: Thin-film transistor
+TGT: Turbine gas temperature, or target
+THDG: True heading
+TIS: Traffic information service
+TK: Track angle
+TKE: Track-angle error
+TLA: Thrust Lever Angle
+TLA: Three-letter acronym
+TOD: Top of Descent point
+TOGA or TO/GA: Takeoff/Go-around switch, Takeoff/go-around thrust
+TOT: Turbine outlet temperature
+TR or T/R: Transmitter receiver or transceiver
+T/R: Thrust Reverser or Tail Rotor
+TRACON: Terminal radar approach control
+TRANS: Transmit, Transmission, or Transition
+TRK: Track
+TRP: Mode S transponder
+TTL: Tuned to Localizer
+TTR: TCAS II transmitter/receiver
+TTS: Time to station
+TVE: Total vertical error
+TWDL: Two-way data link, or terminal weather data link
+TWDR: Terminal Doppler Weather Radar
+TWIP: Terminal weather information for pilots
+TWR: Terminal weather radar
+TX: Transmit
+U[edit]
+UART: Universal asynchronous receiver transmitter
+UAV: Unmanned aerial vehicle
+UHF: Ultra-high frequency
+ULB: Underwater locator beacon
+USB: Universal Serial Bus
+UTC: Universal Time Coordinate
+V[edit]
+V: Volts or voltage
+V/L: VOR/Localizer
+V/NAV: Vertical navigation
+V/R: Voltage regulator
+V/REF: Reference velocity
+V/S: Vertical speed
+V/TRK: Vertical track
+VASI: Visual approach slope indicator
+VASIS: Visual approach slope indicator (system)
+VDF: VHF Direction Finding
+VDL: VHF Data Link
+VDR: VHF digital radio
+VFO: Variable frequency oscillator
+VFR: Visual flight rules
+VG/DG: Vertical gyroscope/directional gyroscope
+VGA: Video Graphics Array
+VHF: Very high frequency
+VMC: Visual meteorological conditions or minimum control speed with critical engine out
+VNE: Never exceed speed
+VNO: Maximum structural cruising speed
+VNR: VHF navigation receiver
+VOR: VHF omnidirectional range and ranging
+VOR/DME: VOR with Distance measuring equipment
+VOR/MB: VOR marker beacon
+VORTAC: VOR and TACAN combination
+VOX: Voice transmission
+VPA: Vertical Path Approach
+VPATH: Vertical path
+VRP: Visual Point of Reference
+VSI: Vertical speed indicator
+VSM: Vertical separation limit
+VSO: Stall speed in landing configuration
+VSWR: Voltage–standing wave ratio
+VX: Speed for best angle of climb
+VY: Speed for best rate of climb
+W[edit]
+WAAS: Wide Area Augmentation System
+WD: Wind direction
+WINDR: Wind direction
+WMA: WXR waveguide adapter
+WMI: WXR indicator mount
+WMS: Wide-area master station
+WMSC: Weather message switching center
+WMSCR: Weather message switching center replacement
+WPT: Waypoint
+WRT: WXR receiver transmitter
+WS: Wind shear
+WX: Weather
+WXR: Weather radar system
+WYPT: Waypoint
+X[edit]
+XCVR: Transceiver
+XFR: Transfer
+XMIT: Transmit
+XMSN: Transmission
+XMTR: Transmitter
+XPDR: Transponder
+XTK: Crosstrack
+Y[edit]
+YD: Yaw damper
+Y : YAW
+See also[edit]
+Avionics
+List of aviation, aerospace and aeronautical abbreviations
+References[edit]
+Jump up ^ http://wwwicaoint/icao/en/ro/rio/execsumpdf
+Jump up ^ British Aircraft Corporation now British Aerospace
+Categories: AvionicsGlossaries of aviationLists of abbreviationsLists of acronyms
+Navigation menu
+Not logged inTalkContributionsCreate accountLog inArticleTalkReadEditView historySearch
+
+Search
+Go
+Main page
+Contents
+Featured content
+Current events
+Random article
+Donate to Wikipedia
+Wikipedia store
+Interaction
+Help
+About Wikipedia
+Community portal
+Recent changes
+Contact page
+Tools
+What links here
+Related changes
+Upload file
+Special pages
+Permanent link
+Page information
+Wikidata item
+Cite this page
+Print/export
+Create a book
+Download as PDF
+Printable version
+Languages
+فارسی
+Edit links
+

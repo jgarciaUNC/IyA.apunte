@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: 2018_tablero_instrumentos_presentacion.aux
+The style file: apalike.bst
+Database file #1: ../IyA.bib
+Warning--can't use both author and editor fields in FAA_hdk_aMThA_v2
+Warning--empty publisher in FAA_hdk_aMThA_v2
+You've used 6 entries,
+            1935 wiz_defined-function locations,
+            509 strings with 4526 characters,
+and the built_in function-call counts, 1836 in all, are:
+= -- 171
+> -- 48
+< -- 7
++ -- 14
+- -- 14
+* -- 135
+:= -- 334
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 33
+chr.to.int$ -- 6
+cite$ -- 8
+duplicate$ -- 84
+empty$ -- 148
+format.name$ -- 22
+if$ -- 360
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 11
+newline$ -- 32
+num.names$ -- 18
+pop$ -- 40
+preamble$ -- 1
+purify$ -- 37
+quote$ -- 0
+skip$ -- 63
+stack$ -- 0
+substring$ -- 99
+swap$ -- 8
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 26
+warning$ -- 2
+while$ -- 13
+width$ -- 0
+write$ -- 76
+(There were 2 warnings)

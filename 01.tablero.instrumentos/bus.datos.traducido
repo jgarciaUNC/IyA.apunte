@@ -1,0 +1,202 @@
+Mike Tooley - Aircraft Digital Electronic and Computer Systems-Routledge (2013)
+Pag. 40
+
+Los sistemas de bus de datos de aeronaves permiten que una amplia variedad de equipos de aviónica se comuniquen entre sí e intercambien datos. En esta sección, veremos brevemente los principios de los sistemas de bus de datos de aeronaves antes de presentar algunos de los sistemas que se usan comúnmente en las aeronaves modernas.
+
+4.1 INTRODUCCIÓN A LOS SISTEMAS DE AUTOBUSES
+
+La palabra 'bus' es una contracción de la palabra griega 'ómnibus' y la palabra simplemente significa 'para todos'. Por lo tanto, en el contexto de computadoras y sistemas digitales, 'bus' ™ se refiere a un sistema que permite la interconexión y el intercambio de datos entre los dispositivos en un sistema complejo. Sin embargo, tenga en cuenta que la "interconexión" implica algo más que un cableado físico; entre otras cosas, define los niveles de voltaje y las reglas (o protocolos) que rigen la transferencia de datos.
+
+Con una cantidad tan grande de sistemas de aviónica, una aeronave moderna requiere una cantidad considerable de cableado. Además, algunos de los tendidos de cableado en un avión grande pueden ser bastante largos, como se muestra en la Figura
+4.1. El cableado de las aeronaves equivale a una proporción significativa del peso sin carga de una aeronave y, por lo tanto, minimizar la cantidad de cableado y cableado presente es una consideración importante en el diseño de aeronaves modernas, tanto civiles como militares.
+
+4.1.1 Terminología del bus
+
+Los sistemas de bus pueden ser unidireccionales (unidireccionales) o bidireccionales (bidireccionales), como se muestra en la Figura 4.2. También pueden ser seriales (un bit de datos transmitidos a la vez) o paralelos (donde a menudo aparecen 8, 16 o 32 bits de datos como un grupo en varias líneas de datos al mismo tiempo). Debido a las restricciones impuestas por la longitud y el peso del conductor, todos los sistemas prácticos de autobuses de aeronaves se basan en la transferencia de datos en serie (en lugar de en paralelo).
+
+Los sistemas de bus proporcionan un medio eficiente para intercambiar datos entre los diversos sistemas de aviónica que se encuentran en una aeronave moderna (ver Figura 4.3).
+
+Las unidades reemplazables de línea individuales (LRU), como la interfaz de datos del motor o las unidades electrónicas de aletas / listones que se muestran en la Figura 4.3, están conectadas al bus por medio de un acoplador de bus dedicado y un módulo de interfaz en serie (no se muestra en la Figura 4.3).
+
+Dentro de la LRU, la lógica digital dedicada y los sistemas de microprocesador que procesan datos localmente utilizan cada uno su propio sistema de bus local. Estos sistemas de bus locales utilizan invariablemente la transferencia de datos en paralelo, que es ideal para mover grandes cantidades de datos muy rápidamente, pero solo durante distancias cortas.
+
+PUNTO CLAVE
+
+Las aeronaves modernas utilizan múltiples sistemas de bus redundantes para intercambiar datos entre los diversos sistemas y subsistemas de aviónica. Estos sistemas de bus utilizan la transferencia de datos en serie porque minimiza el tamaño y el peso del cableado de la aeronave.
+
+4.1.2 Protocolos de bus
+
+La noción de un protocolo necesita una pequeña explicación. Imagine por un momento que se enfrenta con el problema de organizar una discusión entre una gran cantidad de personas sentadas alrededor de una mesa, todas las cuales
+están con los ojos vendados y, por lo tanto, no pueden verse. Para asegurarse de que no todos hablen a la vez, debe establecer algunas reglas básicas, incluida la forma en que los delegados indicarán que tenían algo que decir y también establecer algunas prioridades sobre quién debería hablar. en el caso de que varios delegados indiquen que desean hablar al mismo tiempo. Estas (y otras) consideraciones formarían un protocolo acordado entre los delegados para llevar a cabo la discusión. El debate debe continuar sin demasiados problemas, siempre que todos en la sala entiendan y estén dispuestos a aceptar el protocolo que ha establecido. En las computadoras y los sistemas digitales, los protocolos de comunicación se establecen para permitir el intercambio eficiente de datos entre múltiples dispositivos conectados al mismo bus.
+
+Una serie de estándares diferentes se utilizan comúnmente.
+
+4.1.3 Arquitectura del bus
+
+La arquitectura de bus es un término general que se refiere a la estructura general de una computadora u otro sistema digital que depende de un bus para su funcionamiento. La arquitectura a menudo se describe en forma de un diagrama esquemático de bloques que muestra cómo se interconectan los diversos elementos del sistema y también cómo se organiza el flujo de datos entre los elementos. La arquitectura de un sistema basado en el uso de un sistema de bus serie unidireccional se muestra en la Figura 4.4a, mientras que un sistema de bus bidireccional comparable se muestra en la Figura 4.4b. Observe cómo el sistema bidireccional simplifica la interconexión de las LRU y permite que todos los dispositivos transmitan y reciban en el mismo bus.
+
+
+PUNTO CLAVE
+
+Los protocolos de comunicación permiten el intercambio eficiente de datos entre varios dispositivos conectados al mismo bus. Los protocolos consisten en un conjunto de reglas y especificaciones que rigen, entre otras cosas, el formato de datos y las conexiones físicas.
+
+4.1.4 Principios del bus serie
+
+En la Figura 4.5 se muestra un sistema simple para la transferencia de datos en serie entre dos LRU, cada uno de los cuales comprende un sistema aviónico por derecho propio. Dentro de la LRU, los datos se transfieren utilizando un bus de datos paralelo interno (8, 16, 32 o 64 bits de ancho). El enlace entre las dos LRU se realiza utilizando un cable serie simple (a menudo con solo dos, cuatro o seis conductores). La conversión de datos de paralelo a serie y de serie a paralelo se lleva a cabo mediante una interfaz de bus (a menudo se trata de una sola tarjeta o módulo dentro de la LRU). Los datos a transferir pueden ser sincrónicos (utilizando el reloj
+señales generadas localmente dentro de cada LRU) o pueden ser asíncronas (es decir, auto reloj).
+
+El sistema que se muestra en la Figura 4.5 tiene la limitación obvia de que los datos solo pueden intercambiarse entre dos dispositivos. En la práctica, necesitamos compartir los datos entre muchas LRU / unidades de aviónica. Esto se puede lograr mediante el sistema de bus ilustrado en la Figura 4.6. En este sistema, los datos se transfieren utilizando un cable de bus de par trenzado blindado (STP) con una serie de paneles de acoplamiento que se encuentran en los puntos apropiados del
+aeronave (por ejemplo, la cubierta de vuelo, la bahía de aviónica, etc.). Cada panel de acoplamiento permite conectar varias unidades de aviónica al bus mediante un cable corto. Para optimizar la velocidad de transferencia de datos y minimizar los problemas asociados con la reflexión y la falta de coincidencia, el cable del bus debe terminarse en cada extremo utilizando un terminador de bus coincidente.
+
+Los acopladores de bus se producen como unidades de modo de voltaje o de modo de corriente, dependiendo de si usan dispositivos de detección de voltaje o corriente. Dentro de cada unidad LRU / aviónica, se proporciona una interfaz que
+realiza la conversión de datos de serie a paralelo o de paralelo a serie requerida, como se muestra en la Figura 4.7.
+
+Además de proporcionar una interfaz eléctrica (con el cambio apropiado de nivel de voltaje y corriente), la unidad de interfaz también convierte los formatos de datos (por ejemplo, de dobletes analógicos en serie presentes en el cable auxiliar a datos en serie codificados por Manchester requeridos por el controlador de terminal), como se muestra en la Figura 4.8. Para transmitir datos utilizando el bus de datos en serie, la información debe presentarse en un formato estándar.
+
+Un formato típico para datos en serie usaría una longitud de palabra de 32 bits. Esta palabra comprende varios campos discretos, que incluyen:
+
+â € ¢ hasta 20 bits para datos (que pueden dividirse aún más);
+
+â € ¢ un campo de etiqueta de 8 bits que se utiliza para identificar el tipo de datos y cualquier parÃ¡metro que pueda estar asociado a él;
+
+â € ¢ un identificador de origen / destino (SDI);
+
+â € ¢ varios bits de estado utilizados para proporcionar informaciÃ³n sobre el modo, el estado del hardware o la validez de los datos;
+
+â € ¢ un bit de paridad adicional que proporciona un medio para validar los datos (es decir, determinar si están o no libres de error).
+
+PUNTO CLAVE
+
+Se requiere un medio para convertir los datos en serie en datos paralelos (y viceversa) siempre que una LRU deba conectarse a un sistema de bus de avión.
+
+4.2 ARINC 429
+
+El bus de datos ARINC 429 ha demostrado ser uno de los estándares de bus más populares utilizados en aviones comerciales. La especificación ARINC 429 define las características y protocolos eléctricos y de datos que se utilizan.
+
+ARINC 429 emplea un estándar de bus de datos unidireccional conocido como Mark 33 Digital Information Transfer System (DITS). Los mensajes se transmiten en paquetes de 32 bits a una velocidad de bits de 12.5 o 100 kilobits por segundo (referidos como velocidad de bits baja y alta, respectivamente). Debido a que el bus es unidireccional, se requerirán puertos, acopladores y cables separados cuando una LRU desee poder transmitir y recibir datos. Tenga en cuenta que se puede requerir una gran cantidad de conexiones de autobús en una aeronave que utiliza sistemas de aviónica sofisticados.
+
+ARINC 429 se ha instalado en una amplia variedad de aviones de transporte comercial, incluidos: Airbus
+A310 / A320 y A330 / A340; y McDonnell Douglas MD-11. Las aeronaves más modernas (por ejemplo, Boeing 777 y Airbus A380) utilizan especificaciones de autobús significativamente mejoradas (consulte la página 49) para reducir el peso y el tamaño del cableado y facilitar velocidades de datos más altas de las posibles conBoeing 737, 747, 757 y 767; 
+ARINC 429. A pesar de estos movimientos hacia estándares de bus bidireccionales más rápidos, el estándar ARINC 429 tiene
+demostró ser altamente confiable y es probable que permanezca en servicio durante muchos años.
+
+4.2.1 Características eléctricas
+
+ARINC 429 es un bus diferencial de dos cables que puede conectar un solo transmisor o fuente a uno o más receptores o sumideros. Hay dos velocidades disponibles, 12.5 kbps (bits por segundo) y 100 kbps. El bus de datos utiliza dos cables de señal para transmitir Palabras de 32 bits. La transmisión de palabras secuenciales está separada por al menos cuatro bits de NULL (voltaje cero). Esto elimina la necesidad de una señal de reloj separada y hace que el sistema se sincronice automáticamente.
+
+PUNTO CLAVE
+
+Aeronautical Radio Inc. (ARINC) es una organización compuesta por las principales aerolíneas y fabricantes de aeronaves que busca promover la estandarización dentro del equipo de la aeronave. Se puede obtener más información sobre ARINC y los estándares de aeronaves en www.arinc.com. Las características eléctricas del ARINC 429 se resumen a continuación:
+
+El voltaje de transmisión nominal es de 10 V ± 1 V entre cables (diferencial), con polaridad positiva o negativa. Por lo tanto, cada tramo de señal oscila entre +5 V y - 5 V. Si un conductor está a +5 V, el otro conductor está a - 5 V, y viceversa. Un cable se llama conductor 'A' (o '+' o 'HI') y el otro se llama 'B' (o '' '' ''). € o â € ˜LOâ € ™) alambre.
+
+La modulación empleada es la modulación bipolar de retorno a cero (BPRZ) (consulte la Figura 4.9). El estado de la señal compuesta puede estar en uno de los siguientes tres niveles (medidos entre los conductores):
+
+â € ¢ HI, que debe estar dentro del rango de +7.25 V a 11 V (A a B);
+â € ¢ NULO, que debe estar dentro del rango de +0.5 V a â € “0.5 V (A a B);
+â € ¢ LO, que debe estar dentro del rango â € “7.25 V a â €“ 11 V (A a B).
+
+El voltaje recibido en un bus serie depende de la longitud de la línea y del número de receptores conectados al bus. Con ARINC 429, no se deben conectar más de 20 receptores a un solo bus. Dado que cada bus es unidireccional, un sistema debe tener su propio bus de transmisión si es necesario para responder o enviar mensajes.
+
+Por lo tanto, para lograr la transferencia de datos bidireccional es necesario tener dos conexiones de bus separadas.
+
+4.2.2 Protocolo
+
+Como solo puede haber un transmisor en un par de cables trenzados, ARINC 429 utiliza un muy simple punto a
+protocolo de puntos. El transmisor envía continuamente palabras de datos de 32 bits o se coloca en estado NULL.
+
+Tenga en cuenta que aunque solo puede haber un receptor en un cable de bus en particular, la especificación ARINC admite hasta 20.
+
+4.2.3 Tiempo de bits y velocidad de respuesta
+
+La velocidad de respuesta se refiere al tiempo de subida y bajada de la forma de onda ARINC. Específicamente, se refiere a la cantidad de tiempo que tarda la señal ARINC en elevarse del 10 por ciento al 90 por ciento de los puntos de amplitud de voltaje en los bordes delantero y trasero de un pulso. Los datos que se muestran en la Tabla 4.1 se aplican a y sistemas ARINC 429 de baja velocidad.
+
+
+4.2.4 Formato de palabra de datos ARINC 429
+
+En la mayoría de los casos, un mensaje ARINC consiste en una sola palabra de datos de 32 bits (ver Figura 4.11). El campo de etiqueta de 8 bits define el tipo de datos que está contenido en el resto de la palabra. Las palabras de datos ARINC son siempre de 32 bits y generalmente incluyen cinco campos principales, a saber, paridad, SSM, datos, SDI y etiqueta. bits de 1 (LSB) a 32 (MSB). Es posible una cantidad de formatos de datos diferentes.
+
+Los bits se transmiten comenzando con el bit 1 de la etiqueta, y el bit final transmitido es el bit de paridad. El estándar especifica el uso de paridad impar (el bit de paridad se establece en 1 o se restablece a 0 para garantizar que haya un número impar de 1s en cada palabra transmitida). Vale la pena señalar que la etiqueta se transmite primero con el MSB, mientras que los datos se transmiten primero con el LSB.
+
+El campo de etiqueta es un valor octal que indica el tipo de datos (por ejemplo, velocidad, altitud, etc.) que se está transmitiendo.
+
+El campo SDI se utiliza cuando un transmisor está conectado a múltiples receptores, pero no todos los receptores deben utilizar todos los datos. En este caso, a cada receptor se le asignará un valor SDI y solo mirará las etiquetas que coincidan con su valor SDI. Si bien la especificación exige que SDI 00 sea aceptado universalmente, este puede no ser el caso.
+
+El campo de datos contiene los datos reales que se enviarán. Los principales formatos de datos definidos en la especificación son el decimal codificado en binario (BCD), que utiliza grupos de cuatro bits para contener un solo dígito decimal y BNR (ver más abajo) que es codificación binaria. Para ambos tipos de datos, la especificación define las unidades, la resolución, el rango, el número de bits utilizados y con qué frecuencia se debe enviar la etiqueta.
+
+El campo SSM se usa para información que ayuda a la interpretación del valor numérico en el campo de datos. Ejemplos de valores SSM pueden ser Norte, Este, Sur, Oeste, Plus, Menos, Arriba o Abajo.
+
+El campo P es el bit de paridad. ARINC 429 usa paridad impar. El bit de paridad es el último bit transmitido dentro de la palabra de datos.
+
+Algunos ejemplos de datos enviados a través de un bus ARINC 429 se muestran en las Figuras 4.12 y 4.13. En la Figura 4.12 se está transmitiendo una palabra BCD (consulte la página 18); mientras que en la figura 4.13 los datos están codificados en formato binario.
+
+La especificación binaria ARINC 429 requiere el uso de la notación complementaria de dos para indicar números negativos (consulte la página 19). Este formato binario se conoce como BNR.
+
+En la Figura 4.13, la etiqueta (103) corresponde a la velocidad del aire seleccionada y el valor indicado es 268 nudos (256 + 8 + 4). El cero en la posición del bit 29 indica un valor positivo y los datos (presentados en formato binario natural) utilizan el bit 28 (para el MSB) al bit 20 (para el LSB). Los bits restantes se rellenan con ceros.
+
+En la figura 4.12, los datos de BNR transmiten un valor (esta vez expresado en formato BCD) de 25.786.
+
+Las tablas 4.2 y 4.3 proporcionan algunos ejemplos de etiquetas e ID de equipo (SDI).
+
+4.3 OTRAS NORMAS DE AUTOBUSES
+
+El siguiente es un breve resumen de algunos de los otros sistemas de bus de datos de aeronaves que han aparecido en los últimos 40 años. Es importante tener en cuenta que a menudo describen mejoras en los estándares existentes.
+
+Sin embargo, en todos los casos, el objetivo principal es garantizar que los fabricantes y operadores de equipos trabajen con una especificación común que garantice que el hardware y el software sean interoperables y
+actualizable
+
+4.3.1 ARINC 419
+
+El estándar ARINC 419 describe varios estándares de transmisión digital anteriores a ARINC 429.
+
+Algunos de estos utilizaron palabras de 32 bits similares a ARINC 429. Algunos estándares se basaron en el uso de un sistema de seis hilos, mientras que otros utilizaron un par trenzado de dos hilos blindado (como ARINC 429) o un cable coaxial. Línea
+los niveles de voltaje fueron de dos estados (HI / LO) o de tres estados (HI / NULL / LO), con voltajes que varían de 10 V a 18.5 V para el estado alto y de menos de 1 V a menos de 5 V para el Estado nulo.
+
+4.3.2 ARINC 561
+
+ARINC 561 se basó en un sistema de seis hilos que involucra tres pares que se usaron para DATA, SYNC y CLOCK. La codificación de no retorno a cero (NRZ) se empleó con la lógica 1 representada por 12 V. Al igual que ARINC 429, la longitud de la palabra fue de 32 bits con los bits 32 y 31 que comprenden la matriz de signo / estado (SSM) y no hay paridad disponible. Los campos incluyen una etiqueta de 8 bits y seis campos BCD, cinco de cuatro bits y uno de dos bits. Este sistema fue ampliamente utilizado en aviones fabricados antes de 1970. ARINC 568 usa la misma especificación de interfaz eléctrica que la utilizada en ARINC 561.
+
+
+4.3.3 ARINC 573
+
+ARINC 573 es el estándar adoptado para su uso con registradores de datos de vuelo (FDR) que utilizan un flujo continuo de datos de palabras codificadas de 12 bits de Harvard Bi-Phase. Estas palabras están codificadas en cuadros que contienen una instantánea de los datos de cada uno de los subsistemas de aviónica en el avión. Cada cuadro comprende cuatro subtramas. Una palabra de sincronización única aparece al comienzo de cada subtrama. ARINC 717 reemplaza a ARINC 573 y atiende a una serie de velocidades de bits y tamaños de trama diferentes.
+
+4.3.4 ARINC 575
+
+Similar al ARINC 429, este estándar es un sistema de bus de baja velocidad que se basa en un solo par de cables trenzados. Debido a la baja velocidad de datos admitida, este estándar de bus ahora se considera obsoleto. Eléctricamente, ARINC 575 es generalmente compatible con ARINC 429 de baja velocidad. Sin embargo, algunas variantes de ARINC 575 usan una tasa de bits que es significativamente más lenta que ARINC 429 y pueden no ser compatibles en términos de especificaciones eléctricas y formatos de datos.
+
+4.3.5 ARINC 615
+
+ARINC 615 es un protocolo de software que se puede superponer sobre los sistemas compatibles con ARINC 429. ARINC 615 admite la transferencia de datos a alta velocidad hacia y desde los sistemas digitales integrados, lo que permite, por ejemplo, leer y escribir discos de 3,5 pulgadas.
+
+4.3.6 ARINC 629
+
+ARINC 629 se introdujo a mediados de la década de 1990 y admite una velocidad de datos de 2 Mbps (20 veces más rápido que ARINC 429). El bus admite 120 dispositivos conectados y actualmente se utiliza en el Boeing 777, Airbus A330
+y aviones A340. Una mejora notable del estándar ARINC 429 anterior es que ARINC 629 es un sistema de bus bidireccional (en otras palabras, los dispositivos conectados pueden transmitir, recibir o hacer ambas cosas). Otra ventaja de ARINC 629 es que logra la comunicación bidireccional del bus sin la necesidad de un controlador de bus (que podría ser una fuente potencial de falla de un solo punto). El medio del bus físico es un par trenzado blindado (STP).
+
+4.3.7 ARINC 708
+
+ARINC 708 se utiliza para transferir datos desde el receptor de radar meteorológico en el aire a la pantalla de radar de la aeronave. El bus es unidireccional y utiliza datos codificados en Manchester a una velocidad de 1 Mbps. Las palabras de datos tienen una longitud de 1.600 bits y se componen de una palabra de estado de 64 bits y 512 palabras de datos de 3 bits.
+
+4.3.8 MIL-STD-1553B / 1773B
+
+El estándar militar 1533B es un bus de datos bidireccional controlado centralmente diseñado para su uso en aviones militares. El estándar utiliza un controlador de bus que puede admitir hasta 31 dispositivos, que se conocen como terminales remotos. El estándar admite una velocidad de bits de 1 Mbps. MIL-STD-1773B es una implementación de fibra óptica de MIL-STD-1553B que proporciona una inmunidad significativamente mayor a la exposición a campos electromagnéticos radiados de alta intensidad (HIRF).
+
+4.3.9 CSDB y ASCB
+
+Los estándares CSDB y ASCB son protocolos patentados de Collins y Honeywell, respectivamente. Estos sistemas se utilizan a menudo en pequeñas empresas y aviones privados de aviación general. CSDB es un bus unidireccional que permite la conexión de hasta diez receptores y un transmisor. El estándar admite velocidades de datos de 12.5 kbps y 50 kbps. ASCB es un bus bidireccional controlado centralmente. Una configuración básica comprende un controlador de bus único y dos buses aislados, cada uno de los cuales puede admitir hasta 48 dispositivos.
+
+4.3.10 FDDI
+
+La interfaz de datos distribuidos por fibra (FDDI) fue desarrollada originalmente por Boeing para su uso en el avión Boeing 777. FDDI es una red de área local (LAN) basada en una topología de anillo de token dual. Los datos en cada anillo fluyen en direcciones opuestas. La velocidad de datos es de 100 Mbps y los datos se codifican en cuadros. CDDI (interfaz de datos distribuidos de cobre) y SDDI (interfaz de datos distribuidos de par trenzado blindado) son estándares de bus de red similares basados u200bu200ben cobre y par trenzado blindado como los medios físicos. El formato de datos es NRZI (un formato de datos similar a NRZ, pero en el cual un cambio en el nivel de voltaje de línea indica un 1 lógico y ningún cambio indica un 0 lógico). Por razones de costo y para reducir el número y la complejidad de los estándares de red utilizados en su avión, Boeing ahora planea reemplazar el sistema en el 777 con un ethernet de cobre de 10 Mbps menos costoso.
+
+
+
+
+
+
+
+
+
+
+

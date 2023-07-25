@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Paneles de instrumentos}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Introducci\'on al estudio del instrumental}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Clasificaci\'on de los Instrumentos}{6}{0}{1}
+\beamer@subsectionintoc {1}{3}{Distribuci\'on Normalizada del Instrumental en el Tablero}{15}{0}{1}
+\beamer@subsectionintoc {1}{4}{Presentaci\'on en Pantalla Electr\'onica}{19}{0}{1}

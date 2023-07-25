@@ -1,0 +1,135 @@
+ï »¿La radio de alta frecuencia (HF) proporciona a los aviones medios de comunicación efectivos a través de rutas oceánicas y transpolares de larga distancia. Además, la comunicación de datos global se ha hecho posible recientemente utilizando estaciones terrestres de enlace de datos HF (H FDL) estratégicamente ubicadas. Estos proporcionan acceso a las redes de líneas aéreas ARINC y SITA. Por lo tanto, la comunicación en ondas decamétricas ya no está restringida a la oficina y está experimentando un resurgimiento de interés debido a la necesidad de encontrar un medio de comunicación de datos a larga distancia que aumente los enlaces de datos VHF y SATCOM existentes.
+
+Un sistema de radio HF de aeronave opera en frecuencias puntuales dentro del espectro de HF. A diferencia de la radio VHF de la aeronave, el espectro no se divide en una gran cantidad de canales contiguos, sino que las asignaciones de aeronaves se intercalan con muchos otros servicios, incluidos la transmisión de onda corta, los servicios fijos punto a punto, los servicios marinos y terrestres, u003d servicios de aficionados y aficionados. . Este capítulo describe el equipo utilizado y los diferentes modos en los que funciona.
+
+5.1 Rango de HF y propagación
+
+En el rango de HF (3 MHz a 30 MHz), las ondas de radio se propagan a largas distancias debido a la reflexión de las capas ionizadas en la atmósfera superior.
+
+Debido a las variaciones en altura e intensidades de las regiones ionizadas, se deben desactivar diferentes frecuencias en diferentes momentos del día y de la noche y para diferentes caminos. También hay alguna variación estacional (particularmente entre invierno y verano). La propagación también puede verse alterada y mejorada durante los períodos de intensa actividad solar.
+
+El resultado de esto es que la propagación de HF tiene considerables caprichos y es mucho menos predecible que la propagación en VHF.
+
+Frecuencias elegidas para una ruta de radio particular; e generalmente se establece aproximadamente a mitad de camino entre la frecuencia utilizable más baja (LUF) y la frecuencia máxima utilizable (MUF). El LUF diurno suele estar entre 4 y 6 MHz durante el día, y cae rápidamente después de la puesta del sol a alrededor de 2 MHz. El MUF depende de la temporada y el ciclo de las manchas solares, pero a menudo se encuentra entre 8 MHz y 20 MHz.
+
+Por lo tanto, una frecuencia típica durante el día para la comunicación de la aeronave podría ser de 8 MHz, mientras que podría ser tan baja como 3 MHz durante la noche. Los rangos típicos están en la región de 500 km a 2500 km y esto efectivamente llena el vacío en la cobertura de VHF (ver Figura 5. 1).
+
+Como ejemplo de la necesidad de cambiar las frecuencias durante un período de 24 horas, Figura 5. 2 muestra cómo el servicio proporcionado por el servicio oceánico de Santa Maria HF hace uso de diferentes partes del espectro de HF en diferentes momentos del día y de la noche. Observe la correlación entre la tabla de disponibilidad del servicio que se muestra en la Figura 5 .2 (a) y la variación típica en la frecuencia máxima utilizable (MUF) para la ruta de radio entre Madrid y Nueva York.
+
+Las siguientes bandas de ondas decamétricas están atribuidas al servicio aeronáutico:
+
+
+5.2 modulación SSB
+
+Desafortunadamente, el espectro disponible para comunicaciones de aeronaves en HF es extremadamente limitado. Como resultado, se toman medidas para restringir el ancho de banda de las señales transmitidas, tanto para voz como para datos.
+
+La modulación de amplitud de doble banda lateral (DSB) requiere un ancho de banda de al menos 7 kHz, pero esto puede reducirse transmitiendo solo una de las dos bandas laterales. Tenga en cuenta que se puede usar la banda lateral superior (USB) o la banda lateral inferior (LSB) porque ambas contienen la misma información de señal de modulación. Además, es posible reducir (o "suprimir") el operador ya que esto, en sí mismo, no transmite ninguna información.
+
+Para demodular una señal transmitida sin una portadora, es necesario volver a insertar la portadora en el extremo receptor (esto se hace en la etapa de demodulador donde un oscilador de frecuencia de latido o un oscilador de inserción de portadora reemplaza la señal de portadora faltante en la frecuencia intermedia final -ver Figura 5. 9). La ausencia de la portadora significa que se desperdicia menos energía en el transmisor, que en consecuencia opera con una eficiencia significativamente mayor.
+
+La figura 5.3 muestra el espectro de frecuencia de una señal de RF utilizando diferentes tipos de modulación de amplitud, con y sin portadora.
+
+En la figura 5 .3 (a), el modo de transmisión es la modulación de amplitud de doble banda lateral (DSB) convencional con portadora completa. Esta forma de modulación se utiliza para las comunicaciones de aeronaves VHF y se describió anteriormente en el Capítulo 4.
+
+La figura 5.3 (b) muestra el efecto de suprimir el portador. Este tipo de modulación se conoce como portadora suprimida de doble banda lateral (DSB-SC).
+
+En los sistemas DSB-SC prácticos, el nivel de la portadora generalmente se reduce en 30 dB o más.
+La señal DSB-SC tiene el mismo ancho de banda general que la señal DSB de portadora completa, pero la reducción en la portadora da como resultado una mayor eficiencia y una menor susceptibilidad a la interferencia heterodina.
+
+La figura 5.3 (c) muestra el efecto de retirar tanto el portador como la banda lateral superior. La señal resultante se conoce como banda lateral única (SSB), en este caso utilizando solo la banda lateral inferior (LSB). Observe cómo el ancho de banda general se ha reducido a solo alrededor de 3,5 kHz, es decir, la mitad de la señal DSB AM comparable que se muestra en la Figura 5 .3 (a).
+
+Finalmente, Figura 5. 3 (d) muestra el efecto de retirar el portador y la banda lateral inferior.
+
+Una vez más, la señal resultante se conoce como banda lateral única (SSB), pero en este caso estamos usando solo la banda lateral superior (USB). Aquí nuevamente, el ancho de banda general se ha reducido a alrededor de 3. 5 kHz. Tenga en cuenta que la comunicación HF de la aeronave requiere el uso de la banda lateral superior (USB). DSB AM también puede estar disponible, pero ahora se usa muy raramente debido al rendimiento superior que ofrece SSB.
+
+Pon a prueba tu comprensión 5.1
+
+1) Explica por qué la radio HF se usa en rutas transoceánicas.
+
+2. Explique por qué se utilizan diferentes frecuencias para las comunicaciones de las aeronaves en ondas decamétricas durante el día y por la noche.
+
+3. Establezca DOS ventajas de usar S
+
+5.3 SELCAL
+
+Las llamadas selectivas (SELCAL) reducen la carga de la tripulación de vuelo al alertarlos sobre la necesidad de responder a los mensajes entrantes. SELCAL está disponible en HF y VHF pero el sistema se usa más en HF. Esto se debe en parte a la naturaleza intermitente de las comunicaciones de voz en rutas oceánicas largas y en parte al hecho de que los sistemas de silenciamiento son más difíciles de operar cuando se utiliza SSB porque no hay portadora transmitida para indicar que hay una señal presente en el canal.
+
+El sistema SELCAL de la aeronave se define en el Anexo 10 del Convenio sobre Aviación Civil Internacional (OACI), Volumen 1, 4a edición de 1 985 (enmendado 1 987). El sistema implica la transmisión de una breve ráfaga de tonos de audio.
+
+Cada código transmitido compone dos pulsos de tono consecutivos, con cada pulso que contiene dos tonos transmitidos simultáneamente.
+
+Los pulsos tienen una duración de 1 segundo separados por un intervalo de aproximadamente 0.2 segundos. Para garantizar el correcto funcionamiento del decodificador SELCAL, la frecuencia de los tonos transmitidos debe mantenerse con una precisión superior a ± 0. 1 5%.
+
+Los códigos SELCAL se asignan de manera única a aeronaves particulares por el Control de Tráfico Aéreo (ATC).
+
+Como ejemplo, un código SELCAL transmitido típico podría consistir en una ráfaga de 1 segundo de 3 1 2.6 Hz y 977.2 Hz seguido de una pausa de aproximadamente 0. 2 segundos y otra ráfaga de tono de 1 segundo que comprende 346.7 Hz y 977.2 Hz. Tabla 5. 1 indica que el código SELCAL transmitido correspondiente es 'AM-BM' y que solo el avión con este código será alertado de la necesidad de responder a un mensaje entrante.
+
+La señal de RF transmitida por la estación de radio terrestre debe contener (dentro de 3 dB) cantidades iguales de los dos tonos de modulación y la combinación de tonos debe dar como resultado una envolvente de modulación que tenga un porcentaje de modulación nominal lo más alto posible (y en ningún caso menor que 60%).
+
+Los tonos transmitidos se componen de combinaciones de los tonos enumerados en la Tabla 5. 1)
+
+Tenga en cuenta que los tonos se han elegido para que no estén relacionados armónicamente (evitando así la posible confusión dentro del decodificador SELCAL cuando los armónicos de las frecuencias de tonos originales pueden estar presentes en la forma de onda demodulada).
+
+La cobertura global de enlace de datos de alta frecuencia (HFDL) de ARIN C proporciona una capacidad de enlace de datos altamente rentable para los transportistas en rutas oceánicas remotas, así como las rutas polares en latitudes altas donde la cobertura SATCOM no está disponible. HFDL tiene un costo menor que SATCOM y muchos operadores están utilizando HFDL en lugar de servicios satelitales o como un sistema de respaldo. HFDL sigue siendo la única tecnología de enlace de datos que funciona en el Polo Norte, proporcionando una cobertura de enlace de datos continua e ininterrumpida en las rutas polares populares entre América del Norte y Europa del Este y Asia.
+
+La demanda de HFDL ha crecido de manera constante desde que ARINC lanzó el servicio en 1 998, y hoy todos los principales fabricantes de aviones ofrecen la aviónica HFDL como equipo original. HFDL ofrece una solución rentable para el servicio global de enlace de datos. La demanda del servicio HFDL está creciendo actualmente en más de varios cientos de aviones por año.
+
+Las ventajas de HFDL se pueden resumir como:
+
+amplia cobertura debido al rango extremadamente largo de señales de HF
+
+cobertura simultánea en varias bandas y frecuencias (actualmente 60)
+
+múltiples estaciones terrestres (actualmente 1 4) en ubicaciones estratégicas de todo el mundo aviónica relativamente simple utilizando tecnología probada
+
+adquisición rápida de red
+
+disponibilidad de red excepcional
+
+Las desventajas de HFDL son:
+
+velocidades de datos muy bajas (lo que hace que el sistema no sea adecuado para comunicaciones de banda ancha de alta velocidad).
+
+Como resultado de lo anterior, la gran mayoría de los mensajes HFDL están relacionados con el control operativo de la aerolínea (AOC) (véase la figura 5 .4), pero también se espera que HFDL desempeñe un papel importante en los futuros sistemas de navegación aérea (FANS) donde proporcionará un medio adicional de vinculación de datos con una aeronave, complementando los sistemas VDL, GPS y SATCOM. Tenga en cuenta que SATCOM puede admitir velocidades de datos mucho más rápidas, pero también puede ser susceptible a interrupciones y puede no estar disponible en latitudes altas. HFDL utiliza modulación por desplazamiento de fase (PSK) a velocidades de datos de 300, 600, 1 200 y 1 800 bps. La velocidad utilizada depende de las condiciones de propagación prevalecientes. HFDL se basa en la multiplexación por división de frecuencia (FDM) para acceder a las frecuencias de la estación terrestre y la multiplexación por división de tiempo (TDM) dentro de los canales de comunicación individuales. 5 muestra cómo el espectro de frecuencia de una señal HFDL típica a 300 bps se compara con una señal de voz HF.Figura 5 . 
+
+La Figura 5.6 muestra mensajes típicos de HFDL enviados desde los cuatro aviones que se muestran en la Figura 5 .7 a la estación terrestre de Shannon HFDL utilizando el mismo canal de comunicaciones. La ruta de radio de uno de los aviones (LH8409) se ilustra en la Figura 5.8. Los primeros dos de los mensajes que se muestran en la Figura 5.6 son solicitudes de inicio de sesión y la velocidad de bits máxima se especifica en el encabezado. En cada solicitud de inicio de sesión, la aeronave se identifica por su dirección única de la OACI de 24 bits. Una vez conectado, el avión recibe un código de dirección de 8 bits (hexadecimal AF en el caso del tercer mensaje y hexadecimal AD en el caso del cuarto mensaje). Cada avión también transmite sus datos de ubicación actuales (longitud y latitud).
+
+El sistema utilizado para el intercambio de datos HFDL se especifica en ARINC 635. Cada estación terrestre transmite una trama llamada 'squitter' cada 32 segundos. El marco de squitter informa a la aeronave del estado del sistema, proporciona una referencia de sincronización y proporciona control de protocolo. Cada estación terrestre tiene un desplazamiento de tiempo para sus squitters. Esto permite que las aeronaves salten entre estaciones terrestres para encontrar la mejor antes de iniciar sesión. Al pasar el tráfico, se utilizan franjas horarias TDM dedicadas. Esto evita que dos aviones transmitan al mismo tiempo causando cousiones de datos.
+
+5.5 equipo de radio HF
+
+El esquema de bloques de un simple transmisor / receptor de HF se muestra en la Figura 5 .9. Tenga en cuenta que, si bien este equipo usa una sola frecuencia intermedia (IF), en la práctica la mayoría de las radios HF de aviones modernos son mucho más complejas y usan dos o tres frecuencias intermedias.
+
+En el modo de transmisión, la portadora suprimida DSB (Figura 5 .2b) se produce por medio de una etapa de modulador equilibrado. El modulador equilibrado rechaza el portador y su salida solo comprende las bandas laterales superior e inferior. La señal DSB luego pasa a través de un cristal de múltiples etapas o filtro mecánico. Este filtro tiene una banda de paso muy estrecha (típicamente 3 .4 kHz) en la frecuencia intermedia (IF) y esto rechaza la banda lateral no deseada. La señal S SB resultante se mezcla con una señal del sintetizador de frecuencia digital para producir una señal en el canal deseado. La salida del mezclador se amplifica aún más antes de pasar a la etapa de salida. Tenga en cuenta que, para evitar distorsiones, todas las etapas deben funcionar en modo lineal.
+
+Cuando se usa en modo de recepción, la frecuencia de la señal entrante se mezcla con la salida del sintetizador de frecuencia digital para producir la señal de frecuencia intermedia. Las señales de canales adyacentes no deseadas se eliminan por medio de otro cristal de etapas múltiples o filtro mecánico que tiene una banda de paso similar a la utilizada en el transmisor. La señal IF se amplifica antes de pasar al demodulador.
+
+El portador (faltante) se vuelve a insertar en la etapa de demodulador. La señal portadora se deriva de un oscilador portador controlado por cristal preciso que opera a la frecuencia IF. La señal de audio recuperada del demodulador se pasa luego al amplificador de audio, donde se amplifica a un nivel apropiado para pasar a un altavoz.
+
+La especificación típica para una radio HF de aeronave se muestra en la Tabla 5 .2. Figura 5 . 1 0 muestra la ubicación de la cubierta de vuelo del controlador de radio HF.Por lo general, una o dos radios de este tipo están instaladas en una gran aeronave comercial (tenga en cuenta que al menos una radio HF es un requisito para cualquier aeronave que siga una ruta transoceánica). 
+
+Pon a prueba tu comprensión 5.2
+
+Explique cómo el enlace de datos H F (HFDL) difiere del enlace de datos VHF (VOL). ¿En qué circunstancias se utiliza HFDL y qué ventajas ofrece?
+
+Explique brevemente cómo una aeronave inicia sesión en el sistema HFDL. ¿Cómo se evitan las colisiones de datos?
+
+5.6 Antenas de alta frecuencia y unidades de acoplamiento
+
+Las antenas externas de alambre se usaban con frecuencia en los primeros aviones. Dichas antenas generalmente se extenderían desde el fuselaje hasta la parte superior del estabilizador vertical y eran lo suficientemente largas como para permitir la operación resonante en una o más de las bandas de HF aeronáuticas. Desafortunadamente, este tipo de antena no es confiable y generalmente no es adecuado para su uso con un avión de pasajeros moderno de alta velocidad.
+
+El uso de una antena de sonda grande no es atractivo debido a su susceptibilidad a descargas estáticas y rayos. Por lo tanto, es altamente deseable una solución alternativa en la que la antena de HF esté protegida dentro de la célula. Los primeros experimentos (ver Figura 5. 1 3) mostraron que el estabilizador vertical (aleta de la cola) sería una ubicación adecuada y ahora se usa invariablemente para alojar la antena de HF y su unidad de acoplamiento asociada en la mayoría de los aviones de transporte de gran tamaño (ver Figura 5). 1 1 y 5. 1 2.
+
+Debido a la restricción en el espacio disponible (que mitiga el uso de una antena resonante, como una antena Marconi de cuarto de onda, consulte la página 24), la antena HF se basa en una muesca que usa parte de la célula para irradiar de manera efectiva. La muesca en sí tiene un factor Q muy alto y su resistencia y reactancia varía ampliamente en el rango de frecuencia de funcionamiento (es decir, 3 MHz a 24 MHz). La Figura 5 muestra la variación típica de la relación de onda estacionaria (SWR-vea la página 33) contra la frecuencia de una antena de muesca en HF. 1 4. A modo de comparación, en la Figura 5 se muestra la variación de la ROE con la frecuencia de una antena tipo VHF de cuarto de onda típica. 15 .
+
+De las figuras 5. 1 4 y 5. 1 5 debería ser obvio que la antena de HF, si bien está bien adaptada a 2 1 MHz, sería muy poco compatible con un alimentador / transmisor convencional de 50 Q en la mayoría de las otras frecuencias de HF. Debido a esto, y debido a que la antena de muesca generalmente se alimenta con voltaje, es necesario utilizar una unidad de sintonización / acoplamiento de HF entre el alimentador de radio HF y la antena de muesca. Esta unidad se monta cerca de la antena, generalmente cerca de la parte superior del estabilizador vertical (consulte la Figura 5. 1 2). Figura 5 . 1 6 inclina el efecto de usar una unidad de acoplamiento / sintonización en la característica de frecuencia SWR de la misma antena de muesca que se usó en la Figura 5. 1 4. Observe cómo la ROE se ha reducido a menos de 2: 1 para la mayoría (si no todas) del rango de HF.
+
+El ajuste de sintonización del acoplador de antena de HF es completamente automático y solo requiere una breve señal del transmisor para volver a sintonizar a una nueva frecuencia de HF. La unidad de acoplamiento de antena de HF incorpora un puente SWR (consulte la página 3 5) y un sistema de control de retroalimentación (consulte la Figura 5. 1 7) para ajustar un inductor de recubrimiento de rodillo (L l) y un condensador variable de vacío de alto voltaje (C 1) junto con una serie de condensadores de alto voltaje conmutados (C l a C4). La disposición interna de un acoplador de antena de HF típico se muestra en las Figuras 5. 1 8 y 5. 1 9. Las conexiones requeridas entre el acoplador de antena HF, la radio HF y la unidad de control se muestran en la Figura 5 .20.
+
+Los voltajes presentes en las proximidades de la antena de HF (así como el campo irradiado por ella) pueden ser extremadamente peligrosos. Por lo tanto, es esencial evitar el contacto con la antena y mantener una distancia de trabajo de la misma (al menos 5 metros) siempre que el sistema de radio HF esté "en vivo".
+
+Pon a prueba tu comprensión 5.3
+
+Explicar la función de un acoplador de antena HF.
+
+¿Qué precauciones de seguridad deben observarse al acceder a esta unidad?

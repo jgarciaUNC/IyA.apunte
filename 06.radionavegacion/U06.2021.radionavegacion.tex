@@ -1,0 +1,1782 @@
+% Version 2021
+%
+
+% Capítulo 6. Radionavegación
+% 6.1      ADF, función, diagrama en bloque, principio de funcionamiento.
+% 6.2      VOR, función, diagrama en bloque, principio de funcionamiento.
+% 6.3      ILS, función, diagrama en bloque, principio de funcionamiento.
+% 6.4      DME, función, diagrama en bloque, principio de funcionamiento.
+% 6.5      Radio-altímetro
+% 6.6      Radar meteorológico.                                            
+
+\chapter{Radionavegaci\'on}
+\label{chap:U06.radionavegacion.tex}
+
+
+\section{M\'etodos de Navegaci\'on A\'erea}
+\label{sec:06.metodos.navegacion.aerea}
+
+La navegaci\'on a\'erea se divide en dos tipos, dependiendo de si la aeronave es independiente o necesita de instalaciones exteriores a la aeronave para poder guiarse:
+
+\CajaAmarilla{Navegaci\'on A\'erea Aut\'onoma}{	
+Es aquella que no necesita de alguna infraestructura o informaci\'on suministrada 
+	por un equipo exterior a la aeronave para poder completar con \'exito el vuelo. 
+	A su vez, \'esta se divide en:
+
+\begin{description}
+
+    \item [Navegaci\'on observada:] se basa en la observaci\'on directa por parte del navegante o piloto de las referencias necesarias en el terreno para conocer la posici\'on de la aeronave.
+
+    \item [Navegaci\'on a estima (Dead reckoning):] el navegante o piloto estima la posici\'on actual, conocidas la direcci\'on y la velocidad respecto al terreno.
+
+    \item [Navegaci\'on por fijaci\'on de la posici\'on:] \'esta a su vez se subdivide en navegaci\'on a\'erea astron\'omica, navegaci\'on a\'erea Doppler, \ac{INS}.
+
+\end{description}
+
+}
+
+\CajaAmarilla{Navegaci\'on A\'erea No Aut\'onoma}{
+ Necesita de instalaciones exteriores para su guiado durante el vuelo, estas reciben el nombre de \emph{ayudas a la navegaci\'on}, las cuales se pueden dividir a su vez dependiendo del tipo de informaci\'on que transmiten as\'i como del canal a trav\'es del cual lo hacen. 
+De esta manera las ayudas pueden ser:
+
+\begin{description}
+    \item [Ayudas visuales al aterrizaje:] son instalaciones que proporcionan se\~nales visuales durante la etapa de aterrizaje de la aeronave.
+
+    \item [Radioayudas:] Se basan en se\~nales radioel\'ectricas, usualmente generadas en instalaciones terrestres y recibidas a bordo.
+
+    \item [Navegaci\'on por sat\'elite:] se basa en una constelaci\'on de sat\'elites que transmite rangos de se\~nales utilizados para el posicionamiento y localizaci\'on en cualquier parte del globo terrestre, ya sea en tierra, mar o aire. Estos permiten determinar las coordenadas geogr\'aficas y la altitud de un punto dado como resultado de la recepci\'on de se\~nales provenientes de dicha constelaci\'on.
+
+\end{description}
+}
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{06.radionavegacion/Imagenes/tipos-navegacion.eps}
+  \caption{Navegaci\'on A\'erea}
+  \label{fig:navegacion.aerea.cuadro}
+\end{figure}
+
+\section{Radionavegaci\'on}
+\label{sec:06.radionavegacion.principios}
+
+Se suele denominar como Radionavegaci\'on a las t\'ecnicas y sistemas que permiten estimar la posici\'on de un veh\'iculo, ya sea terrestre, naval o a\'ereo, empleando se\~nales de radio.
+
+Estos sistemas empezaron a desarrollarse a principios del siglo XX junto con el desarrollo de la radio y, al día de hoy se contin\'uan desarrollando por la gran multitud de aplicaciones que éstos tienen.
+
+Los sistemas de radionavegación emplean estaciones, o radiayudas, para enviar o recibir señales. Seg\'un  donde se encuentren dispuestas estas estaciones pueden clasificarse los sistemas de radionavegación como terrestres, si se usan estaciones terrestres, y sistemas de radionavegación por satélite, si se emplean constelaciones de satélites en la \'orbita terrestre.
+
+Todos estos sistemas basan su funcionamiento en las ondas de radio.
+ Por ello, es conveniente comenzar con los conceptos b\'asicos asociados a las ondas en general y a las ondas electromagn\'eticas en particular, de las cuales las ondas de radio son apenas un subconjunto.
+
+\subsection{ Ondas Electromagn\'eticas }
+\label{sec:06.ondas.electromagneticas}
+
+
+\subsubsection{Caracter\'isticas generales}
+\label{sec:06.ondas.electromagneticas.caracteristicas.generales}
+
+Una onda electromagn\'etica es un tipo de radiaci\'on en forma de onda que se caracteriza por poseer dos campos: un campo el\'ectrico ($\vec{E}$) y otro campo magn\'etico ($\vec{B}$), oscilando perpendicularente entre s\'i. La Figura \ref{fig:onda-electromagnetica} representa una onda electromagn\'etica: 
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{06.radionavegacion/Imagenes/06.00.ondas.electromagneticas/onda_electromagnetica.jpg}  
+  \caption{Onda electromagn\'etica \protect\cite{onda_electro_magnetica}}
+  \label{fig:onda-electromagnetica}
+\end{figure}
+
+
+
+% Dibujar en Tikz onda electromagnética ver:
+
+% \url{https://tex.stackexchange.com/questions/229674/electromagnetic-wave-propagation-with-tikz}
+
+
+% Link que explica de forma simple y con dibujos: 
+% \url{https://ikastaroak.ulhi.net/edu/es/IEA/ICTV/ICTV02/es_IEA_ICTV02_Contenidos/website_index.html}
+
+
+
+Para entender mejor su comportamiento se recuerdan los siguientes conceptos:
+
+\begin{description}
+\item [Ciclo] Es cada patr\'on repetitivo de una onda.
+
+\item  [Per\'iodo] Tiempo que tarda la onda en completar un ciclo.
+
+\item  [Frecuencia] N\'umero de ciclos que completa la onda en un intervalo de
+  tiempo. Si dicho intervalo es de un segundo, la unidad de frecuencia
+  es el Hertz (Hz). Otras unidades de frecuencias muy utilizadas (en
+  otros \'ambitos) son las ``\textit{revoluciones por minuto}'' (RPM) y los
+  ``\textit{radianes por segundo}'' (rad/s).
+
+El per\'iodo y la frecuencia est\'an relacionados como $ f = 1/T $
+
+\item [Amplitud] Es la medida de la magnitud de la m\'axima perturbaci\'on del medio producida por la onda.
+
+\item [Longitud de onda] Determinada por la distancia entre los puntos inicial y final de un ciclo (por ejemplo, entre un valle de la onda y el siguiente). Habitualmente se denota con la letra griega $\lambda$ (lambda).
+En la Figura
+donde se mantiene el tiempo $t$ constante y la distancia $x$ variable 
+
+
+En el caso de las ondas electro magn\'eticas 
+la amplitud del campo el\'ectrico o del magn\'etico se puede expresar como:
+
+\[ E = E_0 \,\cos{(     \omega t + phi)}
+\]
+
+Donde $E_0$ es la amplitud m\'axima, en este caso del campo el\'ectrico,  considerando el eje $x$
+como direcci\'on de propagaci\'on, 
+%$k$ es el n\'umero de onda, 
+$\phi$ es la fase inicial
+de la onda y $\omega$ la frecuencia angular.
+% Estos valores se relacionan entre s\'i de la siguiente manera:
+
+% \[ \displaystyle k = \frac{2\pi}{\lambda} \quad [\text{radianes/m}] 
+%    \qquad \omega = 2\pi\,f \quad [\text{radianes/seg}]
+% \]
+
+% Donde $\lambda$ es la longitud de onda en metros y $f$ es la frecuencia de la misma en Hertz.
+
+
+Un factor importante a tener en cuenta es que el tama\~no y dise\~no de las antenas est\'a fuertemente influenciado por la longitud de onda. Por ejemplo, una antena dipolo sencilla debe tener una longitud $\lambda/2$ para que sintonice de manera \'optima las ondas de longitud $\lambda$.
+
+Los conceptos anteriores est\'an representados en la Figura \ref{fig:propiedades-onda}.
+
+\begin{figure}[!h]
+  \centering
+ \includegraphics[width=0.7\textwidth]{06.radionavegacion/Imagenes/06.01.adf/propiedades-onda.png}  
+  \caption{Propiedades de una onda \protect\cite{wikipedia_esp}}
+  \label{fig:propiedades-onda}
+\end{figure}
+
+
+\item [Velocidad] Las ondas se desplazan a una velocidad que depende de la naturaleza de la onda y del medio por el cual se mueven. En el caso de la luz, por ejemplo, la velocidad en el vac\'io se denota $c$ y vale 299792458 m/s (aproximadamente $3 \times 10^8 \, m/s$).
+
+Los conceptos de velocidad, longitud y frecuencia est\'an interrelacionados. Para el caso de las ondas electromagn\'eticas (de las cuales la luz es un ejemplo), la relaci\'on se expresa como $ \lambda = c / f $
+
+\begin{tcolorbox}
+  \begin{sagesilent}
+# Ejemplos sobre ondas electromagneticas
+# 22/09/2020  SageMath 
+
+
+long_onda_01 = 30           # [m] longitud onda dato
+velocidad_luz = 3 * 10**8   # [m/seg] velocidad de la luz en vacio
+
+frecuencia_01 = velocidad_luz / long_onda_01  # [Hz] frecuencia correspondiente a long_onda_01
+
+frecuencia_02 = 300         # [MHz] frecuencia dato
+long_onda_02  = velocidad_luz / frecuencia_02 / 10**6 # [m] long_onda correspondiente a frecuencia_02
+
+  \end{sagesilent}
+
+{\bf Ejemplos:}
+
+  \begin{itemize}
+  \item Si se tiene onda electromagn\'etica con $\lambda_1 =
+    \Resultado{long_onda_01}{0}$\,m, ¿ cu\'al es la frecuencia
+    asociada?
+
+    Recordando la expresi\'on anterior, se hace:
+
+    \[ \text{frecuencia}_1 = \displaystyle \frac{c}{\lambda_1} =
+    \displaystyle
+    \frac{\Resultado{velocidad_luz}{0}\text{\,m/seg}}{\Resultado{long_onda_01}{0}\text{\,m}}
+    = \Resultado{frecuencia_01}{0}\,\text{Hz} =
+    \Resultado{frecuencia_01 / 10**6}{0}\,\text{MHz}
+    \]
+
+  \item Si se tiene onda electromagn\'etica con frecuencia$_2 =
+    \Resultado{frecuencia_02}{0}$\,MHz, ¿ cu\'al es la longitud de onda 
+    asociada?
+
+    Recordando la expresi\'on que relaciona estos valores, se hace:
+
+\[ \displaystyle 
+	\lambda_2 = \frac{c}{\text{frecuencia\,}_2} 
+	= \frac{\Resultado{velocidad_luz}{0}\text{\,m/seg}}{\Resultado{frecuencia_02}{0}\text{\,MHz}}
+	= \frac{\Resultado{velocidad_luz}{0}\text{\,m/seg}}{\Resultado{frecuencia_02 * 10**6 }{0}\text{\,Hz}}
+	= \Resultado{long_onda_02}{0}\text{\,m}
+\]
+
+  \end{itemize}
+
+
+ 
+
+
+
+\end{tcolorbox}
+
+
+\item [Fase] La fase de una onda relaciona la posici\'on de una caracter\'istica espec\'ifica del ciclo (como por ejemplo un pico), con la posici\'on de esa misma caracter\'istica en otra onda. Puede medirse en unidades de tiempo, distancia, fracci\'on de la longitud de onda o (m\'as com\'unmente) como un \'angulo.
+
+Tomese en cuenta que la definici\'on de fase lleva impl\'icita la comparaci\'on de dos ondas de la misma frecuencia, pues en caso contrario no tiene mucho sentido dicha comparaci\'on.
+
+La Figura \ref{fig:desfase-ondas} muestra varias ondas con diferentes fases. 
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{06.radionavegacion/Imagenes/06.01.adf/desfase-ondas.png}
+  \caption{Ondas con diferentes fases \protect\cite{wikipedia_esp}}
+  \label{fig:desfase-ondas}
+\end{figure}
+
+
+
+\item [Polarizaci\'on] Representa la orientaci\'on con la que la onda oscila y en el caso particular de las ondas electromagn\'eticas, la orientaci\'on en la oscilaci\'on del campo el\'ectrico. 
+Pueden ser del siguiente tipo:
+
+\begin{description}
+\item[\bf Polarizaci\'on Plana o Lineal:] A menudo esta orientaci\'on es una l\'inea y por ello se habla t\'ipicamente de ondas con polarizaci\'on vertical u horizontal, es decir, cuando el campo el\'ectrico oscila en un plano con esas direcciones.
+  \begin{description}
+  \item[\bf Polarizaci\'on Horizontal:] Si el campo eléctrico se propaga en dirección paralela a la superficie de la tierra.
+  \item[\bf Polarizaci\'on Vertical:] Si el campo eléctrico se propaga perpendicularmente a la superficie terrestre.
+  \end{description}
+
+\item[\bf Polarizaci\'on Circular:] Cuando el campo el\'ectrico cambie su orientaci\'on conforme la onda avanza, girando 360º a medida de que la onda recorre una distancia $\lambda$ y la intensidad de $\vec{E}$ es igual en todos los \'angulos de polarizaci\'on
+
+\item[\bf Polarizaci\'on El\'iptica:] Cuando la intensidad de campo eléctrico varia con cambios en la polarización.
+
+\end{description}
+
+\begin{figure}[!htb]
+  \centering
+    \includegraphics[width=\textwidth]{06.radionavegacion/Imagenes/06.00.ondas.electromagneticas/polarizacion_ondas_EM.jpg}    
+  \caption{Tipos de polarizaci\'on, {\footnotesize Fuente: \url{https://ar.pinterest.com/pin/354940014355760560/}}}
+  \label{fig:06.tipos.polarizacion}
+\end{figure}
+
+
+%   \begin{figure}[!h]
+%     \centering
+%   \includegraphics[width=0.7\textwidth]{06.radionavegacion/Imagenes/06.01.adf/polarizacion-ondas.png}    
+%     \caption{Polarizaci\'on de las ondas electromagn\'eticas \protect\cite{wikipedia_esp}}
+%     \label{fig:polarizacion-ondas}
+%   \end{figure}
+
+
+% \begin{figure}[!h]
+%   \centering
+%   \includegraphics[width=0.7\textwidth]{06.radionavegacion/Imagenes/06.01.adf/polarizacion-circular.png}  
+%   \caption{Onda con polarizaci\'on circular \protect\cite{wikipedia_esp}}
+%   \label{fig:polarizacion-circular}
+% \end{figure}
+
+
+\end{description}
+
+
+\subsection{El espectro electromagn\'etico}
+
+Se denomina Espectro Electromagn\'etico a todo el rango posible de radiaci\'on electromagn\'etica, lo cual incluye las ondas de radio, los infrarrojos, la luz, los ultravioletas, los rayos X, gamma, etc.
+  En la Figura \ref{fig:espectro-electromagnetico} se presenta el espectro completo.
+
+En funci\'on de lo anterior, el Espectro Radioel\'ectrico o de RadioFrecuencia, 
+ en ingl\'es \ac{RF},
+ se refiere a la porci\'on del espectro electromagn\'etico en el cual las ondas electromagn\'eticas pueden generarse alimentando a una antena con corriente alterna. La Tabla \ref{tab:espectro-radioelectrico}   presenta las bandas de RF m\'as importantes. 
+
+A mayor frecuencia la longitud de onda se reduce, raz\'on por la cual es posible encontrar tambi\'en la tabla anterior en funci\'on de la longitud y clasificando el espectro en ondas kilom\'etricas, decim\'etricas, milim\'etricas, etc.  	  	 
+
+
+
+\begin{landscape}
+
+
+\begin{figure}[!h]
+  \centering
+ \includegraphics[width=\textheight]{06.radionavegacion/Imagenes/06.01.adf/electromagneticspectrumes.eps}   
+  \caption{Espectro electromagn\'etico}
+  \label{fig:espectro-electromagnetico}
+\end{figure}
+
+  \begin{minipage}[c]{0.50\textheight}
+    \centering 
+    \captionof{table}{ Espectro radioel\'ectrico}
+    \label{tab:espectro-radioelectrico}
+
+    \begin{adjustbox}{width = 0.9\linewidth}
+      \begin{tabular}{|c|l|c|c|}
+        \hline \rowcolor{blue!50!black}
+        \textcolor{yellow}{\bf Abreviatura} & \multicolumn{1}{c}{\textcolor{yellow}{\bf  Nombre}}
+        & \textcolor{yellow}{\bf Frecuencia} & \textcolor{yellow}{\bf Algunos usos}\\ \hline \hline
+        VLF 	& Very Low Frequency& 	3-30 kHz &	Loran-C \\ \hline
+        LF 	&Low Frequency 	&30-300 kHz &	ADF/NDB \\ \hline
+        MF 	&Medium Frequency 	&300-3000 kHz 	&ADF/NDB \\ \hline
+        HF 	&High Frequency 	&3-30 MHz 	&COMM larga distancia \\ \hline
+        VHF 	&Very High Frequency 	&30-300 MHz 	&VOR, COMM ACFT \\ \hline
+        UHF 	&Ultra High Frequency 	&300-3000 MHz 	&DME, Radar, GNSS \\ \hline
+        SHF 	&Super High Frequency 	&3-30 GHz 	&Radar, COMM microondas \\ \hline
+        EHF 	&Extremely High Frequency &30-300 GHz 	&Radioastronom\'ia \\ \hline
+      \end{tabular}  
+    \end{adjustbox}
+
+  \end{minipage}
+  \begin{minipage}[c]{0.50\textheight}
+
+  \centering
+
+  \captionof{table}{Bandas de Microondas}
+  \label{tab:06.bandas.radar}
+
+  \begin{adjustbox}{width = 0.9\linewidth}
+
+    \begin{tabular}{lll} \rowcolor{blue!50!black} \centering
+      \textcolor{yellow}{\bf Banda} & \textcolor{yellow}{ {\bf Rango
+          de Frecuencias}}
+      & \multicolumn{1}{c}{ \textcolor{yellow}{\bf Valor}} \\
+%      High Frecuency (HF) & 3 - 30 MHz & \\ \hline
+%      Very  High Frecuency (VHF)& 30 - 300 MHz & 138-144 MHz \\
+%      & & 216-225 MHz \\ \hline
+      P & 300 MHz - 1 GHz & 420 - 450 MHz \\
+      & & 890 - 942 MHz \\ \hline L & 1 - 2 GHz & 1,215 - 1,4 GHz \\
+      \hline
+      S  & 2 - 4 GHz & 2,3  - 2,5 GHz \\
+      & & 2,7 - 3,7 GHz \\ \hline C & 4 - 8 GHz & 5,250 - 5,925 GHz \\
+      \hline X & 8 - 12 GHz & 8,5 - 10,68 GHz \\ \hline
+      Ku (``under'' K) & 12 - 18 GHz & 13,4 - 14,0 GHz \\
+      & & 15,7 - 17,7 GHz \\ \hline
+      K & 18 - 27 GHz & 24,05 - 24,25 GHz \\
+      & & 24,65 - 24,75 GHz \\ \hline Ka (``above'' K) & 27 - 40 GHz &
+      33,4 - 36,0 GHz \\ \hline V & 40 - 75 GHz & 59,0 - 64,0 GHz \\
+      \hline W & 75 - 110 GHz & 76,0 - 81,0 GHz \\ \hline 
+%	& & 92,0 -  100,0 GHz \\ \hline
+%      mm & 100 - 300 GHz & 126,0 - 142,0 GHz \\
+%      & & 144,0 - 149,0 GHz \\
+%      & & 231,0 - 235,0 GHz \\
+%      & & 238,0 - 248,0 GHz \\ \hline
+    \end{tabular}
+
+  \end{adjustbox}
+
+  \end{minipage}
+
+
+
+\end{landscape}
+
+
+\subsection{Propagaci\'on de ondas electromagn\'eticas}
+
+Las caracter\'isticas de la propagaci\'on de las ondas electromagn\'eticas son importantes para comprender algunas de las caracter\'isticas de los sistemas que las utilizan. Por eso, en esta secci\'on se repasar\'an los aspectos m\'as importantes de la propagaci\'on. En la Tabla \ref{tab:06.constantes.fisicas} pueden observarse varias constantes f\'isicas que son empleadas en las propiedades de propagaci\'on de las ondas electromagn\'eticas.
+
+
+\begin{table}[!h]
+  \centering
+  \caption{Tabla de constantes f\'isicas}
+  \begin{tabular}{lcl}  \rowcolor{blue!50!black}
+    \multicolumn{1}{c}{\textcolor{yellow}{\bf Constante}}
+&   \multicolumn{1}{c}{\textcolor{yellow}{\bf S\'imbolo}}
+&   \multicolumn{1}{c}{\textcolor{yellow}{\bf Valor}} \\
+
+Velocidad de la luz en el vac\'io & $c$ & $2,99792458 \times 10^8\,\text{m/seg} \approx 3 \times 10^8\,\text{m/seg}$ \\ \hline
+Permitividad en el vac\'io & $\epsilon_0$ & $8,85 \times 10^{-12} \,\text{F/m}$ \\ \hline
+Permeabilidad en el vac\'io & $\mu_0$ & $ 4\,\pi \times 10^{-7} \,\text{T\,m / A}$ \\ \hline
+Impedancia en el vac\'io & $\eta$ & $ 377\,\Omega$ \\ \hline
+Constante de Boltzmann & $k$ &  $1,38 \times 10^{-23} \,\text{J/K}$ \\ \hline
+  \end{tabular}
+
+  \label{tab:06.constantes.fisicas}
+\end{table}
+
+
+% Se suele emplear en lugar del vector campo magn\'etico  $\vec{B}$ al vector excitaci\'on magn\'etica $\vec{H}$ siendo 
+% $\displaystyle \vec{H} = \frac{\vec{B}}{\mu_0} - \vec{M}$,
+% donde $\vec{M}$ es el vector momento magn\'etico por unidad de volumen, que en este caso se considera nulo.
+
+% Haciendo $\displaystyle \frac{E}{H} = \sqrt{\frac{\mu_0}{\epsilon_0}} 
+% = \sqrt{\frac{\Resultado{4 * 10**{-7} }\text{Henry/m}}{\epsilon_0}} 
+
+
+\begin{tcolorbox}{Propiedades generales de la propagaci\'on que son independientes de la frecuencia de la onda RF:}{\small
+  \begin{itemize}
+
+  \item La velocidad de una onda electromagn\'etica es constante
+    mientras no cambie el medio de propagaci\'on.
+ La velocidad de una onda electromagn\'etica en el vac\'io es
+    siempre $c = 299792458 \,\text{m/s} \approx 3 \times 10^8 \,\text{m/s}$.
+
+  \item En presencia de una atmósfera se producen perdidas en la señal que en el vacío no se encuentran.
+
+  \item Las ondas electromagn\'eticas tienden a reflejarse en objetos
+    de tama\~no similar a su longitud de onda ($\lambda$).
+
+  \item Las ondas electromagn\'eticas se propagan en l\'inea recta
+    mientras no sufran influencias externas ni cambien de medio de
+    propagaci\'on.
+
+  \item Son ondas transversales, su direcci\'on de oscilaci\'on es perpendicular a la direcci\'on de propagaci\'on.
+  \end{itemize}
+  }
+\end{tcolorbox}
+
+La propagación de ondas  electromagnéticas se refiere al espacio libre, aunque \'este realmente 
+implica ``\emph{en el vacío}'', con frecuencia la
+propagación por la atmósfera terrestre se suele llamar ``\emph{propagación por el espacio libre}''
+ y se puede considerar siempre así. 
+La principal diferencia es que la atmósfera de nuestro planeta introduce
+perdidas de la señal que no se encuentran en el vacío.
+
+Las ondas electromagnéticas se propagan a través de cualquier considerado como  dieléctrico,
+con lo cual se incluye el aire, pero no es as\'i en conductores que presentan p\'erdidas como el
+agua en el mar.
+
+Como este tipo de ondas no son visibles al ojo humano, ver Figura \ref{fig:espectro-electromagnetico},
+ su propagaci\'on  se  analizar con métodos indirectos empleando esquemas. 
+Para esto el conceptos de rayo y de frente de onda auxilian en la ilustraci\'on
+de los efectos de propagación de las ondas electromagnéticas a través
+del espacio libre. 
+
+Se considera a un rayo como una línea seg\'un la dirección de
+propagación de una onda y permite mostrar la
+dirección relativa de la propagación de la misma.
+
+Un frente de ondas representa una superficie de las mismas de fase
+constante, al unir los puntos de igual fase en rayos
+que se propagan desde la misma fuente. Cerca de la fuente emisora (en el denominado ``\emph{near field}'')
+el frente de onda suele ser una superficie curva pero al alejarse, a una cierta distancia en el denominado ``\emph{far field}'', se transforma en una superficie plana denominado ``\emph{frente de onda plano}''.
+
+Para entender lo anterior, se considera un emisor puntual, que emite por igual en cualquier direcci\'on del espacio,  denominado ``\emph{emisor isotr\'opico}''. En este caso idal 
+el frente de onda del mismo en el near field
+puede representarse como una esfera rodeando al emisor.
+Al alejarse del emisor el frente de onda se transforma gradualmente en una superficie cada vez m\'as plana,
+por esto la mayor\'ia de los casos se pueden considerar de \'este tipo a una cierta distancia del emisor.
+
+Volviendo al frente de onda esf\'erico, se considera que la potencia irradiada se encuentra 
+uniformemente distribuida sobre la superficie total de la esfera, considerando que el medio de transmisión no
+tiene pérdidas.
+De esta manera, si la esfera tiene un radio $r$ desde el emisor, y este brinda una potencia $P_t$, 
+ en cada punto de la esfera se encuentra la misma densidad de potencia lo cual se puede expresar como:
+
+ \begin{equation}
+   \label{eq:06.densidad.potencia.emisor.iso} \displaystyle
+   p = \frac{P_t}{4\pi\,r^2} \qquad \qquad  \left[ \frac{\text{Vatios}}{\text{m}^2} \right]
+ \end{equation}
+
+Siendo $4\pi\,r^2$ la superficie de la esfera.
+
+La expresi\'on (\ref{eq:06.densidad.potencia.emisor.iso})
+expresa la regla del cuadrado inverso puesto que al duplicarse la distancia desde el emisor,
+la densidad de potencia disminuye a la cuarta parte, considerando que la potencia del emisor
+permanece constante.
+Este efecto es denominado ``\emph{atenuaci\'on}'' y se debe a la dispersión esférica de la onda.
+
+Pero los emisores que se emplean suelen tener direcciones preferenciales, a diferencia del emisor isotr\'opico,
+por lo que 
+se denomina ``\emph{ganancia del emisor}'', $G_t$ a la potencia transmitida seg\'un la 
+direcci\'on preferencial de la antena empleada. Con lo cual la densidad de potencia resulta ser:
+
+\begin{equation}
+  \label{eq:06.densidad.potencia.con.ganancia.transmisor} \displaystyle
+  p_t = p\,G_t = \frac{P_t \, G_t}{4\pi\,r^2}
+\end{equation}
+
+
+% La potencia que recibe el receptor, en el modelo considerado, depende de la densidad de potencia recibida y de la ``\emph{apertura}'' de su antena ($Ae$):
+
+% \begin{equation}
+%   \label{eq:06.potencia.recibida} \displaystyle
+%   P_r = p_t \,Ae = \frac{P_t \, G_t\, Ae}{4\pi\,r^2} \qquad \qquad [\text{Vatios}]
+% \end{equation}
+
+% La apertura de la antena receptora depende de:
+
+% \begin{equation}
+%   \label{eq:06.apertura.antena.receptora} \displaystyle
+%   Ae = \frac{\lambda^2 \, G_r}{4\pi}
+% \end{equation}
+
+% Con lo anterior la potencia recibida queda:
+
+% \begin{equation}
+%   \label{eq:06.formula.radiacion.Frii}
+%   P_r = \frac{P_t \, G_t}{4\pi\,r^2} \, \frac{\lambda^2 \, G_r}{4\pi}
+% 	= \frac{\lambda^2}{(4\pi)^2\,r^2} \,P_t \, G_t \, G_r
+% \end{equation}
+
+% Que se denomina ``\emph{F\'ormula de radiaci\'on de Frii}''.
+
+% Tomando logaritmo de base diez en ambos miembros:
+
+% \[ \log{P_r} = \log{\left[ \left(\frac{\lambda}{4\pi\,r}\right)^2 \,P_t \, G_t \, G_r \right]}
+% 	= 2\,\log{\left(\frac{\lambda}{4\pi\,r}\right)} + \log{P_t} + \log{G_t} + \log{G_r}
+% \]
+
+
+
+
+
+
+
+
+\begin{description}
+\item[\bf Reflexi\'on:] Se conoce como  reflexi\'on al cambio abrupto en la direcci\'on de la onda cuando \'esta llega a la uni\'on de dos medios diferentes, regresando al medio original (Figura \ref{fig:reflection-ondas}) . 
+
+\item[\bf Refracci\'on:] Por otro lado, la refracci\'on es el cambio en velocidad de una onda
+cuando pasa de un medio a otro. Es de hacer notar que a menudo el
+cambio en velocidad implica un cambio de direcci\'on (dado que la
+velocidad es un vector), tal como se muestra en la Figura
+\ref{fig:refraccion-ondas}.
+
+\begin{figure}[!h]
+  \centering \subfigure[Fen\'omeno de reflecci\'on
+  \protect\cite{wikipedia_esp}]{\includegraphics[height=7cm]{06.radionavegacion/Imagenes/06.01.adf/Reflection_angles.eps} \label{fig:reflection-ondas}}
+  \subfigure[Fen\'omeno de refracci\'on
+  \protect\cite{wikipedia_esp}]{\includegraphics[height=7cm]{06.radionavegacion/Imagenes/06.01.adf/refraccion-ondas.png} \label{fig:refraccion-ondas}}
+  \caption{Fenomenos que ocurren en la propagaci\'on de las ondas}
+\end{figure}
+
+Un concepto estrechamente relacionado con el de la refracci\'on es el
+del \'angulo l\'imite o \'angulo cr\'itico. Cuando el \'angulo de
+incidencia de la onda con respecto a la normal es mayor que dicho
+\'angulo, la onda se refleja en vez de refractarse.
+
+La expresi\'on para el \'angulo l\'imite es  $ \theta_{crit} =
+\arcsin(n_2/n_1) $, donde $n_1$ y $n_2$ son los \'indices de
+refracci\'on de los medios de origen y destino, respectivamente.
+
+\item[\bf Difracci\'on:] 
+
+\item[\bf Dispersi\'on (scatter):] 
+
+\end{description}
+
+
+Finalmente, pero no por ello menos importante, hay que tener en cuenta
+que la potencia de una onda electromagn\'etica va disminuyendo
+mientras se aleja de la fuente con una relaci\'on inversamente
+proporcional al cuadrado de la distancia.
+
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.95\textwidth]{06.radionavegacion/Imagenes/06.01.adf/propagacion-ondas.gif}
+  \caption{Propagaci\'on de ondas}
+  \label{fig:propagacion.de.ondas}
+\end{figure}
+
+Por otro lado, hay propiedades de la propagaci\'on que son fuertemente dependientes de la frecuencia de la onda. 
+
+
+
+\subsubsection{Tipos de ondas electromagn\'eticas seg\'un la forma de propagaci\'on}
+\label{sec:06.tipos.ondas.electromagneticas.segun.propagacion}
+
+\begin{tcolorbox}
+  Si bien no hay una separaci\'on estricta entre cada caso, se suele
+  dividir a las ondas en tres grandes tipos seg\'un su forma
+  predominante de propagaci\'on:
+
+   \begin{itemize}
+	\item Ondas de tierra (Surface Waves)
+	\item Ondas ionosf\'ericas  u ondas de cielo (Skyline Waves)
+	\item Ondas de l\'inea de vista (Space Waves)
+        \end{itemize}
+        
+A continuaci\'on se describen cada una de las mismas:
+
+\end{tcolorbox}
+
+\begin{description}
+  \item[Ondas de tierra (Surface Waves)] Tambi\'en denominadas ondas de suelo se caracterizan porque aprovechan las propiedades conductivas del terreno (tierra, agua, etc.) para propagarse, siempre que la frecuencia de emisi\'on se encuentre debajo de los 5 Mhz. De esta manera, son capaces de sortear grandes obst\'aculos y llegar muy lejos, \textcolor{blue}{\bf con un alcance casi global}. A pesar de su nombre, no es necesario estar en el suelo para poder recibirlas.
+Se emplea en las mismas polarizaci\'on vertical para reducir su atenuaci\'on al ponerse en contacto con la tierra, Figuras \ref{fig:propagacion.de.ondas} y \ref{fig:ondas.de.tierra}.
+
+Este tipo de propagaci\'on es predominante en las frecuencias bajas (VLF, LF y MF, 
+principalmente, $\approx 3$ MHz), y por ello se requiere de grandes antenas y mucha potencia 
+para emitirlas y recibirlas.
+
+\begin{figure}[!h]
+  \centering
+  \subfigure[Ondas de tierra]{
+	\includegraphics[height=4.5cm]{06.radionavegacion/Imagenes/06.01.adf/surface-waves.gif}
+	  \label{fig:ondas.de.tierra}
+	}
+  \subfigure[Ondas de l\'inea de vista]{
+	\includegraphics[height=4.5cm]{06.radionavegacion/Imagenes/06.01.adf/space-wave.gif}
+	  \label{fig:space.waves}
+	}
+  \caption{Propagaci\'on de ondas}
+\end{figure}
+
+El hecho de que su alcance sea tan grande limita su uso, pues plantea el problema de potenciales interferencias entre estaciones muy lejanas. Asimismo, su trayectoria puede ser dif\'icil de predecir dado que se refractan en las fronteras entre medios diferentes, como por ejemplo las costas (tierra/agua). 
+
+Tambi\'en suelen emplearse para comunicaciones a distancias cortas con un rango de frecuencias entre 3-30 MHz.
+
+El Loran-C es una de las pocas radioayudas que utiliza este tipo de ondas. 
+
+
+\item[Ondas ionosf\'ericas  u ondas de cielo (Sky Waves)] Aprovechan las caracter\'isticas el\'ectricas de la ionosfera para propagarse, us\'andola como una especie de ``espejo''. En realidad, m\'as que una reflexi\'on es una refracci\'on progresiva limitada por el \'angulo cr\'itico (lo que implica que cierta cantidad de energ\'ia se escapa al espacio). Es predominante en las frecuencias medias: MF y HF.
+
+Este tipo de propagaci\'on se ve fuertemente influenciada por la geometr\'ia relativa entre emisor, ionosfera y receptor. Para complicar la situaci\'on, la posici\'on y caracter\'isticas de la ionosfera son altamente variables, pues dependen del Sol. Por eso, la situaci\'on es diferente durante el d\'ia y durante la noche, y cambia seg\'un la estaci\'on del a\~no y el ciclo solar. Adicionalmente, el terminator line\footnote{Se puede entender mejor este concepto mediante el simulador Earth Viewer \url{http://www.paulcarlisle.net/old/earthviewer.html} } (frontera entre el d\'ia y la noche) tambi\'en afecta la propagaci\'on,  Figuras \ref{fig:propagacion.de.ondas}.
+
+Debido a esta compleja situaci\'on aparecen ``\emph{zonas de oscuridad}'', es decir, zonas donde no hay recepci\'on porque ninguna onda ha rebotado con la geometr\'ia adecuada para proporcionar cobertura. Asimismo, es posible que hayan m\'ultiples rebotes sucesivos (proporcionando un alcance muy largo pero inestable).
+
+Otro problema que presentan estas ondas es el ``\emph{efecto fadding}'', a cierta distancia del emisor el receptor puede recibir la misma onda pero que ha seguido caminos diferentes (una parte se propag\'o como onda de tierra y otra como de cielo), ocasionando interferencia destructiva y resultando en una se\~nal que aparece y desaparece r\'apidamente.
+
+En el \'ambito aeron\'autico, el ADF/NDB y las comunicaciones de largo/medio alcance utilizan este tipo de propagaci\'on. 
+
+
+\item[Ondas de l\'inea de vista (Space Waves)] Se propagan en l\'inea recta, de forma an\'aloga a como lo har\'ia la bala de un rifle. Debido a lo anterior, su alcance es limitado y no pueden rodear obst\'aculos de tama\~no medio, Figuras \ref{fig:propagacion.de.ondas} y \ref{fig:space.waves}.
+
+Esta limitaci\'on se convierte en una ventaja dado que entonces es posible reutilizar las frecuencias una y otra vez si los emisores/receptores est\'an lo suficientemente alejados entre s\'i. Adem\'as, las frecuencias altas (VHF y superior) en donde este tipo de propagaci\'on predomina son mucho menos suceptibles a la interferencia por causa de est\'aticos.
+
+Debido a sus ventajas, la inmensa mayor\'ia de las comunicaciones y aplicaciones aeron\'auticas modernas (VOR, DME, ILS, GNSS y un largo etc\'etera) se hace con ondas de l\'inea de vista.
+
+
+
+
+\end{description}
+
+
+
+\subsection{Modulaci\'on}
+
+Cuando se compara el rango de frecuencia t\'ipico de la voz humana (250 Hz a 3000 Hz) con el rango de frecuencia de las ondas de radio (a partir de los 30 kHz, aproximadamente), se hace evidente que no es posible convertir directamente de sonido a radio. Es necesario llevar a cabo un proceso intermedio para transmitir una onda de baja frecuencia utilizando una de mayor frecuencia.
+
+\begin{tcolorbox}
+  Se define entonces la \textbf{Modulaci\'on} como el proceso de
+  alterar las caracter\'isticas de una onda, llamada portadora o
+  carrier, para que transporte informaci\'on de una se\~nal de frecuencia m\'as baja, denominada moduladora.
+\end{tcolorbox}
+
+Los m\'etodos de modulaci\'on se pueden agrupar seg\'un el tipo de portadora, anal\'ogica o digital, y seg\'un el tipo de informaci\'on, tambi\'en de tipo anal\'ogica o digital. En la Tabla \ref{tab:06.tipos.modulacion} se enumeran algunos de ellos.
+
+\begin{table}[!h]\centering
+\centering
+\caption{Tipos de modulaci\'on}
+\label{tab:06.tipos.modulacion}
+  
+{\footnotesize
+
+\begin{tabular}{lllll} \hline
+  {\bf Portadora} & \multicolumn{2}{c}{\bf Moduladora} \\ \cline{2-3}
+& {\bf Anal\'ogica} & {\bf Digital}  \\ \hline \rowcolor{yellow!30}
+{\bf Anal\'ogica} & \parbox{0.4\textwidth}{\ac{AM} \\ \ac{FM} \\ \ac{PM}} & \parbox{0.4\textwidth}{\ac{ASK} \\ \ac{PSK} \\
+\ac{FSK}}  \\ 
+{\bf Digital}  & \parbox{0.4\textwidth}{\ac{PAM} \\ \ac{PWM} \\ \ac{PPM} } & \parbox{0.4\textwidth}{\ac{PCM} \\ \ac{DPCM} \\ \ac{ADPCM}} \\ \hline
+\end{tabular}
+
+}
+
+\end{table}
+
+
+  \begin{figure}[!h]
+    \centering
+\subfigure[Modulaci\'on en amplitud \protect\cite{wikipedia_esp}]{\includegraphics[width=0.25\textwidth]{06.radionavegacion/Imagenes/06.01.adf/modulacion-am.png} \label{fig:modulacion-am}} \hspace{20pt}
+\subfigure[Modulaci\'on en frecuencia \protect\cite{wikipedia_esp}]{\includegraphics[width=0.25\textwidth]{06.radionavegacion/Imagenes/06.01.adf/modulacion-fm.png} \label{fig:modulacion-fm}}
+\caption{Modulaci\'on de ondas electromagn\'eticas}
+  \end{figure}
+
+
+Son varios los par\'ametros de la portadora que se pueden alterar, pero los m\'as habituales en el contexto aeron\'autico son la amplitud y la frecuencia, los cuales son descriptos a continuaci\'on.
+
+\begin{description}
+
+\item [AM] Se modifica la amplitud de la portadora en proporci\'on directa a la se\~nal moduladora. Este fue el primer m\'etodo para la emisi\'on de radio comercial. En la Figura \ref{fig:modulacion-am} se esquematiza la modulaci\'on AM.
+
+
+\item [FM]La informaci\'on se representa mediante variaciones de la frecuencia instant\'anea de la onda portadora.
+La modulaci\'on FM se representa en la Figura \ref{fig:modulacion-fm}.
+
+
+\item [Bandas laterales] En comunicaciones v\'ia radio se denomina as\'i a las bandas de frecuencias su\-pe\-rio\-res y/o inferiores a la de la portadora que aparecen por causa del proceso de modulaci\'on.
+
+
+\item [Canal] Es una banda de radiofrecuencia espec\'ifica que ha sido asignada para un uso dado por medio de acuerdos internacionales. Por ejemplo, los canales de voz en aeron\'autica tienen un ancho predefinido de 50 kHz, lo que incluye el espacio para la banda de voz, las bandas laterales que aparezcan al modular, y unos margenes en los extremos para separarlos adecuadamente de los canales adyacentes.  
+
+\end{description}
+
+\subsection{Antenas}
+\label{sec:06.Antenas}
+
+Las ondas electromagn\'eticas
+  utilizadas por las radioayudas t\'ipicamente se emiten o reciben
+  utilizando diferentes tipos de antenas. Dependiendo del tipo de
+  antena utilizada, la energ\'ia electromagn\'etica puede o no
+  emitirse (o recibirse) con igual intensidad en todas las
+  direcciones. 
+En la Figura \ref{fig:06.antenas.boeing.787} puede apreciarse la distribuci\'on y tipo de antenas en una aeronave 
+moderna.
+
+
+  \begin{figure}[!h]
+    \centering
+  \includegraphics[width=0.8\textwidth]{06.radionavegacion/Imagenes/06.00.ondas.electromagneticas/787-antenas.png}  
+    \caption{Antenas en Boeing 787. \protect\cite{Boeing787_antenas}}
+      \label{fig:06.antenas.boeing.787}
+  \end{figure}
+
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{06.radionavegacion/Imagenes/06.01.adf/diagramas-radiacion.png}
+  \caption{Diagramas de radiaci\'on \protect\cite{wikipedia_esp}}
+  \label{fig:diagramas-radiacion}
+\end{figure}
+
+ Se denominan diagrama de radiaci\'on (o
+  emisi\'on) a un diagrama polar que represente la intensidad relativa
+  de la se\~nal electromagn\'etica en funci\'on del azimut alrededor
+  de la antena.  En la Figura \ref{fig:diagramas-radiacion} se
+  presentan dos diagramas de radiaci\'on. El de la izquierda es en
+  forma de ``ocho'' y es muy usado en aviaci\'on, mientras que el de
+  la derecha representa una antena is\'otropa (o no-direccional:
+  aquella cuya emisi\'on o recepci\'on no depende de la direcci\'on).
+En la Figura \ref{fig:diagramas-radiacion-antenas} pueden apreciarse diagramas de radiaci\'on 
+de otros tipos de antenas.
+
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{06.radionavegacion/Imagenes/06.00.ondas.electromagneticas/diagramas-radiacion-antenas.gif}
+  \caption{Diagramas de radiaci\'on de varios tipos de antenas.}
+  \label{fig:diagramas-radiacion-antenas}
+\end{figure}
+
+
+
+
+
+\section{Sistemas de Navegaci\'on Hiperb\'olicos}
+\label{06.sistemas.navegacion.hiperbolicos}
+
+\input{06.radionavegacion/tex/U06.Sistemas.hiperbolicos.tex}
+
+
+
+\section{ADF}
+%\section{ADF, función, diagrama en bloque, principio de funcionamiento}
+\label{sec:U06.01.ADF}
+
+\input{06.radionavegacion/tex/U06.ADF.tex}
+
+
+
+% \begin{tcolorbox}{Conceptos b\'asicos del sistema \ac{ADF}}
+
+%   \begin{itemize}
+%   \item El \ac{ADF}, es uno de los sistemas de radio navegación mas
+%     antiguos, est\'a compuesto por un equipo llevado a bordo de la
+%     aeronave y otros en tierra.
+
+%   \item La funci\'on del ADF es indicar al piloto la direcci\'on en la
+%     cual se encuentra una \ac{NDB} sintonizada.
+
+%   \item La \ac{NDB} es la correspondiente radioayuda en tierra que se
+%     sintoniza, mientras que el ADF es el equipo a bordo de la
+%     aeronave. El ADF puede utilizar se\~nales de otras fuentes, como
+%     radioemisoras comerciales.
+
+%   \item A nivel mundial, se utiliza el ancho de banda entre 200 kHz y
+%     1750 kHz (aunque los l\'imites pueden variar un poco seg\'un el
+%     lugar). En Europa los NDB t\'ipicamente se encuentran en las
+%     sub-bandas 255-415 y 510-525 kHz.
+
+%   \item Este rango de frecuencias coloca al sistema en el dominio de la
+%     \ac{MF}, entre las  ondas ionosf\'ericas (o de
+%     cielo) y las ondas de tierra. Estas \'ultimas son capaces de llegar a
+%     largas distancias y sobrepasar obst\'aculos.
+
+%   \item La longitud de onda es bastante grande
+%     comparada con las dimensiones de una aeronave: f = 200 kHz -
+%     $\lambda = 1500$ m, y f = 1750 kHz - $\lambda = 171.429$ m.
+
+%   \item La se\~nal se emite en \ac{AM},envi\'andose la
+%     identificaci\'on de la estaci\'on NDB en c\'odigo Morse
+%     o m\'usica y sonidos en el caso de las radioemisoras comerciales.
+
+%   \item El alcance es de 25 a 100 NM (46,3 a 185,2 km), puede ser
+%     mayor, pero aparecen problemas.
+
+%   \item La intensidad de campo requerida es de 70 $\mu$Voltios/m, con
+%     S/N $>$ 15 dB.
+
+%   \item La precisi\'on media obtenida es de 3º a 5º en condiciones
+%     normales de operaci\'on.
+
+%   \item La polarizaci\'on es vertical con propagaci\'on horizontal.
+%   \end{itemize}
+
+% \end{tcolorbox}
+
+% \subsection{Antena de cuadro}
+% \label{sec:06.antena.de.cuadro}
+
+% La antena de cuadro (tambi\'en llamada antena loop), es una evoluci\'on de las antenas ``Adcock'' que consiste en dos antenas verticales aisladas conectadas en contrafase, ver Figura \ref{fig:antena.adcock}.
+
+% La antena de cuadro tiene las antenas verticales conectadas entre s\'i y est\'a hecha de varias vueltas de hilo conductor para mejorar sus propiedades de recepci\'on, como se muestra en la Figura \ref{fig:antena.cuadro}.
+
+% Las dos secciones verticales de la antena son las que reciben la se\~nal, son paralelas entre s\'i y est\'an conectadas en ``contrafase'', lo que significa que lo que reciben se resta entre s\'i y lo que sale es la diferencia.
+
+% \begin{figure}[!h]
+%   \centering
+%  \subfigure[Antena Adcock %\\ {\tiny Fuente:\url{http://www.flyingstart.ca/FlightTraining/preflight/antennae.html}}
+% 	]{
+% 	 \includegraphics[width=0.4\textwidth]{06.radionavegacion/Imagenes/06.01.adf/adcock-antena-01.jpg}
+% 	 \label{fig:antena.adcock}
+% 	 }
+% % \subfigure[Antigua antena de cuadro ubicada en la parte baja del fuselaje de un DC3.\\ {\tiny Fuente:armyintelligence.tpub.com/IT0302/IT03020036.htm}]{\includegraphics[height=6.5cm]{Imagenes/06.01.adf/DC3-loop-antena.jpg}  \label{fig:antena.loop.vieja}}
+%  \subfigure[Antigua antena de cuadro ubicada en la parte baja del fuselaje de un DC3]{\includegraphics[width=0.4\textwidth]{06.radionavegacion/Imagenes/06.01.adf/DC3-loop-antena.jpg}  \label{fig:antena.loop.vieja}}
+%   \caption{Antenas}
+% \end{figure}
+
+
+
+
+% \subsection{Radiogoni\'ometro}
+
+% La evoluci\'on del ADF ha sido en fases. La primera de ellas fue el radiogoni\'ometro, que hallaba la direcci\'on en la cual se encontraba una estaci\'on emisora en tierra, pero NO lo hac\'ia de manera autom\'atica.
+
+% Este instrumento ten\'ia una antena de cuadro que pod\'ia girarse manualmente desde la cabina, como la mostrada en la Figura \ref{fig:antena.loop.vieja}.
+
+% El siguiente dibujo representa una antena de cuadro cuyo plano est\'a inclinado un cierto \'angulo $\theta$ con respecto al origen de la se\~nal:
+
+
+% \begin{figure}[!h]
+%   \centering
+% \subfigure[Antena de cuadro \protect\cite{ADF-teoria}]{  \includegraphics[width=0.3\textwidth]{06.radionavegacion/Imagenes/06.01.adf/antena-cuadro.png}  \label{fig:antena.cuadro}}
+% \subfigure[Recepci\'on de la se\~nal por la antena de cuadro \protect\cite{ADF-teoria}]{  \includegraphics[width=0.6\textwidth]{06.radionavegacion/Imagenes/06.01.adf/antena-cuadro-recibiendo-senial.png}  \label{fig:antena.cuadro.recibiendo.senial}}
+%   \caption{Antena de cuadro}
+% \end{figure}
+
+
+% En la Figura \ref{fig:antena.cuadro.recibiendo.senial} se puede apreciar claramente que debido a que la ``Antena 1'' (Ant. 1 en la figura) y la ``Antena 2'' (Ant. 2) est\'an separadas una cierta distancia y, adem\'as, existe un \'angulo entre la se\~nal que llega y el plano que une las antenas ($\theta$), la primera recibe la se\~nal antes que la segunda. Por esto existe un desfase entre ambas, y por tanto una diferencia (la salida de la antena de cuadro NO es cero en este caso).
+
+%  En la Figura \ref{fig:seniales.recibidas.antena.cuadro} se ilustra la forma de las se\~nales recibidas por la antena 1 ($y_1$), la antena 2 ($y_2$) y la diferencia entre ellas ( $y_3 = y_2 - y_1$ ), que es realmente la salida de la antena de cuadro.
+
+% \begin{figure}[!h]
+%   \centering
+%   \subfigure[Se\~nales recibidas por la antena de cuadro ]{  \includegraphics[, height=6cm]{06.radionavegacion/Imagenes/06.01.adf/adf-seniales-antena-cuadro.eps}  \label{fig:seniales.recibidas.antena.cuadro}}
+%   \subfigure[Se\~nales recibidas por la antena de cuadro ]{  \includegraphics[height=6cm]{06.radionavegacion/Imagenes/06.01.adf/diagrama-recepcion-antena-cuadro.png}  \label{fig:diagrama.recepcion.antena.cuadro}}
+
+%   \caption{Esquemas funcionamiento antena de cuadro}
+% \end{figure}
+
+% En la Figura \ref{fig:diagrama.recepcion.antena.cuadro} se muestra un diagrama de recepci\'on de estas antenas, el resultado es una figura de ``ocho'', donde la recepci\'on es mayor cuando la se\~nal llega paralela al plano de la antena de cuadro, y nula cuando viene perpendicularmente.
+
+
+% Esta caracter\'istica es aprovechada para hallar la direcci\'on de donde proviene la se\~nal. El ``radionavegante'' a bordo del avi\'on ten\'ia en su panel de control una ruedecilla (acoplada a un indicador de direcci\'on) con la que pod\'ia girar a voluntad (y manualmente) la antena de cuadro, mientras simult\'aneamente escuchaba con sus aud\'ifonos la se\~nal de audio proveniente del emisor (NDB o estaci\'on de radio comercial).
+
+% Cuando el radionavegante dejaba de escuchar la se\~nal significaba que el plano de la antena de cuadro estaba perpendicular a la direcci\'on en la cual se encontraba el emisor, tomando nota de dicha direcci\'on (mostrada en el indicador) y marc\'andola en su carta de navegaci\'on.
+
+% El m\'etodo anterior encuentra la direcci\'on pero \emph{existe una ambigüedad en el sentido}, pues el emisor puede estar a un lado u otro del plano de la antena de cuadro. Esta ambigüedad era resuelta tomando otros emisores como referencia, y hayando la intersecci\'on de las direcciones, o llevando un registro cuidadoso de la trayectoria del avi\'on desde el inicio del vuelo.
+
+% En la Figura \ref{fig:diag-bloques-radiogoniometro} se ilustra el diagrama de bloques del radiogoni\'ometro.
+
+
+% \begin{figure}[!h]
+%   \centering
+%    \includegraphics[width=0.5\textwidth]{06.radionavegacion/Imagenes/06.01.adf/diag-bloques-radiogoniometro.png}
+%   \caption{Diagrama de bloques del radiogoni\'ometro}
+%   \label{fig:diag-bloques-radiogoniometro}
+% \end{figure}
+
+
+% En un circuito aparte, alimentado por una ``\emph{antena de referencia}'', proporciona una se\~nal en el sistema de audio que no est\'a sometida a las variaciones de amplitud que implica el cambio de direcci\'on de la antena de cuadro.
+
+
+
+% \subsection{ADF}
+
+% La diferencia principal entre el radiogoni\'ometro y el ADF es que este \'ultimo es \emph{autom\'atico}, como lo indica su nombre. Esto indica que la ambigüedad en el sentido debe resolverse dentro del propio equipo.
+
+% Para ello, se instala una antena de referencia que, por comodidad, se representar\'a en el centro de la antena de cuadro. La se\~nal recibida por esta antena se considera que no tiene desfase y al graficarla en el tiempo ($y_4$) estar\'a entre $y_1$ y $y_2$, ver Figura \ref{fig:seniales-2}.
+
+
+% \begin{figure}[!h]
+%   \centering
+%   \subfigure[Se\~nales recibidas por la antena de cuadro + se\~nal de referencia. ]{  \includegraphics[width=0.45\textwidth]{06.radionavegacion/Imagenes/06.01.adf/adf-+seniales-antena-cuadro.eps}  \label{fig:seniales-2}}
+%   \subfigure[Se\~nales antena de cuadro + referencia + referencia desfasada 90º. ]{  \includegraphics[width=0.45\textwidth]{06.radionavegacion/Imagenes/06.01.adf/senyales-3.png}  \label{fig:seniales-3}}
+
+%   \subfigure[Diagrama de recepci\'on antena de cuadro + antena de referencia.]{  \includegraphics[width=0.65\textwidth]{06.radionavegacion/Imagenes/06.01.adf/diag-recepcion-2.png}  \label{fig:diag-recepcion-2}}
+
+%   \caption{Se\~nales recibidas por la antena de cuadro}
+% \end{figure}
+
+
+% Si la se\~nal de referencia se desfasa 90º (en la Figura \ref{fig:seniales-3} se indica como curva $y_5$), se puede apreciar que pr\'acticamente entra en fase con $y_3$, la cual es la salida de la antena de cuadro cuando la antena 1 est\'a m\'as cerca del emisor que la antena 2. Correspondientemente, $y_5$ estar\'a en contrafase con $y_3$ si es la antena 2 la que est\'a m\'as cerca del emisor ($y_6 = y_1 - y_2$). %Lo anterior se representa en la Figura \ref{fig:seniales-3}. 
+
+% Esta caracter\'istica de la recepci\'on se aprovecha para determinar el sentido en el que se encuentra el sector y as\'i resolver la ambigüedad que padec\'ia el radiogoni\'ometro. Si se hace un diagrama de recepci\'on de la combinaci\'on antena de cuadro + antena de referencia, se obtiene un diagrama de radiaci\'on en forma de curva \emph{cardioide}, ver Figura \ref{fig:diag-recepcion-2}.
+
+
+% Entonces, la se\~nal de la antena de cuadro es introducida alternativamente a dos combinadores que generan 2 cardioides: Uno recibe $y_3$ ($y_2-y_1$) y el otro $y_6$ ($y_1-y_2$). \'Estos a su vez tambi\'en reciben $y_5$ y la salida de ambos alimenta a un comparador.
+
+% El resultado de la comparaci\'on es amplificado y alimenta a su vez al motor que mueve el cuadro. Este motor girar\'a en un sentido u otro seg\'un el signo de la comparaci\'on dejando de mover la antena cuando la se\~nal de ambas cardioides es igual. Un acoplador selsyn conectado al motor del cuadro transmite la se\~nal hasta un indicador en la cabina de vuelo.
+
+% En la Figura \ref{fig:diag-bloques-adf-rot} se presenta el diagrama de bloques de lo anterior.
+
+% % \begin{figure}[!h]
+% %   \centering
+% %   \includegraphics[width=0.75\textwidth]{06.radionavegacion/Imagenes/06.01.adf/diag-bloques-adf-rot.png}   
+% %   \label{fig:diag-bloques-adf-rot}
+% %   \caption{Diagrama  de bloques del ADF con antena rotatoria}
+% % \end{figure}
+
+
+% %\begin{landscape}
+ 
+%  \begin{figure}[!h]
+%     \centering \subfigure[Diagrama de bloques del ADF con antena
+%     rotatoria]{ \includegraphics[width=0.45\textwidth]{06.radionavegacion/Imagenes/06.01.adf/diag-bloques-adf-rot.png} \label{fig:diag-bloques-adf-rot}}
+%     \subfigure[Diagrama de bloques del ADF con antena
+%     rotatoria]{ \includegraphics[width=0.45\textwidth]{06.radionavegacion/Imagenes/06.01.adf/esquema-adf-rot.png} \label{fig:esquema-adf-rot}}
+%     \caption{}
+%   \end{figure}
+
+
+% %\end{landscape}
+
+% El siguiente esquema muestra las cardioides que el comparador est\'a recibiendo de los combinadores y c\'omo el sistema reacciona seg\'un cada caso, ver Figura \ref{fig:esquema-adf-rot}.
+
+% %\subsubsection{Reacciones del sistema ADF con antena rotatoria}
+
+% Para explicar estas reacciones vamos a estudiarlas por casos, siempre teniendo en cuenta que la flecha denotada como ``\emph{Sentido de la medida}'' representa la flecha del indicador:
+
+% \begin{description}
+% \item[\bf Emisor en posici\'on A:] En este caso, la cardioide 1 (C1) es mayor que la cardioide 2 (C2), lo que hace que el comparador emita una se\~nal al motor del cuadro que har\'a rotar al conjunto COMO LAS AGUJAS DEL RELOJ (unos 150º en este caso) hasta que la flecha apunte hacia ``A''. Cuando se llegue a ese punto, $C_1=C_2$ y se detendr\'a el movimiento.
+
+
+% \item[\bf Emisor en posici\'on B:] Ahora el comparador hallar\'a que C2 > C1, y por tanto dar\'a al motor del cuadro la orden de giro AL CONTRARIO DE LAS AGUJAS DEL RELOJ hasta que la flecha apunte hacia ``\emph{B}'', lugar en donde se detiene el giro porque C1 = C2.
+    
+
+% \item[\bf Emisor en posici\'on X:] En este caso no hay movimiento porque la estaci\'on est\'a precisamente en donde C1 = C2. No obstante, si por alguna desviaci\'on de la aeronave resulta que la flecha apuntara brevemente un poco ``\emph{por debajo}'' de ``\emph{X}'', entonces C1 > C2 y el motor empezar\'a a girar como las agujas del reloj, lo que posicionar\'a la flecha otra vez en "X". Si por el contrario la flecha apuntara brevemente ``\emph{por encima}'' de ``\emph{X}'', entonces C2 > C1 y el motor girar\'ia al rev\'es del reloj, volviendo a colocar la flecha apuntando a ``\emph{X}''. En definitiva, esta posici\'on es de equilibrio estable.
+
+
+% \item[\bf Emisor en posici\'on C:] Esta posici\'on representa aparentemente un problema porque la estaci\'on est\'a situada justamente al contrario de lo indicado por la flecha, pero como C1 = C2 en teor\'ia la aguja permanecer\'ia en la posici\'on err\'onea. Sin embargo, la m\'as ligera desviaci\'on de esta posici\'on provocar\'ia que el conjunto diera una vuelta de 180º, colocando a la flecha en la posici\'on correcta. Por ejemplo, si C se mueve relativamente un poco hacia abajo de abajo de la posici\'on actual, C2 > C1 y la antena se mover\'ia al contrario del reloj, aumentando a cada momento la diferencia entre C2 y C1, hasta que se d\'e una vuelta completa y se encuentre de nuevo el equilibrio, ahora con la flecha apuntando en el sentido correcto. Por tanto, la posici\'on "C" es de "equilibrio inestable" y no representa un problema en la pr\'actica.
+ 
+% \end{description}
+    
+
+% Conforme evolucion\'o la tecnolog\'ia, se encontraron maneras de desarrollar un sistema ADF que resolviera la ambigüedad de sentido sin necesidad de rotar la antena de cuadro, mejor\'andose la confiabilidad del sistema.
+
+% Para ello, se utilizan dos antenas de cuadro colocadas ortogonalmente. La que tiene su plano a lo largo del eje longitudinal del avi\'on (adelante-atr\'as) es la ``\textbf{antena coseno}'', mientras aquella cuyo plano coincide con el eje transversal es la ``\textbf{antena seno}'', ver Figura \ref{fig:esquema-adf-fijo}.
+
+% De esta manera se tienen dos diagramas de recepci\'on en ``\emph{ocho}'', perpendiculares entre s\'i, que generar\'an sus respectivas cardioides al ser adecuadamente combinados con la se\~nal proveniente de la antena de referencia.% Observe el siguiente diagrama:
+
+
+
+% De forma an\'aloga al caso del ADF con antena rotatoria, las se\~nales provenientes de las antenas de cuadro son combinadas con la se\~nal de la antena de referencia y alimentan alternativamente (con una frecuencia de alternancia de 100 Hz) a un comparador de fases. La salida de \'este son los valores de seno y coseno del \'angulo theta entre el eje longitudinal del avi\'on y la posici\'on de la estaci\'on.
+
+% Estas se\~nales seno-coseno alimentan a los indicadores (por ejemplo, un Indicador Radio-Magn\'etico o RMI), o a trav\'es de una interfaz ARINC 429 a un bus de datos digital.
+
+% En la Figura \ref{fig:diag-bloques-adf-fijo} se encuentra el diagrama de bloques t\'ipico de este sistema.
+
+% \begin{figure}[!h]
+%   \centering
+%   \subfigure[Diagrama de las antenas de cuadro ortogonales]{\includegraphics[width=0.75\textwidth]{06.radionavegacion/Imagenes/06.01.adf/esquema-adf-fijo.png}\label{fig:esquema-adf-fijo}}
+%   \subfigure[Diagrama de bloques del ADF con antenas fijas]{\includegraphics[width=0.75\textwidth]{06.radionavegacion/Imagenes/06.01.adf/diag-bloques-adf-fijo.png}\label{fig:diag-bloques-adf-fijo}}
+%   \caption{ADF fijo}
+% \end{figure}
+
+% \Informacion{Antenas para ADF}{
+% En el \href{https://www.sensorantennas.com/product/adf-antenna/}{siguiente link} puede accederse a una antena ADF comercial.
+
+% \href{http://verdanttelemetry.com/products-list.php?prdtcat_id=148}{Otro link} con informaci\'on de antenas ADF.
+% }
+
+
+
+% \subsubsection{NDB}
+% Como se indic\'o previamente, el NDB es la radioayuda en tierra que corresponde al ADF. Las sub-bandas de frecuencia usadas en Europa para los NDB t\'ipicamente se encuentran entre 255-415 y 510-525 kHz. Los NDB modulan en AM su identificaci\'on de estaci\'on en c\'odigo Morse, compuesta usualmente por tres letras.
+
+% \begin{figure}[!h]
+%   \centering
+%   \subfigure[S\'imbolo NDB usado en cartas aeron\'auticas ]{\includegraphics[width=0.15\textwidth]{06.radionavegacion/Imagenes/06.01.adf/NDB-simbolo.png}\label{fig:simbolo_ndb}} 
+% 	\hspace{20pt}
+%   \subfigure[Emisor NDB en 49º 12.35' N, 2º 13.20' W. Callsign JW - 'Jersey West'. 329.0 kHz]{\includegraphics[width=0.25\textwidth]{06.radionavegacion/Imagenes/06.01.adf/NDB-transmisor.jpg}\label{fig:imagen_ndb}}
+%   \caption{NDB}
+% \end{figure}
+
+
+% Estos radiofaros con emisi\'on omnidirecciona en azimut tienen la caracter\'istica que sus antenas no pueden radiar en su direcci\'on longitudinal, por lo cual justo por encima de los NDBs se forma un cono en el cual NO existe se\~nal.
+
+% Este cono, caracter\'istico tambi\'en de otras radioayudas, es llamado ``cono de silencio'', y su \'angulo de abertura puede tener, en el caso de los NDB, hasta 45º.
+
+% El alcance de los NDB puede ir desde unas 25 NM ($\Resultado{1852 * 25}{0}$\,m) hasta m\'as de 100 NM, dependiendo de la potencia de emisi\'on. M\'as all\'a de las 100 NM empiezan a aparecer importantes errores.
+
+% \Informacion{Estaciones NDB en Argentina}{
+% Por el \href{http://186.153.175.229/descarga/aip-5b6deb26b09dd}{siguiente link} puede accederse a una lista de las estaciones NDB y otras radioayudas disponibles en Argentina en el a\~no 2018.
+% }
+
+% %\begin{landscape}
+%   \subsubsection{Presentaci\'on de la informaci\'on}
+%   \label{sec:06.adf.presentacion.informacion}
+
+%   % \url{https://greatbustardsflight.blogspot.com/2019/09/indicador-de-direccion-df-direction.html}
+
+%   % \begin{figure}[!h]
+%   %   \centering
+%   %   \subfigure[RBI]{\includegraphics[width=0.3\textwidth]{06.radionavegacion/Imagenes/06.01.adf/RBI-0001.jpg}}
+%   %   \subfigure[RBI]{\includegraphics[width=0.4\textwidth]{06.radionavegacion/Imagenes/06.01.adf/RMI.jpg}}
+%   %   \subfigure[RMI +
+%   %   VOR]{\includegraphics[width=0.25\textwidth]{06.radionavegacion/Imagenes/06.01.adf/rmi-adf-vor.png}}
+%   %   \caption{Formas de presentaci\'on de la informaci\'on}
+%   %   \label{fig:06.RBI.RMI}
+%   % \end{figure}
+
+% La informaci\'on presentada al piloto puede ser en forma de \ac{RBI} (Figura \ref{fig:06.RBI}) o como \ac{RMI} (Figura \ref{fig:06.RMI}), donde tambi\'en se presenta el QDM (rumbo magn\'etico a una estaci\'on),ver Figura  \ref{fig:06.QDM}. 
+
+% \begin{figure}[!h]
+%   \centering
+%   \subfigure[ADF]{\includegraphics[width=0.4\textwidth]{06.radionavegacion/Imagenes/06.01.adf/adf-1.jpg} \label{fig:06.RBI}}
+%   \subfigure[QDM]{\includegraphics[width=0.25\textwidth]{06.radionavegacion/Imagenes/06.01.adf/QDM.jpg} \label{fig:06.QDM}}
+
+%   \subfigure[ADF]{\includegraphics[width=0.6\textwidth]{06.radionavegacion/Imagenes/06.01.adf/adf-2.jpg} \label{fig:06.RMI}}
+%   \caption{Formas de presentaci\'on de la informaci\'on \protect\cite{QDM-RBI-RMI}}
+%   \label{fig:06.RBI.RMI}
+% \end{figure}
+
+% %\end{landscape}
+
+
+
+% \subsubsection{Errores ADF-NDB}
+
+% El sistema ADF/NDB tiene errores que t\'ipicamente oscilan entre los 3º y 5º. Hay dos tipos principales de error que son:
+
+% \begin{description}
+% \item [Errores Sistem\'aticos]
+
+% Los errores sistem\'aticos se pueden caracterizar previamente y tomar previsiones ante ellos. Los m\'as importantes son:
+
+% \begin{description}
+% \item [Error Instrumental]
+
+% Es el error asociado a incertidumbres en la lectura de los valores mostrados por los instrumentos. Oscila de 1 a 2 grados.
+
+% \item [Error por presencia del avi\'on]
+
+% La aeronave es un cuerpo met\'alico que puede interferir con la recepci\'on del sistema, distorsionando las se\~nales. Sin embargo, este error puede caracterizarse de f\'abrica y entonces tomar medidas correctivas.
+
+% \end{description}
+
+
+% \item [Errores Variables]
+
+% Como su nombre lo indica, son errores cuya aparici\'on y magnitud depende de m\'ultiples factores, siendo esencialmente desconocidos. Los m\'as conocidos son:
+
+% \begin{description}
+
+% \item [Errores atmosf\'ericos (tormentas)]
+
+% El n\'ucleo de las grandes tormentas genera poderosas cargas electromagn\'eticas cuya frecuencia puede estar en la banda de trabajo del ADF. Esto ocasiona que las tormentas puedan aparecer como estaciones en tierra y el ADF apuntar\'a hacia ellas. Es muy peligroso que el piloto las confunda con estaciones reales y vuele hacia ellas.
+
+
+% \item [Errores de polarizaci\'on]
+
+% Ciertas condiciones pueden alterar la polarizaci\'on y propagaci\'on de las se\~nales y ocasionar errores. Las m\'as conocidas son:
+
+% \begin{description}
+% \item [Efecto de l\'inea de costa], causado por la diferente conductividad entre la corteza terrestre y el agua, ocasionando que la se\~nal se refracte al pasar por la costa y genere indicaciones erradas.
+
+
+% \item [Efecto monta\~na], en donde debido a la orograf\'ia las ondas de tierra se pueden distorsionar, apareciendo errores de medici\'on.
+
+% \end{description}
+
+
+% \item [Interferencia xDSL (en estudio)]
+
+% La transmisi\'on de datos por Internet utilizando la tecnolog\'ia xDSL (HDSL, SDSL, VDSL y ADSL) puede generar se\~nales que interfieran con la operaci\'on del ADF y con las comunicaciones HF.
+
+% Debido a la naturaleza de los sistemas xDSL la fuente de interferencia est\'a distribuida geogr\'aficamente. Se est\'an realizando estudios para determinar si el efecto acumulativo de muchas de estas se\~nales puede alterar seriamente el funcionamiento del sistema (referencia actualizada al 21/Sep/2000).
+
+
+% \item [Efecto FADING]
+
+% Este efecto de ``desvanecimiento'' aparece porque a cierta distancia de la estaci\'on emisora las ``ondas de suelo'' y las ``ondas de cielo'' (estas \'ultimas por rebote ionosf\'erico) empiezan a interferir entre s\'i.
+
+% La interferencia entra ambas se\~nales puede ser constructiva o destructiva seg\'un el desfase que exista entre ellas, produci\'endose el efecto de una recepci\'on err\'atica e intermitente.
+
+% El siguiente gr\'afico representa la intensidad de campo versus la distancia a la estaci\'on, indicando las zonas en donde es m\'as probable que ocurra este efecto:
+
+% \begin{figure}[!htb]
+%   \centering
+%   \includegraphics[width=\textwidth]{06.radionavegacion/Imagenes/06.01.adf/grafico-fading.png}
+%   \caption{ Gr\'afico del efecto ``fading''}
+%   \label{fig:fading}
+% \end{figure}
+
+% Una observaci\'on final es que durante la noche y cuando la aeronave se aproxima al ``terminator'' (l\'inea divisoria entre el d\'ia y la noche) es m\'as probable que se produzca este efecto, debido a la variaci\'on en la altura de la ionosfera.
+% \end{description}
+
+% \end{description}
+
+
+
+
+
+ \newpage 
+% \section{VOR, función, diagrama en bloque, principio de funcionamiento}
+% \label{sec:U06.02.VOR}
+
+\section{VOR}
+\label{sec:06.VOR}
+
+  \includepdf[pages=-, %fitpaper=true, 
+scale=0.80, 
+  landscape=false,
+  offset = 0 -20,
+  pagecommand={\thispagestyle{fancy}}]
+  {06.radionavegacion/2020_VOR.pdf}
+
+
+\clearpage
+
+
+
+
+  
+\section{DME, función, diagrama en bloque, principio de funcionamiento}
+\label{sec:U06.04.DME}
+
+El equipo medidor de distancias %(DME, del ingl\'es: Distance Measuring Equipment)
+\ac{DME}
+ es un sistema electr\'onico que permite establecer la distancia entre \'este y una estaci\'on emisora, reemplazando a las radiobalizas en muchas instalaciones. Generalmente ligado a la aeron\'autica, el DME es uno de los sistemas de ayuda a la navegaci\'on habitualmente presentes en cualquier aeronave.
+
+Proporciona una medici\'on de la distancia (seg\'un la velocidad) al vuelo (groundspeed). La frecuencia est\'a comprendida entre 962 y 1213 MHz (banda UHF) de 200 canales, que puede trabajar con una \'unica frecuencia para el DME o estar asociado a otra radioayuda como un VOR, ILS o MLS. En equipos antiguos la frecuencia se selecciona sintoniz\'andolo en el equipo como una radio t\'ipica, pero en equipos actuales se selecciona autom\'aticamente al sintonizar la radioayuda a la que est\'a asociado.
+
+Ya que un avi\'on dispone de dos frecuencias de navegaci\'on utilizables al mismo tiempo, el selector del DME permite indicar qu\'e equipo de navegaci\'on queremos que nos indique la distancia. Algunos tambi\'en disponen de la opci\'on HOLD, en la que al pasar de una lectura DME de un equipo a esa posici\'on guarda en la memoria la frecuencia que estaba usando, teniendo as\'i la posibilidad de cambiar de VOR, ILS o MLS en un HSI, RMI o RBI sin perder la medici\'on de la distancia anterior. Esta opci\'on es muy \'util en vuelos IFR en los que la salida est\'andar instrumental del aeropuerto (SID) requiere cambios de radioayuda frecuente pero se basa en una \'unica medici\'on de DME.
+
+El \ac{DME} fue inventado en Australia por  Edward George ``Taffy'' Bowen mientras se desempe\~naba como Jefe de la Divisi\'on de Radiof\'isica en la  Commonwealth Scientific and Industrial Research Organisation (CSIRO). Otra versi\'on fue desarrollada por la Amalgamated Wireless Australasia Limited a principio de la d\'ecada de 1950 operando en la banda de los 200 MHz VHF. Esta versi\'on dom\'estica australiana se la denomina DME(D), de \emph{Domestic}, y la versi\'on adoptada por la OACI es la DME(I).
+
+El sistema fue un desarrollo post-guerra del IFF (Identification Friend or Foe), identificador amigo-enemigo, utilizado en la Segunda Guerra Mundial, es un sistema de identificaci\'on criptogr\'afica. Dentro del campo militar, sirve para distinguir a aeronaves o a veh\'iculos enemigos de los que no lo son.
+
+Su funcionamiento se basa en la respuesta a una interrogaci\'on hecha por otro sistema. En funci\'on de si la respuesta es correcta o no, se identificar\'a como amigo o enemigo.
+
+\begin{figure}[!htb]
+  \centering
+  \subfigure[]{  
+	\includegraphics[width=0.45\textwidth]{06.radionavegacion/Imagenes/06.04.dme.imagenes/iff.jpg}
+	}
+  \subfigure[]{  
+	\includegraphics[width=0.45\textwidth]{06.radionavegacion/Imagenes/06.04.dme.imagenes/B-29_antennas_port.JPG}
+	}
+
+  \caption{Sistema IFF}
+  \label{fig:DME.sistema.iff}
+\end{figure}
+
+
+\section{Principio de funcionamiento}
+\label{sec:DME.principio.funcionamiento}
+
+El avi\'on interroga con una secuencia de pares de pulsos separados 12 $\mu$\,seg. El equipo de tierra que recibe esta se\~nal la retrasmite de nuevo con un retardo de 50 $\mu$\,seg. El equipo del avi\'on calcula el tiempo trascurrido desde que pregunt\'o, le descuenta 50 $\mu$\,seg y lo divide por dos. Este tiempo se multiplica por la velocidad de la luz (300 m/$\mu$\,seg), dando la distancia al equipo de tierra.
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{06.radionavegacion/Imagenes/06.04.dme.imagenes/how_to_dme_arc_Picture1.gif}
+  \caption{Principio funcionamiento DME {\tiny fuente: \url{http://http://www.ivaoth.org/training/how_to/how_to_dme_arc.htm}}}
+  \label{fig:DME.principio.funcionamiento}
+\end{figure}
+
+La distancia indicada por el equipo, denominada distancia oblicua, no corresponde a la distancia que separa a la aeronave de la estaci\'on en el plano horizontal, pero a distancias grandes es muy aproximada. No obstante al acercarse a la vertical de la estaci\'on, el error va aumentando y sobre la vertical, en el caso de que existiese cobertura, la distancia indicada ser\'ia igual a la altura.
+
+Dado que son las aeronaves las que transmiten los pulsos de interrogaci\'on, puede darse el caso, y de hecho se da, que lo hagan varias a la vez. Estas interrogaciones llegar\'an al transpondedor que generar\'a y emitir\'a los pulsos de respuesta todos en la misma frecuencia. Entonces tenemos un mont\'on de pulsos en el espacio y cada aeronave tiene que encontrar la forma de distinguir los que son respuestas a sus interrogaciones para calcular su distancia a la estaci\'on.
+
+La forma de distinguirlos consiste en generar los pulsos de interrogaci\'on con una frecuencia de repetici\'on de pulsos cambiante, es decir, separando los pares de pulsos por un tiempo aleatorio pero que queda memorizado en el interrogador. Al recibir los pulsos de respuesta, se van comparando con la secuencia memorizada y cuando coinciden se sabe que son los correspondientes a las interrogaciones propias. Entonces solo queda calcular la distancia por el m\'etodo descrito.
+
+Lo indicado anteriormente resuelve el problema para el interrogador, pero no para el transpondedor de tierra cuya capacidad de respuestas no es ilimitada. Con el fin de aumentar el n\'umero de aeronaves que pueden obtener informaci\'on de distancia a la vez sin saturar la capacidad del transpondedor, se programa a los interrogadores para que hagan su trabajo en dos fases distintas:
+
+\begin{itemize}
+	\item \textbf{Funci\'on B\'usqueda:} es la fase inicial cuando se sintoniza una estaci\'on de tierra. En ella el n\'umero de interrogaciones es muy elevado, unas 150 por segundo, para intentar establecer un valor inicial de la distancia con un error menor de 20 NM. Esta fase no durar\'a m\'as de 20 segundos.
+        \item \textbf{Funci\'on Seguimiento:} una vez que el interrogador a determinado la distancia aproximada a la que se encuentra de la estaci\'on, se entra en esta fase en la que el ritmo de interrogaciones desciende hasta unas 25 por segundo. Ahora el objetivo es aumentar la precisi\'on con que se conoce la distancia medida y realizar un seguimiento de la aeronave en su desplazamiento.
+\end{itemize}.
+
+Teniendo en cuenta el n\'umero m\'aximo de interrogaciones en cada una de las dos fases, se establece un n\'umero m\'aximo total de 100 aeronaves que pueden utilizar una estaci\'on DME de forma simult\'anea. Con estas 100 aeronaves, el transpondedor estar\'ia transmitiendo 2700 pares de pulsos por segundo.
+
+Adem\'as de las respuestas a las interrogaciones recibidas, el transpondedor transmite una identificaci\'on formada por tres letras en c\'odigo Morse e id\'entica a la transmitida por la estaci\'on de informaci\'on acimutal (Localizador o VOR) a la que est\'e asociado. Esta identificaci\'on consiste en la transmisi\'on de pares de pulsos a raz\'on de 1350 pares por segundo. Los pares de pulsos se transmiten cada aproximadamente 40 segundos.
+
+Con el fin de optimizar el funcionamiento del transmisor del transpondedor, sobre todo de los antiguos que funcionaban a v\'alvulas, este se dise\~na para una transmisi\'on continua m\'inima de 700 pares por segundo, excepto durante la transmisi\'on de los pares de pulsos de interrogaci\'on. Cuando el n\'umero de aeronaves est\'a por debajo de este valor m\'inimo, el transpondedor genera unos pulsos de relleno llamados \emph{squitter} que sirven para mantener constante el ciclo de trabajo del transmisor. Es decir, aunque no haya ninguna aeronave interrog\'andolo, el transpondedor siempre est\'a transmitiendo pulsos, bien de identificaci\'on o squitter.
+
+Resumiendo todo lo anterior, se puede decir que en el tren continuo de pulsos transmitidos por el transpondedor se encuentran de forma aleatoria:
+
+\begin{itemize}
+	\item Respuestas a interrogaciones
+	\item Pares de pulsos de identificaci\'on
+	\item Pulsos de squitter.
+\end{itemize}
+
+
+En caso de que el n\'umero de aeronaves que est\'an interrogando a la vez llegase al 90\% del valor m\'aximo de 2700 pares por segundo, el sistema de supervisi\'on del transpondedor disminuye la sensibilidad del receptor para eliminar las interrogaciones de aeronaves muy distantes que al llegar m\'as d\'ebiles se rechazar\'an en el receptor. Llevamos mucho rato hablando de los pares de pulsos sin todav\'ia haber aclarado un poco sus caracter\'isticas, as\'i que vamos a hacerlo ahora. Como podemos ver en la figura, cada interrogaci\'on y su correspondiente respuesta est\'a formada por una serie de pares de pulsos de radiofrecuencia. La duraci\'on de estos pulsos en los puntos de amplitud media es de 3.5 ms ( 1 microsegundo = 0.000001 s) y la separaci\'on entre los dos pulsos del par es de 12 ms tanto en la interrogaci\'on como en la respuesta en el caso de canales X. Con el fin de aumentar el n\'umero de canales dentro de la misma banda de frecuencias, OACI establece otros canales denominados canales Y en los cuales la separaci\'on entre pulsos es de 36 ms en la interrogaci\'on y 30 ms en la respuesta. La forma del pulso es la de una campana de Gauss, ver Figura \ref{fig:DME.modos.X.e.Y.grafico}.
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.6\textwidth]{06.radionavegacion/Imagenes/06.04.dme.imagenes/dme-modos-x-y-graficos.jpg}
+  \caption{Modos X e Y
+{\tiny fuente: \url{http://www.tmworld.com/electronics-news/4386082/Signal-generator-power-sensor-test-DME-4386082
+}}
+}
+  \label{fig:DME.modos.X.e.Y.grafico}
+\end{figure}
+
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.6\textwidth]{06.radionavegacion/Imagenes/06.04.dme.imagenes/dme-modos.gif}
+  \caption{Modos X e Y
+{\tiny fuente: \url{http://
+aelmahmoudy.users.sourceforge.net/electronix/egair/radar.htm
+}}
+}
+  \label{fig:DME.modos.X.e.Y}
+\end{figure}
+
+%In the upper diagram, if the pilot selects channel #1, on the X-Mode (1X) for example, then the aircraft DME will send its pulse pair interrogation on a frequency 1025 MHz and the ground station DME will reply with a pulse pair on a frequency 962 MHz, which is 63 MHz away from the aircraft DME sending frequency as mentioned earlier. 
+
+En la Figura \ref{fig:DME.modos.X.e.Y}, si el piloto selecciona el canal Nro 1, en el modo X (1X), el equipo de a bordo del DME envia su par de interrogaci\'on en una frecuencia de 1025 MHz y la estaci\'on de tierra responde con un par en una frecuencia de 962 MHz, la cual se encuentra desplazada 63 MHz de la enviada por la aeronave.
+
+Como hemos dicho la separaci\'on entre pares de pulsos se genera de forma aleatoria en el interrogador.
+
+Cuando el DME se utiliza para proporcionar la funci\'on de distancia del ILS, se instala en el mismo emplazamiento que la Senda de Planeo de forma que la antena del DME se encuentre pr\'oxima al umbral que, como hemos dicho, ser\'a la referencia de distancia cero durante la aproximaci\'on. En este caso el indicativo del DME es igual al transmitido por el Localizador y se asocia con este de forma que de cada cuatro se\~nales de indicativo, tres sean transmitidas por el Localizador y una por el DME.
+
+Con el fin de aumentar la precisi\'on para ser utilizado con el Sistema de Aterrizaje por Microondas (MLS: Microwave Landing System), OACI ha definido el denominado DME de precisi\'on (DME/P) en el cual se modifica la forma de los pulsos para aumentar la precisi\'on al medir los tiempos entre interrogaciones y respuestas.
+
+Cuando el DME est\'a instalado junto con un ILS, debe proporcionar cobertura desde por lo menos la cobertura del Localizador hasta el umbral en el sector de cobertura acimutal del Localizador. En este volumen de cobertura la precisi\'on de la medida de distancia proporcionada por el DME estar\'a comprendida entre 370 m y el 0.25\% de la distancia.
+
+La informaci\'on de distancia obtenida por el DME se le presenta al piloto en millas n\'auticas (1 NM = 1852 m) en el propio instrumento DME de a bordo as\'i como en otros instrumentos que combinan varias informaciones y facilitan su lectura al piloto.
+
+\subsection{Equipo de tierra}
+\label{sec:DME.equipo.tierra}
+
+En la Figura \ref{fig:DME.equipo.tierra.diagrama.bloques} se observa un  diagrama de bloques de la estaci\'on de tierra del DME, siendo son sus principales elementos:
+\begin{itemize}
+\item \textbf{Fuente de alimentaci\'on:} se encarga de generar las tensiones
+  necesarias en cada bloque o tarjeta de circuito impreso a partir de
+  la alimentaci\'on en corriente alterna.
+\item \textbf{Antena: }normalmente est\'a
+  formada por un apilamiento de dipolos verticales y se encarga de
+  recibir las interrogaciones de los aviones y transmitir las
+  respuestas. Tiene polarizaci\'on vertical. Cuando el DME est\'a asociado
+  con el ILS, la antena normalmente suele ser directiva para que solo
+  se tenga cobertura en la zona de aproximaci\'on.
+\item \textbf{Acoplador o
+  circulador:} se encarga de separar las se\~nales recibidas de las
+  transmitidas ya que como hemos dicho antes, la antena es com\'un.
+
+\item \textbf{Receptor:} a partir de la se\~nal de radiofrecuencia, obtiene los
+  pulsos de interrogaci\'on como se\~nal detectada.
+\item \textbf{Decodificador:}
+  comprueba el espaciado de los pulsos para detectar interrogaciones
+  v\'alidas, es decir, aquellas en las que dicho espaciado es de 12 ms o
+  36 ms dependiendo del canal de que se trate. Produce un pulso de
+  control que sirve para generar las respuestas. Con el fin de evitar
+  responder a pares de pulsos procedentes de interrogaciones
+  reflejadas en objetos u obst\'aculos naturales y que dar\'ian lugar a
+  errores en el interrogador, el decodificador produce un bloqueo del
+  receptor durante unos 60 ms una vez que ha detectado una
+  interrogaci\'on v\'alida.
+\item \textbf{ Retardo principal:} con el fin de homogeneizar
+  el retardo que se produce en los distintos tipos de transpondedores
+  durante la detecci\'on y generaci\'on de respuestas, se introduce un
+  retardo para conseguir que en todos sea igual a 50 ms. Este retardo
+  se restar\'a despu\'es en el interrogador a la hora de calcular la
+  distancia. En el caso de un DME asociado a un ILS, este retardo
+  principal se modifica para que la referencia de distancia cero
+  corresponda con el umbral. Si la distancia de la antena del DME al
+  umbral es de 300 m, teniendo en cuenta que la velocidad de
+  propagaci\'on de la radiofrecuencia en el aire es de aproximadamente
+  300000 Km/s = 300 m/ms, tendremos que el retardo tendr\'a que ser de
+  48 ms para que el interrogador indique cero en el umbral.
+
+\item \textbf{Codificador:}con cada pulso de control genera un par de pulsos con
+  las caracter\'isticas y espaciado requerido. Tambi\'en genera los pulsos
+  correspondientes a la identificaci\'on.
+\item \textbf{Transmisor:} se encarga de
+  modular la se\~nal portadora con los pulsos proporcionados por el
+  codificador.
+\item \textbf{Sistema de supervisi\'on:} es el encargado de controlar
+  que la se\~nal radiada y los par\'ametros del equipo de tierra se
+  encuentran dentro de las tolerancias establecidas. Dado que en el
+  DME es necesario comprobar el buen funcionamiento tanto del
+  transmisor como del receptor, dentro del sistema de supervisi\'on se
+  generan unas se\~nales de interrogaci\'on de prueba que se inyectan en
+  el camino de recepci\'on antes del receptor. El sistema de supervisi\'on
+  comprueba el correcto tratamiento (recepci\'on y detecci\'on) de estas
+  interrogaciones de prueba y determina el estado del canal de
+  recepci\'on.
+\item \textbf{Unidad de control local:} con la informaci\'on
+  proporcionada por el sistema de supervisi\'on sobre el estado de las
+  par\'ametros de la estaci\'on, esta unidad establece el funcionamiento
+  del sistema realizando una transferencia de equipo o cesando la
+  radiaci\'on.
+\item \textbf{Unidad de control remoto:} permite supervisar y controlar
+  la instalaci\'on desde un emplazamiento remoto.
+\end{itemize}
+
+ Todos los elementos descritos, a excepci\'on de la antena y las unidades de control, se encuentran duplicados.
+
+
+ \begin{figure}[!htb]
+   \centering
+     \subfigure[Instalaci\'on terrestre de un DME(D) en Melbourne/Essendon, alrededor de la d\'ecada de 1960. 
+{\tiny fuente: \url{http://
+http://http://www.airwaysmuseum.com/Aus\%20DME\%20installation\%20external.htm
+}}]
+{
+\includegraphics[width=0.4\textwidth]{06.radionavegacion/Imagenes/06.04.dme.imagenes/Aus-DME-installation-external.jpg}
+  \label{fig:DME(D).instalacion.tierra}
+}
+\hspace{3mm}
+     \subfigure[Instalaci\'on terrestre de un DME actual
+{\tiny fuente: \url{http://
+http://www.systemsinterface.com/Systems/Navaids/DME/tabid/440/Default.aspx
+}}]
+{
+\includegraphics[width=0.4\textwidth]{06.radionavegacion/Imagenes/06.04.dme.imagenes/DME-actual.jpg}
+  \label{fig:DME(D).instalacion.tierra}
+}
+ 
+ \end{figure}
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{06.radionavegacion/Imagenes/06.04.dme.imagenes/DMEtheoryGround.gif}
+  \caption{Diagrama de bloques del Equipo DME en tierra {\tiny 
+fuente: \url{http://
+www.thalesatminc.com/Technology/DME415.htm
+}}}
+  \label{fig:DME.equipo.tierra.diagrama.bloques}
+\end{figure}
+
+\subsection{Equipo de a bordo }
+\label{sec:DME.equipo.a.bordo}
+
+\subsubsection{Indicador DME}
+\label{sec:DME.indicador}
+
+DME permite a las aeronaves para establecer su rango a la estaci\'on de tierra: La distancia en millas n\'auticas, la velocidad en nudos de tierra, el tiempo de vuelo a la estaci\'on en cuesti\'on de minutos. 
+
+La interpretaci\'on es directa. El piloto puede leer directamente desde el receptor de la distancia, y en su caso la velocidad del recorrido y el tiempo para la estaci\'on.  En la Figura \ref{fig:DME.equipo.a.bordo} puede apreciarse un equipo comercial y en la Figura \ref{fig:DME.instalacion.a.bordo} la informaci\'on brindada por el equipo.
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{06.radionavegacion/Imagenes/06.04.dme.imagenes/DME_VOR_avionics.PNG}
+  \caption{Equipo de DME junto con uno de ADF 
+{\tiny fuente: \url{http://
+en.wikipedia.org/wiki/Distance_measuring_equipment
+}}
+}
+  \label{fig:DME.instalacion.a.bordo}
+\end{figure}
+
+
+\subsubsection{Localizaci\'on de la antena en la aeronave}
+\label{sec:DME.localizacion.antena.aeronave}
+
+La antena DME de la estaci\'on emite una se\~nal de radiofrecuencia VHF en todas direcciones, que es recibida por el equipo VOR de cualquier aeronave que se encuentre dentro del rango de alcance (max. unos 240 km) y tenga sintonizada la frecuencia de dicha estaci\'on (que puede variar de 108 a 118 MHz modulada en AM). En la Figura \ref{fig:fig:DME.antena.ubicacion.en.el.avion} puede observarse la ubicaci\'on m\'as com\'un de la antena para el equipo DME en la aeronave.
+
+\begin{figure}[!htb]
+  \subfigure[Equipo de a bordo
+{\tiny fuente: \url{http://
+http://http://www.futureplatone.com/es/avionica/267-elite-ap-4000-dme-module.html
+}}
+]{
+  \includegraphics[width=0.4\textwidth]{06.radionavegacion/Imagenes/06.04.dme.imagenes/elite-ap-4000-dme-module.jpg}
+\label{fig:DME.equipo.a.bordo}
+}
+\hspace{3mm}
+  \subfigure[
+Localizaci\'on de la antena en la aeronave
+{\tiny fuente: \url{http://
+www.taringa.net/posts/ciencia-educacion/13993518/equipo-medidor-de-distacia-_dme_.html
+}}
+]{
+  \includegraphics[width=0.6\textwidth]{06.radionavegacion/Imagenes/06.04.dme.imagenes/antenas-en-el-avion.jpg}
+\label{fig:fig:DME.antena.ubicacion.en.el.avion}
+}
+\end{figure}
+
+
+
+\subsection{Mediciones err\'oneas}
+\label{sec:DME.mediciones.erroneas}
+
+Hay que tener siempre en cuenta que la distancia medida por el DME es la distancia real en l\'inea recta entre el avi\'on y la estaci\'on, que variar\'a dependiendo de la altitud a la que nos encontremos. Para hacernos una idea, aunque nos encontremos sobrevolando en DME, no indicar\'a cero sino que nos dar\'a una lectura en millas n\'auticas de la altitud a la que nos encontramos. Para obtener la distancia real sobre el suelo, que es la que nos interesar\'a a la hora de planificar el vuelo, habr\'a que aplicar el teorema de Pit\'agoras: $\text{Hipotenusa}^2 = \text{Altura}^2+\text{Distancia}^2$.
+
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.7\textwidth]{06.radionavegacion/Imagenes/06.04.dme.imagenes/DME_overfly.png}
+  \caption{Mediciones del DME. {\tiny fuente: \url{http://www.langleyflyingschool.com/Pages/CPGS\%20Radio\%20Navigation.html
+}}
+}
+  \label{fig:DME.mediciones}
+\end{figure}
+
+En la f\'ormula habr\'a que igualar las distancias a la misma medida (lo m\'as sencillo es convertir la altura a millas n\'auticas), siendo la hipotenusa del tri\'angulo la distancia medida por el DME,  nuestra \emph{Altura} respecto a la de la estaci\'on y \emph{Distancia} la existente sobre el suelo para sobrevolar la estaci\'on.
+
+Si el equipo dispone de la posibilidad del c\'alculo de la ground speed (GS) o del tiempo estimado (ETE) para llegar a la estaci\'on habr\'a que saber que el equipo lo calcula seg\'un la velocidad a la que nos acercamos a la estaci\'on y que por lo tanto s\'olo ser\'a una medida fiable si nos dirigimos a ella directamente. Si hici\'eramos un arco DME (girar alrededor de un DME a una distancia fija) el equipo entender\'ia que no nos estamos acercando y por lo tanto llegar\'ia a indicar 0 nudos de GS si hacemos la maniobra con total precisi\'on independientemente de la velocidad real a la que nos desplazamos. Una forma muy sencilla de ver esto es volar cerca de un DME sin dirigirse a \'el y comparar la velocidad que nos indica con la GS que nos marca el GPS, si disponemos de uno.
+
+\section{Exactitud del sistema}
+\label{sec:DME.exactitud}
+
+La exactitud del sistema DME es normalmente de 100 a 300 m. Un valor t\'ipico de $0.1$ NM (185 m) se da a veces como referencia. 
+
+Las fuentes de error son:
+\begin{itemize}
+\item Inexactitudes debidas al equipo
+  \begin{itemize}
+  \item los $50\,\mu$ seg de retardo tras la recepci\'on de una interrogaci\'on
+    est\'an sujetos a un error de $\pm 1\,\mu$ seg
+  \item Detecci\'on por parte del receptor
+  \end{itemize}
+\item Reflexiones (fen\'omeno de   multicamino o multi-path)
+\end{itemize}
+
+Las tolerancias aceptables en las indicaciones del DME en la cabina son de $\pm 0.5$\,NM o 3\% de la distancia, tomandose el valor mayor.
+
+\section{Ventajas y desventajas del sistema}
+\label{sec:DME.ventajas.y.desventajas}
+
+\begin{tabular}{|m{0.45\textwidth}|m{0.45\textwidth}|} \hline
+	\centering \textbf{Ventajas} & 
+	\multicolumn{1}{c|}{\textbf{Desventajas}} \\ \hline
+  \begin{itemize}
+  \item Proporciona a la aeronave informaci\'on de distancia a la
+    estaci\'on terrestre.
+  \item F\'acilmente asociable a CVOR, DVOR e ILS.
+  \item M\'as de 200 interrogaciones simult\'aneas.
+  \item Transpondedor \'integramente programable.
+  \item Compatible con antenas sectoriales y omnidireccionales.
+  \item Totalmente supervisable y controlable a distancia.
+  \end{itemize}
+	&
+        \begin{itemize}
+        \item El sistema puede saturarse cuando hay muchas aeronaves dentro del alcance del radiofaro. 
+        \item 	Algunos DME asociados con el ILS pueden requerir disposiciones especiales para su protecci\'on contra la interferencia. 
+        \end{itemize}
+        \\ \hline
+\end{tabular}
+
+
+
+
+\section{Sistemas de aproximaci\'on}
+\label{sec:06.sistemas.de.aproximacion}
+
+% \section{ILS, función, diagrama en bloque, principio de funcionamiento}
+% \label{sec:U06.03.ILS}
+
+  \includepdf[pages=1-15, %fitpaper=true, 
+scale=0.80, 
+  landscape=false,
+  offset = 0 -20,
+  pagecommand={\thispagestyle{fancy}}]
+  {06.radionavegacion/sistemas_aproximacion.pdf}
+
+  \begin{landscape}
+  \includepdf[pages=16, %fitpaper=true, 
+scale=0.80, 
+%  landscape=true,
+offset = 0 -20, pagecommand={\thispagestyle{fancy}}]
+{06.radionavegacion/sistemas_aproximacion.pdf}
+\end{landscape}
+
+  \includepdf[pages=17-28, %fitpaper=true, 
+scale=0.80, 
+  landscape=false,
+  offset = 0 -20,
+  pagecommand={\thispagestyle{fancy}}]
+  {06.radionavegacion/sistemas_aproximacion.pdf}
+
+
+  \begin{landscape}
+  \includepdf[pages=29, %fitpaper=true, 
+scale=0.80, 
+%  landscape=true,
+offset = 0 -20, pagecommand={\thispagestyle{fancy}}]
+{06.radionavegacion/sistemas_aproximacion.pdf}
+\end{landscape}
+
+
+\section{Radar y Sensores de radar}
+\label{sec:U06.05.sensores.de.radar}
+
+Las aeronaves civiles llevan una serie de sensores de radar que permiten que la aeronave obtenga datos sobre el vuelo de la aeronave. Los principales sensores de radar en uso en aeronaves civiles son:
+
+\begin{itemize}
+\item Radioaltímetro
+
+\item   Radar meteorologico.
+\end{itemize}
+
+Las bandas de radar se muestran en la Tabla \ref{tab:06.bandas.radar}.
+
+\subsection{Radio-alt\'imetro}
+\label{sec:U06.05.radio.altimetro}
+
+El radioalt\'imetro (Radio Altimeter) utiliza transmisiones de radar para reflejarse en la superficie del mar o el suelo inmediatamente debajo de la aeronave. Por lo tanto, el radioalt\'imetro proporciona una lectura absoluta de altitud con respecto al terreno directamente debajo de la aeronave. Esto contrasta con el altímetro barométrico o de datos aéreos donde la altitud puede ser referenciada al nivel del mar o algún otro dato como el terreno local, donde se conoce como altura. Por lo tanto, el radioalt\'imetro tiene un valor particular para advertir al piloto que está cerca del terreno y para advertirle si es necesario que tome medidas correctivas. Alternativamente, el radioalt\'imetro puede proporcionar a la tripulación de vuelo una altitud precisa con respecto al terreno durante las etapas finales de una aproximación de precisión. La comparación de la altitud barométrica y de radar se muestra en la Figura \ref{fig:radioaltimetro.funcionamiento}. \textbf{Debe advertirse que el radioalt\'imetro NO INDICA LA ALTURA POR DELANTE DE LA AERONAVE}.
+
+Estos equipos llevan varios a\~nos emple\'andose en la aeronaves, como ejemplo puede verse en el siguiente hiperv\'inculo un art\'iculo de 1939: 
+\href{https://www.rfcafe.com/references/radio-craft/radio-altimeter-increases-air-safety-january-1939-radio-craft.htm}{New Radio Altimeter Increases Air Safety
+January 1939 Radio-Craft}. 
+
+\begin{figure}[!h]
+  \centering
+    \includegraphics[width=0.5\textwidth]{06.radionavegacion/Imagenes/06.05.radar/06_radar_0000.png}
+  \caption{Radioalt\'imetro. Altura medida por radar $h$ y altura barom\'etrica.. \\{\tiny Adaptado de \,\url{https://www.naic.edu/~phil/rfi/NAR_Radio_Altimeter.pdf}}}
+  \label{fig:radioaltimetro.funcionamiento}
+\end{figure}
+
+
+Los radioalt\'imetros pueden operar usando CW/FM (onda continua / frecuencia modulada) o técnicas de señal pulsada. Las técnicas CW/FM pierden precisión por encima de un rango de 2500 pies (762 m) por arriba del terreno \ac{AGL}, por lo que muchos radioaltímetros están limitados a un rango operativo hasta esta altura. Por encima de esto, se deben utilizar técnicas pulsadas. El principio de funcionamiento del altímetro radar se muestra en la Figura \ref{fig:radioaltimetro.principio.funcionamiento}. 
+
+El oscilador y el modulador proporcionan las señales necesarias para el transmisor y las antenas de transmisión, que dirigen la energía del radar hacia el terreno debajo de la aeronave con un ancho entre 20º a 40º. 
+Las antenas de recepci\'on reciben la se\~nal reflejada y la pasan a un contador de frecuencia, el cual demodula la señal recibida y proporciona una lectura del radioalt\'imetro a una pantalla dedicada.
+
+
+\begin{figure}[!htb]
+  \centering
+  \subfigure[Principio de funcionamiento del radioalt\'imetro. Adaptado de \protect\cite{Moir_Civil_Avionics_Systems}]{        \includegraphics[width=0.45\textwidth]{06.radionavegacion/Imagenes/06.05.radar/06_radioaltimetro_principio.png}
+  \label{fig:radioaltimetro.principio.funcionamiento}}
+  \hspace{0.05\textwidth}
+  \subfigure[T\'ecnica de modulaci\'on de frecuencia en radioalt\'imetro. Adaptado de \protect\cite{Moir_Civil_Avionics_Systems}]{  \includegraphics[width=0.45\textwidth]{06.radionavegacion/Imagenes/06.05.radar/06_radar_0002.png}
+  \label{fig:radioaltimetro.tecnica.modulacion.en.frecuencia}
+	}
+    
+\end{figure}
+
+
+La mayoría de los radioalt\'imetros utilizan una técnica de frecuencia modulada triangular en la energía transmitida, como se muestra en la Figura \ref{fig:radioaltimetro.tecnica.modulacion.en.frecuencia}, aunque como se mencionó anteriormente, esto típicamente limita el rango operativo a 2500 pies (762 m). El transmisor / receptor genera una señal de onda continua (CW) que varía de 4250 a 4350 MHz, modulada a 100 Hz (período $\mu 0.01$ seg). La comparación de la frecuencia de la energía reflejada con la energía transmitida: $f_1$ versus $f_2$, en la mencionada Figura  arroja una diferencia de frecuencia que es proporcional al tiempo que tarda la energía radiada en regresar, por lo tanto, se puede calcular la altitud.
+
+% \begin{figure}[!htb]
+%   \centering
+%   \includegraphics[width=0.5\textwidth]{06.radionavegacion/Imagenes/06.05.radar/06_radar_0002.png}
+%   \caption{T\'ecnica de modulaci\'on de frecuencia en radioalt\'imetro. Adaptado de \protect\cite{Moir_Civil_Avionics_Systems}}
+%   \label{fig:radioaltimetro.tecnica.modulacion.en.frecuencia}
+% \end{figure}
+
+En la Figura \ref{fig:radioaltimetro.indicador} 
+se muestra un indicador de radioalt\'imetro t\'ipico donde se han indicado sus partes, puede apreciarse que la escala es lineal entre cero y 500 pies y luego es logar\'itmica hasta los 2500 pies.
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.5\textwidth]{06.radionavegacion/Imagenes/06.05.radar/06_radar_0004.png}
+  \caption{Indicador de radioal\'imetro}
+  \label{fig:radioaltimetro.indicador}
+\end{figure}
+
+
+Las instalaciones de radioalt\'imetro se calibran seg\'un su instalación en la aeronave, esto permite compensar la altura de la antena sobre el tren de aterrizaje y cualquier largo recorrido de cable coaxil en la instalación eléctrica de la aeronave. 
+La lectura cero del altímetro del radar se establece de modo que coincida con el punto en el que el tren de aterrizaje de la aeronave está haciendo contacto con la pista. 
+
+Una referencia útil sobre las instalaciones de radioalt\'imetro y su mantenimiento puede obtenerse en  \protect\cite{Radioaltimetro_airbus}.
+
+Como ejemplo de un sistema de radioalt\'imetro puede consultarse el producto \href{https://www.bendixking.com/en/products/nc/navigation-and-communication/kra-405b}{KRA 405B Radar Altimeter de BendixKing} que equipa a la familia de aeronaves Embraer E2 o al helicóptero Bell 429. 
+
+\begin{tcolorbox} {\bf \large ¡Recordar!}{ \small
+    \begin{itemize}
+
+    \item El radioalt\'imetro mide la altitud real de la aeronave en
+      relación con el terreno debajo, a diferencia del altímetro
+      barom\'etrico que mide la altura en relación con el nivel del
+      mar o alguna otra presi\'on de referencia.
+
+    \item La altitud del radar se determina por el tiempo necesario
+      para que un pulso de radar transmitido desde el avión regrese
+      reflejado desde el terreno.
+
+    \item El tipo m\'as com\'un empleado hoy en día es el de onda
+      continua modulada en frecuencia (CW/FM).
+
+    \item Los radioalt\'imetros transmiten en el rango de 4250 a 4350
+      MHz.
+
+    \item Los radioalt\'imetros pueden tener pantallas dedicadas; los
+      últimos sistemas muestran la altitud del radar en el EFIS.
+
+    \item Las aeronaves militares y UAV también pueden usar altímetros
+      láser.
+
+    \item La información puede presentarse en un EFIS. En los sistemas
+      actuales la altitud del radar se proporcionará a una gama de
+      sistemas como FMS, EGPWS, piloto automático, etc., y se mostrará
+      directamente a la tripulación de vuelo.
+ 
+    \item Los radioalt\'imetros generalmente operan en un rango máximo
+      de cero a 2500 pies (762 m).
+
+    \end{itemize}
+}
+  \end{tcolorbox}
+
+
+
+ \subsection{Radar meteorol\'ogico}
+ \label{sec:U06.06.radar.metereologico}
+
+ Existen tres tecnologías principales que se usan típicamente en las aeronaves para detectar las condiciones climáticas:
+
+\begin{itemize}
+     \item Radar a bordo,
+     \item Detección de rel\'ampagos y
+     \item Servicios de enlace de datos (Datalink services).
+\end{itemize}
+
+ El radar meteorológico ha estado en uso desde hace varios años para alertar a la tripulación de vuelo sobre la presencia de condiciones climáticas adversas en la ruta de vuelo de la aeronave y obst\'aculos sobre el terreno. 
+
+ La mayoría de las aeronaves de transporte comercial están equipadas con radar meteorológico, y esto representa la mayoría de este capítulo. Las aeronaves de aviación general que no están equipadas con radar suelen estar equipadas con una tecnología alternativa, es decir, detección de rel\'ampagos y/o servicios de enlace de datos.
+ Este se utiliza para  detectar la energía reflejada por el contenido de una nube, o por precipitación. Esta precipitación puede ocurrir en muchas formas diferentes, incluyendo: lluvia, lluvia helada, nieve, aguanieve y granizo. 
+
+ El radar meteorológico irradia energía en un haz estrecho, con un ancho de haz de $\sim 3$º que puede reflejarse en las nubes o en el terreno por delante de la aeronave, escaneando a ambos lados de la línea central de la misma a fin de obtener  una imagen de los objetos que puedieran encontrarse. La antena también puede inclinarse en elevación alrededor de $\pm 15$º desde la horizontal para escanear áreas por arriba y por debajo de la aeronave.
+
+El principio de funcionamiento de este equipo se muestra en la 
+Figura 8.33. Se presenta en la misma una nube de tormenta directamente delante de la aeronave, con algo de precipitación por debajo y también terreno en constante aumento. La precipitación puede indicar  una probable corriente vertical de viento peligrosa para la aeronave.
+
+ El radar meteorológico funciona en la Banda C (4 a 8 GHz) o en la banda X (8 a 12,5 GHz), 
+ver Tabla \ref{tab:06.bandas.radar}. 
+Estas dos bandas tienen sus ventajas y desventajas para su uso en aplicaciones de radar meteorológico:
+
+
+% Airbus Optimum use of weather radar
+%https://safetyfirst.airbus.com/app/themes/mh_newsdesk/pdf.php?p=25835
+
+% \begin{itemize}
+% \item Los pulsos de energía de microondas de Banda C pueden penetrar a
+%   través de fuertes precipitaciones, proporcionando así la detección
+%   del clima, permitiendo al piloto determinar más detalles del patrón
+%   del clima.
+% \item Los pulsos de energía de microondas de Banda X pueden proporcionar una buena resolución de imágenes; sin embargo, esto significa que solo pueden usarse para evitar el clima. Las frecuencias más altas requieren una antena más pequeña; Por esta razón, los aviones de pasajeros más grandes usan un radar de Banda X.
+
+% \end{itemize}
+
+% El alcance de un sistema de radar meteorológico es típicamente de 320 millas. Los pulsos de energía de microondas se reflejan en las gotas de humedad y se devuelven a la antena del radar. El sistema calcula el tiempo necesario para que los pulsos de energía sean devueltos.%; esto se muestra como una imagen en una pantalla de radar meteorológica dedicada, o la imagen se puede integrar con el sistema electrónico de visualización de vuelo. 
+% % Se mide La intensidad de la energía devuelta y se emplea para determinar las dimensiones del objetivo. 
+% % Un mayor contenido de humedad en una nube proporciona una mayor energía de retorno. %La antena escanea en el plano lateral para proporcionar información direccional sobre el objetivo.
+% la imagen del radar generalmente se muestra en una pantalla de radar dedicada o se superpone en la pantalla de navegación del piloto o primer oficial. Las pantallas son típicamente en color, lo que ayuda a la tripulación de vuelo a interpretar los datos del radar. Las pantallas tienen varios marcadores de rango seleccionables y generalmente se refieren al rumbo de la aeronave. Se pueden proporcionar pantallas separadas para el clima o los modos de turbulencia. 
+
+% \Video{
+%   En el siguiente hiperv\'inculo se puede apreciar un
+%   \href{https://www.youtube.com/watch?time_continue=27&v=cWD-dIrhObE&feature=emb_logo}{video
+%     de funcionamiento de un radar metereol\'ogico}.
+% }
+
+% El rayo del radar está directamente delante del avión con la antena en su posición media o de referencia y detectará la nube de tormenta a través de la cual el avión está a punto de volar. Al referirse a su pantalla de radar meteorológico, el piloto podrá ver si las celdas de tormenta pueden evitarse alterando el rumbo hacia la izquierda o hacia la derecha. 
+
+% El uso de la función de inclinación de la antena es crucial. 
+% Si la antena está completamente elevada, la tripulación no obtendrá información completa relacionada con la precipitación de nubes de tormenta, ya que solo mirarán la parte superior de la formación de nubes. Si la antena está completamente hacia abajo, el radar detectará el terreno ascendente con preferencia a la nube de tormenta o la precipitación que se avecina. Por esta razón, muchos radares meteorológicos incorporan una función de inclinación automática para que los retornos del radar estén optimizados para la tripulación de vuelo, dependiendo de los retornos recibidos.
+
+% La mayoría de los radares meteorológicos modernos pueden usar el procesamiento Doppler para detectar turbulencias por delante de la aeronave. Esta es una característica muy útil, ya que la cizalladura máxima del viento no necesariamente ocurre casualmente con la mayor precipitación. De hecho, algunas de las cizalladuras del viento más peligrosas pueden ocurrir en aire despejado con el avión volando en ninguna parte cerca de nubes o precipitaciones.
+
+% \begin{itemize}
+% \item Weather radar is a limited version of the mapping radar
+%   optimised to detect weather as opposed to terrain
+
+% \item The weather radar enables the flight crew to negotiate around
+%   heavy weather and storm centres en-route
+
+% \item The radar picture may be displayed upon a dedicated display –
+%   most often in modern aircraft it is displayed on the navigation
+%   display with aircraft navigation symbols overlaid
+
+% \item Recently the weather radar has been used as a primary sensor to
+%   aid advanced and highly accurate CNS/ATM INS/GPS [RNP = 0.3 nm]
+%   approaches into challenging airports such as Juneau, Alaska
+% \end{itemize}
+
+% El sistema típico de radar meteorológico en una aeronave comprende la antena (bajo el cono de nariz),
+% dos transceptores (tambi\'en bajo el cono de nariz),
+% dos paneles/pantallas de control (en la cabina), ver Figura 20.2. 
+
+% Los transceptores están ubicados en el cono de la nariz, lo que minimiza la longitud de la guía de ondas y también evita la necesidad de que la guía de ondas penetre en el mamparo de presión. 
+
+% En una aeronave monomotora la antena puede ubicarse en el ala en una cápsula autónoma, ver Figura 20.3 
+
+% \begin{description}
+
+% \item[ \bf Antena de radar meteorol\'ogico:] Las señales del radar se transmiten y reciben a través de la antena. Las primeras versiones de esta tenían la forma de un plato parabólico, sin embargo, las versiones actuales son del tipo de placa plana, ver Figura 20.3 (a).
+
+% La antena de placa plana proyecta un haz más enfocado que el tipo parabólico, esto se debe a la reducción de los lóbulos laterales como se observa en la 
+% Figura 20.4. 
+% La antena comprende una placa plana orientable con una gran cantidad de ranuras radiantes, cada una equivalente a un dipolo de media onda alimentado en fase. 
+% La antena está montada en el mamparo de presión hacia adelante detrás del radomo,
+% la cual es una pieza de estructura aerodinámica construida con materiales que tienen baja atenuación de las señales de radar (kevlar).
+
+% La condición mecánica del radomo es muy importante para la efectividad del sistema de radar meteorológico, p.e. la delaminación afectar\'a la atenuaci\'on de la se\~nal.
+
+% La antena se mueve automáticamente desde su izquierda a su derecha de forma repetitiva para poder escanear los patrones climáticos por delante del avión. Para investigar las formaciones de nubes, el piloto también puede inclinar la antena hacia arriba o hacia abajo para proporcionar diferentes perspectivas de visualización.
+
+% La posición de referencia es escanear la antena para proporcionar imágenes a través del horizonte; las entradas del sistema de referencia de actitud de la aeronave se utilizan para proporcionar la estabilización.
+
+% Los motores se utilizan como parte de un mecanismo de accionamiento para atravesar la antena en acimut y para inclinar la antena en tono. Los transmisores sincronizados se utilizan para retransmitir las diversas posiciones de la antena de vuelta al transceptor.
+
+% Los pulsos de energía se transportan entre la antena y el transceptor a través de una guía de ondas, 
+% ver Figura 20.3.
+% Esto se debe a que las pérdidas en un cable coaxial serían altas en frecuencias superiores a 3 GHz y prohibitivas en frecuencias superiores a 10 GHz. Los cables coaxiales también están limitados en términos de la capacidad máxima de manejo de potencia. Las guías de onda tienen sus desventajas. Son voluminosas, caras y requieren más mantenimiento. Fabricadas en aleación de aluminio, en forma rectangular hueca, tienen dimensiones muy parecidas a la longitud de onda del sistema. %El Capítulo 2, Sección 2.12 proporciona más detalles sobre las guías de onda.
+
+% \Alerta{      La energía radiada por un sistema de radar meteorológico es
+%       peligrosa y puede causar da\~nos a la salud.
+% }
+
+% \item[\bf Transceptores:] El transceptor es un transmisor y receptor combinados, Figura 20.5; la potencia de salida de la antena es del orden de 5 a 10 kW. Los transceptores modernos son dispositivos de estado sólido, que incorporan procesamiento de video para la pantalla y señales de estabilización para la antena. Dado que la energía recibida de un tamaño dado de gota de agua varía con el rango, los retornos de energía de los rangos más cercanos serán más altos que los recibidos de las gotas más alejadas. El transceptor compensará automáticamente los retornos de objetivos que están cerca o lejos del avión. Esto se logra al alterar la ganancia en función del tiempo desde que se transmite el pulso de energía. Pulsos de energía de radar se transmiten de forma repetitiva; el intervalo entre pulsos depende del rango seleccionado por la tripulación. Debe dejarse tiempo para que el pulso de energía se refleje de las gotas de agua en el límite del rango seleccionado antes de que se transmita el siguiente pulso.
+
+% \item[\bf Panel de control:]  En las Figuras 20.6 (a) y (b) se muestra un panel de control de radar meteorológico típico. Esto permite al piloto seleccionar el transceptor izquierdo o derecho, seleccionar el modo de radar meteorológico, inclinar manualmente la antena y seleccionar la ganancia del sistema.
+
+% \item[\bf Pantalla:] La pantalla básica utilizada para los sistemas de radar primario es el indicador de posición del plan (PPI). A medida que el haz se desplaza de lado a lado, una imagen radial en la pantalla (sincronizada con cada barrido) se mueve a través de la pantalla. La imagen en la pantalla depende de la cantidad de energía devuelta desde el objetivo. Los sistemas de radar meteorológicos originales tenían pantallas monocromáticas dedicadas basadas en un tubo de rayos catódicos (CRT); Estos han evolucionado a lo largo de los años en pantallas a todo color, a menudo integradas con otros instrumentos electrónicos de vuelo. Los beneficios completos de un sistema de radar meteorológico se pueden apreciar cuando el sistema se utiliza en una aeronave con una pantalla de sistema electrónico de instrumentos de vuelo (EFIS), Figura 20.7. Se utiliza un generador de símbolos para proporcionar imágenes de radar meteorológicas específicas según lo determine el transceptor. Un panel de control con pantalla electrónica permite a cada piloto seleccionar el alcance del radar meteorológico en incrementos de 10, 20, 40, 80, 160 y 320 millas.
+
+% La pantalla electrónica se superpone al modo de mapa, lo que permite al piloto relacionar el rumbo del avión con las imágenes meteorológicas. Estas imágenes están codificadas por colores para permitir al piloto evaluar la gravedad de las condiciones climáticas. Los colores (que van del negro, verde, amarillo, rojo y magenta) se utilizan para indicar las tasas de lluvia que pueden interpretarse como un nivel de turbulencia.
+
+
+
+% \end{description}
+
+
+
+
+
+
+
+% Se puede encontrar información útil sobre el uso operativo del radar meteorológico en la Referencia [13], que proporciona una guía piloto para la operación del radar meteorológico Honeywell RDR-4B. El transmisor funciona a 9345 GHz y el sistema tiene tres modos básicos de operación:
+
+% \begin{itemize}
+% \item clima y mapa con un rango maximo de 320 nm;
+
+% \item modo turbulencia (TURB) a 40 nm;
+
+% \item detección de cizalladura del viento a 5 nm.
+% \end{itemize}
+
+% Los radares meteorológicos también pueden usarse en un modo de evitación del terreno en ciertas circunstancias, como se muestra en la Figura 8.34. Cuando el vuelo de precisión se aproxima a aeródromos rodeados de terreno elevado, el radar meteorológico puede proporcionar una verificación cruzada independiente de la información proporcionada por el Sistema de advertencia de evitación del terreno (TAWS). El capitán puede ver la información de TAWS en su pantalla de navegación (ND) mientras es monitoreado por el primer oficial con una pantalla meteorológica superpuesta en su ND. En la Referencia [14], el texto explica por qué se agregó el radar meteorológico a la lista de equipo mínimo (MEL) de la aeronave para dichos vuelos.
+
+% Como ejemplo de readares metereol\'ogicos comerciales se tiene el \href{https://www.bendixking.com/content/dam/bendixking/en/documents/downloads/006-08755-0001_3-rdr-200-pilot-guide.pdf}{BendixKing RDR 2000 que presenta un manual para pilotos} y tambi\'en ofrecen \href{https://www.bendixking.com/en/products/ttw/terrain-traffic-weather/rdr-2000}{videos explicativos}, o el sistema \href{https://www.garmin.com/en-US/blog/wp-content/uploads/2006/08/flyingMag.pdf}{Garmin GWX 68}. Dichos ejemplos pueden ser consultados en sus hiperv\'inculos.
+
+
+
+% \begin{itemize}
+% \item El radar de mapeo utiliza un haz especialmente diseñado para   ``pintar'' el terreno delante del avión
+
+% \item Un mapa detallado del radar del terreno y otras funciones hechas   por el hombre delante del avión puede ser compilado
+
+% \item Al colocar la antena de radar de mapeo en un angulo fijo de   depresi\'on, cierto grado de se puede proporcionar orientación para   evitar el terreno
+
+% \item Los radares de mapeo se usan con mayor frecuencia en aviones   militares como parte de la suite de armas ofensivas
+
+% \item Los radares de mapeo se utilizan en aeronaves civiles para   ilustrar el terreno en un modo de evasión del terreno
+
+%   Figura 8.34 Uso del radar meteorológico en modo mapeo / evitación   del terreno
+% \end{itemize}
+
+
+% \subsection{\ac{TAWS}}
+% \label{sec:06.taws}
+
+% Este sistema 
+
+
+
+% \Informacion{Situación al 2012 de la cobertura de los Sistemas de Navegación Aérea en la Republica Argentina}{
+% En el \href{http://sedici.unlp.edu.ar/bitstream/handle/10915/37756/Resumen.pdf?sequence=1&isAllowed=y}{siguiente link} se  puede acceder a este informe realizado por el 
+% GTA -  Grupo Transporte Aéreo  de la UID ``GTA-GIAI'', Departamento de Aeronáutica, Facultad de Ingeniería, Universidad Nacional de La Plata.
+% }
+
+
+% \Informacion{Manual de radioayudas a la navegaci\'on a\'erea}{
+% La ANAC dispone 
+% \href{https://www.anac.gov.ar/anac/web/uploads/navegacion/navegacion/manual-de-radioayudas-2012.pdf}{del siguiente manual versi\'on 2012.}
+% }

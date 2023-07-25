@@ -1,0 +1,167 @@
+Equipo de medición de distancia
+
+Los dos capítulos anteriores se han ocupado de obtener información direccional para fines de navegación aérea. En este capítulo veremos un sistema que proporciona a la tripulación la distancia a una ayuda de navegación. El equipo de medición de distancia (DME) es un sistema de navegación de corto / mediano alcance, a menudo utilizado junto con otros sistemas, p. VOR e ILS, para proporcionar correcciones de navegación precisas. DME se basa en principios de radar secundario y opera en la banda L del radar. Antes de ver lo que hace el sistema y cómo funciona en detalle, debemos analizar algunos principios básicos del radar.
+
+11.1 Principios del radar
+
+La palabra radar se deriva de la detección y el alcance de radio; El uso inicial del radar era localizar aeronaves y mostrar su alcance y orientación en un monitor (ya sea en tierra o en otra aeronave). Este tipo de radar se denomina radar primario: la energía se irradia a través de una antena de radar giratoria para iluminar un "objetivo"; Este objetivo podría ser un avión, el suelo o una nube. Parte de esta energía se refleja desde el objetivo y se recoge en la misma antena, ver Figura 11.1. La fuerza de la energía devuelta se mide y se usa para determinar el alcance del objetivo. Una antena giratoria proporciona la información direccional de tal manera que el objetivo se puede mostrar en una pantalla.
+
+El radar primario tiene sus desventajas, una de las cuales es que la cantidad de energía que se transmite es muy grande en comparación con la cantidad de energía reflejada por el objetivo. Un método alternativo es el radar secundario que transmite una señal específica de baja energía (la interrogación) a un objetivo conocido. Esta señal se analiza y una nueva señal de respuesta (o secundaria),
+es decir, no es una señal reflejada, se envía de vuelta al origen, consulte la Figura 11.2 (a). El radar secundario se desarrolló durante la Segunda Guerra Mundial para diferenciar entre aviones y barcos amigos:
+Identificación amigo o enemigo (IFF). Los principios del radar secundario ahora tienen una serie de
+aplicaciones que incluyen equipos de medición de distancia (DME).
+
+11.2 Descripción general de DME
+
+La ayuda de navegación DME contiene un transpondedor (receptor y transmisor) contenido dentro de una sola ayuda de navegación, consulte la Figura 11.2 (b). El equipo de la aeronave irradia pulsos de energía al
+Ayuda de navegación DME; las señales secundarias se transmiten de vuelta a la aeronave. Un a bordo
+El interrogador mide el tiempo necesario para que las señales se transmitan y reciban en la aeronave. Como conocemos la velocidad de propagación de las ondas de radio, el interrogador puede calcular el
+distancia a la ayuda de navegación DME. Las ayudas de navegación DME pueden ser estaciones terrestres autónomas o ubicadas junto con una ayuda de navegación VOR.
+
+Dado que el sistema es "línea de visión", la altitud de la aeronave tendrá una relación directa con el alcance que el sistema puede utilizar, ver Figura 11.3 (a). El uso de ayudas de navegación DME impone un límite en el rango de trabajo que se puede obtener.
+
+La relación entre la distancia máxima de la línea de visión (LOS) entre un avión y la estación terrestre viene dada por la relación:
+
+
+donde d es la distancia en millas náuticas, y h es la altitud en pies sobre el nivel del suelo (se supone que es un terreno plano). El rango teórico de LOS para altitudes de hasta 20,000 pies se da en la Tabla 11.1.
+
+
+Con referencia a la figura 11.3 (b), se puede ver que la distancia real que mide el interrogador es el rango de 'slant', es decir, no la distancia real (rango horizontal) sobre el suelo. Los efectos del alcance inclinado en relación con el alcance horizontal son mayores a grandes altitudes y / o cuando el avión está cerca de la ayuda a la navegación. Llevando esto al límite, cuando el avión está volando sobre una ayuda de navegación DME, ¡en realidad estaría midiendo la altitud del avión!
+
+Pon a prueba tu comprensión 11.1
+
+¿Cuál es la diferencia entre radar primario y secundario?
+
+Pon a prueba tu comprensión 11.2
+
+Distinga entre rango inclinado y rango horizontal.
+
+
+11.3 Operación DME
+
+Las señales transmitidas por el interrogador son un par de pulsos, cada uno de 3,5 ¼ de duración, modulados en la frecuencia de ayuda de navegación DME. El interrogador genera una frecuencia de repetición de pares de pulsos entre 5 y 150 pares de pulsos por segundo. En la ayuda de navegación DME, el transpondedor recibe estos pulsos y, después de un retraso de 50 ms, transmite un nuevo par de pulsos a una frecuencia de 63 MHz por encima o por debajo de la frecuencia del interrogador.
+
+El interrogador del avión recibe los pulsos y coincide con el intervalo de tiempo entre el par de pulsos transmitidos. Esto asegura que otras aeronaves que interroguen la misma ayuda de navegación DME al mismo tiempo solo procesen sus propios pulsos.
+
+Al medir el tiempo transcurrido entre la transmisión y la recepción (y teniendo en cuenta el retraso de 50 ms), el interrogador calcula la distancia a la ayuda a la navegación. DME es un sistema de línea de visión con un rango máximo de aproximadamente 200 nm; esto equivale a aproximadamente 2400 ms de tiempo transcurrido para que un par de pulsos se transmitan y reciban, teniendo en cuenta el retraso de tiempo de 50 ms en la estación terrestre. La precisión del sistema es típicamente 0.5 nm, o 3% de la distancia calculada, la que sea mayor.
+
+La estación terrestre DME responde a los interrogatorios de 50 a 100 aviones; todos ellos envían sus interrogatorios a la misma frecuencia de estación DME. El transceptor de la aeronave debe reconocer sus propias respuestas de las respuestas de todas las demás aeronaves que utilizan la estación DME. Para este propósito, el transceptor interroga con su propio "jitter" (o conjunto aleatorio de pulsos); luego busca respuestas con una diferencia de tiempo constante y correlativa con respecto a su transmisión.
+
+Pon a prueba tu comprensión 11.3
+
+¿Cuál es la precisión típica y el rango máximo de un sistema DME?
+
+Punto clave
+
+El intervalo variable entre pares de pulsos garantiza que el interrogador DME reconozca su propio
+señales y rechaza otras señales.
+
+Punto clave
+
+Hay 252 canales DME entre 960 y 1215 MHz. cada número de canal se subdivide en canales designados 'X' y 'Y'. Estos se separan variando el tiempo de separación de pulso: 2 μs para canales X y 30 μs para canales Y.Los canales están numerados del 1 al 126; 
+
+Punto clave
+
+DME se basa en un radar secundario; opera en la banda L entre 962 MHz y 1215 MHz (UHF) con separación de canales a 1MHz.
+
+11.4 Descripción del equipo
+
+Los aviones de transporte comercial suelen estar equipados con dos sistemas DME independientes, que comprenden
+antenas e interrogadores.
+
+Las antenas DME son aspas de banda L, ubicadas en la parte inferior del fuselaje de la aeronave, ver Figura 11.4 (a); tenga en cuenta que la antena tiene un doble propósito, ya que se utiliza tanto para transmitir como para recibir.
+
+
+Los interrogadores están ubicados en las bahías del equipo (Figura 11.4 (b)) y proporcionan tres funciones principales: transmisión, recepción y cálculo de la distancia a la ayuda de navegación seleccionada. La transmisión está en el rango de 1025 a 1150 MHz; la recepción está en el rango de 962 a 1215 MHz; el espacio entre canales es de 1 MHz.
+
+El interrogador funciona en varios modos:
+
+Colocarse
+
+Buscar
+
+Pista
+
+Escanear
+
+Memoria
+
+Culpa
+
+Autotest.
+
+Cuando el sistema se enciende por primera vez, ingresa al modo de espera; las transmisiones están inhibidas, el receptor y el audio están operativos; la pantalla DME tiene cuatro guiones para indicar que no hay datos calculados (NCD). El receptor monitorea los pares de pulsos recibidos de cualquier estación terrestre local. Si se cuentan suficientes pares de pulsos, el interrogador ingresa al modo de búsqueda. El transmisor ahora transmite pares de pulsos y monitorea cualquier retorno;
+
+
+Punto clave
+
+Los sistemas VOR y DME funcionan en diferentes frecuencias. Cuando se ubican conjuntamente, la frecuencia DME se selecciona automáticamente cuando el piloto sintoniza la frecuencia VOR.
+
+los pares de pulsos síncronos se convierten de tiempo en distancia y el sistema ingresa al modo de seguimiento. La distancia a la ayuda de navegación ahora se mostrará en el indicador DME (consulte la Figura 11.5). El modo de escaneo tiene dos submodos:
+
+escaneo dirigido para múltiples ajustes de ayuda a la navegación; se pueden escanear hasta cinco estaciones de acuerdo con un programa predeterminado de autoajuste de navegación de área (descrito con más detalle
+en el capítulo 16). Alternativamente, se realiza un escaneo gratuito para cualquier ayuda de navegación DME dentro del alcance.
+
+Si los pares de pulsos de cualquier ayuda de navegación no se reciben después de un corto período de tiempo (dos segundos típicos), el interrogador pasa al modo de memoria mediante el cual la distancia se calcula a partir de los pares de pulsos recibidos más recientemente. El modo de memoria caduca después de un corto período de tiempo, generalmente diez segundos, o hasta que se reciban nuevamente los pares de pulsos. Si el sistema detecta alguna condición de falla, la pantalla de distancia se borra. La autocomprobación hace que el sistema se ejecute a través de una secuencia predeterminada que hace que los indicadores se lean: en blanco, guiones (NCD) y 0.0 nm.
+
+Las salidas DME se pueden mostrar de varias maneras, consulte la Figura 11.5. Estas pantallas incluyen lecturas dedicadas, sistemas electrónicos de instrumentos de vuelo (EFIS), paneles / transceptores combinados (para aviación general) e indicadores magnéticos de distancia de radio (RDMI). Al seleccionar una ayuda de navegación VOR-DME de ubicación conjunta, la tripulación solo necesita sintonizar la frecuencia VOR; la frecuencia DME se selecciona automáticamente.
+
+Punto clave
+
+Cuando no hay datos calculados (NCD) disponibles, esta condición se muestra como cuatro guiones.
+
+Pon a prueba tu comprensión 11.4
+
+Enumere y describa cuatro modos en los que puede operar un interrogador DME.
+
+11.5 Navegación en ruta usando radioayudas para la navegación
+
+La guía básica de navegación en ruta para aeronaves comerciales se puede lograr fácilmente utilizando los sistemas VOR y DME colocados, proporcionando así soluciones de roho-theta de una sola ayuda de navegación.
+
+La frecuencia DME está emparejada con la frecuencia VOR; esto significa que solo se necesita sintonizar la frecuencia VOR y, como resultado, la frecuencia DME se sintoniza automáticamente. Alternativamente, se pueden establecer arreglos rho-rho a partir de un par de ayudas de navegación DME.
+
+Tenga en cuenta que esto produce una solución ambigua a menos que se use otro DME, consulte la Figura 11.6. Un ejemplo
+de la ubicación del transpondedor DME y las ayudas a la navegación VOR-DME de ubicación conjunta en Suiza se proporciona en la Tabla 11.2.
+
+En los EE. UU., Se introdujo un sistema combinado de roho-theta para aviones militares conocido como TACAN (navegación aérea táctica). Este sistema es una ayuda de navegación de distancia y rumbo de corto alcance
+operando en la banda de 962-1215 MHz. Las ayudas de navegación TACAN (ver Figura 11.7) a menudo se colocan con ayudas de navegación VOR; estos se identifican en las cartas de navegación como "VORTAC".
+
+La ayuda de navegación TACAN es esencialmente un transpondedor DME (que utiliza los mismos principios de frecuencia y par de pulsos que el DME estándar) al que se ha agregado información direccional; ambos operan en la misma banda UHF. Una característica importante de TACAN es que tanto la distancia como la demora se transmiten en la misma frecuencia; Esto ofrece el potencial para economías de equipo.
+
+Además, debido a que el sistema funciona a una frecuencia más alta que VOR, las antenas y el hardware asociado pueden hacerse más pequeños. Esto tiene la ventaja para uso militar desde el TACAN
+El equipo se puede transportar y operar fácilmente desde barcos u otras plataformas móviles.
+
+Cuando se ubica junto con una ayuda de navegación VOR, los aviones militares y comerciales pueden compartir las instalaciones de VORTAC. En referencia a la Figura 11.8, los aviones militares obtienen su distancia y rumbo
+información de la parte TACAN de VORTAC; Las aeronaves comerciales obtienen su información de distancia del TACAN y la información del rumbo de la parte VOR del TACAN. Puntos de informe (mostrados como triángulos) basados u200bu200ben ayudas de navegación DME, p. La ayuda de navegación VORTAC ubicada en Cambrai (CMB), en el norte de Francia, se ilustra en la Figura 11.9. Los radiales de intersección de las ayudas de navegación se utilizan para definir puntos de informe para la navegación en ruta.
+
+Estos puntos de informe reciben códigos de identificación de cinco letras asociados con sus
+ubicación geográfica. Por ejemplo, el punto de informe 'HELEN' (en la parte superior de la tabla) se define por una distancia y demora desde la ayuda de navegación VOR / DME de Bruselas.
+
+Las frecuencias TACAN se especifican como canales que se asignan a frecuencias específicas, p. Raleighâ € "Durham VORTAC en Carolina del Norte, EE. UU., Opera en el canal 119X. Esto corresponde a un:
+Frecuencia VOR de 117,2 MHz Frecuencia de interrogación DME de 1143 MHz Frecuencia de respuesta DME de 1206 MHz código de pulso de 12 ms.
+
+Tenga en cuenta que, dado que las ayudas de navegación DME, VOR y VORTAC deben ubicarse en tierra, la red de vías aéreas no ofrece una gran cobertura más allá de las regiones costeras. En referencia a la Figura 11.10, una combinación de estaciones VOR, DME y VORTAC (ver Figura 11.11) ubicadas en varios países europeos proporciona una cierta cantidad de guía de navegación en el Atlántico Norte, el Mar de Noruega y el Mar del Norte. Este diagrama supone un rango LOS de aproximadamente 200 nm. Las brechas en esta red de radionavegación pueden superarse mediante el uso de sistemas de navegación alternativos que incluyen: navegación inercial (INS), Doppler, navegación por satélite y Loran-C; Todos estos se describen en otra parte de este libro.
+
+Pon a prueba tu comprensión 11.5
+
+Explica qué se entiende por emparejamiento de frecuencias.
+
+Pon a prueba tu comprensión 11.6
+
+Describa dos formas en que se muestra la información de distancia DME.
+
+Pon a prueba tu comprensión 11.7
+
+Las estaciones terrestres de DME podrían estar respondiendo a numerosos aviones; ¿Cómo reconoce el sistema DME en el aire sus propias señales y rechaza las señales destinadas a otras aeronaves?
+
+Pon a prueba tu comprensión 11.8
+
+¿Qué información proporciona un RDMI a la tripulación?
+
+Pon a prueba tu comprensión 11.9
+
+¿Qué tipo de información proporciona un VORTAC?
+
+
+
+

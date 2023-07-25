@@ -1,0 +1,64 @@
+Pitot-static System
+
+Instruments 1, 2 and 3 above form part of an aircraft's pitot-static system, which must also conform to certain requirements. These are summarized as follows:
+
+a The system shall be air-tight, except for the vents to atmosphere, and shall be arranged so that the accuracy of the instruments cannot be seriously affected by the aircraft's speed, attitude, or configuration ; by moisture, or other foreign matter.
+
+b The system shall be provided with a heated pitot-pressure probe to prevent malfunctioning due to icing.
+
+c Sufficient moisture traps shall be installed t o ensure positive drainage throughout the whole of the system.
+
+d In aircraft in which an alternate or emergency system is to be installed, the system must be as reliable as the primary one and any selector valve must be clearly marked t o indicate which system is in use.
+
+e Pipelines shall be of such an internal diameter that pressure lag and possibility of moisture blockage is kept to an acceptable minimum.
+
+f Where static vents are used, to obviate yawing errors they shall be situated on opposite sides of the aircraft and connected together as one system. Where duplicate systems are prescribed, a second similar system shall be provided.
+
+Gyroscopic Instruments
+
+Gyroscopic instruments may be of the vacuum-operated or electrically operated type, but in all cases the instruments shall be provided with two independent sources of power, a means of selecting either power source, and a means of indicating that the power supply is working satisfactorily.
+
+The installation and power supply system shall be such that failure of one instrument, or of the supply from one source, or a fault in any part of the supply system, will not interfere with the proper supply of power from the other source.
+
+Duplicate Instruments
+
+In aircraft involving two-pilot operation it is necessary for each pilot to have his own pilot-static and gyroscopic instruments. Therefore two independent operating systems must be provided and must be so arranged that no fault which might impair the operation of one is likely to impair the operation of both,
+
+Magnetic Compass
+
+The magnetic compass shall be installed so that its accuracy will not be excessively affected by the aircraft vibration or magnetic fields of a permanent or transient nature.
+
+Power Plant Instruments
+
+1. Tachometer to measure the rotational speed of a crankshaft or a compressor as appropriate to the type of power plant.
+
+2. Cylinder-head temperature indicator for an air-cooled engine to indicate the temperature of the hottest cylinder.
+
+3. Carburett or-intake air temperature indicator.
+
+4. Oil temperature indicator to show the oil inlet and/or outlet temperature.
+
+5. For turbojet and turbopropeller engines a temperature indicator to indicate whether the turbine or exhaust gas temperature is maintained within its limitations.
+
+6. Fuel-pressure indicator to indicate pressure at which fuel is being supplied and a means for warning of low pressure.
+
+7. Oil-pressure indicator to indicate pressure at which oil is being supplied to a lubricating system and a means for warning of low pressure.
+
+8. Manifold pressure gauge for a supercharged engine.
+
+9. Fuel-quantity indicator t o indicate in gallons or equivalent units the quantity of usable fuel in each tank during flight. Indicators shall be calibrated to read zero during cruising level flight, when the quantity of fuel remaining is equal to the unusable fuel, i.e. the amount of fuel remaining when, under the most adverse conditions, the first evidence of malfunctioning of an engine occurs.
+
+1 0. Fuel-flow indicator for turbojet and turbopropeller engines. For piston engines not equipped with an automatic mixture control a fuel flowmeter or fuellair ratio indicator.
+
+1 1. Thrust indicator for a turbojet engine.
+
+12. Torque indicator for a turbopropeller engine. 
+
+Standards
+
+In the design and manufacture of any product, it is the practice to comply with some form of specification the purpose of which is to ensure conformity with the required production processes, and to set an overall standard for quality of the product and reliability when ultimately performing its intended function. Specifications, or standards as they are commonly known, are formulated at both national and international levels by specialized organizations. For example, in the United Kingdom, the British Standards Institution is the recognized body for the preparation and promulgation of national standards and codes of practice, and it represents the United
+Kingdom in the International Organization for Standardization (ISO), in the International Electrotechnical Commission (IEC) and in West European organizations performing comparable functions. 
+
+Standards relate to all aspects of engineering and as 'a result vast numbers are produced and issued in series form corresponding to these aspects. As far as aircraft instruments and associated equipment are concerned, British Standards come within the Aerospace G 100 and G200 series; they give definitions, constructional requirements, dimensions, calibration data, accuracy required under varying environmental conditions, and methods of testing. Also in connection with instruments and associated electronic equipment, frequent reference is made to what are termed ARINC specifications. This is an acronym for Aeronautical Radio Incorporated, an organization in the United States which operates under the aegis of the airline operators, and in close collaboration with manufacturers.
+
+One notable specification of the many which ARINC formulate is that which sets out a standard set of form factors for the items colloquially termed 'black boxes'. In the main, these factors cover case dimensions, mounting racks, location of plugs and sockets, and a system of indexing fouling pins to ensure that only the correct equipment can be fitted in its appropriate rack position. The size of box is based on a standard width dimension called 'one ATR' (yet another abbreviation meaning Air Transport Rack) and variations in simple multiples of this provide a range of case widths. Two case lengths are provided for, and are termed long and short, ancl the height is standard. The various configurations are detailed in Table 9 on page 404.

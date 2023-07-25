@@ -1,0 +1,152 @@
+Rango omnidireccional de VHF
+
+El uso temprano de la navegación por radio de la aeronave se basó en transmisiones de baja / media frecuencia (LF / MF). Durante mediados y finales de la década de 1940, fue evidente que aumentó la precisión y
+Se necesitaba fiabilidad.
+
+Como los sistemas de comunicación por radio basados u200bu200ben frecuencias muy altas (VHF) se implementaron con éxito, se tomó la decisión de desarrollar un sistema de navegación por radio basado en VHF. Este sistema se convirtió en el sistema de rango omnidireccional VHF (VOR); un sistema que se usa ampliamente en todo el mundo hoy en día. La navegación VOR fue la base de la red de navegación 'vías aéreas'.
+
+10.1 ANTES de los principios
+
+10.1.1 Descripción general
+
+VOR es un sistema de navegación de corto / mediano alcance que opera en el rango de frecuencias de 108 a 117.95 MHz. Esto significa que las ondas de radio ahora se propagan como ondas espaciales. Los problemas que se encontraron con las ondas de tierra y cielo en los rangos de ondas kilométricas y hectométricas ya no están presentes con un sistema VHF. Las ayudas de navegación VOR se identifican mediante códigos únicos de tres letras (derivados de su nombre, por ejemplo, London VOR se llama LON, Dover VOR se llama DVR, etc.). El código se modula en la onda portadora como un tono de 1020 Hz que la tripulación puede escuchar como un código Morse
+señal. Algunas ayudas de navegación VOR tienen un anuncio automático de identificación de voz que proporciona el nombre de la estación; esto alterna con la señal del código Morse. La ubicación de las ayudas de navegación VOR (especificadas por la latitud y longitud), junto con sus frecuencias de onda portadoras, se proporciona en las cartas de navegación como con ADF.
+
+El VOR funciona en el mismo rango de frecuencia que el sistema de aterrizaje por instrumentos (ILS), descrito en el Capítulo 12. Aunque los dos sistemas son completamente independientes y funcionan con principios totalmente diferentes, a menudo comparten el mismo receptor. Los dos sistemas se diferencian por sus asignaciones de frecuencia dentro de este rango. Las frecuencias ILS se asignan a las décimas impares de cada incremento de 0,5 MHz, p. 109,10 MHz, 109,15 MHz, 109,30 MHz, etc. Las frecuencias VOR se asignan incluso a décimas de cada incremento de 0,5 MHz, p. 109,20 MHz, 109,40 MHz, 109,60 MHz, etc. La Tabla 10.1 proporciona una ilustración de cómo se asignan estas frecuencias dentro del rango de 109 MHz. Este patrón se aplica de 108 a 111.95 MHz.
+
+10.1.2 ANTES de las características
+
+Además del rendimiento del sistema inherentemente mejorado y la confiabilidad de navegación, VOR tiene otra característica que lo hace extremadamente útil para la navegación aérea. El sistema VOR tiene la capacidad de transmitir información de rumbo específica, denominada "radial", consulte la Figura 10.1 (a). El piloto puede seleccionar cualquier radial de una ayuda de navegación VOR dada y volar hacia o desde esa ayuda. Dado que el sistema es `` línea de visión '', es decir, recibe señales como ondas espaciales, la altitud de la aeronave tendrá una relación directa con el alcance dentro del cual se puede usar el sistema, consulte la Figura 10.1 (b).
+
+El uso de ayudas de navegación VHF impone un límite en el rango de trabajo teórico que se puede obtener. La relación máxima teórica de la línea de visión (LOS) entre un avión y la estación terrestre viene dada por la relación:
+
+d u003d 1.1 h
+
+donde d es la distancia en millas náuticas, y h es la altitud en pies sobre el nivel del suelo (se supone que es un terreno plano). El rango teórico de LOS para altitudes de hasta 20,000 pies se da en la Tabla 10.2.
+
+A mayores altitudes, es posible recibir señales VOR a mayores distancias pero con
+Integridad de señal reducida. Aunque el rango real también depende de la potencia del transmisor y la sensibilidad del receptor, la relación anterior proporciona una buena aproximación. En la práctica,
+las ayudas a la navegación tienen un volumen de servicio estándar designado (SSV); esto define la recepción
+límites dentro de una envolvente de altitud, como se muestra en la Tabla 10.3.
+
+Punto clave
+
+Los radiales VOR están referenciados al norte magnético; son la base de las vías aéreas para el camino
+navegación.
+
+Punto clave
+
+Las transmisiones VOR son 'línea de visión'; por lo tanto, el alcance aumenta con el aumento de la altitud.
+
+10.1.3 VOR convencional (CVOR)
+
+Las estaciones convencionales de VOR (CVOR) irradian dos señales: omnidireccional y direccional. La señal omnidireccional (o de referencia) es la frecuencia de onda portadora de la estación, con modulaciones AM y FM para producir una onda subportadora. La señal direccional se irradia como un patrón cardioide, errores de ubicación) de la señal radiada. Estos errores pueden superarse con un sistema mejorado de segunda generación conocido como Doppler VOR (DVOR).
+
+10.1.4 Doppler VOR (DVOR)
+
+Doppler generalmente se asocia con sistemas de navegación autónomos, y este tema se describe en un capítulo separado. El efecto Doppler también se aplica a la versión de segunda generación de los transmisores terrestres VOR. El efecto Doppler se puede resumir aquí como: "... la frecuencia de una onda aparentemente cambia a medida que su fuente se acerca o se aleja de un observador". La estación terrestre DVOR tiene un transmisor omnidireccional en el centro, amplitud modulada a 30 Hz; Esta es la fase de referencia. La señal direccional se deriva de una matriz circular de 44 pies de diámetro que comprende hasta 52 antenas individuales, ver Figuras 10.4 (a) y 10.4 (b). Cada antena transmite a su vez para simular una antena giratoria.
+
+Considere dos aviones que usan la estación DVOR como se ilustra en la Figura 10.4 (c). El efecto de la
+la señal giratoria de 9960 Hz es para producir un cambio Doppler; la aeronave A detectará una frecuencia disminuida, la aeronave B detectará una frecuencia aumentada.
+
+El cambio Doppler crea una señal de frecuencia modulada (FM) en el receptor de la aeronave en el rango de 9960 Hz 480 Hz que varía a 30 Hz en una onda sinusoidal.
+
+Tenga en cuenta que la frecuencia percibida será de 9960 Hz cuando la aeronave esté en las posiciones que se muestran en la Figura 10.4 (c). La diferencia de fase medida en el equipo aerotransportado depende del rumbo de la aeronave en relación con la estación. Dado que la señal variable de FM es menos propensa a las interferencias, el rendimiento del DVOR es superior al CVOR.
+
+DVOR en realidad usa dos patrones rotativos, como se muestra en la Figura 10.4 (d). Estos patrones (diagonalmente opuestos entre sí) giran a 30 revoluciones por segundo; un patrón es 9960 Hz
+por encima de la referencia, el otro está a 9960 Hz por debajo de la frecuencia de referencia. El diámetro de la
+array, junto con la velocidad de rotación del patrón, crea un desplazamiento Doppler de 480 Hz (a VOR
+frecuencias).
+
+10.2 Equipo VOR aerotransportado
+
+Los aviones de transporte modernos tienen dos sistemas VOR, a menudo designados a izquierda y derecha; tenga en cuenta que el equipo en el aire es el mismo para VOR convencional y Doppler. Señales de radiofrecuencia (RF)
+desde la antena se procesan en el receptor según lo determinado por la frecuencia y las selecciones de rumbo
+desde el panel de control; Las salidas se envían a varias pantallas.
+
+10.2.1 Antenas
+
+La antena VOR es un dipolo de media onda omnidireccional polarizado horizontalmente, es decir, un solo conductor con una longitud física igual a la mitad de la longitud de onda de las señales VOR que se reciben.
+Dos de estas antenas se forman en un solo paquete y generalmente se ubican en la aleta del avión, como se indica en la Figura 10.5. Están empaquetados dentro de un carenado compuesto para fines aerodinámicos aerodinámicos. Las antenas están conectadas a los receptores a través de cables coaxiales.
+
+10.2.2 Receptores
+
+Los receptores VOR a menudo se combinan con otras funciones de navegación por radio, p. el sistema de aterrizaje por instrumentos; Los receptores están ubicados en la bahía del equipo de aviónica, consulte la Figura 10.6. Los receptores VOR se basan en el principio superheterodino con ajuste desde el panel de control. La señal de radiofrecuencia recibida se pasa a través de un filtro de modulación de amplitud para separar:
+
+Tono de 30 Hz de la identificación de voz del patrón giratorio (si se proporciona desde la ayuda de navegación)
+Tono de código Morse; Señal de 9960 Hz FM por 480 Hz a 30 Hz de tono de referencia.
+
+Los tonos de voz y código Morse están integrados con el sistema de audio. Una comparación de los ángulos de fase de las señales variables y de referencia de 30 Hz produce la señal radial VOR. Los receptores basados u200bu200ben la interfaz de tecnología analógica con las pantallas de la cabina de vuelo que utilizan sistemas sincronizados. Los receptores digitales interactúan con otros sistemas que utilizan un sistema de bus de datos, generalmente ARINC 429. Los receptores generalmente combinan las funciones del sistema de aterrizaje por instrumentos y VOR (ver Capítulo 12).
+
+
+10.2.3 Paneles de control
+
+Los paneles de control identificados como 'VHF NAV' pueden ubicarse en el escudo antideslumbrante (como se muestra en la Figura 10.7) o en el pedestal central. Este panel se utiliza para seleccionar el curso deseado y las frecuencias VOR. Los productos de aviación general tienen un panel combinado de navegación y comunicaciones VHF, consulte la Figura 10.6 (b), que puede integrarse con el panel de navegación GPS.
+
+10.2.4 Pantallas VOR
+
+El rumbo a una ayuda de navegación VOR (una salida del receptor) se puede mostrar en el indicador de radio magnético (RMI); esto a menudo se comparte con el sistema ADF, como se discutió en el capítulo anterior. El RMI (Figura 10.8 (a)) proporciona al piloto dirección y dirección magnéticas para la ayuda de navegación VOR sintonizada.
+
+Los dos indicadores de rumbo (de color rojo y verde) están asociados con los dos sistemas VOR y permiten a la tripulación sintonizar dos ayudas de navegación VOR diferentes al mismo tiempo.
+
+En algunos instrumentos, se utiliza un interruptor en el RMI para seleccionar la información del rodamiento ADF o VOR, consulte la Figura 10.8 (b). Por lo tanto, los RMI tienen un doble propósito; los pilotos usan un interruptor en el
+RMI para seleccionar rodamientos ADF y / o VOR (consulte el Capítulo 9 para ADF). Algunas aeronaves tienen un indicador de fuente de demora adyacente al RMI para confirmar la selección de ADF o VOR, consulte la Figura 10.8 (c).
+
+Para volar a lo largo de una vía aérea, primero debe ser interceptada. Esto se logra volando hacia el radial deseado en un rumbo específico; El método de visualización del VOR radial seleccionado depende del tipo de ajuste aviónico. Los instrumentos electromecánicos incluyen el selector omnibearing (OBS), el indicador de desviación del rumbo (CDI) y el indicador de situación horizontal (HSI), ver Figura 10.9. Estos instrumentos varían ligeramente en su diseño y disposición; Sin embargo, tienen algunas características comunes.
+
+Se usa un selector para rotar manualmente la tarjeta del curso. Esta tarjeta está calibrada de 0 a 360 ° e indica el rumbo VOR seleccionado para volar HACIA O DESDE (indicado por una bandera). La desviación
+el puntero se mueve hacia la izquierda o hacia la derecha para guiar al piloto en la dirección requerida para mantener el rumbo seleccionado. Cada punto en la escala representa una desviación de 2 ° del curso seleccionado. Una bandera roja apagada indica cuando:
+
+La ayuda de navegación VOR está más allá del rango de recepción
+
+el piloto no ha seleccionado una frecuencia VOR
+
+El sistema VOR está apagado o no funciona.
+
+Tenga en cuenta que estos indicadores también se pueden usar con el sistema de navegación ILS; Consulte el Capítulo 12 para obtener una descripción detallada de este sistema.
+
+Para aeronaves con instrumentos electrónicos de vuelo, el radial deseado se muestra en el indicador electrónico de situación horizontal (EHSI). Esta pantalla EHSI se puede seleccionar para mostrar una tarjeta de brújula convencional (Figura 10.10 (a)) o una pantalla expandida (Figura 10.10 (b)). A medida que se acerca al radial, la barra de desviación se alinea gradualmente con el curso seleccionado.
+
+Si vuela manualmente, la tripulación gira la aeronave hacia el rumbo seleccionado mientras monitorea la barra de desviación; cuando está centrado, el radial ha sido interceptado y el EHSI mostrará 'TO' para confirmar que se está siguiendo el radial entrante.
+
+El vuelo continúa hasta que se alcanza la navegación VOR y se selecciona el radial a la siguiente ayuda de navegación. Si el EHSI todavía estuviera seleccionado para el radial de entrada original, el EHSI mostraría "FROM". Por lo tanto, la barra de desviación lateral muestra si el avión está volando en el radial seleccionado, o si está a la izquierda o derecha del radial.
+
+Punto clave
+
+Se pueden usar dos radiales VOR que se cruzan para definir ubicaciones únicas conocidas como puntos de informe; Estos se utilizan para el control del tráfico aéreo.
+
+Punto clave
+
+Doppler VOR se introdujo para superar los problemas de ubicación encontrados con el VOR convencional. Los dos sistemas operan con principios diferentes; sin embargo, el equipo aerotransportado es el mismo.
+
+10.3 Aspectos operacionales de VOR
+
+Las radiales de cualquier ayuda de navegación VOR son la base de las vías aéreas; La precisión del sistema es típicamente de un grado. Estas son las rutas estándar que vuelan los aviones cuando vuelan sobre instrumentos. Cuando dos radiales VOR se cruzan, proporcionan una base de posición de navegación única (theta - theta). La precisión de esta corrección es mayor cuando los radiales se cruzan en ángulo recto. La Figura 10.11 ilustra cómo se construyen las cartas de navegación en una red de radiales VOR; La precisión de los radiales VOR es generalmente muy buena (1 grado). En la figura 10.11 (d), el
+La ayuda de navegación ubicada cerca de Bruselas (abreviado BUB) transmite en 114,6 MHz.
+
+Se pueden ver tres radiales proyectados a partir de esta ayuda de navegación en 136 °, 310 ° y 321 °. Estos radiales se utilizan para definir las vías aéreas A24 y G120. Tenga en cuenta la salida del código Morse y la latitud / longitud para la ayuda a la navegación.
+
+Los radiales de intersección de las ayudas de navegación se utilizan para definir puntos de informe para la navegación en ruta. Estos puntos de informe reciben códigos de identificación de cinco letras asociados con su ubicación geográfica. Por ejemplo, el punto de notificación HELEN está definido por las vías aéreas G5 y A120. La flexibilidad de VOR aumenta considerablemente cuando se ubican equipos de medición de distancia
+(DME) se utiliza, por lo tanto, proporciona correcciones de rhoâ € "theta de una sola ayuda de navegación. Hay ejemplos de ayudas de navegación solo VOR, p. Perth en Escocia (código de identificación PTH, frecuencia
+110,40 MHz). La mayoría de las ayudas de navegación VOR están emparejadas con DME; Este sistema se describe en el próximo capítulo.
+
+Punto clave
+
+Los "códigos Q" se utilizan en la aviación para proporcionar un protocolo conciso y preciso para las comunicaciones de radio, inicialmente a través del código Morse. Para la navegación, dos códigos asignados son:
+
+
+QDR - Cojinete magnético de una estación terrestre al radial del avión
+
+QDM - Cojinete magnético de una aeronave al radial
+
+10.4 escenarios de visualización de navegación VOR
+
+10.4.1 CDI
+
+La posición de la aeronave y las representaciones correspondientes de CDI se muestran en la Figura 10.12; para cada escenario, tenga en cuenta el rumbo de la aeronave, el VOR radial y la pantalla TO / FROM. Volar directamente hacia la estación VOR requiere una compensación por el viento cruzado, como se muestra en la Figura 10.12 (a), para evitar el "efecto de elevación". En este ejemplo, el avión rastrea el VOR radial de 140 grados, con TO en la ventana TO / FROM. Al interceptar una pista de entrada, como se muestra en la Figura 10.12 (b), la aeronave se dirige en un rumbo de 360 u200bu200bgrados hacia el radial de 120 grados. Interceptando un
+radial de salida de 260 grados, Figura 10.12 (c), muestra FROM en la ventana TO / FROM.
+
+10.4.2 OBS
+
+La posición de la aeronave y las representaciones de los indicadores OBS correspondientes también se pueden ilustrar a través de un cuadrante, como se muestra en la Figura 10.13. En este ejemplo, el piloto ha seleccionado un radial de 030 grados (indicado en la parte superior de la pantalla). En el cuadrante superior izquierdo, la aguja OBS se desvía a la derecha, lo que indica que el avión está a la izquierda del rumbo deseado. Para interceptar el radial de 030 grados, la aeronave debe volar "hacia adelante" con la aguja (observe también la indicación DESDE). En el cuadrante superior derecho, el piloto dirige el avión hacia la izquierda para interceptar el radial. En los cuadrantes inferiores, se muestra la indicación TO, es decir, la estación está por delante de la aeronave.
+

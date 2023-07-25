@@ -1,0 +1,296 @@
+Sistema Pitot-estático
+
+Los instrumentos 1, 2 y 3 anteriores forman parte del sistema pitot-estático de una aeronave, que también debe cumplir con ciertos requisitos. Estos se resumen a continuación:
+
+a El sistema será hermético, excepto por los respiraderos a la atmósfera, y estará dispuesto de manera que la precisión de los instrumentos no se vea seriamente afectada por la velocidad, actitud o configuración de la aeronave; por humedad u otra materia extraña.
+
+b El sistema debe estar provisto de una sonda de presión Pitot calentada para evitar el mal funcionamiento debido a la formación de hielo.
+
+c Se instalarán suficientes trampas de humedad para asegurar un drenaje positivo en todo el sistema.
+
+d En aeronaves en las que se instalará un sistema alternativo o de emergencia, el sistema debe ser tan confiable como el primario y cualquier válvula selectora debe estar claramente marcada para indicar qué sistema está en uso.
+
+e Las tuberías deben tener un diámetro interno tal que el desfase de presión y la posibilidad de obstrucción por humedad se mantengan en un mínimo aceptable.
+
+f Cuando se utilicen ventilaciones estáticas, para evitar errores de guiñada, deberán estar situadas en lados opuestos de la aeronave y conectadas como un solo sistema. Cuando se prescriban sistemas duplicados, se proporcionará un segundo sistema similar.
+
+Instrumentos giroscópicos
+
+Los instrumentos giroscópicos pueden ser del tipo operado por vacío o eléctricamente, pero en todos los casos los instrumentos deben estar provistos de dos fuentes de energía independientes, un medio para seleccionar cualquiera de las fuentes de energía y un medio para indicar que la fuente de alimentación está funcionando satisfactoriamente. .
+
+La instalación y el sistema de suministro de energía deben ser tales que la falla de un instrumento, o del suministro de una fuente, o una falla en cualquier parte del sistema de suministro, no interfiera con el suministro adecuado de energía de la otra fuente.
+
+Instrumentos duplicados
+
+En aeronaves que involucran operación con dos pilotos, es necesario que cada piloto tenga sus propios instrumentos piloto-estáticos y giroscópicos. Por lo tanto, deben proporcionarse dos sistemas operativos independientes y deben estar dispuestos de manera que ningún fallo que pueda afectar el funcionamiento de uno pueda perjudicar el funcionamiento de ambos.
+
+Brújula
+
+La brújula magnética se instalará de manera que su precisión no se vea excesivamente afectada por la vibración de la aeronave o los campos magnéticos de naturaleza permanente o transitoria.
+
+Instrumentos de plantas de energía
+
+1. Tacómetro para medir la velocidad de rotación de un cigüeñal o un compresor según corresponda al tipo de central eléctrica.
+
+2. Indicador de temperatura de la culata del cilindro para un motor refrigerado por aire para indicar la temperatura del cilindro más caliente.
+
+3. Indicador de temperatura del aire de admisión del carburador.
+
+4. Indicador de temperatura del aceite para mostrar la temperatura de entrada y / o salida de aceite.
+
+5. Para motores turborreactores y turbohélice, un indicador de temperatura para indicar si la temperatura de la turbina o del gas de escape se mantiene dentro de sus limitaciones.
+
+6. Indicador de presión de combustible para indicar la presión a la que se está suministrando combustible y un medio para advertir de baja presión.
+
+7. Indicador de presión de aceite para indicar la presión a la que se suministra aceite a un sistema de lubricación y un medio de advertencia de baja presión.
+
+8. Manómetro del colector para un motor sobrealimentado.
+
+9. Indicador de cantidad de combustible para indicar en galones o unidades equivalentes la cantidad de combustible utilizable en cada tanque durante el vuelo. Los indicadores se calibrarán para leer cero durante el vuelo a nivel de crucero, cuando la cantidad de combustible restante sea igual al combustible inutilizable, es decir, la cantidad de combustible restante cuando, en las condiciones más adversas, se presente la primera evidencia de mal funcionamiento de un motor.
+
+1 0. Indicador de flujo de combustible para motores turborreactores y turbohélice. Para motores de pistón no equipados con un control automático de mezcla, un medidor de flujo de combustible o un indicador de relación combustible / aire.
+
+1 1. Indicador de empuje para turborreactor.
+
+12. Indicador de par para un motor turbohélice.
+
+Estándares
+
+En el diseño y fabricación de cualquier producto, es práctica cumplir con alguna forma de especificación cuyo propósito es asegurar la conformidad con los procesos de producción requeridos y establecer un estándar general de calidad y confiabilidad del producto cuando finalmente se realiza. su función prevista. Las especificaciones, o normas, como se las conoce comúnmente, son formuladas a nivel nacional e internacional por organizaciones especializadas. Por ejemplo, en el Reino Unido, la British Standards Institution es el organismo reconocido para la preparación y promulgación de normas y códigos de prácticas nacionales, y representa al Reino Unido en la Organización Internacional de Normalización (ISO), en la Comisión Electrotécnica Internacional. (IEC) y en organizaciones de Europa Occidental que realizan funciones comparables.
+
+Las normas se relacionan con todos los aspectos de la ingeniería y, como resultado, se producen y publican un gran número en forma de series correspondientes a estos aspectos. En lo que respecta a los instrumentos aeronáuticos y el equipo asociado, las normas británicas pertenecen a las series Aerospace G 100 y G200; dan definiciones, requisitos de construcción, dimensiones, datos de calibración, precisión requerida en condiciones ambientales variables y métodos de prueba. También en relación con los instrumentos y equipos electrónicos asociados, se hace referencia frecuente a las denominadas especificaciones ARINC. Este es un acrónimo de Aeronautical Radio Incorporated, una organización en los Estados Unidos que opera bajo la égida de los operadores de aerolíneas y en estrecha colaboración con los fabricantes.
+
+Una especificación notable de las muchas que formula ARINC es la que establece un conjunto estándar de factores de forma para los elementos denominados coloquialmente "cajas negras". En general, estos factores cubren las dimensiones de la caja, los racks de montaje, la ubicación de los enchufes y enchufes, y un sistema de clavijas de indexación para asegurar que solo se pueda instalar el equipo correcto en la posición adecuada del rack. El tamaño de la caja se basa en una dimensión de ancho estándar llamada 'un ATR' (otra abreviatura que significa Rack de transporte aéreo) y las variaciones en múltiplos simples de esto proporcionan una gama de anchos de caja. Se proporcionan dos longitudes de caja, que se denominan largas y cortas, y la altura es estándar. Las diversas configuraciones se detallan en la Tabla 9 en la página 404.
+
+Pantallas, paneles y diseños de instrumentos
+
+En vuelo, un avión y su tripulación operativa forman un bucle de sistema 'hombre-máquina' que, según el tamaño y el tipo de avión, puede ser bastante simple o muy complejo. La función del equipo dentro del bucle es la de controlador, y el alcance de la función de control se rige por la simplicidad o no de la máquina como un todo integrado. Por ejemplo, al volar manualmente un avión e iniciar manualmente los ajustes a los sistemas esenciales, se dice que la función del controlador es completamente activa. Si, por el contrario, el vuelo de un avión y los ajustes a los sistemas esenciales son automáticos en operación, entonces la función del controlador pasa a ser de monitoreo, con la posibilidad de volver a la función activa en caso de falla de los sistemas.
+
+Los instrumentos, por supuesto, juegan un papel extremadamente vital en el circuito de control, ya que son el medio de comunicar datos entre los sistemas y el controlador. Por lo tanto, para que un responsable del tratamiento pueda obtener el máximo de calidad de control, y también para minimizar el esfuerzo mental en la interpretación de los datos, es necesario prestar la máxima atención al contenido y la forma de visualización de los datos.
+
+Las formas más comunes de visualización de datos aplicadas a los instrumentos de aeronaves son (a) cuantitativas, en las que la cantidad variable que se mide se presenta en términos de un valor numérico y por la posición relativa de un puntero o índice, y (b) cualitativo, en en el que la información se presenta en forma simbólica o pictórica.
+
+Pantallas cuantitativas
+
+Hay tres métodos principales mediante los cuales se puede mostrar la información: (i) la escala circular, o más familiarmente, el tipo de escala de 'reloj', (ii) escala recta y (iii) digital o contador. Consideremos ahora estos tres métodos en detalle.
+
+Escala circular
+
+Esto puede considerarse como el método clásico de mostrar información en forma cuantitativa y se ilustra en la Fig. 3.1 La base de la escala, o círculo de graduación, se refiere a la línea, que puede ser real o implícita, que va de un extremo a otro de la escala y desde en el que se definen las marcas de escala y la línea de recorrido del puntero.
+
+Las marcas de escala, o marcas de graduación, son las marcas que constituyen la escala del instrumento. Si hay muy pocas marcas dividiendo la escala, se puede perder información vital y pueden ocurrir errores de lectura. Si, por el contrario, hay demasiadas marcas, se perderá tiempo ya que la velocidad de lectura disminuye a medida que aumenta el número de marcas. Además, un observador puede tener una falsa sensación de precisión si el número de marcas de escala hace posible leer la escala con precisión, digamos, a una unidad (la unidad más pequeña marcada) cuando en realidad el instrumento tiene un error inherente que lo hace En lo que respecta a los instrumentos de aeronave de visualización cuantitativa, una regla simple seguida por los fabricantes es dividir las escalas de modo que las marcas representen unidades de 1, 2 o 5 o múltiplos decimales de las mismas. Los tamaños de las marcas también son importantes y el principio general adoptado es que las marcas que se van a numerar son las más grandes, mientras que las intermedias son más cortas y generalmente todas de la misma longitud.Para las visualizaciones cuantitativas, es de suma importancia que el número de puntos se elija cuidadosamente para obtener interpretaciones rápidas y precisas de las lecturas. sea u200bu200bexacto, digamos, dos unidades. 
+
+El espaciado de las marcas también es de gran importancia, pero dado que se rige por leyes físicas relacionadas con la cantidad a medir, no puede haber una uniformidad completa entre todas las presentaciones cuantitativas. En general, sin embargo, encontramos que caen en dos grupos distintos, lineales y no lineales; en otras palabras, escalas con marcas espaciadas uniforme y no uniformemente. En la figura 3.2 se ilustran ejemplos típicos, de los cuales también se observará que las presentaciones no lineales pueden ser del tipo de ley cuadrática o ley logarítmica, estando las leyes físicas en este caso relacionadas con la velocidad del aire y la tasa de cambio de altitud, respectivamente.
+
+La secuencia de numeración siempre aumenta en el sentido de las agujas del reloj, conforme a lo que se denomina "expectativa visual" del observador. En un instrumento que tenga un centro cero, esta regla, por supuesto, solo se aplicaría a la escala positiva. Como en el caso de las marcas, la numeración siempre es en pasos de 1, 2 o 5 o múltiplos decimales de la misma. Los números pueden estar marcados en el cuadrante dentro o fuera de la base de la báscula; el último método es preferible ya que los números no están cubiertos por el puntero durante su recorrido por la escala.
+
+La distancia entre los centros de las marcas que indican los valores mínimo y máximo del rango de medición elegido, y medida a lo largo de la base de la escala, se denomina longitud de escala. En condiciones ideales y puramente a partir de consideraciones teóricas, se ha calculado que la longitud de una escala diseñada para observar a una distancia de 30 pulgadas y capaz de leerse al 1% de la cantidad total indicada, debe ser de aproximadamente 2 pulgadas (independientemente de su forma), esto significa que para un instrumento de escala circular una caja de 1 de diámetro sería suficiente. Sin embargo, los instrumentos de las aeronaves deben conservar su legibilidad en condiciones que a veces pueden estar lejos de las condiciones ideales de luz cambiante, vibraciones impartidas al panel de instrumentos, etc. En consecuencia, se desarrolló cierto grado de estandarización de los tamaños de las cajas de los instrumentos, la utilización de Los instrumentos que muestran información que debe leerse con precisión y a intervalos frecuentes tienen escalas de aproximadamente 7 pulgadas de longitud que se ajustan al 3% estándar en los casos, mientras que aquellos que requieren solo observación ocasional, o de los que solo se requieren lecturas aproximadas, tienen escalas más cortas y encajan en casos más pequeños.Los factores que rigen la elección de la longitud de la escala para un rango particular son el tamaño del instrumento, la precisión con la que se debe leer y las condiciones en las que se debe observar. estos casos vienen dictados por la precisión de la lectura y la frecuencia con la que se requieren observaciones. 
+
+Pantallas de gran escala y alto alcance
+
+Para la medición de algunas magnitudes, por ejemplo, revoluciones / min. De turbina-motor, velocidad aerodinámica y altitud, se involucran rangos de medición altos con el resultado de que se requieren escalas muy largas. Esto hace que sea difícil mostrar tales cantidades en pantallas circulares simples en cajas de tamaño estándar, particularmente en relación con el número y espaciado de las marcas. Si se requiere un gran número de marcas, su espaciado puede ser demasiado cercano para permitir una lectura rápida, mientras que, por otro lado, una reducción del número de marcas para abrir el espaciado también dará lugar a errores al interpretar los valores en puntos entre marcas de escala.
+
+Algunas de las pantallas desarrolladas como soluciones prácticas a las dificultades encontradas se ilustran en la figura 3.3. La pantalla que se muestra en (a) es quizás la forma más sencilla de acomodar una escala larga; dividiéndolo en dos escalas concéntricas, la interior se convierte en una continuación de la exterior. Se puede usar un solo puntero impulsado a través de dos revoluciones para registrar ambas escalas, pero como también puede provocar una lectura de rnis demasiado frecuente, una presentación mediante dos punteros interconectados de diferentes tamaños es mucho mejor. Un ejemplo práctico de esta presentación se encuentra en algunos diseños actuales de rev./min de motor de turbina. indicador. En este caso, un puntero grande gira contra la escala exterior para indicar cientos de revoluciones / min. y al mismo tiempo gira un puntero más pequeño contra la escala interior que indica miles de revelmin.
+
+
+En la Fig. 3.3 (b), encontramos un método que se emplea en un cierto tipo de indicador de velocidad; en su concepto básico es similar al que se acaba de describir. En este diseño, sin embargo, un solo puntero gira contra una escala circular e impulsa una segunda escala en lugar de un puntero. Esta escala giratoria, que registra cientos de millas por hora a medida que el puntero gira a través de revoluciones completas, es visible a través de una apertura en el dial principal.
+
+Un tercer método de presentación, que se muestra en (c), es uno en el que tres punteros concéntricos de diferentes tamaños se registran contra una escala común. Este método de presentación adolece de varias desventajas, la principal de las cuales es que se tarda demasiado en interpretar una lectura y da lugar a lecturas erróneas demasiado frecuentes y graves. La Figura 3.3 (d) ilustra un método de presentación relativamente reciente aplicado a la medición de la velocidad aerodinámica. Se observará que se adoptan una escala exterior e interior y también lo que parece ser un solo puntero. Cuando esto se ha completado, la punta del puntero más largo de los dos se cubre con una placa pequeña y se detiene su movimiento más allá de este punto de la escala. El puntero más corto continúa su movimiento para registrarse contra la escala interior.La aplicación de esta presentación se ha limitado principalmente a altímetros, el puntero grande indica cientos, el puntero intermedio miles y el puntero pequeño decenas de miles de pies. Sin embargo, hay dos punteros que se mueven juntos y se registran contra la escala exterior durante su primera revolución. 
+
+Ángulo de observación
+
+Otro factor que influye de manera importante en la elección de la longitud de escala correcta y el tamaño de la caja es el ángulo en el que se debe observar un instrumento. Es importante porque, aunque sería posible utilizar escalas más largas en los mismos tamaños de caja relevantes, la escala se colocaría tan cerca del borde exterior de la placa del cuadrante que se oscurecería cuando se observara en ángulo. Por esta razón, también se establece la norma de que ninguna parte de un instrumento debe quedar oscurecida por la caja del instrumento cuando se observa en ángulos de hasta 30º de la normal. Un método adoptado por algunos fabricantes, que se ajusta a esta norma, es la instalación de mecanismos de instrumentos dentro de cajas cuadradas.
+
+Cuando se observa un instrumento en un ángulo, los errores debidos al paralaje son, por supuesto, posibles, la magnitud de tales errores se rige principalmente por el ángulo en el que se observa la parte relevante de su escala, y también por la distancia de separación entre el puntero y placa de marcación. Este problema, como tantos otros en el campo de los instrumentos, no ha quedado sin respuesta y el resultado es la escala de "plataforma" diseñada para ciertos tipos de instrumentos de visualización circular. Como puede verse en la Fig. 3.4, las marcas de escala están colocadas en una plataforma circular que está asegurada a la placa del cuadrante principal para que se eleve al mismo nivel que la punta del puntero.
+
+Rango de escala y rango operativo
+
+Un punto que se plantea con bastante frecuencia en relación con las longitudes y rangos de las escalas de instrumentos es que, por lo general, exceden lo realmente requerido para el rango operativo del sistema con el que está asociado el instrumento, dejando así parte de la escala sin utilizar. A primera vista, esto parece ser un desperdicio, pero un ejemplo mostrará que ayuda a mejorar la precisión con la que se pueden observar las lecturas.
+
+Consideremos un sistema de fluido en el que el rango de presión de operación es de 0-30 lbf / in2. No sería ningún problema diseñar una escala para el indicador de presión requerido que sería de una longitud equivalente al rango de operación del sistema, también dividido en un número conveniente de partes cif como se muestra en la Fig 3.5 (a). Sin embargo, bajo ciertas condiciones de operación del sistema en cuestión, puede ser esencial monitorear presiones que tengan valores tales como 17 o 29 lbf / in2 y hacer esto con precisión en el menor tiempo posible no es muy fácil, como una segunda mirada al diagrama. Mostrará. Ahora rediseñemos la escala para que su longitud y rango excedan el rango de operación del sistema y establezcamos las marcas de escala de acuerdo con la regla dada en la página 20. El resultado mostrado en (6) indica claramente cuánto más fácil es interpretar los valores. lo hemos considerado imprescindible monitorear.
+
+Escala recta
+
+Además de la presentación de escala circular, una pantalla cuantitativa
+también puede ser del tipo de escala recta (vertical u horizontal). por
+la misma razón por la que la secuencia de numeración se da en un reloj-
+dirección inteligente en una escala circular, por lo que en una escala recta la secuencia es de abajo hacia arriba o de izquierda a derecha.
+
+En el campo de los instrumentos aeronáuticos hay muy pocas aplicaciones de las pantallas de escala recta y puntero, ya que no son adecuadas para el seguimiento de la mayoría de las magnitudes a medir. Sin embargo, poseen características que pueden contribuir a ahorrar espacio en el panel y mejorar la precisión de la observación, particularmente cuando se trata de los problemas de agrupación y monitoreo de un gran número de instrumentos de motor.
+
+El desarrollo de estas características y las investigaciones sobre los problemas de agrupación y seguimiento han dado como resultado la aplicación práctica de otra variación de la visualización de escala recta. Esto se conoce como pantalla de cinta móvil o "termómetro" y se ilustra en la figura 3.6, ya que se aplicaría a la medición de dos parámetros vitales para el funcionamiento de una aeronave propulsada por cuatro motores turborreactores.
+
+Cada unidad de visualización contiene una cinta blanca accionada por servomotor en lugar de un puntero, que se mueve en un plano vertical y se registra contra una escala de manera similar a la columna de mercurio de un termómetro. Como se verá, hay una unidad de visualización para cada parámetro, siendo las escalas comunes a los cuatro motores. Al escanear los extremos de las cintas o columnas, se puede obtener una evaluación mucho más rápida y precisa de los cambios en el rendimiento del motor que con la escala circular clásica y la pantalla de puntero. Este hecho, y el hecho de que el espacio del panel se puede reducir considerablemente, también son claramente evidentes en la figura 3.6.
+
+Pantalla digital
+
+Un tipo de pantalla digital o de contador de velocidad es aquella en la que los datos se presentan en forma de letras o números alfanuméricos, como se denomina técnicamente. En la práctica de instrumentos aeronáuticos, la última presentación es la más común y generalmente se encuentra un contador que funciona en combinación con el tipo de pantalla circular.
+
+En la figura 3.7 se muestran ejemplos típicos. En la aplicación al altímetro hay dos contadores; uno presenta un valor de presión fijo que puede ser ajustado mecánicamente por el piloto cuando sea necesario, y se conoce como pantalla de contador estático; el otro está adaptado al mecanismo del altímetro y presenta automáticamente cambios de altitud, por lo que se conoce como pantalla de contador dinámico. Es interesante notar que la presentación de los datos de altitud por medio de una escala y un contador es otro método para resolver el problema a gran escala ya discutido en la página 22. El contador del indicador TGT también es una pantalla dinámica ya que es impulsado por una transmisión servo al puntero principal (consulte también la página 292).
+
+Pantallas de indicador dual
+
+Las pantallas de doble indicador están diseñadas principalmente como un medio de
+conservando el espacio del panel, particularmente donde la medida del
+varias cantidades relacionadas con los motores. Son normalmente
+de dos formas básicas: una en la que dos indicadores y escalas separados
+están incorporados en un caso; y el otro, también con dos indicadores
+en un caso, pero con los punteros registrándose contra una escala común.
+En la figura 3.8 se ilustran ejemplos típicos de combinaciones de pantallas.
+
+Pantallas de colores
+
+El uso del color en las pantallas puede agregar mucho a su valor; no, por supuesto, desde el punto de vista artístico, sino como un medio para indicar rangos operativos específicos de los sistemas con los que están asociados y para ayudar a hacer una evaluación más rápida de las condiciones que prevalecen al escanear los instrumentos. El color se puede aplicar a las escalas en forma de sectores y arcos que abarcan el número de marcas de escala apropiado para la parte requerida del rango, y en forma de líneas radiales que coinciden con las marcas de escala individuales apropiadas. En la figura 3.9 se ilustra un ejemplo típico. Es habitual encontrar que los sectores coloreados se aplican a aquellas partes de un rango en el que es suficiente saber que se ha alcanzado una determinada condición en lugar de conocer valores cuantitativos reales. Por ejemplo, en un sistema de oxígeno de una aeronave, puede ser necesario que los cilindros se carguen cuando la presión haya caído por debajo de, digamos, 500 Ibf / in2. Por lo tanto, el manómetro del sistema tendría un sector rojo en su cuadrante que abarca las marcas de 0 a 500; por lo tanto, si el puntero se registra dentro de este sector, esto por sí solo es una indicación suficiente de que la recarga es necesaria y que es sólo de importancia secundaria saber cuál es la presión real.Los colores elegidos pueden ser rojo, amarillo o verde dependiendo de la condición a monitorear. 
+
+
+Los arcos y las líneas radiales generalmente se denominan marcas de alcance, y su propósito es definir valores en varios puntos en el rango de una escala que están relacionados con rangos operativos específicos de una aeronave, sus plantas y sistemas de energía. Las definiciones de estas marcas son las siguientes:
+
+Línea radial ROJA
+
+Arco AMARILLO
+
+Arco VERDE
+
+Arco rojo
+
+Límites máximos y mínimos
+
+Rangos de despegue y precaución
+
+Rango de funcionamiento normal
+
+Rango en el que está prohibida la operación
+
+Cuando se aplica a los indicadores de cantidad de combustible, un arco ROJO indica combustible que no se puede usar de manera segura en vuelo.
+
+Los diales indicadores de velocidad aérea también pueden tener un arco BLANCO adicional. Esto sirve para indicar el rango de velocidad sobre el cual los flaps de aterrizaje de la aeronave pueden extenderse en las configuraciones de despegue, aproximación y aterrizaje de la aeronave. Las marcas de alcance pueden variar para diferentes tipos de aeronaves y, por lo tanto, el fabricante de la aeronave las agrega antes de la instalación en su aeronave de producción.
+
+A menudo se puede encontrar que las marcas están pintadas directamente en los cubreobjetos de los instrumentos, un método que es más simple ya que no requiere sacar un mecanismo del instrumento de su caja. Sin embargo, siempre se toma la precaución de pintar un índice blanco o una línea de registro en la mitad del vidrio de cobertura y la mitad en el bisel para asegurar la alineación correcta del vidrio y las marcas sobre las marcas de la escala.
+
+Además de las aplicaciones anteriores, el color también puede usarse para facilitar la identificación de instrumentos con los sistemas en los que están conectados. Por ejemplo, en un tipo de aeronave actualmente en servicio, se emplean sistemas hidráulicos triples, sistema amarillo designado, sistema verde y sistema azul, y para identificar los indicadores de presión de cada sistema, las escalas se establecen en diales pintados en el correspondiente colores.
+
+Pantallas cualitativas
+
+Estos son de un tipo especial en el que la información se presenta en forma simbólica o pictórica para mostrar la condición de un sistema, si el valor de una salida está aumentando o disminuyendo, el movimiento de un componente, etc. En la figura 3.10 se muestran dos ejemplos típicos. El sincrroscopio en (a) se utiliza junto con un rev./min. sistema indicador de una aeronave que tiene una disposición múltiple de motores de tipo hélice, y sus punteros, que simbolizan las hélices, solo giran para mostrar las diferencias de velocidad entre motores. La pantalla, que se muestra en (b), es un buen ejemplo de una que indica el movimiento de componentes; en este caso, superficies de control de vuelo, flaps de aterrizaje y deflectores de aire. El instrumento contiene diecisiete mecanismos eléctricos separados, que al ser accionados por transmisores, colocan elementos indicadores simbólicos de modo que aparezcan en varios ángulos detrás de las aberturas en el dial principal.
+
+Pantallas de director
+
+Las pantallas del director son aquellas que están asociadas principalmente con la actitud de vuelo y los datos de navegación (ver Capítulo 15), y presentarlos de una manera que indique al piloto qué movimientos de control debe hacer para corregir cualquier desviación de una trayectoria de vuelo deseada, o para hacer que la aeronave realice una maniobra específica. Por tanto, es evidente que en el desarrollo de este tipo de visualización debe existir una estrecha relación entre la dirección de los movimientos de control y el puntero del instrumento o elemento indicador de tipo simbólico; en otras palabras, los movimientos deben ser en el sentido "natural" para que el piloto pueda obedecer las "directivas" o "demandas" de la pantalla.
+
+Aunque las pantallas del director de vuelo son de origen comparativamente reciente como sistemas de instrumentos integrados especializados de los aviones actuales, en concepto no son nuevos. El horizonte giroscópico (véase la página 127), que se ha utilizado durante muchos años, utiliza en forma básica una visualización del director de la actitud de cabeceo y alabeo de una aeronave. En este instrumento hay tres elementos que componen la pantalla: un puntero que se registra en una escala de ángulo de inclinación, un elemento que simboliza la aeronave y un elemento que simboliza el horizonte natural. Tanto el puntero del banco como el símbolo del horizonte natural se estabilizan mediante un giroscopio. Como el instrumento está diseñado para la visualización de ángulos de actitud, y como también uno de los elementos simbólicos puede moverse con respecto al otro, tiene dos ejes de referencia, el de la caja que está fija con respecto a la aeronave, y que Suponiendo que la actitud de cabeceo de la aeronave cambia para levantar el morro, entonces la pantalla del horizonte se mostrará como en la Fig. 3.1 1 (a), dirigiendo o exigiendo al piloto que "baje el morro". De manera similar, si cambiara la actitud de ladeado por lo que el ala izquierda bajara, entonces la pantalla del horizonte sería como se muestra en (b), indicando o exigiendo al piloto que "ladease la aeronave hacia la derecha". En ambos casos, las demandas serían satisfechas por el piloto moviendo sus controles en el sentido natural.del elemento móvil. 
+
+Otro ejemplo de pantalla de director es el que se utiliza en un indicador que se utiliza junto con el Sistema de aterrizaje por instrumentos (ILS); se trata de un sistema de radionavegación que ayuda al piloto a mantener la posición correcta de su aeronave durante la aproximación para aterrizar en la pista de un aeropuerto. Se transmiten dos haces de señales de radio desde el suelo; un haz está en el plano vertical y forma un ángulo con la pista para establecer la aproximación correcta o el ángulo de la pendiente de planeo; mientras que el otro, conocido como localizador, está en el plano horizontal; ambos están alineados con la línea central de la pista.
+
+Un receptor a bordo de la aeronave recibe las señales y las transmite a dos metros contenidos dentro del indicador; un medidor controla un puntero de pendiente de planeo y el otro un puntero de localizador. En la mayoría de los tipos actuales de aeronaves, la visualización de la directiva ILS siempre se presenta en dos indicadores que comprenden lo que se denomina un Sistema de Instrumentos Integrado o un Sistema de Director de Vuelo (ver Capítulo 15). En la Fig. 3.1 también se muestra una presentación típica de uno de estos indicadores (denominado indicador de actitud) 1. Como se observará, combina una pantalla directiva de horizonte giroscópico y, por lo tanto, elimina la necesidad de que un piloto tenga que monitorear las indicaciones. de dos instrumentos separados.
+
+Cuando la aeronave está en la aproximación para aterrizar y está, digamos, debajo del haz de la pendiente de planeo, el indicador de la pendiente de planeo si el instrumento se desviará hacia arriba como se muestra en la Figura 3.1 1 (c). Por lo tanto, el piloto está dirigido a "volar la aeronave hacia arriba" para interceptar el haz.
+
+De manera similar, si la aeronave está a la derecha del rayo del localizador, el puntero del localizador se desviará hacia la izquierda, dirigiendo así al piloto a "volar la aeronave a la izquierda". A medida que el piloto responde a las instrucciones del instrumento, los punteros vuelven a sus posiciones centrales, lo que indica que la aeronave está en la posición de aproximación correcta para el aterrizaje. (Figura 3.1 1 (d)).
+
+Resultará evidente en el diagrama que a medida que la aeronave se maniobra en respuesta a las demandas, los movimientos del puntero son contrarios a los requisitos del sentido "natural"; por ejemplo, al responder a la demanda "volar a la izquierda", el puntero del localizador se moverá hacia la derecha. Sin embargo, al girar hacia la izquierda, la actitud de inclinación lateral de la aeronave cambiará en la dirección del giro, y como esto se indicará directamente en la pantalla del horizonte del giro, la respuesta a las demandas del ILS se puede verificar fácilmente.
+
+Pantallas Head-Up
+
+A partir de las descripciones dadas hasta ahora de las diversas pantallas de instrumentos, hemos obtenido una idea del enfoque de desarrollo del problema de presentar datos que deben asimilarse rápida y exactamente. La simplicidad o no de asimilación viene dictada por el número de instrumentos involucrados y por la cantidad de trabajo y secuencias de monitoreo de instrumentos que debe realizar un piloto durante las diversas fases del vuelo. En la fase crítica de aproximación y aterrizaje, un piloto debe transferir su atención con mayor frecuencia de los instrumentos a las referencias fuera de la aeronave, y viceversa; un proceso de transición que lleva mucho tiempo y es fatigoso como resultado del constante reenfoque de los ojos.
+
+Por lo tanto, se ha desarrollado un método para aliviar estos problemas en el que los datos de vuelo vitales se presentan al mismo nivel que la línea de visión del piloto cuando se ven referencias externas, es decir, cuando se mantiene una posición de 'cabeza arriba'. Los componentes de un sistema típico de visualización frontal se muestran en la figura 3.12. La cantidad de datos requeridos se rige por los requisitos de las diversas fases de vuelo y la función operativa de una aeronave, es decir, civil o militar, pero los cuatro parámetros que se muestran son básicos. Los datos se transmiten desde una unidad de computadora de datos al tubo de rayos catódicos cuya presentación es proyectada por el sistema óptico al infinito. La longitud, o rango, de las escalas está determinada por los requisitos operativos, pero normalmente solo cubren bandas estrechas de información de velocidad y altitud. Esto ayuda a reducir las marcas irrelevantes y el tiempo necesario para leer e interpretarEl principio del método es mostrar los datos en la cara de un tubo de rayos catódicos especial y proyectarlos ópticamente como una imagen simbólica compuesta sobre una placa reflectora transparente, o directamente sobre el parabrisas. Se observará que la presentación de la actitud se asemeja a la de un horizonte giroscópico normal, y también que la velocidad y la altitud se presentan mediante marcadores que se registran contra escalas lineales horizontales y verticales. 
+La información presentada, la Figura 3.1 3 ilustra la pantalla de visualización frontal de un sistema conocido como Monitor de Aproximación Visual (VAM). El sistema es un equivalente aéreo del indicador visual de pendiente de aproximación (VASI) y se desarrolló principalmente como una ayuda para los pilotos cuando se acercan a aeródromos no equipados con VASI, ILS u otras ayudas de aproximación.
+
+La unidad de visualización está montada en una bandeja deslizante ubicada en un panel de protección contra el deslumbramiento frente al piloto y, cuando es necesario, la bandeja se extrae para levantar automáticamente la lente a través de la cual se proyecta la pantalla. La pantalla proporciona las siguientes señales: ángulo de aproximación vertical, actitud horizontal y error de velocidad. El ángulo de aproximación se muestra mediante dos escalas verticales, una a cada lado de la lente, y graduada en grados por encima y por debajo de la barra fija que simboliza la aeronave. El ángulo requerido se selecciona en un módulo de control para colocar las escalas en relación con la barra. Durante una aproximación, el piloto sostiene el símbolo de la barra en su línea de visión y controla la aeronave de modo que el símbolo esté alineado con el umbral de la pista o la zona de toma de contacto, asegurando así que la aproximación está en el ángulo de trayectoria de vuelo seleccionado.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,178 @@
+Comunicaciones VHF
+
+La radio de muy alta frecuencia (VHF) ha sido durante mucho tiempo el principal medio de comunicación entre la aeronave y la tierra. El sistema funciona en el rango de frecuencia que se extiende desde 1 1 8 MHz a 1 3 7 MHz y admite la comunicación de voz y datos (esta última cada vez más importante). Este capítulo describe el equipo utilizado y los diferentes modos en los que funciona. La comunicación VHF se utiliza para diversos fines, incluido el control del tráfico aéreo (ATC), la información de aproximación y salida, la transmisión de información meteorológica, el manejo en tierra de las aeronaves, las comunicaciones de la compañía y también para el Sistema de Comunicaciones e Informes de Aeronaves (ACARS).
+
+4.1 Rango de VHF y propagación
+
+En el rango de VHF (30 MHz a 300 MHz), las ondas de radio generalmente se propagan como línea de visión directa
+LOS) olas (ver Capítulo 1). La propagación de la onda del cielo todavía ocurre en el extremo inferior del rango de VHF (hasta aproximadamente 50 MHz dependiendo de la actividad solar) pero a las frecuencias utilizadas para la comunicación de la aeronave, la reflexión desde la ionosfera es excepcionalmente rara. La comunicación por rutas estrictas de línea de visión (LOS), aumentada en ocasiones por difracción y reflexión, impone un límite en el rango de trabajo. eso se puede obtener. También debería ser evidente que el alcance dependerá de la altura de una aeronave sobre el suelo; cuanto mayor sea, mayor será el rango. La distancia máxima de la línea de visión (LOS) ver Figura 4. 1) entre un avión y una estación terrestre, en millas náuticas (nm), viene dada por la relación:
+
+donde se encuentra la altitud de la aeronave en pies sobre el suelo (se supone que es un terreno plano).
+
+Ejemplo 4.1
+
+Determine la distancia máxima de la línea de visión cuando una aeronave vuela a una altura de (a) 2,500 pies y (b) 25, 000 pies.
+
+El alcance real obtenido depende no solo de la distancia LOS sino también de varios otros factores, incluida la posición de la aeronave, la potencia del transmisor y la sensibilidad del receptor. Sin embargo, la distancia LOS generalmente proporciona una buena aproximación del alcance que se puede obtener entre un avión y una estación terrestre (ver Tabla 4. 1). La situación es un poco más compleja cuando la comunicación es de un avión a otro; sin embargo, en tales casos sumando los dos
+Las distancias LOS normalmente proporcionarán una guía sobre el rango máximo que se puede esperar.
+
+Pon a prueba tu comprensión 4.1
+
+Determine la altitud de un avión que proporcionaría una distancia de línea de visión a una estación terrestre ubicada a una distancia de 1 25 nm.
+
+4.2 Modulación DSB
+
+Modulación de amplitud 1s utilizada para comunicaciones de voz, así como varios de los modos de enlace de datos VHF (VDL). El sistema utiliza la modulación de doble banda lateral (DSB) y, dado que esto tiene implicaciones para el ancho de banda de las señales moduladas, vale la pena dedicar un poco de tiempo a explicar cómo funciona esto antes de ver cómo se divide el espacio disponible en canales. La Figura 4.2 muestra el espectro de frecuencia de una onda portadora de RF a 1 24.575 MHz de amplitud modulada por un solo tono sinusoidal puro con una frecuencia de 1 kHz. Observe cómo la forma de onda modulada en amplitud comprende tres componentes separados:
+
+un portador de RF a 1 24.575 MHz
+
+un componente de frecuencia lateral inferior (LSF) a 1 24.574 MHz
+
+un componente de frecuencia del lado superior (USF) a 1 24.576 MHz.
+
+
+Observe cómo el LSF y el USF están separados de la portadora de RF por una frecuencia que es igual a la de la señal de modulación (en este caso, 1 kHz). Observe también en la Figura 4.2 que el ancho de banda (es decir, el rango de frecuencias ocupadas por la señal modulada) es el doble de la frecuencia de la señal moduladora (es decir, 2 kHz).
+
+La figura 4.3 muestra una portadora de RF modulada por una señal de voz en lugar de un solo tono sinusoidal. La señal de banda base (es decir, la señal de voz en sí) generalmente ocupa un rango de frecuencia que se extiende desde alrededor de 300 Hz a 3 .4 kHz. De hecho, para mejorar la inteligibilidad y reducir el ruido extraño, la respuesta de frecuencia del micrófono y el amplificador de voz está invariablemente diseñada para seleccionar este rango particular de frecuencias y rechazar cualquier señal de audio que se encuentre fuera de él. De la Figura 4.3 se debe tener en cuenta que el ancho de banda de la señal de RF es de aproximadamente 7 kHz (es decir, el doble que la señal de modulación más alta).
+
+Pon a prueba tu comprensión 4.2
+
+Determine los componentes de frecuencia de la señal de RF presentes en una onda portadora modulada en amplitud DSB a 1 1 8.975 MHz cuando la señal de modulación comprende tonos puros a 2 kHz y 5 kHz.
+
+4.3 Espaciado de canales
+
+Las comunicaciones de la aeronave VHF se realizan en varios canales ubicados. Estos canales estaban originalmente espaciados a intervalos de 200 kHz en toda la banda de aviones VHF. Sin embargo, un aumento incesante en el tráfico aéreo, junto con el uso cada vez mayor de sistemas de aviónica para la comunicación de enlace de datos, ha puesto una demanda creciente en el espectro de frecuencia disponible. En respuesta a esta demanda, la separación entre canales adyacentes en la banda 1 1 8 MHz a 1 3 7 MHz se ha reducido sucesivamente para aumentar el número de canales disponibles para la comunicación VHF (ver Tabla 4.2).
+
+La Figura 4.4 muestra el espaciado de canales para los sistemas VHF europeos anteriores de 25 kHz y actuales de 8.33 kHz. Observe cómo el sistema de espaciado de canales de 8.33 kHz permite que tres señales DSB AM ocupen el espacio que anteriormente estaba ocupado por
+Una sola señal.
+
+La desventaja del espaciado de canales estrechos es que la banda de protección del espectro no utilizado que existía anteriormente con el sistema de 25 kHz está completamente ausente y que los receptores deben diseñarse de modo que tengan un grado muy alto de rechazo de canal adjunto (consulte la página 48) . También se deben tomar medidas para garantizar que el ancho de banda de la señal transmitida no exceda los 7 kHz, o sea, el ancho de banda requerido para una comunicación de voz efectiva. La penalidad por no restringir el ancho de banda es que las señales de un canal pueden 'extenderse' a los canales adyacentes, causando interferencia y degradando la comunicación (ver Figura 4.7).
+
+Tabla: aumento en la cantidad de canales VHF disponibles
+
+Pon a prueba tu comprensión 4.3
+
+¿Cuántos canales con una separación de 1 2. 5 kHz pueden ocupar la banda que se extiende desde 1 1 8 MHz a 1 25 MHz?
+
+Pon a prueba tu comprensión 4.4
+
+Un total de 1 520 canales de datos se acomodarán en una banda que se extiende desde 3 1 6 MHz hasta 335 MHz. ¿Qué espacio de canal debe usarse y qué rango de frecuencias puede tener la señal de banda base?
+
+
+4.4 Profundidad de modulación
+
+La profundidad de modulación de una onda portadora de RF generalmente se expresa en términos de modulación porcentual, como se muestra en la Figura 4.6. Tenga en cuenta que el nivel de modulación puede variar entre 0% (correspondiente a una portadora completamente no modulada) a 1 00% (correspondiente a una portadora completamente modulada).
+
+En la práctica, la inteligibilidad de una señal (es decir, la capacidad de recuperar información de una señal débil que puede verse afectada negativamente por el ruido y otras perturbaciones) aumenta a medida que aumenta la modulación porcentual y, por lo tanto, es necesario garantizar que la señal está completamente modulada pero sin el riesgo de sobremodulación (ver Fig. 4.6). El resultado de la sobremodulación es un ancho de banda excesivo, o 'salpicadura', que causa interferencia del canal adjunto, como se muestra en la figura 4.7.
+
+4.5 Compresión
+
+Para mejorar la inteligibilidad de las comunicaciones de voz VHF, la etapa de amplificador de voz de una radio VHF de avión está invariablemente equipada con una etapa de compresor. Esta etapa proporciona alta ganancia para señales de baja amplitud y ganancia reducida para señales de alta amplitud. El resultado es un aumento en la profundidad de modulación promedio (ver Figura 4.8).
+
+La figura 4.9 muestra las características típicas del amplificador de voz con y sin compresión. Tenga en cuenta que la mayoría de los equipos de radio VHF de la aeronave proporcionan ajustes tanto para el nivel de modulación como para la cantidad de compresión que se aplica (ver Figura 4. 1 0).
+
+Portadora de RF modulada que muestra diferentes cantidades de compresión aplicadas a la señal de modulación
+
+4.6 Silenciamiento
+
+Los receptores VHF de aviones incorporan invariablemente un sistema de silenciar las etapas de audio del receptor en ausencia de una señal entrante. Este sistema está diseñado para eliminar el molesto y molesto ruido de fondo que está presente cuando no se reciben señales. Dichos sistemas se denominan silenciador y el umbral en el que funciona se ajusta (consulte la Figura 4. 1 0) para que el silenciador 'se abra' para una señal débil pero se 'cierre' cuando no hay señal presente.
+
+Se utilizan dos sistemas de silenciador bastante diferentes, pero el sistema más común (y fácil de implementar) responde a la amplitud de la portadora recibida y se conoce como silenciador operado por la portadora. El voltaje utilizado para inhibir el audio del receptor puede derivarse del sistema AGC del receptor y alimentarse a la puerta de silenciamiento (Figura 4. 1 1).
+
+
+El sistema de silenciador alternativo (y algo superior) implica detectar el ruido presente en la salida de la etapa del detector del receptor y usarlo para desarrollar una señal de control que depende de la relación señal / ruido de la señal recibida en lugar de su amplitud. Esta última técnica, que no solo ofrece una mejor sensibilidad, sino que también es menos propensa a dispararse por el ruido de fondo general y las señales fuera del canal, a menudo se encuentra en los receptores de FM y se conoce como silenciador operado por ruido.
+
+4Â ·! Modos de datos
+
+Los modernos equipos de comunicaciones VHF de aviones admiten tanto la comunicación de datos como la comunicación de voz. El sistema utilizado para la tinta de datos de la aeronave se conoce como Sistema de direccionamiento e informe de comunicaciones de aeronaves (ACARS). Actualmente, los aviones están equipados con tres radios VHF, dos de los cuales se usan para comunicaciones de voz A TC y uno se usa para el enlace de datos ACARS (también conocido como comunicaciones de control operativo de la aerolínea).
+
+Un terminal de enlace de datos a bordo del avión (ver Figura 4. 1 2) genera mensajes de enlace descendente y procesa los mensajes de enlace ascendente recibidos a través del enlace de datos VHF. Los mensajes ACARS de enlace descendente y enlace ascendente están codificados como texto ASCII sin formato. En los Estados Unidos, las estaciones terrestres ACARS son operadas por ARINC, mientras que en Europa, Asia y América Latina, el servicio equivalente es proporcionado por SIT A.
+
+Inicialmente, a cada proveedor ACH VHF se le asignó un solo canal VHF. Sin embargo, a medida que ha crecido el uso de enlaces de datos VHF (VDL), el número de canales utilizados en las cercanías de los aeropuertos más activos ha aumentado hasta cuatro y estos a menudo funcionan a plena capacidad.
+
+Desafortunadamente, debido a la presión por canales de voz adicionales, no ha sido posible asignar un número de canales VHF adicionales para la operación del enlace de datos ACARS. Como resultado, recientemente se han introducido varios modos de datos nuevos que admiten velocidades de datos más altas y hacen un uso más eficiente de cada canal de 25 kHz actualmente asignado para fines de enlace de datos.
+
+Además, la FAA está desarrollando un sistema que permitirá la integración de comunicaciones de voz y datos ATC. Este sistema utiliza audio codificado digitalmente en lugar de señales de voz analógicas convencionales.
+
+Cuando se opera en modo VDL 0, los protocolos de enlace de datos requeridos se implementan en la unidad de administración A CARS (consulte la Figura 4. 1 1).
+
+Los datos se transfieren desde la radio VHF a la unidad de gestión a una velocidad de 2400 bits por segundo (bps) mediante la codificación por desplazamiento de frecuencia (FSK).
+
+La señal de audio FSK consta de dos tonos sinusoidales, uno a 1 .2 kHz y otro a 2 .4 kHz, dependiendo de si la polaridad del bit de información que se transmite es la misma que la del bit anterior o es diferente. Tenga en cuenta que la fase de los tonos varía linealmente y que no hay cambio de fase en la transición entre los dos tonos.
+
+Este tipo de modulación (en la que el espaciado de frecuencia entre los dos tonos de audio es exactamente la mitad de la velocidad de datos) es altamente eficiente en términos de ancho de banda y, por lo tanto, se conoce como desplazamiento mínimo (MSK). Cuando se transmiten los datos, la señal MSK se usa para modular la amplitud de la portadora VHF (en gran parte igual que la señal de voz). La señal transmitida resultante es entonces una señal AM de doble banda lateral (DSB) cuya amplitud se modula a 2400 bps. Luego se dice que el portador de RF usa la modulación DSB AM MSK.
+
+La selección de frecuencia de portadora VHF y el control de transmisión / recepción son proporcionados por la unidad de gestión ACARS que trabaja en conjunción con una interfaz ARINC 429 a la radio VHF (Figura .1. 1 2). El protocolo de acceso al canal empleado se define como CSMA de acceso múltiple con detección de portadora). Consiste en escuchar la actividad en el canal (es decir, transmisiones de otros usuarios) 3. La transmisión solo se realiza cuando el canal está libre.
+
+La operación en el Modo VDL A es similar al Modo 0, excepto que los paquetes de datos ACARS de enlace ascendente y descendente se transfieren entre la radio VHF y la unidad de gestión ACARS a través de un par de transmisión / recepción de interfaces digitales ARINC 429 de 1 00 kbps en lugar de la interfaz de audio analógica utilizada por Modo 0. Los datos digitales son utilizados por la radio VHF para modular la portadora de RF a una velocidad de 2400 bps usando el mismo esquema de modulación DSB AM MSK utilizado por el Modo 0 de VDL.
+
+Otra diferencia entre el Modo VDL 0 y el Modo VDL A es que, cuando se usa este último, la radio VHF controla cuándo acceder al canal para transmitir datos usando el mismo protocolo CSMA empleado por la unidad de gestión en el Modo VDL 0. Sin embargo, la selección de la frecuencia que se utilizará todavía está controlada por la CMU o ATSU mediante comandos emitidos a través de la misma interfaz ARINC .f29 utilizada para la transferencia de datos. Tenga en cuenta que, en lo que respecta a las estaciones terrestres de enlace de datos VHF, no hay diferencia en las transmisiones VDL Modo 0 aire / tierra VDL Modo A.
+
+La operación en Modo VDL 2 se basa en un conjunto mejorado de protocolos de transferencia de datos y, como resultado, proporciona un aumento significativo en la capacidad de datos. VDL Mode 2 ha sido diseñado para proporcionar la migración futura de VDL a la red de telecomunicaciones aeronáuticas (ATN).
+
+Esta red permitirá una entrega más eficiente y sin problemas de mensajes de datos y archivos de datos entre aeronaves y los sistemas informáticos terrestres utilizados por las aerolíneas y las instalaciones de control de tráfico aéreo.
+
+ATN será apoyado por una serie de redes aéreas / terrestres y redes terrestres / terrestres.
+
+Las redes aire / tierra y tierra / tierra estarán interconectadas por medio de enrutadores A TN que implementan los protocolos requeridos y funcionarán de la misma manera que Internet con la que probablemente ya esté familiarizado.
+
+El Modo VDL 2 emplea una velocidad de datos de 3 1, 500 bits por segundo a través del enlace aire / tierra usando un solo canal de 25 kHz. La mayor utilización del canal de 25 kHz se logra empleando un sistema de modulación que es más eficiente en términos de uso de ancho de banda. Este sistema se conoce como modulación por desplazamiento de ocho fases diferencial (D8PSK). En este sistema, una señal portadora de audio se modula mediante un cambio de fase que puede tomar una de las ocho fases posibles; 0 °, 45 °, 90 °, 1 35 °, 1 80 °, 225 °, 270 ° o 3 1 5 °. Estos cambios de fase corresponden a tres bits de datos digitales de la siguiente manera: 000, 00 1, 0 1 1, 0 1 0, 1 1 0, 1 1 1, 1 0 1 o 1 00. El modulador D8PSK utiliza los bits en mensaje de datos, en grupos de tres, para determinar el cambio de fase de la portadora a una velocidad de 1 0.5 kHz.
+
+En consecuencia, la velocidad de bits será tres veces este valor, o 3 1 .5 kbps. La modulación D8PSK de la fase de la portadora VHF se logra utilizando un modulador de cuadratura. Tenga en cuenta que, en la modulación D8PSK, los grupos de tres bits a menudo se denominan símbolos D8PSK.
+
+VDL Mode 3 ofrece una alternativa a la solución europea de reducir el espacio entre canales a 8.33 kHz. El Modo VDL 3 toma una asignación de frecuencia de 25 kHz y la divide en 1 tramas de 20 ms con cuatro intervalos de tiempo de 30 ms (cada uno de los cuales constituye un canal diferente). Por lo tanto, el Modo 3 emplea la multiplexación por división de tiempo (TDM) en lugar de la multiplexación por división de frecuencia (FDM) utilizada en el sistema europeo. Tenga en cuenta que el Modo VDL 3 es el único modo VDL planificado que está diseñado para admitir el tráfico de voz y datos en la misma frecuencia.
+
+
+4.8 Akras
+
+ACARS (Aircraft Communication Addressing and Reporting System) es un sistema de enlace de datos digitales transmitido en el rango VHF (1 1 8 MHz a 1 36 MHz). ACARS proporciona un medio por el cual los operadores de aeronaves pueden intercambiar datos con una aeronave sin intervención humana. Esto hace posible que una aerolínea se comunique con la aeronave de su flota de la misma manera que es posible intercambiar datos utilizando una red digital terrestre. ACARS utiliza el identificador único de una aeronave y el sistema tiene algunas características que son similares a las utilizadas actualmente para el correo electrónico.
+
+El sistema ACARS se especificó originalmente en el estándar ARINC 597, pero se ha revisado como ARINC 724B. Una característica importante de ACARS es la capacidad de proporcionar datos en tiempo real sobre el terreno relacionados con el rendimiento de la aeronave; Esto ha permitido identificar y planificar actividades de mantenimiento de aeronaves.
+
+Las comunicaciones ACARS se dirigen automáticamente a través de una serie de computadoras ARINC (Aeronautical Radio Inc.) con base en tierra al operador de la aeronave correspondiente. El sistema ayuda a reducir la necesidad de mensajes de voz mundanos en HF y VHF y proporciona un sistema que puede registrarse y rastrearse. Los mensajes ACARS típicos se usan para transmitir información de rutina como:
+
+cargas de pasajeros
+
+informes de salida
+
+informes de llegada
+
+datos de combustible
+
+datos de rendimiento del motor.
+
+Esta información puede ser solicitada por la compañía y recuperada de la aeronave a intervalos periódicos o bajo demanda. Antes de ACARS, este tipo de información se habría transferido a través de voz VHF. ACARS utiliza una variedad de componentes de hardware y software, incluidos los que están instalados en el suelo y los que están presentes en la aeronave. Los componentes ACARS de la aeronave incluyen una unidad de gestión (ver Figura 4. 1 2) que se ocupa de la recepción y transmisión de mensajes a través del transceptor de radio VHF, y la unidad de control que proporciona la interfaz de la tripulación y consta de una pantalla de visualización e impresora. La red terrestre ACARS comprende las estaciones remotas de transmisión / recepción ARARC ACARS y una red de computadoras y sistemas de conmutación. El subsistema de comando, control y gestión de ACARS consiste en las operaciones de la aerolínea con base en tierra y las funciones asociadas, incluido el control de operaciones, el mantenimiento y la programación de la tripulación.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

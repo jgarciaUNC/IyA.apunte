@@ -1,0 +1,84 @@
+\makeatletter\let\ifGm@compatii\relax\makeatother
+% Problemas con el paquete geometry se solucionan con la anterior
+% sentencia. 18/5/2015
+\documentclass[8pt]{beamer}
+
+\usepackage{../IyA.estilo}
+
+%\usepackage{xmpmulti}
+
+\usepackage{animate}
+
+%\usepackage{media9}
+
+%-----------------Titulo y autores
+
+\title{Cap\'itulo 5 \\
+	Instrumentos Girosc\'opicos}
+\subtitle{C\'atedra de Instrumentos y Avi\'onica}
+\author{ Ing. Jorge Garcia}
+\institute{
+	\includegraphics[height=1.5cm]{../imagenes/logos/400-anios} \hspace{3mm}	
+	\includegraphics[height=1cm]{../imagenes/logos/logoUNC} \hspace{1mm}	
+	\includegraphics[height=1cm]{../imagenes/logos/fcefyn} \hspace{1mm}	
+	\includegraphics[height=1cm]{../imagenes/logos/dpto-aero-logo}
+	\\
+%	Departamento de Aeron\'autica \\
+%	Facultad de Ciencias Exactas, F\'isicas y Naturales \\
+%	Universidad Nacional de C\'ordoba
+	}
+\date{A\~no 2019}
+
+%----------------------------------CONTENIDO------------------
+% Capítulo 5. Instrumentos giroscópicos
+% 5.1.      Propiedades giroscópicas aplicadas al instrumental aeronáutico de a bordo.
+% 5.2.      Indicadores de virajes, neumáticos, de CC y CA .
+% 5.3.      Indicadores de actitud en dos ejes con giróscopo integrado, y remoto.
+% 5.4.      Magnetismo terrestre, brújula, giróscopo direccional libre.
+% 5.5.      Compás giroscópico auto-corregido, indicador con giróscopo integrado, y remoto.
+% 5.6.      Central giroscópica para la indicación de actitud en tres ejes y toda actitud.
+% 5.7.      Giróscopo LASER
+
+\begin{document}
+
+%----------- titlepage -----------%
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+%OK
+\input{05.instrumentos.giroscopicos.tex/05.01.propiedades.v2019}
+
+%OK
+\input{05.instrumentos.giroscopicos.tex/05.02.indicadores.viraje.v2019.tex}
+
+%OK
+\input{05.instrumentos.giroscopicos.tex/05.03.indicadores.actitud.2.ejes.v2019.tex}
+
+%OK
+\input{05.instrumentos.giroscopicos.tex/05.04.magnetismo.terrestre.v2019.tex}
+
+\input{05.instrumentos.giroscopicos.tex/05.05.compas.giroscopico.v2019.tex}
+
+\input{05.instrumentos.giroscopicos.tex/05.06.central.giroscopica.v2019.tex}
+
+%\input{05.instrumentos.giroscopicos.tex/05.07.giroscopo.laser.v2019.tex}
+
+
+%-----------------acronimos
+
+% \section{Acr\'onimos}
+% \label{sec:acronimos}
+
+% \input{../IyA.acronimos.tex}
+% \addcontentsline{toc}{chapter}{Lista de Acr\'onimos}
+
+
+%-------------Bibliografia
+ \begin{frame}{Bibliograf\'ia}
+   \bibliographystyle{apalike} 
+   \bibliography{../IyA}
+ \end{frame}
+
+
+\end{document}

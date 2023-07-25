@@ -1,0 +1,94 @@
+Weather radar
+
+Weather radar was introduced onto passenger
+aircraft during the 1950s for pilots to identify
+weather conditions and subsequently reroute for
+the safety and comfort of passengers. Extreme
+weather conditions are a major threat to the safe
+operation of an aircraft; flight crews need to be
+aware of these conditions and understand the
+consequences. There are three main technologies
+typically used in aircraft to detect weather
+conditions: on-board radar, lightning detection,
+and datalink services. These systems enable
+pilots to identify weather conditions and
+subsequently re-route for the safety and comfort
+of passengers. The majority of commercial
+transport aircraft are equipped with weather
+radar, and this represents the majority of this
+chapter. General Aviation aircraft that are not
+equipped with radar are typically equipped with
+an alternative technology, i.e. lightning detection,
+and/or datalink services.
+
+20.1 System overview
+
+The word radar is derived from radio detection
+and ranging; the initial use of radar was to locate
+aircraft and display their range and bearing on a
+monitor (either ground based or in another
+aircraft). This type of radar is termed primary
+radar; energy is directed via an antenna to a
+‘target’; this target could be an aircraft, the
+ground or specific weather conditions. In the case
+of weather radar, we want to detect the energy
+reflected back from the contents of a cloud, or
+from precipitation, see Figure 20.1. The latter
+may defined as the result of water vapour
+condensing in the atmosphere that subsequently
+falls to the earth’s surface. Precipitation can occur
+in many different forms including: rain, freezing
+rain, snow, sleet, and hail. Weather radar operates
+either in the C-band (4–8GHz) or X-band (8–12.5
+GHz); these two bands have their advantages and
+disadvantages for use in weather radar applications. C-band microwave energy pulses can penetrate through heavy precipitation, thereby providing weather detection, enabling the pilot
+to determine more details of the weather pattern.
+X-band microwave energy pulses can provide
+good resolution of images; however, this means
+that they can only be used for weather
+avoidance. Higher frequencies require a smaller
+antenna; for this reason, larger passenger aircraft
+use X-band radar.
+The range of a weather radar system is
+typically 320 miles. Microwave energy pulses are
+reflected from the moisture droplets and returned
+to the radar antenna. The system calculates the
+time taken for the energy pulses to be returned;
+this is displayed as an image on a dedicated
+weather radar screen, or the image can be
+integrated with the electronic flight display
+system. The strength of the returned energy is
+measured and used to determine the size of the
+target. Higher moisture content in a cloud
+provides higher returned energy. The antenna is
+scanned in the lateral plane to provide directional
+information about the target.
+
+20.2 Airborne equipment
+
+The typical weather radar system in a large
+aircraft comprises the antenna (nose cone); two
+transceivers (nose cone); two control panels/
+displays (cockpit), see Figure 20.2. The
+transceivers are located in the nose cone, thereby
+minimising the length of the waveguide, and also
+avoiding the need for the waveguide to penetrate
+the pressure bulkhead. On single engine, GA
+aircraft the antenna can be located on the wing, in
+a self-contained pod.
+Figure 20.3(a) Weather radar antenna
+
+20.2.1 Antenna
+
+Microwave signals are transmitted and received
+via the antenna. Early versions of the antenna
+were in the form of a parabolic dish; however, the
+current versions are the planar array flat-plate
+type, see Figure 20.3(a). The flat-plate antenna
+projects a more focused beam than the parabolic
+type; this is due to the reduction in side-lobes as
+illustrated in Figure 20.4. The antenna comprises
+a flat steerable plate with a large number of
+radiating slots, each equivalent to a half-wave
+dipole fed in phase. The antenna is mounted on
+the forward pressure bulkhead behind the radome;

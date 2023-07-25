@@ -1,0 +1,175 @@
+Radio navegación hiperbólica
+
+Los sistemas de radionavegación hiperbólicos proporcionan capacidades de fijación de posición de medio a largo alcance para operaciones en ruta. Varios sistemas hiperbólicos se han desarrollado para el uso de la aviación desde la década de 1940, incluidos Decca, Omega y Loran. El uso operativo de los sistemas de navegación Omega y Decca cesó en 1997 y 2000, respectivamente. El Loran mejorado (eLoran) se ha propuesto como una ayuda complementaria a la navegación para los sistemas mundiales de navegación por satélite (GNSS).
+
+14.1 Fijación de posición hiperbólica
+
+Los principios de la fijación de posición hiperbólica se pueden ilustrar en la Figura 14.1. Dos estaciones de radio A y B están ubicadas a una distancia conocida; la línea imaginaria que los une se denomina línea de base (Figura 14.1 (a)). La estación A es la maestra y la estación B es la secundaria. La estación maestra transmite pulsos a intervalos regulares; estos pulsos, representados por círculos concéntricos en la figura 14.1 (b), alcanzan la estación secundaria después de un período de tiempo fijo (determinado por la velocidad de propagación de la onda de radio). Cuando la estación secundaria recibe el primer pulso de la estación maestra, la estación secundaria transmite su propio pulso después de un retraso de tiempo fijo, como se muestra en la Figura 14.1 (c).
+
+Este es un proceso continuo, con pulsos transmitidos por la estación maestra a intervalos fijos, y la estación secundaria responde después de un período de retraso fijo.
+
+Los pulsos radiados comienzan a superponerse a medida que las ondas se alejan de sus respectivas estaciones, como se ilustra en la Figura 14.2. En esta ilustración, una serie de pulsos (representados por las líneas continuas) se irradia desde la estación maestra A a una velocidad de mil pulsos por segundo, es decir, a intervalos de 1 ms. El primer pulso llega a la estación secundaria B dependiendo de la distancia a la estación, p. después de 7 ms. La estación secundaria transmite su respuesta después de un retraso predeterminado, p. 1 ms. Esto está representado por el círculo discontinuo número 8, es decir, se transmite después del tiempo de viaje de 7 ms y el retraso fijo de 1 ms. Los pulsos radiados de ambas estaciones forman un patrón de pulsos de intersección. Examine las diferencias de tiempo entre los círculos de intersección en las líneas X, Y y Z. Se puede ver que la diferencia de tiempo entre los pulsos secundario y maestro ocurre en:
+
+2 ms en cualquier lugar de la línea X
+
+4 ms anywhere on line Y
+
+6 ms en cualquier lugar de la línea Z.
+
+La intersección de dos pulsos con el mismo retraso de tiempo en cualquier parte de este patrón puede usarse para determinar una línea de posición (LOP). Estos puntos se pueden trazar para formar curvas únicas conocidas como hipérbolas. Los focos de las hipérbolas están en cada uno de los transmisores. Cada hipérbola proporciona un LOP relacionado con el retraso de tiempo entre la recepción de pulsos maestros y secundarios.
+
+Como hay dos posiciones en cualquier hipérbola, una tercera (o cuarta) estación secundaria proporcionará una posición única, como se ilustra en la Figura 14.3. En este caso, las tres hipérbolas generadas por las estaciones A, B y C solo se cruzan en un lugar.
+
+14.2 Descripción general de Loran
+
+Loran es un acrónimo de navegación de largo alcance, un sistema basado en radio navegación hiperbólica. El sistema fue desarrollado durante la década de 1940 como Loran-A y ha experimentado muchos desarrollos; La versión actual es Loran-C. Operando en el rango de frecuencia LF de 90 a 110 kHz, el sistema comprende transmisores terrestres y estaciones de monitoreo. El sistema Loran-C tiene un rango típico de hasta 1000 nm y una precisión mejor que 0.25 nm (460 metros) en las áreas de cobertura definidas. Los transmisores se agrupan en "cadenas", lo que proporciona una capacidad de fijación de posición bidimensional. Los patrones están formados de varias maneras por las estaciones maestra y secundaria, como se ilustra en la Figura 14.4.
+
+14.3 Operación Loran-C
+
+Las cadenas Loran-C están organizadas en una configuración maestra y secundaria. Cada maestro tiene al menos dos estaciones secundarias asociadas; en algunos casos hay cinco estaciones secundarias en la cadena. El tiempo transcurrido entre la recepción de pulsos desde la estación maestra y dos o más estaciones secundarias se utiliza para determinar una posición única. Los pulsos se forman como ondas sinusoidales de amplitud variable con una frecuencia fija; la duración del pulso es de 270 ms, lo que representa 27 ciclos de la onda portadora de 100 kHz, como se ilustra en la figura 14.5. Este pulso único proporciona una señal reconocible y asegura que la mayor parte del ancho de banda del pulso se limita al rango de frecuencia de 90 a 110 kHz.
+
+La intención de un sistema Loran-C es utilizar solo ondas de tierra para fines de navegación; las ondas del cielo se filtran con técnicas de sincronización de pulso. El tiempo aproximado que tarda una onda transmitida en reflejarse en la ionosfera es de 30 ms; Como la duración del pulso es de 270 ms, se puede esperar que parte del pulso transmitido se refleje desde la ionosfera. Para evitar esto, se selecciona un pico específico dentro del pulso como pulso de indexación. Este es el tercer pico dentro del pulso y representa aproximadamente el 50% de la amplitud máxima.
+
+Las señales se transmiten desde la estación maestra como un grupo de nueve pulsos; Las estaciones secundarias transmiten ocho pulsos, ver Figura 14.6. Los grupos de pulsos de cada una de las cadenas se transmiten dentro del rango de 10 a 25 grupos por segundo. Cada pulso está espaciado a intervalos de 1 ms; el noveno pulso de la estación maestra ocurre después de un retraso de 2 ms. El intervalo de tiempo específico del grupo de pulsos (comenzando y terminando con los pulsos maestros) se conoce como intervalo de repetición de grupo, o GRI. Este intervalo de tiempo se utiliza como base para identificar la cadena, p. una cadena con un GRI de 99,600 microsegundos se identifica como '9960 '.
+
+El primer grupo de nueve pulsos de la estación maestra es recibido en diferentes momentos por cada una de las estaciones secundarias debido a las distancias de línea base variables entre las estaciones respectivas. Las estaciones secundarias transmiten sus grupos de impulsos después de demoras de tiempo predeterminadas, denominadas demoras de codificación. El tiempo total para que el pulso viaje sobre la línea base junto con el retardo de codificación de la estación secundaria se denomina retardo de emisión.
+
+Los aspectos operativos asociados con Loran-C incluyen:
+
+interferencia electromagnética que afecta la señal, p. de líneas eléctricas
+
+pérdida de una estación que afecta el área de cobertura
+
+condiciones climáticas locales (particularmente tormentas eléctricas) que afectan la señal.
+
+Además de las estaciones maestra y secundaria, se implementan estaciones de monitoreo para muestrear la intensidad de la señal, el tiempo y la forma del pulso de la cadena. En el caso de que alguno de estos se encuentre fuera de un límite especificado, una señal de alerta, conocida como parpadeo, se codifica en las agrupaciones de impulsos.
+
+Punto clave.
+
+Loran es un acrónimo de navegación de largo alcance, un sistema basado en radio navegación hiperbólica.
+
+Punto clave
+
+El sistema Loran-C utiliza ondas terrestres a bajas frecuencias. Tiene un rango típico de hasta 1000 nm con una precisión de 0.25 nm. Los transmisores se agrupan en "cadenas", lo que proporciona una capacidad de fijación de posición bidimensional.
+
+Punto clave
+
+Todas las cadenas Loran-C transmiten a 100 kHz, es decir, no es necesario sintonizar el receptor a una cadena específica.
+
+Punto clave
+
+El tiempo transcurrido entre la recepción de pulsos desde la estación maestra y dos o más estaciones secundarias se utiliza para determinar una posición única.
+
+Punto clave
+
+El uso operativo de los sistemas de navegación hiperbólicos Omega y Decca cesó en 1997 y 2000, respectivamente.
+
+
+14.4 Equipo de tierra Loran-C
+
+
+Las estaciones de transmisión maestra y secundaria están ubicadas en lugares estratégicos para proporcionar la geometría requerida para obtener información de navegación. Las torres transmisoras suelen tener una altura de 700 a 1300 pies e irradian entre 400 y 1600 W de potencia. Las estaciones maestra y secundaria se forman en grupos conocidos como cadenas, como se discutió anteriormente. Las distancias de referencia varían de una cadena a otra, ya que muchas estaciones están ubicadas en islas para proporcionar cobertura oceánica; las distancias de entre 175 y 1000 nm son típicas. La mayoría de estas cadenas están en los Estados Unidos y Canadá; Otras cadenas se encuentran en Rusia, el Pacífico norte, Europa, Asia y Oriente Medio. Las estaciones maestras se identifican como 'M', y las estaciones secundarias se identifican de la serie 'W, X, Y y Z'. La Guardia Costera de los Estados Unidos (USCG) proporciona detalles completos de cada cadena junto con un manual en línea que contiene datos e información muy útiles relacionados con Loran; Los detalles se pueden encontrar en su sitio web en www.navcen.usg.gov. El sistema fue transferido a las naciones anfitrionas en 1995.La USCG introdujo Loran-C en Europa; 
+
+La Tabla 14.1 proporciona una lista de las cadenas Loran-C disponibles actualmente junto con un resumen de cuántas estaciones secundarias están asociadas con el maestro. La Tabla 14.2 proporciona detalles para la cadena del Pacífico Noroeste; comprende estaciones en el continente japonés y varias islas en el Pacífico. La figura 14.7 ofrece una ilustración del área de cobertura de esta cadena. En capítulos anteriores, se han descrito sistemas de radio navegación como VOR, DME y VORTAC. Tenga en cuenta que dado que las ayudas de navegación VOR, DME y VORTAC tienen que estar ubicadas en tierra, la red de vías aéreas no proporciona una gran cobertura más allá de las regiones costeras. En referencia a la Figura 14.9 (a), una combinación de estaciones VOR, DME y TACAN ubicadas en varios países europeos proporciona una cierta cantidad de guía de navegación en el Atlántico Norte, el Mar de Noruega y el Mar del Norte. Este diagrama supone un rango de línea de visión de aproximadamente 200 nm. Las brechas en esta red de radionavegación pueden superarse en gran medida mediante el uso de Loran-C, consulte la Figura 14.9 (b). Esta es la cadena del Mar de Noruega, con la estación maestra ubicada en Ejde (Dinamarca) y cuatro estaciones secundarias (X, W, Y y Z) ubicadas en Bo (Noruega), Sylt (Alemania), Sandur (Islandia) y Jan Mayen Tenga en cuenta que esto ilustra la cobertura del suelo estimada; La cobertura real variará.(Noruega) respectivamente. 
+
+14.5 Equipo aerotransportado Loran-C
+
+El equipo aerotransportado comprende la antena, el receptor y la unidad de visualización de control. La antena a menudo se comparte con el bucle de detección del ADF. Todas las cadenas Loran-C transmiten a 100 kHz, es decir, no es necesario sintonizar el receptor a una cadena específica. El receptor busca estaciones maestras y rastrea señales secundarias; Esto se logra con un proceso de bucle de fase bloqueada. Como todas las cadenas transmiten a 100 kHz, una aeronave en el rango de más de una cadena recibirá pulsos de muchas estaciones; el receptor debe poder identificar cadenas específicas por sus retrasos de emisión. Una vez identificado, el receptor determina qué cadena proporciona las señales más fuertes y cuál proporciona la mejor solución de navegación. Se utilizan señales de temporización precisas para reconocer la forma de pulso Loran-C única. Una vez adquirido, el receptor necesita identificar el tercer pico en el pulso; La identificación del tercer pico se determina midiendo los cruces por cero y el crecimiento de amplitud dentro del pulso. Además de esto, el receptor también debe ser capaz de rechazar una gran cantidad de interferencia y ruido atmosférico.Este pico tiene la mayor tasa de cambio con respecto al octavo pulso. 
+
+Una función de computación de navegación puede proporcionar una operación mejorada para el sistema. Los detalles de la cadena, como la latitud y longitud de las estaciones, GRI y los tiempos de retraso secundarios, se almacenan en una base de datos. Se pueden aplicar correcciones para las diferencias de propagación conocidas sobre el mar, la tierra y el hielo. Si el receptor recibe pulsos de más de una cadena, es posible calcular una posición promedio. En la figura 14.8 se muestra una unidad de visualización de control típica utilizada para la navegación hiperbólica.
+
+Pon a prueba tu comprensión 14.1
+
+¿Qué rango de frecuencia usa Loran-C?
+
+Pon a prueba tu comprensión 14.2
+
+¿Qué significa GRI y cómo define esto una cadena Loran-C?
+
+
+
+14.6 Loran mejorado (eLoran)
+
+Loran-C tiene varias ventajas sobre los otros dos sistemas de navegación hiperbólicos (ahora obsoletos), Decca y Omega; Estas ventajas incluyen el uso de ondas terrestres a bajas frecuencias de radio y técnicas de pulso para discriminar contra la inferencia de la onda del cielo.
+
+La introducción de los sistemas mundiales de navegación por satélite (GNSS), en teoría, hará que el uso de Loran-C sea poco atractivo y, finalmente, obsoleto.
+
+Había planes para desmantelar el sistema debido al uso emergente y las atracciones de GNSS.
+
+En realidad, sin embargo, esta situación está siendo revertida. En referencia al Capítulo 18, está claro que cualquier GNSS es vulnerable a la interrupción; Esto puede ser un intento deliberado de interferir con las transmisiones, la falla del satélite o debido a condiciones atmosféricas adversas. Con una mayor dependencia de GNSS para servicios de aviación, marinos, vehículos y basados u200bu200ben la ubicación, el impacto de cualquier interrupción es significativo. La solución a esto es tener un sistema de navegación alternativo que funcione junto con GNSS como respaldo, p. VOR, DME, navegación inercial (descrita en otra parte del libro) o Loran.
+
+El próximo desarrollo de Loran-C es Loran mejorado (eLoran) que aprovechará la tecnología nueva y emergente. Loran mejorado introduce un canal de datos adicional a través de la transmisión Loran; Estos datos incluyen hasta dieciséis tipos de mensajes, que incluyen (entre otros) identidad de estación, hora universal coordinada (UTC), correcciones, advertencias e información de integridad de señal. Este canal de datos se activa mediante la modulación de la posición del pulso. El nuevo pulso se agrega a la transmisión Loran un milisegundo después del octavo pulso en una estación de transmisión secundaria y entre los pulsos actuales octavo y noveno en una estación de transmisión maestra. Las pruebas del canal de datos Loran (LDC) por parte de la FAA y la Guardia Costera de los Estados Unidos comenzaron en julio de 2005. El sistema eLoran comprende la estación de transmisión, los sitios de monitoreo y la estación de monitoreo de control; Este es un sistema de autocorrección, como se ilustra en la Figura 14.10. Usando una técnica llamada control de tiempo de transmisión, el tiempo se mantiene constante en cada estación de transmisión en lugar de en los sitios de monitoreo. El receptor eLoran adquiere, rastrea y administra estaciones como si fueran satélites, proporcionando así mediciones de tiempo confiables que conducen a cálculos de posición precisos. Este concepto aumenta la cobertura ya que el receptor puede seleccionar múltiples estaciones de cualquier cadena, siempre que estén dentro del alcance. Esta característica (conocida como todo a la vista) trata a cada transmisor Loran como un individuo, es decir, no relaciona esa estación con una cadena específica.
+
+Un receptor combinado GNSS / eLoran ofrece una solución poderosa al problema de la vulnerabilidad GNSS. El uso de eLoran complementará los sistemas mundiales de navegación por satélite (GNSS); También proporcionará una copia de seguridad con integridad mantenida a través de la independencia de eLoran y un método de navegación diferente.
+
+La precisión esperada de eLoran es mejor que 10 metros, en comparación con una precisión Loran-C de 460 metros (0.25 nm). Se alienta al lector a leer la prensa de la industria y monitorear los desarrollos de este tema.
+
+Punto clave
+
+Además de las estaciones maestra y secundaria, se implementan estaciones de monitoreo para muestrear la intensidad de la señal, el tiempo y la forma del pulso de la cadena.
+
+Pon a prueba tu comprensión 14.3
+
+¿Cuántas posiciones geográficas laterales únicas definen dos estaciones de navegación hiperbólicas?
+
+Pon a prueba tu comprensión 14.4
+Los sistemas Loran-C pueden compartir sus antenas de aeronaves con qué otro sistema de navegación?
+
+14.7 Preguntas de opción múltiple
+
+1. ¿Los sistemas de radionavegación de largo alcance dependen de qué tipo de onda de radio?
+
+(a) onda de tierra
+
+(b) ola del cielo
+
+(c) onda espacial.
+
+2. ¿Cuántas estaciones transmisoras se requieren en un sistema de navegación hiperbólica para proporcionar una posición única?
+
+(uno
+
+(b) dos
+
+(c) tres o más.
+
+3. ¿Cuántas ubicaciones únicas se definen en una línea de posición hiperbólica?
+
+(uno
+
+(b) dos
+
+(C) Ninguno.
+
+4. Los focos de las hipérbolas se encuentran en:
+
+(a) cada uno de los transmisores
+
+(b) la intersección de líneas de posición
+
+(c) la intersección de círculos concéntricos.
+
+5. La intersección de dos pulsos Loran-C con el mismo retraso de tiempo se puede usar para determinar:
+
+(a) línea de posición
+
+(b) línea de base
+
+(c) posición única.
+
+6. ¿En qué banda de frecuencia funciona Loran-C?
+
+(a) 190–1750 kHz
+
+(b) 90–110 kHz
+
+(c) 108–112 MHz.
+
+7. ¿Cuántos pulsos transmite la estación maestra en una cadena Loran-C?
+
+(a) 27
+
+(b) 8
+
+(c) 9.
+

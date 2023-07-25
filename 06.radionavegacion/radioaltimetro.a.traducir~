@@ -1,0 +1,19 @@
+8.6
+Radar Sensors
+
+Civil aircraft carry a number of radar sensors that permit the aircraft to derive data concerning the flight of the aircraft. The principle radar sensors in use on civil aircraft are:
+
+• radar altimeter;
+• weather radar.
+
+8.6.1
+Radar Altimeter
+
+The radar altimeter (Rad Alt) uses radar transmissions to reflect off the surface of the sea or the ground immediately below the aircraft. The radar altimeter therefore provides an absolute reading of altitude with regard to the terrain directly beneath the aircraft. This contrasts with the barometric or air data altimeter where the altitude may be referenced to sea-level or some other datum such as the local terrain, where it is referred to as height. The radar altimeter is therefore of particular value in warning the pilot that he is close to the terrain and to warn him if necessary to take corrective action. Alternatively the radar altimeter may provide the flight crew with accurate altitude with respect to terrain during the final stages of a precision approach. Comparison of barometric and radar altitude is shown in Figure 8.30.
+
+Radar altimeters may operate using CW/FM (continuous wave/frequency modulated) or pulsed signal techniques. CW/FM techniques lose accuracy above a range of 5000 feet, so many radio altimeters are limited to an operational range of 5000 feet. Above this, pulsed techniques have to be used. The radar altimeter principle of operation is shown in Figure 8.31.
+
+The oscillator and modulator provide the necessary signals to the transmitter and transmit antennae, which direct radar energy towards the terrain beneath aircraft. Reflected energy is received by the receive antenna and passed to a frequency counter. The frequency counter demodulates the received signal and provides a radar altimeter reading to a dedicated display.
+
+Alternatively and more usually, the information may be presented on an EFIS. In modern
+systems, radar altitude will be provided to a range of systems such as FMS, EGPWS, autopilot,

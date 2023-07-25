@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1488.189"
+   height="1052.3622"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.92.4 (unknown)"
+   sodipodi:docname="01_sistema_instrumentos.svg">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="719.68951"
+     inkscape:cy="710.81001"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1443"
+     inkscape:window-height="825"
+     inkscape:window-x="170"
+     inkscape:window-y="143"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       snapvisiblegridlinesonly="true"
+       enabled="true"
+       visible="true"
+       empspacing="5"
+       id="grid2985"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4">
+    <marker
+       style="overflow:visible;"
+       id="Arrow2Mend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(0.6) rotate(180) translate(0,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         id="path4065" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path4041" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Lendr"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lendr">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="stroke:#000000;stroke-width:1.0pt;fill:#000000;fill-rule:evenodd"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path4483" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Lendrh"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lendrh">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#cd87de;stroke-width:1.0pt;fill:#cd87de"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path4592" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lendrh-0"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lendrh">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#cd87de;fill-rule:evenodd;stroke:#cd87de;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         id="path4592-6"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow1LendrhT"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1LendrhT">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="stroke:#00ccff;stroke-width:1.0pt;fill:#00ccff;fill-rule:evenodd"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path4721" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1LendrhT-7"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1LendrhT">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#00ccff;fill-rule:evenodd;stroke:#00ccff;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         id="path4721-4" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow1LendrhT0"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1LendrhT0">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#00d400;stroke-width:1.0pt;fill:#00d400"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path4860" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow2MendX"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2MendX">
+      <path
+         transform="scale(0.6) rotate(180) translate(0,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="stroke-linejoin:round;stroke:#cd87de;stroke-width:0.62500000;fill:#cd87de;fill-rule:evenodd"
+         id="path5377" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow2MendG"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2MendG">
+      <path
+         transform="scale(0.6) rotate(180) translate(0,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="stroke-linejoin:round;stroke:#00ccff;stroke-width:0.62500000;fill:#00ccff;fill-rule:evenodd"
+         id="path5706" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow2MendS"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2MendS">
+      <path
+         transform="scale(0.6) rotate(180) translate(0,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="stroke-linejoin:round;stroke:#00d400;stroke-width:0.62500000;fill:#00d400;fill-rule:evenodd"
+         id="path5709" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2MendX-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2MendX">
+      <path
+         transform="scale(-0.6,-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#cd87de;fill-rule:evenodd;stroke:#cd87de;stroke-width:0.625;stroke-linejoin:round"
+         id="path5377-4"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow2MendXm"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2MendXm">
+      <path
+         transform="scale(0.6) rotate(180) translate(0,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="stroke-linejoin:round;fill-rule:evenodd;stroke:#916f6f;stroke-width:0.62500000;fill:#916f6f"
+         id="path5874" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,2.2302535e-5)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Capa 1">
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_sistema_instrumentos.png"
+       rx="254.29901"
+       transform="translate(0,-2.2302535e-5)"
+       y="112.36218"
+       x="220"
+       height="180"
+       width="320"
+       id="rect2987"
+       style="fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_sistema_instrumentos.png"
+       id="text2989"
+       y="174.0106"
+       x="379.79688"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="174.0106"
+         x="379.79688"
+         id="tspan2991"
+         sodipodi:role="line"
+         style="font-size:32px;line-height:1.25;font-family:sans-serif"><tspan
+           id="tspan2999"
+           style="font-weight:bold;font-family:sans-serif;-inkscape-font-specification:'Sans Bold';fill:#ffffff">Sensor</tspan></tspan><tspan
+         style="font-weight:bold;font-size:32px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'Sans Bold';fill:#ffffff"
+         id="tspan2993"
+         y="214.0106"
+         x="379.79688"
+         sodipodi:role="line">+</tspan><tspan
+         style="font-weight:bold;font-size:32px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'Sans Bold';fill:#ffffff"
+         id="tspan2995"
+         y="254.0106"
+         x="379.79688"
+         sodipodi:role="line">Indicación</tspan></text>
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_sistema_instrumentos.png"
+       rx="206.36996"
+       y="147.56895"
+       x="666.35913"
+       height="109.58642"
+       width="259.68796"
+       id="rect2987-3"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.70289916px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_sistema_instrumentos.png"
+       id="text2989-6"
+       y="214.0106"
+       x="800"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         style="font-weight:bold;font-size:32px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'Sans Bold';fill:#ffffff"
+         id="tspan2995-5"
+         y="214.0106"
+         x="800"
+         sodipodi:role="line">Sensor</tspan></text>
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_sistema_instrumentos.png"
+       rx="206.36996"
+       y="147.56895"
+       x="1046.3591"
+       height="109.58642"
+       width="259.68796"
+       id="rect2987-3-6"
+       style="fill:#ff7f2a;fill-rule:evenodd;stroke:#000000;stroke-width:0.70289916px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_sistema_instrumentos.png"
+       id="text2989-6-2"
+       y="214.93248"
+       x="1180"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         style="font-weight:bold;font-size:32px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'Sans Bold';fill:#ffffff"
+         id="tspan2995-5-9"
+         y="214.93248"
+         x="1180"
+         sodipodi:role="line">Indicación</tspan></text>
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_sistema_instrumentos.png"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:connector-curvature="0"
+       id="path3077"
+       d="m 947.23663,192.36216 59.99997,0 0,-20 25,30 -25,30 0,-20 -59.99997,0 z"
+       style="fill:#00ff00;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_sistema_instrumentos.png"
+       id="text3904"
+       y="353.93359"
+       x="379.80078"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         style="font-size:24px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle"
+         y="353.93359"
+         x="379.80078"
+         id="tspan3906"
+         sodipodi:role="line">Sistema instrumentos</tspan><tspan
+         style="font-size:24px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle"
+         id="tspan3908"
+         y="383.93359"
+         x="379.80078"
+         sodipodi:role="line">con sensado directo</tspan></text>
+    <text
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_sistema_instrumentos.png"
+       id="text3904-1"
+       y="353.93359"
+       x="989.53741"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         style="font-size:24px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle"
+         y="353.93359"
+         x="989.53741"
+         id="tspan3906-2"
+         sodipodi:role="line">Sistema instrumentos</tspan><tspan
+         style="font-size:24px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle"
+         id="tspan3908-7"
+         y="383.93359"
+         x="989.53741"
+         sodipodi:role="line">con sensado remoto</tspan></text>
+    <rect
+       rx="254.29901"
+       y="692.36218"
+       x="636"
+       height="160"
+       width="380"
+       id="rect3934"
+       style="fill:#0000ff;fill-rule:evenodd;stroke:none"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_tansmision_informacion.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       id="text3936"
+       y="744.36218"
+       x="840"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_tansmision_informacion.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         style="font-weight:bold;font-size:32px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'Sans Bold';fill:#ffffff"
+         y="744.36218"
+         x="840"
+         id="tspan3938"
+         sodipodi:role="line">Transmisión</tspan><tspan
+         style="font-weight:bold;font-size:32px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'Sans Bold';fill:#ffffff"
+         id="tspan3940"
+         y="784.36218"
+         x="845.5625"
+         sodipodi:role="line">de la </tspan><tspan
+         style="font-weight:bold;font-size:32px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'Sans Bold';fill:#ffffff"
+         id="tspan3942"
+         y="824.36218"
+         x="840"
+         sodipodi:role="line">información</tspan></text>
+    <rect
+       rx="254.29901"
+       transform="translate(0,-2.2302535e-5)"
+       y="572.36218"
+       x="460"
+       height="120"
+       width="200"
+       id="rect3944"
+       style="fill:#916f6f;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_tansmision_informacion.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       id="text3946"
+       y="622.36218"
+       x="560"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_tansmision_informacion.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         style="font-weight:bold;font-size:24px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'Sans Bold';fill:#ffffff"
+         y="622.36218"
+         x="560"
+         id="tspan3948"
+         sodipodi:role="line">Transmisión</tspan><tspan
+         style="font-weight:bold;font-size:24px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'Sans Bold';fill:#ffffff"
+         id="tspan3950"
+         y="652.36218"
+         x="560"
+         sodipodi:role="line">electrónica</tspan></text>
+    <rect
+       rx="190.72426"
+       y="472.36215"
+       x="647.14288"
+       height="71.428574"
+       width="150"
+       id="rect3944-06"
+       style="fill:#00ccff;fill-rule:evenodd;stroke:none"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_tansmision_informacion.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       id="text3946-2"
+       y="512.36218"
+       x="720"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_tansmision_informacion.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         style="font-weight:bold;font-size:20px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'Sans Bold';fill:#ffffff"
+         id="tspan3950-1"
+         y="512.36218"
+         x="720"
+         sodipodi:role="line">Digital</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       transform="translate(0,-2.2302535e-5)"
+       inkscape:connector-curvature="0"
+       id="path4032"
+       d="m 400,532.36218 c 0,65 70,90 70,90"
+       style="stroke-linejoin:miter;marker-end:url(#Arrow2MendX);stroke-opacity:1;stroke:#cd87de;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:3;fill:none"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_tansmision_informacion.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       rx="190.72426"
+       y="472.36209"
+       x="327.14288"
+       height="71.428574"
+       width="150"
+       id="rect3944-06-8"
+       style="fill:#cd87de;fill-rule:evenodd;stroke:none"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_tansmision_informacion.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       id="text3946-2-7"
+       y="512.36218"
+       x="400"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_tansmision_informacion.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         style="font-weight:bold;font-size:20px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'Sans Bold';fill:#ffffff"
+         id="tspan3950-1-9"
+         y="512.36218"
+         x="400"
+         sodipodi:role="line">Analógica</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path4032-8"
+       d="m 724.71724,536.35921 c 0,65.00426 -69.72019,90.0059 -69.72019,90.0059"
+       style="stroke-linejoin:miter;marker-end:url(#Arrow2MendG);stroke-opacity:1;stroke:#00ccff;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:2.99409627999999994;fill:none"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_tansmision_informacion.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path4032-8-9"
+       d="m 1054.4315,668.93064 c 0,65.00426 -69.7202,90.0059 -69.7202,90.0059"
+       style="fill:none;stroke:#00d400;stroke-width:2.99409628;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2MendS)"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_tansmision_informacion.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       rx="254.29901"
+       y="578.36218"
+       x="966"
+       height="120"
+       width="200"
+       id="rect3944-0"
+       style="fill:#00d400;fill-rule:evenodd;stroke:none"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_tansmision_informacion.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       id="text3946-9"
+       y="628.36218"
+       x="1066"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_tansmision_informacion.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         style="font-weight:bold;font-size:24px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'Sans Bold';fill:#ffffff"
+         y="628.36218"
+         x="1066"
+         id="tspan3948-3"
+         sodipodi:role="line">Transmisión</tspan><tspan
+         style="font-weight:bold;font-size:24px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'Sans Bold';fill:#ffffff"
+         id="tspan3950-6"
+         y="658.36218"
+         x="1066"
+         sodipodi:role="line">neumática</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path4032-4"
+       d="m 589.85715,679.50502 c 0,65 70,90 70,90"
+       style="fill:none;stroke:#916f6f;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2MendXm)"
+       inkscape:export-filename="/media/jgarcia/Seagate Expansion Drive/grive/IyA/01.tablero.instrumentos/tikz/01_tansmision_informacion.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>

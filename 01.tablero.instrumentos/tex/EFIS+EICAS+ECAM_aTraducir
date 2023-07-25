@@ -1,0 +1,461 @@
+Electronic Instrumentation
+
+As the operation of transport aircraft and their systems has become increasingly automated and, at the same time, the number of flight deck crew members has been decreased, it has become impossible for the crew to monitor and control the automated processes using conventional instrument displays. To overcome this situation the traditional form of instrument has been almost entirely replaced by computer-generated displays projected upon a few cathode ray tube (CRT) screens. These screens usually combine the features of a number of the conventional instruments and, especially in the case of engine and system displays, normally only show the more essential information, with less critical information being selected by the pilots only as required.
+
+The principal electronic display systems in use are the Electronic Flight Instrument System (EFIS) for the presentation and control of navigational information and, for presentation of engines and systems information, either the Engine Indicating and Crew Alerting System (EICAS) or Engine Centralised Aircraft Monitoring (ECAM). EICAS is generally used in aircraft of American manufacture and ECAM in Airbus Industries aircraft.
+
+
+Electronic Flight Instrument Systems (EFIS)
+
+The EFIS comprises two identical systems supplying the captain and first officer with navigational information on two display screens each, mounted one above the other. The upper display screen is an electronic attitude and direction indicator (EADI) and the lower screen display is an electronic horizontal situation indicator (EHSI). Each pilot's display has its own control panel, and a symbol generator from which the electronic representations on the screens are generated. A third symbol generator acts as a standby unit and may supply either of the pilot's displays in case of failure. 
+
+Each symbol generator receives inputs from all navigational sources, both internal and external, and interfaces between these inputs and the display screens to present the information in a standard format. In addition, the symbol generators perform the monitoring and control functions of the EFIS. A block diagram of the EFIS process is shown in Figure 4.1.
+
+It will be seen from Figure 4.1 that both the captain's and first officer's displays are provided with a control panel and a remote light sensor unit. The control panel is used to control the EADI and EHSI displays and the remote light sensor automatically adjust the brightness of the screen displays according to the light level on the flight deck. A typical EFIS control panel is illustrated in Figure 4.2.
+
+The electronic attitude and direction indicator (EADI)
+
+The EADI screen displays aircraft attitude in pitch and roll in the conventional format of an artificial horizon divided horizontally, with the upper half coloured blue and the lower half coloured yellow (or sand). The source data for the attitude indication are the aircraft inertial reference systems. The display also includes flight director command bars, ILS glideslope and localiser deviation indications, and deviation indication from a selected airspeed.
+
+Radio altitude, decision height and operating modes of the automatic flight and autothrottle systems are also displayed on the EADI screen.
+
+Between 1000 ft and 2500 ft, radio altitude is displayed in digital format only, but below 1000 ft above ground level (agl) the display changes to include an 
+
+analogue, circular scale display as well. As height agl decreases the white circular scale segments are progressively removed in an anti-clockwise direction. The decision height (DH) can be set by a control knob on the EFIS control panel and the selected DH is digitally displayed on the EADI screen and a magenta coloured marker appears at the selected height on the circular scale. At 50 ft above DH an aural chime begins to sound and its frequency increases until DH is reached. At this point the circular radio altitude scale and the DH marker both change colour to amber (yellow) and flash for several seconds. This alert can be cancelled by a push button on the EFIS control panel.
+
+
+The display on both this and the EHSI screen is in colour and the colours used follow conventions laid down in JAR Ops 25 as listed below: 
+
+Display features should be colour coded as follows:
+
+Warnings
+
+Flight envelopes and system limits
+
+Cautions, abnormal sources
+
+Earth
+
+Sky
+
+Engaged modes
+
+ILS deviation pointer
+
+Flight director bar
+
+Red
+
+Red
+
+Yellow/amber
+
+Tan/brown
+
+Cyan/blue
+
+Green
+
+Magenta
+
+Magenta/green
+
+Specified display features should be allocated colours from one of the following colour sets:
+
+Fixed reference symbols
+
+Current data, values
+
+Armed modes
+
+Selected data, values
+
+Selected heading
+
+Active route/flight plan
+
+Set 1
+
+White
+
+White
+
+White
+
+Green
+
+Magenta
+
+Magenta
+
+Set 2
+
+Yellow
+
+Green
+
+Cyan
+
+Cyan
+
+Cyan
+
+White
+
+The extensive use of yellow for other than caution/abnormal information is discouraged
+
+In colour set 1, magenta is intended to be associated with those analogue parameters that constitute `fly to' or `keep centred' type information. 
+
+Precipitation and predicted turbulence areas should be colour coded as follows:
+
+Precipitation (mm/hr)
+
+Turbulence
+
+0 to 1
+
+1 to 4
+
+4 to 12
+
+12 to 50
+
+Above 50
+
+Black
+
+Green
+
+Yellow/amber
+
+Red
+
+Magenta
+
+White or magenta
+
+A typical EADI display screen is shown in Figure 4.3.
+
+The electronic horizontal situation indicator (EHSI)
+
+The lower of the two EFIS screens, the EHSI, presents a display of flight navigational information and progress in one of nine possible modes, selected from the HSI section of the EFIS control panel. The modes available are as follows:
+
+
+
+MAP. The display used for en-route navigational information and the one most commonly selected in cruise flight. The display shows features ahead of the aircraft, with the aircraft symbol appearing at the bottom of the display. This is illustrated in Figure 4.4.
+
+CTR MAP. Essentially the same as MAP, but the display is centred upon the aircraft current position, with an aircraft symbol in the centre of the display.
+
+PLAN. This display shows the planned route with waypoints and is principally used when entering waypoints into the flight management system (FMS) computer before flight or when making changes to the planned route. It is illustrated in Figure 4.5.
+
+FULL VOR/FULL ILS. These displays are basically identical and show a compass rose with heading and deviation indications that follow conventional formats. They are used when checking aircraft track against a VOR bearing or ILS localiser. The display with ILS selected is shown in Figure 4.6. With VOR selected the display would be essentially the same, except that the in-use VOR would be indicated in the lower left corner, where ILS appears in the diagram.
+
+EXP VOR/ILS. In the expanded mode the information displayed is the same as in the full mode, but is in semi-map format. Only the relevant segment of the compass rose is displayed at the top of the screen, with a heading pointer. The aircraft's current (instantaneous) track is shown as a solid line extending from the aircraft symbol to the compass arc. The bearing of the selected radio aid, ILS or VOR, is shown as a solid line extending from the centre of the deviation scale to the compass arc. The display with ILS selected is shown in Figure 4.7. Again, the display with VOR selected is essentially the same. In either case the weather radar picture can be superimposed upon the display, if required. 
+
+EXP NAV/FULL NAV. These two modes display lateral and vertical navigational information in much the same format as a conventional HSI. Expanded NAV mode shows a compass arc, whereas full NAV mode
+displays a full compass rose and does not permit the weather radar display to be superimposed, exactly as with the expanded and full VOR/ILS modes.
+
+Map mode display
+
+Between latitudes 658S and 738N the expanded compass rose may be referenced to either magnetic or true north as required, above those latitudes it may only be referenced to true north. Heading information is provided by
+the aircraft inertial reference systems; the heading and track pointers will, of course, only be aligned when there is no drift. 
+
+The vertical deviation scale and pointer indicates whether the aircraft is above or below the planned flight path and the lateral deviation scale and pointer whether it is to right or left of the planned flight path. Wind speed is indicated digitally in the lower left corner of the display, with an arrow indicating wind direction. The arrow is orientated to the map display, which is orientated to the aircraft track, so the wind direction is displayed relative to track.
+
+The instantaneous track appears as a solid line extending from the apex of the triangular aircraft symbol to the compass rose. The selected range scale is superimposed and, when a planned change of altitude is taking place, an arc indicating range to the next altitude (at present rate of change of altitude) appears against this scale.
+
+During change of heading a curved, dashed trend vector appears, showing predicted heading at the end of 30, 60 and 90 seconds from the present time. The planned flight path appears as a solid line from the apex of the aircraft symbol to the next, and subsequent, waypoints.
+
+Navigational ground features, such as radio navigational aids and airports, are positioned on the display by the flight management system (FMS) from data obtained from VOR/DME stations and aircraft position is based upon these inputs together with those from the aircraft INS/IRS. When out of range of VOR/DME coverage the aircraft position is updated from INS/IRS only, but can be manually updated if required. 
+
+The weather radar display may be superimposed upon the MAP display, with intensity of radar returns indicated by green, yellow and red in order of intensity. Some displays will also indicate predicted turbulence, based upon very high intensity returns, in white or magenta.
+
+PLAN mode display
+
+The PLAN mode display, illustrated in Figure 4.5, is principally for use when entering or amending the lateral flight plan with the insertion of waypoints. The active route, from waypoint to waypoint, is displayed on the lower part of the screen, with significant navigational features such as airports and radio beacons included in their locations relative to the planned route. It should be noted that, in this mode, the display is orientated to true north. Wind speed and direction and the weather radar display cannot be superimposed whilst in PLAN mode. At the top of the display the expanded compass rose with track and heading as in the MAP display is maintained, together with distance and time to the next waypoint. 
+
+This display is particularly useful as a checking medium when inserting waypoint co-ordinates, before entering them into the flight management computer.
+
+ILS mode displays
+
+In ILS mode there are two possible screen displays, full and extended. These displays are primarily for use during landing approach. In the full ILS mode a complete compass rose fills the central part of the screen, with an aircraft symbol, deviation scale and deviation pointer indicating aircraft position relative to the ILS localiser beam superimposed, as illustrated in Figure 4.6.
+
+The compass rose, driven by input from the inertial reference system, rotates against a fixed heading pointer as aircraft heading changes. The heading, magnetic or true, appears digitally within the pointer. Selected DME range is displayed in the top left corner of the screen, with wind speed and direction in the lower left corner. The selected type of radio beacon, in this case ILS, is also shown here, with the beacon frequency shown in the lower right corner. A vertical deviation scale and pointer, to indicate aircraft position relative to the glide path, is on the right side of the display.
+
+With expanded (EXP) ILS mode selected, an expanded compass arc is displayed at the top of the screen, as in MAP and PLAN modes, with aircraft heading displayed in digital and analogue form as before. Selected DME range appears in the top left-hand corner of the screen, whilst wind speed and direction, and a reminder that the display is based upon ILS transmissions, appear in the lower left-hand corner. The selected ILS frequency appears in the lower right corner.
+
+A semi-map display fills the lower part of the screen, with the triangular aircraft symbol positioned near the bottom of the display. A lateral deviation scale with deviation pointer intersects the apex of the aircraft symbol and a solid line extends from the central bar of the lateral deviation scale to the compass arc, indicating the bearing of the localiser transmitter. A second solid line, with a range scale, extends from the apex of the aircraft symbol to the compass arc, indicating the current (instantaneous) aircraft track. When a new set heading is selected, a dotted line appears briefly from the apex of the aircraft symbol to the heading bug. In ILS mode a vertical deviation scale, with a pointer indicating aircraft position relative to the glide path, is on the right-hand side of the screen. Weather radar returns may be superimposed upon the display if required. The expanded ILS display is illustrated in Figure 4.7.
+
+VOR mode displays
+
+Full and expanded VOR mode displays are essentially the same as the ILS displays described above. These displays are useful when checking the aircraft track and heading relative to a selected VOR/DME and the principal differences in display features are that they will identify the selected beacon and indicate whether the aircraft is tracking toward (TO) or away from (FROM) the beacon. In VOR modes there is, of course, no vertical deviation indication.
+
+Engine indicating and crew alerting system (EICAS)
+
+The EICAS system is an electronic display consisting of two CRT screens mounted vertically, one above the other, and usually positioned centrally on the cockpit console, where they are easily visible to either pilot. The displays are capable of presenting all the engine and system operating data traditionally displayed by a mass of dials at a flight engineer's station, with facilities for displaying a great deal more information besides. The upper of the two screens, known as the primary display, normally shows only essential (i.e. primary) engine information such as engine pressure ratio (EPR), turbine spool speed (N 1 ) and exhaust gas temperature (EGT). The lower of the two screens, known as the secondary display, may be used to display less important (secondary) information and details of abnormal engine or system operating conditions.
+
+The EICAS displays are generated by two computers that are continuously receiving operating data from the engines and the various aircraft systems. At any given time only one computer is operating the system, whilst the other functions as a standby. A display selection panel enables the pilots to select one of two operating modes, operational or status. A third mode, maintenance, is available on the ground, specifically for use by maintenance personnel. A block schematic diagram of a typical EICAS is shown in Figure 4.8.
+
+Operational mode
+
+This is the mode in which the system is used throughout flight. In this mode the upper screen displays the primary engine information listed above and the lower screen remains blank so long as all engine and system operating parameters are normal. In the event of an abnormal condition developing an alert message will appear on the upper screen and the lower screen will display details of the abnormal condition in analogue and digital format. 
+
+Figure 4.9 shows the upper screen display with conditions normal. 
+
+The EICAS display is colour coded, following the JAR Ops 25 codes previously listed for EFIS displays.
+When an abnormal engine or system operating condition develops, an appropriate warning or cautionary message will appear on the left side of the upper screen together with a row of pointers directing attention to the lower screen, where an analogue and digital display details the nature of the failure or critical condition. The alert messages relating to abnormal conditions are prioritised by the EICAS computer so that they appear in order of importance and degree of crew response required. Warning messages, requiring immediate corrective action, appear at the top of the screen in red.
+
+Cautionary messages, requiring immediate crew awareness and possible remedial action, appear below the warning message(s) in yellow (amber). Both warning and cautionary messages are accompanied by an aural alert, such as a fire bell or a repeated tone. Advisory messages, which only require crew awareness, are indented on the display and also appear in amber. No aural alert accompanies these messages.
+
+An EICAS display with primary alerts and secondary display is illustrated in Figure 4.10.
+
+Status mode
+
+This mode is primarily for use during preparation of the aircraft for flight and shows the status of aircraft systems and their readiness for flight. The information is allied to the aircraft minimum equipment list. The display appears on the lower screen of the EICAS and shows flying control surface positions in analogue format, with system status information in digital message format. The quantity of information available is too great for a single display and is available by selecting successive `pages'. The number of the page being viewed is displayed on the screen. A typical status mode display is shown in Figure 4.11.
+
+Maintenance mode
+
+This mode is available to maintenance engineers for diagnosis of operating faults. It contains records of engine and system operating conditions and is only available with the aircraft on the ground. A separate control panel is provided for the display of maintenance data.
+
+Display select panel
+
+This panel, illustrated in Figure 4.12, is used to select the type of EICAS display required and is usually situated on the centre console adjacent to the display screens. The function of the various controls is as follows:
+
+Display push buttons. When the engine display push button is depressed secondary information appears on the lower screen. Depression of the status push button selects the status mode referred to above. 
+
+Event record push button. Engine or system malfunctions in flight are recorded automatically and stored in the EICAS computer memory. Should the flight crew have reason to suspect that a transient fault has occurred, depression of the event record push button will highlight relevant data in the computer stored records for subsequent investigation by maintenance personnel. This latter is known as a manual event.
+
+Computer rotary switch. This is used to select the in-use computer of the system. In the AUTO position the left computer will normally be in use; switching to the right computer will occur automatically in the event of failure. The LEFT or RIGHT positions are used for manual selection of the in-use computer.
+
+Brightness control. This is a dual rotary switch. The inner knob controls display intensity and the outer knob controls the brightness balance between the two displays.
+
+Thrust reference setting. This is also a dual rotary switch. The outer knob is used to select an engine and the inner knob is pulled and rotated to position a cursor on the EPR or N 1 circular scale.
+
+Maximum indicator reset. If a measured parameter, such as engine oil temperature, exceeds a preset limit an alert will appear on the EICAS display. The maximum indicator reset push button is depressed to clear the alert when the excess condition has been rectified.
+
+System failures
+
+It has already been explained that, in the event of failure of one computer, the standby computer will take over either automatically or by pilot selection. If the lower display screen should fail whilst secondary information is being displayed, the information is transferred to the lower half of the upper screen in abbreviated, digital format. This is known as a compact display and is illustrated in Figure 4.13. Failure of one display screen inhibits use of status mode. Should both display screens fail, a standby engine indicator displays essential engine performance data in a liquid crystal diode (LCD) display, as illustrated in Figure 4.14. The indicator has a two-position control switch. With this switch in the AUTO position the standby indicator is functioning, but does not display any data unless the CRT displays are not functioning. With the switch in the ON position the unit displays continuously. The test switch has three positions and is used to test the alternative power supplies to the indicator.
+
+Failure of the display select panel is indicated on the upper EICAS screen, which continues to display primary engine information. Secondary information still automatically appears on the lower screen, but the panel control switches are inoperative.
+
+Electronic centralised aircraft monitoring (ECAM) 
+
+The ECAM system was developed for the Airbus A310 aircraft and the block schematic diagram in Figure 4.15 illustrates that version of the system. It is principally an aircraft systems display medium, with primary engine information displayed on traditional instruments. The ECAM display screens are mounted side-by-side and both are in use continuously. The left screen displays information covering systems status, warnings and corrective actions required in check list format. The right screen shows associated information in analogue displays.
+
+Control panel
+
+The ECAM control panel is illustrated in Figure 4.16. The left and right display control knobs are for switching on the displays and adjusting the display brightness. The functions of the various push button switches are as follows:
+
+SGU select. In normal operation of the system both symbol generator units (SGUs) are functional. In the event of a fault being detected by an SGU self-test circuitry, a fault caption is illuminated on the appropriate switch. Releasing the switch isolates the affected SGU and extinguishes the fault caption, illuminating the OFF caption in its place.
+
+Clear (CLR). This is a clear switch, which will illuminate whenever a warning or status message appears on the left screen. Depressing the switch clears the message.
+
+Status (STS). Depressing this switch allows manual selection of aircraft system status displays, provided that there is no warning message displayed.
+
+Recall (RCL). If a warning message is cleared whilst its associated failure condition is still existent, it may be recalled by depressing the RCL push button.
+
+Synoptic displays. Synoptic diagrams of each of the 12 aircraft systems are called up on the right screen, provided that there is no warning message displayed, by depressing the appropriate synoptic display switch.
+
+Operating modes
+
+The system has four operating modes, known as NORMAL, ADVISORY, FAILURE and MANUAL. Apart from the last-named, the display modes are automatically selected.
+.
+NORMAL mode. This mode is flight-related and is the mode in which the system normally operates throughout the flight progress from pre-flight through to post-flight checks. In this mode the left screen displays system states in check list format and the right screen contains a relevant pictorial display. For example, during post engine start checks the left screen would typically list the state of each of the aircraft's systems and the right screen would display the various system states pictorially (e.g. hydraulic, electrical, pressurisation, etc.). These displays are selected by depressing the appropriate push button on the ECAM control panel, illustrated in Figure 4.16.
+
+ADVISORY mode. The display automatically switches to this mode when the status of a system changes. For example, starting the APU will cause a message to that effect to appear on the left screen. The right screen will continue to display the selected diagram. FAILURE mode. This mode takes precedence over all others and is automatically selected by the ECAM system in the event of normal operating parameters being exceeded in any of the aircraft systems. An appropriate warning message appears on the left screen, accompanied by an aural alert. Below this message, the corrective actions required by the flight deck crew are listed. On the right screen a diagrammatic display of the affected system illustrates the fault. When the corrective action has been taken the displays change to illustrate this. Examples of these displays are shown in Figures 4.17 and 4.18. In the example shown the No. 2 generator frequency is outside permitted limits and disconnection of the constant speed drive is called for, with the situation displayed pictorially on the right screen. When the corrective action has been taken, the left screen display changes to show that No. 2 generator is disconnected and the right screen display shows the new status of the a.c. electrical system.
+
+MANUAL mode. Provided that there are no warning messages displayed on the left screen, diagrams related to the aircraft systems can be called up on the right screen by depressing any of the 12 synoptic push buttons on the control panel.
+
+Sample questions
+
+1. The EFIS display comprises:
+
+a. Two screens mounted side-by-side on a central console?
+
+b. A pair of screens mounted one above the other in front of each pilot?
+
+c. An upper screen showing the horizontal situation and a lower screen showing attitude and direction?
+d. A left screen showing navigational information and a right screen showing engine and systems displays?
+
+2. Symbols coloured magenta on the EFIS display indicate:
+
+a. Warning information?
+b. Command information?
+c. Cautionary information?
+d. Current situation information?
+
+3. Below 1000 feet agl, the radio altitude display on the EADI is:
+
+a. A digital only display?
+
+b. An analogue display of a pointer moving around a circular scale?
+
+c. An analogue and digital display with the selected decision height displayed in digital format only?
+
+d. An analogue display consisting of a circular scale in which the segments disappear as height decreases, with height agl displayed digitally?
+
+4. At 50 ft above decision height:
+
+a. An aural chime alert sounds and increases in frequency until DH is reached, at which point the circular scale and DH marker both change colour to amber and flash for several seconds?
+
+b. An aural chime alert sounds and increases in frequency until DH is reached, at which point the circular scale and DH marker both change colour to red and flash continuously until cancelled?
+
+c. An aural chime alert sounds and continues until cancelled. At DH the circular scale disappears and the DH marker changes colour to amber?
+
+d. An aural chime alert sounds for several seconds. When DH is reached, the circular scale and DH marker both change colour to magenta and flash until touchdown?
+
+5. In MAP mode, a curved dashed line extending from the apex of the aircraft symbol indicates:
+
+a. Rate of change of aircraft heading?
+
+b. Range to selected altitude?
+
+c. Predicted heading at the end of 30, 60 and 90 seconds from preset time?
+
+d. Deviation from desired track? 
+
+6. Weather radar returns are available in the following EFIS EHSI modes (answer a, b, c or d):
+
+1. MAP
+
+2.PLAN
+
+3. EXP ILS
+
+4. FULL ILS
+
+5. FULL VOR
+
+6. EXP VOR
+
+a. 1, 2, 3, 4, 5, 6?
+
+b. 1, 2, 3?
+
+c. 1, 3, 6?
+
+d. 1, 2, 4, 6?
+
+7. The expanded compass rose in EFIS EHSI modes may be referenced to:
+
+a. Magnetic or true north between latitudes 658S and 738N?
+
+b. True north only above latitudes 638N or S?
+
+c. Magnetic or true north between latitudes 638S and 758N?
+
+d. Magnetic or true north between latitudes 758S and 758N?
+
+8. In PLAN mode the planned route display:
+a.
+b.
+c.
+d.
+Is orientated to the present aircraft track?
+Is orientated to true north?
+Is orientated to the present aircraft heading?
+Is orientated to magnetic north?
+
+9. A circle coloured cyan on the EFIS MAP display indicates:
+
+a. An off-route waypoint?
+
+b. An active waypoint?
+
+c. An airport?
+
+d. A radio beacon?
+
+10. In the engine indicating and crew alerting system:
+
+a. There are two computers, both of which are operating at all times?
+
+b. There are two computers, but both will only operate simultaneously if so selected manually?
+
+c. There are three computers, two in operation and one on standby at any time?
+
+d. There are two computers, normally one is operating and the other is on standby?
+
+11. EICAS has:
+
+a. Three modes, all of which are available during flight?
+
+b. Three modes, of which only two are available during flight?
+
+c. Four modes, all of which are available during flight?
+
+d.  Four modes, all of which are available during flight  and the fourth on the ground only?
+
+12. EICAS advisory messages:
+
+a. Appear on the primary display in analogue form, coloured yellow?
+
+b. Appear on the secondary display in digital and analogue form?
+
+c. Appear on the primary display in digital form, indented and coloured red?
+
+d. Appear on the primary display in digital form, indented and coloured yellow?
+
+13. In the event of failure of an EICAS display screen:
+
+a. Primary and secondary information will be displayed on the remaining screen in compact form?
+
+b. Primary engine information only will appear on the standby engine indicator?
+
+c. Primary and limited secondary information will appear on the standby engine indicator?
+
+d. Primary engine information only will appear on the remaining CRT screen?
+
+
+14. Failure of the EICAS display select panel will:
+
+a. Render the entire system inoperative?
+
+b. Reduce the display to the standby engine indicator only?
+
+c. Not affect the primary and secondary displays, but will be indicated on the primary display?
+
+d. Reduce the display to a compact version on one screen only?
+
+15. The ECAM system has four operating modes:
+
+a. The mode principally used during flight is known as the operational mode?
+
+b. The manual mode may only be selected on the ground?
+
+c. The advisory mode may only be selected during flight?
+
+d. The failure mode takes precedence over all other modes?
+
+16. Warning messages on CRT displays are required to be coloured:
+
+
+a. Red?
+
+b. Yellow?
+
+c. Cyan?
+
+d. Magenta?
+
+17. An armed mode on an EFIS EADI display will appear as:
+
+a. A magenta symbol?
+
+b. A white analogue feature?
+
+c. A white alphanumeric message?
+
+d. A cyan digital message?
+
+18. Predicted turbulence will appear on the EHSI weather radar display as an area of:
+
+a. Red or cyan?
+
+b. Red or magenta?
+
+c. White or magenta?
+
+d. Red or white?
+

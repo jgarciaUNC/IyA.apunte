@@ -1,0 +1,134 @@
+﻿High frequency (HF) radio provides aircraft with effective means of communication over long distance oceanic and trans-polar routes. In addition, global data communication has recently been made possible using strategically located HF data link (H FDL) ground stations. These provide access to ARINC and SIT A airline networks. HF communication is thus no longer restricted to ·oice and is undergoing a resurgence of interest due to the need to find a means of long distance data communication that will augment existing VHF and SATCOM data links.
+An aircraft HF radio system operates on spot frequencies within the HF spectrum. Unlike aircraft VHF radio, the spectrum is not divided mto a large number of contiguous channels but aircraft allocations are interspersed with many other services, including short wave broadcasting, fixed point-to-point, marine and land-mobile, =overnment and amateur services. This chapter describes the equipment used and the different modes in which it operates.
+
+5.1 HF range and propagation
+
+In the HF range (3 MHz to 30 MHz) radio waves propagate over long distances due to reflection from the ionised layers in the upper atmosphere.
+
+Due to variations in height and intensities of the ionised regions, different frequencies must be de at different times of day and night and for different paths. There is also some seasonal variation (particularly between winter and summer). Propagation may also be disturbed and enhanced during periods of intense solar activity.
+
+The upshot of this is that HF propagation has considerable vagaries and is far less predictable than propagation at VHF.
+
+Frequencies chosen for a particular radio path ;e usually set roughly mid-way between the lowest usable frequency (LUF) and the maximum usable frequency (MUF). The daytime LUF is usually between 4 to 6 MHz during the day, falling rapidly after sunset to around 2 MHz. The MUF is dependent on the season and sunspot cycle but is often between 8 MHz and 20 MHz.
+
+Hence a typical daytime frequency for aircraft communication might be 8 MHz whilst this might be as low as 3 MHz during the night. Typical ranges are in the region of 500 km to 2500 km and this effectively fills in the gap in VHF coverage (see Figure 5 . 1 ).
+
+As an example of the need to change frequencies during a 24-hour period, Figure 5 . 2 shows how the service provided by the Santa Maria HF oceanic service makes use of different parts of the HF spectrum at different times of the day and night. Note the correlation between the service availability chart shown in Figure 5 .2(a) and the typical variation in maximum usable frequency (MUF) for the radio path between Madrid and New York.
+
+The following HF bands are allocated to the aeronautical service:
+
+
+5.2	SSB modulation
+
+Unfortunately, the spectrum available for aircraft communications at HF is extremely limited. As a result, steps are taken to restrict the bandwidth of transmitted signals, for both voice and data.
+
+Double sideband (DSB) amplitude modulation requires a bandwidth of at least 7 kHz but this can be reduced by transmitting only one of the two sidebands. Note that either the upper sideband (USB) or the lower sideband (LSB) can be used because they both contain the same modulating signal information. In addition, it is possible to reduce (or ‘ suppress ‘) the carrier as this, in itself, does not convey any information.
+
+In order to demodulate a signal transmitted without a carrier it is necessary to reinsert the carrier at the receiving end (this is done in the demodulator stage where a beat frequency oscillator or carrier insertion oscillator replaces the missing carrier signal at the final intermediate frequency-see Figure 5 . 9). The absence of the carrier means that less power is wasted in the transmitter which consequently operates at significantly higher efficiency.
+
+Figure 5.3 shows the frequency spectrum of an RF signal using different types of amplitude modulation, with and without a carrier.
+
+In Figure 5 .3 (a) the mode of transmission is conventional double sideband (DSB) amplitude modulation with full-carrier. This form of modulation is used for VHF aircraft communications and was described earlier in Chapter 4.
+
+Figure 5.3(b) shows the effect of suppressing the carrier. This type of modulation is known as double sideband suppressed-carrier (DSB-SC).
+
+In practical DSB-SC systems the level of the carrier is typically reduced by 30 dB, or more.
+The DSB-SC signal has the same overall bandwidth as the DSB full-carrier signal but the reduction in carrier results in improved efficiency as well as reduced susceptibility to heterodyne interference.
+
+Figure 5.3(c) shows the effect of removing both the carrier and the upper sideband. The resulting signal is referred to as single sideband (SSB), in this case using only the lower sideband (LSB). Note how the overall bandwidth has been reduced to only around 3.5 kHz, i.e. half that of the comparable DSB AM signal shown in Figure 5 .3(a).
+
+Finally, F igure 5 . 3 (d) shows the effect of removing the carrier and the lower sideband.
+
+Once again, the resulting signal is referred to as single sideband (SSB), but in this case we are using only the upper sideband (USB). Here again, the overall bandwidth has been reduced to around 3 . 5 kHz. Note that aircraft HF communication requires the use of the upper sideband (USB). DSB AM may also be available but is now very rarely used due to the superior performance offered by SSB.
+
+Test your understanding 5.1
+
+1 . Explain why HF radio is used on trans-oceanic routes.
+
+2.	Explain why different frequencies are used for HF aircraft commun ications d uring the day and at nig ht.
+
+3.	State TWO advantages of using S
+
+5.3	SELCAL
+
+Selective calling (SELCAL) reduces the burden on the flight crew by alerting them to the need to respond to incoming messages. SELCAL is available at HF and VHF but the system is more used on HF. This is partly due to the intermittent nature of voice communications on long oceanic routes and partly due to the fact that squelch systems are more difficult to operate when using SSB because there is no transmitted carrier to indicate that a signal is present on the channel.
+
+The aircraft SELCAL system is defined in Annex 10 to the Convention on International Civil Aviation (ICAO), Volume 1 , 4th edition of 1 985 (amended 1 987). The system involves the transmission of a short burst of audio tones.
+
+Each transmitted code compnses two consecutive tone pulses, with each pulse containing two simultaneously transmitted tones.
+
+The pulses are of l second duration separated by an interval of about 0.2 seconds. To ensure proper operation of the SELCAL decoder, the frequency of the transmitted tones must be held to an accuracy of better than ± 0. 1 5%.
+
+SELCAL codes are uniquely allocated to particular aircraft by Air Traffic Control (ATC).
+
+As an example, a typical transmitted SELCAL code might consist of a 1 second burst of 3 1 2.6 Hz and 977.2 Hz followed by a pause of about 0 .2 seconds and a further 1 second burst of tone comprising 346.7 Hz and 977.2 Hz. Table 5 . 1 indicates that the corresponding transmitted SELCAL code is ‘AM-BM’ and only the aircraft with this code would then be alerted to the need to respond to an incoming message.
+
+The RF signal transmitted by the ground radio station should contain (within 3 dB) equal amounts of the two modulating tones and the combination of tones should result in a modulation envelope having a nominal modulation percentage as high as possible (and in no case less than 60%).
+
+The transmitted tones are made up from combinations of the tones listed in Table 5 . 1 .
+
+Note that the tones have been chosen so that they are not harmonically related (thus avoiding possible confusion within the SELCAL decoder when harmonics of the original tone frequencies might be present in the demodulated waveform).
+
+ARIN C's global high frequency data link (HFDL) coverage provides a highly cost-effective data link capability for carriers on remote oceanic routes, as well as the polar routes at high l atitudes where SATCOM coverage is unavailable. HFDL is lower in cost than SATCOM and many carriers are using HFDL instead of satellite services, or as a backup system. HFDL is still the only data link technology that works over the N orth Pole, providing continuous, uninterrupted data link coverage on the popular polar routes between North America and eastern Europe and Asia.
+
+The demand for HFDL has grown steadily since ARINC launched the service in 1 998, and today HFDL avionics are offered as original equipment by all the major airframe manufacturers. HFDL offers a cost-effective solution for global data link service. The demand for HFDL service is currently growing by more rhan several hundred aircraft per year.
+
+Advantages of HFDL can be summarised as:
+
+wide coverage due to the extremely long range of HF signals
+
+simultaneous coverage on several bands and frequencies (currently 60)
+
+multiple ground stations (currently 1 4) at strategic locations around the globe relatively simple avionics using well-tried technology
+
+rapid network acquisition
+
+exceptional network availability
+
+Disadvantages ofHFDL are:
+
+very low data rates (making the system unsuitable for high-speed wideband communications).
+
+As a result of the above, the vast majority of HFDL messages are related to airline operational control (AOC) (see Fig.ure 5 .4) but HFDL is also expected to play an important part in future air navigation systems (FANS) where it will provide a further means of data linking with an aircraft, supplementing VDL, GPS, and SATCOM systems. Note that SATCOM can support much faster data rates but it can also be susceptible to interruptions and may not available at high latitudes.HFDL uses phase shift keying (PSK) at data rates of 300, 600, 1 200 and 1 800 bps. The rate used is dependent on the prevailing propagation conditions. HFDL is based on frequency division multiplexing (FDM) for access to ground station frequencies and time division multiplexing (TDM) within individual communication channels. F igure 5 . 5 shows how the frequency spectrum of a typical HFDL signal at 300 bps compares with an HF voice signal.
+
+Figure 5.6 shows typical HFDL messages sent from the four aircraft shown in Figure 5 .7 to the Shannon HFDL ground station using the same mmunications channel. The radio path from one of the aircraft (LH8409) is illustrated in Figure 5.8. The first two of the messages shown Figure 5.6 are log-on requests and the aximum bit rate is specified in the header. In each log-on request, the aircraft is identified by its unique 24-bit ICAO address. Once logged on, the aircraft is allocated an 8-bit address code (AF hex in the case of the third message and AD hex· in the case of the fourth message). Each aircraft also transmits its current location data (longitude and latitude).
+
+The system used for HFDL data exchange is specified in ARINC 635. Each ground station transmits a frame called a ‘squitter’ every 32 seconds. The squitter frame informs aircraft of the system status, provides a timing reference and provides protocol control. Each ground station has a time offset for its squitters. This allows aircraft to jump between ground stations finding the best one before logging on. When passing traffic, dedicated TDM time slots are used. This prevents two aircraft transmitting at the same time causing data coUisions.
+
+5.5	HF radio equipment
+
+The block schematic of a simple HF transmitter/ receiver is shown in Figure 5 .9. Note that, whilst this equipment uses a single intermediate frequency (IF), in practice most modem aircraft HF radios are much more complex and use two or three intermediate frequencies.
+
+On transmit mode, the DSB suppressed carrier (Figure 5 .2b) is produced by means of a balanced modulator stage. The balanced modulator rej ects the carrier and its output just comprises the upper and lower sidebands. The DSB signal is then passed through a multiple­ stage crystal or mechanical filter. This filter has a very narrow pass-band (typically 3 .4 kHz) at the intermediate frequency (IF) and this rejects the unwanted sideband. The resulting S SB signal is then mixed with a signal from the digital frequency synthesiser to produce a signal on the wanted channel. The output from the mixer is then further amplified before being passed to the output stage. Note that, to avoid distortion, all of the stages must operate in linear mode.
+
+When used on receive mode, the incoming signal frequency is mixed with the output from the digital frequency synthesiser in order to produce the intermediate frequency signal. Unwanted adjacent channel signals are removed by means of another multiple-stage crystal or mechanical f ilter which has a pass-band similar to that used in the transmitter. The IF signal is then amplified before being passed to the demodulator.
+
+The (missing) carrier is reinserted in the demodulator stage. The carrier signal is derived from an accurate crystal controlled carrier oscillator which operates at the IF frequency. The recovered audio signal from the demodulator is then passed to the audio amplifier where it is amplified to an appropriate level for passing to a loudspeaker.
+
+The typical specification for an aircraft HF radio is shown in Table 5 .2. One or two radios of this type are usually fitted to a large commercial aircraft (note that at least one HF radio is a requirement for any aircraft following a trans­ oceanic route). Figure 5 . 1 0 shows the flight deck location of the HF radio controller.
+
+Test your understanding 5.2
+
+Explain how H F data link (HFDL) differs from VHF data link (VOL). Under what circumstances is HFDL used and what advantages does it offer?
+
+Explain briefly how an aircraft logs on to the HFDL system. How are data collisions avoided?
+
+5.6	HF antennas and coupling units
+
+External wire antennas were frequently used on early aircraft. Such antennas would usually run from the fuselage to the top of the vertical stabiliser and they were sufficiently long to permit resonant operation on one or more of the aeronautical HF bands. Unfortunately this type of antenna is unreliable and generally unsuitable for use with a modern high-speed passenger aircraft.
+
+The use of a large probe antenna is unattractive due to its susceptibility to static discharge and lightning strike. Hence an alternative solution in which the HF antenna is protected within the airframe is highly desirable. Early experiments (see Figure 5 . 1 3) showed that the vertical stabiliser (tail fin) would be a suitable location and is now invariably used to bouse the HF antenna and its associated coupling unit on most large transport aircraft-see Figures 5 . 1 1 and 5 . 1 2.
+
+Due to the restriction in available space (which mitigates against the use of a resonant antenna such as a quarter-wave Marconi antenna-see page 24) the HF antenna is based on a notch which uses part of the airframe in order to radiate effectively. The notch itself has a very high-Q factor and its resistance and reactance varies very widely over the operating frequency range (i.e. 3 MHz to 24 MHz). The typical variation of standing wave ratio (SWR-see page 33) against frequency for an HF notch antenna is shown in Figure 5 . 1 4. For comparison, the variation of SWR with frequency for a typical quarter-wave VHF blade antenna is shown in Figure 5 . 1 5 .
+
+From Figures 5 . 1 4 and 5 . 1 5 it should be obvious that the HF antenna, whilst well matched at 2 1 MHz, would be severely mismatched to a conventional 50 Q feeder/transmitter at most other HF frequencies. Because of this, and because the notch antenna is usually voltage fed, it is necessary to use an HF coupling/tuning unit between the HF radio feeder and the notch antenna. This unit is mounted in close proximity to the antenna, usually close to the top of the vertical stabiliser (see Figure 5 . 1 2). Figure 5 . 1 6 bows the effect of using a coupling/tuning unit on the SWR-frequency characteristic of the same notch antenna that was used in Figure 5 . 1 4. Note how the SWR has been reduced to less than 2 : 1 for most (if not all) o f the HF range.
+
+The tuning adjustment of HF antenna coupler is entirely automatic and only requires a brief signal from the transmitter to retune to a new HF frequency. The H F antenna coupler unit incorporates an SWR bridge (see page 3 5 ) and a feedback control system (see Figure 5 . 1 7) to adjust a roller coater inductor ( L l ) and high­ voltage vacuum variable capacitor (C 1 ) together with a number of switched high-voltage capacitors (C l to C4). The internal arrangement of a typical HF antenna coupler is shown in Figures 5 . 1 8 and 5 . 1 9. The connections required between the HF antenna coupler, HF radio and ontrol unit are shown in Figure 5 .20.
+
+Voltages present in the vicinity of the HF antenna (as well as the field radiated by it) can be extremely dangerous. It is therefore essential to avoid contact with the antenna and to maintain a afe working distance from it (at least 5 metres) whenever the HF radio system is ‘ live ‘ .
+
+Test your understanding 5.3
+
+Explain the function of an HF antenna coupler.
+
+What safety precautions need to be observed when accessing this unit?

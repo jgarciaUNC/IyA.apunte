@@ -1,0 +1,109 @@
+% Version 2022
+%
+
+\chapter*{Datos de la Asignatura}
+\label{chap:00.datos.de.IyA}
+  \addcontentsline{toc}{chapter}{Datos de la Asignatura}
+
+  \includepdf[pages=-, fitpaper=false, scale=0.90, %landscape=true,
+  offset = 0 -20,
+  pagecommand={\thispagestyle{fancy}}]
+  {00.Datos.IyA/Instrumentos_Y_Avionica.pdf}
+
+
+\section{Días y horarios de clases}
+\label{sec:dias+horarios.clases}
+
+La asignatura se dicta de manera presencial en el año 2022
+los días jueves de 17:30 hs a 22:00 hs.
+
+%Se emplea la plataforma Google Classroom.% el link a la misma es:
+
+%\url{https://classroom.google.com/c/MzY3MDEyNzQ1MjA2?cjc=wbdwdwc}
+
+
+\section*{Adecuación transitoria de la metodología de cursada  y evaluación segundo semestre 2022}
+\label{00.Adecuacion.transitoria}
+  \addcontentsline{toc}{section}{Adecuación transitoria de la metodología de cursada   y evaluación  segundo semestre 2022}
+
+
+\subsection*{Modalidad de enseñanza} 
+
+Clases con PRESENCIALIDAD FÍSICA entre los docentes y los alumnos.
+
+Material de estudio, asignación de tareas mediante Google Classroom
+
+\subsection*{Modalidad de evaluación}
+
+Las evaluaciones serán con presencialidad física de los alumnos/as.
+
+Cantidad de parciales dos (2).
+
+Las/los estudiantes que hayan desaprobado un (1) examen parcial teórico/práctico, si el restante examen parcial fue aprobado, tienen derecho a un (1) recuperatorio, cuya nota reemplazará a la del examen parcial reprobado.
+
+Coloquio  tomados con presencialidad física de los alumnos/as. Cantidad uno (1).
+
+\subsection*{Condiciones Transitorias de Regularidad}
+
+\begin{itemize}
+\item Estar correctamente matriculado para el cursado de la asignatura
+\item Aprobar con nota no inferior a 4 (cuatro) cada uno de los  dos (2) exámenes parciales. 
+
+\item Presentar y aprobar los trabajos prácticos
+\end{itemize}
+
+\subsection*{Condiciones Transitorias de Aprobación definitiva (Promoción) }
+
+
+\begin{itemize}
+\item Haber aprobado las correlativas previas o aprobar las que se encuentren pendientes dentro del plazo de validez de la regularidad.
+
+\item  Estar correctamente matriculado para el cursado de la
+  asignatura.
+\item Aprobar con nota no inferior a 4 (cuatro) cada uno de los dos (2) exámenes parciales. 
+\item Aprobar un coloquio integrador con nota no inferior a 4 (cuatro)
+\item Presentar y aprobar los trabajos prácticos
+\end{itemize}
+
+
+
+\section*{Cronograma para el dictado de la Asignatura a\~no 2021}
+\label{sec:00.cronograma}
+  \addcontentsline{toc}{section}{Cronograma para el dictado a\~no 2022}
+
+  \begin{itemize}
+  \item Capítulo 1. Paneles de Instrumentos (García) 4/8/2022
+  \item Capítulo 6. Radionavegación (Garcia) 11/8/2022
+  \item Capítulo 7. Directores y control automático de vuelo ( García)     18/8/2022
+  \item Capítulo 9. Síntesis de las comunicaciones de a bordo (Garcia)     25/8/2022
+  \item Capítulo 8. Navegadores (Garcia) 01/9/2022
+  \item Capítulo 8. Navegadores (Garcia) 08/9/2022
+  \item Capítulo 8. Navegadores (GPS, nav. inerc.) (Giraudo) 15/9/2022
+    
+  \item \textbf{Parcial 01,  22/9/2022 Abarca Capítulos 1, 6, 7, 8, 9}
+
+    \item Capítulo 4. Instrumentos de control. 
+        Capítulo 3. Instrumentos de motores (Giraudo) 29/9/2022
+  
+  \item Capítulo 2. Medición de datos de aire (Galeasso) 6/10/2022
+  \item Capítulo 5. Instrumentos giroscópicos (Galeasso) 13/10/2022
+
+  \item {\bf Parcial 02,  20/10/2022 Abarca Capítulos 2, 3, 4 y 5}
+
+  \item \textbf{Recuperatorios Parciales. Entrega de Trabajos Prácticos. 27/10/2022}
+
+  \item \textbf{Coloquio,  3/11/2022 Abarca todo el programa}
+  \item \textbf{Coloquio, 10/11/2022 Abarca todo el programa}
+  \end{itemize}
+
+
+\section*{Docentes}
+\label{00.docentes}
+  \addcontentsline{toc}{section}{Docentes}
+
+  \begin{tabular}{llm{0.5\textwidth}} \rowcolor{yellow!30}
+ {\bf Docente} & {\bf Correo electr\'onico} & {\bf D\'ia, horario consulta, medio de consulta} \\ \rowcolor{cyan!20}
+  Ing. Jorge Garcia & jgarcia@unc.edu.ar & D\'ia Mi\'ercoles, de 15 a 17 hs, correo electr\'onico, google meet \\ 
+  Ing. Angel Galeasso & angel.galeasso@unc.edu.ar & D\'ia Mi\'ercoles, de 16 a 17 hs, correo electr\'onico, google meet    \\ \rowcolor{cyan!20} 
+  Ing. Pedro Giraudo  & pedrogiraudo@unc.edu.ar &  D\'ia Mi\'ercoles, de 17:30 a 19 hs, correo electr\'onico, google meet, zoom     \\
+\end{tabular}

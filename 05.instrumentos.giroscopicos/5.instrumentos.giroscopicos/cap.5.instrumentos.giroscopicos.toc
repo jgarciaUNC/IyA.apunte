@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Cap\'itulo 5. Instrumentos Girosc\'opicos}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Propiedades girosc\'opicas aplicadas al instrumental aeron\'autico de a bordo}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Indicadores de virajes, neum\'aticos, de CC y CA}{9}{0}{1}
+\beamer@subsectionintoc {1}{3}{Indicadores de actitud en dos ejes con gir\'oscopo integrado, y remoto}{15}{0}{1}
+\beamer@subsectionintoc {1}{4}{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}{16}{0}{1}

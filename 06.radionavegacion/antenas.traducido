@@ -1,0 +1,476 @@
+Antenas
+
+Puede que no sea aparente de una inspección del perfil externo de un avión que la mayoría de los aviones grandes llevan varias docenas de antenas de diferentes tipos. Para ilustrar este punto, la Figura 2.1 muestra solo algunas de las antenas transportadas por un Boeing 757. Lo que debería ser evidente a partir de esto es que muchas de las antenas son de la variedad de bajo perfil que es esencial para reducir la resistencia. Las antenas se utilizan tanto para la transmisión como para la recepción. Una antena transmisora u200bu200bconvierte la energía eléctrica de alta frecuencia que se le suministra en energía electromagnética que se lanza o irradia al espacio que rodea la antena.
+
+Una antena receptora captura la energía electromagnética en el espacio circundante y la convierte en energía eléctrica de alta frecuencia que luego se pasa al sistema receptor. La ley de reciprocidad indica que una antena tendrá la misma ganancia y propiedades direccionales cuando se usa para la transmisión que cuando se usa para la recepción.
+
+2.1 El radiador isotrópico
+
+La forma más fundamental de antena (que no se puede realizar en la práctica) es el radiador isotrópico. Este tipo teórico de antena se usa a menudo con fines de comparación y como referencia al calcular la ganancia y las características direccionales de una antena real. Las antenas isotrópicas irradian uniformemente en todas las direcciones. En otras palabras, cuando se coloca en el centro de una esfera, dicha antena iluminaría la superficie interna de la esfera de manera uniforme, como se muestra en la Figura 2.2 (a). Todas las antenas prácticas tienen características direccionales como se ilustra en la Figura 2.2 (b). Además, tales características pueden ser más o menos pronunciadas de acuerdo con la aplicación de la antena. Examinaremos la ganancia y la directividad de la antena con más detalle más adelante, pero antes de hacerlo, le presentaremos algunos tipos comunes de antena.
+
+2.2 El dipolo de media onda
+
+
+El dipolo de media onda es uno de los tipos de antena más fundamentales. La antena dipolo de media onda (Figura 2.3) consiste en un solo conductor que tiene una longitud igual a la mitad de la longitud de la onda que se transmite o recibe. El conductor se divide en el centro para permitir la conexión al alimentador. En la práctica, debido a los efectos de capacitancia entre los extremos de la antena y tierra, la antena se corta un poco más de media longitud de onda.
+
+La longitud de la antena (de extremo a extremo) es igual a la mitad de la longitud de onda, por lo tanto:
+
+Ahora desde v u003d f Î »podemos concluir que, para un dipolo de media onda:
+
+Tenga en cuenta que l es la longitud eléctrica de la antena en lugar de su longitud física real. Los efectos finales o los efectos de capacitancia en los extremos de la antena requieren que reduzcamos la longitud real de la antena, y generalmente se requiere una reducción del 5% en la longitud para que una antena resuene en el centro de su rango de sintonización diseñado. La Figura 2.4 muestra la distribución de corriente y voltaje a lo largo de una antena dipolo de media onda. La corriente es máxima en el centro y cero en los extremos. El voltaje es cero en el centro y máximo en los extremos. Esto implica que la impedancia no es constante a lo largo de la antena, sino que varía desde un máximo en los extremos (voltaje máximo, corriente mínima) hasta un mínimo en el centro.
+
+La antena dipolo tiene propiedades direccionales, ilustradas en las Figuras 2.5 a 2.7. La Figura 2.5 muestra el patrón de radiación de la antena en el plano del campo eléctrico de la antena (es decir, el plano del campo E), mientras que la Figura 2.6 muestra el patrón de radiación en el plano del campo magnético de la antena (es decir, el H -avión de campo).
+
+La gráfica 3D que se muestra en la Figura 2.7 combina estas dos gráficas en una sola forma de "nuez de molde". Las cosas a tener en cuenta en estos tres diagramas son que:
+
+en el caso de la Figura 2.5, la radiación mínima se produce a lo largo del eje de la antena, mientras que las dos zonas de radiación máxima están a 90º (es decir, son `` normales a '') los elementos dipolos
+
+En el caso de la Figura 2.6, la antena se irradia uniformemente en todas las direcciones.
+
+Por lo tanto, un dipolo vertical tendrá características omnidireccionales, mientras que un dipolo horizontal tendrá un patrón de radiación bidireccional. Este es un punto importante como veremos más adelante.
+
+Ejemplo 2.1
+
+Determine la longitud de una antena dipolo de media onda para usar a una frecuencia de 150 MHz.
+
+La longitud de un dipolo de media onda para 150 MHz se puede determinar a partir de:
+
+Pon a prueba tu comprensión 2.1
+
+Determine la longitud de un dipolo de media onda para frecuencias de (a) 121 MHz y (b) 11.25 MHz.
+
+2.3 Impedancia y resistencia a la radiación.
+
+Debido a que el voltaje y la corriente aparecen en una antena (un minuto de voltaje y corriente en el caso de una antena receptora y un voltaje y corriente mucho más grandes en el caso de una antena transmisora) se dice que una antena tiene impedancia. Aquí vale la pena recordar que la impedancia es una mezcla de resistencia, R y reactancia, X, ambas medidas en ohmios (Î ©). De estas dos cantidades, X varía con la frecuencia mientras que R permanece constante. Este es un concepto importante porque explica por qué las antenas a menudo están diseñadas para funcionar en un rango restringido de frecuencias.
+
+La impedancia, Z, de una antena es la relación del voltaje, E, a través de sus terminales con la corriente, I, que fluye en ella. Por lo tanto:
+
+Puede deducirse de la figura 2.7 que la impedancia en el centro del dipolo de media onda debería ser cero. En la práctica, la impedancia suele estar entre 70 Î © y 75 Î ©. Además, en la resonancia, la impedancia es puramente resistiva y no contiene ningún componente reactivo (es decir, inductancia y capacitancia). En este caso, X es insignificante en comparación con R. También vale la pena señalar que la resistencia de CC (o resistencia óhmica) de una antena suele ser muy pequeña en comparación con su impedancia, por lo que puede ignorarse. Ignorando la resistencia de CC de la antena, la impedancia de una antena puede considerarse como su resistencia a la radiación, R r (ver Figura 2.8).
+
+La resistencia a la radiación es importante porque es a través de esta resistencia que la energía eléctrica se transforma en energía electromagnética radiada (en el caso de una antena transmisora) y la energía electromagnética incidente se transforma en energía eléctrica (en el caso de una antena receptora).
+
+El circuito equivalente de una antena se muestra en la Figura 2.9. Los tres componentes conectados en serie que conforman la impedancia de la antena son:
+
+la resistencia DC, R d.c.
+
+la resistencia a la radiación, R r
+
+la reactancia 'off-tune', X.
+
+Tenga en cuenta que cuando la antena se opera a una frecuencia que se encuentra en el centro de su banda de paso (es decir, cuando está sintonizada) la reactancia fuera de sintonía es cero. También vale la pena tener en cuenta que la resistencia a la radiación de un dipolo de media onda varía según su altura sobre el suelo. La impedancia de 70 Î a 75 Î © normalmente asociada con un dipolo de media onda solo se realiza cuando la antena se monta a una elevación de 0.2 longitudes de onda, o más.
+
+Pon a prueba tu comprensión 2.2
+
+Se opera un dipolo de media onda en su frecuencia central (cero reactancia sintonizada). Si la antena tiene una resistencia de pérdida de CC total de 2.5 Î © y se alimenta con una corriente de 2 A y un voltaje de 25 V, determine:
+
+(a) la resistencia a la radiación de la antena
+
+(b) la pérdida de potencia en la antena.
+
+2.4 Potencia radiada y eficiencia
+
+En el caso de una antena transmisora, la potencia radiada, P r, producida por la antena viene dada por:
+
+donde I a es la corriente de la antena, en amperios, y R r es la resistencia a la radiación en ohmios. En la mayoría de las aplicaciones prácticas, es importante garantizar que P r se maximice, y esto se logra garantizando que R r sea mucho mayor que la resistencia de CC de los elementos de antena. La eficiencia de una antena viene dada por el
+relación:
+
+Donde la pérdida de P es la potencia disipada en la resistencia de CC presente. En este punto, vale la pena declarar que, si bien la eficiencia es de vital importancia en el caso de una antena transmisora, generalmente no es importante en el caso de una antena receptora. ¡Esto explica por qué una longitud de cable aleatoria puede ser una buena antena receptora pero no una buena antena transmisora!
+
+Ejemplo 2.2
+
+Una antena transmisora u200bu200bde HF tiene una resistencia a la radiación de 12 Î ©. Si se le suministra una corriente de 0.5 A, determine la potencia radiada. Ahora:
+
+P r u003d I a2 Ã— R r u003d (0.5) 2 Ã— 12 u003d 0.25 Ã— 12 u003d 4 W
+
+Ejemplo 2.3
+
+Si la antena del ejemplo 2.2 tiene una resistencia de CC de 2 Î ©, determine la pérdida de potencia y la eficiencia de radiación de la antena.
+
+Desde el circuito equivalente que se muestra en la Figura 2.9, la misma corriente fluye en la resistencia de CC, R d.c. , como fluye en la resistencia a la radiación de la antena, R r.
+
+En este ejemplo, ¡más del 10% de la potencia de salida se desperdicia realmente! También vale la pena señalar que para garantizar un alto valor de eficiencia de radiación, la resistencia a la pérdida debe mantenerse muy baja en comparación con la resistencia a la radiación.
+
+2.5 ganancia de antena
+
+La intensidad de campo producida por una antena es proporcional a la cantidad de corriente que fluye en ella. Sin embargo, dado que diferentes tipos de antena producen diferentes valores de intensidad de campo para el mismo nivel de potencia de RF aplicado, atribuimos una ganancia de potencia a la antena. Esta ganancia de potencia se especifica en relación con una antena de referencia (a menudo un dipolo de media onda o un radiador isotrópico teórico), y generalmente se especifica en decibelios (dB): consulte el Apéndice 4.
+
+Con el fin de distinguir entre los dos tipos de antena de referencia, utilizamos los subíndices i y d para denotar antenas de referencia dipolo isotrópicas y de media onda, respectivamente. Como ejemplo, una antena que tiene una ganancia de 10 dB i produce una ganancia de potencia diez veces mayor en comparación con un radiador isotrópico teórico. Del mismo modo, una antena que tiene una ganancia de 13 dB d produce veinte veces la ganancia de potencia en comparación con un dipolo de media onda. Dicho de otra manera, para mantener la misma intensidad de campo en un punto dado, ¡tendría que aplicar 20 W a un dipolo de media onda o solo 1 W a la antena en cuestión! Algunos valores comparativos de ganancia de antena se muestran en la página 38.
+
+2.6 La antena de haz Yagi
+
+Originalmente inventada por dos ingenieros japoneses, Yagi y Uda, la antena Yagi se ha mantenido extremadamente popular en una amplia variedad de aplicaciones y, en particular, para antenas fijas de recepción de radio FM y TV doméstica. Para explicar en términos simples cómo funciona la antena Yagi, utilizaremos una analogía de luz simple. Una lámpara de filamento ordinaria irradia luz en todas las direcciones. Al igual que una antena, la lámpara convierte la energía eléctrica en energía electromagnética. ¡La única diferencia real es que podemos ver la energía que produce!
+
+La acción de la lámpara de filamento es comparable con nuestra antena dipolo fundamental. En el caso del dipolo, se producirá radiación electromagnética alrededor de los elementos dipolo (en tres dimensiones, el patrón de radiación tomará forma de rosquilla). En el plano que hemos mostrado en la figura 2.10 (c), el patrón direccional será una figura de ocho que tiene dos lóbulos de igual tamaño. Para concentrar la radiación en solo uno de los lóbulos de radiación, simplemente podríamos colocar un espejo reflector a un lado de la lámpara de incandescencia. La radiación se reflejará (durante la cual la luz reflejada sufrirá un cambio de fase de 180 °), y esto reforzará la luz en un lado de la lámpara de incandescencia. Este elemento se denomina reflector y se dice que es `` parásito '' (es decir, en realidad no está conectado al alimentador). El reflector debe cortarse un poco más que el elemento dipolo accionado. El patrón direccional resultante ahora solo tendrá un lóbulo principal porque la energía irradiada se concentrará en solo la mitad del patrón de la figura de ocho con el que comenzamos).Para lograr el mismo efecto en nuestro sistema de antena, necesitamos colocar un elemento conductor aproximadamente a un cuarto de longitud de onda detrás del elemento dipolo. 
+
+Continuando con nuestra analogía óptica, para concentrar aún más la energía de la luz en un haz de flecha, podemos agregar una lente frente a la lámpara. Esto tendrá el efecto de doblar la luz que emerge de la lámpara hacia la línea normal (ver Figura 2.12). Para lograr el mismo efecto en nuestro sistema de antena, necesitamos colocar un elemento conductor, conocido como director, en el otro lado del dipolo y aproximadamente a un cuarto de longitud de onda. Una vez más, este elemento es parásito, pero en este caso debe cortarse un poco más corto que el elemento dipolo accionado. El patrón direccional resultante ahora tendrá un lóbulo mayor más estrecho a medida que la energía se concentre en la dirección normal (es decir, en ángulo recto con los elementos dipolares). La antena resultante se conoce como antena Yagi de tres elementos, ver Figura 2.13.
+
+Si se desea, se pueden agregar directores adicionales para aumentar aún más la ganancia y reducir el ancho del haz (es decir, el ángulo entre los puntos de potencia de media potencia o - 3 dB en la característica polar) de las antenas Yagi. Algunas cifras comparativas de ganancia y ancho de haz se muestran en la página 38.
+
+2.7 Características direccionales
+
+La ganancia de la antena se logra a expensas de la respuesta direccional. En otras palabras, a medida que aumenta la ganancia de una antena, su patrón de radiación se vuelve más limitado. En muchos casos, este es un efecto deseable (por ejemplo, en el caso de comunicaciones de punto fijo - punto). En otros casos (por ejemplo, una estación base para usar con varias estaciones móviles) es claramente indeseable.
+
+Las características direccionales de una antena generalmente se presentan en forma de un gráfico de respuesta polar. Este diagrama permite a los usuarios determinar las direcciones en las que se puede lograr la ganancia máxima y mínima y permite colocar la antena para obtener un efecto óptimo. El diagrama polar para un dipolo horizontal se muestra en la Figura 2.16. Tenga en cuenta que hay dos lóbulos principales en la respuesta y dos nulos profundos.
+
+Por lo tanto, se dice que la antena es bidireccional. La figura 2.17 muestra el diagrama polar para un dipolo más un reflector. La radiación de esta antena se concentra en un solo lóbulo mayor, y hay un solo nulo en la respuesta a 180º a la dirección de máxima radiación.
+
+Una alternativa para mejorar la ganancia pero mantener un ancho de haz razonablemente amplio es apilar dos antenas una encima de otra (ver Figura 2.20). Tal disposición generalmente proporcionará una ganancia de 3 dB sobre una sola antena, pero tendrá el mismo ancho de haz. Una desventaja de los arreglos apilados es que requieren arreglos precisos de fase y correspondencia.
+
+Como regla general, se puede producir un aumento de ganancia de 3 dB cada vez que se duplica el número de elementos. Por lo tanto, una antena de dos elementos ofrecerá una ganancia de aproximadamente 3 dBd, una antena de cuatro elementos producirá 6 dBd, un Yagi de ocho elementos obtendrá 9 dBd, y así sucesivamente.
+
+
+Pon a prueba tu comprensión 2.3
+
+Identifique la antena que se muestra en la Figura 2.19. Dibuje un patrón de radiación horizontal típico para esta antena.
+
+Pon a prueba tu comprensión 2.4
+
+Identifique la antena que se muestra en la Figura 2.20. Dibuje un patrón de radiación horizontal típico para esta antena.
+
+Pon a prueba tu comprensión 2.5
+
+La figura 2.18 muestra la respuesta polar de una antena de haz Yagi (la ganancia se ha especificado en relación con un dipolo de referencia estándar). Usa el diagrama polar para determinar:
+
+(a) la ganancia de la antena
+(b) el ancho del haz de la antena
+(c) el tamaño y la posición de cualquier 'lóbulo lateral'
+(d) la relación `` de adelante hacia atrás '' (es decir, el tamaño del lóbulo principal en comparación con la respuesta de la antena a 180 °).
+
+2.8 Otras antenas prácticas
+
+Muchas formas prácticas de antena se utilizan en aeronaves y aplicaciones relacionadas con la aviación. Los siguientes son algunos de los tipos más comunes (se introducirán otras antenas en capítulos posteriores).
+
+2.8.1 Antenas verticales de cuarto de onda
+
+Una de las antenas más simples para construir es la antena de cuarto de onda (también conocida como antena Marconi).
+
+Dichas antenas producen un patrón de radiación omnidireccional en el plano horizontal e irradian señales polarizadas verticalmente. Se pueden producir antenas prácticas de cuarto de onda para las bandas de alta HF y VHF, pero su longitud es prohibitiva para su uso en las bandas de baja HF y LF. Para producir un patrón de radiación razonablemente plano (y evitar que la radiación máxima se dirija hacia el espacio) es esencial incorporar un plano de tierra efectivo. En VHF, esto se puede lograr utilizando solo cuatro elementos radiales de cuarto de onda a 90 ° de la radiación vertical
+elemento (ver Figura 2.21). Los cuatro radiales están conectados a tierra en el punto de alimentación a la pantalla externa del cable de alimentación coaxial.
+
+Se puede lograr una ligera mejora en la disposición de la Figura 2.21 inclinando los elementos radiales a aproximadamente 45º (ver Figura 2.22). Esta disposición produce un patrón de radiación más plano. En HF en lugar de VHF, el plano de tierra puede ser la tierra misma. Sin embargo, para reducir la resistencia de la tierra y aumentar la eficiencia de la antena, generalmente es necesario incorporar algunos radiales de tierra enterrados (ver Figura 2.23). Estos cables radiales consisten simplemente en longitudes de cuarto de onda de cable de cobre trenzado aislado conectado a tierra a la pantalla exterior del alimentador coaxial en el punto de alimentación de la antena.
+
+2.8.2 Antenas verticales de media onda
+
+Una alternativa al uso de un elemento radiante de cuarto de onda es la de un elemento de media onda. Este tipo de antena debe ser alimentada por voltaje (en lugar de corriente alimentada como es el caso con la antena de cuarto de onda). Una antena alimentada por voltaje requiere el uso de un transformador resonante conectado entre el alimentador coaxial de baja impedancia y el extremo de la antena. Tal disposición es propensa a pérdidas ya que requiere componentes de alta calidad y baja pérdida. También puede requerir un ajuste cuidadoso para obtener resultados óptimos y, por lo tanto, generalmente se prefiere una antena de cuarto de onda o de tres cuartos de onda.
+
+2.8.3 antenas verticales de 5/8 de onda
+
+Las antenas verticales de 5/8 de onda proporcionan una solución compacta a la necesidad de una antena VHF / UHF omnidireccional que ofrece algo de ganancia sobre una antena básica de cuarto de onda. De hecho, una antena vertical de 5/8 de onda se comporta eléctricamente como una antena de onda de tres cuartos (es decir, se alimenta de corriente desde la parte inferior y hay un voltaje máximo en la parte superior). Para hacer coincidir la antena, se incorpora una bobina de carga inductiva en el punto de alimentación. Una antena vertical típica de 5/8 de onda con pendiente
+el plano de tierra se muestra en la Figura 2.24.
+
+2.8.5 reflectores parabólicos
+
+La necesidad de una ganancia muy alta junto con una respuesta direccional en frecuencias UHF o microondas a menudo se satisface mediante el uso de un reflector parabólico junto con un elemento radiante colocado en el punto de alimentación del plato (ver Figura 2.26). Para ser eficiente, el diámetro de una superficie reflectora parabólica debe ser grande en comparación con la longitud de onda de la señal. La ganancia de dicha antena depende de varios factores, pero es directamente proporcional a la relación de diámetro a longitud de onda.
+
+El principio de la antena reflectora parabólica se muestra en la Figura 2.27. Las señales que llegan desde un transmisor distante se reflejarán para que pasen a través del punto focal de la superficie parabólica (como se muestra). Con una superficie parabólica convencional, el punto focal se encuentra directamente en el eje directamente en frente de la superficie reflectante. ¡Colocar un elemento radiante (junto con su estructura de soporte) en el punto focal puede tener el efecto indeseable de oscurecer parcialmente la superficie parabólica! Para superar este problema, la superficie puede modificarse de modo que el foco esté desplazado del eje central. Es importante darse cuenta de que la superficie reflectante de una antena reflectora parabólica es solo
+parte de la historia Igualmente importante (y crucial para la efectividad de la antena) es el método de alimentación de la superficie parabólica. Lo que se requiere aquí es un medio de iluminar o capturar señales de toda la superficie parabólica. La figura 2.28 muestra una disposición de alimentación típica basada en una guía de ondas (consulte la página 48), un dipolo de media onda y un reflector. El dipolo y el reflector tienen un ancho de haz de alrededor de 90 °, y esto es ideal para iluminar la superficie parabólica. El dipolo y el reflector se colocan en el punto focal del plato. Esta disposición de alimentación se usa a menudo para antenas reflectoras de plano focal donde el borde exterior del plato está en el mismo plano que el dipolo de media onda más la alimentación del reflector. En la Figura 2.29 se muestra una disposición alternativa que utiliza una guía de onda y un radiador de bocina pequeña (consulte la página 37). La antena de bocina ofrece una ganancia modesta (generalmente de 6 a 10 dB, más o menos), y esto puede ser instrumental para aumentar la ganancia general de la disposición. Dichas antenas generalmente no son del tipo de plano focal, y la alimentación de la bocina generalmente requerirá soporte por encima de la superficie parabólica.
+
+Pon a prueba tu comprensión 2.6
+
+Identifique un tipo de antena adecuado para su uso en las siguientes aplicaciones. Dé razones para sus respuestas:
+
+(a) una estación terrena satelital SHF
+
+(b) una baliza no direccional de baja frecuencia
+
+(c) un sistema de comunicación del campo de aviación
+
+(d) un sistema de comunicación HF de largo alcance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

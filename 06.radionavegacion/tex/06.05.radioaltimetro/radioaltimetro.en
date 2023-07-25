@@ -1,0 +1,30 @@
+The low range radio altimeter (LRRA) is a self­
+contained vertically directed primary radar
+system operating in the 4.2 to 4.4 GHz band.
+Airborne equipment comprises a transmitting/
+receiving antenna, LRRA transmitter/receiver and
+a flight deck indicator. Most aircraft are fitted
+with two independent systems. Radar energy is
+directed via a transmitting antenna to the ground;
+some of this energy is reflected back from the
+ground and is collected in the receiving antenna,
+see Figure 1 2.9.
+Two types of LRRA methods are used to
+determine the aircraft' s radio altitude. The pulse
+modulation method measures the elapsed time
+taken for the signal to be transmitted and
+received; this time delay is directly proportional
+to altitude. The frequency modulated, continuous
+wave (FM/CW) method uses a changeable FM
+signal where the rate of change is fixed. A
+proportion of the transmitted signal is mixed with
+the received signal; the resulting beat signal
+frequency is proportional to altitude.
+Radio altitude is· either displayed on a
+dedicated instrument, or incorporated into an
+electronic display, see Figure 1 2 .9. Note that
+radio altitude used for approach and landing is
+only indicated from 2,500 feet. The decision
+height is selected during ILS approaches 
+
+

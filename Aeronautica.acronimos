@@ -1,0 +1,455 @@
+Tomado de:
+http://aviaciond.com/abreviaturas-en-aviacion-y-aeronautica-civil/
+
+
+A
+
+A 429 ARINC 429 Data Bus
+A 629 ARINC 629 Data Bus
+A 664 ARINC 664 100Mbits/sec Fast Switched Ethernet
+AC Advisory Circular (FAA)
+AAWWS Airborne Adverse Weather Weapons System (Apache)
+AC Alternating Current
+ACE Actuator Control Electronics
+ACM Air Cycle Machine
+ACMP AC Motor Pump
+ACT Active Control Technology
+ACT Auxiliary Center Tank (Airbus)
+A/D Analogue to Digital
+ADM Air Data Module
+ADP Air Driven Pump
+ADU Actuator Drive Unit
+ADV Air Defence Variant (Tornado)
+AFCS Automatic Flight Control System
+AFDC Autopilot Flight Director Computer (B777)
+AFTI Advanced Fighter Technology Integration (F-16)
+AIAA American Institute of Aeronautics & Astronautics
+Aj Jet Pipe Area
+AMAD Airframe-Mounted Accessory Drive
+AMB Active Magnetic Bearing
+Amp or A Ampere
+AoA Angle of Attack
+APB Auxiliary Power Breaker
+APU Auxiliary Power Unit
+AFRP Aramid Fiber Reinforced Plastic
+ARINC Air Radio Inc
+ART Actuator Remote Terminal (B-2 flight control system)
+ASCB Avionics Standard Communications Bus
+ASI Airspeed Indicator
+ASIC Application Specific Integrated-Circuit
+ASM Air Separation Module
+AS/PCU Air Supply/Pressurisation Control Unit (B777)
+ATA Air Transport Association
+ATC Air Traffic Control
+ATF Advanced Tactical Fighter
+ATM Air Transport Management
+ATP Advanced Turbo-Prop
+ATR Air Transport Radio
+AUW All-Up Weight
+AVM Airplane Vibration Monitoring
+B
+
+B Blue (as in blue hydraulic system)
+BAES BAE SYSTEMS
+Batt Battery
+BC Bus Controller (MIL-STD-1553B)
+BCF Bromo-Chloro-diFluoro-Methane
+BCRU Battery Charger Regulator Units (regulated TRUs used on the A380)
+BIT Built-In Test
+BOV Blow Off Valve
+BPCU Bus Power Control Unit
+BSCU Brake System Control Unit
+BTB Bus Tie Breaker
+BTMU Brake Temperature Monitoring Unit
+C
+
+C Centigrade
+C Centre
+C Collective
+CAA Civil Aviation Authority
+CANbus Commercial-Off-The-Shelf data bus (originally designed by Bosch for automobile applications)
+CASA Construcciones Aeronauticas Sociedad Anonima
+CBLTM Control-By-LightTM (Raytheon proprietary fibre optic bus)
+CCA Common Cause Analysis
+CCB Converter Control Breaker (B777)
+CCR Common Computing Resource (B787)
+CDA Concept Demonstration Aircraft
+CDR Critical Design Review
+CDU Cockpit Display Units
+CFRP Carbon Fiber Reinforced Plastic
+CG Centre of Gravity
+CHRG Charger
+CMA Common Mode Analysis
+CNS Communications, Navigation, Surveillance
+COTS Commercial Off-The-Shelf
+CPIOM Common Processor Input/Output Module (A380 avionics IMA)
+CSAS Control Stability Augmentation System
+CSD Constant Speed Drive
+CT Current Transformer
+CTC Cabin Temperature Control
+CTOL Conventional Take-Off & Landing
+CV Carrier Variant
+D
+
+DATAC Digital Autonomous Terminal Access Communication (forerunner to ARINC 629)
+D/A Digital to Analogue
+DC Direct Current
+DECU Digital Engine Control Unit
+Def Stan Defence Standard
+Dem/Val Demonstration/Validation
+DFCC Digital Flight Control Computer (AFTI F-16)
+DTD Directorate of Technical Development
+DTI Department of Trade & Industry
+DVO Direct Vision Optics
+E
+
+E1 E1 Electrical Channel (A380)
+E2 E2 Electrical Channel (A380)
+E3 E3 Electrical Channel (A380)
+EAI Engine Anti-Ice
+EAP Experimental Aircraft Programme
+EASA European Aviation Safety Authority
+EBHA Electrical Backup Hydraulic Actuator (A380)
+EC European Community
+ECAM Electronic Crew Alerting & Monitoring
+ECS Environmental Control System
+EDP Engine Driven Pump
+EE Electrical Equipment (as in EE Bay)
+EEC Electronic Engine Controller
+E2PROM Electrically Erasable Programmable Read Only Memory
+EFA European Fighter Aircraft
+EFAB Extended Forward Avionics Bay
+EFIS Electronic Flight Instrument System
+EFPMS Engine Fuel Pump and Metering System
+EGT Exhaust Gas Temperature
+EHA Electro-Hydrostatic Actuator
+EICAS Engine Indication & Crew Alerting System
+ELCU Electronic Load Control Unit
+ELMS Electrical Load Management System (B777)
+EMA Electro-Mechanical Actuator
+EMP Electrical Motor Pump
+EMI Electro-Magnetic Interference
+EPC External Power Contactor
+EPMS Electrical Power Management System (AH-64C/D Apache)
+EPROM Electrically Programmable Read Only Memory
+EPU Emergency Power Unit
+ERA Electrical Research Agency
+ESS Essential
+ESS Environmental Stress Screening
+ETOPS Extended Twin OperationS
+EU Electronics Unit
+EU European Union
+EUROCAE European Organisation for Civil Aviation Equipment
+EXT or Ext External
+F
+
+FAA Federal Aviation Authority
+FAC Flight Augmentation Computer
+FADEC Full Authority Digital Engine Control
+FAR Federal Aviation Regulations
+FBW Fly-By-Wire
+FC Flight Control
+FCC Flight Control Computer
+FCDC Flight Control Data Concentrator
+FCMC Fuel Control and Monitoring Computer (A340-500/600)
+FCP Fuel Control Panel
+FCPC Flight Control Primary Computer
+FCS Flight Control System
+FCSC Flight Control Secondary Computer
+FDC Fuel Data Concentrator (A340-500/600)
+FCU Fuel Control Unit
+FHA Functional Hazard Analysis
+FITEC Farnborough International Technology Exploitation Conference (1998)
+FLIR Forward Looking Infra Red
+FMC Flight Management Computer
+FMEA Failure Modes & Effects Analysis
+FMES Failure Modes & Effects Summary
+FMGEC Flight Management Guidance & Envelope Computer (A330/A340)
+FMQGS Fuel Management & Quantity Gauging System (Global Express)
+FMS Flight Management System
+FOB Fuel On Board
+FQIS Fuel Quantity Indication System
+FQPU Fuel Quantity Processor Unit (B777)
+FSCC Flap/Slat Control Computers (A380)
+FSD Full Scale Development
+FSDG Fan Shaft Driven Generator
+FSEU Flap Slats Electronics Unit (B777)
+ft Feet
+FTA Fault Tree Analysis
+G
+
+G Green (as in green hydraulic system)
+G or Gen Generator
+GA General Aviation
+G&C Guidance & Control
+GCB Generator Control Breaker
+GCU Generator Control Unit
+GE General Electric (US)
+GEC General Electric Company
+GFRP Glass Fiber Reinforced Plastic
+GLY Galley
+GND Ground
+gpm Gallons per minute
+GPS Global Positioning System
+GPU Ground Power Unit
+GR Ground Reconnaissance
+H
+
+HISL High Intensity Strobe Lights
+HP High Pressure
+HPSG High Pressure Starter Generator
+hp Horse Power
+HUMS Health & Usage Management System
+Hyd Hydraulic
+Hz Hertz
+I
+
+IAP Integrated Actuator Package
+IC Integrated Circuit
+IDEA Integrated Digital Electric Airplane
+IDG Integrated Drive Generator
+IDS InterDictor Strike (Tornado)
+IEE Institution of Electrical Engineers
+IEEE Institute of Electrical & Electronic Engineers
+IFE In-Flight Entertainment
+IET Institute of Engineering & Technology (formerly IEE)
+IFPC Integrated Flight & Propulsion Control
+IFSD In-Flight ShutDown
+IMA Integrated Modular Avionics
+IMechE Institution of Mechanical Engineers
+INS Inertial Navigation System
+INV Inverter
+I/O Input/Output
+IPN Iso-Propyl Nitrate
+IPT Integrated Product Team
+IPU Integrated Power Unit
+IR Infra Red
+IRS Inertial Reference System
+ISA International Standard Atmosphere
+ISA Instruction Set Architecture
+J
+
+JAA Joint Airworthiness Authority
+JAR Joint Aviation Regulation
+JET A JET A Aviation Fuel (also known as JET A-1)
+JET B JET B Aviation Fuel
+J/IST Joint Strike Fighter/Integrated Subsystems Technology
+JP-4 Aviation fuel used by the US Air Force
+JP-5 Aviation fuel used by the US Navy
+JSF Joint Strike Fighter (F-35 Lightning II)
+K
+
+K Kelvin
+kg Kilogram
+kN Kilo Newton
+kPa Kilo Pascal
+KT or kt Knot
+kVA Kilo Volt-Ampere
+L
+
+L Lift
+L Left
+LAF Load Alleviation Function
+LAN Local Area Network
+LB or lb Pound
+LH Left Hand
+LHX or LH Light Helicopter
+LOX Liquid Oxygen
+LP Low Pressure
+LRM Line Replaceable Module
+LRU Line Replaceable Unit
+LVDT Linear Variable Differential Transformer
+M
+
+M Mach Number
+m Metre
+mA Milli Ampere
+MA Markov Analysis
+MAC Mean Aerodynamic Chord
+MAU Modular Avionics Unit (Honeywell EPIC system)
+MBB Messerschmit Bolkow Blohm
+MCDU Multipurpose Control & Display Unit
+MDC Miniature Detonation Cord
+MCU Modular Concept Unit
+MDHC McDonnell Douglas Helicopter Company (now Boeing)
+MEA More-Electric Aircraft
+MEE More-Electric Engine
+MECU Main Engine Control Unit
+MEL Minimum Equipment List
+MFD Multi-Function Display
+MFOP Maintenance Free Operating Period
+MHz Mega Hertz
+MIL-H Military Handbook
+MLI Magnetic Level Indicator
+MIL-STD Military Standard
+ml Millilitre
+MLC Main Line Contactor
+MLI Magnetic Level Indicator
+mm Millimetre
+MR Maritime Reconnaissance
+m/s Metres/second
+MN Mega Newton
+MSOC Molecular Sieve Oxygen Concentrator
+MSOV Modulating Shut-Off Valve
+N
+
+N North Pole
+NADC Naval Air Development Center
+NASA National Space & Aerospace Agency
+Nav Navigation
+NH or N2 Speed of rotation of engine HP shaft
+Ni-Cd Nickel-Cadmium
+NGS Nitrogen Generation System
+HL or N1 Speed of rotation of engine LP shaft
+NOTAR NO TAil Rotor
+NRV Non-Return Valve
+Nx Lateral Acceleration
+Ny Longitudinal Acceleration
+Nx Normal Acceleration
+O
+
+OBOGS On-Board Oxygen Generating System
+OBIGGS On-Board Inert Gas Generating System
+OEM Original Equipment Manufacturer
+Ox Pitch Axis
+Oy Roll Axis
+Oz Yaw Axis
+P
+
+P Pressure
+P Pitch
+POA Power Optimised Aircraft (EC More-Electric Technology Programme)
+Ps or Po Ambient Static Pressure
+Pc Pressure Capsule
+PCU Power Control Unit
+PDE Power Drive Electronics (AFTI F-16)
+PDU Power Drive Unit
+PDC Power Distribution Center
+PDR Preliminary Design Review
+PEM Power Electronics Module
+PEPDC Primary Electrical Power Distribution Centre (A380)
+PFC Primary Flight Computer (B777)
+PFCS Primary Flight Control System (B777)
+PMA Permanent Magnet Alternator
+PMG Permanent Magnet Generator
+PNVS Pilot Night Vision System (Apache)
+PRV Pressure Reducing Valve
+PRSOV Pressure Reducing Shut-Off Valve
+PSEU Proximity Switch Electronics Unit (B777)
+PSSA Preliminary System Safety Analysis
+psi Pounds/Square Inch
+Pt Dynamic Pressure
+PTFE Poly-Tetra-Fluoro-Ethylene
+PTU Power Transfer Unit
+PSU Power Supply Unit
+PWR Power
+Q
+
+‘Q’ feel A pitch feel schedule used in aircraft flight control systems based upon ½ρV2
+R
+
+R Right
+R Roll
+R & D Research & Development
+RAeS Royal Aeronautical Society
+RAF Royal Air Force
+RAT Ram Air Turbine
+RDCP Refuel/Defuel Control Panel (Global Express)
+RFI Request For Information
+RFP Request For Proposal
+RIU Remote Interface Unit
+RJ Regional Jet
+ROM Read Only Memory
+RPDU Remote Power Distribution Units
+RT Remote Terminal (MIL-STD-1553B)
+RTCA Radio Technical Committee Association
+RTZ Return-To-Zero
+RVDT Rotary Variable Differential Transformer
+S
+
+S South Pole
+SAARU Secondary Attitude Air data Reference Unit
+SAE Society of Automobile Engineers
+SCR Silicon Controlled Rectifier (Thyristor)
+SDR System Design Review
+SEC Spoiler Elevator Computer (A320)
+SEPDB Secondary Electrical Power Distribution Box (A380)
+SEPDC Secondary Electrical Power Distribution Centre (A380)
+SFENA Société Française d’Equipments pour la Navigation Aerienne
+SFCC Slat/Flap Control Computers (A330/A340)
+SG Specific Gravity (Density of water=1)
+shp Shaft horse Power
+SIM Serial Interface Module (A629)
+SMP Systems Management Processor (EAP)
+SMTD STOL Manoeuvre Technology Demonstrator (F-15)
+SOL Solenoid
+SOV Shut-Off Valve
+sq m Square Metre
+SSA System Safety Analysis
+SSPC Solid State Power Controller
+SRR System Requirements Review
+SSR Software Specification Review
+STBY Standby
+STC Supplementary Type Certificate
+STOL Short Take-Off and Landing
+STOVL Short Take-Off Vertical Landing
+SV Servo-Valve
+SVCE Service
+T
+
+T Temperature
+Tamb Ambient Air Temperature (K)
+Tram Ram Air Temperature
+Trec Recovery Air Temperature
+TADS Target Acquisition & Designator System (Apache)
+TBT Turbine Blade Temperature
+TCD Total Contents Display
+TCL Thrust Control Lever
+TEOS Technologies for Energy Optimised Aircraft Equipment Systems
+T/EMM Thermal/Energy Management Module
+T/F Transformer
+TGT Turbine Gas Temperature
+THS Tailplane Horizontal Stabiliser
+TPMU Tyre Pressure Monitoring Unit
+TRU or TR Transformer Rectifier Unit
+U
+
+UAV Unmanned Air Vehicle
+UCS Utilities Control System
+UK United Kingdom
+UMS Utilities Management System
+US United States
+USG US Gallon (1 USG=0.8 Imperial Gallon)
+UTIL Utility
+UV Ultra-Violet
+U/V Under Voltage
+V
+
+V Velocity
+V Volts
+VAC Volts Alternating Current
+VDC Volts Direct Current
+VDU Visual Display Unit
+VIB Vibration
+VIGV Variable Inlet Guide Vane
+VF Variable Frequency
+VOR VHF Omni-Range
+VLSI Very Large Scale Integrated-Circuit
+VMS Vehicle Management System
+VSCF Variable Speed Constant Frequency
+V/STOL Vertical/Short Take-Off & Landing
+VSV Variable Stator Vane
+VTOL Vertical Take-Off & Landing
+W
+
+W Weight
+W Watts
+WWII World War II
+Y
+
+Y Yaw
+Y Yellow (as in yellow hydraulic system)
+Z
+
+ZFW Zero Fuel Weight
+ZSA Zonal Safety Analysis

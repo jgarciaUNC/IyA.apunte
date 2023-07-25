@@ -1,0 +1,177 @@
+VHF communications
+
+Very high frequency (VHF) radio has long been the primary means of communication between aircraft and the ground. The system operates in the frequency range extending from 1 1 8 MHz to 1 3 7 MHz and supports both voice and data communication (the latter becoming increasingly important). This chapter describes the equipment used and the different modes in which it operates. VHF communication is used for various purposes including air traffic control (ATC), approach and departure information, transmission of meteorological information, ground handling of aircraft, company communications, and also for the Aircraft Communications and Reporting System (ACARS).
+
+4.1 VHF range and propagation
+
+In the VHF range (30 MHz to 300 MHz) radio waves usually propagate as direct line-of-sight
+LOS) waves (see Chapter 1 ). Sky wave propagation still occurs at the bottom end of the VHF range (up to about 50 MHz depending upon solar activity) but at the frequencies used for aircraft communication, reflection from the ionosphere is exceptionally rare. Communication by strict line of sight (LOS) paths, augmented on occasions by diffraction and reflection, imposes a limit on the working range . that can be obtained. It should also be evident that the range will be dependent on the height of an aircraft above the ground; the greater this is the further the range will be. The maximum LOS distance ( see Figure 4. 1 ) between an aircraft and a ground station, in nautical miles (nm), is given by the relationship:
+
+where his the aircraft's altitude in feet above ground (assumed to be flat terrain).
+
+Example 4.1
+
+Determine the maximum line-of-sight distance when an aircraft is flying at a height of (a) 2500 feet, and (b) 25000 feet.
+
+The actual range obtained depends not only on the LOS distance but also on several other factors, including aircraft position, transmitter power, and receiver sensitivity. However, the LOS distance usually provides a good approximation of the range that can be obtained between an aircraft and a ground station (see Table 4. 1 ). The situation is slightly more complex when communication is from one aircraft to another; however, in such cases summing the two  LOS distances will normally provide a guide as to the maximum range that can be expected.
+
+Test your understanding 4.1
+
+Determine the altitude of an aircraft that would provide a line-of-sight distance to a ground station located at a d istance of 125 nm.
+
+4.2 DSB modulation
+
+Amplitude modulation 1s used for voice communications as well as several of the VHF data link (VDL) modes. The system uses double sideband (DSB) modulation and, because this has implications for the bandwidth of modulated signals, it is worth spending a little time explaining how this works before we look at how the available space is divided into channels. Figure 4.2 shows the frequency spectrum of an RF carrier wave at 1 24.575 MHz amplitude modulated by a single pure sinusoidal tone with a frequency of 1 kHz. Note how the amplitude modulated waveform comprises three separate components:
+
+an RF carrier at 1 24.575 MHz
+
+a lower side frequency (LSF) component at 1 24.574 MHz
+
+an upper side frequency (USF) component at 1 24.576 MHz.
+
+
+Note how the LSF and USF are spaced away from the RF carrier by a frequency that is equal to that of the modulating signal (in this case 1 kHz). Note also from Figure 4.2 that the bandwidth (i.e. the range of frequencies occupied by the modulated signal) is twice the frequency of the modulating signal (i.e. 2 kHz).
+
+Figure 4.3 shows an RF carrier modulated by a speech signal rather than a single sinusoidal tone. The baseband signal (i.e. the voice signal itself) typically occupies a frequency range extending from around 300 Hz to 3 .4 kHz. Indeed, to improve intelligibility and reduce extraneous noise, the frequency response of the microphone and speech amplifier is invariable designed to select this particular range of frequencies and reject any audio signals that lie outside it. From Figure 4.3 it should be noted that the bandwidth of the RF signal is approximately 7 kHz (i.e. twice that of the highest modulating signal).
+
+Test your understanding 4.2
+
+Determine the RF signal frequency components present in a DSB amplitude modulated carrier wave at 1 1 8.975 MHz when the modulating signal comprises pure tones at 2 kHz and 5 kHz.
+
+4.3 Channel spacing
+
+VHF aircraft communications take place in a number of al located channels. These channels were originally spaced at 200 kHz intervals throughout the VHF aircraft band. However, a relentless increase in air traffic coupled with the increasing use of avionic systems for data link communication has placed increasing demands on the available frequency spectrum. In response to this demand, the spacing between adjacent channels in the band 1 1 8 MHz to 1 3 7 MHz has been successively reduced so as to increase the number of channels available for VHF communication (see Table 4.2).
+
+Figure 4.4 shows the channel spacing for the earlier 25 kHz and current European 8.33 kHz VHF systems. Note how the 8.33 kHz system of channel spacing allows three DSB AM signals to occupy the space that was previously occupied by
+a single signal.
+
+The disadvantage of narrow channel spacing is that the guard band of unused spectrum that previously existed with the 25 kHz system is completely absent and that receivers must be designed so that they have a very high degree of adj acent channel rej ection (see page 48). Steps must also be taken to ensure that the bandwidth of the transmitted signal does not exceed the 7 kHz, or so, bandwidth required for effective voice communication. The penalty for not restricting the bandwidth is that signals from one channel may 'spill over' into the adjacent channels, causing interference and degrading communication (see Figure 4.7).
+
+Table: Increase in the number of available VHF channels
+
+Test your understanding 4.3
+
+How many channels at a spacing of 1 2. 5 kHz can occupy the band extending from 1 1 8 MHz to 1 25 MHz?
+
+Test your understanding 4.4
+
+A total of 1 520 data channels are to be accommodated in a band extending from 3 1 6 MHz to 335 MHz. What channel spacing must be used and what range of frequencies can the baseband signal have?
+
+
+4.4 Depth of modulation
+
+The depth of modulation of an RF carrier wave is usually expressed in terms of percentage modulation, as shown in Figure 4.6. Note that the level of modulation can vary between 0% (corresponding to a completely unmodulated carrier) to 1 00% (corresponding to a fully modulated carrier).
+
+In practice, the intell igibility of a signal (i.e. the ability to recover information from a weak signal that may be adversely affected by noise and other disturbances) increases as · the percentage modulation increases and hence there is a need to ensure that a transmitted signal is fully modulated but without the attendant risk of over-modulation (see Fig. 4.6). The result of over-modulation is excessive bandwidth, or 'splatter', causing adj acent channel interference, as shown in Fig. 4.7.
+
+4.5 Compression
+
+In order to improve the intelligibility of VHF voice cmmnunications, the speech amplifier stage of an aircraft VHF radio is invariably fitted with a compressor stage. This stage provides high gain for low amplitude signals and reduced gain for high amplitude signals. The result is an increase in the average modulation depth (see Figure 4.8).
+
+Figure 4.9 shows typical speech amplifier characteristics with and without compression. Note that most aircraft VHF radio equipment provides adjustment both for the level of modulation and for the amount of compression that is applied (see Figure 4 . 1 0). 
+
+Modulated RF carrier showing different amounts of compression appl ied to the modulating signal
+
+4.6 Squelch
+
+Aircraft VHF receivers invariably incorporate a system of muting the receiver audio stages in the absence of an incoming signal. This system is designed to eliminate the annoying and distracting background noise that is present when no signals are being received. Such systems are referred to as squelch and the threshold at which this operates is adjusted (see Figure 4. 1 0) so that the squelch 'opens' for a weak signal but 'closes' when no signal is present.
+
+Two quite different squelch systems are used but the most common (and easy to implement) system responds to the amplitude of the received carrier and is known as carrier operated squelch. The voltage used to inhibit the receiver audio can be derived from the receiver's AGC system and fed to the squelch gate (Figure 4. 1 1 ).
+
+
+The alternative (and somewhat superior) squelch system involves sensing the noise present at the output of the receiver's detector stage and using this to develop a control signal which is dependent on the signal-to-noise ratio of the received signal rather than its amplitude. This latter technique, which not only offers better sensitivity but is also less prone to triggering from general background noise and off-channel signals, is often found in FM receivers and is referred to as noise operated squelch.
+
+4·! Data modes
+
+Modern aircraft VHF communications equipment supports both data communication as well as voice communication. The system used for the aircraft data l ink is known as Aircraft Communications Addressing and Reporting System (ACARS). Currently, aircraft are equipped with three VHF radios, two of which are used for A TC voice communications and one is used for the ACARS data link (also referred to as airline operational control communications).
+
+A data link terminal on board the aircraft (see Figure 4. 1 2) generates downlink messages and processes uplink messages received via the VHF data link. The downlink and uplink ACARS messages are encoded as plain ASCII text. In the Unites States, the ACARS ground stations are operated by ARINC whilst in Europe, Asia and Latin America, the equivalent service is provided by SIT A.
+
+Initially each VHF ACARS provider was allocated a single VHF channel. However, as the use of VHF data links (VDL) has grown, the number of channels used in the vicinity of the busiest airports has increased to as many as four and these are often operating at full capacity. 
+
+Unfortunately, due to the pressure for additional voice channels, it has not been possible to assign a number of additional VHF channels for ACARS data link operation. As a result, several new data modes have recently been introduced that support higher data rates and make more efficient use of each 25 kHz channel currently assigned for data link purposes. 
+
+In addition, the FAA is developing a system that will permit the integration of ATC voice and data communications. This system uses digitally encoded audio rather than conventional analogue voice signals.
+
+When operating in VDL Mode 0, the required data link protocols are implemented in the A CARS management unit (see F igure 4. 1 1 ). 
+
+Data is transferred from the VHF radio to the management unit at a rate of 2400 bits per second (bps) by means of frequency shift keying (FSK).
+
+The FSK audio signal consists of two sinusoidal tones, one at a 1 .2 kHz and one at 2 .4 kHz depending on whether the polarity of the information bit being transmitted is the same as that of the previous bit or is different. Note that the phase of the tones varies linearly and that there is no phase change on the transition between the two tones.
+
+This type of modulation (in which the frequency spacing between the two audio tones is exactly half the data rate) is highly efficient in terms of bandwidth and is thus referred to as minimum shift keying (MSK). When data is transmitted, the MSK signal is used to modulate the amplitude of the VHF carrier (in much the same was as the voice signal). The resultant transmitted signal is then a double side-band (DSB) AM signal whose amplitude is modulated at 2400 bps. The RF carrier is then said to use DSB AM MSK modulation.
+
+VHF carrier frequency selection and transmit/receive control is provided by the ACARS management unit working in conj unction with an ARINC 429 interface to the VHF radio (Figure .1. 1 2). The channel access protocol employed is mown as carrier sense multiple access CSMA). It consists of li stening for activity on rhe channel (i.e. transmissions from other users) 3.lld transmitting only when the channel is free. 
+
+Operation in VDL Mode A is similar to Mode 0 except uplink and downlink ACARS data packets are transferred between the VHF radio and the ACARS management unit via a transmit/receive pair of 1 00 kbps ARINC 429 digital interfaces rather than the analogue audio interface used by Mode 0. The digital data is then used by rhe VHF radio to modulate the RF carrier at a rate of 2400 bps using the same DSB AM MSK modulation scheme used by VDL Mode 0.
+
+Another difference between VDL Mode 0 and VDL Mode A is that, when using the latter, the VHF radio controls when to access the channel to transmit data using the same CSMA protocol employed by the management unit in VDL Mode 0. However, the selection of the frequency to be used is still controlled by the CMU or ATSU by means of commands issued via the same ARINC .f29 interface used for data transfer. Note that, as far as the VHF data link ground stations are concerned, there is no difference in the air/ground VDL Mode 0 or VDL Mode A transmissions.
+
+Operation in VDL Mode 2 is based on an improved .set of data transfer protocols and, as a result, it provides a significant increase in data capacity. VDL Mode 2 has been designed to provide for the future migration of VDL to the aeronautical telecommunications network (ATN). 
+
+This network will permit more efficient and seamless delivery of data messages and data files between aircraft and the ground computer systems used by airlines and air traffic control facilities.
+
+ATN will be supported by a number of air/ground networks and ground/ground networks.
+
+The air/ground and ground/ground networks will be interconnected by means of A TN routers that implement the required protocols and will operate in much the same way as the Internet with which you are probably already familiar.
+
+VDL Mode 2 employs a data rate of 3 1 ,500 bits per second over the air/ground link using a single 25 kHz channel. The increased utilization of the 25 kHz channel is achieved by employing a system of modulation that is more efficient in terms of its use of bandwidth. This system is known as differential eight phase shift keying (D8PSK). In this system, an audio carrier signal is modulated be means of shift in phase that can take one of eight possible phases; 0°, 45°, 90°, 1 35°, 1 80°, 225°, 270° or 3 1 5°. These phase changes correspond to three bits of digital data as follows: 000, 00 1 , 0 1 1 , 0 1 0, 1 1 0, 1 1 1 , 1 0 1 , or 1 00. The D8PSK modulator uses the bits in the data message, in groups of three, to determine the carrier phase change at a rate of 1 0.5 kHz. 
+
+Consequently, the bit rate will be three times this value, or 3 1 .5 kbps. D8PSK modulation of the phase of the VHF carrier is accomplished using a quadrature modulator. Note that, in D8PSK modulation, groups of three bits are often referred to as D8PSK symbols.
+
+VDL Mode 3 offers an alternative to the European solution of reducing the channel spacing to 8.33 kHz. VDL Mode 3 takes a 25 kHz frequency assignment and divides it into 1 20 ms frames with four 30 ms time slots (each of which constitutes a different channel). Thus Mode 3 employs time division multiplexing (TDM) rather than frequency division multiplexing (FDM) used in the European system. Note that VDL Mode 3 is the only planned VDL mode that is designed to support voice and data traffic on the same frequency.
+
+
+4.8 ACARS
+
+ACARS (Aircraft Communication Addressing and Reporting System) is a digital data link system transmitted in the VHF range ( 1 1 8 MHz to 1 36 MHz). ACARS provides a means by which aircraft operators can exchange data with an aircraft without human intervention. This makes it possible for an airline to communicate with the aircraft in their fleet in much the same way as it is possible to exchange data using a land-based digital network. ACARS uses an aircraft' s unique identifier and the system has some features that are similar to those currently used for electronic mail.
+
+The ACARS system was originally specified in the ARINC 597 standard but has been revised as ARINC 724B . A significant feature of ACARS is the ability to provide real-time data on the ground relating to aircraft performance; this has made it possible to identify and plan aircraft maintenance activities.
+
+ACARS communications are automatically directed through a series of ground-based ARINC (Aeronautical Radio Inc.) computers to the relevant aircraft operator. The system helps to reduce the need for mundane HF and VHF voice messages and provides a system which can be logged and tracked. Typical ACARS messages are used to convey routine information such as:
+
+passenger loads
+
+departure reports
+
+arrival reports
+
+fuel data
+
+engine performance data.
+
+This information can be requested by the company and retrieved from the aircraft at periodic intervals or on demand. Prior to ACARS this type of information would have been transferred via VHF voice. ACARS uses a variety of hardware and software components including those that are installed on the ground and those that are present in the aircraft. The aircraft ACARS components  include a management unit (see Figure 4. 1 2 ) which deals with the reception and transmission of messages via the VHF radio transceiver, and the control unit which provides the crew interface and consists of a display screen and printer. The ACARS ground network comprises the ARlNC ACARS remote transmitting/receiving stations and a network of computers and switching systems. The ACARS command, control and management subsystem consists of the ground-based airline operations and associated functions including operations control, maintenance and crew scheduling.
+
+There are two types of ACARS messages; downlink messages that originate from the aircraft and uplink messages that originate from ground stations (see Figures 4. 1 4 to 4. 1 7). Frequencies used for the transmission and reception of ACARS messages are in the band extending from 1 29 MHz to 1 3 7 MHz (VHF) as shown in Table 4.4. Note that different channels are used in different parts of the world. A typical ACARS message (see Figure 4. 1 4) consists of:
+
+mode identifier (e.g. 2)
+
+aircraft identifier (e.g. G-DBCC)
+
+message label (e.g. SU-a weather request)
+
+block identifier (e.g. 4)
+
+message number (e.g. M55A)
+
+flight number (e.g. BD0 1NZ)
+
+message content (see Figure 4. 1 4).
+
+Test your understanding 4.5
+
+Explain the need for (a) speech compression and (b) squelch in an aircraft VHF radio.
+
+Test your understanding 4.6
+
+Explain, with the aid of a block diagram, how data transfer is possible using an aircraft VHF radio.
+
+Test your understanding 4.7 
+
+
+Explain the difference between MSK and DBPSK modulation. Why is the latter su perior?
+
+4.9 VHF radio equipment 
+
+The typical specification of a modern aircraft VHF data radio is shown in Table 4 . 5 . This radio can be used with analogue voice as well as data in Modes 0, A and 2 (see page 65). Figures 4. 1 8 to 4.20 show typical equipment and control locations in a passenger aircraft whilst Figures 4.2 1 to 4.24 show internal and external vi ews of a typical VHF radio. Finally, F igure 4.25 shows a typical VHF quarter-wave blade antenna fitted to an Airbus A380 aircraft.
+

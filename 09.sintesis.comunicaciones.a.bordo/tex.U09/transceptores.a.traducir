@@ -1,0 +1,402 @@
+Transmitters and receivers
+
+
+Transmitters and receivers are used extensively in aircraft communication and navigation systems.
+
+In conjunction with one ore more antennas, they are responsible for implementing the vital link between the aircraft, ground stations, other aircraft and satellites. This chapter provides a general introduction to the basic principles and operation of transmitters and receivers. These themes are further developed in Chapters 4 and 5.
+
+3.1 A simple radio system
+
+
+Figure 31 shows a simple radio communication system comprising a transmitter and receiver for use with continuous wave (CW) signals. Communication is achieved by simply switching (or 'keying') the radio frequency signal on and off. Keying can be achieved by interrupting the supply to the power amplifier stage or even the oscillator stage; however, it is normally applied within the driver stage that operates at a more modest power level. Keying the oscillator stage usually results in impaired frequency stability. On the other hand, attempting to interrupt the appreciable currents and/or voltages that appear in the power amplifier stage can also prove to be somewhat problematic.
+
+The simplest form of CW receiver consists of nothing more than a radio frequency amplifier (which provides gain and selectivity) followed by a detector and an audio amplifier. The detector stage mixes a locally generated radio frequency signal produced by the beat frequency oscillator (BFO) with the incoming signal to produce a signal that lies within the audio frequency range (typically between 300 Hz and 3.4 kHz).
+
+As an example, assume that the incoming signal is at a frequency of 1 00 kHz and that the BFO is producing a signal at 99 kHz. A signal at the difference between these two frequencies ( 1 kHz) will appear at the output of the detector stage. This will then be amplified within the audio stage before being fed to the loudspeaker.
+
+Example 3.1.1
+
+A radio wave has a frequency of 1 62 . 5 kHz. If a beat frequency of 1 .25 kHz is to be obtained, determine the two possible BFO frequencies.
+
+
+The B FO can b e above o r below the incoming signal frequency by an amount that is equal to the beat frequency (i.e. the audible signal that results from the 'beating' of the two frequencies and which appears at the output of the detector stage). 
+
+Hence, ]sFO = !RF ± ]AF from which:
+
+fsFO = ( 1 62.5 ± 1 .25) kHz = 1 60.75 or 1 63 .25 kHz
+
+Test your understanding 3.1
+
+An audio frequency signal of 850 Hz is produced when a BFO is set to 455.5 kHz. What is the input signal frequency to the detector?
+
+3.1 .1 Morse code
+
+Transmitters and receivers for CW operation are extremely simple but nevertheless they can be extremely efficient. This makes them particularly useful for disaster and emergency communication or for any situation that requires optimum use of low power equipment. Signals are transmitted using the code invented by Samuel Morse (see Figures 3 .2 and 3 . 3 ) .
+
+Figure 3.3 Morse code signal for the letter C
+
+3.2 Modulation and demodulation
+
+In order to convey information using a radio frequency carrier, the signal information must be superimposed or 'modulated' onto the carrier.
+
+Modulation is the name given to the process of changing a particular property of the carrier wave in sympathy with the instantaneous voltage (or current) signal.
+
+The most commonly used methods of modulation are amplitude modulation (AM) and frequency modulation (FM). In the former case, the carrier amplitude (its peak voltage) varies according to the voltage, at any instant, of the modulating signal. In the latter case, the carrier frequency is varied in accordance with the voltage, at any instant, of the modulating signal.
+
+Figure 3 .4 shows the effect of amplih1de and frequency modulating a sinusoidal carrier (note that the modulating signal is in this case also sinusoidal). In practice; many more cycles of the RF carrier would occur in the time-span of one cycle of the modulating signal. The process of modulating a carrier is undertaken by a modulator circuit, as shown in Figure 3.5. The input and output waveforms for amplitude and frequency modulator circuits are shown in Figure 3.6.
+
+Demodulation is the reverse of modulation and is the means by which the signal information is recovered from the modulated carrier.
+
+Demodulation is achieved by means of a demodulator (sometimes also called a detector). 
+
+The output of a demodulator consists of a reconstructed version of the original signal information present at the input of the modulator stage within the transmitter. The input and output waveforms for amplitude and frequency modulator circuits are shown in Figure 3 .6. We shall see how this works a little later.
+
+3.3. AM transmitters
+
+Figure 3.7 shows the block schematic of a simple AM transmitter. An accurate and stable RF oscillator generates the radio frequency carrier signal. The output of this stage is then amplified and passed to a modulated RF power amplifier stage. The inclusion of an amplifier between the RF oscillator and the modulated stage also helps to improve frequency stability.
+
+The low-level signal from the microphone is amplified using an AF amplifier before it is passed to an AF power amplifier. The output of the power amplifier is then fed as the supply to the modulated RF power amplifier stage.
+
+Increasing and reducing the supply to this stage is instrumental in increasing and reducing the amplitude of its RF output signal. 
+
+The modulated RF signal is then passed through an antenna coupling unit. This unit matches the antenna to the RF power amplifier and also helps to reduce the level of any unwanted harmonic components that may be present. The AM transmitter shown in Figure 3.7 uses high-level modulation in which the modulating signal is applied to the final RF power amplifier stage.
+
+An alternative to high-level modulation of the carrier wave is shown in Figure 3.8. In this arrangement the modulation is applied to a low­power RF amplifier stage and the amplitude modulated signal is then further amplified by the final RF power amplifier stage. In order to prevent distortion of the modulated waveform this final stage must operate in linear mode (the output waveform must be a faithful replica of the input waveform). Low-level modulation avoids the need for an AF power amplifier.
+
+
+3.4 FM transmitters
+
+Figure 3 .9 shows the block schematic of a simple FM transmitter. Once again, an accurate and stable RF oscillator generates the radio frequenc Y carrier signal. As with the AM transmitter, the output of this stage is amplified and passed to an RF power amplifier stage. Here again, the inclusion of an amplifier between the RF oscillator and the RF power stage helps to improve frequency stability.
+
+The low-level signal from the microphone is amplified using an AF amplifier before it is passed to a variable reactance element (see Chapter 4) within the RF oscillator tuned circuit. The application of the AF signal to the variable reactance element causes the frequency of the RF oscillator to increase and decrease in sympathy with the AF signal.
+
+As with the AM transmitter, the final RF signal from the power amplifier is passed through an antenna coupling unit that matches the antenna to :he RF power amplifier and also helps to reduce ate level of any unwanted harmonic components that may be present. Further information on �nsmitters will be found in Chapters 4 and 5.
+
+3.5 Tuned radio frequency receivers
+
+Tuned radio frequency (TRF) receivers provide a means of receiving local signals using fairly :ninimal circuitry. The simplified block schematic . of a TRF receiver is shown in Figure 3.9.
+
+The signal from the antenna is applied to an RF amplifier stage. This stage provides a moderate amount of gain at the signal frequency. It also provides selectivity by incorporating one or more tuned circuits at the signal frequency. This helps the receiver to reject signals that may be present on adj acent channels.
+
+The output of the RF amplifier stage is applied to the demodulator. This stage recovers the audio frequency signal from the modulated RF signal. 
+
+The demodulator stage may also incorporate a tuned circuit to further improve the selectivity of the receiver.
+
+The output of the demodulator stage is fed to the input of the AF amplifier stage. This stage increases the level of the audio signal from the demodulator so that it is sufficient to drive a loudspeaker.
+
+TRF receivers have a number of limitations with regard to sensitivity and selectivity and this makes this type of radio receiver generally unsuitable for use in commercial radio equipment.
+
+3.6 Superhet receivers
+Superhet receivers provide both improved
+sensitivity (the ability to receive weak signals)
+and improved selectivity (the ability to
+discriminate signals on adjacent channels) when
+compared with TRF receivers. Superhet receivers
+are based on the supersonic-heterodyne
+principle where the wanted input signal is
+converted to a fixed intermediate frequency (IF)
+at which the majority of the gain and selectivity is
+applied. The intermediate frequency chosen is
+generally 455 kHz or 1 .6 MHz for AM receivers
+and 1 0.7 MHz for communications and FM
+receivers. The simplified block schematic of a
+simple superhet receiver is shown in Figure 3 . I I .
+The signal from the antenna is applied to an
+RF amplifier stage. As with the TRF receiver,
+this stage provides a moderate amount of gain at
+the signal frequency. The stage also provides
+selectivity by incorporating one or more tuned
+circuits at the signal frequency.
+The output of the RF amplifier stage is applied
+to the mixer stage. This stage combines the RF
+signal with the signal derived from the local
+oscillator (LO) stage in order to produce a signal
+at the intermediate frequency (IF). It is worth
+noting that the output signal produced by the
+mixer actually contains a number of signal
+components, including the sum and difference of
+the signal and local oscillator frequencies as well
+as the original signals plus harmonic components.
+The wanted signal (i.e. that which corresponds to
+the IF) is passed (usually by some form of filter­
+see page 48) to the IF amplifier stage. This stage
+provides amplification as well as a high degree of
+selectivity.
+The output of the IF ampl ifier stage is fed to
+the demodulator stage. As with the TRF receiver,
+this stage is used to recover the audio frequency
+signal from the modulated RF signal.
+Finally, the AF signal from the demodulator
+stage is fed to the AF amplifier. As before, this
+stage increases the level of the audio signal from
+the demodulator so that it is sufficient to drive a
+loudspeaker.
+In order to cope with a wide variation in signal
+amplitude,
+superhet
+receivers
+invariably
+incorporate some form of automatic gain
+control (AGC). In most circuits the DC level from the AM demodulator (see page 5 1 ) is used
+to control the gain of the IF and RF amplifier
+stages. As the signal level increases, the DC level
+from the demodulator stage increases and this is
+used to reduce the gain of both the RF and IF
+amplifiers.
+The superhet receiver's intermediate frequency
+JiF is the difference between the signal frequency,
+fRF, and the local oscillator frequency, fw . The
+desired local oscillator frequency can be
+calculated from the relationship:
+fw fRF ±frF
+=
+Note that in most cases (and in order to simplify
+tuning arrangements) the local oscillator operates
+above the signal frequency, i.e. Ao = !RF + !IF So,
+for example, a superhet receiver with a 1 .6 MHz
+IF tuned to receive a signal at 5.5 MHz will
+operate with an LO at (5.5 + 1 .6) = 7. 1 MHz.
+Figure 3 . 1 0 shows the relationship between the
+frequencies entering and leaving a mixer stage.
+
+Example 3�2
+A VHF Band II FM receiver with a 1 0. 7 MHz I F
+covers the signal frequency range 88 M H z to 1 08
+MHz. Over what frequency range should the local
+oscillator be tuned?
+Using fw !RF + JiF when !RF
+88 MHz gives
+88
+MHz
++
+1
+0.7
+MHz
+98.7
+MHz
+fw
+=
+=
+=
+=
+Using fw !RF + /rF when fRF = 1 08 MHz gives
+fw 1 08 MHz + 1 0.7 MHz = 1 1 8 .7 MHz.
+
+3. 7 Selectivity
+Radio receivers use tuned circuits in order to
+discriminate between incoming signals at
+different frequencies. Figure 3 . 1 2 shows two
+asic configurations for a tuned circuit; series and
+parallel. The impedance- frequency characteristics
+of these circuits are shown in Figure 3 . 1 3 . It is
+important to note that the impedance of the series
+:uned circuit falls to a very low value at the
+resonant frequency whilst that for a parallel tuned
+circuit increases to a very high value at resonance. For this reason, series tuned circuits
+are sometimes known as acceptor circuits.
+Parallel tuned circuits, on the other hand, are
+sometimes referred to as rejector circuits.
+
+The frequency response (voltage plotted against
+frequency) of a parallel tuned circuit is shown in
+Figure 3 . 1 4 . This characteristic shows how the
+signal developed across the circuit reaches a
+maximum at the resonant frequency ifo). The
+range of frequencies accepted by the circuit is
+normally defined in relation to the half-power
+(- 3dB power) points. These points correspond to
+70.7% of the maximum voltage and the frequency
+range between these points is referred to as the
+bandwidth of the tuned circuit.
+
+A perennial problem with the design of the TRF
+receivers that we met earlier is the lack of
+selectivity due to the relatively wide bandwidth of
+the RF tuned circuits. An RF tuned circuit will
+normally exhibit a quality factor (Q-factor) of
+about 1 00. The relationship between bandwidth,
+!1/, Q-factor, Q, and resonant frequency, ..fo, for a
+tuned circuit is given by:
+
+
+As an example, consider a tuned circuit which has
+a resonant frequency of I 0 MHz and a Q-factor of
+1 00. Its bandwidth will be:
+
+Clearly many strong signals will appear within
+this range and a significant number of them may
+be stronger than the wanted signal. With only a
+single tuned circuit at the signal frequency, the
+receiver will simply be unable to differentiate
+between the wanted and unwanted signals.
+Selectivity can be improved by adding
+additional tuned circuits at the signal frequency.
+Unfortunately, the use of multiple tuned circuits
+brings with it the problem of maintaining accurate
+tuning of each circuit throughout the tuning range
+of the receiver. Multiple 'ganged' variable
+capacitors (or accurately matched variable
+capacitance diodes) are required.
+A band-pass filter can be constructed using
+two parallel tuned circuits coupled inductively (or
+capacitively), as shown in Figure 3 . 1 5 . The
+frequency response of this type of filter depends
+upon the degree of coupling between the two
+tuned circuits. Optimum results are obtained with
+a critical value of coupling (see Figure 3 . 1 6). Too
+great a degree of coupling results in a 'double­
+humped' response whilst too little coupling
+results in a single peak in the response curve
+accompanied by a significant loss in signal.
+Critical coupling produces a relatively ' flat' pass­
+band characteristic accompanied by a reasonably
+steep fall-off either side of the pass-band.
+Band-pass filters are often found in the IF
+stages of superhet receivers where they are used
+to define and improve the receiver's selectivity.
+Where necessary, a higher degree of selectivity
+and adjacent channel rejection can be achieved
+by using a multi-element ceramic, mechanical, or
+crystal filter. A typical 455 kHz crystal filter ( for
+use with an HF receiver) is shown in Figure 3 . 1 8.
+This filter provides a bandwidth of 9 kHz and a
+very high degree of attenuation at the two
+adj acent channels on either side of the pass­
+band.
+
+Test your understanding 3.2
+
+Sketch the block schematic of a superhet receiver and state the function of each of the blocks.
+
+Test your understanding 3.3
+
+HF communications receiver has an inermediate frequency of 455 kHz. What frequency must the local oscillator operate at vhen the receiver is tuned to 5.675 MHz?
+
+Test your understanding 3.4
+
+tuned circuit IF filter is to operate with a centre frequency of 10.7 MHz and a bandwidth of 150 kHz. What Q-factor is required?
+
+Test your understanding 3.6
+
+Sketch the frequency response of two coupled tuned circuits. In relation to your answer, explain what is meant by:
+
+(a) overcoupling
+(b) undercoupling
+(c) critical coupling.
+
+3.8 Image channel rejection
+
+Earlier we showed that a superhet receiver's intermediate frequency, fw, is the difference between the signal frequency, fIF , and the local oscillator frequency, fL0. We also derived the following formula for determining the frequency of the local oscillator signal:
+
+The formula can be rearranged to make /RF the subject, as follows:
+
+In other words, there are two potential radio frequency signals that can mix with the local oscillator signal in order to provide the required IF. One of these is the wanted signal (i.e. the signal present on the channel to which the receiver is tuned) whilst the other is referred to as the image channel.
+
+Being able to reject any signals that may just happen to be present on the image channel of a superhet receiver is an important requirement of any superhet receiver. This can be achieved by making the RF tuned circuits as selective as possible (so that the image channel lies well outside their pass-band). The problem of rejecting the image channel is, however, made easier by selecting a relatively high value of intermediate frequency (note that, in terms of frequency, the image channel is spaced at twice the IF away from the wanted signal).
+
+Figure 3.19 shows the relationship that exists between the wanted signal, local oscillator signal, and the image channel for receivers with (a) a 455 kHz IF and (b) a 1 .6 MHz IF. A typical response curve for the RF tuned circuits of the receiver (assuming a typical Q-factor) has been superimposed onto both of the graphs (the same response curve has been used in both cases but the frequency scale has been changed for the two different intermediate frequencies). From Figure 3..19 is should be clear that whilst the image channel for the 455 kHz IF falls inside the RF tuned circuit response, that for the 1.6 MHz IF falls well outside the curve.
+
+Test your understanding 3.7
+
+An FM receiver tuned to 1 1 8.6 MHz has an IF of 10.7 MHz. Determine the frequency of the image channel given that the local oscillator operates above the signal frequency.
+
+3.9 Automatic gain control 
+
+The signal levels derived from the antennas fitted to an aircraft can vary from as little as 1 f.l V to more than 1 ,000 f.LV. Unfortunately, this presents us with a problem when signals are to be amplified. The low-level signals benefit from the maximum amount of gain present in a system whilst the larger signals require correspondingly less gain in order to avoid non-linearity and consequent distortion of the signals and modulation. AM, CW and SSB receivers therefore usually incorporate some means of automatic gain control (AGC) that progressively reduces the signal gain as the amplitude of the input signal increases (see Figure 3.20).
+
+In simple receivers, the AGC voltage (a DC oltage dependent on signal amplitude) is derived irectly from the signal detector and is fed directly to the bias circuitry of the IF stages (see igure 3 . 1 1 ). In more sophisticated equipment, the AGC voltage is amplified before being applied to the IF and RF stages. There is, in fact, no need to reduce the signal gain for small RF signals. Hence, in more sophisticated equipment, the AGC circuits may be designed to provide a 'delay' so that there is no gain reduction until a predetermined threshold voltage is exceeded. In receivers that feature delayed AGC there is no gain reduction until a certain threshold voltage is archieved. Beyond this, there is a progressive
+reduction in gain (see Figure 3.20).
+
+ 
+3.10 Double superhet receivers
+
+The basic superhet receiver shown in Figure 3.11 has an intermediate frequency (IF) of usually either 455 kHz, 1.6 MHz or 10.7 MHz. In order to achieve an acceptable degree of image channel rejection (recall that the image channel is spaced
+by twice the IF away from the wanted frequency) a 455 kHz IF will generally be satisfactory for the reception of frequencies up to about 5 MHz, whilst an IF of 1 .6 MHz (or greater) is often used at frequencies above this. At VHF, intermediate frequencies of 1 0.7 MHz (or higher) are often used.
+
+Unfortunately, the disadvantage of using a high IF ( 1.6 MHz or 10.7 MHz) is simply that the bandwidth of conventional tuned circuits is too wide to provide a satisfactory degree of selectivity and thus elaborate (and expensive) IF filters are required.
+
+To avoid this problem and enjoy the best of both worlds, many high-performance receivers make use of two separate intermediate frequencies; the first IF provides a high degree of image channel rej ection whilst the second IF provides a high degree of selectivity. Such receivers are said to use dual conversion.
+
+A typical double superhet receiver is shown in Figure 3 .2 1 . The incoming signal frequency (26 MHz in the example) is converted to a first IF at 1 0.695 MHz by mixing the RF signal with a first local oscillator signal at 36.695 MHz (note 
+that 36.695 MHz - 26 MHz = 10.695 MHz). The first IF signal is then filtered and amplified before it is passed to the second mixer stage.
+ 
+The input of the second mixer ( 1 0.695 MHz) is then mixed with the second local oscillator signal at 1 0.240 MHz. This produces the second IF at 455 kHz (note that 10.695 MHz - 10.240 MHz = 455 kHz). The second IF signal is then filtered and amplified. It is worth noting that the bulk of the gain is usually achieved in the second IF stages and there will normally be several stages of amplification at this frequency.
+
+In order to tune the receiver, the first local oscillator is either made variable (using conventional tuned circuits) or is synthesised using digital phase-locked loop techniques (see page 53). The second local oscillator is almost invariably crystal controlled in order to ensure good stability and an accurate relationship between the two intermediate frequencies.
+
+Typical IF bandwidths in the receiver shown in Figure 3 . 2 1 are 75 kHz at the first IF and a mere 6 kHz in the second IF.
+
+The first IF filter (not shown in Figure 3 .2 1 ) is connected in the signal path between the first and second mixer. Where a stage of amplification is provided at the first IF, the filter precedes the amplifier stage. The requirements of the filter are not stringent since the ultimate selectivity of the receiver is defmed by the second IF filter which operates at the much lower frequency of 455 kHz.
+
+There are, however, some good reasons for using a filter which offers a high degree of rejection of the unwanted second mixer image response which occurs at 9.785 MHz. If this image is present at the input of the second mixer, it will mix with the second mixer inj ection at 1 0.240 MHz to produce a second IF component
+of 455 kHz, as shown in Figure 3.22. The function of the first IF filter is thus best described as roofing; bandwidth is a less important
+
+
+3.1 1 Digital frequency synthesis
+
+The signals used within high-specification radio frequency equipment (both receivers and transmitters) must be both accurate and stable. 
+
+Where operation is restricted to a single frequency or a limited number of channels, quartz crystals may be used to determine the frequency of operation. However, when a large number of frequencies must be covered, it is necessary to employ digital frequency generating techniques in which a single quartz crystal oscillator is used in conjunction with LSI circuitry to generate a range of discrete frequencies. These frequencies usually have a constant channel spacing (typically 3 kHz, 8.33 kHz, 9 kHz, 1 2.5 kHz, 25 kHz, etc.). 
+
+Frequencies are usually selected by means of a rotary switch, push-buttons or a keypad but can also be stored in semiconductor memories. 
+
+Digital phase locked loop (PLL) circuitry was first used in military communications equipment in the mid- 1 960s and resulted from the need to generate a very large number of highly accurate and stable frequencies m a multi-channel frequency synthesiser.
+
+In this particular application cost was not a primary consideration and highly complex circuit arrangements could be employed involving large numbers of discrete components and integrated circuits.
+
+Phase locked loop techniques did not arrive in mass-produced equipment until the early 1970s.
+
+By comparison with today' s equipment such arrangements were crude, employing as many as nine or ten i.e. devices. Complex as they were, these PLL circuits were more cost-effective than their comparable multi-crystal mixing synthesiser counterparts. With the advent of large scale integration in the late 1 970s, the frequency generating unit in most radio equipment could be reduced to one, or perhaps two, LSI devices together with a handful of additional discrete components. The cost-effectiveness of this approach is now beyond question and it is unlikely that, at least in the most basic equipment, much further refinement will be made. In the area of more complex receivers and transceivers, however, we are now witnessing a further revolution in the design of synthesised radio equipment with the introduction of dedicated microcomputer controllers which permit keypad programmed channel selection and scanning with pause, search, and lock-out facilities.
+
+The most basic form of PLL consists of a phase detector, filter, DC amplifier and voltage controlled oscillator (VCO), as shown in Figure 3 .23. The VCO is designed so that its free­running frequency is at, or near, the reference frequency. The phase detector senses any error between the VCO and reference frequencies. 
+
+The output of the phase detector is fed, via a suitable filter and amplifier, to the DC control voltage input of the VCO. If there is any discrepancy between the VCO output and the reference frequency, an error voltage is produced and this is used to correct the VCO frequency. The VCO thus remains locked to the reference frequency. If the reference frequency changes, so does the VCO. The bandwidth of the system is determined by the time constants of the loop filter. In practice, if the VCO and reference frequencies are very far apart, the PLL may be unable to lock. 
+
+The frequency range over which the circuit can achieve lock is known as the capture range. It should be noted that a PLL takes a finite time to achieve a locked condition and that the VCO locks to the mean value of the reference
+frequency.
+
+The basic form of PLL shown in Figure 3 .23 is limited i n that the reference frequency is the same as that of the VCO and no provision is incorporated for changing it, other than by varying the frequency of the reference oscillator itself. In practice, it is nom1al for the phase detector to operate at a much lower frequency than that of the VCO output and thus a frequency divider is incorporated in the VCO feedback path (see Figure 3 .24). The frequency presented to the phase detector will thus be fo/n where n is the divisor.
+
+When the loop is locked (i.e. when no phase error exists) we can infer that:
+
+
+
+
+
+
+A similar divider arrangement can also be used at
+the reference input to the phase detector, as
+shown in Figure 3 .25. The frequency appearing at
+the reference input to the phase detector will be
+frerlm and the loop will be locked when:
+
+
+
+Thus if frer, n and m were respectively 100 kHz, 2000 and 10, the output frecuency fout would be:
+
+
+If the value of n can be made to change by replacing the fixed divider with a programmable divider, different output frequencies can be generated. I f, for example, n was variable from 2000 to 2, 100 in steps of 1 , then fout would range from 20 MHz to 2 1 MHz in 1 0 kHz steps. Figure 3.26 shows the basic arrangement of a PLL which incorporates a programmable divider driven from the equipment's digital frequency controller (usually a microprocessor).
+
+
+In practice, problems can sometimes arise in high-frequency synthesisers where the programmable frequency divider, or divide-by-n counter, has a restricted upper frequency limit. In such cases it will be necessary to mix the high­frequency VCO output with a stable locally generated signal derived from a crystal oscillator.
+
+The mixer output (a relatively low difference frequency) will then be within the range of the programmable divider. 
+
+3.12 A design example
+
+Ne shall bring this chapter to a conclusion by roviding a design example of a complete HF communications receiver. This receiver was developed by the author for monitoring transatlantic HF communications in the 5.5 MHz aircraft band. The circuit caters for the reception of AM, CW (Morse code) and SSB signals. To aid stability, the CIO/BFO frequency is controlled by means of a ceramic resonator. The RF performance is greatly enhanced by the use of dual gate MOSFET devices in the RF amplifier, mixer, and product detector stages and junction gate FETs in the local oscillator stage. These devices offer high gain with excellent strong-signal handling capability. They also permit simple and effective coupling between stages without the need for complex impedance matching.
+
+The receiver is tunable over the frequency range 5.0 MHz to 6.0 MHz. Used in conjunction with a simple antenna, it offers reception of aircraft signals at distances in excess of 1000 km.
+ 
+The receiver is based on the single superhet principle operating with an intermediate frequency of 455 kHz. This frequency is low enough to ensure reasonable selectivity with just two stages of IF amplification and with the aid of a low-cost 455 kHz filter. Adequate image rejection is provided by two high-Q ganged RF tuned circuits.
+
+The design uses conventional discrete component circuitry in all stages with the exception of the audio amplifier/output stage and voltage regulator. This approach ensures that the receiver is simple and straightforward to align and does not suffer from the limitations associated with several of the popular integrated
+circuit IF stages.
+
+The block diagram of the receiver is shown in Figure 3 .26. The vast majority of the receiver's gain and selectivity is associated with the two IF stages, TR3 and TR4. These two stages provide over 40 dB of voltage gain and the three IF tuned circuits and filter are instrumental in reducing the IF bandwidth to about 3 .4 kHz for SSB reception. 
+
+The RF stage (TR1) provides a modest amount of RF gain (about 20 dB at the maximum RF gain setting) together with a significant amount of image channel rej ection.
+
+The local oscillator stage (TR 7) provides the necessary local oscillator signal which tunes from 5.455 MHz to 6.455 MHz. The local oscillator signal is isolated from the mixer stage and the LO output by means of the buffer stage, TR8. The receiver incorporates two detector stages, one for AM and one for CW and SSB. The AM detector makes use of a simple diode envelope detector (D3) whilst the CW/SSB detector is based on a product detector (TR5). This stage offers excellent performance with both weak and strong CW and SSB signals. The 455 kHz carrier insertion is provided by means of the BFO/CIO stage (TR11). Amplified AGC is provided by means.of TR9 and TRIO.
+
+A conventional integrated circuit audio amplifier stage (ICI) provides the audio gain necessary to drive a small loudspeaker. A 5 V regulator (IC2) .is used to provide a stabilised low-voltage DC rail for the local oscillator and buffer stages. Diode switching is used to provide automatic changeover for the external DC or AC supplies. This circuitry also provides charging current for the internal nickel-cadmium (NiCd) battery pack.

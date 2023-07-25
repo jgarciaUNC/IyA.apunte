@@ -1,0 +1,44 @@
+% Capítulo 2. Medición de datos de aire
+% 2.1.  Circuitos de presiones estática y total. Toma de presiones alternativas
+% 2.2.  Altímetros barométricos, servoaltímetros. Codificadores de altura
+% 2.3.  Variómetros
+% 2.4.  Velocímetros. Machmetros.
+% 2.5.  Computadores centrales de datos de aire, su función
+
+% \section{Introducci\'on}
+% \label{sec:U02.00.introduccion}
+
+
+
+
+ \chapter{Medici\'on de datos de aire}
+ \label{chap:U02.medicion.datos.aire}
+
+
+% \section{Circuitos de presiones estática y total. Toma de presiones alternativas}
+% \label{sec:U02.01.circuitos.p.estat.y.total.tomas.presiones.alternativas}
+
+
+% \section{Altímetros barométricos, servoaltímetros. Codificadores de altura}
+% \label{sec:U02.02.altimetros.codificadores.altura}
+
+
+% \section{Variómetros}
+% \label{sec:U02.03.variometros}
+
+
+% \section{Velocímetros. Machmetros}
+% \label{sec:U02.04.Velocimetros.Machimetros}
+
+
+% \section{Computadores centrales de datos de aire, su función}
+% \label{sec:U02.05.computadores.datos.aire}
+
+\begin{landscape}
+
+  \includepdf[pages=-, fitpaper=false, scale=0.80, landscape=true,
+  offset = 0 -20,
+  pagecommand={\thispagestyle{fancy}}]
+  {02.medicion.datos.aire/instrumentos-2019.pdf}
+
+\end{landscape}

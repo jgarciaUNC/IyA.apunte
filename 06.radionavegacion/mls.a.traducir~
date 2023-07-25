@@ -1,0 +1,108 @@
+Microwave landing system
+
+The microwave landing system (MLS) was
+adopted in 1978 as the long-term instrument
+landing system’s (ILS) replacement. MLS is
+based on the principle of time referenced scanning
+beams and provides precision navigation guidance
+for approach and landing. The system provides
+three-dimensional approach guidance, i.e.
+azimuth, elevation and range; it also provides
+multiple approach angles for both azimuth and
+elevation guidance. Despite the advantages of
+MLS, it has not yet been introduced on a
+worldwide basis for commercial aircraft, primarily
+due to the advent of global navigation satellite
+systems (GNSS). In this chapter, we will review
+MLS principles and discuss its advantages over
+the ILS.
+13.1 MLS overview
+MLS was introduced to overcome a number of
+problems and limitations associated with ILS.
+The principle of MLS allows curved, or
+segmented approaches in azimuth together with
+selectable glide slope angles. All of these features
+are beneficial in mountainous regions, or for
+environmental reasons, e.g. over residential areas
+of a town or city. MLS installations are not
+affected by ground vehicles or taxiing aircraft
+passing through the beam as with the localizer.
+Aircraft making an approach using ILS in low
+visibility have to maintain sufficient separation to
+preserve the integrity of the localizer beams; with
+MLS, this separation is not required. The
+combination of all these features allows for
+increased air traffic control flexibility and higher
+take-off and landing rates for a given airfield.
+Two ground transmitters provide azimuth and
+elevation guidance; these scanning beams extend
+the coverage for an approach compared with the
+ILS, see Figure 13.1.
+
+13.2 MLS principles
+The system is based on the principle of time
+referenced scanning beams and operates in the C-
+band at 5 GHz. Two directional fan-shaped
+beams are used for azimuth and elevation
+guidance. The azimuth approach transmitter is
+located at the stop end of the runway; the
+elevation transmitter is located near the threshold
+of the runway. Azimuth scanning is through ±40°
+either side of the runway centreline with a range
+of 20 nm, see Figure 13.2(a). An expansion
+capability can extend azimuth coverage to ±60°,
+but with a reduced range of 14 nm. Elevation
+scanning sweeps over an angle of 15 degrees
+(with 20 degrees as an option) providing
+coverage up to 20,000 feet, see Figure 13.2(b).
+At the aircraft receiver, a pulse is detected each
+time the respective beams sweep past the aircraft.
+Consider an aircraft on the approach as illustrated
+in Figure 13.3. The (azimuth) time referenced
+scanning beam sweeps from left to right (‘TO’),
+and then returns from right to left (‘FRO’). If the
+aircraft is in position A, it is to the right of the
+centreline (from the pilot’s perspective) and will
+receive a pulse at time interval t 1 as the beam
+sweeps ‘TO’, and then at time t 2 when the beam
+sweeps ‘FRO’. The two pulses are therefore close
+together with the aircraft to the right of centreline.
+If the aircraft were in position B, i.e. to the left of
+the centreline, it would receive pulses at t 3 and t 4
+due to the relative position of the aircraft.
+The aircraft receiver in a given aircraft will
+interpret the timing of each pulse in terms of when
+they occurred and the time difference between each
+pulse. These pulse timings provide a precise
+position fix for the aircraft with respect to the
+runway centreline. Elevation guidance is calculated
+in the same way as in azimuth, except that the
+beam is scanning up and down. Timing signals are
+referenced to a selected elevation approach angle.
+
+Referring to Figure 13.4 and Table 13.1, the
+pulse timing technique is used to determine the
+lateral positions of three aircraft, A, B and C. Figure
+13.4 is a simplified illustration of the transmitter
+and its beam sweep either side of the runway
+centreline, and timing of the TO/FRO beam as it
+sweeps through the ±40°. (Runway omitted to
+simplify the illustration.) The illustration shows the
+TO sweep sub-divided into eight segments, 1–8; the
+FRO (return) sweep is sub-divided into eight
+segments, 9–16. The TO sweep reaches aircraft C at
+a count of 2, and then continues across to a count of
+8; it then returns as the FRO sweep, reaching
+aircraft C at a count of 14. The time delta between
+each count (or pulse, in accordance with Figure
+13.3) is 14 − 2 = 12. The positions of aircraft B and
+C are calculated in the same way; the results of this
+illustration are summarised in Table 13.1.
+
+Key point
+
+MLS was introduced to overcome a number of problems and limitations associated with ILS. The scanning principle of MLS allows curved, or segmented approaches in azimuth together with selectable glide slope angles.
+
+Key point
+
+MLS installations are not affected by ground vehicles or taxiing aircraft passing through the beam as with the localizer.

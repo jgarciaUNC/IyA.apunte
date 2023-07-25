@@ -1,0 +1,12 @@
+\babel@toc {spanish}{}
+\beamer@sectionintoc {1}{Propiedades del gir\'oscopo}{2}{0}{1}
+\beamer@sectionintoc {2}{Indicadores de virajes, neum\'aticos, de C.C. y C.A.}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Indicadores de virajes}{6}{0}{2}
+\beamer@sectionintoc {3}{Indicadores de actitud en dos ejes con gir\'oscopo integrado, y remoto}{12}{0}{3}
+\beamer@subsectionintoc {3}{1}{Indicadores de actitud en dos ejes}{12}{0}{3}
+\beamer@sectionintoc {4}{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}{13}{0}{4}
+\beamer@subsectionintoc {4}{1}{Magnetismo terrestre}{13}{0}{4}
+\beamer@sectionintoc {5}{Comp\'as girosc\'opico auto-corregido, indicador con gir\'oscopo integrado, y remoto.}{32}{0}{5}
+\beamer@subsectionintoc {5}{1}{Comp\'as girosc\'opico auto-corregido}{32}{0}{5}
+\beamer@sectionintoc {6}{Central girosc\'opica para la indicaci\'on de actitud en tres ejes y toda actitud}{36}{0}{6}
+\beamer@subsectionintoc {6}{1}{Central girosc\'opica}{36}{0}{6}

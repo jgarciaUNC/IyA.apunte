@@ -1,0 +1,40 @@
+%	01.02.Clasificacion instrumentos
+%	Version 2018
+
+
+\begin{frame}{Clasificaci\'on de los Instrumentos}
+
+  \begin{itemize}
+  \item {\bf Instrumentos del sistema pitot-est\'atica}
+  \item {\bf Instrumentos girosc\'opicos}
+  \item {\bf Instrumentos duplicados}
+  \item {\bf Instrumentos de navegaci\'on}
+  \item {\bf Instrumentos del grupo motopropulsor}
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Clasificaci\'on de los Instrumentos}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=\linewidth]{imagenes/1.2.clasificacion.instrumentos/tipos_instrumentos.png}
+
+      {\tiny Referencia: \cite{Introduction_to_Avionics_Systems}}
+    \end{column}
+  \begin{column}{0.5\textwidth}
+    \includegraphics[width=\linewidth]{imagenes/1.2.clasificacion.instrumentos/glass_cockpit.jpg}
+%    \includegraphics[width=\linewidth]{imagenes/1.2.clasificacion.instrumentos/humor_complejidad.jpg}
+  \end{column}
+  \end{columns}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Clasificaci\'on de los Instrumentos}
+
+{\Large \bf Avi\'onica = Aviaci\'on + Electr\'onica}
+
+\end{frame}

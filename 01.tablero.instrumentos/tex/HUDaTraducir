@@ -1,0 +1,212 @@
+2.2.2 Basic Principles
+The basic configuration of a HUD is shown schematically in Figure 2.4. The pilot views the outside world through the HUD combiner glass (and windscreen). The combiner glass is effectively a ‘see through’ mirror with a high optical transmission efficiency so that there is little loss of visibility looking through the combiner and windscreen. It is called a combiner as it optically combines the collimated display symbology with the outside world scene viewed through it. Referring to Figure 2.4, the display symbology generated from the aircraft sensors and systems (such as the INS and air data system) is displayed on the surface of a cathode ray tube (CRT).
+
+The display images are then relayed through a relay lens system which magnifies the display and corrects for some of the optical errors which are otherwise present in the system. The relayed display images are then reflected through an angle of near 90 by the fold mirror and thence to the collimating lens which collimates the display images which are then reflected from the combiner glass into the pilot’s forward field of view. The virtual images of the display symbology appear to the pilot to be at infinity and overlay the distant world scene, as they are collimated. The function of the fold mirror is to enable a compact optical configuration to be achieved so that the HUD occupies the minimum possible space in the cockpit.
+
+The fundamental importance of collimation to any HUD system merits further explanation for the benefit of readers whose knowledge of optics needs refreshing. A collimator is defined as an optical system of finite focal length with an image source at the focal plane. Rays of light emanating from a particular point on the focal plane exit from the collimating system as a parallel bunch of rays, as if they came from a source at infinity. Figures 2.5(a) and (b) show a simple collimating lens system with the rays traced from a source at the centre, O, and a point, D, on the focal plane respectively. A ray from a point on the focal plane which goes through the centre of the lens is not refracted and is referred to as the ‘non-deviated ray’. The other rays emanating from the point are all parallel to the non-deviated ray after exiting the collimator.
+
+It should be noted that the collimating lens, in practice, would be made of several elements to minimise the unacceptable shortcomings of a single element.
+
+It can be seen from Figure 2.5(a) that an observer looking parallel to the optical axis will see point O at eye positions A, B and C, and the angle of gaze to view O is independent of the displacement of the eye from the optical axis. Similarly, it can be seen from Figure 2.5(b) that the angle of gaze from the observer to see point D is the same for eye positions A, B and C and is independent of translation.
+
+The refractive HUD optical system, in fact, is basically similar to the simple optical collimation system shown in Figure 2.6. The rays are traced for the observer to see points D, O and E on the display with eye positions at points A, B and C. It can be seen that the angles of gaze to see points D, O and E are the same from points A, B or C. The appearance of the collimated display is thus independent of the position (or translation) of the eye and is only dependent on the angle of gaze. Also because of collimation, the display appears to be at infinity as the rays emanating from any point on the display are all parallel after exiting the collimating system.
+
+It should be noted that the display images must be correctly collimated. Decollimation is the term used when the light from a given point on the display does not leave the optical system parallel over the entire lens surface. The light can converge, diverge or otherwise ‘misbehave’ resulting in ‘swimming’ of the display images when the pilot’s head moves. Sometimes this creates discomfort and in the case of convergence can even cause nausea.
+
+A very important parameter with any HUD is the field of view (FOV), which should be as large as possible within the severe space constraints imposed by the cockpit geometry. A large horizontal FOV is particularly important to enable the pilot to ‘look into turns’ when the HUD forms part of a night vision system and the only visibility the pilot has of the outside world is the FLIR image displayed on the HUD.
+
+It is important to distinguish between the instantaneous field of view (IFOV) and the total field of view (TFOV) of a HUD as the two are not the same in the case of the refractive type of HUD.
+
+The instantaneous field of view is the angular coverage of the imagery which can be seen by the observer at any specific instant and is shown in the simplified diagram in Figure 2.7(a). It is determined by the diameter of the collimating lens, D, and the distance, L, of the observer’s eyes from the collimating lens.
+
+The total field of view is the total angular coverage of the CRT imagery which can be seen by moving the observer’s eye position around. TFOV is determined by the diameter of the display, A, and effective focal length of the collimating lens, F .
+
+Reducing the value of L increases the IFOV as can be seen in Figure 2.7(b) which shows the observer’s normal eye position brought sufficiently close to the collimating lens for the IFOV to equal the TFOV. However, this is not practical with the conventional type of HUD using refractive optics. This is because of the cockpit geometry constraints on the pilot’s eye position and the space constraints on the diameter of the collimating lens. The IFOV is generally only about two thirds of the TFOV.
+
+It can be seen from Figure 2.7(c) that by moving the head up or down or side to side the observer can see a different part of the TFOV, although the IFOV is unchanged.
+
+The effect is like looking through and around a porthole formed by the virtual image of the collimating lens as can be seen in Figure 2.8. The diagram shows the IFOV seen by both eyes (cross hatched), the IFOV seen by the left and right eyes respectively and the TFOV.
+
+The analogy can be made of viewing a football match through a knot hole in the fence and this FOV characteristic of a HUD is often referred to as the ‘knot hole effect’.
+
+The constraints involved in the HUD design are briefly outlined below. For a given TFOV, the major variables are the CRT display diameter and the effective focal length of the collimating lens system. For minimum physical size and weight, a small diameter CRT and short focal length are desired. These parameters are usually balanced against the need for a large diameter collimating lens to give the maximum IFOV and a large focal length which allows maximum accuracy. The diameter of the collimating lens is generally limited to between 75 mm and 175 mm (3 inches and 7 inches approximately) by cockpit space constraints and practical considerations. Large lenses are very heavy and liable to break under thermal shock.
+
+The HUD combiner occupies the prime cockpit location right in the centre of the pilot’s forward line of view at the top of the glare shield. The size of the combiner is determined by the desired FOV and the cockpit geometry, especially the pilot’s seating position. The main body of the HUD containing the optics and electronics must be sunk down behind the instrument panel in order to give an unrestricted view down over the nose of the aircraft during high attitude manoeuvres (refer to Figure 2.8).
+
+The pilot’s design eye position for the HUD is determined by pilot comfort and the ability to view the cockpit instruments and head down displays and at the same time achieve the maximum outside world visibility. In the case of a combat aircraft, there is also the ejection line clearance to avoid the pilot being ‘kneecapped’ by the HUD on ejecting, which further constrains the design eye position.
+
+Typical IFOVs range from about 13 ◦ to 18 ◦ with a corresponding TFOV of about 20 to 25. The total vertical FOV of a HUD can be increased to around 18 by the use of a dual combiner configuration rather like a venetian blind. Effectively two overlapping portholes are provided, displaced vertically. The effect of the cockpit space and geometry constraints is that the HUD design has to be ‘tailor made’ for each aircraft type and a ‘standard HUD’ which would be interchangeable across a range of different aircraft types is not a practical proposition.
+
+The conventional combiner glass in a refractive HUD has multi-layer coatings which reflect a proportion of the collimated display imagery and transmit a large proportion of the outside world, so that the loss of visibility is fairly small. A pilot looking through the combiner of such a HUD sees the real world at 70% brightness upon which is superimposed the collimated display at 30% of the CRT brightness (taking typical transmission and reflection efficiencies). The situation is shown in Figure 2.9 and is essentially a rather lossy system with 30% of the real world brightness thrown away, (equivalent to wearing sunglasses) as is 70% of the CRT display brightness.
+
+In order to achieve an adequate contrast ratio so that the display can be seen against the sky at high altitude or against sunlit cloud it is necessary to achieve a display brightness of 30,000 Cd/m 2 (10,000 ft L) from the CRT. In fact, it is the brightness requirement in particular which assures the use of the CRT as the display source for some considerable time to come, even with the much higher optical efficiencies which can be achieved by exploiting holographic optical elements.
+
+The use of holographically generated optical elements can enable the FOV to be increased by a factor of two or more, with the instantaneous FOV equal to the total FOV. Very much brighter displays together with a negligible loss in outside world visibility can also be achieved, as will be explained in the next section. High optical transmission through the combiner is required so as not to degrade the acquisition of small targets at long distances.
+
+It should be noted, however, that the development of ‘Rugate’ dielectric coatings applied to the combiners of conventional refractive HUDs has enabled very bright displays with high outside world transmission to be achieved, comparable, in fact, with holographic HUDs. A Rugate dielectric coating is a multi-layer coating having a sinusoidally varying refractive index with thickness which can synthesise a very sharply defined narrow wavelength band reflection coating, typically around 15 nm at the CRT phosphor peak emission. The coating exhibits similar high reflection and transmission values to holographic coatings but is not capable of generating optical power.
+
+The IFOV of a refractive HUD using a combiner with a Rugate dielectric coating still suffers from the same limitations and cannot be increased like a holographic HUD. It can, nevertheless, provide a very competitive solution for applications where a maximum IFOV of up to 20 is acceptable.
+
+2.2.3 Holographic HUDs
+
+The requirement for a large FOV is driven by the use of the HUD to display a collimated TV picture of the FLIR sensor output to enable the pilot to ‘see’ through the HUD FOV in conditions of poor visibility, particularly night operations. It should be noted that the FLIR sensor can also penetrate through haze and many cloud conditions and provide ‘enhanced vision’ as the FLIR display is accurately overlaid one to one with the real world. The need for a wide FOV when manoeuvring at night at low level can be seen in Figures 2.10 and 2.11. The wider azimuth FOV is essential for the pilot to see into the turn. (The analogy has been made of trying to drive a car round Hyde Park Corner with a shattered opaque windscreen with your vision restricted to a hole punched through the window.)
+
+In a modern wide FOV holographic HUD, the display collimation is carried out by the combiner which is given optical power (curvature) such that it performs the display image collimation. Figure 2.12 shows the basic configuration of a modern single combiner holographic HUD. The CRT display is focused by the relay lens system to form an intermediate image at the focus of the powered combiner. The intermediate image is then reflected from the fold mirror to the combiner. This acts as a collimator as the tuned holographic coating on the spherical surface of the combiner reflects the green light from the CRT display and forms a collimated display image at the pilot’s design eye position.
+
+Figure 2.13 illustrates the collimating action of a spherical reflecting surface. The collimating action is, in fact, the optical reciprocal of Newton’s reflecting telescope.
+
+Because the collimating element is located in the combiner, the porthole is considerably nearer to the pilot than a comparable refractive HUD design. The collimating element can also be made much larger than the collimating lens of a refractive HUD, within the same cockpit constraints. The IFOV can thus be increased by a factor of two or more and the instantaneous and total FOVs are generally the same, as the pilot is effectively inside the viewing porthole.
+
+This type of HUD is sometimes referred to as a ‘Projected Porthole HUD’ and the image is what is known as pupil forming. The display imagery can, in fact, only be seen within the ‘head motion box’. If the eyes or head move outside a three dimensional box set in space around the pilot’s normal head position, then the display fades out. It literally becomes a case of ‘now you see it – now you don’t’ at the head motion box limits. Modern holographic HUDs are designed to have a reasonably sized head motion box so that the pilot is not unduly constrained.
+
+Figure 2.14 illustrates the head motion box concept.
+
+The combiner comprises a parallel-faced sandwich of plano-convex and plano-concave glass plates with a holographic coating on the spherical interface between them. The holographic coating is formed on the spherical surface of the plano-convex glass plate and the concave surface glass forms a cover plate so that the holographic coating can be hermetically sealed within the combiner. The holographic coating is sharply tuned so that it will reflect the green light of one particular wavelength from the CRT display with over 80% reflectivity but transmit light at all other wavelengths with around 90% efficiency. (The CRT phosphors generally used are P43 or P53 phosphors emitting green light with a predominant wavelength of around 540 nm, and the hologram is tuned to this wavelength.) This gives extremely good transmission of the outside world through the combiner. (The outer faces of the combiner glass are parallel so that there is no optical distortion of the outside scene.) The outside world viewed through the combiner appears very slightly pink as the green content of the outside world with a wavelength of around 540nm is not transmitted through the combiner. Holographic HUDs, in fact, are recognisable by the green tinge of the combiner.
+
+The spherical reflecting surface of the combiner collimates the display imagery but there are large optical aberration errors introduced which must be corrected.
+
+These aberration errors are due to the large off-axis angle between the pilot’s line of sight and the optical axis of the combiner which results from the HUD configuration.
+
+Some corrections can be made for these aberrations by the relay lens system but there is a practical limit to the amount of correction which can be achieved with conventional optical elements without resorting to aspherical surfaces. This is where a unique property of holographically generated coatings is used, namely the ability to introduce optical power within the coating so that it can correct the remaining aberration errors. The powered holographic coating produces an effect equivalent to local variations in the curvature of the spherical reflecting surface of the combiner to correct the aberration errors by diffracting the light at the appropriate points. The holographic coating is given optical power so that it behaves like a lens by using an auxiliary optical system to record a complex phase distribution on the combiner surface during the manufacturing process. This will be explained shortly.
+
+A very brief overview of holographic optical elements is set out below to give an appreciation of the basic principles and the technology.
+
+Holography was invented in 1947 by Denis Gabor, a Hungarian scientist working in the UK. Practical applications had to wait until the 1960s, when two American scientists, Emmet Leith and Joseph Upatnieks, used coherent light from the newly developed laser to record the first hologram.
+
+Holographic HUDs use reflection holograms which depend for their operation on refractive index variations produced within a thin gelatin film sandwiched between two sheets of glass. This is really a diffraction grating and hence a more accurate name for such HUDs is diffractive HUDs. A holographic reflection coating is formed by exposing a thin film of photo-sensitive dichromated gelatin to two beams of coherent laser light. Due to the coherent nature of the incident beams a series of interference fringes are formed throughout the depth of the gelatin film. During the developing process these fringes are converted into planes of high and low refractive index parallel to the film surface. To a first approximation, the refractive index change between adjacent planes is sinusoidal as opposed to the step function associated with multi-layer coatings. During the developing process the gelatin swells, producing an increase in the tuned wavelength. Re-tuning the hologram is achieved by baking the film which reduces the thickness and hence the spacing between planes of constant refractive index. The designer therefore specifies a construction wavelength at a given angle of incidence after baking. Figure 2.15 illustrates the planes or layers of varying refractive index formed in the holographic
+coating.
+
+The bandwidth of the angular reflection range is determined by the magnitude of the change in refractive index. This variable can be controlled during the developing process and is specified as the hologram modulation.
+
+At any point on the surface, the coating will only reflect a given wavelength over a small range of incidence angles. Outside this range of angles, the reflectivity drops off very rapidly and light of that wavelength will be transmitted through the coating.
+
+The effect is illustrated in Figures 2.16 and 2.17. Rays 1 and 3 are insufficiently close to the reflection angle, θ , for them to be reflected whereas Ray 2 is incident at the design angle and is reflected.
+
+There is another more subtle feature of holograms which gives particular advantages in an optical system. That is the ability to change the tuned wavelength uniformly across the reflector surface. Figure 2.12 shows that the reflection coating
+must reflect the display wavelength at a different incident angle at the bottom of the combiner from that at the top. It is possible to achieve this effect with a hologram because it can be constructed from the design eye position.
+
+The process for producing the powered holographic combiner is very briefly outlined below.
+
+The process has three key stages:
+
+Design and fabricate the Computer Generated Hologram (CGH).
+
+Produce master hologram.
+
+Replicate copies for the holographic combiner elements.
+
+The CGH and construction optics create the complex wavefront required to produce the master hologram. The CGH permits control of the power of the diffraction grating over the combiner thus allowing correction of some level of optical distortion resulting in a simplified relay lens system.
+
+The CGH design starts with the specification performance and detail design of the relay lens optics. This is used to define the combiner performance and then that of the construction optics, which finally leads to a set of wavefront polynomials defining the CGH. The whole process is iterative until a practical solution to all stages is achieved. The CGH is actually a diffraction grating etched into a chrome layer on a glass substrate by an electron beam.
+
+The master hologram is created using this complex wavefront recorded onto a gelatin layer on a spherical glass substrate and is used as a template to produce the combiner elements.
+
+The replication process uses a scanning exposure technique where a laser beam is raster scanned across the replication substrate which has been index-matched to the master substrate so as to produce a contact copy of the master hologram.
+It should be pointed out that the design of holographic optical systems is a highly computer intensive operation and would not be possible without a very extensive suite of optical design software.
+
+Development of the optical design software has required many man years of effort and holographic optical design is very much a task for the experts and professionals. A very close liaison with the holographic optical manufacturing team and facility is essential.
+
+Figure 2.18 is a photograph of a modern wide FOV off-axis single combiner holographic HUD with a powered holographic combiner.
+
+2.2.4 HUD Electronics
+
+The basic functional elements of a modern HUD electronic system are shown in Figure 2.19. These functional elements may be packaged so that the complete HUD system is contained in a single unit, as in the Typhoon HUD above.
+
+The system may also be configured as two units, namely the Display Unit and the Electronics Unit. The Display Unit contains the HUD optical assembly, CRT, display drive electronics, high and low voltage power supplies. The Electronics Unit carries out the display processing, symbol generation and interfacing to the aircraft systems.
+
+The new generation of aircraft with integrated modular avionics use standardised cards/modules to carry out the HUD display processing and symbol generation tasks. These are housed in a rack in one of the environmentally controlled cabinets.
+
+The basic functional elements of the HUD electronics are described briefly below.
+
+The data bus interface decodes the serial digital data from the aircraft data bus (typically a MIL STD 1553B data bus) to obtain the appropriate data from the aircraft sub-systems and inputs this data to the display processor.
+
+The input data includes the primary flight data from the air data system and the INS, such as height, airspeed, vertical speed, pitch and bank angles, heading, flight path velocity vector. Other data include MLS or ILS guidance signals, stores management and weapon aiming data in the case of a combat aircraft, discrete signals such as commands, warnings, etc.
+
+The display processor processes this input data to derive the appropriate display formats, carrying out tasks such as axis conversion, parameter conversion and format management. In addition the processor also controls the following functions:
+
+Self test,
+
+Brightness control (especially important at low brightness levels),
+
+Mode sequencing,
+
+Calibration,
+
+Power supply control.
+
+The symbol generator carries out the display waveform generation task (digitally) to enable the appropriate display symbology (e.g. lines, circles, alpha-numerics, etc.) to be stroke written on the HUD CRT. The symbols are made up of straight line segments joining the appropriate points on the display surface in an analogous manner to a ‘join the dots’ child’s picture book. Fixed symbols such as alpha-numerics, crosses, circles (sized as required) are stored in the symbol generator memory and called up as required. The necessary D to A conversions are carried out in the symbol generator which outputs the appropriate analogue x and y deflection voltage waveforms and ‘bright up’ waveforms to control the display drive unit of the HUD CRT.
+
+The CRT beam is thus made to trace the outline of the line drawn symbols, the process being known as stroke or cursive writing. Slow and fast cursive display writing systems are required for a day and night mode operation HUD. Daytime operation requires a slow cursive writing system to produce a sufficiently bright display which can be viewed against a 30,000 Cd/m 2 (10,000 ft L) white cloud background.
+
+Night time operation requires identical appearance symbology to the daytime symbology to be overlaid on the raster TV FLIR picture displayed on the HUD.
+
+The appearance of raster generated symbology can differ significantly from stroke written symbology and pilots wish to see identical symbology night or day. A ‘fast cursive’ display system is thus used in night mode operations whereby the cursive symbology is drawn at high speed during the raster fly back interval. The display is written at about ten times the slow cursive speed and this makes significant demands on the bandwidth and power requirements of the deflection system. By taking a small number of lines from the top and bottom of the picture, typically around twenty lines total, the whole of the day time symbology can be superimposed over the TV picture for night use.
+
+Because of the high writing speeds, the brightness of the raster and fast cursive display was initially only suitable for night or low ambient brightness use. However, improvements to CRTs, development of more efficient phosphors such as P53, and high efficiency wavelength selective combiners have allowed raster and fast cursive brightness to be increased to around 3000 Cd/m 2 (1000 ft L) which is useable in daytime.
+
+The very wide range of ambient brightness levels which a day/night mode HUD must operate over is worthy of note. CRT luminance levels range from 30000 Cd/m 2 to 0.3 Cd/m 2 , a range of 10 5 : 1.
+
+The display drive unit contains all the display drive electronics for the HUD CRT including the high voltage and low voltage power supply units. High linearity and high bandwidth x and y deflection amplifiers are required to meet the HUD accuracy and cursive writing requirements.
+
+Video interface electronics are incorporated in the display drive electronics for the TV raster mode.
+
+Modern HUD systems are used as the prime display of primary flight data such as height, airspeed, attitude, heading, etc. The HUD thus becomes a safety critical system when the pilot is flying head up at low altitude and relying on the HUD. Modern HUD systems for both military and civil aircraft are, therefore, being designed so that the probability of displaying hazardous or misleading information is of the order of less than 1 × 10 −9 . The self contained single unit HUD makes it an ideal system configuration for a safety critical HUD. Forward and backward path monitoring techniques can be employed to ensure that what is on the display is what was actually commanded by the aircraft system. The monitoring features incorporated in the HUD electronics are shown in Figure 2.19.
+
+2.2.6 Civil Aircraft HUDs
+
+The application of HUDs in civil aircraft has been mentioned earlier in the chapter.
+
+This section explains their potential and importance in greater detail and covers the progress that has been made in producing viable systems for civil aircraft operation.
+
+The use of a HUD by civil aviation operators is still a relatively novel practice and it was estimated in 2009 that there were about 2,000 HUD installations in revenue service worldwide. This compares with over 15,000 military HUD systems in service worldwide. The future for civil HUD systems looks good, however, and the numbers are growing. The potential market over the next decade is estimated to be of the order of 5000 systems.
+
+The main advantages of a HUD in a civil aircraft are:
+
+1. Increased safety by providing a better situational awareness for the pilot to control the aircraft by the head up presentation of the primary flight information symbology so that it is conformal with the outside world scene.
+
+The problems of severe wind shear conditions have been mentioned earlier in the introduction to this chapter. Figure 2.23 shows how wind shear arises and the problems it creates. Over 700 passengers were killed in the USA alone in accidents in recent years caused by wind shear.
+
+The HUD can also provide a flight path director display which allows for the effect of wind shear from a knowledge of the aircraft’s velocity vector, airspeed, height and aerodynamic behaviour.
+
+The HUD can also increase safety during terrain, or traffic avoidance manoeuvres.
+
+Ground proximity Warning Systems (GPWS) are a very valuable aid in avoiding terrain and enhanced GPWS will extend this protection still further.
+
+In circumstances, however, during a terrain escape manoeuvre where the terrain is visible, the flight path vector (FPV) displayed on the HUD provides an unambiguous presentation on whether or not the terrain will be missed. If the FPV is overlaid on terrain ahead, the aircraft will hit it and in this situation the crew must decide on another course of action as opposed to ‘holding on’ to see what happens.
+
+Traffic Collision Avoidance Systems (TCAS) provide traffic conflict and escape guidance and are of great benefit in preventing mid air collisions. Guidance, however, is provided head down so the pilot is manoeuvring on instruments while trying to acquire conflicting traffic visually. The HUD enables the escape manoeuvre and search for traffic to be accomplished head up.
+
+Safety improvements in the course of each stage of a typical flight were predicted in a study published by Flight Safety Foundation (see Further Reading).
+
+The study concluded that a HUD would likely have had a positive impact on the outcome of 30% of the fatal jet transport incidents documented over the period 1958 to 1989.
+
+2. Increased revenue earning ability by extending operations in lower weather minima. The HUD is used to monitor the automatic landing system and to enable the pilot to take over on aircraft which are not equipped to full Category III automatic landing standards (automatic landing systems are covered in Chapter 8).
+
+3. Use of the HUD as part of an enhanced vision system to enable operations in lower weather minima at airfields not equipped with automatic landing aids (ILS/MLS). For example, the number of Type II and Type III ILS facilities in the US is very limited – typically less than 70. The revenue earning potential of enhanced vision systems is thus very considerable. As explained earlier, the HUD displays a video image of the real world ahead of the aircraft derived from a millimetric wavelength radar sensor and a FLIR sensor installed in the aircraft together with the overlaid primary flight information and flight path parameters.
+
+4. The use of the HUD for displaying ground taxiway guidance is being actively investigated, and is considered a likely extension to the HUDs roles. Ground taxiway guidance could be provided by differential GPS.
+
+Very encouraging trials were carried out in the US by the FAA in 1992. The enhanced vision system used a millimetric wavelength radar operating at 35 GHz and a 3 to 5 micron infrared imaging sensor (see Further Reading). The infrared sensor provided useful imaging information in haze and high humidity conditions at a range which substantially exceeded the range of the pilots’s eyes. However, descending through typical cloud and fog conditions the range was no better than could be seen by the eye. The 35 GHz radar sensor, however, was able to operate successfully under all weather conditions and enabled a synthetic picture of the runway to be generated from the processed radar image at a range of 2 to 2.5 miles. The pilots were able to identify the runway on which they intended to land at a range of about 1.7 miles. They were routinely able to fly to Category IIIa minima (50 ft decision height/700 ft runway visual range) using the HUD display of the radar generated runway image and the overlaid primary flight symbology as their sole means to conduct the published approach. The display of the aircraft’s velocity vector on the HUD was found to be particularly helpful throughout the approach, when used in conjunction with the electronic image of the outside world, and enabled the control of the aircraft’s flight path to be precisely managed.
+
+The evaluation pilots reported Cooper–Harper ratings of 3 (satisfactory without improvement and with minimal compensation required by the pilot for desired performance).
+
+A 95 GHz radar was also evaluated with similar successful results, the resolution was better, however, than the 35GHz radar due to the shorter wavelength. Active development of both radar and infrared enhanced vision sensor systems is continuing and their introduction into civil operational service is anticipated in the next decade. Figure 2.24 shows the effectiveness of an enhanced vision HUD display with overlaid primary flight information symbology.
+
+An overhead mounted HUD installation is practical in a civil aircraft and is the configuration generally adopted (although glare-shield HUDs are practical, there is rarely space to retrofit such a system). Figure 2.3 shows a civil HUD installation.
+
+The HUD elements are precisely located in a rigid mounting tray which provides the necessary mechanical/optical stability and the combiner can fold out of the way when not required. The field of view is 30 degrees by 25 degrees.
+
+The optical configuration of the HUD is shown in Figure 2.25. The thin spherical combiner incorporates a Rugate dielectric coating (referred to earlier). These highly efficient selective wavelength coatings are very hard and are not affected by the atmosphere and permit a relatively thin combiner to be realised, rather than the thick sandwich necessary with combiners exploiting biologically based holograms.
+
+The mass of the combiner is greatly reduced which in turn reduces the mechanical structure required to support it with sufficient rigidity both in normal operation and in avoiding head injury during crash conditions. It should be noted that the thin spherical combiner does not introduce any optical distortion of the outside world.
+
+As mentioned earlier, the transmission and reflectivity values of a Rugate coating are comparable with holographic coatings. The off-axis angle of the combiner is around 17 and is considerably smaller with the overhead installation than it is with a military cockpit (refer Figure 2.12) which is typically around 30 . The off-axis errors can be corrected with a conventional relay lens train, and the optical power which can be provided by a holographic coating is not required.
+
+The HUD incorporates electronics which monitor performance both forward and reverse path (as described earlier) such that the integrity of the system, defined in terms of displaying hazardously misleading information to the pilot, equals that of conventional head down displays at a value of 10-9 .
+
+Blind landing guidance can be derived from the ILS system and enhanced by mixing positional information derived from the Global Positioning System data using appropriate algorithms. This guidance information can be drawn cursively on the HUD together with primary flight information using suitable symbology. Such a system is known as ‘synthetic vision’ as distinct from enhanced vision. The latter system uses radar or infrared scanning systems, as described, and the imagery is raster drawn (with stroke written symbology overlaid).
+
+Completely blind landings (Cat. IIIa and ultimately Cat. IIIb) can be performed with a HUD system displaying synthetic vision guidance icons (and primary flight information) given that the required integrity is provided. This can be achieved by the addition of a second means of monitoring which can be either a second HUD channel or more realistically, the additional of a fail-passive autopilot. A combination of the HUD and a fail-passive autopilot provides a cost-effective solution for extending the poor visibility operation of many Air Transport Category aircraft.
+
+
+

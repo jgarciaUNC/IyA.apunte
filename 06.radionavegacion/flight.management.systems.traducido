@@ -1,0 +1,270 @@
+Sistemas de gestión de vuelo
+
+El término 'navegación' se puede aplicar tanto en los sentidos lateral como vertical para aplicaciones de aeronaves. La navegación lateral (LNAV) es efectivamente la función de navegación de área descrita en el Capítulo 16. La navegación vertical (VNAV) se puede usar para complementar o reemplazar la aproximación y los aterrizajes utilizando radioayudas para la navegación; También se puede utilizar para optimizar el rendimiento de la aeronave para reducir los costos operativos. Esto ha sido tradicionalmente logrado por la tripulación de vuelo (particularmente el ingeniero de vuelo) haciendo referencia a los datos contenidos en cartas, tablas y manuales de rendimiento.
+
+Los datos de rendimiento de la aeronave se basan en una serie de factores que incluyen el peso de la aeronave, la altitud y la temperatura del aire exterior. Dado que estos factores cambian constantemente, la tarea de calcular los límites óptimos de empuje del motor, la velocidad y la altitud del avión se han automatizado gradualmente con la llegada de los sistemas digitales. Durante la década de 1980, las funciones de navegación lateral y vertical se combinaron en un solo sistema conocido como el sistema de gestión de vuelo (FMS). Varias tareas realizadas previamente por la tripulación ahora pueden automatizarse con la intención de reducir la carga de trabajo de la tripulación. En este capítulo revisaremos los principios de FMS y exploraremos algunas de las características y beneficios clave.
+
+19.1 Descripción general de FMS
+
+El sistema de gestión de vuelo (FMS) combina la navegación de área y la gestión del rendimiento en un solo sistema. Los dos componentes principales del sistema son la computadora de gestión de vuelo (FMC) y la unidad de visualización de control (CDU). Las interfaces principales de la aeronave con el FMC son el sistema de referencia inercial y el sistema automático de control de vuelo, incluido el acelerador automático. Los sistemas de gestión de vuelo se introdujeron en un momento de costos operativos crecientes; Los factores que contribuyen a estos costos incluyen combustible y tiempo. El costo del combustible es evidente; el costo del tiempo incluye la utilización de la aeronave, p. si la aeronave se alquila en función del costo por hora de vuelo. Reducir la velocidad de la aeronave disminuirá el consumo de combustible, pero esto lleva a un mayor tiempo de vuelo y a un mayor "costo de tiempo". Volar más rápido reducirá el costo del tiempo pero aumentará el consumo de combustible.
+
+La navegación en cuatro dimensiones es posible con los sistemas de gestión de vuelo. Los requisitos de latitud, longitud, altitud y tiempo de llegada de la aeronave se pueden planificar, calcular y posteriormente predecir de forma continua. Cada aerolínea tendrá su propio modelo financiero en términos de costos de combustible y tiempo; el FMS puede personalizarse en consecuencia y expresarse como un índice de costos; esto se ingresa en el sistema dentro del rango de 0 a 100 para representar los extremos de combustible mínimo hasta el tiempo mínimo. Para realizar las funciones clave de la navegación de área y la gestión del rendimiento, el sistema interactúa con muchos otros sistemas en la aeronave.
+
+Los sistemas de gestión de vuelo fueron los primeros ejemplos de aviónica multimodo integrada. En los aviones de categoría de transporte, el FMS integra muchos sistemas, incluidos sistemas de radio navegación, sistemas de navegación inercial, sistemas de posicionamiento global y monitoreo de mantenimiento centralizado.
+
+19.2 Sistema informático de gestión de vuelo (FMCS)
+
+Los dos componentes principales del sistema son FMC y CDU; Estos son un subconjunto del FMS denominado sistema informático de gestión de vuelo (FMCS).
+
+19.2.1 Computadora de gestión de vuelo
+
+El FMC contiene un programa operativo, una base de datos de navegación y una base de datos de rendimiento.
+
+Ya nos hemos encontrado con la base de datos de navegación (NDB) en el Capítulo 16. La base de datos de navegación del FMC (ver Tabla 19.1) es una versión completa de lo que ya se ha discutido en los sistemas de navegación de área. La base de datos de rendimiento (PDB) contiene un modelo detallado de las características aerodinámicas de la aeronave. Esto incluye las capacidades de velocidad y altitud de la aeronave junto con los límites operativos tanto para la operación normal como para condiciones anormales, p. falla del motor. Los parámetros del motor también se almacenan en el PDB, estos incluyen el flujo de combustible y los modelos de empuje para el tipo de motor instalado en la aeronave. Todos estos están almacenados en el PDB.Tenga en cuenta que las aeronaves pueden ser certificadas para volar con más de un tipo de motor; 
+
+Una característica importante de la FMC son los pines del programa. En lugar de producir muchas configuraciones diferentes de software FMC para cada tipo de aeronave y cada combinación de motor, se puede instalar un número de pieza de FMC con software que cubra varios tipos de aeronaves y motores en el PDB. El FMC (como la mayoría de las computadoras de aviónica) se instala en el bastidor del equipo y se conecta a los cables a través de clavijas / enchufes en la parte posterior de la computadora.
+
+Los pines de programa se usan para seleccionar varias opciones de software dentro de la computadora; Estas son conexiones que se hacen al conector a tierra, fuente de alimentación de 28 V CC o no conectadas. Los circuitos lógicos dentro de la computadora se configuran en configuraciones predeterminadas dependiendo de cómo se configuran los pines del programa. Por ejemplo, un pin de programa podría conectarse a tierra para un tipo de motor y establecerse en 28 V CC para otro tipo de motor. Cuando se instala el FMC, reconoce efectivamente qué tipo de motor está instalado y se utiliza el software del motor correspondiente. El mismo FMC instalado en otro avión con un tipo de motor diferente lo reconocerá a través de los pines del programa y utilizará el software del motor correspondiente.
+
+Ciertas funciones son fijas y no se pueden cambiar, p. El tipo / modelo de aeronave. Otros pines del programa son opciones de aerolíneas; Ejemplos de estas opciones son el uso de unidades métricas o imperiales, p. Centígrados o Fahrenheit, libras (1000) o kilogramos (1000).
+
+19.2.2 Unidad de visualización de control
+
+La CDU es la interfaz principal entre la tripulación y el FMC. Está diseñado de tal manera que la entrada de datos y las pantallas están en el idioma utilizado por ATC. La ubicación de una CDU en un avión de transporte típico se muestra en la Figura 19.1. La CDU comprende una variedad de características, refiriéndose a la Figura 19.2, estas incluyen:
+
+área de visualización de datos (generalmente un tubo de rayos catódicos: CRT)
+
+teclas de selección de línea (LSK)
+
+teclas de función y modo
+
+teclado alfanumérico
+
+anunciadores de advertencia.
+
+El área de visualización está organizada en forma de capítulos y páginas de un libro. Cuando el sistema se enciende por primera vez, la CDU muestra la página IDENT, consulte la Figura 19.3.
+
+La página 'IDENTIFICADOR' contiene información básica tal como se almacena en el FMC, incluido el modelo de la aeronave, los tipos de motores, etc. Se accede a otras páginas desde esta página en forma de menú utilizando las teclas de selección de línea, o directamente desde una de las funciones o teclas de selección de modo.
+
+19.3 Inicialización del sistema
+
+Antes de que el sistema pueda usarse para navegación lateral y vertical, el FMC necesita algunos datos básicos de inicialización. Cierta información requerida por el sistema debe ser ingresada por la tripulación; otra información se almacena por defecto y la tripulación puede sobrescribirla. Para simplificar el proceso, la información que debe ingresar la tripulación se muestra en las indicaciones del cuadro. La información que se muestra como información predeterminada se muestra como indicaciones de guión. Hay varias maneras de acceder a las páginas individuales, y hay una variedad de información en cada página. La descripción a continuación ilustra un procedimiento de inicialización, que comienza con la inicialización de la posición hasta la inicialización del rendimiento, siguiendo un proceso lógico. Durante esta descripción de inicialización, haremos referencia a
+campos; Estas son áreas específicas en la pantalla de la CDU donde los datos se muestran y / o ingresan. En el siguiente texto, se hará referencia a cada tecla de selección de línea (LSK) por su ubicación: izquierda / derecha de la pantalla y 1 a 6 de arriba a abajo.
+
+19.3.1 Posición de inicialización
+
+Cuando se enciende el sistema, se muestra la página IDENT, consulte la Figura 19.4 (se proporcionan más detalles sobre esta página después de esta sección). La información necesaria en este punto (indicada por los recuadros) es la posición actual para la alineación del sistema de referencia inercial (IRS). La posición se puede ingresar de varias maneras, pero supongamos en este punto que queremos cargar la posición actual introduciendo manualmente la latitud y la longitud. Usando las teclas alfanuméricas, la latitud y la longitud se ingresan a través del teclado, las entradas aparecen en la parte inferior de la pantalla (referido como el bloc de notas). La posición actual se transfiere automáticamente al IRS y LSK-6R solicita la siguiente etapa de inicialización; esto lleva a la siguienteAl presionar LSK-6R, se identificó POS INIT para la inicialización de posición, se muestra la página POS INIT, consulte la Figura 19.4. Cuando se confirman estos datos en el bloc de notas, se presiona LSK-4R (adyacente a los cuadros de posición) y los datos del bloc de notas reemplazan a los cuadros "Establecer posición del IRS". 
+sección de inicialización para la RUTA deseada.
+
+
+19.3.2 Selección de ruta
+
+La página RUTA requiere que se ingrese un origen y un destino; estos se ingresan (mediante el bloc de notas) para reemplazar las indicaciones de la caja adyacentes a LSK-1L (origen) y LSK-1R (destino), consulte la figura 19.6 (a). Los orígenes y destinos se identifican utilizando los códigos de cuatro letras de la Organización de Aviación Civil Internacional (OACI), p. Londres Heathrow es EGLL, el aeropuerto internacional Kennedy de Nueva York tiene el código KJFK. Este sistema se utiliza con preferencia a los códigos de tres letras de la Asociación Internacional de Transporte Aéreo (IATA), p. LHR y JFK, ya que algunos de estos códigos de tres letras están duplicados para algunos aeródromos.
+Tenga en cuenta que la mayoría de las aerolíneas tienen rutas predeterminadas de la compañía, estas se almacenan en la base de datos de navegación y se pueden ingresar (como un código) a través de LSK-2L. Puede haber más de una ruta entre el origen y el destino; cuando el código de ruta de la compañía se ingresa en un campo apropiado, esto ingresará automáticamente el origen y el destino junto con todos los puntos de ruta en ruta.
+
+Detalles específicos de salida, p. la pista y el arreglo de salida inicial, también pueden incluirse dentro de la ruta de la compañía como se ilustra en la Figura 19.6 (b).
+
+Una vez que se activa la ruta (LSK-6R), el campo inferior derecho cambia a la inicialización del rendimiento PERF.
+
+EN ESO
+
+para
+
+19.3.3 Inicialización de rendimiento
+
+El sistema requiere peso bruto (GW) o peso de combustible cero (ZFW), combustible de reserva, índice de costo y altitud de crucero. Las entradas obligatorias se indican como antes con indicaciones de cuadro, consulte la Figura 19.7. Tenga en cuenta que dado que el FMC conoce el combustible total a bordo (52.3 toneladas en este ejemplo) (a través de una entrada del sistema de cantidad de combustible) al ingresar a ZFW se calculará automáticamente GW y viceversa. El índice de costos puede ingresarse manualmente o puede estar contenido dentro de la ruta de la empresa. Todas las demás entradas en la página son opcionales; La entrada de datos en estos campos mejorará el rendimiento del sistema.
+
+Una vez que se confirman los detalles de la inicialización del rendimiento, el sistema está listo para funcionar. Se puede mejorar aún más el perfil de vuelo ingresando otros detalles, p. ajustes de despegue, salidas de instrumentos estándar, pronósticos de viento, etc.
+
+19.4 Operación FMCS
+
+El sistema informático de gestión de vuelo (FMCS) calcula los datos clave de rendimiento y hace predicciones para el funcionamiento óptimo de la aeronave en función del índice de costos. Ya hemos revisado el proceso de inicialización del sistema, y u200bu200besto le habrá dado al lector una apreciación de cómo se ingresan y muestran los datos. El funcionamiento detallado de un sistema de gestión de vuelo está más allá del alcance de este libro; sin embargo, las características y beneficios clave del sistema se revisarán a través de algunas páginas típicas de CDU. Tenga en cuenta que estos se describen en términos generales; los tipos de aeronaves varían y se introducen sistemas actualizados en
+de forma periódica Se puede acceder a las páginas de CDU en cualquier momento según lo requiera la tripulación; se puede acceder a algunas páginas mediante las teclas de selección de línea como se describe en la sección 19.3; Se accede a algunas páginas mediante las teclas de función / modo. Es posible que el lector observador ya haya notado que en la parte superior derecha de cada página de CDU hay una indicación de cuántas subpáginas están disponibles por función seleccionada.
+
+19.4.1 Página de identificación ('IDENTIFICADOR')
+
+Esta página se muestra automáticamente al encenderla; además de mostrar una página familiar cada vez que se usa el sistema, esto también sirve como confirmación de que el FMC ha pasado una secuencia de autocomprobaciones de equipo de prueba incorporado (BITE) que incluye: verificaciones de dispositivos de memoria, verificaciones de interfaz, configuración de pin de programa, Fuentes de alimentación, configuraciones de software y funcionamiento con microprocesador. La información que se muestra en esta página incluye tipos de aeronaves y motores, referencias de bases de datos de navegación y el número del programa operativo. Por referencia a la documentación relevante de la aeronave, un número de pieza de FMC podría ajustarse a varios tipos de aeronaves diferentes. Cada tipo de aeronave tendrá características aerodinámicas diferentes y estas diferencias se almacenarán en la memoria del FMC.
+
+El FMC reconoce tipos de aeronaves específicos por los pines de programa contenidos dentro del conector de la aeronave, consulte la Figura 19.8. Los tipos de aeronave dados se pueden operar con diferentes modelos de motor; Estos se reconocen mediante el uso de pines de programa específicos. Además, las aerolíneas tienen la opción en las unidades utilizadas dentro del sistema, p. temperatura en grados centígrados o Fahrenheit, pesos en kilogramos o libras, etc. Estos también están determinados por los pines del programa.
+
+La base de datos de navegación (NDB) se identifica cuando entra en vigencia y cuando caduca. En referencia a la Figura 19.4, la base de datos activa (actual) es adyacente a LSK-2R. La base de datos actualizada es adyacente a LSK-3R; esto se selecciona en la fecha de cambio (18 de abril en esta ilustración). Una amplia gama de información está contenida en el NDB como se detalla en la Tabla 19.1; tenga en cuenta que esta es una lista indicativa, ya que las bases de datos generalmente están personalizadas para aerolíneas individuales. La sinergia de los sistemas de aviónica integrados puede demostrarse mediante la información de la base de datos FMC que también se muestra en el
+EHSI (la Figura 19.9 muestra una serie de aeropuertos contenidos en la base de datos).
+
+19.4.2 Página de progreso
+
+Hay muchas páginas disponibles para la tripulación para administrar y modificar los datos requeridos por el sistema dependiendo de las circunstancias. Una de las páginas utilizadas para monitorear la información clave de vuelo es la página de progreso, consulte la Figura 19.10. Al describir la información en las páginas de progreso, el lector obtendrá una apreciación de las características y beneficios del sistema informático de gestión de vuelo.
+
+Se puede acceder a la página de progreso a través de la tecla PROG en la CDU. No se requieren entradas en esta página; se usa solo para información. La línea superior de la página muestra detalles del waypoint anterior (CYN) en el plan de vuelo activo; nombre, altitud, hora real de llegada y combustible. Las siguientes tres líneas muestran detalles para el waypoint activo (ENO), el siguiente waypoint (GVE) y el destino final (KATL). Los detalles incluyen: distancia por recorrer (DTG), hora estimada de llegada (ETA) y combustible previsto. La quinta línea proporciona la velocidad seleccionada, el tiempo previsto y la distancia a un punto de cambio de altitud, p. parte superior de la subida (T / C) como se ilustra en la Figura 19.10. La última línea de la página proporciona información de fuente de navegación.
+
+En este caso, el sistema de referencia inercial seleccionado por el FMC (número 3) está siendo actualizado por dos ayudas de navegación DME ENO y MLC; estos se están ajustando de forma manual y automática como lo indican las letras M y A al lado del identificador de ayuda a la navegación.
+
+La segunda página de progreso contiene una variedad de información útil, p. velocidad y dirección del viento (se muestra con los componentes asociados de viento, cola y viento cruzado), error de trayectoria transversal (XTK), error de trayectoria vertical (VTK), velocidad real (TAS), temperatura estática del aire (SAT) y varias indicaciones de cantidad de combustible.
+
+19.4.3 Página de piernas
+
+La figura 19.11 proporciona una ilustración de cómo se integran los perfiles laterales y verticales en ruta dentro del FMC. En este ejemplo, el avión está volando hacia el waypoint CYN en una pista de 312 o. Hay una restricción de altitud de 6000 pies sobre CYN, la velocidad de ascenso es de 250 nudos. Este perfil lateral y vertical combinado está representado por las pistas, distancias, velocidades y altitudes para cada punto de referencia. Este nivel de detalle también se aplica a las salidas de instrumentos estándar (SID) y los procedimientos de llegada de terminal estándar (STAR), consulte las Figuras 19.12 y 19.13.
+
+19.4.4 Otras páginas de CDU
+
+
+
+
+Una revisión detallada de cada página disponible en la CDU está más allá del alcance de este libro; sin embargo, se proporciona un resumen de las páginas típicas en la Tabla 19.2. Tenga en cuenta que esta tabla se proporciona con fines ilustrativos. Los tipos de aeronaves varían junto con el tipo y modelo de FMC instalado.
+
+Punto clave
+
+El waypoint resaltado en la página de progreso es el waypoint activo.
+
+Punto clave
+
+Los mensajes de alerta requieren la atención de la tripulación antes de que el vuelo guiado pueda continuar.
+
+19.5 FMS de aviación general
+
+La FMS de aviación general incluye la serie IFD de Avidyne; estos son navegadores de pantalla táctil, consulte la Figura 19.14. Cada uno proporciona navegación de precisión SBAS / LPV y están diseñados para cumplir con los requisitos de precisión e integridad para ADS-B como parte de la iniciativa de espacio aéreo de próxima generación (consulte el Capítulo 21 para obtener más información sobre estos temas)
+
+Además de las perillas y botones dedicados que muchos pilotos prefieren para las acciones frecuentes del piloto, la capacidad IFD Hybrid Touch permite a los pilotos realizar virtualmente todas esas mismas funciones a través de la interfaz de pantalla táctil. Además, la gama IFD ofrece funcionalidades multitáctiles como pellizcar con zoom, panorámica de mapas y edición gráfica de planes de vuelo. Esto se puede hacer con la pantalla Multi-Touch, o las perillas y botones, dependiendo de la fase de vuelo del piloto. Esto proporciona facilidad de uso, especialmente durante las operaciones IFR de un solo piloto.
+
+La capacidad gráfica de planificación de vuelo permite una fácil edición del plan de vuelo con solo tocar la pantalla. La conveniente característica de 'bandas de goma', Figura 19.15, permite al piloto 'estirar' cualquier pierna en el plan de vuelo, p. para desviarse por el clima o para acomodar una enmienda del ATC.
+
+19.6 Resumen de FMS
+
+Como hemos visto, el FMCS realiza todos los cálculos y predicciones requeridos para determinar el perfil de vuelo más económico, ya sea para combustible mínimo o tiempo mínimo (o incluso algún punto intermedio dependiendo de los modelos financieros y comerciales del operador).
+
+Pon a prueba tu comprensión 19.1
+
+(a) ¿Cuál es el significado de la navegación de cuatro dimensiones?
+
+(b) ¿Cómo puede confirmar que el FMC ha pasado su prueba de encendido?
+
+(c) ¿Cuál es el significado de las indicaciones de cuadro y guión en la CDU?
+
+Pon a prueba tu comprensión 19.2
+
+¿Cuál es el propósito de los pines del programa?
+
+Pon a prueba tu comprensión 19.3
+
+¿Dónde confirmaría los detalles de cada uno de los siguientes: base de datos de navegación, programa operativo, aeronave y tipo de motor?
+
+19.7 Preguntas de opción múltiple
+
+1. Para definir el aeropuerto de destino en la página de ruta de FMC se requiere la entrada del aeródromo:
+
+(a) identificador de tres caracteres
+
+(b) identificador de cuatro caracteres
+
+(c) latitud y longitud.
+
+2. La página que se muestra automáticamente al encender FMC es:
+
+(a) página de identificación
+
+(b) base de datos de navegación
+
+(c) página de inicialización de posición.
+
+3. Los pines del programa se definen por:
+
+(a) Programa operativo FMC
+
+(b) base de datos de navegación
+
+(c) cableado de la aeronave en el conector FMC.
+
+4. La información ingresada en el bloc de notas de CDU se muestra en:
+
+(a) sección más baja de la pantalla
+
+(b) indicaciones de la caja
+
+(c) indicaciones de guión.
+
+5. El tiempo mínimo de vuelo se lograría con un índice de costos de:
+
+(a) cero
+
+(b) 100
+
+(c) 50.
+
+6. El tipo de aeronave y motor se puede confirmar en:
+
+(a) página de progreso
+
+(b) página de identificación
+
+(c) página de inicialización de posición.
+
+7. El uso de unidades métricas / imperiales está determinado por:
+
+(a) el número de pieza de la FMC
+
+(b) pines del programa
+
+(c) entradas de línea discontinua.
+
+8. Las entradas requeridas en la CDU se indican mediante:
+
+(a) indicaciones de la caja
+
+(b) líneas discontinuas
+
+(c) texto resaltado.
+
+9. "No en la base de datos" es un ejemplo de:
+
+(a) mensaje de alerta
+
+(b) mensaje de aviso
+
+(c) punto de ruta activo.
+
+10. La visualización de la página de identificación después del encendido confirma:
+
+(a) IRS está alineado
+
+(b) fuentes de navegación en uso
+
+(c) FMC ha pasado su verificación BITE.
+
+11. El FMC reconoce tipos de aeronaves específicos por:
+
+(a) Entrada de CDU
+
+(b) pines del programa
+
+(c) la base de datos de navegación.
+
+12. Los SID en la base de datos de navegación se refieren a:
+
+(a) llegadas
+
+(b) navegación en ruta
+
+(c) salidas.
+
+13. La tecla EXEC se ilumina cuando:
+
+(a) los datos se ingresan para la inicialización / cambios
+
+(b) se muestran mensajes de aviso
+
+(c) se han ingresado datos incorrectos.
+
+14. Los mensajes de alerta requieren la atención de la tripulación:
+
+(a) antes de que el vuelo guiado pueda continuar
+
+(b) cuando hay tiempo disponible
+
+(c) al finalizar el vuelo.
+
+15. El punto de referencia resaltado en la página de progreso es:
+
+(a) waypoint anterior
+
+(b) punto de ruta activo
+
+(c) destino.

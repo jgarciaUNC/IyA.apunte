@@ -1,0 +1,296 @@
+Pitot-static System
+
+Instruments 1, 2 and 3 above form part of an aircraft's pitot-static system, which must also conform to certain requirements. These are summarized as follows:
+
+a The system shall be air-tight, except for the vents to atmosphere, and shall be arranged so that the accuracy of the instruments cannot be seriously affected by the aircraft's speed, attitude, or configuration ; by moisture, or other foreign matter.
+
+b The system shall be provided with a heated pitot-pressure probe to prevent malfunctioning due to icing.
+
+c Sufficient moisture traps shall be installed t o ensure positive drainage throughout the whole of the system.
+
+d In aircraft in which an alternate or emergency system is to be installed, the system must be as reliable as the primary one and any selector valve must be clearly marked t o indicate which system is in use.
+
+e Pipelines shall be of such an internal diameter that pressure lag and possibility of moisture blockage is kept to an acceptable minimum.
+
+f Where static vents are used, to obviate yawing errors they shall be situated on opposite sides of the aircraft and connected together as one system. Where duplicate systems are prescribed, a second similar system shall be provided.
+
+Gyroscopic Instruments
+
+Gyroscopic instruments may be of the vacuum-operated or electrically operated type, but in all cases the instruments shall be provided with two independent sources of power, a means of selecting either power source, and a means of indicating that the power supply is working satisfactorily.
+
+The installation and power supply system shall be such that failure of one instrument, or of the supply from one source, or a fault in any part of the supply system, will not interfere with the proper supply of power from the other source.
+
+Duplicate Instruments
+
+In aircraft involving two-pilot operation it is necessary for each pilot to have his own pilot-static and gyroscopic instruments. Therefore two independent operating systems must be provided and must be so arranged that no fault which might impair the operation of one is likely to impair the operation of both,
+
+Magnetic Compass
+
+The magnetic compass shall be installed so that its accuracy will not be excessively affected by the aircraft vibration or magnetic fields of a permanent or transient nature.
+
+Power Plant Instruments
+
+1. Tachometer to measure the rotational speed of a crankshaft or a compressor as appropriate to the type of power plant.
+
+2. Cylinder-head temperature indicator for an air-cooled engine to indicate the temperature of the hottest cylinder.
+
+3. Carburett or-intake air temperature indicator.
+
+4. Oil temperature indicator to show the oil inlet and/or outlet temperature.
+
+5. For turbojet and turbopropeller engines a temperature indicator to indicate whether the turbine or exhaust gas temperature is maintained within its limitations.
+
+6. Fuel-pressure indicator to indicate pressure at which fuel is being supplied and a means for warning of low pressure.
+
+7. Oil-pressure indicator to indicate pressure at which oil is being supplied to a lubricating system and a means for warning of low pressure.
+
+8. Manifold pressure gauge for a supercharged engine.
+
+9. Fuel-quantity indicator t o indicate in gallons or equivalent units the quantity of usable fuel in each tank during flight. Indicators shall be calibrated to read zero during cruising level flight, when the quantity of fuel remaining is equal to the unusable fuel, i.e. the amount of fuel remaining when, under the most adverse conditions, the first evidence of malfunctioning of an engine occurs.
+
+1 0. Fuel-flow indicator for turbojet and turbopropeller engines. For piston engines not equipped with an automatic mixture control a fuel flowmeter or fuellair ratio indicator.
+
+1 1. Thrust indicator for a turbojet engine.
+
+12. Torque indicator for a turbopropeller engine. 
+
+Standards
+
+In the design and manufacture of any product, it is the practice to comply with some form of specification the purpose of which is to ensure conformity with the required production processes, and to set an overall standard for quality of the product and reliability when ultimately performing its intended function. Specifications, or standards as they are commonly known, are formulated at both national and international levels by specialized organizations. For example, in the United Kingdom, the British Standards Institution is the recognized body for the preparation and promulgation of national standards and codes of practice, and it represents the United Kingdom in the International Organization for Standardization (ISO), in the International Electrotechnical Commission (IEC) and in West European organizations performing comparable functions. 
+
+Standards relate to all aspects of engineering and as 'a result vast numbers are produced and issued in series form corresponding to these aspects. As far as aircraft instruments and associated equipment are concerned, British Standards come within the Aerospace G 100 and G200 series; they give definitions, constructional requirements, dimensions, calibration data, accuracy required under varying environmental conditions, and methods of testing. Also in connection with instruments and associated electronic equipment, frequent reference is made to what are termed ARINC specifications. This is an acronym for Aeronautical Radio Incorporated, an organization in the United States which operates under the aegis of the airline operators, and in close collaboration with manufacturers.
+
+One notable specification of the many which ARINC formulate is that which sets out a standard set of form factors for the items colloquially termed 'black boxes'. In the main, these factors cover case dimensions, mounting racks, location of plugs and sockets, and a system of indexing fouling pins to ensure that only the correct equipment can be fitted in its appropriate rack position. The size of box is based on a standard width dimension called 'one ATR' (yet another abbreviation meaning Air Transport Rack) and variations in simple multiples of this provide a range of case widths. Two case lengths are provided for, and are termed long and short, ancl the height is standard. The various configurations are detailed in Table 9 on page 404.
+
+Instrument displays, panels and layouts
+
+In flight, an aeroplane and its operating crew form a 'man-machine' system loop, which, depending on the size and type of aircraft, may be fairly simple or very complex. The function of the crew within the loop is that of controller, and the extent of the control function is governed by the simplicity or otherwise of the machine as an integrated whole. For example, in manually flying an aeroplane, and manually initiating adjustments to essential systems, the controller's function is said to be a fully active one. If, on the other hand, the flight of an aeroplane and adjustments to essential systems are automatic in operation, then the controller's function becomes one of monitoring, with the possibility of reverting to the active function in the event of failure of systems. 
+
+Instruments, of course, play an extremely vital role in the control loop as they are the means of communicating data between systems and controller. Therefore, in order that a controller may obtain a maximum of control quality, and also to minimize the mental effort in interpreting data, it is necessary to pay the utmost regard to the content and form of the data display. 
+
+The most common forms of data display applied to aircraft instruments are (a) quantitative, in which the variable quantity being measured is presented in terms of a numerical value and by the relative position of a pointer or index, and (b) qualitative, in which the information is presented in symbolic or pictorial form. 
+
+Quantitative Displays
+
+There are three principal methods by which information may be displayed: (i) the circular scale, or more familiarly, the 'clock' type of scale, (ii) straight scale, and (iii) digital, or counter. Let us now consider these three methods in detail. 
+
+Circular Scale 
+
+This may be considered as the classical method of displaying information in quantitative form and is illustrated in Fig 3.1 The scale base, or graduation circle, refers to the line, which may be actual or implied, running from end to end of the scale and from which the scale marks and line of travel of the pointer are ckefined.
+
+Scale marks, or graduation marks, are the marks which constitute the scale of the instrument. For quantitative displays it is of extreme importance that the number of marks be chosen carefully in order to obtain quick and accurate interpretations of readings. If there are too few marks dividing the scale, vital information may be lost and reading errors may occur. If, on the other hand, there are too many marks, time will be wasted since speed of reading decreases as the number of markings increases. Moreover, an observer may get a spurious sense of accuracy if the number of scale marks makes it possible to read the scale accurately to, say, one unit (the smallest unit marked) when in actual fact the instrument has an inherent error causing it to be accurate to, say, two units. As far as quantitative-display aircraft instruments are concerned, a simple rule followed by manufacturers is to divide scales so that the marks represent units of 1, 2 or 5 or decimal multiples thereof. The sizes of the marks are also important and the general principle adopted is that the marks which are to be numbered are the largest while those in between are shorter and usually all of the same length. 
+
+Spacing of the marks is also of great importance, but since it is governed by physical laws related to the quantity to be measured, there cannot be complete uniformity between all quantitative displays. In general, however, we do find that they fall into two distinct groups, linear and non-linear; in other words, scales with marks evenly and non-evenly spaced. Typical examples are illustrated in Fig 3.2, from which it will also be noted that non-linear displays may be of the square-law or logarithmic-law type, the physical laws in this instance being related to airspeed and rate of altitude change respectively. 
+
+The sequence of numbering always increases in a clockwise direction, thus conforming to what is termed the 'visual expectation' of the observer. In an instrument having a centre zero, this rule would, of course, only apply to the positive scale, As in the case of marks, numbering is always in steps of 1, 2, or 5 or decimal multiples thereof. The numbers may be marked on the dial either inside or outside the scale base; the latter method is preferable since the numbers are not covered by the pointer during its travel over the scale.
+
+The distance between the centres of the marks indicating the minimum and maximum values of the chosen range of measurement, and measured along the scale base, is called the scale length. Governing factors in the choice of scale length for a particular range are the size of the instrument, the accuracy with which it needs to be read, and the conditions under which it is to be observed. Under ideal conditions and purely from theoretical considerations, it has been calculated that the length of a scale designed for observing at a distance of 30 in and capable of being read to 1% of the total indicated quantity, should be about 2 in (regardless of its shape), This means that for a circular-scale instrument a 1 in diameter case would be sufficient. However, aircraft instruments must retain their legibility in conditions which at times may be far from ideal-conditions of changing light, vibrations imparted to the instrument panel, etc. In consequence, some degree of standardization of instrument case sizes was evolved, the utilization of such cases being dictated by the reading accuracy and the frequency at which observations are required. Instruments displaying information which is to be read accurately and at frequent intervals have scales about 7 in in length fitting into standard 3% in cases, while those requiring only occasional observation, or from which only approximate readings are required, have shorter scales and fit into smaller cases. 
+
+High-Range Long-Scale Displays
+
+For the measurement of some quantities, for example, turbine-.engine rev./min., airspeed, and altitude, high measuring ranges are involved with the result that very long scales are required. This makes it difficult to display such quantities on single circular scdes in standard-size cases, particularly in connection with the number and spacing of the marks. If a large number of marks are required their spacing mi&t be too close to permit rapid reading, while, on the other hand, a reduction in the number of marks in order to open up the spacing will also give rise to errors when interpreting values at points between scale marks.
+
+Some of the displays developed as practical solutions to the difficulties encountered are illustrated in Fig 3.3. The display shown at (a) is perhaps the simplest way of accommodating a lengthy scale; by splitting it into two concentric scales the inner one is made a continuation of the outer. A single pointer driven through two revolutions can be used to register against both scales, but as it can also tead to too frequent rnis-reading, a presentation by two interconnected pointers of different sizes is much better. A practical example of this presentation is to be found in some current designs of turbine-engine rev./min. indicator. In this instance a large pointer rotates against the outer scale to indicate hundreds of rev./min. and at the same time it rotates a smaller pointer against the inner scale indicating thousands of revelmin.
+
+
+In Fig 3.3 (b), we find a method which is empioyed in a certain type of airspeed indicator; in its basic concept it is similar to the one just described. In this design, however, a single pointer rotates against a circular scale and drives a second scale instead of a pointer. This rotating scale, which records hundreds of miles per hour as the pointer rotates through complete revolutions, is visible through an aperture in the main dial.
+
+A third method of presentation, shown at (c), is one in which three concentric pointers of different sizes register against a common scale. The application of this presentation has been confined mainly to altimeters, the large pointer indicating hundreds, the intermediate pointer thousands and the small pointer tens of thousands of feet. This method of presentation suffers several disadvantages the principal of which are that it takes too long to interpret a reading and gives rise to too frequent and too serious misreading. Figure 3.3 (d) illustrates a comparatively recent presentation method applied to airspeed measurement. It will be noted that an outer and an inner scale are adopted and also what appears to be a single pointer. There are, however, two pointers which move together and register against the outer scale during their first revolution. When this has been completed, the tip of the longer pointer of the two is covered by a small plate and its movement beyond this point of the scale is arrested. The shorter pointer continues its movement to register against the inner scale.
+
+Angle of Observation
+
+Another factor which has an important bearing on the choice of the correct scale length and case size is the angle at which an instrument is to be observed. It is important because, even though it would be possible to utilize longer scales in the same relevant case sizes, the scale would be positioned so close to the outer edge of the dial plate that it would be obscured when observed at an angle. For thisreason, a standard is also laid down that no part of an instrument should be obscured by the instrument case when observed at angles up to 30º from the normal. A method adopted by some manufacturers, which conforms to this standard, is the fitting of instrument mechanisms inside square cases.
+
+When observing an instrument at an angle errors due to parallax are, of course, possibIe, the magnitude of such errors being governed principally by the angle at which the relevant part of its scale is observed, and also by the clearance distance between the pointer and dial plate. This problem like so many others in the instrument field has not gone unchallenged and the result is the 'platform' scale designed for certain types of circular display instruments. As may be seen from Fig 3.4, the scale marks are set out on a circular platform which is secured to the main dial plate so that it is raised to the same level as the tip of the pointer.
+
+Scale Range and Operating Range
+
+A point quite often raised in connection with instrument scale lengths and ranges is that they usually exceed that actually required for the operating range of the system with which the instrument is associated thus leaving part of the scale unused. At first sight this does appear to be somewhat wasteful, but an example will show that it helps in improving the accuracy with which readings may be observed.
+
+Let us consider a fluid system in which the operating pressure range is say 0-30 lbf/in2 . It would be no problem to design a scale for the required pressure indicator which would be of a length equivalent to the system's operating range, also divided into a convenient number cif parts as shown in Fig 3.5 (a). However, under certain operating conditions of the system concerned, it may be essential to monitor pressures having such values as 17 or 29 lbf/in2 and to do this accurately in the shortest possible time is not very easy, as a second glance at the diagram will show. Let us now redesign the scale so that its length and range exceed the system's operating range and set out the scale marks according to the rule given on page 20. The result shown at (6) clearly indicates how much easier it is to interpret the values we have considered it essential to monitor.
+
+Straight Scale
+
+In addition to the circular scale presentation, a quantitative display
+may also be of the straight scale (vertical or horizontal) type. For
+the same reason that the sequence of numbering is given in a clock-
+wise direction on a circular scale, so on a straight scale the sequence is from bottom to top or from left to right.
+
+In the field of aircraft instruments there are very few applications of the straight scale and pointer displays, as they are not suitable for the monitoring of the majority of quantities to be measured. However, they do possess characteristics which can contribute to the saving of panel space and improved observational accuracy, particularly where the problems of grouping and monitoring a large number of engine instruments is concerned.
+
+The development of these characteristics, and investigations into grouping and monitoring problems, have resulted in the practical application of another variation of the straight scale display. This is known as the moving-tape or 'thermometer' display and is illustrated in Fig 3.6 as it would be applied to the measurement of two parameters vital to the operation of an aircraft powered by four turbojet engines.
+
+Each display unit contains a servodriven white tape in place of a pointer, which moves in a vertical plane and registers against a scale in a similar manner to the mercury column of a thermometer. As will be noted there is one display unit for each parameter, the scales being common to all four engines. By scanning across the ends of the tapes, or columns, a much quicker and more accurate evaluation of changes in engine performance can be obtained than from the classical circular scale and pointer display. This fact, and the.fact that panel space can be considerably reduced, are also clearly evident from Fig 3.6.
+
+Digital Display
+
+A digital or veeder-counter type of display is one in which data are presented in the form of letters or numbers-alpha-numeric display, as it is technically termed. In aircraft instrument practice, the latter presentation is the most common and a counter is generally to be found, operating in combination with the circular type of display. 
+
+Typical examples are shown in Fig 3.7. In the application to the altimeter there are two counters; one presents a fixed pressure value which can be set mechanically by the pilot as and when required, and is known-as a static counter display; the other is geared to the altimeter mechanism and automatically presents changes in altitude, and is therefore known as a dynamic counter display. It is of interest to note that the presentation of altitude data by means of a scale and counter is yet another method of solving the long-scale problem already discussed on page 22. The counter of the TGT indicator is also a dynamic display since it is driven by a servo transmission to the main pointer (see also page 292).
+
+Dual-Indicator Displays
+
+Dual-indicator displays are designed principally as a means of
+conserving panel space, particularly where the measurement of the
+various quantities related to engines is concerned. They are normally
+of two basic forms: one in which two separate indicators and scales
+are embodied in one case; and the other, also having two indicators
+in one case, but with the pointers registering against a common scale.
+Typical examples of display combinations are illustrated in Fig 3.8.
+
+Coloured Displays
+
+The use of colour in displays can add much to their value; not, of course from the artistic standpoint, but as a means of indicating specific operational ranges of the systems with which they are associated and to assist in making more rapid assessment of conditions prevailing when scanning the instruments. Colour may be applied to scaIes in the form of sectors and arcs which embrace the number of scale marks appropriate to the required part of the range, and in the form of radial lines coinciding with appropriate individual scale marks. A typical example is illustrated in Fig 3.9. It is usual to find that coloured sectors applied to those parts of a range in which it is sufficient to know that a certain condition has been reached rather than knowing actual quantitative values. The colours chosen may be red, yellow or green depending on the condition to be monitored. For example, in an aircraft oxygen system it may be necessary for the cylinders to be charged when the pressure has dropped to below, say, 500 Ibf/in2. The system pressure gauge would therefore have a red sector on its dial embracing the marks from 0 to 500; thus, if the pointer should register within this sector, this alone is sufficient indication that recharging is necessary and that it is only of secondary importance to know what the actual pressure is.
+
+
+Arcs and radial lines are usually called range markings, their purpose being to define values at various points in the range of a scale which are related to specific operational ranges of an aircraft, its power plants and systems. The definitions of these marks are as follows:
+
+RED radial line
+
+YELLOW arc
+
+GREEN arc
+
+RED arc
+
+Maximum and minimum limits
+
+Take-off and precautionary ranges
+
+Normal operating range
+
+Range in which operation is prohibited
+
+When applied to,fuel quantity indicators, a RED arc indicates fuel which cannot be used safely in flight.
+
+Airspeed indicator dials may also have an additional WHITE arc. This serves to indicate the airspeed range over which the aircraft landing flaps may be extended in the take-off, approach and landing configurations of the aircraft. Range markings may vary for different types of aircraft and are therefore added by the aircraft manufacturer prior to installation in their production aircraft.
+
+It may often be found that markings are painted directly on the cover glasses of instruments - a method which is simpler since it does not require removal of an instrument mechanism from its-case.  However, the precaution is always taken of painting a white index or register line half on the cover glass and half on the bezel to ensure correct alignment of the glass and the markings over the scale marks. 
+
+In addition to the foregoing applications, colour may also be used to facilitate the identification of instruments with the systems in which they are connected. For example, in one type of aircraft currently in service, triple hydraulic systems are employed, designated yellow system, green system and blue system, and in order to identify the pressure indicators of each system the scales are set out on dials painted in the relevant colours.
+
+Qualitative Displays
+
+These are of a special type in which the information is presented in a symbolic or pictorial f o m to show the condition of a system, whether the value of an output is increasing or decreasing, the movement of a component and so on. Two typical examples are shown in Fig 3.10. The synchroscope at (a) is used in conjunction with a rev./min. indicating system of an aircraft having a multiple arrangement of propeller-type engines, and its pointers, which symbolize the propellers, only rotate t o show the differences of speed between engines. The display, shown at (b), is a good example of one indicating the movement of components; in this case, flight control surfaces, landing flaps, and air spoilers. The instrument contains seventeen separate electrical mechanisms, which on being actuated by transmitters, position symbolic indicating elements so as to appear at various angles behind apertures in the main dial.
+
+Director Displays
+
+Director displays are those which are associated principally with flight attitude and navigational data (see Chapter 15), and presenting it in a manner which indicates to a pilot what control movements he must make either to correct any departure from a desired flight path, or to cause the aircraft to perform a specific manoeuvre. It is thus apparent that in the development of this type of display there must be a close relationship between the direction of control movements and the instrument pointer or symbolic-type indicating element; in other words, movements should be in the 'natural' sense in order that the pilot may obey the 'directives' or 'demands' of the display. 
+
+Although flight director displays are of comparatively recent origin as specialized integrated instrument systems of present-day aircraft, in concept they are not new. The gyro horizon (see page 127) which has been in use for many years utilizes in basic form a director display of an aircraft's pitch and bank attitude. In this instrument there are three elements making up the display: a pointer registering against a bank-angle scale, an element symbolizing the aircraft, and an element symbolizing the natural horizon. Both the bank pointer and natural horizon symbol are stabilized by a gyroscope. As the instrument is designed for the display of attitude angles, and as also one of the symbolic elements can move with respect to the other, then it has two reference axes, that of the case which is fixed with respect t o the aircraft, and that of the moving element. Assuming that the aircraft's pitch attitude changes to bring the nose up, then the horizon display will be shown as in Fig 3.1 1 (a), thus directing or demanding the pilot to 'get the nose down'. Similarly, if the bank attitude should change whereby the left wing goes down, then the horizon display would be as shown at (b), directing or demanding the pilot to 'bank the aircraft t o the right.' In both cases, the demands would be satisfied by the pilot moving his controls in the natural sense.
+
+Another example of a director display is that utilized in an indicator used in conjunction with the Instrument Landing System (ILS); this is a radio navigation system which aids a pilot in maintaining the correct position of his aircraft during the approach to land on an airport runway. Two radio signal beams are transmitted from the ground; one beam is in the vertical plane and at an angle to the runway to establish the correct approach or glide slope angle; while the other, known as the localizer, is in the horizontal plane; both are lined up with the runway centre-line.
+
+A receiver on board the aircraft receives the signals and transmits them to two meters contained within the indicator; one meter controls a glide slope pointer, and the other a localizer pointer. In the majority of current types of aircraft, the ILS directive display is always presented on two indicators comprising what is termed either an Integrated Instrument System or a Flight Director System (see Chapter 15). A typical presentation of one of these indicators (referred to as an attitude indicator) is also shown in Fig 3.1 1. As will be noted, it combines a gyro horizon directive display, and thereby eliminates the need for a pilot having to monitor the indications of two separate instruments.
+
+When the aircraft is on the approach to land and is, say, below the glide slope beam, the glide slope pointer  if the instrument will be deflected upwards as shown in Fig 3.1 1 (c). Thus, the pilot is directed t o 'fly the aircraft up' in order t o intercept the beam. 
+
+Similarly, if the aircraft is to the right of the localizer beam the localizer pointer will be deflected t o the left thus directing the pilot to 'fly the aircraft left'. As the pilot responds to the instrument's directives the pointers move back to their centre positions indicating that the aircraft is in the correct approach position for landing. (Fig 3.1 1 (d)).
+
+It will be apparent from the diagram that as the aircraft is manoeuvred in response to demands, the pointer movements are contrary to the 'natural' sense requirements; for example, in responding to the demand 'fly left' the localizer pointer will move to the right. However, in turning to the left the bank attitude of the aircraft will change into the direction of the turn, and as this will be indicated directly by the gyro horizon display, the response to the ILS demands can be readily cross-checked.
+
+Head-Up Displays
+
+From the descriptions thus far given of the various instrument displays, we have gained some idea of the development approach to the problem of presenting data which are to be quickly and accurately assimilated. The simplicity or otherwise of assimilation is dictated by the number of instruments involved, and by the amount  of work and instrument monitoring sequences to be performed by a pilot during the various phases of flight. In the critical approach  and landing phase, a pilot must transfer his attention more frequently from the instruments to references outside the aircraft, and back again; a transition process which is time-consuming and fatiguing as a result of constant re-focusing of the eyes.
+
+A method of alleviating these problems has therefore been developed in which vital flight data are presented at the same level as the pilot's line-of-sight when viewing external references, i.e. when he is maintaining a 'head-up' position. The principle of the method is to display the data on the face of a special cathode-ray tube and to project them optically as a composite symbolic image on to a transparent reflector plate, or directly on the windscreen. The components of a typical head-up display system are shown in Fig 3.12. The amount of data required is governed by the requirements of the various flight phases and operational role of an aircraft, i.e. civil or military, but the four parameters shown are basic. The data are transmitted from a data computer unit to the cathode-ray tube the presentation of which is projected by the optical system to infinity. It will be noted that the attitude presentation resembles that of a normal gyro horizon, and also that airspeed and altitude are presented by markers which register against linear horizontal and vertical scales. The length, or range, of the scales is determined by operational requirements, but normally they only cover narrow bands of airspeed and altitude information. This helps to reduce irrelevant markings and the time taken to read and interpret the 
+information presented, Figure 3.1 3 illustrates the head-up display of a system known as a Visual Approach Monitor (VAM). The system is an airborne equivalent of the Visual Approach Slope Indicator (VASI) and was evolved principally as an aid to pilots when approaching airfields not equipped with VASI, ILS, or other approach aids.
+
+The display unit is mounted on a sliding tray located at a glare shield panel in front of the pilot, and when required, the tray is pulled out to automatically raise the lens through which the display is projected. The display provides the following cues: vertical approach angle, horizontal attitude, and speed error. Approach angle is displayed by two vertical scales, one each side of the lens, and graduated in degrees above and below the fixed bar symbolizing the aircraft. The required angle is selected on a control module to position the scales relative to the bar. During an approach, the pilot holds the bar symbol in his line pf sight and controls the aircraft so that the symbol is aligned with the runway threshold or touchdown zone, thereby ensuring the approach is at the selected flight path angle.
+
+The speed error cue is in the form of three symbols which are coloured to indicate whether the aircraft approach speed is correct, too fast, or too slow (see Fig 3.13). The error between actual airspeed and that selected on the control module is indicated by variations in the light intensity of the three symbols. For example, if the approach airspeed drops to eight knots or more below the selected airspeed, this is displayed by the red symbol 'S' appearing at full intensity and flashing on and off continuously.
+
+Light-Emitting Displays
+
+In the continuing development of aircraft displays, the trend has been to exploit the techniques applied to those instruments which are taken so much for granted these days; namely, the pocket calculator and the digital watch. The displays adopted in both these instruments are of the 'light-emitting' type the basis of which, in its turn, has its origin in the well-known cathode-ray display. There are several ways in which numerical data can be displayed by means of light-emission, but the ones which are of interest in this context are the liquid-crystal display and the light-emitting diode display.
+
+Liquid-Crystal Display (LCD)
+
+The basic structure of an LCD (see Fig 3.14) consists of two glass plates, coated on their i n n a surfaces with a thin transparent conductor such as indium oxide. The conductor on the front plate is etched into a standard display format of seven bars or segments each segment forming an electrode. Each bar is electrically separate and is selected by a logicldriver circuit which causes the bars to illuminate in patterns forming the digit to be displayed (diagram (b)). A mirror image of the digits with its associated electrical contact is also etched into the oxide layer of the back glass plate, but this is not segmented since it constitutes a common return for all segments.
+
+The space between the plates is filled with a liquid-crystal material, referred to as a nematic material (from the Greek word nemator meaning 'thread') by virtue of its thread-like molecules being oriented with their long axes parallel. The complete assembly thus constitutes a special form of capacitor. When low-voltage current is applied to the segments, the molecular order of the liquid-crystal material is disturbed and this changes its optical appearance from transparent to reflective. The magnitude of the optical change (called contrast ratio) is basically a measure of the light reflected from, or transmitted through, the segment area, to the light reflected from the background area; a typical ratio is 15 : 1. The current applied to the segments is of the alternating type to avoid undesirable electrolytic effects. Energizing of the segments is accomplished by the simultan- eous application of a symmetrical out-of-phase signal to the front and back electrodes of a segment, and thereby producing a net voltage difference. When two in-phase signals are applied the display segments spontaneously relax to the de-energized state.
+
+An LCD may be of either the dynamic-scattering type or the field-effect type, and these, in turn, may produce either a transmissive or a reflective read-out. The dynamic-scattering display operates on the principle of forward light scattering, which is caused by turbulence of the ions of the liquid-crystal material when current is applied t o the segment electrodes. For a transmissive read-out, a back-light source is provided, the light being directed down by a light-control film similar in its action to a venetian blind, In the area defined by the energized segment, the light is then scattered up toward the observer to produce a light digit or character on a dark background. For a reflective read-out, the light-control film is replaced by a mirror. It also depends on forward light scattering, but the source of normal ambient light is used exclusively to produce a light digit on a dark background.
+
+A field-effect LCD incorporates additional plates called polarizers on the front and back glass plates of the assembly. It also contains a specially prepared inside glass surface which causes the liquid-crystal molecules to orient themselves in a 90" 'twist' configuration between the glass plates. This molecular configuration causes the plane of polarization (polarized after passing through the front polarizer) to be reflected by 90' as it passes through the LCD. Then, depending on the orientation of the polarizer behind the back glass plate, the LCD can be made either transmissive or opaque in the de-energized state.
+
+Depending on the application of an LCD, colour effects can be achieved by the proper placement of colour films on the front surface of the display, between the back surface and artificial light source, or by colouring the reflective surfaces.
+
+Light-Emitting Diode (LED)
+
+An LED is essentially a transistor and so, unlike an LCD, it is classified as a solid-state display ; the construction is shown in Fig 3.1 5. The heart of the display is a slice or chip of gallium arsenide phosphide (GaAsP) moulded into a transparent plastic covering which not only serves to protect the chip, but also as a diffuser lens. The diode leads are soldered to a printed circuit board to form the numerical display required, e.g. the digit segment already referred to. When current flows through the chip it produces light which is directly transmitted in proportion to the current flow. To provide different colours, the proportion of Gap and GaAs is varied during manufacture of the chip, and also the technique of 'doping' with other elements e.g. oxygen or nitrogen is applied.
+
+In the normal 7-bar or segment display format, it is usual to  employ. one LED per segment, but the number depends on the overall size of the digits required for display and its appearance. Two methods may be adopted for increasing the size and for improving the appearance of a single LED per segment display. In one a corshaped reflecting cavity known as a 'light-pipe' is placed over each LED with its small end down. The whole assembly is cast inside a housing using glass-filled epoxy which fills the light-pipe cavities. 
+
+When each LED is illuminated, the light is reflected off the glass particles within the epoxy and off the cavity sidewalls, and through a surface area which can be up to twenty times that of the LED at the bottom of the cavity. In the second method, several small chips (1 0- 15 mm square) are covered with a metallized plastic reflector having seven bar-shaped reflector cavities designed so that an LED is at the centre of each cavity.
+
+In addition to the foregoing digital readouts, LED'S can also be adopted for circular scale or vertical scale displays, thereby eliminating the use of conventional pointers or moving tapes. In this case, large numbers of individual diodes (900 would be typical) are arranged in groups to form illuminated bars. An example of a vertical scale employing this technique for the measurement of temperature is shown in Fig 3.16. Signals from the appropriate sensing elements (thermocouples in the example shown) are first converted into digital form and read into a digital computer using microprocessors. The computer then applies the appropriate scale factors, establishes the required illumination pattern, and then produces an output signal to the display such that a small column of illuminated bars moves up or down the scale and registers against the scale. The light intensity of the LED column is graded, the highest intensity being provided at the 'reading edge' of the column.
+
+All instruments essential to the operation of an aircraft are accommodated on special panels the number and distribution of which vary in accordance with the number of instruments, the size of aircraft and cockpit layout. A main instrument panel positioned in front of pilots is a feature common to all types of aircraft, since it is mandatory for the primary flight instruments to be installed within the pilots' normal line of vision (see Fig 3.17.) Typical positions of other panels are: overhead, at the side, and on a control pedestal located centrally between the pilots, Panels are invariably of light alloy of sufficient strength and rigidity to accommodate the required number of instruments, and are attached to the appropriate parts of the cockpit structure. The attachment methods adopted vary, but all should conform to the requirement that a panel or an individual instrument should be easiIy installed and removed.
+
+Main instrument panels, which may be of the single-unit type or made up of two or three sub-panel assemblies, are supported on shockproof mountings since they accommodate the flight instruments and their sensitive mechanisms. The number, size and disposition of shockproof mountings required are governed by the size of panel and distribution of the total weight.
+
+All panels are normally mounted in the vertical position, although in some current aircraft types the practice of sloping main instrument panels forward at about 15º from the vertical is adopted to minimize parallax errors. 
+
+Instrument and all other control panels which for many years were painted black, are now invariably finished in matt grey, a colour which apart from its 'softer' effects provides a far better contrasting background for the instrument dials and thus contributes to easier identification.
+
+Flight Instruments
+
+Basically there are six flight instruments whose indications are so coordinated as to create a 'picture' of an aircraft's flight condition and required control movements; they are, airspeed indicator, altimeter, gyro horizon, direction indicator, vertical speed indicator and turn-and-bank indicator. It is therefore most important for these instruments to be properly grouped to maintain co-ordination and to assist a pilot to observe them with the minimum of effort.
+
+The first real attempt at establishing a standard method of grouping was the 'blind flying panel' or 'basic six' layout shown in Fig 3.18 (a). 
+
+The gyro horizon occupies the top centre position, and since it provides positive and direct indications of attitude, and attitude changes in the pitching and rolling planes, it is utilized as the master instrument. As control of airspeed and altitude are directly related to attitude, the airspeed indicator, altimeter and vertical speed indicator flank the gyro horizon and support the interpretation of pitch attitude. Changes in direction are initiated by banking an aircraft, and the degree of heading change is obtained from the direction indicator;
+this instrument therefore supports the interpretation of roll attitude and is positioned directly below the gyro horizon. The turn-and-bank indicator serves as a secondary reference instrument for heading changes, so it too supports the interpretation of roll attitude. 
+
+With the development and introduction of new types of aircraft, flight instruments and integrated instrument systems, it became necessary to review the functions of certain instruments and their relative positions within the group. As a result a grouping known as the 'basic T' was introduced (Fig 3.18 ( b ) ) . The theory behind thih method is that it constitutes a system by which various items of related flight information can be placed in certain standard locations in all instrument panels regardless of type or make of instrument used. In this manner, advantage can be taken of integrated instruments which display more than one item of flight information.
+It will be noted that there are now four 'key' instruments, airspeed indicator, pitch and roll attitude indicator, an altimeter forming the horizontal bar. of the 'T', and the direction indicator forming the vertical bar. As far as the positions flanking the direction indicator are concerned,, they are taken by other but less specifically essential flight instruments, and there is a certain degree of freedom in the choice of function. From Fig 3.18 it can be seen, for example, that a Machmeter and a radio magnetic indicator can take precedence over a turn-and-bank indicator and a vertical-speed indicator.
+
+
+Border lines are usually painted on the panel around the flight instrument groups. These are referred to as 'mental focus lines', their purpose being to assist pilots in focusing their attention on and mentally recording the position of instruments within the groups.
+
+Power-Plan t Instruments
+
+The specific grouping of instruments required for the operation of power plants is governed primarily by the type of power plant, the size of the aircraft and therefore the space available. In a single-engined aircraft, this does not present much of a problem since the small number of instruments may flank the pilot's flight instruments thus keeping them within a small 'scanning range'.
+
+The problem is more acute in multi-engined aircraft; duplication of power plants means duplication of their essential instruments. For t win-engined aircraft, and for certain medium-size four-engined aircraft, the practice is to group the instruments at the centre of the main instrument panel and between the two groups of flight instruments.
+
+In some large types of public transport aircraft, a flight engineer's station is provided in the crew compartment and all the power plant instruments are grouped on the control panels at this station (Fig 3.1 9)+ Those instruments measuring parameters required to be known by a pilot during take-off, cruising and landing, e.g. rev/min and turbine temperature, are duplicated on the main instrument panel.
+
+The positions of the instruments in the power plant group are arranged so that those relating to each power plant correspond to the power plant positions as seen in plan view. It will be apparent from the layout of Fig 3.20 that by scanning a row of instruments a pilot or engineer can easily compare the readings of a given parameter, and by scanning a column of instruments can assess the over-all performance pattern of a particular power plant. Another advantage of this grouping method is that all the instruments for one power plant are more easily associated with the controls for that power plant. A practical example of this method of grouping as adopted in the Boeing 747 is shown in Fig 3.20 ( b ) .
+
+The two methods most commonly used for the panel mounting of instruments are the flanged case method, and the clamp method. The flanged case method requires the use of screws inserted into locking nuts which, in some instruments, are fitted integral with the flange.
+
+Since flanged-type indicators are normally mounted from the rear of the panel, it is clear that the integrally fixed locking nuts provide for much quicker mounting of an instrument and overcome the frustration of trying to locate a screw in the ever-elusive nut! 
+
+As a result of the development of the hermetic sealing technique for instruments, the cases of certain types are flangeless, permitting them to be mounted from the front of the instrument panel. In order to secure the instruments special clamps are provided at each cut-out location. The clamps are shaped to suit the type of case, i.e. circular or square, and they are futed on the rear face of the panel so that when an instrument is in position it is located inside the clamp. 
+
+Clamping of the instrument is effected by rotating adjusting screwswhich draw the clamp bands tightly around the case.
+
+Illumination of Instruments and Instrument Panels
+
+When flying an aircraft at night, or under adverse conditions of visibility, a pilot is dependent on instruments to a much greater extent than he is when flying in daylight under good visibility conditions, and so the ability to observe their readings accurately assumes greater importance. For example, at night, the pilot's attention is more frequently divided between the observation of instruments and objects outside the aircraft, and this of course results in additional ocular and general fatigue being imposed on him, Adequate illumination of instruments and the panels t o which they are fitted is therefore an essential requirement. 
+
+The colour chosen for lighting systems has normally been red since this is considered to have the least effect on what is termed the 'darkness adaptation characteristic' of the eyes. As a result of subsequent investigations and tests, however, it would appear that white light has less effect, and this is now being used in some current types of aircraft.
+
+Pillar and Bridge Lighting
+
+Pillar lighting, so called from the method of construction and attachment of the lamp, provides illumination for individual instruments and controls on the various cockpit panels. A typical assembly, 
+shown in Fig 3.23 (a), consists of a miniature centre-contact filarnent-lamp inside a housing, which is a push fit into the body of the assembly. The body is threaded externally for attachment to the panel and has a hole running through its length to accommodate a cable which connects the positive supply to the centre contact. The
+circuit through the lamp is completed by a ground tag to connect to the negative cable.
+
+Light is distributed through a red filter and an aperture in the lamp housing. The shape of the aperture distributes a sector of light which extends downwards over an arc of approximately 90º to a depth slightly less than 2 in from the mounting point.
+
+The bridge type of lighting (Fig 3.23 (b)) i s a multi-lamp development of the individual pillar lamp already described. Two or four lamps are fitted t o a bridge structure designed t o fit over a variety of the standardized instrument cases. The bridge fitting is composed of two light-alloy pressings secured together by rivets and spacers, and carrying the requisite number of centre contact assemblies above which the lamp housings are mounted, Wiring arrangements provide for two separate supplies to the lamps thus ensuring that loss of illumination cannot occur as a result of failure of one circuit.
+
+Wedge-Type Lighting
+
+This method of instrument lighting derives its name from the shape of the two portions which together make up the instrument cover glass. It relies for its operation upon the physical law that the angle at which light leaves a reflecting surface equals the angle at which it strikes that surface.
+
+The two wedges are mounted opposite to each other and with a narrow air-space separating them, as shown in Fig 3.24. Light is introduced into wedge A from two 6 V lamps set into recesses in its wide end. A certain amount of light passes directly through this wedge and onto the face of the dial while the remainder is reflected back into the wedge by its polished surfaces. The angle at which the light rays strike the wedge surfaces governs the amount of light reflected; the lower the angle, the more light reflected. 
+
+The double wedge mechanically changes the angle at which the light rays strike one of the reflecting surfaces of each wedge, thus distributing the light evenly across the dial and also limiting the amount of light given off by the instrument. Since the source of light is a radial one, the initial angle of some lights rays with respect to the polished surfaces of wedge A is less than that of the others.
+
+The low-angle light rays progress further down the wedge before they leave and spread light across the entire dial. 
+
+Light escaping into wedge B is confronted with constantly decreasing angles and this has the effect of trapping the light within the wedge and directing it to its wide end. Absorption of light reflected into the wide end of wedge B is ensured by painting its outer part black.

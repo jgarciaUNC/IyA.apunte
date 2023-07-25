@@ -1,0 +1,321 @@
+Weather radar
+
+Weather radar was introduced onto passenger aircraft during the 1950s for pilots to identify weather conditions and subsequently reroute for the safety and comfort of passengers. Extreme weather conditions are a major threat to the safe operation of an aircraft; flight crews need to be aware of these conditions and understand the consequences. There are three main technologies typically used in aircraft to detect weather conditions: on-board radar, lightning detection, and datalink services. These systems enable pilots to identify weather conditions and subsequently re-route for the safety and comfort of passengers. The majority of commercial transport aircraft are equipped with weather radar, and this represents the majority of this chapter. General Aviation aircraft that are not equipped with radar are typically equipped with an alternative technology, i.e. lightning detection, and/or datalink services.
+
+20.1 System overview
+
+The word radar is derived from radio detection and ranging; the initial use of radar was to locate aircraft and display their range and bearing on a monitor (either ground based or in another aircraft). This type of radar is termed primary radar; energy is directed via an antenna to a ‘target’; this target could be an aircraft, the ground or specific weather conditions. In the case of weather radar, we want to detect the energy reflected back from the contents of a cloud, or from precipitation, see Figure 20.1. The latter may defined as the result of water vapour condensing in the atmosphere that subsequently falls to the earth’s surface. Precipitation can occur in many different forms including: rain, freezing rain, snow, sleet, and hail. Weather radar operates either in the C-band (4–8GHz) or X-band (8–12.5 GHz); these two bands have their advantages and disadvantages for use in weather radar applications. C-band microwave energy pulses can penetrate through heavy precipitation, thereby providing weather detection, enabling the pilot to determine more details of the weather pattern. 
+
+X-band microwave energy pulses can provide good resolution of images; however, this means that they can only be used for weather avoidance. Higher frequencies require a smaller antenna; for this reason, larger passenger aircraft use X-band radar.
+
+The range of a weather radar system is typically 320 miles. Microwave energy pulses are reflected from the moisture droplets and returned to the radar antenna. The system calculates the time taken for the energy pulses to be returned; this is displayed as an image on a dedicated weather radar screen, or the image can be integrated with the electronic flight display system. The strength of the returned energy is measured and used to determine the size of the target. Higher moisture content in a cloud provides higher returned energy. The antenna is scanned in the lateral plane to provide directional information about the target.
+
+20.2 Airborne equipment
+
+The typical weather radar system in a large aircraft comprises the antenna (nose cone); two transceivers (nose cone); two control panels/displays (cockpit), see Figure 20.2. The  transceivers are located in the nose cone, thereby minimising the length of the waveguide, and also avoiding the need for the waveguide to penetrate the pressure bulkhead. On single engine, GA aircraft the antenna can be located on the wing, in a self-contained pod. Figure 20.3(a) Weather radar antenna
+
+20.2.1 Antenna
+
+Microwave signals are transmitted and received via the antenna. Early versions of the antenna were in the form of a parabolic dish; however, the current versions are the planar array flat-plate type, see Figure 20.3(a). 
+
+The flat-plate antenna projects a more focused beam than the parabolic type; this is due to the reduction in side-lobes as illustrated in Figure 20.4. The antenna comprises a flat steerable plate with a large number of radiating slots, each equivalent to a half-wave dipole fed in phase. The antenna is mounted on the forward pressure bulkhead behind the radome; this is a streamlined piece of structure constructed of materials that have low attenuation of the radar signals. 
+
+The mechanical condition of the radome is very important to the effectiveness of the weather radar system, e.g. de-lamination will affect signal attenuation.
+
+The antenna automatically traverses from left to right on a repetitive basis to be able to scan the weather patterns ahead of the aircraft. To investigate cloud formations, the pilot can also tilt the antenna up or down to provided different viewing perspectives. 
+
+The reference position is to scan the antenna so as to provide images across the horizon; inputs from the aircraft’s attitude reference system are used to provide the stabilisation. 
+
+
+Motors are used as part of a drive mechanism to traverse the antenna in azimuth and to tilt the antenna in pitch. Synchro transmitters are used to relay the various positions of the antenna back to the transceiver. 
+
+Energy pulses are carried between the antenna and transceiver via a waveguide, see Figure 20.3
+
+(b). This is because losses in a coaxial cable would be high at frequencies above 3 GHz, and prohibitive at frequencies above 10 GHz. Coaxial cables are also limited in terms of the peak power handling capability. Waveguides have their disadvantages; they are bulky, expensive and require more maintenance. Manufactured from aluminium alloy, in a hollow rectangular form, they have dimensions closely matched to the wavelength of the system. Chapter 2, Section 2.12 provides more details on waveguides.
+
+
+Key point
+
+The energy radiated from a weather radar system is hazardous and could cause injury.
+
+20.2.2 Transceiver
+
+The transceiver is a combined transmitter and receiver, Figure 20.5; antenna power output is in the order of 5–10 kW. Modern transceivers are solid-state devices, incorporating video processing for the display and stabilisation signals for the antenna. Since the energy received from a given size of water droplet varies with range, the energy returns from closer ranges will be higher than those received from droplets further away. The transceiver will automatically compensate for returns from targets that are near or far from the aircraft. This is achieved by altering the gain as a function of time from when the energy pulse is transmitted. Pulses of radar energy are transmitted on a repetitive basis; the interval between pulses depends on the range selected by the crew. Time has to be allowed for the energy pulse to be reflected from water droplets at the limit of the selected range before the next pulse is transmitted.
+
+20.2.3 Control panel
+
+A typical weather radar control panel is shown in Figures 20.6(a) and (b). This allows the pilot to select the left or right transceiver, select the weather radar mode, manually tilt the antenna and select the gain of the system.
+
+20.2.4 Display
+
+The basic display used for primary radar systems is the plan-position-indicator (PPI). As the beam sweeps from side to side, a radial image on the display (synchronised with each sweep) moves across the display. The image on the display depends on the amount of energy returned from the target. Original weather radar systems had dedicated monochrome displays based on a cathode ray tube (CRT); these have evolved over the years into full colour displays, often integrated with other electronic flight instruments. The full benefits of a weather radar system can be appreciated when the system is used on an aircraft with an electronic flight instrument system (EFIS) display, Figure 20.7. A symbol generator is used to provide specific weather radar images as determined by the transceiver. An electronic display control panel allows each pilot to select the range of weather radar in increments of 10, 20, 40, 80, 160 and 320 miles.
+
+The electronic display is overlaid onto the map mode allowing the pilot to relate the aircraft’s heading with the weather images. These images are colour coded to allow the pilot to assess the severity of weather conditions. Colours (ranging from black, green, yellow, red and magenta) are used to indicate rainfall rates that can be interpreted as a level of turbulence.
+
+
+20.3 Precipitation and turbulence
+
+For a more detailed understanding of weather radars, factors that affect precipitation, turbulence and the formation of clouds are now considered. 
+
+
+20.3.1 Cloud formation
+
+For the comfort and safety of the passengers, we want the weather radar system to detect the turbulence resulting from precipitation that leads to severe weather conditions, i.e. thunderstorms, such that these can be avoided if possible. Precipitation may defined as the result of water vapour condensing in the atmosphere that subsequently falls to the earth’s surface. This can occur in many different forms including: rain, freezing rain, snow, sleet, and hail. Clouds are
+the visible accumulation of particles of water and/or ice in the atmosphere; their formation changes on a continuous basis, often resulting in no more than a ‘light shower’ of rain. Under certain atmospheric conditions, clouds become large and unstable leading to hazardous flying conditions. The flight crew needs to have accurate and up to date forecasts of en route weather conditions; this includes details of cloud classifications as detailed in Table 20.1.
+
+Within the above classification, precipitation varies with each cloud type (see Figure 20.8): 
+Altocumulus: precipitation does not actually reach the ground 
+
+Altostratus: precipitation is in the form of rain or snow
+
+Nimbostratus: the cloud base is diffuse with continuous rain or snow
+
+Stratocumulus: light rain, drizzle or snow
+
+Stratus: drizzle
+
+Cumulus: rain or snow showers
+
+Cumulonimbus: lightning, thunder, hail.
+
+Associated heavy showers of rain/snow.
+
+It can be seen from the above that cumulonimbus formations present the greatest 
+hazard to aircraft, and maximum discomfort for passengers. We need to understand the nature of thunderstorms that contain heavy rainfall and turbulence.
+
+20.3.2 Thunderstorms
+
+Three conditions are needed to create thunderstorms: instability within the atmosphere, high moisture content and a catalyst to start the air rising. Air can be forced to rise in the atmosphere from a number of causes as illustrated in Figure 20.9:
+
+Frontal: when opposing warm and cold air masses combine 
+
+Convective: the ground being heated by the sun 
+
+Orographic: movement of air over the terrain.
+
+Referring to Figure 20.10, the life cycle of a thunderstorm develops in three stages. During the first towering cumulus stage, warm, moist air containing water vapour rises up to higher altitudes. When the dew point is reached it cools down and the moisture content condenses into water droplets thereby creating clouds. As a result of the condensation process, latent heat is released causing the air to become warmer and drier and thereby less dense. This air rises as an updraught over one or two miles diameter due to convection. At this stage, air is drawn into the cell horizontally at all levels causing the updraught to become stronger with altitude. 
+
+Water vapour is carried up to higher altitudes where it combines to form larger water droplets. This first stage of a thunderstorm develops over approximately 20 minutes. When the water droplets are sufficiently large enough, they are too heavy to be supported by the updraught, and are released as rainfall. As the water droplets fall, they draw in the surrounding air causing a downdraught. The air
+temperature of the downdraught is cold compared with the updraught; heavy rain falls from the base of the cloud. The updraught continues to carry the remaining water droplets up to very high altitude;  this can be up to 50,000 feet in the tropics (well into the troposphere). At these altitudes, strong winds in the upper atmosphere (jet streams) carry the top of the cloud away to form the characteristic ‘anvil’ shape. This is the mature stage of the thunderstorm, and can last up to 40 minutes.
+
+These two air masses are now moving in opposite directions forming localised cells of air movement; the relative movement is known as wind shear, and is the basis of turbulence. This wind shear is characterised by the relative speed and direction of the two air movements. The amount of increase in temperature and size of air mass being heated determines the rate at which wind shear, and hence turbulence, occurs. These factors will determine the nature of the boundary between the air masses. When these boundaries are very distinct, this is when the rainfall and turbulence is most severe. The size of droplets in thunderstorms and other severe weather is large compared with general rainfall; this produces much larger radar returns as described in Section 20.3.3.
+
+In addition to the upward and downward movement of air within the cell of a thunderstorm, droplets also travel laterally depending on prevailing conditions. New cells are formed at the edges of the cloud; they may not contain rain but they often create turbulence. 
+
+The final stage of the thunderstorm is when the updraughts weaken thereby reducing the supply of warm, moist air containing water vapour. Downdraughts continue over a broader base, with less intensity and the cycle begins to dissipate. Temperatures within the cloud balance with the surrounding air, and the once towering cumulonimbus formation collapses. 
+
+
+20.3.3 Detection of water droplets
+
+The antenna scans forward and to each side of the aircraft with a conical, or pencil beam of microwave energy, see Figure 20.11. When the weather radar energy pulses reach a water droplet, the energy is absorbed, refracted or reflected from the front convex portion back to the antenna, as illustrated in Figure 20.12. Note that the water droplet is assumed to be spherical; it is unlikely to be a perfect sphere within a thunderstorm; however, the principles illustrated in Figure 20.12  are good approximations. The water droplet diameter affects the amount of energy returned to the antenna. With larger droplets, i.e. heavier rainfall, more energy is reflected back to the antenna. Smaller droplets from cloud and fog return significantly lower reflections. This relationship between individual size, rainfall rate and reflected energy is the basis of detecting the severity of the storm. Weather radar wavelengths (25 mm at 12 GHz) are larger than any water droplet sizes (refer to Table 20.2). The scattering of electromagnetic radiation by particles such as raindrops, i.e. particles smaller than the wavelength of the radiated energy is characterised by a phenomenon called Rayleigh scattering.
+
+This is named after John William Strutt (Lord Rayleigh 1842–1919), an English physicist. The intensity of the returns is given by the Rayleigh scattering equation; in this equation, the intensity of the returns varies as the sixth power of the droplet diameter. This means that returns from water vapour within fog or clouds is small compared with raindrops.
+
+
+20.3.4 Hailstones
+
+Hailstones are formed in cumulonimbus clouds and, in addition to the turbulence, they will cause physical damage to the aircraft. They are formed in strong thunderstorms with significant updraughts as irregular lumps (or pellets) of ice; this occurs when super-cooled water makes contact with an object such as dust or ice particles. Super-cooled water exists at temperatures below freezing point; this is because water needs a nuclei to form ice crystals. The water freezes on the surface of the nuclei, and then grows in size by forming layers. When the hailstone is too heavy to be supported in the updraught of the storm it will fall out of the cloud. Referring to Table 20.2, the sizes of hailstones are starting to approach the wavelength of the radar energy (25 mm at 12 GHz); hailstones have been recorded up to 60 mm in diameter. When the wavelength of the radar energy is smaller than the target diameter, the hailstone acts as a lens, focussing energy onto the concave internal surface and reflecting higher levels (compared with water droplets) of energy back to the antenna.
+
+Key point
+
+X-band (8–12.5 GHz) energy pulses provide good resolution of images for the purposes of weather avoidance; they require a smaller antenna compared with C-band radar (4 to 8 GHz).
+
+Key point
+
+The weather radar antenna automatically traverses from left to right on a repetitive basis to be able to scan the weather patterns ahead of the aircraft.
+
+20.3.5 Turbulence
+
+Turbulence can be inferred from the measurement of precipitation, both in terms of the type of precipitation (rain or hail), droplet size and precipitation rate. Approximate dimensions (given as their diameter) of various weather targets are given in Table 20.2.
+
+20.3.6 Predictive wind shear
+
+Wind shear can occur in both the vertical and horizontal directions; this is particularly hazardous to aircraft during take-off and landing. Specific weather conditions known as microbursts cause short-lived, rapid air movements from clouds towards the ground. 
+
+When the air from the microburst reaches the ground it spreads in all directions, this has an effect on the aircraft depending on its relative position to the microburst. Referring to figure 20.13, when approaching the microburst, it creates an increase in headwind causing a temporary increase of airspeed and lift for an aircraft approaching the cloud; if the pilot were unaware of the condition creating the increased airspeed, the normal reaction would be to reduce power. When flying through the microburst, the aircraft is subjected to a downdraught. As the aircraft exits the microburst, the downdraught now becomes a tailwind, thereby reducing airspeed and lift. This complete sequence of events happens very quickly, and could lead to a sudden loss of airspeed and altitude. In the take-off and climb-out phase of flight, an aircraft is flying just above stall speed; wind shear is a severe threat. During approach and landing, engine thrust will be low; if a microburst is encountered, the crew will have to react very quickly to recognise and compensate for these conditions.
+
+Modern weather radar systems are able to detect the horizontal movement of droplets using Doppler shift techniques. Doppler is usually associated with self-contained navigation systems, and this subject is described in a separate chapter. The Doppler effect can be summarised here as: ‘...the frequency of a wave apparently changes as its source moves closer to, or farther away from an observer’. This feature allows wind shear created by microbursts to be detected.
+
+Referring to Figure 20.14, the microwave energy pulses from the antenna are reflected by the water droplets as in the conventional weather radar system. Using the Doppler shift principle, the frequency of energy pulse returned by droplets (B) moving toward the aircraft will be at a higher frequency than the transmitted frequency. The frequency of energy pulse returned by droplets moving away from the aircraft (A) will be at a lower frequency than the transmitted frequency. These Doppler shifts in frequency are used to determine the direction and velocity of the air movement resulting from a microburst. 
+
+Visual and audible warnings of wind shear conditions are provided to the crew. The visual warnings are given on the weather radar and navigation displays using a wind shear icon and message together with warning lights on the glare shield. Audible warnings are provided as computer generated voice alerts over the cockpit speakers, typically ‘wind shear ahead’. The system automatically configures itself for the phase of flight; it is normally inhibited below 50 feet radio altitude during take-off and landing. 
+
+During an approach, the system is activated below 2500 feet radio altitude.
+
+Test your understanding 20.1
+
+In which bands of radar frequencies does weather radar operate?
+
+Test your understanding 20.2
+
+Explain what happens when radar energy reaches a water droplet.
+
+20.3.7 Terrain mapping
+
+A secondary use of the weather radar system is for terrain mapping, e.g. identifying rivers,
+coastlines and mountains. This mode of operation is selected by the crew on the control panel. Returns from the various ground features are different, just as they are for precipitation. These variations are interpreted by the system and displayed using various colours. Since the energy of the return signal depends on the reflectivity of the terrain and angle at which the beam meets with the terrain, the gain control is used to provide the optimum display. If the gain is too  low or too high, the images will be unclear. 
+
+The weather radar pencil beam is not suitable for terrain mapping since it does not cover a sufficiently large area. A fan-shaped beam (Figure 20.15) provides optimum coverage of the terrain along the intended track of the aircraft. The system can have the facility to reshape the beam depending on the selected mode. Modern systems achieve terrain mapping by sweeping the pencil beam at incremental vertical angles of the antenna to build up the overall display.
+
+Key point
+
+During a thunderstorm the effects of turbulence can be experienced up to 10 nm from the centre of the storm cell; in extreme cases this can be up to 20 nm.
+
+Key point
+
+Thunderstorms develop within cumulonimbus cloud formations and present severe hazards to aircraft:
+
+Reduced visibility from ground level up to 50,000 feet
+
+Turbulence and wind shear causing handling problems
+
+Hailstones up to 60 mm in diameter causing structural damage
+
+Lightning strikes causing, inter alia, structural damage
+
+Interference with navigation and communications equipment.
+
+Key point
+
+The temperature increase and size of air mass being heated determines the rate at which wind shear, and hence turbulence, occurs.
+
+Test your understanding 20.3
+
+What effect will radome delamination have on the weather radar signal?
+
+Key point
+
+Predictive wind shear uses the principle of Doppler shift; ‘...the frequency of a wave apparently changes as its source moves closer to, or farther away from, an observer’.
+
+
+Key point
+
+In the take-off and climb-out phases of flight, an aircraft is flying just above stall speed; wind shear causes temporary changes in lift and is therefore a threat to aircraft safety.
+
+20.4 System enhancements
+
+Various features are being added to the basic weather radar systems to provide many benefits including enhanced displays, improved turbulence detection, and integration with other systems.
+
+The weather radar system described so far is two dimensional, i.e. it provides range and directional information. Three-dimensional weather radar provides volumetric information relating to the weather pattern. The antenna scans 90 degrees either side of the aircraft centreline, from ground level up to 60,000 feet and up to 320 miles ahead of the aircraft. Energy returns are stored in a computer and used to build a volumetric model of the airspace ahead of the aircraft. Unwanted ground returns (clutter) are filtered out in the computer using an on-board terrain database; this provides a clearer image of weather patterns. Some systems refine this de-cluttering by taking the earth’s curvature into account. Weather radar software has been developed with the ability to predict storm cloud formations by analysing cloud growth characteristics, thereby providing an increased notification of turbulence. The three-dimensional image of the weather pattern is presented on the display both in terms of forward and side views. 
+
+The rate of thunderstorm development can also be modelled within the weather radar system providing crews with increased notice of anticipated turbulence. 
+
+Knowledge of how thunderstorms develop over land versus oceans can be built into the system to modify the weather radar display. Different geographical areas of the world generate different types of storm with their associated turbulence; these characteristics can be built into the system’s software model. These models are used to characterise the different type of storms that develop in the northern and southern hemispheres, taking into account the variations that occur with latitude. Turbulence warnings can also be customised for specific aircraft types and the various phases of flight.
+
+20.5 Lightning detection
+
+A complementary technology used for the detection of storms is lightning detectors. These are inexpensive and lightweight, making them very attractive for general aviation (especially for single-engine aircraft, where there is no space for a radome). Lightning detection system comprises an antenna, processor and display; the system weight is approximately 5 kg versus 15 kg for a weather radar system. The system monitors electrical activity within a storm (whereas weather radar detects precipitation as described in this chapter).
+
+When clouds are developing as described earlier, lightning is not produced in the early stages; weather radar will indicate a developing storm before a lightning detector can. Weather radar can experience attenuation, i.e. where nearby precipitation can mask precipitation further away. Lightning detectors provide confirmation when a cloud has developed into a thunderstorm.
+
+Lightning might occur in areas outside of the precipitation area detected by radar. Electrical activity can originate in the anvil of the thundercloud or on the outside edges of the precipitation area. Transport aircraft use weather radar in preference to lightning detectors because not all clouds develop into thunderstorms; weather radar detects smaller storms, i.e. without lightning, that also cause turbulence.
+
+A typical GA aircraft system is Avidyne’s TWX670, comprising an antenna, processor Figure 20.16 and display. The TWX670 is is a third-generation lightning-based weather detection system that provides a simple and intuitive colour-contoured display with instantaneous picture of surrounding weather. The system provides real time, tactical, colour weather avoidance solution. It accurately detects and clearly displays electrical discharges (the primary indicator of thunderstorms) in real time, regardless of aircraft manoeuvring. The system provides tactical weather avoidance in the critical 0-25nm range, complementing to the strategic 
+benefits of satellite-based datalink weather. Storm cells and their intensities are displayed in colour contours, providing an image of a thunderstorm’s electrical activity over time, Figure 20.17. This allows the pilot to determine the areas of greatest intensity, and clearly identify areas with potential for convective wind shear, turbulence, micro-bursts, hail and icing.
+
+In TWxCell mode, each cell grid is displayed as a hexagonal array of cell weights (colours). Colour-filled hexagons highlight the most intense regions of thunderstorm activity, presenting a visually contoured colour display with dynamic sectors. This helps the pilot to quickly identify the most intense regions of thunderstorm activity. In Strike Mode, up to 1024 strikes are displayed for up to three minutes. Each transmitted strike includes range, bearing, and weight (colour). Regional activity, not age, determines the strike colour. Strikes that are more recent but further away cannot “drown out” flashes that are closer and less recent. This provides a level of comfort to pilots transitioning from less capable systems.
+
+Colour enhancement helps to identify areas of high intensity while still providing a view of the discrete events.
+
+20.6 Datalink weather
+
+Avidyne’s MLX770 is a datalink graphical weather system for General Aviation operations outside the Continental United States (CONUS). Utilising the Iridium satellite communication constellation, the two-way datalink transmission technology includes high-resolution radar imagery, Meteorological Aerodrome Reports (METAR), and Terminal Aerodrome Forecasts (TAF). These are displayed in full colour on a suitable multi-function display (MFD). An aerodrome TAF is a forecast, that gives the predicted weather conditions expected at an aerodrome, usually for a 9 or 24 hour period. A METAR is a report giving the actual weather conditions at an aerodrome at the time of the report. METARs are typically issued every 30-60 minutes. The MLX770 delivers satellite infrared (SAT IR) imagery for selected geographic regions; this imagery shows the emission from the infrared portion of the solar spectrum. Bright areas represent cold high cloud tops; dark areas represent warm ground and ocean surfaces.
+
+Test your understanding 20.4
+
+What is the significance of the black, green, yellow, red and magenta images on a weather radar display?
+
+Test your understanding 20.5
+
+How is wind shear created and how are microbursts detected?
+
+20.7 Multiple choice questions
+
+1. Weather radar operates in which bands of radar frequencies?
+
+(a) C- and X-band
+
+(b) L-band
+
+(c) HF.
+
+2. Larger passenger aircraft use X-band radar because it can:
+
+(a) determine more details of the weather pattern
+
+(b) penetrate through heavy precipitation
+
+(c) provide good resolution of images, and requires a smaller antenna.
+
+3. What effect will radome delamination have on the weather radar signal?
+
+(a) none
+
+(b) decreased attenuation
+
+(c) increased attenuation.
+
+4. Air can be forced to rise in the atmosphere from a number of causes including when opposing air masses combine; this is called:
+
+(a) convection
+
+(b) frontal
+
+(c) orographic.
+
+5. What effect does increased water droplet diameter have on the amount of energy returned to the antenna?
+
+(a) increased
+
+(b) no effect
+
+(c) decreased.
+
+6. The most severe weather radar images are colour coded:
+
+(a) black
+
+(b) magenta
+
+(c) green.
+
+7. Predictive wind shear uses the principle of:
+
+(a) Doppler shift
+
+(b) detecting rain drop size
+
+(c) detecting rain drop shape.
+
+8. Weather radar energy pulses are transmitted at rates that vary with selected:
+
+(a) range
+
+(b) mode
+
+(c) antenna tilt angle.
+
+9. Compared with the transmitted frequency, energy pulses returned by droplets moving away from the aircraft will be at:
+
+(a) lower frequencies
+
+(b) higher frequencies
+
+(c) the same frequency.
+
+10. As the aircraft travels away from a microburst, the downdraught affects airspeed and lift by:
+
+(a) reducing airspeed and reducing lift
+
+(b) increasing airspeed and reducing lift
+
+(c) reducing airspeed and increasing lift.
+
+11. Weather radar energy pulses returned from a water droplet have been:
+
+(a) absorbed
+
+(b) refracted
+
+(c) reflected.
+

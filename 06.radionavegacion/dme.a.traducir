@@ -1,0 +1,167 @@
+Distance measuring equipment
+
+The previous two chapters have been concerned with obtaining directional information for the purposes of airborne navigation. In this chapter we will look at a system that provides the crew with the distance to a navigation aid. Distance measuring equipment (DME) is a short/medium-range navigation system, often used in conjunction with other systems, e.g. VOR and ILS, to provide accurate navigation fixes. DME is based on secondary radar principles and operates in the L-band of radar. Before looking at what the system does and how it operates in detail, we need to take at look at some basic radar principles.
+
+11.1 Radar principles
+
+The word radar is derived from radio detection and ranging; the initial use of radar was to locate aircraft and display their range and bearing on a monitor (either ground based or in another aircraft). This type of radar is termed primary radar: energy is radiated via a rotating radar antenna to illuminate a ‘target’; this target could be an aircraft, the ground or a cloud. Some of this energy is reflected back from the target and is collected in the same antenna, see Figure 11.1. The strength of the returned energy is measured and used to determine the range of the target. A rotating antenna provides the directional information such that the target can be displayed on a screen.
+
+Primary radar has its disadvantages, one of which is that the amount of energy being transmitted is very large compared with the amount of energy reflected from the target. An alternative method is secondary radar that transmits a specific low-energy signal (the interrogation) to a known target. This signal is analysed and a new (or secondary) reply signal,
+i.e. not a reflected signal, is sent back to the origin, see Figure 11.2(a). Secondary radar was developed during the Second World War to differentiate between friendly aircraft and ships:
+Identification Friend or Foe (IFF). The principles of secondary radar now have a number of
+applications including distance measuring equipment (DME).
+
+11.2 DME overview
+
+The DME navigation aid contains a transponder (receiver and transmitter) contained within a single navigation aid, see Figure 11.2(b). The  aircraft equipment radiates energy pulses to the
+DME navigation aid; secondary signals are then transmitted back to the aircraft. An on-board
+interrogator measures the time taken for the signals to be transmitted and received at the aircraft. Since we know the speed of radio wave propagation, the interrogator can calculate the
+distance to the DME navigation aid. DME navigation aids can either be self-contained ground stations, or co-located with a VOR navigation aid.
+
+Since the system is ‘line of sight’, the altitude of the aircraft will have a direct relationship with the range that the system can be used, see Figure 11.3(a). Using DME navigation aids imposes a limit on the working range that can be obtained. 
+
+The maximum line-of-sight (LOS) distance between an aircraft and the ground station is given by the relationship:
+
+
+where d is the distance in nautical miles, and h is the altitude in feet above ground level (assumed to be flat terrain). The theoretical LOS range for altitudes up to 20,000 feet is given in Table 11.1.
+
+
+Referring to Figure 11.3(b) it can be seen that the actual distance being measured by the interrogator is the ‘slant’ range, i.e. not the true distance (horizontal range) over the ground. The effects of slant range in relation to the horizontal range are greatest at high altitudes and/or when the aircraft is close to the navigation aid. Taking this to the limit, when the aircraft is flying over a DME navigation aid, it would actually be measuring the aircraft’s altitude!
+
+Test your understanding 11.1
+
+What is the difference between primary and secondary radar?
+
+Test your understanding 11.2
+
+Distinguish between slant range and horizontal range.
+
+
+11.3 DME operation
+
+The signals transmitted by the interrogator are a pair of pulses, each of 3.5 μs duration, modulated on the DME navigation aid frequency. The interrogator generates a pulse-pair repetition rate between 5 and 150 pulse-pairs per second. At the DME navigation aid, the transponder receives these pulses and, after a 50 ms time delay, transmits a new pair of pulses at a frequency 63 MHz above or below the interrogator’s frequency. 
+
+The aircraft’s interrogator receives the pulses and matches the time interval between the transmitted pair of pulses. This ensures that other aircraft interrogating the same DME navigation aid at the same time only process their own pulses.
+
+By measuring the elapsed time between transmitting and receiving (and taking into account the 50 ms time delay) the interrogator calculates the distance to the navigation aid. DME is a line-of-sight system with a maximum range of approximately 200 nm; this equates to approximately 2400 ms elapsed time taken for a pair of pulses to be transmitted and received, taking into account the 50 ms time delay in the ground station. System accuracy is typically 0.5 nm, or 3% of the calculated distance, whichever is the greater.
+
+The DME ground station responds to the interrogations of 50–100 aircraft; these all send their interrogations at the same DME station frequency. The aircraft transceiver has to recognize its own replies from replies from all other aircraft using the DME station. For this purpose, the transceiver interrogates with its own ‘jitter’ (or random set of pulses); it then looks for replies with a correlating, constant time difference with respect to its transmission.
+
+Test your understanding 11.3
+
+What is the typical accuracy and maximum range of a DME system?
+
+Key point
+
+The varying interval between pulse-pairs ensures that the DME interrogator recognises its own
+signals and rejects other signals.
+
+Key point
+
+There are 252 DME channels between 960 and 1215 MHz. Channels are numbered from 1 to 126; each channel number is sub-divided into channels designated ‘X’ and ‘Y’. These are separated by varying the pulse separation time: 2μs for X channels, and 30μs for Y channels.
+
+Key point
+
+DME is based on secondary radar; it operates in the L-band between 962 MHz and 1215 MHz (UHF) with channel spacing at 1MHz.
+
+11.4 Equipment overview
+
+Commercial transport aircraft are usually fitted with two independent DME systems, comprising
+antennas and interrogators.
+
+The DME antennas are L-band blades, located on the underside of the aircraft fuselage, see Figure 11.4(a); note that the antenna is dual purpose in that it is used for both transmitting and receiving.
+
+
+The interrogators are located in the equipment bays (Figure 11.4(b)) and provide three main functions: transmitting, receiving and calculation of distance to the selected navigation aid. Transmission is in the range 1025 to 1150 MHz; receiving is in the range 962 to 1215 MHz; channel spacing is 1 MHz.
+
+The interrogator operates in several modes:
+
+Standby
+
+Search
+
+Track
+
+Scan
+
+Memory
+
+Fault
+
+Self-test.
+
+When the system is first powered up, it enters the standby mode; transmissions are inhibited, the receiver and audio are operative; the DME display is four dashes to indicate no computed data (NCD). The receiver monitors pulse-pairs received from any local ground stations. If sufficient pulse-pairs are counted, the interrogator enters the search mode. The transmitter now transmits pulse-pairs and monitors any returns;
+
+
+Key point
+
+VOR and DME systems operate on different frequencies. When they are co-located, the DME frequency is automatically selected when the pilot tunes into the VOR frequency.
+
+synchronous pulse-pairs are converted from time into distance and the system enters the track  mode. Distance to the navigation aid will now be displayed on the DME indicator (see Figure 11.5). The scan mode has two submodes:
+
+directed scanning for multiple navigation aid tuning; up to five stations can be scanned in accordance with a predetermined area navigation auto-tuning programme (described in more detail
+in Chapter 16). Alternatively, free scanning occurs for any DME navigation aids within range. 
+
+If pulse-pairs from any navigation aids are not  received after a short period of time (two seconds typical), the interrogator goes into memory mode whereby distance is calculated from the most recently received pulse-pairs. Memory mode expires after a short period of time, typically ten seconds, or until pulse-pairs are received again. If the system detects any fault conditions, the distance display is blanked out. Self-test causes the system to run through a predetermined sequence causing the indicators to read: blank, dashes (NCD) and 0.0 nm. 
+
+DME outputs can be displayed in a variety of ways, see Figure 11.5. These displays include dedicated readouts, electronic flight instrument systems (EFIS), combined panels/transceivers (for general aviation) and radio distance magnetic indicators (RDMI). When selecting a co-located VOR-DME navigation aid, the crew only needs to tune into the VOR frequency; the DME frequency is automatically selected.
+
+Key point
+
+When no computed data (NCD) is available this condition is displayed as four dashes.
+
+Test your understanding 11.4
+
+List and describe four modes in which a DME interrogator can operate.
+
+11.5 En route navigation using radio navigation aids
+
+Basic en route navigation guidance for commercial aircraft can be readily accomplished using colocated VOR and DME systems, thereby providing rho–theta fixes from a single navigation aid.
+
+The DME frequency is paired with the VOR frequency; this means that only the VOR frequency needs to be tuned, and the DME frequency is automatically tuned as a result. Alternatively, rho–rho fixes can be established from a pair of DME navigation aids. 
+
+Note that this produces an ambiguous fix unless another DME is used, see Figure 11.6. An example
+of DME transponder locations and co-located VOR-DME navigation aids in Switzerland is provided in Table 11.2.
+
+In the US, a combined rho–theta system was introduced for military aircraft known as TACAN (tactical air navigation). This system is a short-range bearing and distance navigation aid
+operating in the 962–1215 MHz band. TACAN navigation aids (see Figure 11.7) are often colocated with VOR navigation aids; these are identified on navigation charts as ‘VORTAC’.
+
+The TACAN navigation aid is essentially a DME transponder (using the same pulse-pair and frequency principles as the standard DME) to which directional information has been added; both operate in the same UHF band. An important feature of TACAN is that both distance and bearing are transmitted on the same frequency; this offers the potential for equipment economies.
+
+Furthermore, because the system operates at a higher frequency than VOR, the antennas and associated hardware can be made smaller. This has the advantage for military use since the TACAN
+equipment can be readily transported and operated from ships or other mobile platforms.
+
+When co-located with a VOR navigation aid, military and commercial aircraft can share the VORTAC facility. Referring to Figure 11.8, military aircraft obtain their distance and bearing
+information from the TACAN part of the VORTAC; commercial aircraft obtain their distance information from the TACAN and bearing information from the VOR part of the TACAN. Reporting points (shown as triangles) based on DME navigation aids, e.g. the VORTAC navigation aid located at Cambrai (CMB), northern France, are illustrated in Figure 11.9. The intersecting radials from navigation aids are used to define reporting points for en route navigation. 
+
+These reporting points are given five-letter identification codes associated with their
+geographic location. For example, the reporting point ‘HELEN’ (at the top of the chart) is defined by a distance and bearing from the Brussels VOR/DME navigation aid.
+
+TACAN frequencies are specified as channels that are allocated to specific frequencies, e.g.  Raleigh–Durham VORTAC in North Carolina, USA, operates on channel 119X. This corresponds to a:
+VOR frequency of 117.2 MHz DME interrogation frequency of 1143 MHz DME reply frequency of 1206 MHz pulse code of 12 ms.
+
+Note that since DME, VOR and VORTAC navigation aids have to be located on land, the airways’ network does not provide a great deal of coverage beyond coastal regions. Referring to Figure 11.10, a combination of VOR, DME and VORTAC stations (see Figure 11.11) located in a number of European countries provides a certain amount of navigation guidance in the North Atlantic, Norwegian Sea and North Sea. This diagram assumes an LOS range of approximately 200 nm. The gaps in this radio navigation network can be overcome by the use of alternative navigation systems including: inertial navigation (INS), Doppler, satellite navigation and Loran-C; these are all described elsewhere in this book.
+
+Test your understanding 11.5
+
+Explain what is meant by frequency pairing.
+
+Test your understanding 11.6
+
+Describe two ways in which DME distance information is displayed.
+
+Test your understanding 11.7
+
+DME ground stations could be responding to numerous aircraft; how does the airborne DME system recognise its own signals and reject signals intended for other aircraft?
+
+Test your understanding 11.8
+
+What information does an RDMI provide the crew?
+
+Test your understanding 11.9
+
+What type of information does a VORTAC provide?
+
+
+
+

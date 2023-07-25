@@ -1,0 +1,453 @@
+%
+%   ESTILO PARA Instrumentos y Avionica
+%
+%   Version 01-2021
+%
+%------------------------------------------
+
+
+%------- Paquetes caracteres -------%
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+%\usepackage[ansinew]{inputenc} %Acentos y caracteres especiales
+\usepackage{multicol} %Permite escribir en varios formatos de columnas
+
+%------- Paquetes formato -------%
+\usepackage{setspace}
+
+
+%------- Paquetes matematicos -------%
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb} 
+\usepackage{latexsym}
+\usepackage{caption}
+
+\usepackage[toc,page]{appendix}
+
+\usepackage[colorlinks]{hyperref}  	% hiperreferencias en colores
+
+\usepackage{acro}	% paquete acronimos
+\usepackage[toc,style=altlistgroup,hyperfirst=false]{glossaries}	% glosarios
+
+%------- Paquetes graficos ----------%
+\usepackage[pdftex]{graphicx}
+%\usepackage[dvips]{graphicx}
+\usepackage{subfigure}
+\usepackage{wrapfig}
+
+ \usepackage{epstopdf}		%--------incluir archivos .gif
+
+ \epstopdfDeclareGraphicsRule{.gif}{png}{.png}{
+   convert gif:#1 png:\OutputFile	      
+ }
+% \AppendGraphicsExtensions{.gif}
+
+\usepackage{mathptmx}
+
+\usepackage[most]{tcolorbox}
+\usepackage{tikz}
+
+\usepackage{etoolbox}
+\AtBeginEnvironment{tikzpicture}{\shorthandoff{>}\shorthandoff{<}}{}{}  % Para evitar problemas con flecha (->) en tikz
+
+%\usetikzlibrary{ % angles,
+%	quotes}
+
+\usetikzlibrary{
+%	angles, 
+	calc,                 % permite calcular coordenadasx
+	trees,
+	positioning, 
+        arrows, 
+%        arrows.meta, 
+	chains, 
+        intersections , 
+	shapes.geometric, 
+        decorations.pathmorphing, 
+        decorations.markings, 
+	patterns, 
+        snakes,
+	mindmap ,
+%	quotes,           % 
+	shadows.blur ,
+%	tikz-3dplot,          % Dibujos en 3D, sin relleno
+	through , 
+	spy ,                 % Magnifica una parte del dibujo
+	shadings,
+	}
+
+\usepackage{tikz-dimline}
+
+\usepackage{tkz-euclide}
+%\usetkzobj{all}
+
+\usepackage{ifthen}           % necesario para tikz-3dplot
+
+\usepackage{pgfplots}              % para los graficos científicos
+%\usepackage{pgfmath}
+
+\pgfplotsset{width=8cm,compat=1.5} % fija el tamaño de los graficos en 
+                                   % paquete version 1.9 o posteriorx
+
+\usepackage{textcomp}    % para añadirle texto al grafico
+
+
+
+%------- Paquetes inclusion archivos ----------%
+%\usepackage{pdfpages}
+
+%------- Paquetes COLOR ------------%
+\usepackage{color}
+\definecolor{rosa}{rgb}{1,0.5,0.5} % valores de las componentes roja, verde y azul (RGB)
+\definecolor{rojo}{rgb}{1,0,0} % valores de las componentes roja, verde y azul (RGB)
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{applegreen}{rgb}{0.55, 0.71, 0.0}   %
+\definecolor{asparagus}{rgb}{0.53, 0.66, 0.42}   % verde apagado
+\definecolor{azure}{rgb}{0.0, 0.5, 1.0}   % azul no tan brillante
+\definecolor{bubbles}{rgb}{0.91, 1.0, 1.0}       % celestito
+
+%---------------------Definiciones de colores en http://latexcolor.com/
+
+
+\usepackage{color,soul}		%Paquete para subrayado en color
+\setulcolor{red}
+
+\usepackage{colortbl}		%Paquete para colorear tablas
+
+%\pagecolor{black} % Color de fondo
+
+%I think I'm in \textcolor{rosa}{love} with \LaTeX\.
+% ``love`` será escrito en rosa, el resto en el color por defecto (definido con \color)
+%\color{white} % Color del texto a partir de ese punto
+
+
+%------- Paquetes diseño página ----------%
+
+\usepackage[left=2cm,right=1cm,top=3.5cm,head=2cm,bottom=2.5cm]{geometry}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+
+\usepackage{longtable}
+
+%\setlength\headheight{2cm}
+
+
+\newcommand \T {\rule{0pt}{5ex}}
+\newcommand \B {\rule[-1.2ex]{0pt}{0pt}}
+\newcommand \BB {\rule{0pt}{-1.2ex}} 
+
+\newcommand{\setTBstruts}{\def \T {\rule{0pt}{5ex}}%
+			  \def \B {\rule[-1.2ex]{0pt}{0pt}}}
+
+
+
+\usepackage{lettrine}	%Letras capitales
+\usepackage{rotate}
+\usepackage{rotating}
+
+\usepackage{adjustbox}
+
+%s\lettrine[lines=4]{D}
+
+%Describir en \ul{t\'erminos generales} el segmento espacial que compone al Sistema global de navegación por satélite %\textcircled{x} 
+
+\pagestyle{fancy}
+
+\fancyhf{} % borrar todos los ajuste
+
+% En lo siguiente, fancyhead sirve para configurar la cabecera, fancyfoot para el pie.
+% Justificación: C=centered, R=right, L=left, (nada)=LRC
+% Página: O=odd, E=even, (nada)=OE
+%\fancyhead[RE,LO]{\textbf{Seminario de Aeron\'autica} \\ \begin{small}   Departamento de Aeron\'autica \\ Facultad de Ciencias Exactas, F\'isicas y Naturales \\ Universidad Nacional de C\'ordoba\end{small}  } 
+%\fancyhead[RO,LE]{\textbf{Evaluación de Riesgos Facultad de Odontología} \\ \begin{small}                                  Centro de Vinculación Seguridad en Inmuebles \\ Facultad de Ciencias Exactas, Físicas y Naturales \\ Universidad Nacional de Córdoba\end{small}  } 
+%\fancyhead[LO,RE]{ \includegraphics[keepaspectratio,width=0.15\textwidth]{UNC.logo.eps}}
+%\fancyhead[L]{ \includegraphics[width=0.15\textwidth]{imagenes/UNC_logo.jpg}}
+%\fancyfoot[LO,CE]{}
+%\fancyfoot[L]{\textit{Seminario de Aeron\'autica - Los aeropuertos y el sistema de transporte} \\ Ing. Jorge O. Garc\'ia (jgarcia@efn.uncor.edu)}
+%\fancyfoot[RO,LE]{Página \thepage \ de \pageref{LastPage}}%\lastpage}
+%\fancyfoot[R]{Página \thepage \ de \pageref{LastPage}}%\lastpage}
+%... (otros comandos \fancyhead o \fancyfoot)
+
+% Modifica el ancho de las líneas de cabecera y pie
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+\frenchspacing
+
+
+\renewcommand{\tablename}{Tabla}
+
+\newcommand{\ESPACIO}{\rule{0in}{3ex}}
+
+\newcommand {\foto}[4]{\begin{figure}[h]
+       \begin{center}
+\usepackage{subfigure}
+\usepackage{wrapfig}
+      \includegraphics[scale=#2]{#1}
+      \end{center}
+
+      \caption{\emph{#3}}
+
+      \label{#4}
+    \end{figure}
+   } 
+
+%---------------------para remarcar texto con color y logos--------%
+\newenvironment{bomba}[1]
+	{\begin{minipage}[b]{0.12\linewidth}
+                \includegraphics[width=0.9\textwidth]{imagenes/bomb.png}
+            \end{minipage}
+            \begin{minipage}[b]{0.81\linewidth}
+               \large{\textbf{#1}}\\ \normalsize
+	}
+	{ \end{minipage} 
+	}
+
+\newcommand{\Bomba}[2]{
+
+	\vspace{5mm}
+
+	\colorbox{red!10}{
+  \begin{bomba}{#1}
+    #2
+  \end{bomba}	
+   }
+
+	\vspace{5mm}
+
+	}
+
+\newcommand{\Bombazo}[1]
+	{ \begin{tcolorbox}
+            \begin{minipage}[c]{0.1\linewidth}
+              \includegraphics[width=0.9\textwidth]{imagenes/bomb.png}
+            \end{minipage}
+            \begin{minipage}[b]{0.9\linewidth}
+              #1
+            \end{minipage}
+          \end{tcolorbox}
+	}
+
+
+\newcommand{\Alerta}[1]
+	{ \begin{tcolorbox}
+            \begin{minipage}[c]{0.1\linewidth}
+              \includegraphics[width=0.9\textwidth]{imagenes/alert.png}
+            \end{minipage}
+            \begin{minipage}[b]{0.9\linewidth}
+              #1
+            \end{minipage}
+          \end{tcolorbox}
+	}
+
+\newcommand{\Video}[1]
+	{ \begin{tcolorbox}
+            \begin{minipage}[c]{0.1\linewidth}
+              \includegraphics[width=0.9\textwidth]{logos/video.png}
+            \end{minipage}
+            \begin{minipage}[b]{0.9\linewidth}
+              #1
+            \end{minipage}
+          \end{tcolorbox}
+	}
+
+
+% \newcommand{\Alerta}[2]{
+
+% 	\vspace{5mm}
+
+% 	\colorbox{yellow!30}{
+%   \begin{alerta}{#1}
+%     #2
+%   \end{alerta}	
+%    }
+
+% 	\vspace{5mm}
+
+% 	}
+
+
+\newenvironment{informacion}[1]
+	{\begin{minipage}[c]{0.12\linewidth}
+                \includegraphics[width=0.9\textwidth]{imagenes/informacion.png}
+            \end{minipage}
+            \begin{minipage}[c]{0.81\linewidth}
+               \large{\textbf{#1}}\\ \normalsize
+	}
+	{ \end{minipage} 
+	}
+
+\newcommand{\Informacion}[2]{
+
+	\vspace{5mm}
+
+	\colorbox{blue!30}{
+  \begin{informacion}{#1}
+    #2
+  \end{informacion}	
+   }
+
+	\vspace{5mm}
+
+	}
+
+
+\newenvironment{dinero}[1]
+	{\begin{minipage}[c]{0.12\linewidth}
+                \includegraphics[width=0.9\textwidth]{imagenes/piggy_bank.png}
+            \end{minipage}
+            \begin{minipage}[c]{0.81\linewidth}
+               \large{\textbf{#1}}\\ \normalsize
+	}
+	{ \end{minipage} 
+	}
+
+\newcommand{\Dinero}[2]{
+
+	\vspace{5mm}
+
+	\colorbox{green!30}{
+  \begin{dinero}{#1}
+    #2
+  \end{dinero}	
+   }
+
+	\vspace{5mm}
+
+	}
+
+
+\newenvironment{ejemplo}[1]
+	{\begin{minipage}[c]{0.12\linewidth}
+                \includegraphics[width=0.9\textwidth]{imagenes/avion_02.png}
+            \end{minipage}
+            \begin{minipage}[c]{0.81\linewidth}
+               \large{\textbf{#1}}\\ \normalsize
+	}
+	{ \end{minipage} 
+	}
+
+\newcommand{\Ejemplo}[2]{
+
+	\vspace{5mm}
+
+	\colorbox{yellow!20}{
+  \begin{ejemplo}{#1}
+    #2
+  \end{ejemplo}	
+   }
+
+	\vspace{5mm}
+
+	}
+
+
+
+\newenvironment{ejercicio}[1]
+	{\begin{minipage}[c]{0.12\linewidth}
+                \includegraphics[width=0.9\textwidth]{imagenes/avion_02.png}
+            \end{minipage}
+            \begin{minipage}[c]{0.81\linewidth}
+               \large{\textbf{#1}}\\ \normalsize
+	}
+	{ \end{minipage} 
+	}
+
+\newcommand{\Ejercicio}[2]{
+
+	\vspace{5mm}
+
+	\colorbox{magenta!20}{
+  \begin{ejemplo}{#1}
+    #2
+  \end{ejemplo}	
+   }
+
+	\vspace{5mm}
+
+	}
+
+
+\usepackage{multirow}
+
+\usepackage{rotating}
+
+\usepackage[shortlabels]{enumitem}
+
+\usepackage{lscape}		%Rotacion de pagina
+\usepackage{pdflscape}
+
+
+\usepackage{pdfpages}      %Permite incorporar archivos pdf
+
+\usepackage{apacite}
+
+\usepackage{fancybox}
+
+\usepackage{sagetex}
+
+
+%-----------------------------------Comandos para SageTex
+\newcommand{\Resultado}[2]
+	{
+	\sage{round(#1,#2)}
+	}
+
+%----------------2020. Box con bordes redondeados y t\'itulo resaltado
+\usepackage{tcolorbox}
+\newtcolorbox{myboxAzul}[1]{colback=blue!5!white,colframe=blue!75!black,fonttitle=\bfseries,title=#1}
+\newtcolorbox{myboxAmarillo}[1]{colback=yellow!5!white,colframe=yellow!75!black,fonttitle=\bfseries,title=#1}
+\newtcolorbox{myboxVerde}[1]{colback=green!5!white,colframe=green!75!black!130!,fonttitle=\bfseries,title=#1}
+\newtcolorbox{myboxRojo}[1]{colback=red!5!white,colframe=red!75!black,fonttitle=\bfseries,title=#1}
+
+%\newtcolorbox{myboxAmarillo}[1]{colback=\yellow!5!white,colframe=\yellow!75!black,fonttitle=\bfseries,title=#1}
+%\newtcolorbox{myboxGris}[1]{colback=gray!5!white,colframe=gray!75!black,fonttitle=\bfseries,title=#1}
+
+%-----------------Box fondo amarillo claro borde rojo con titulo resaltado en recuadro azul. Usa Tikz
+\tikzstyle{mybox} = [draw=red, fill=yellow!20, very thick,
+    rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
+\tikzstyle{fancytitle} =[fill=blue!80, text=white]
+
+\newcommand{\CajaAmarilla}[2]{ \vspace{3mm}
+\begin{center}
+  \begin{tikzpicture}
+    \node [mybox] (box){%
+      \begin{minipage}{0.90\textwidth}
+	#2
+      \end{minipage}
+    }; \node[fancytitle, right=10pt] at (box.north west) {\bf #1}; 
+  \end{tikzpicture}%
+\end{center}
+ \vspace{3mm}
+}
+
+
+%-----------------Box fondo verde claro con titulo resaltado en ovalo azul. Usa Tikz
+\tikzstyle{grupos} = [draw=blue, fill=green!20, very thick,
+    rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
+\tikzstyle{fancytitle.grupos} =[fill=blue, text=white, ellipse]
+
+\newcommand{\CajaVerde}[2]{\vspace{3mm}
+\begin{center}
+  \begin{tikzpicture}
+    \node [grupos] (box){%
+      \begin{minipage}{0.90\textwidth}
+	#2
+      \end{minipage}
+    }; \node[fancytitle.grupos] at (box.north) {\bf #1}; 
+  \end{tikzpicture}%
+\end{center}
+\vspace{3mm}
+}
+
+%------------------para recuadrar ecuaciones y otras expresiones
+
+\tcbset{colback=yellow!10!white, colframe=red!50!black, 
+        highlight math style= {enhanced, %<-- needed for the ’remember’ options
+            colframe=red,colback=red!10!white,boxsep=0pt}
+        }
+
+% Ver como se usa en 
+%	https://tex.stackexchange.com/questions/180325/boxed-equation-with-number/180326

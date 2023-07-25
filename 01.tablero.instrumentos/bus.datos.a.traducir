@@ -1,0 +1,201 @@
+Mike Tooley - Aircraft Digital Electronic and Computer Systems-Routledge (2013).pdf
+
+Aircraft data bus systems allow a wide variety of avionics equipment to communicate with one another and exchange data. In this section we shall take a brief look at the principles of aircraft data bus systems before introducing some of the systems that are commonly used in modern aircraft.
+
+4.1 INTRODUCING BUS SYSTEMS
+
+The word ‘bus’ is a contraction of the Greek word ‘omnibus’ and the word simply means ‘to all’.Thus, in the context of computers and digital systems,‘bus’ refers to a system that permits interconnection and data exchange between the devices in a complex sys- tem. Note, however, that ‘interconnection’ involves more than just physical wiring; among other things it defines the voltage levels and rules (or protocols) that govern the transfer of data.
+
+With such a large number of avionic systems, a modern aircraft requires a considerable amount of cabling. Furthermore, some of the cabling runs in a large aircraft can be quite lengthy, as shown in Figure
+4.1. Aircraft cabling amounts to a significant proportion of the unladen weight of an aircraft and so minimising the amount of cabling and wiring present is an important consideration in the design of modern aircraft, both civil and military.
+
+4.1.1 Bus terminology
+
+Bus systems can be either unidirectional (one way) or bidirectional (two way), as shown in Figure 4.2. They can also be serial (one bit of data transmitted at a time) or parallel (where often 8, 16 or 32 bits of data appear as a group on a number of data lines at the same time). Because of the constraints imposed by conductor length and weight, all practical aircraft bus systems are based on serial (rather than parallel) data transfer.
+
+Bus systems provide an efficient means of exchanging data between the diverse avionic systems found in a modern aircraft (see Figure 4.3).
+
+Individual line replaceable units (LRUs), such as the engine data interface or flap/slat electronics units shown in Figure 4.3, are each connected to the bus by means of a dedicated bus coupler and serial interface module (not shown in Figure 4.3).
+
+Within the LRU, the dedicated digital logic and microprocessor systems that process data locally each make use of their own local bus system.These local bus systems invariably use parallel data transfer, which is ideal for moving large amounts of data very quickly, but only over short distances.
+
+KEY POINT
+
+Modern aircraft use multiple redundant bus systems for exchanging data between the various avionic systems and sub-systems. These bus systems use serial data transfer because it minimises the size and weight of aircraft cabling.
+
+4.1.2 Bus protocols
+
+The notion of a protocol needs a little explaining. Imagine for a moment that you are faced with the problem of organising a discussion between a large number of people sitting around a table, all of whom
+are blindfolded and therefore cannot see one another. In order to ensure that they don’t all speak at once, you need to establish some ground rules, including how the delegates will go about indicating that they had something to say and also establishing some priorities as to who should be allowed to speak in the event that several delegates indicate that they wish to speak at the same time. These (and other) considerations would form an agreed protocol between the delegates for conducting the discussion. The debate should proceed without too many problems provided everybody in the room understands and is willing to accept the protocol you have established. In computers and digital systems communications protocols are established to enable the efficient exchange of data between multiple devices connected to the same bus. 
+
+A number of different standards are commonly used.
+
+4.1.3 Bus architecture
+
+Bus architecture is a general term that refers to the overall structure of a computer or other digital system that relies on a bus for its operation.The architecture is often described in the form of a block schematic diagram showing how the various system elements are interconnected and also how the data flow is organised between the elements. The architecture of a system based on the use of a unidirectional serial bus system is shown in Figure 4.4a, while a comparable bidirectional bus system is shown in Figure 4.4b. Note how the bidirectional system simplifies the interconnection of the LRUs and allows all of the devices to transmit and receive on the same bus.
+
+
+KEY POINT
+
+Communication protocols enable the efficient exchange of data between a number of devices connected to the same bus. Protocols consist of a set of rules and specifications governing, among other things, data format and physical connections.
+
+4.1.4 Serial bus principles
+
+A simple system for serial data transfer between two LRUs, each of which comprises an avionic system in its own right, is shown in Figure 4.5.Within the LRU, data are transferred using an internal parallel data bus (either 8, 16, 32 or 64 bits wide). The link between the two LRUs is made using a simple serial cable (often with only two, four or six conductors). The required parallel-to-serial and serial-to-parallel data conversion is carried out by a bus interface (often this is a single card or module within the LRU).The data to be transferred can be synchronous (using clock
+signals generated locally within each LRU) or it may be asynchronous (i.e. self-clocking). 
+
+The system shown in Figure 4.5 has the obvious limitation that data can only be exchanged between two devices. In practice we need to share the data between many LRUs/avionic units. This can be achieved by the bus system illustrated in Figure 4.6. In this system, data is transferred using a shielded twisted pair (STP) bus cable with a number of coupler panels that are located at appropriate points in the
+aircraft (e.g. the flight deck, avionics bay, etc.). Each coupler panel allows a number of avionic units to be connected to the bus using a stub cable. In order to optimise the speed of data transfer and minimise problems associated with reflection and mismatch, the bus cable must be terminated at each end using a matched bus terminator.
+
+Bus couplers are produced as either voltage mode or current mode units, depending on whether they use voltage- or current-sensing devices. Within each LRU/avionics unit, an interface is provided that
+performs the required serial-to-parallel or parallel-to-serial data conversion, as shown in Figure 4.7.
+
+As well as providing an electrical interface (with appropriate voltage- and current-level shifting) the interface unit also converts the data formats (e.g. from serial analogue doublets present in the stub cable to Manchester-encoded serial data required by the terminal controller), as shown in Figure 4.8. In order to transmit data using the serial data bus, information must be presented in a standard format. 
+
+A typical format for serial data would use a word length of 32 bits.This word comprises several discrete fields, including:
+
+• up to 20 bits for data (which may be further divided);
+
+• an 8-bit label field which is used to identify the data type and any parameters that may be associated with it;
+
+• a source/destination identifier (SDI);
+
+• a number of status bits used to provide information about the mode, hardware condition or validity of data;
+
+• an added parity bit which provides a means of validating the data (i.e. determining whether or not it is free from error).
+
+KEY POINT
+
+A means of converting serial data to parallel data (and vice versa) is required whenever an LRU is to be interfaced to an aircraft bus system.
+
+4.2 ARINC 429
+
+The ARINC 429 data bus has proved to be one of the most popular bus standards used in commercial aircraft. The ARINC 429 specification defines the electrical and data characteristics and protocols that are used.
+
+ARINC 429 employs a unidirectional data bus standard known as Mark 33 Digital Information Transfer System (DITS). Messages are transmitted in packets of 32 bits at a bit-rate of either 12.5 or 100 kilobits per second (referred to as low and high bit-rate, respectively). Because the bus is unidirectional, separate ports, couplers and cables will be required when an LRU wishes to be able to both transmit and receive data. Note that a large number of bus connections may be required on an aircraft that uses sophisticated avionic systems. 
+
+ARINC 429 has been installed on a wide variety of commercial transport aircraft, including: Airbus
+A310/A320 and A330/A340; Boeing 737, 747, 757 and 767; and McDonnell Douglas MD-11. More modern aircraft (e.g. Boeing 777 and Airbus A380) use significantly enhanced bus specifications (see page 49) in order to reduce the weight and size of cabling and to facilitate higher data rates than are possible with
+ARINC 429. Despite these moves to faster, bidirectional bus standards, the ARINC 429 standard has
+proved to be highly reliable and so is likely to remain in service for many years to come.
+
+4.2.1 Electrical characteristics
+
+ARINC 429 is a two-wire differential bus that can connect a single transmitter or source to one or more receivers or sinks.Two speeds are available, 12.5 kbps (bits per second) and 100 kbps.The data bus uses two signal wires to transmit 32-bit words.Transmission of sequential words is separated by at least four bit times of NULL (zero voltage).This eliminates the need for a separate clock signal and it makes the system self-clocking.
+
+KEY POINT
+
+Aeronautical Radio Inc. (ARINC) is an organisation composed of major airlines and aircraft manufacturers that seeks to promote standardisation within aircraft equipment. More information on ARINC and aircraft standards can be obtained from www.arinc.com. The ARINC 429 electrical characteristics are summarised below:
+
+The nominal transmission voltage is 10 V ± 1 V between wires (differential), with either a positive or negative polarity. Therefore, each signal leg ranges between +5 V and –5 V. If one conductor is at +5 V, the other conductor is at –5 V, and vice versa. One wire is called the ‘A’ (or ‘+’ or ‘HI’) conductor and the other is called the ‘B’ (or ‘–’ or ‘LO’) wire. 
+
+The modulation employed is bipolar return to zero (BPRZ) modulation (see Figure 4.9).The composite signal state may be at one of the following three levels (measured between the conductors): 
+
+• HI, which should be within the range +7.25 V to 11 V (A to B);
+• NULL, which should be within the range +0.5 V to –0.5 V (A to B);
+• LO, which should be within the range –7.25 V to –11 V (A to B).
+
+The received voltage on a serial bus depends on line length and the number of receivers connected to the bus. With ARINC 429, no more than 20 receivers should be connected to a single bus. Since each bus is unidirectional, a system needs to have its own transmit bus if it is required to respond to or send messages.
+
+Hence, to achieve bidirectional data transfer it is necessary to have two separate bus connections.
+
+4.2.2 Protocol
+
+Since there can be only one transmitter on a twisted wire pair, ARINC 429 uses a very simple, point-to-
+point protocol.The transmitter is continuously sending 32-bit data words or is placed in the NULL state.
+
+Note that although there may only be one receiver on a particular bus cable, the ARINC specification supports up to 20.
+
+4.2.3 Bit timing and slew rate
+
+The slew rate refers to the rise and fall time of the ARINC waveform. Specifically, it refers to the amount of time it takes the ARINC signal to rise from the 10 per cent to the 90 per cent voltage amplitude points on the leading and trailing edges of a pulse.The data shown in Table 4.1 applies to the high- and low-speed ARINC 429 systems.
+
+
+4.2.4 ARINC 429 data word format
+
+In most cases, an ARINC message consists of a single 32-bit data word (see Figure 4.11). The 8-bit label field defines the type of data that is contained in the rest of the word.ARINC data words are always 32 bits and typically include five primary fields, namely parity, SSM, data, SDI and label.ARINC convention numbers the bits from 1 (LSB) to 32 (MSB). A number of different data formats is possible.
+
+Bits are transmitted starting with bit 1 of the label, and the final bit transmitted is the parity bit. The standard specifies the use of odd parity (the parity bit is set to 1 or reset to 0 in order to ensure that there is an odd number of 1s in each transmitted word). It is worth noting that the label is transmitted with the MSB first, while the data is transmitted with the LSB first.
+
+The label field is an octal value that indicates the type of data (e.g. airspeed, altitude, etc.) that is being transmitted.
+
+The SDI field is used when a transmitter is connected to multiple receivers, but not all data is intended for use by all the receivers. In this case each receiver will be assigned an SDI value and will look only at labels which match its SDI value. While the specification calls for SDI 00 to be universally accepted, this may not actually be the case.
+
+The data field contains the actual data to be sent. The principal data formats defined in the specification are binary coded decimal (BCD), which uses groups of four bits to contain a single decimal digit  and BNR (see below) which is binary coding. For both of these data types, the specification defines the units, resolution, range, number of bits used and how frequently the label should be sent.
+
+The SSM field is used for information that assists the interpretation of the numeric value in the data field. Examples of SSM values might be North, East, South,West, Plus, Minus, Above or Below.
+
+The P field is the parity bit. ARINC 429 uses odd parity.The parity bit is the last bit transmitted within the data word.
+
+Some examples of data sent over an ARINC 429 bus are shown in Figures 4.12 and 4.13. In Figure 4.12 a BCD word (see page 18) is being transmitted; while in Figure 4.13 the data is encoded in binary format.
+
+The ARINC 429 binary specification calls for the use of two’s complement notation to indicate negative numbers (see page 19).This binary format is known as BNR.
+
+In Figure 4.13 the label (103) corresponds to selected airspeed and the indicated value is 268 knots (256 + 8 + 4). The zero in the bit-29 position indicates a positive value and the data (presented in  natural binary format) uses bit-28 (for the MSB) to bit-20 (for the LSB). The remaining bits are padded with zeros.
+
+In Figure 4.12 the BNR data conveys a value (this time expressed in BCD format) of 25,786.
+
+Tables 4.2 and 4.3 provide some examples of labels and equipment ID (SDI).
+
+4.3 OTHER BUS STANDARDS
+
+The following is a brief summary of some of the other aircraft data bus systems that have appeared over the last 40 years. It is important to note that these often describe enhancements to existing  standards.
+
+However, in all cases, the main aim is that of ensuring that equipment manufacturers and operators are working to a common specification which ensures that hardware and software is both interoperable and
+upgradeable.
+
+4.3.1 ARINC 419 
+
+The ARINC 419 standard describes several digital transmission standards that predate ARINC 429.
+
+Some of these used 32-bit words similar to ARINC 429. Some standards were based on the use of a six-wire system, while others used a shielded two-wire twisted pair (like ARINC 429) or a coaxial cable. Line
+voltage levels were either two-state (HI/LO) or three-state (HI/NULL/LO), with voltages ranging from 10 V to 18.5 V for the high state and from less than 1 V to less than 5 V for the NULL state.
+
+4.3.2 ARINC 561
+
+ARINC 561 was based on a six-wire system involving three pairs that were used for DATA, SYNC and CLOCK. Non-return to zero (NRZ) encoding was employed with logic 1 represented by 12 V. Like ARINC 429, the  word length was 32 bits with bits 32 and 31 comprising the sign/status matrix (SSM) and no parity available.The remaining fields include an 8-bit label and six BCD fields, five of four bits and one of two bits.This system was widely used in aircraft manufactured prior to about 1970. ARINC 568 uses the same electrical interface specification as used in ARINC 561.
+
+
+4.3.3 ARINC 573
+
+ARINC 573 is the standard adopted for use with flight data recorders (FDR) which use a continuous datastream of Harvard Bi-Phase encoded 12-bit words. These words are encoded into frames which contain a snapshot of the data from each of the avionics subsystems on the aircraft. Each frame comprises four sub-frames. A unique synchronising word appears at the start of each sub-frame. ARINC 717 supersedes ARINC 573 and caters for a number of different bit-rates and frame sizes.
+
+4.3.4 ARINC 575
+
+Similar to ARINC 429, this standard is a low-speed bus system that is based on a single twisted pair of wires. Due to the low data rate supported, this bus standard is now considered obsolete. Electrically, ARINC 575 is generally compatible with low-speed ARINC 429. However, some variants of ARINC 575 use a bit-rate that is significantly slower than ARINC 429 and they may not be compatible in terms of the electrical specification and data formats.
+
+4.3.5 ARINC 615
+
+ARINC 615 is a software protocol that can be layered on top of ARINC 429-compatible systems. ARINC 615 supports high-speed data transfer to and from on-board digital systems permitting, for example, reading and writing of 3.5-inch disks.
+
+4.3.6 ARINC 629
+
+ARINC 629 was introduced in the mid-1990s and it supports a data rate of 2 Mbps (20 times faster than ARINC 429).The bus supports 120 connected devices and is currently used on the Boeing 777,Airbus A330
+and A340 aircraft. A notable enhancement of the earlier ARINC 429 standard is that ARINC 629 is a bidirectional bus system (in other words, connected devices can transmit, receive or do both). Another advantage of ARINC 629 is that it achieves bidirectional bus communication without the need for a bus controller (which could be a potential source of single-point failure). The physical bus medium is shielded twisted pair (STP).
+
+4.3.7 ARINC 708
+
+ARINC 708 is used to transfer data from the airborne weather radar receiver to the aircraft’s radar display. The bus is unidirectional and uses Manchester-encoded data at a data rate of 1 Mbps. Data words are 1,600 bits long and are composed of one 64-bit status word and 512 3-bit data words.
+
+4.3.8 MIL-STD-1553B/1773B
+
+Military standard 1533B is a bidirectional centrally controlled data bus designed for use in military aircraft. The standard uses a bus controller that can support up to 31 devices, which are referred to as remote terminals.The standard supports a bit-rate of 1 Mbps. MIL-STD-1773B is a fibre-optic implementation of MIL-STD-1553B that provides significantly greater immunity to exposure to high-intensity radiated electromagnetic fields (HIRFs).
+
+4.3.9 CSDB and ASCB
+
+The CSDB and ASCB standards are proprietary protocols from Collins and Honeywell, respectively. These systems are often used in small business and private general aviation aircraft. CSDB is a unidirectional bus that permits the connection of up to ten receivers and one transmitter.The standard supports data rates of 12.5 kbps and 50 kbps.ASCB is a centrally controlled bidirectional bus. A basic configuration comprises a single bus controller and two isolated buses, each of which can support up to 48 devices.
+
+4.3.10 FDDI
+
+The fibre distributed data interface (FDDI ) was originally developed by Boeing for use on the Boeing 777 aircraft. FDDI is a local area network (LAN) based on a dual token-ring topology. Data in each ring flows in opposite directions.The data rate is 100 Mbps and data is encoded into frames. CDDI (copper distributed data interface) and SDDI (shielded twisted pair distributed data interface) are similar network bus standards based on copper and shielded twisted pair as the physical media.The data format is NRZI (a data format similar to NRZ, but in which a change in the line voltage level indicates a logic 1 and no change indicates a logic 0). For reasons of cost and in order to reduce the number and complexity of network standards used in its aircraft, Boeing now plans to replace the system on the 777 with a less expensive 10 Mbps copper ethernet.
+
+
+
+
+
+
+
+
+
+
+

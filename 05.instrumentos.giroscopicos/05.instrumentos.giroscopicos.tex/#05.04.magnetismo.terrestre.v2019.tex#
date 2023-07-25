@@ -1,0 +1,132 @@
+% 5.4.      Magnetismo terrestre, brújula, giróscopo direccional libre.
+% version 2019
+
+\section{Magnetismo terrestre, br\'ujula, gir\'oscopo direccional libre}
+\label{sec:magnetismo.terrestre}
+
+
+\subsection{Magnetismo terrestre}
+\label{sec:magnetismo.terrestre.basico}
+
+\begin{frame}
+  \begin{columns}
+    \begin{column}{0.3\textwidth}
+  \href{https://www.youtube.com/watch?v=5qDI3O-aKiw}{\includegraphics[width=0.15\textwidth]{05.IyA.imagenes/Video.png}}\, Campo magn\'etico terrestre
+
+  \href{https://www.youtube.com/watch?v=UujmN0cZlSw}{\includegraphics[width=0.15\textwidth]{05.IyA.imagenes/Video.png}}\, Sat\'elites que estudian el campo magn\'etico de la Tierra
+
+    \href{https://www.youtube.com/watch?v=DwshhZq6T8Q}{\includegraphics[width=0.15\textwidth]{05.IyA.imagenes/Video.png}}\, Magnetismo terrestre
+  \end{column}
+  \begin{column}{0.7\textwidth}
+    \includegraphics[width=\textwidth]{05.instrumentos.giroscopicos.imagenes/05.04.MagnetismoTerrestre/05-04-campo-magnetico-terrestre.jpg}\vspace{3mm}
+
+    {\tiny Fuente: \url{https://www.capasdelatierra.org/campo-magnetico-magnetosfera/}}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}
+
+  \begin{exampleblock}{Funci\'on principal del campo magn\'etico terrestre }
+    Proteger al planeta Tierra del viento solar
+  \end{exampleblock}
+
+  \begin{block}{Caracter\'isticas del campo magn\'etico terrestre}
+    \begin{itemize}
+    \item El proceso que lo origina se conoce como {\bf geod\'inamo} (hip\'otesis del d\'inamo)
+    \item El primero en estudiarlo fue Karl Friedrich Gauss en el siglo XIX
+    \item Su intensidad es m\'inima cerca del ecuador y m\'axima cerca de los polos
+    \item Es una estructura din\'amica que responde a la actividad del Sol
+    \item Los polos geogr\'aficos no coinciden con los magn\'eticos, se mueven en el tiempo
+    \item Han existido ``{\it inversiones}'' del campo en la historia del planeta, aproximadamente
+      en 20000000 de a\~nos se han invertido cada 200000 - 300000 a\~nos, la \'ultima ocurri\'o
+      aproximadamente hace 780000 a\~nos
+    \item La interacci\'on con el viento solar produce {\it tormentas magn\'eticas}, algunas
+      part\'iculas cargadas quedan atrapadas en la magnet\'osfera y se precipitan a las regiones polares,
+      chocando con mol\'eculas de ox\'igeno y nitr\'ogeno, emitiendo luz roja y verde conocidas
+      como {\it auroras boreales} en latitud norte y {\it auroras australes} en latitud sur.
+    \end{itemize}
+  \end{block}
+
+\end{frame}
+
+\begin{frame}
+  \begin{columns}
+    \begin{column}{0.40\textwidth} \centering
+      \includegraphics[width=\textwidth]{05.instrumentos.giroscopicos.imagenes/05.04.MagnetismoTerrestre/05-04-auroras.jpg}\vspace{0.3mm}
+      Aurora \vspace{0.6mm}
+
+      	\includegraphics[width=\textwidth]{05.instrumentos.giroscopicos.imagenes/05.04.MagnetismoTerrestre/05-04-polos-de-la-tierra.jpg}
+\end{column}
+    \begin{column}{0.40\textwidth}
+	\includegraphics[width=\textwidth]{05.instrumentos.giroscopicos.imagenes/05.04.MagnetismoTerrestre/05-04-cola-del-campo-magnetico.jpeg}\vspace{0.3mm}
+      Interacci\'on del campo magn\'etico terrestre con el viento solar \vspace{0.6mm}
+	\end{column}
+
+\end{columns}\vspace{3mm}
+
+    {\tiny Fuente: \url{https://www.capasdelatierra.org/campo-magnetico-magnetosfera/}}
+
+\end{frame}
+
+\begin{frame}
+  
+  \begin{block}{Propiedades del campo magn\'etico terrestre }
+    \begin{itemize}
+    \item {\bf Intensidad:} resulta m\'axima en los polos y m\'inima en el ecuador, el rango
+      de variaci\'on es de $0.25$ a $0.65$ Gauss. 
+    \item {\bf Inclinaci\'on:}
+    \item {\bf Declinaci\'on:}
+    \item {\bf Dipolaridad:}
+    \end{itemize}
+  \end{block}
+
+\end{frame}
+
+\begin{frame}
+  
+  \begin{block}{Aplicaciones del campo magn\'etico terrestre }
+    \begin{itemize}
+    \item Los animales vivos pueden detectarlo y lo utilizan para orientarse durante sus migraciones
+    \item En la navegaci\'on, mar\'itima o a\'erea, para orientarse desde el siglo XII
+    \item Estudio de estructuras geol\'ogicas subterr\'aneas
+    \item 
+    \end{itemize}
+  \end{block}
+
+
+\end{frame}
+
+
+\begin{frame}{L\'ineas Is\'ogonas}
+  \includegraphics[width=\linewidth]{05.instrumentos.giroscopicos.imagenes/05.04.MagnetismoTerrestre/05-04-isogonic-lines-of-variation.png}
+
+  {\tiny Fuente: \url{https://www.cfinotebook.net/notebook/avionics-and-instruments/magnetic-compass}
+  }
+  
+\end{frame}
+
+\begin{frame}
+
+  \begin{alerbock}{Errores  br\'ujula magn\'etica}
+    \begin{itemize}
+    \item Variaci\'on
+    \item Desviaci\'on
+    \item Oscilaci\'on
+    \end{itemize}
+  \end{alerbock}
+
+\end{frame}
+
+\begin{frame}{Errores br\'ujula magn\'etica. Aceleraci\'on}
+  
+
+\url{https://www.youtube.com/watch?v=vUz09IpYCuY}
+
+\end{frame}
+
+\begin{frame}{Errores br\'ujula magn\'etica. Giro}
+
+\url{ https://www.youtube.com/watch?v=WqXujnDw- kE}
+\end{frame}

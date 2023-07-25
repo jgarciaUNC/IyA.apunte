@@ -1,0 +1,201 @@
+Sistema de aterrizaje por microondas
+
+El sistema de aterrizaje por microondas (MLS) fue adoptado en 1978 como el reemplazo del sistema de aterrizaje por instrumentos (ILS) a largo plazo. MLS se basa en el principio de haces de exploración referenciados en el tiempo y proporciona una guía de navegación de precisión para aproximación y aterrizaje. El sistema proporciona una guía de aproximación tridimensional, es decir, acimut, elevación y rango; También proporciona múltiples ángulos de aproximación tanto para el acimut como para la guía de elevación. A pesar de las ventajas de MLS, aún no se ha introducido a nivel mundial para aviones comerciales, principalmente debido a la llegada de los sistemas mundiales de navegación por satélite (GNSS). En este capítulo, revisaremos los principios de MLS y discutiremos sus ventajas sobre el ILS.
+
+13.1 Descripción general de MLS
+
+MLS se introdujo para superar una serie de problemas y limitaciones asociados con ILS. El principio de MLS permite aproximaciones curvas o segmentadas en acimut junto con ángulos de pendiente de planeo seleccionables. Todas estas características son beneficiosas en regiones montañosas, o por razones ambientales, p. sobre áreas residenciales de un pueblo o ciudad. Las instalaciones MLS no se ven afectadas por vehículos terrestres o aeronaves en rodaje que pasan a través de la viga como con el localizador.
+
+Las aeronaves que realizan una aproximación utilizando ILS en baja visibilidad tienen que mantener una separación suficiente para preservar la integridad de los haces del localizador; con MLS, esta separación no es necesaria. La combinación de todas estas características permite una mayor flexibilidad de control del tráfico aéreo y mayores tasas de despegue y aterrizaje para un aeródromo dado.
+
+Dos transmisores terrestres proporcionan guía de acimut y elevación; estos haces de exploración extienden la cobertura para un enfoque en comparación con el ILS, consulte la Figura 13.1.
+
+13.2 Principios MLS
+
+El sistema se basa en el principio de los haces de exploración referenciados en el tiempo y funciona en la banda C a 5 GHz. Se utilizan dos vigas direccionales en forma de abanico para el acimut y la guía de elevación. El transmisor de aproximación azimutal está ubicado en el extremo de parada de la pista; El transmisor de elevación se encuentra cerca del umbral de la pista. El escaneo de acimut es a través de ± 40º a cada lado de la línea central de la pista con un rango de 20 nm, ver Figura 13.2 (a). Una capacidad de expansión puede extender la cobertura de azimut a ± 60º, pero con un rango reducido de 14 nm. El escaneo de elevación se extiende sobre un ángulo de 15 grados (con 20 grados como opción) proporcionando cobertura hasta 20,000 pies, ver Figura 13.2 (b).
+
+En el receptor de la aeronave, se detecta un pulso cada vez que los haces respectivos pasan por la aeronave. Considere un avión en la aproximación como se ilustra en la Figura 13.3. El haz de exploración (azimutal) referenciado al tiempo barre de izquierda a derecha ("TO"), y luego regresa de derecha a izquierda ("FRO"). Si la aeronave está en la posición A, está a la derecha de la línea central (desde la perspectiva del piloto) y recibirá un pulso en el intervalo de tiempo t 1 a medida que el rayo barre 'HACIA', y luego en el momento t 2 cuando el rayo barre 'FRO'. Por lo tanto, los dos pulsos están muy cerca del avión a la derecha de la línea central.
+
+Si la aeronave estuviera en la posición B, es decir, a la izquierda de la línea central, recibiría pulsos en t 3 y t 4 debido a la posición relativa de la aeronave.
+
+El receptor de la aeronave en una aeronave determinada interpretará el tiempo de cada pulso en términos de cuándo ocurrieron y la diferencia de tiempo entre cada pulso. Estos tiempos de pulso proporcionan una posición precisa para el avión con respecto a la línea central de la pista. La guía de elevación se calcula de la misma manera que en el acimut, excepto que el haz está escaneando hacia arriba y hacia abajo. Las señales de tiempo se refieren a un ángulo de aproximación de elevación seleccionado.
+
+En referencia a la Figura 13.4 y la Tabla 13.1, la técnica de sincronización de pulso se utiliza para determinar las posiciones laterales de tres aeronaves, A, B y C. La Figura 13.4 es una ilustración simplificada del transmisor y su haz de barrido a cada lado de la línea central de la pista, y sincronización del haz TO / FRO a medida que avanza por los ± 40 °. (Se omitió la pista para simplificar la ilustración). La ilustración muestra el barrido TO subdividido en ocho segmentos, 1–8; el barrido FRO (retorno) se subdivide en ocho segmentos, 9-16. El barrido TO llega al avión C con un conteo de 2, y luego continúa hasta un conteo de 8; luego regresa cuando el barrido FRO alcanza el avión C con un recuento de 14. El intervalo de tiempo entre cada recuento (o pulso, de acuerdo con la Figura 13.3) es 14 "2 u003d 12. Las posiciones de los aviones B y C son calculado de la misma manera; Los resultados de esta ilustración se resumen en la Tabla 13.1.
+
+Punto clave
+
+MLS se introdujo para superar una serie de problemas y limitaciones asociados con ILS. El principio de escaneo de MLS permite aproximaciones curvas o segmentadas en acimut junto con ángulos de pendiente de planeo seleccionables.
+
+Punto clave
+
+Las instalaciones MLS no se ven afectadas por vehículos terrestres o aeronaves en rodaje que pasan a través de la viga como con el localizador.
+
+Punto clave
+
+MLS se basa en el principio de haces de exploración referenciados en el tiempo; Dos transmisores de tierra proporcionan guía de acimut y elevación. MLS opera a alrededor de 5 GHz en la banda C.
+
+Punto clave
+
+Las ubicaciones del equipo terrestre MLS no son tan críticas como con ILS; Esto es particularmente útil en las regiones montañosas.
+
+Punto clave
+
+Las instalaciones MLS no se ven afectadas por vehículos terrestres o aeronaves en rodaje que pasan a través de la viga como con el localizador.
+
+Pon a prueba tu comprensión 13.1
+
+Explique el principio de funcionamiento del haz de exploración de azimut referenciado en el tiempo utilizado en el MLS.
+
+Pon a prueba tu comprensión 13.2
+
+¿En qué banda de frecuencia opera MLS?
+
+Pon a prueba tu comprensión 13.3
+
+¿Qué rango y altitud cubre MLS?
+
+13.3 Equipamiento de aeronaves
+
+El avión está equipado con dos antenas ubicadas en la nariz y en las líneas centrales de popa. Un receptor MLS (a menudo incorporado en un receptor multimodo con ILS, baliza marcadora y capacidad VOR) se sintoniza en uno de los 200 canales y calcula la guía de acimut y elevación como se describe. El receptor opera en el rango de frecuencia de 5031 MHz a 5091 MHz con una separación de 300 kHz. Una parte integral de la MLS es un sistema de equipo de medición de distancia (DME) para proporcionar alcance; este puede ser un sistema DME convencional como se describe en el Capítulo 11 o un sistema dedicado que opera en el rango de frecuencia de 962 MHz a 1105 MHz. Las frecuencias DME se sintonizan automáticamente con los haces de acimut y elevación para proporcionar información de rango.
+
+El sistema CMA-2000 ilustra el equipo aerotransportado MLS típico; consulte la Figura 13.5 (datos e imágenes cortesía de CMC Electronics). Este sistema está instalado en varios aviones militares en los EE. UU., Incluidos el C-130 y Air Force One. El control del MLS se realiza a través de una unidad de visualización de control (CDU), donde la tripulación selecciona el canal MLS deseado, junto con los ángulos de aproximación de azimut y trayectoria de planeo. El sistema está diseñado para cumplir con los requisitos de ARINC 727 y proporciona datos posicionales tridimensionales dentro de un gran volumen de espacio aéreo.
+
+El sistema CMA-2000 ilustra el equipo aerotransportado MLS típico; vea la Figura 13.5 (datos e imágenes cortesía de CMC Electronics). Este sistema está instalado en varios aviones militares en los EE. UU., Incluidos el C-130 y Air Force One. El control del MLS se realiza a través de una unidad de visualización de control (CDU), donde la tripulación selecciona el canal MLS deseado, junto con los ángulos de aproximación de la trayectoria de planeo y azimut. El sistema cumple con los requisitos de ARINC 727 y proporciona datos posicionales tridimensionales dentro de un gran volumen de espacio aéreo.
+
+Las salidas de guía de trayectoria de deslizamiento y azimut se muestran en un indicador de desviación de rumbo convencional (CDI) o se incorporan en pantallas electrónicas multipropósito. En la Tabla 13.2 se proporciona un resumen de los detalles principales del sistema de aterrizaje por microondas CMA-2000.
+
+Punto clave
+
+Las antenas MLS normalmente se encuentran en la parte delantera del avión, en el fuselaje inferior y superior. La antena superior del fuselaje es direccional; una antena omnidireccional adicional se encuentra en la cola del avión para aproximaciones y despegues fallidos. Esto se instala en la superficie inferior para dar una vista sin obstáculos del aeropuerto desde la parte trasera, y cuando el avión está en la banca.
+
+Pon a prueba tu comprensión 13.4
+
+¿Cuántos canales MLS hay disponibles?
+
+Pon a prueba tu comprensión 13.5
+
+¿Qué rango de frecuencia usa MLS?
+
+13.4 Equipo de tierra
+
+Los elementos del equipo de tierra necesarios para MLS son los transmisores de acimut y elevación y una ayuda de navegación DME. Este sistema básico se puede ampliar para proporcionar orientación lateral para enfoques fallidos. Las transmisiones de acimut y de elevación se irradian en la misma frecuencia con un arreglo de tiempo compartido.
+
+Además de la orientación, el MLS también transmite datos a los usuarios del sistema. Los datos básicos incluyen la identificación de la pista (código Morse de cuatro letras), junto con las ubicaciones y los niveles de rendimiento del acimut, los transmisores de elevación y el transpondedor DME. La transmisión de datos ampliada proporciona condiciones de pista y datos meteorológicos, p. visibilidad, base de nubes, presiones barométricas, velocidad / dirección del viento y cualquier condición de cizalladura del viento.
+
+Las ubicaciones de los equipos de tierra no son tan críticas como con ILS; Esto es particularmente útil en las regiones montañosas. Los usuarios militares de MLS aprovechan esto al tener sistemas móviles que se pueden implementar en cuestión de horas. El transmisor azimutal tiene una precisión de 4 metros en el umbral de la pista. El transmisor de elevación tiene una precisión de 0.6 metros. La ayuda de navegación DME dedicada tiene una precisión de alcance de 100 pies. Es posible una variedad de patrones de aproximación con MLS, como se ilustra en la Figura 13.6.
+
+13.5 Resumen de MLS
+
+A pesar de las ventajas de MLS, todavía no se ha introducido a nivel mundial para aviones comerciales. La llegada y el desarrollo de los sistemas mundiales de navegación por satélite (Capítulo 18) han llevado a la realidad de aproximaciones de precisión y aterrizajes automáticos que se realizan bajo la guía de los sistemas de navegación por satélite durante la baja visibilidad; sin embargo, es probable que esto no esté disponible por algún tiempo. Como la tecnología MLS ya está disponible, varias aerolíneas europeas han estado presionando para MLS; Se han instalado equipos terrestres en varios aeropuertos, incluidos Londres Heathrow y Toulouse Blagnac, con fines de desarrollo. Se alienta al lector a monitorear la prensa de la industria para conocer los desarrollos de este tema.
+
+Punto clave
+
+A pesar de las ventajas de MLS, todavía no se ha introducido a nivel mundial para aviones comerciales. Los militares usan equipos móviles que pueden desplegarse en cuestión de horas.
+
+Pon a prueba tu comprensión 13.6
+
+Explique por qué un MLS puede ser ventajoso para usar en áreas montañosas o en áreas de alta población.
+
+Pon a prueba tu comprensión 13.7
+
+¿Cómo proporciona el MLS rango a la pista?
+
+Pon a prueba tu comprensión 13.8
+
+¿Por qué MLS proporciona más flexibilidad de control de tráfico aéreo?
+
+13.6 Preguntas de opción múltiple
+
+1. ¿En qué banda de frecuencia operan los transmisores MLS de acimut y elevación?
+
+(a) 5 GHz
+
+(b) 962 MHz a 1105 MHz
+
+(c) 108 MHz a 112 MHz.
+
+2. ¿Cuáles son los extremos angulares para la guía de azimut a ambos lados de la línea central de la pista en una instalación MLS básica?
+
+(a) 60 °
+
+(b) 40 °
+
+(c) + 15 ° a + 20 °.
+
+3. ¿Cuáles son los límites de guía de elevación para una instalación MLS?
+
+(a) 60 °
+
+(b) + 15 ° a + 20 °
+
+(c) 40 °.
+
+
+4. La información del rango MLS es proporcionada por:
+
+(a) transmisor azimutal
+
+(b) Ayuda de navegación DME
+
+(c) transmisor de elevación.
+
+5. Los haces de exploración referenciados en el tiempo se utilizan en el MLS para proporcionar:
+
+(a) alcance al aeródromo
+
+(b) guía de acimut y elevación
+
+(c) altitud sobre el terreno.
+
+6. Cuántos canales MLS están disponibles:
+
+(a) 40
+
+(b) 300
+
+(c) 200.
+
+7. Durante un acercamiento MLS, la desviación en
+el acimut y la elevación se muestran en:
+(Oh yes
+(b) RMI
+(c) CDU.
+
+8. El ángulo de aproximación de elevación para una aproximación
+es seleccionado por:
+(a) control del tráfico aéreo utilizando el suelo
+equipo
+(b) tripulación de vuelo utilizando la CDU
+(c) tripulación de vuelo utilizando el HSI.
+
+9. Con el aumento de los ángulos de aproximación de elevación, el rango de inclinación hacia el aeródromo:
+
+(a) aumento
+
+(b) disminuir
+
+(c) permanecer igual.
+
+10. Los códigos de identificación del equipo terrestre MLS son proporcionados por:
+
+(a) dos caracteres del código Morse
+
+(b) tres caracteres del código Morse
+
+(c) cuatro caracteres de código Morse.
+
+11. Refiriéndose a la Figura 13.7, los pulsos t 1 yt 2 proporcionan:
+
+(a) alcance a la pista
+
+(b) guía de elevación
+
+(c) guía azimutal.
+
+12. Refiriéndose a la Figura 13.8, el escaneo proporciona orientación en:
+
+(a) rango
+
+(b) azimut
+
+(c) elevación.

@@ -1,0 +1,8 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Circuitos de presiones est\IeC {\'a}tica y total. Toma de presiones alternativas}{2}{section.1}
+\contentsline {section}{\numberline {2}Alt\'imetro}{3}{section.2}
+\contentsline {section}{\numberline {3}Indicadores de Velocidad Vertical}{7}{section.3}
+\contentsline {section}{\numberline {4}Veloc\'imetros. Indicadores de n\'umero de Mach}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Principio de funcionamiento de un veloc\'imetro}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Descripci\IeC {\'o}n De Un Equipo T\IeC {\'\i }pico}{9}{subsection.4.2}
+\contentsline {section}{\numberline {5}Computadores centrales de datos de aire}{12}{section.5}

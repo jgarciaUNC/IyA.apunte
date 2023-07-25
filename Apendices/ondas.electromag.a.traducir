@@ -1,0 +1,182 @@
+Maxwell first suggested the existence of electromagnetic waves in 1864. Later, Heinrich. Rudolf Hertz used an arrangement of rudimentary resonators to demonstrate the existence of electromagnetic waves. Hertz's apparatus was extremely simple and comprised two resonant loops, one for transmitting and the other for receiving. Each loop acted both as a tuned circuit and as a resonant antenna (or 'aerial').
+
+Hertz's transmitting loop was excited by means of an induction coil and battery. Some of the energy radiated by the transmitting loop was intercepted by the receiving loop and the received energy was conveyed to a spark gap where it could be released as an arc. The energy radiated by the transmitting loop was in the form of an electromagnetic wav e- a wave that has both electric and magnetic field components and that travels at the speed of light.
+
+In 1894, Marconi demonstrated the commercial potential of the phenomenon that Maxwell predicted and Hertz actually used in his apparatus. It was also Marconi that made radio a reality by pioneering the development of telegraphy without wires (i.e. 'wireless'). 
+
+Marconi was able to demonstrate very effectively that information could be exchanged between distant locations without the need for a 'land line'.
+
+Marconi's system of wireless telegraphy proved to be invaluable for manttme communications (ship to ship and ship to shore) and was to be instrumental in saving many lives. The military applications of radio were first exploited during the First World War ( 1914 to 1918) and, during that period, radio was first used in aircraft.
+
+This first chapter has been designed to set the scene and to provide you with an introduction to the principles of radio communication systems. The various topics are developed more fully in the later chapters but the information provided here is designed to provide you with a starting point for the theory that follows.
+
+1.1 The radio frequency spectrum
+
+Radio frequency signals are generally understood to occupy a frequency range that extends from a few tens of kilohertz (kHz) to several hundred gigahertz (GHz). The lowest part of the radio frequency range that is of practical use (below 30 kHz) ts only suitable for narrow-band communication. At this frequency, signals propagate as ground waves (following the curvature of the earth) over very long distances.
+
+At the other extreme, the highest frequency range that is of practical importance extends above 30 GHz.
+
+At these microwave frequencies, considerable bandwidths are available (sufficient to transmit many television channels using point­to-point links or to permit very high definition radar systems) and signals tend to propagate strictly along line-of-sight paths.
+
+At other frequencies signals may propagate by various means including reflection from ionised layers in the ionosphere. At frequencies between 3 MHz and 30 MHz ionospheric propagation regularly permits intercontinental broadcasting and communications.
+
+For convenience, the radio frequency spectrum is divided into a number of bands (see Table 1. 1), each spanning a decade of frequency. The use to which each frequency range is put depends upon a number of factors, paramount amongst which is the propagation characteristics within the band concerned.
+
+Other factors that need to be taken into account include the efficiency of practical aerial systems in the range concerned and the bandwidth available. It is also worth noting that, although it may appear from Figure 1.1 that a great deal of the radio frequency spectrum is not used, it should be stressed that competition for frequency space is fierce and there is, in fact, little vacant space! Frequency allocations are, therefore, ratified by international agreement and the various user services carefully safeguard their own areas of the spectrum.
+
+1.2 Electromagnetic waves
+
+As with light, radio waves propagate outwards from a source of energy (transmitter) and comprise electric (E) and magnetic (H) fields at right angles to one another. These two components, the E-field and the H-field, are inseparable. The resulting wave travels away from the source with the E and H lines mutually at right angles to the direction of propagation, as shown in Figure 1.2.
+
+Radio waves are said to be polarised in the plane of the electric (E) field. Thus, if the E-field is vertical, the signal is said to be vertically polarised whereas, if the E-field is horizontal, the signal is said to be horizontally polarised. Figure 1.3 shows the electric E-field lines in the space between a transmitter and a receiver. The transmitter aerial (a simple dipole, see page 16) is supplied with a high frequency alternating current. This gives rise to an alternating electric field between the ends of the aerial and an alternating magnetic field around (and at right angles to) it.
+
+The direction of the E-field lines is reversed on each cycle of the signal as the wavefront moves outwards from the source. The receiving aerial intercepts the moving field and voltage and current is induced in it as a consequence. This voltage and current is similar (but of smaller amplitude) to that produced by the transmitter. Note that in Figure 1.3 (where the transmitter and receiver are close together) the field is shown spreading out in a spherical pattern (this is known more correctly as the near field). In practice there will be some considerable distance between the transmitter and the receiver and so the wave that reaches the receiving antenna will have a plane wavefront. In this far field region the angular field distribution is essentially independent of the distance from the transmitting antenna.
+
+1.3 Frequency and Wavelength
+
+
+Radio waves propagate in air (or space) at the speed of light (300 million metres per second). The velocity of propagation, v, wavelength, A, and frequency, f, of a radio wave are related by the equation:
+
+
+This equation can be arranged to make for A the subject, as follows:
+
+
+As an example, a signal at a frequency of 1 MHz will have a wavelength of 300 m whereas a signal at a frequency of 1 0 MHz will have a wavelength of30 m.
+
+When a radio wave travels in a cable (rather than in air or 'free space') it usually travels at a speed that is between 60% and 80% of that of the speed of light.
+
+Example 1.3.1
+
+Determine the frequency of a radio signal that has a wavelength of 15 m.
+
+Example 1.3.2
+
+Determine the wavelength of a radio signal that has a frequency of 150 MHz.
+
+Example 1.3.3
+
+If the wavelength of a 30 MHz signal in a cable is 8 m, determine the velocity of propagation of the wave in the cable.
+
+Test your understanding 1.1
+
+An H F communications signal has a frequency of 25.674 MHz. Determine the wavelength of the signal.
+
+Test your understanding 1.2
+
+A VHF communications link operates at a wavelength of 1 .2 m. Determine the frequency at which the link operates.
+
+1.4 The atmosphere
+
+The earth's atmosphere (see Figure 1 .4) can be divided into five concentric regions having boundaries that are not clearly defined. These layers, starting with the layer nearest the earth's surface, are known as the troposphere,
+stratosphere, mesosphere, thermosphere and exosphere.
+
+The boundary between the troposphere and the stratosphere is known as the tropopause and this region varies in height above the earth's surface from about 7.5 km at the poles to 1 8 km at the equator. An average value for the height of the tropopause is around 1 1 km or 36,000 feet (about the same as the cruising height for most international passenger aircraft).
+
+The thermosphere and the upper parts of the mesosphere are often referred to as the ionosphere and it is this region that has a major role to play in the long distance propagation of radio waves, as we shall see later.
+
+The lowest part of the earth's atmosphere is called the troposphere and it extends from the surface up to about 10 km (6 miles). The atmosphere above 10 km is called the stratosphere, followed by the mesosphere. It is in the stratosphere that incoming solar radiation creates the ozone layer.
+
+1.5 Radio wave propagation
+
+Depending on a number of complex factors, radio waves can propagate through the atmosphere in various ways, as shown in Figure 1.5. These include:
+
+ground waves
+
+ionospheric waves
+
+space waves
+
+tropospheric waves .
+
+As their name suggests, ground waves (or surface waves) travel close to the surface of the earth and propagate for relatively short distances at HF and VHF but for much greater distances at MF and LF. For example, at 100 kHz the range of a ground wave might be in excess of 500 km, whilst at 1 MHz (using the same radiated power) the range might be no more than 150 km and at 10 MHz no more than about 15 km. Ground waves have two basic components; a direct wave and a ground reflected wave (as shown in Figure 1.6). The direct path is that which exists on a line-of-sight (LOS) basis between the transmitter and receiver. An example of the use of a direct path is that which is used by terrestrial microwave repeater stations which are typically spaced 20 to 30 km apart on a line-of-sight basis. 
+
+Another example of the direct path is that used for satellite TV reception. In order to receive signals from the satellite the receiving antenna must be able to 'see' the satellite. In this case, and since the wave travels largely undeviated through the atmosphere, the direct wave is often referred to as a space wave. Such waves travel over LOS paths at VHF, UHF and beyond.
+
+As shown in Figure 1.6, signals can arrive at a receiving antenna by both the direct path and by means of reflection from the ground. Ground reflection depends very much on the quality of the ground with sandy soils being a poor reflector of radio signals and flat marshy ground being an excellent reflecting surface. Note that a proportion of the incident radio signal is absorbed into the ground and not all of it is usefully reflected. An example of the use of a mixture of direct path and ground (or building) reflected radio signals is the reception of FM broadcast signals in a car. It is also worth mentioning that, in many cases, the reflected signals can be stronger than the direct path (or the direct path may not exist at all if the car happens to be in a heavily built-up area).
+
+Ionospheric waves (or sky waves) can travel for long distances at MF, HF and exceptionally also at VHF under certain conditions. Such waves are predominant at frequencies below VHF and we shall examine this phenomenon in greater detail a little later but before we do it is worth describing what can happen when waves meet certain types of discontinuity in the atmosphere or when they encounter a physical obstruction. In both cases, the direction of travel can be significantly affected according to the nature and size of the obstruction or discontinuity. Four different effects can occur (see Figure I.7) and they are known as:
+
+reflection
+
+refraction
+
+diffraction
+
+scattering.
+
+Reflection occurs when a plane wave meets a plane object that is large relative to the wavelength of the signal. In such cases the  wave is reflected back with minimal distortion and without any change in velocity. The effect is similar to the reflection of a beam of light when it arrives at a mirrored surface.
+
+Refraction occurs when a wave moves from one medium into another in which it travels at a different speed. For example, when moving from a more dense to a less dense medium the wave is bent away from the normal (i.e. an imaginary line constructed at right angles to the boundary). 
+
+Conversely, when moving from a less dense to a more dense medium, a wave will bend towards the normal. The effect is similar to that experienced by a beam of light when it encounters a glass prism.
+
+Diffraction occurs when a wave meets an edge (i.e. a sudden impenetrable surface discontinuity) which has dimensions that are large relative to the wavelength of the signal. In such cases the wave is bent so that it follows the profile of the discontinuity. Diffraction occurs more readily at lower frequencies (typically VHF and below). An example of diffraction is the bending experienced by VHF broadcast signals when they encounter a sharply defined mountain ridge. Such signals can be received at some distance beyond the 'knife edge' even though they are well beyond the normal LOS range.
+
+Scattering occurs when a wave encounters one or more objects in its path having a size that is a fraction of the wavelength of the signal. When a wave encounters an obstruction of this type it will become fragmented and re-radiated over a wide angle. Scattering occurs more readily at higher frequencies (typically VHF and above) and regularly occurs in the troposphere at UHF and EHF.
+
+Radio signals can also be directed upwards (by suitable choice of antenna) so that signals enter the troposphere or ionosphere. In the former case, signals can be become scattered (i.e. partially dispersed) in the troposphere so that a small proportion arrives back at the ground.
+
+Tropospheric scatter requires high power transmitting equipment and high gain antennas but is regularly used for transmission beyond the horizon particularly where conditions in the troposphere (i.e. rapid changes of temperature and humidity with height) can support this mode of communication. Tropospheric scatter of radio waves is analogous to the scattering of a light beam (e.g. a torch or car headlights) when shone into a heavy fog or mist.
+
+In addition to tropospheric scatter there is also tropospheric ducting (not shown in Figure 1.7) in which radio signals can become trapped as a result of the change of refractive index at a boundary between air masses having different temperature and humidity. Ducting usually occurs when a large mass of cold air is overrun by warm air (this is referred to as a temperature inversion). 
+
+Although this condition may occur frequently in certain parts of the world, this mode of propagation is not very predictable and is therefore not used for any practical applications.
+
+1.6 The ionosphere
+
+In 1 924, Sir Edward Appleton was one of the first to demonstrate the existence of a reflecting layer at a height of about 1 00 km (now called the E­layer). This was soon followed by the discovery of another layer at around 250 km (now called the F-layer). This was achieved by broadcasting a continuous signal from one site and receiving the
+signal at a second site several miles away. By measuring the time difference between the signal received along the ground and the signal reflected from the atmosphere (and knowing the velocity at which the radio wave propagates) it was possible to calculate the height of the atmospheric reflecting layer. Today, the standard technique for
+detecting the presence of ionised layers (and determining their height above the surface of the earth) is to transmit a very short pulse directed upwards into space and accurately measuring the amplitude and time delay before the arrival back on earth of the reflected pulses. This ionospheric sounding is carried out over a range of frequencies.
+
+The ionosphere provides us with a reasonably predictable means of communicating over long distances using HF radio signals. Much of the short and long distance communications below 30 MHz depend on the bending or refraction of the
+transmitted wave in the earth's ionosphere which are regions of ionisation caused by the sun's ultraviolet radiation and lying about 60 to 200 miles above the emth's surface. 
+
+The useful regions of ionisation are the E-layer (at about 70 miles in height for maximum ionisation) and the F-layer (lying at about 175 miles in height at night). During the daylight hours, the F-layer splits into two distinguishable parts: F1 (lying at a height of about 1 40 miles) and F2 (lying at a height of about 200 miles). 
+
+After sunset the F1- and Frlayers recombine into a single F-layer (see Figures 1.8 and 1.1 0). During daylight, a lower layer of ionisation  nown as the D-layer exists in proportion to the sun's height, peaking at local noon and largely dissipating after sunset. This lower layer primarily acts to absorb energy in the low end of the high frequency (HF) band. The F-layer ionisation regions are primarily responsible for long distance communication using sky waves at distances of up to several thousand km (greatly in excess of those distances that can be achieved using VHF direct wave communication, see Figure 1.9). The characteristics of the ionised layers are summarised in Table 1.2 together with their effect on radio waves.
+
+1.7 MUF and LUF
+
+The maximum usable frequency (MUF) is the highest frequency that will allow communication over a given path at a particular time and on a particular date. MUF varies considerably with the amount of solar activity and is basically a function of the height and intensity of the F-layer. During a period of intense solar activity the MUF can exceed 30 MHz during daylight hours but is often around 1 6 to 20 MHz by day and around 8 to 10 MHz by night.
+
+The variation of MUF over a 24-hour period for the London to New York path is shown in Figure 1.11. A similar plot for the summer months would be flatter with a more gradual increase in MUF at dawn and a more gradual decline at dusk.
+
+The reason for the significant variation of MUF over any 24-hour period is that the intensity of ionisation in the upper atmosphere is significantly reduced at night and, as a consequence, lower frequencies have to be used to produce the same amount of refractive bending and also to give the same critical angle and skip distance as by day.
+
+Fortunately, the attenuation experienced by lower frequencies travelling in the ionosphere is much reduced at night and this makes it possible to use the lower frequencies required for effective communication. The important fact to remember from this is simply that, for a given path, the frequency used at night is about half that used for daytime communication.
+
+The lowest usable frequency (LUF) is the lowest frequency that will support communication over a given path at a particular time and on a particular date. LUF is dependent on the amount of absorption experienced by a radio wave. This absorption is worse when the D­layer is most intense (i.e. during daylight). Hence, as with MUF, the LUF rises during the day and falls during the night. A typical value of LUF is 4 to 6 MHz during the day, falling rapidly at sunset to 2 MHz.
+
+The frequency chosen for HF communication must therefore be somewhere above the LUF and below the MUF for a given path, day and time. A typical example might be a working frequency of 5 MHz at a time when the MUF is 1 0 MHz and the LUF is 2 MHz.
+
+Figure 1 .12 shows the typical MUF for various angles of attack together with the corresponding working ranges. This diagram assumes a critical frequency of 5 MHz. This is the lowest frequency that would be returned from the ionosphere using a path of vertical incidence (see ionospheric sounding on page 7).
+
+The relationship between the critical frequency, fcrit , and electron density, N, is given by:
+
+
+where N is the electron density expressed in cm3 . The angle  of attack, a, is the angle of the transmitted wave relative to the horizon.
+
+The relationship between the MUF, the critical frequency, and the angle of attack, is given by:
+
+Example 1.8.1
+
+Given that the electron density in the ionosphere is 5 x 10 5 electrons per cm3 determine the critical frequency and the MUF for an angle of attack of 15°.
+
+
+The MUF can now be calculated using:
+
+Test your understanding 1.3
+
+Determine the electron density in the ionosphere when the MUF is 1 8 MHz for a critical angle of 20° .
+
+1.8 Silent zone and skip distance
+
+The silent zone is simply the region that exists between the extent of the coverage of the ground wave signal and the point at which the sky wave returns to earth (see Figure 1.13). Note also that, depending on local topography and soil characteristics, when a signal returns to earth from the ionosphere it is sometimes possible for it to experience a reflection from the ground, as shown in Figure 1.13. The onward reflected signal will suffer attenuation but in some circumstances may be sufficient to provide a further hop and an approximate doubling of the working range. The condition is known as multihop propagation.
+
+The skip distance is simply the distance between the point at which the sky wave is radiated and the point at which it returns to earth (see Figure 1.14). 
+
+Note that where signals are received simultaneously by ground wave and sky wave paths, the signals will combine both constructively and destructively due to the different paths lengths and this, in turn, will produce an effect known as fading. This effect can often be heard during the early evening on medium wave radio signals as the D-layer weakens and sky waves first begin to appear.
+
+Test your understanding 1.4
+
+Table 1.3 shows corresponding values of time and maximum usable frequency (MUF) for London to Lisbon on 28th August 2006. Plot a graph showing the variation of MUF with time and explain the shape of the graph.

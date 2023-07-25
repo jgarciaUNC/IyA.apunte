@@ -1,0 +1,20 @@
+14.4 Electronic indicating systems
+
+The two systems used on the majority of passenger aircraft are EICAS and ECAM. The Engine Indication and Crew Alerting System (EICAS) is a Boeing developed system that provides all engine instrumentation and crew annunciations in an integrated format; this is covered in Chapter 10 (engine systems). The system used on Airbus aircraft is the Electronic Centralized Aircraft Monitoring (ECAM) system. The two systems operate on different philosophies; however their basic functions are to monitor aircraft systems and display relevant information to the pilots. Both systems produce warning, cautions and advisory messages that need to be evaluated by the crew; in certain cases, the system provides the procedures required to address the problem. Each colour display unit uses either an active matrix liquid crystal display (AMLCD) or a cathode ray tube (CRT), see Fig. 14.7 .
+
+
+ECAM provides the main features of EICAS but also displays corrective action to be taken by the crew as well as system limitations after the failures. Using a colour coded hierarchy, the crew can assimilate the information being presented and take the necessary corrective action. ECAM was first introduced in the Airbus A320 and provides the paperless cockpit since procedures for abnormal and emergency situations are presented on each of the displays.
+
+ECAM comprises a series of integrated systems that display information to the crew in an efficient way. Referring to Fig. 14.8 , aircraft sensors are categorized into key monitoring functions; these sensors transmit data into two system data acquisition concentrators (SDACs). The data is processed and supplied into fl ight warning computers (FWCs). The FWCs are programmed to identify any inconsistencies in the data, and then output the data through three display management computers (DMCs).
+
+If a system fault or event is detected, one of the FWCs generates the appropriate warning messages and aural alerts. Critical systems such as engine and fuel quantity are routed directly into the FWCs so that they can still be monitored in the event of both SDACs failing. (ECAM can tolerate the failure of one SDAC and one FWC and still continue to operate.)
+
+The typical synoptic for an electrical system is shown in Fig. 14.9 . In this illustration, the power sources supplying specifi c busbars is shown graphically, together with information such as battery and transformer rectifi er unit (TRU) voltages and supply currents. Generator capacity is shown as a percentage of maximum, together with output voltage and frequency.
+
+Aircraft system failures are prioritized as level 1, 2 or 3 failures for the upper and/or lower display. The warning and caution hierarchy is as follows. Level 3 failures – red warnings: these are situations that require immediate crew action and indicate that the aircraft is in danger. Examples of level 3 failures include an engine fi re or loss of cabin pressure. Level 3 system failures illuminate the red master warning light, a warning (red) ECAM message and an aural warning; this can be a continuous repetitive chime, a specifi c sound or a synthetic voice. Pressing the master warning push button silences the aural warning.
+
+Level 2 failures – amber cautions: these are situations that require crew attention but not immediate action. Examples of level 2 failures include bleed air failure or a fuel system fault. Level 2 failures have no immediate or direct impact on flight safety; cautions are displayed to the crew by an amber master caution light, an amber ECAM message and a single chime.
+
+Level 1 failures – these are system failures and/or faults that could lead to a loss of system redundancy.
+
+Level 1 failures require monitoring but have no immediate impact on continued safe operation of the aircraft. Examples of level 1 failures include the loss of a fuel system temperature sensor. Level 1 failures are displayed to the crew by amber ECAM messages only (no aural warning).

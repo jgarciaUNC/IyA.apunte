@@ -1,0 +1,476 @@
+Antennas
+
+It may not be apparent from an inspection of the external profile of an aircraft that most large aircraft carry several dozen antennas of different types. To illustrate this point, Figure 2.1 shows just a few of the antennas carried by a Boeing 757. What should be apparent from this is that  many of the antennas are of the low-profile variety which is essential to reduce drag. Antennas are used both for transmission and reception. A transmitting antenna converts the high frequency electrical energy supplied to it into electromagnetic energy which is launched or radiated into the space surrounding the antenna. 
+
+A receiving antenna captures the electromagnetic energy in the surrounding space and converts this into high frequency electrical energy which is then passed on to the receiving system. The law of reciprocity indicates that an antenna will have the same gain and directional properties when used for transmission as it does when used for reception.
+
+2.1 The isotropic radiator
+
+The most fundamental form of antenna (which cannot be realised in practice) is the isotropic radiator. This theoretical type of antenna is often used for comparison purposes and as a reference when calculating the gain and directional characteristics of a real antenna. Isotropic antennas radiate uniformly in all directions. In other words, when placed at the centre of a sphere such an antenna would illuminate the internal surface of the sphere uniformly, as shown in Figure 2.2(a). All practical antennas have directional characteristics as illustrated in Figure 2.2(b). Furthermore, such characteristics may be more or less pronounced according to the antenna’s application. We shall look at antenna gain and directivity in more detail later on, but before we do that we shall introduce you to some common types of antenna.
+
+2.2 The half-wave dipole
+
+
+The half-wave dipole is one of the most fundamental types of antenna. The half-wave dipole antenna (Figure 2.3) consists of a single conductor having a length equal to one-half of the length of the wave being transmitted or received. The conductor is then split in the centre to enable connection to the feeder. In practice, because of the capacitance effects between the ends of the antenna and ground, the antenna is cut a little shorter than a half wavelength.
+
+The length of the antenna (from end to end) is equal to one half wavelength, hence:
+
+Now since v = f λ we can conclude that, for a half-wave dipole:
+
+Note that l is the electrical length of the antenna rather than its actual physical length. End effects, or capacitance effects at the ends of the antenna require that we reduce the actual length of the aerial, and a 5% reduction in length is typically required for an aerial to be resonant at the centre of its designed tuning range. Figure 2.4 shows the distribution of current and voltage along the length of a half-wave dipole aerial. The current is maximum at the centre and zero at the ends. The voltage is zero at the centre and maximum at the ends. This implies that the impedance is not constant along the length of aerial but varies from a maximum at the ends (maximum voltage, minimum current) to a minimum at the centre. 
+
+The dipole antenna has directional properties, illustrated in Figures 2.5 to 2.7. Figure 2.5 shows the radiation pattern of the antenna in the plane of the antenna’s electric field (i.e. the E-field plane) whilst Figure 2.6 shows the radiation pattern in the plane of the antenna’s magnetic field (i.e. the H-field plane).
+
+The 3D plot shown in Figure 2.7 combines these two plots into a single ‘doughnut’ shape. Things to note from these three diagrams are that:
+
+in the case of Figure 2.5, minimum radiation occurs along the axis of the antenna whilst the two zones of maximum radiation are at 90º (i.e. are ‘normal to’) the dipole elements
+
+in the case of Figure 2.6, the antenna radiates uniformly in all directions.
+
+Hence, a vertical dipole will have omni-directional characteristics whilst a horizontal dipole will have a bi-directional radiation pattern. This is an important point as we shall see later.
+
+Example 2.1
+
+Determine the length of a half-wave dipole antenna for use at a frequency of 150 MHz.
+
+The length of a half-wave dipole for 150 MHz can be determined from:
+
+Test your understanding 2.1
+
+Determine the length of a half-wave dipole for frequencies of (a) 121 MHz and (b) 11.25 MHz.
+
+2.3 Impedance and radiation resistance
+
+Because voltage and current appear in an antenna (a minute voltage and current in the case of a receiving antenna and a much larger voltage and current in the case of a transmitting antenna) an aerial is said to have impedance. Here it’s worth remembering that impedance is a mixture of resistance, R, and reactance, X, both measured in ohms (Ω). Of these two quantities, X varies with frequency whilst R remains constant. This is an important concept because it explains why antennas are often designed for operation over a restricted range of frequencies.
+
+The impedance, Z, of an aerial is the ratio of the voltage, E, across its terminals to the current, I, flowing in it. Hence:
+
+You might infer from Figure 2.7 that the impedance at the centre of the half-wave dipole should be zero. In practice the impedance is  usually between 70 Ω and 75 Ω. Furthermore, at resonance the impedance is purely resistive and contains no reactive component (i.e. inductance and capacitance). In this case X  is negligible compared with R. It is also worth noting that the DC resistance (or ohmic resistance) of an antenna is usually very small in comparison with its impedance and so it may be ignored. Ignoring the DC resistance of the antenna, the impedance of an antenna may be regarded as its radiation resistance, R r (see Figure 2.8).
+
+Radiation resistance is important because it is through this resistance that electrical power is transformed into radiated electromagnetic energy (in the case of a transmitting antenna) and incident electromagnetic energy is transformed into electrical power (in the case of a receiving aerial).
+
+The equivalent circuit of an antenna is shown in Figure 2.9. The three series-connected components that make up the antenna’s impedance are:
+
+the DC resistance, R d.c.
+
+the radiation resistance, R r
+
+the ‘off-tune’ reactance, X.
+
+Note that when the antenna is operated at a frequency that lies in the centre of its pass-band (i.e. when it is on-tune) the off-tune reactance is zero. It is also worth bearing in mind that the radiation resistance of a half-wave dipole varies according to its height above ground. The 70 Ω to 75 Ω impedance normally associated with a half-wave dipole is only realised when the antenna is mounted at an elevation of 0.2 wavelengths, or more.
+
+Test your understanding 2.2
+
+A half-wave dipole is operated at its centre frequency (zero off-tune reactance). If the antenna has a total DC loss resistance of 2.5 Ω and is supplied with a current of 2 A and a voltage of 25 V, determine: 
+
+(a) the radiation resistance of the antenna
+
+(b) the power loss in the antenna.
+
+2.4 Radiated power and efficiency
+
+In the case of a transmitting antenna, the radiated power, P r , produced by the antenna is given by:
+
+where I a is the antenna current, in amperes, and R r is the radiation resistance in ohms. In most practical applications it is important to ensure that P r is maximised, and this is achieved by ensuring that R r is much larger than the DC resistance of the antenna elements. The efficiency of an antenna is given by the
+relationship:
+
+Where P loss is the power dissipated in the DC resistance present. At this point it is worth stating that, whilst efficiency is vitally important in the case of a transmitting antenna, it is generally unimportant in the case of a receiving antenna. This explains why a random length of wire can make a good receiving aerial but not a good transmitting antenna!
+
+Example 2.2
+
+An HF transmitting antenna has a radiation resistance of 12 Ω. If a current of 0.5 A is supplied to it, determine the radiated power. Now:
+
+P r = I a2 × R r = (0.5) 2 × 12 = 0.25 × 12 = 4 W
+
+Example 2.3
+
+If the aerial in Example 2.2 has a DC resistance of 2 Ω, determine the power loss and the radiation efficiency of the antenna. 
+
+From the equivalent circuit shown in Figure 2.9, the same current flows in the DC resistance, R d.c. , as flows in the antenna’s radiation resistance, R r .
+
+In this example, more than 10% of the power output is actually wasted! It is also worth noting that in order to ensure a high value of radiation efficiency, the loss resistance must be kept very low in comparison with the radiation resistance.
+
+2.5 Antenna gain
+
+The field strength produced by an antenna is proportional to the amount of current flowing in it. However, since different types of antenna produce different values of field strength for the same applied RF power level, we attribute a power gain to the antenna. This power gain is specified in relation to a reference antenna (often either a half-wave dipole or a theoretical isotropic radiator), and it is usually specified in decibels (dB)—see Appendix 4.
+
+In order to distinguish between the two types of reference antenna we use subscripts i and d to denote isotropic and half-wave dipole reference antennas respectively. As an example, an aerial having a gain of 10 dB i produces ten times power gain when compared with a theoretical isotropic radiator. Similarly, an antenna having a gain of 13 dB d produces twenty times power gain when compared with a half-wave dipole. Putting this another way, to maintain the same field strength at a given point, you would have to apply 20 W to a half-wave dipole or just 1 W to the antenna in question! Some comparative values of antenna gain are shown on page 38.
+
+2.6 The Yagi beam antenna
+
+Originally invented by two Japanese engineers, Yagi and Uda, the Yagi antenna has remained extremely popular in a wide variety of applications and, in particular, for fixed domestic FM radio and TV receiving aerials. In order to explain in simple terms how the Yagi antenna works we shall use a simple light analogy. An ordinary filament lamp radiates light in all directions. Just like an antenna, the lamp converts electrical energy into electromagnetic energy. The only real difference is that we can see the energy that it produces!
+
+The action of the filament lamp is comparable with our fundamental dipole antenna. In the case of the dipole, electromagnetic radiation will occur all around the dipole elements (in three  dmensions the radiation pattern will take on a doughnut shape). In the plane that we have shown in Figure 2.10(c), the directional pattern will be a figure-of-eight that has two lobes of equal size. In order to concentrate the radiation into just one of the radiation lobes we could simply place a reflecting mirror on one side of the filament lamp. The radiation will be reflected (during which the reflected light will undergo a 180° phase change), and this will reinforce the light on one side of the filament lamp. In order to achieve the same effect in our antenna system we need to place a conducting element about one quarter of a wavelength behind the dipole element. This element is referred to as a reflector and it is said to be ‘parasitic’ (i.e. it is not actually connected to the feeder). The reflector needs to be cut slightly longer than the driven dipole element. The resulting directional pattern will now only have one major lobe because the energy radiated will be concentrated into just one-half of the figure-of-eight pattern that we started with).
+
+aontinuing with our optical analogy, in order to further concentrate the light energy into an arrow beam we can add a lens in front of the lamp. This will have the effect of bending the light emerging from the lamp towards the normal line (see Figure 2.12). In order to achieve the same effect in our antenna system we need to place a conducting element, known as a director, on the other side of the dipole and about one-quarter of a wavelength from it. Once again, this element is parasitic, but in this case it needs to be cut slightly shorter than the driven dipole element. The resulting directional pattern will now have a narrower major lobe as the energy becomes concentrated in the normal direction (i.e. at right angles to the dipole elements). The resulting antenna is known as a three-element Yagi aerial, see Figure 2.13.
+
+If desired, additional directors can be added to further increase the gain and reduce the beamwidth (i.e. the angle between the half-power or –3 dB power points on the polar characteristic) of Yagi aerials. Some comparative gain and beamwidth figures are shown on page 38.
+
+2.7 Directional characteristics
+
+Antenna gain is achieved at the expense of directional response. In other words, as the gain of an antenna increases its radiation pattern becomes more confined. In many cases this is a desirable effect (e.g. in the case of fixed point–point communications). In other cases (e.g. a base station for use with a number of mobile stations) it is clearly undesirable.
+
+The directional characteristics of an antenna are usually presented in the form of a polar response graph. This diagram allows users to determine directions in which maximum and minimum gain can be achieved and allows the antenna to be positioned for optimum effect. The polar diagram for a horizontal dipole is shown in Figure 2.16. Note that there are two major lobes in the response and two deep nulls.
+
+The antenna is thus said to be bi-directional. Figure 2.17 shows the polar diagram for a dipole plus reflector. The radiation from this antenna is concentrated into a single major lobe, and there is a single null in the response at 180º to the direction of maximum radiation.
+
+An alternative to improving the gain but maintaining a reasonably wide beamwidth is that of stacking two antennas one above another (see Figure 2.20). Such an arrangement will usually provide a 3 dB gain over a single antenna but will have the same beamwidth. A disadvantage of stacked arrangements is that they require accurate phasing and matching arrangements. 
+
+As a rule of thumb, an increase in gain of 3 dB can be produced each time the number of elements is doubled. Thus a two-element antenna will offer a gain of about 3 dBd, a four-element antenna will produce 6 dBd, an eight-element Yagi will realise 9 dBd, and so on. 
+
+
+Test your understanding 2.3
+
+Identify the antenna shown in Figure 2.19. Sketch a typical horizontal radiation pattern for this antenna.
+
+Test your understanding 2.4
+
+Identify the antenna shown in Figure 2.20. Sketch a typical horizontal radiation pattern for this antenna.
+
+Test your understanding 2.5
+
+Figure 2.18 shows the polar response of a Yagi beam antenna (the gain has been specified relative to a standard reference dipole). Use the polar plot to determine:
+
+(a)	the gain of the antenna
+(b)	the beamwidth of the antenna
+(c)	the size and position of any ‘side lobes’
+(d)	the ‘front-to-back’ ratio (i.e. the size of the 	major lobe in comparison to the response of 	the antenna at 180° to it).
+
+2.8 Other practical antennas
+
+Many practical forms of antenna are used in aircraft and aviation-related applications. The following are some of the most common types (several other antennas will be introduced in later chapters).
+
+2.8.1 Vertical quarter-wave antennas
+
+One of the most simple antennas to construct is the quarter-wave antenna (also known as a Marconi antenna).
+
+Such antennas produce an omnidirectional radiation pattern in the horizontal plane and radiate vertically polarised signals. Practical quarter-wave antennas can be produced for the high-HF and VHF bands, but their length is prohibitive for use on the low-HF and LF bands. In order to produce a reasonably flat radiation pattern (and prevent maximum radiation being directed upwards into space) it is essential to incorporate an effective ground plane. At VHF, this can be achieved using just four quarter-wave radial elements at 90° to the vertical radiating
+element (see Figure 2.21). All four radials are grounded at the feed-point to the outer screen of the coaxial feeder cable.
+
+A slight improvement on the arrangement in Figure 2.21 can be achieved by sloping the radial elements at about 45º (see Figure 2.22). This arrangement produces a flatter radiation pattern. At HF rather than VHF, the ground plane can be the earth itself. However, to reduce the earth resistance and increase the efficiency of the antenna, it is usually necessary to incorporate some buried earth radials (see Figure 2.23). These radial wires simply consist of quarter-wave lengths of insulated stranded copper wire grounded to the outer screen of the coaxial feeder at the antenna feed point.
+
+2.8.2 Vertical half-wave antennas
+
+An alternative to the use of a quarter-wave radiating element is that of a half-wave element. This type of antenna must be voltage fed (rather than current fed as is the case with the quarter-wave antenna). A voltage-fed antenna requires the use of a resonant transformer connected between the low-impedance coaxial feeder and the end of the antenna. Such an arrangement is prone to losses since it requires high-quality, low-loss components. It may also require carefuladjustment for optimum results and thus a quarter-wave or three-quarter wave antenna is usually preferred.
+
+2.8.3 5/8th wave vertical antennas
+
+5/8th wave vertical antennas provide a compact solution to the need for an omnidirectional VHF/UHF antenna offering some gain over a basic quarter-wave antenna. In fact, a 5/8th wave vertical antenna behaves electrically as a three-quarter wave antenna (i.e. it is current fed from the bottom and there is a voltage maximum at the top). In order to match the antenna, an inductive loading coil is incorporated at the feed-point. A typical 5/8th wave vertical antenna with sloping 
+ground plane is shown in Figure 2.24.
+
+2.8.5 Parabolic reflectors
+
+The need for very high gain coupled with directional response at UHF or microwave frequencies is often satisfied by the use of a parabolic reflector in conjunction with a radiating element positioned at the feed-point of the dish (see Figure 2.26). In order to be efficient, the diameter of a parabolic reflecting surface must be large in comparison with the wavelength of the signal. The gain of such an antenna depends on various factors but is directly proportional to the ratio of diameter to wavelength.
+
+The principle of the parabolic reflector antenna is shown in Figure 2.27. Signals arriving from a distant transmitter will be reflected so that they pass through the focal point of the parabolic surface (as shown). With a conventional parabolic surface, the focal point lies directly on the axis directly in front of the reflecting surface. Placing a radiating element (together with its supporting structure) at the focal point may thus have the undesirable effect of partially obscuring the parabolic surface! In order to overcome this problem the surface may be modified so that the focus is offset from the central axis. It is important to realise that the reflecting surface of a parabolic reflector antenna is only
+part of the story. Equally important (and crucial to the effectiveness of the antenna) is the method of feeding the parabolic surface. What’s required here is a means of illuminating or capturing signals from the entire parabolic surface. Figure 2.28 shows a typical feed arrangement based on a waveguide (see page 48), half-wave dipole and a reflector. The dipole and reflector have a beamwidth of around 90°, and this is ideal for illuminating the parabolic surface. The dipole and reflector are placed at the focal point of the dish. This feed arrangement is often used for focal plane reflector antennas where the outer edge of the dish is in the same plane as the half-wave dipole plus reflector feed. An alternative arrangement using a waveguide and small horn radiator (see page 37) is shown in Figure 2.29. The horn aerial offers some modest gain (usually 6 to 10 dB, or so), and this can be instrumental in increasing the overall gain of the arrangement. Such antennas are generally not focal plane types, and the horn feed will usually require support above the parabolic surface.
+
+Test your understanding 2.6
+
+Identify an antenna type suitable for use in the following applications. Give reasons for your answers:
+
+(a) an SHF satellite earth station
+
+(b) a low frequency non-directional beacon
+
+(c) an airfield communication system
+
+(d) a long-range HF communication system
+
+(e) a microwave link between two fixed points.
+
+2.8.6 Horn antennas
+
+Like parabolic reflector antennas, horn antennas are commonly used at microwave frequencies. Horn aerials may be used alone or as a means of illuminating a parabolic (or other) reflecting surface. Horn antennas are ideal for use with waveguide feeds; the transition from waveguide (see page 48) to the free space aperture being accomplished over several wavelengths as the waveguide is gradually flared out in both planes. During the transition from waveguide to free space, the impedance changes gradually. The gain of a horn aerial is directly related to the ratio of its aperture (i.e. the size of the horn’s opening) and the wavelength. However, as the gain increases, the beamwidth becomes reduced.
+
+Test your understanding 2.7
+
+Identify the antenna shown in Figure 2.33. Sketch a typical horizontal radiation pattern for this antenna.
+
+2.9 Feeders
+
+The purpose of the feeder line is to convey the power produced by a source to a load which may be some distance away. In the case of a receiver, the source is the receiving antenna whilst the load is the input impedance of the first RF amplifier stage. In the case of a transmitting system, the source is the output stage of the transmitter and the load is the impedance of the transmitting antenna. Ideally, a feeder would have no losses (i.e. no power would be wasted in it) and it would present a perfect match between the impedance of the source to that of the load. In practice, this is seldom the case. This section explains the basic principles and describes the construction of most common types of feeder. 
+
+2.9.1 Characteristic impedance
+
+The impedance of a feeder (known as its characteristic impedance) is the impedance that would be seen looking into an infinite length of the feeder at the working frequency. The characteristic impedance, Z 0 , is a function of the inductance, L, and capacitance, C, of the feeder and may be approximately represented by:
+
+L and C are referred to as the primary constants of a feeder. In this respect, L is the loop inductance per unit length whilst C is the shunt capacitance per unit length (see Figure 2.34). In practice, a small amount of DC resistance will be present in the feeder, but this is usually negligible. For the twin open wire shown in Figure 2.35(a), the inductance, L, and capacitance, C, of the line depend on the spacing between the wires and the diameter of the two conductors. For the coaxial cable shown in Figure 2.35(b) the characteristic impedance depends upon the ratio of the diameters of the inner and outer conductors.
+
+Example 2.4
+
+A cable has a loop inductance of 20 nH and a capacitance of 100 pF. Determine the characteristic impedance of the cable.
+
+2.9.2 Coaxial cables
+
+Because they are screened, coaxial cables are used almost exclusively in aircraft applications. The coaxial cable shown in Figure 2.35(b) has a centre conductor (either solid or stranded wire) and an outer conductor that completely shields the inner conductor. The two conductors are concentric and separated by an insulating dielectric that is usually air or some form of polythene. The impedance of such a cable is given by:
+
+where Z 0 is the characteristic impedance (in ohms), D is the inside diameter of the outside conductor (in mm) and d is the outside diameter of the inside conductor (in mm).
+
+Example 2.5
+
+A coaxial cable has an inside conductor diameter of 2 mm and an outside conductor diameter of 10 mm. Determine the characteristic impedance of the cable.
+
+In this case, d = 2 mm and D = 10 mm.
+
+2.9.3 Two-wire open feeder
+
+The characteristic impedance of the two-wire open feeder shown in Figure 2.35(a) is given by:
+
+where Z 0 is the characteristic impedance (in ohms), s is the spacing between the wire centres (in mm) and r is the radius of the wire (in mm). Flat twin ribbon cable is a close relative of the two-wire open line (the difference between these two being simply that the former is insulated and the two conductors are separated by a rib of the same insulating material).
+
+When determining the characteristic impedance of ribbon feeder, the formula given above must be modified to allow for the dielectric constant of the insulating material. In practice, however, the difference may be quite small.
+
+Test your understanding 2.8
+
+1. A coaxial cable has an inductance of 30 nH/m and a capacitance of 120 pF/m. Determine the characteristic impedance of the cable.
+
+2. The open wire feeder used with a high-power land-based HF radio transmitter uses wire having a diameter of 2.5 mm and a spacing of 15 mm. Determine the characteristic impedance of the feeder.
+
+2.9.4 Attenuation
+The attenuation of a feeder is directly proportional to the DC resistance of the feeder and inversely proportional to the impedance of the line. Obviously, the lower the resistance of the feeder, the smaller will be the power losses. The attenuation is given by:
+
+where A is the attenuation in dB (per meter), R is the resistance in ohms (per meter) and Z is the characteristic impedance (in ohms). Whilst the attenuation of a feeder remains reasonably constant throughout its specified frequency range, it is usually subject to a progressive increase beyond the upper frequency limit (see Figure 2.38). It is important when choosing a feeder or cable for a particular application to ensure that the operating frequency is within that specified by the manufacturer. As an example, RG178B/U coaxial cable has a loss that increases with frequency from 0.18 dB at 10 MHz, to 0.44 dB at 100 MHz, to 0.95 dB at 400 MHz and to 1.4 dB at 1 GHz.
+
+2.9.5 Primary constants
+
+The two types of feeder that we have already described differ in that one type (the coaxial feeder) is unbalanced whilst the other (the two-wire transmission line) is balanced. In order to fully understand the behaviour of a feeder, whether balanced or unbalanced, it is necessary to consider its equivalent circuit in terms of four conventional component values: resistance, inductance, capacitance and conductance, as shown in Figure 2.39. These four parameters are known as primary constants, and they are summarised in Table 2.2.
+
+Note that, in a ‘loss-free’ feeder, R and G are both very small and can be ignored (i.e. R = 0 and G = 0) but with a real feeder both R and G are present.
+
+2.9.6 Velocity factor
+
+The velocity of a wave in a feeder is not the same as the velocity of the wave in free space. The ratio of the two (velocity in the feeder compared with the velocity in free space) is known as the velocity factor. Obviously, velocity factor must always be less than 1, and in typical feeders it varies from 0.6 to 0.97 (see Table 2.3).
+
+
+2.10 Connectors
+
+Connectors provide a means of linking coaxial cables to transmitting/receiving equipment and antennas. Connectors should be reliable, easy to mate and sealed to prevent the ingress of moisture and other fluids. They should also be designed to minimise contact resistance and, ideally, they should exhibit a constant impedance which accurately matches that of the system in which they are used (normally 50 Ω for aircraft applications).
+
+Coaxial connectors are available in various formats (see Figure 2.40). Of these, the BNC- and N-type connectors are low-loss constant impedance types. The need for constant impedance connectors (e.g. BNC and N-type connectors) rather than cheaper non-constant impedance connectors (e.g. PL-259) becomes increasingly critical as the frequency increases. As a general rule, constant impedance connectors should be used for applications at frequencies of above 200 MHz. Below this frequency, the loss associated with using non-constant impedance connectors is not
+usually significant.
+
+Figure 2.41 shows the method of fitting a typical BNC connector to a coaxial cable. Fitting requires careful preparation of the coaxial cable. The outer braided screen is fanned out, as shown in Figure 2.41(b) and Figure 2.41(c), and clamped in place, whereas the inner conductor is usually soldered to the centre contact, as shown in Figure 2.41(d).
+
+2.11 Standing wave ratio
+
+Matching a source (such as a transmitter) to a load (such as an aerial) is an important consideration because it allows the maximum transfer of power from one to the other. Ideally, a feeder should present a perfect match between the impedance of the source and the impedance of the load. Unfortunately this is seldom the case and all too often there is some degree of mismatch present. This section explains the consequences of mismatching a source to a load and describes how the effect of a mismatch can be quantified in terms of standing wave ratio (SWR).
+
+Where the impedance of the transmission line or feeder perfectly matches that of the aerial, all of the energy delivered by the line will be transferred to the load (i.e. the aerial). Under these conditions, no energy will be reflected back to the source. 
+
+If the match between source and load is imperfect, a proportion of the energy arriving at the load will be reflected back to the source. The result of this is that a standing wave pattern of voltage and current will appear along the feeder (see Figure 2.42).
+
+The standing wave shown in Figure 2.42 occurs when the wave travelling from the source to the load (i.e. the forward wave) interacts with the wave travelling from the load to the source (the reflected wave). It is important to note that both the forward and reflected waves are moving but in opposite directions. The standing wave, on the other hand, is stationary.
+
+As indicated in Figure 2.42, when a standing wave is present, at certain points along the feeder the voltage will be a maximum whilst at others it will take a minimum value. The current distribution along the feeder will have a similar pattern (note, however, that the voltage maxima will coincide with the current minima, and vice versa).
+
+Four possible scenarios are shown in Figure 2.43. In Figure 2.43(a) the feeder is perfectly matched to the load. Only the forward wave is present, and there is no standing wave. This is the ideal case in which all of the energy generated by the source is absorbed by the load.
+
+In Figure 2.43(b) the load is short-circuit. This represents one of the two worst-case scenarios as the voltage varies from zero to a very high positive value. In this condition, all of the generated power is reflected back to the source. In Figure 2.43(c) the load is open-circuit. This represents the other worst-case scenario. Here again, the voltage varies from zero to a high positive value and, once again, all of the generated power is reflected back to the source. In Figure 2.43(d) the feeder is terminated by an impedance that is different from the feeder’s characteristic impedance but is neither a short-circuit nor an open-circuit. This condition lies somewhere between the extreme and perfectly matched cases. The standing wave ratio (SWR) of a feeder or transmission line is an indicator of the effectiveness of the impedance match between the transmission line and the antenna. The SWR is the ratio of the maximum to the minimum current along the length of the transmission line, or the ratio of the maximum to the minimum voltage.
+
+When the line is absolutely matched the SWR is unity. In other words, we get unity SWR when there is no variation in voltage or current along the transmission line.
+
+The greater the number representing SWR, the larger the mismatch. Also, I 2 R losses increase with increasing SWR.
+
+For a purely resistive load:
+
+
+where Z 0 is the characteristic impedance of the transmission line (in ohms) and Z r is the impedance of the load (also in ohms). Note that, since SWR is a ratio, it has no units. SWR is optimum (i.e. unity) when Z r is equal to Z 0 . It is unimportant as to which of these terms is in the numerator. Since SWR cannot be less than 1, it makes sense to put whichever is the larger of the two numbers in the numerator. The average values of RF current and voltage become larger as the SWR increases. This, in turn, results in increased power loss in the series loss resistance and leakage conductance respectively. For values of SWR between 1 and 2 this additional feeder loss is not usually significant and is typically less than 0.5 dB. However, when the SWR exceeds 2.5 or 3, the additional loss becomes increasingly significant and steps should be taken to reduce it to a more acceptable value. 
+
+2.11.1 SWR measurement 
+
+Standing wave ratio is easily measured using an instrument known as an SWR bridge, SWR meter or a combined SWR/power meter (see Figure 2.44). Despite the different forms of this instrument the operating principle involves sensing the forward and reflected power and displaying the difference between them. Figure 2.45 shows the scale calibration for the SWR meter circuit shown in Figure 2.46. The instrument comprises a short length of transmission line with two inductively and capacitively coupled secondary lines. Each of these secondary lines is terminated with a matched resistive load and each has a signal detector. Secondary line L1 (and associated components D1 and R1) is arranged so that it senses the forward wave, whilst secondary line L2 (and associated components D2 and R2) is connected so that it senses the reflected wave. In use, RF power is applied to the system, the meter is switched to indicate the forward power and VR1 is adjusted for full-scale deflection. Next, the meter is switched to indicate the reflected power and the SWR is read directly from the meter scale. More complex instruments use cross-point meter movements where the two pointers simultaneously indicate forward and reflected power, and the point at which they intersect (read from a third scale) gives the value of SWR present.
+
+The point at which the SWR in a system is measured is important. To obtain the most meaningful indication of the SWR of an aerial the SWR should ideally be measured at the far end of the feeder (i.e. at the point at which the feeder is connected to the aerial). The measured SWR will actually be lower at the other end of the feeder (i.e. at the point at which the feeder is connected to the transmitter). The reason for this apparent anomaly is simply that the loss present in the feeder serves to improve the apparent SWR seen by the transmitter. The more lossy the feeder the better the SWR! Sudden deterioration of antenna performance and an equally sudden increase in SWR usually points either to mechanical failure of the elements or to electrical failure of the feed-point connection, feeder or RF connectors. Gradual deterioration, on the other hand, is usually associated with corrosion or ingress of fluids into the antenna structure, feeder or antenna termination. 
+
+The SWR of virtually all practical aerial/feeder arrangements is liable to some considerable variation with frequency. For this reason, it is advisable to make measurements at the extreme limits of the frequency range as well as at the centre frequency. In the case of a typical transmitting aerial, the SWR can vary from 2:1 at the band edges to 1.2:1 at the centre. Wideband aerials, particularly those designed primarily for receiving applications, often exhibit significantly higher values of SWR. This makes them unsuited to transmitting applications.
+
+2.11.2 A design example
+
+In order to pursue this a little further it’s worth taking an example with some measured values to confirm that the SWR of a half-wave dipole (see page 26) really does change in the way that we have predicted. This example further underlines the importance of SWR and the need to have an accurate means of measuring it. Assume that we are dealing with a simple half-wave dipole aerial that is designed with the following parameters: 
+
+Centre frequency:
+
+Feed-line impedance:
+
+Dipole length:
+
+Element diameter:
+
+Bandwidth:
+
+Q-factor:
+
+250 MHz
+
+75 ohm
+
+0.564 meters
+
+5 mm
+
+51 MHz
+
+4.9
+
+The calculated resistance of this aerial varies from about 52 Ω at 235 MHz to 72 Ω at 265 MHz. Over the same frequency range its reactance varies from about −37 Ω (a capacitive reactance) to +38 Ω (an inductive reactance). As predicted, zero reactance at the feed point occurs at a frequency of 250 MHz for the dipole length in question. This relationship is shown in Figure 2.47.
+
+Measurements of SWR show a minimum value of about 1.23 occurring at about 251 MHz and an expected gradual rise either side of this value (see Figure 2.48). This graph shows that the transmitting bandwidth is actually around 33 MHz (extending from 237 MHz to around 270 MHz) for an SWR of 2:1 instead of the intended 51 MHz. Clearly this could be a problem in an application where a transmitter is to be operated with a maximum SWR of 2:1 The bandwidth limitation of a system (comprising transmitter, feeder and aerial) is usually attributable to the inability of a transmitter to operate into a load that has any appreciable amount of reactance present rather than to an inability of the aerial to radiate effectively. Most aerials will radiate happily at frequencies that are some distance away from their resonant frequency—the problem is more one of actually getting the power that the transmitter is capable of delivering into them!
+
+Key point
+
+SWR tests can provide a rapid check of antennas and matching arrangements. VSWR will vary with frequency, but for most purposes a VSWR of 1.5:1 (or even 2:1) will be indicative of satisfactory antenna/matching performance. Always carry out VSWR checks on installed/modified/disturbed antenna systems using an approved test set and keep well away from a radiating antenna.
+
+
+2.12 Waveguide
+
+Conventional coaxial cables are ideal for coupling RF equipment at LF, HF and VHF. However, at microwave frequencies (above 3 GHz, or so), this type of feeder can have significant losses and is also restricted in terms of the peak RF power (voltage and current) that it can handle. Because of this, waveguide feeders are used to replace coaxial cables for SHF and EHF applications, such as weather radar. A waveguide consists of a rigid or flexible metal tube (usually of rectangular cross-section) in which an electromagnetic wave is launched. The wave travels with very low loss inside the waveguide with its magnetic field component (the H-field) aligning with the broad dimension of the waveguide and the electric field component (the E-field) aligning with the narrow dimension of the waveguide (see Figure 2.49).
+
+A simple waveguide system is shown in Figure 2.50. The SHF signal is applied to a quarter wavelength coaxial probe. The wave launched in the guide is reflected from the plane blanked-off end of the waveguide and travels through sections of waveguide to the load (in this case a horn antenna, see page 37). An example of the use of a waveguide is shown in Figure 2.51. In this application a flexible waveguide is used to feed the weather radar antenna mounted in the nose of a large passenger aircraft. The antenna comprises a flat steerable plate with a large number of radiating slots (each equivalent to a half-wave dipole fed in phase).
+
+Test your understanding 2.9
+
+Figure 2.52 shows the frequency response of a vertical quarter-wave antenna used for local VHF communications. Use the graph to determine the following:
+
+(a)      The frequency at which the SWR is minimum
+(b)      The 2:1 SWR bandwidth of the antenna
+(c)      The reactance of the antenna at 120 MHz
+(d)      The resistance of the antenna at 120 MHz
+(e)      The frequency at which the reactance of the antenna is a minimum
+(f) The frequency at which the resistance of the antenna is 50 Ω.
+
+Test your understanding 2.10
+
+Explain what is meant by standing wave ratio (SWR) and why this is important in determining the performance of an antenna/feeder combination.
+
+2.13 Multiple choice questions
+
+1. An isotropic radiator will radiate:
+
+(a) only in one direction
+
+(b) in two main directions
+
+(c) uniformly in all directions.
+
+2. Another name for a quarter-wave vertical antenna is:
+
+(a) a Yagi antenna
+
+(b) a dipole antenna
+
+(c) a Marconi antenna.
+
+3. A full-wave dipole fed at the centre must be: 
+
+(a) current fed
+
+(b) voltage fed
+
+(c) impedance fed.
+
+4. The radiation efficiency of an antenna:
+
+(a) increases with antenna loss resistance
+
+(b) decreases with antenna loss resistance
+
+(c) is unaffected by antenna loss resistance.
+
+5. A vertical quarter-wave antenna will have a polar diagram in the horizontal plane which is:
+
+(a) unidirectional
+
+(b) omnidirectional
+
+(c) bi-directional.
+
+6. Which one of the following gives the approximate length of a half-wave dipole for use at 300 MHz?
+
+(a) 50 cm
+
+(b) 1 m
+
+(c) 2 m.
+
+7. A standing wave ratio of 1:1 indicates:
+
+(a) that there will be no reflected power
+
+(b) that the reflected power will be the same as the forward power
+
+(c) that only half of the transmitted power will actually be radiated.
+
+8. Which one of the following gives the 2:1 SWR bandwidth of the antenna whose
+frequency response is shown in Figure 2.53?
+
+(a) 270 kHz
+
+(b) 520 kHz
+
+(c) 11.1 MHz.
+
+9. Which one of the following antenna types would be most suitable for a fixed long distance HF communications link?
+
+(a) a corner reflector
+
+(b) two stacked vertical dipoles
+
+(c) a three-element horizontal Yagi.
+
+10. What type of antenna is shown in Figure 2.54?
+
+(a) a folded dipole
+
+(b) a Yagi
+
+(c) a corner reflector.
+
+11. When two antennas are vertically stacked the combination will have:
+
+(a) increased gain and decreased beamwidth
+
+(b) decreased gain and increased beamwidth
+
+(c) increased gain and unchanged beamwidth.
+
+12. The characteristic impedance of a coaxial cable depends on:
+
+(a) the ratio of inductance to capacitance
+
+(b) the ratio of resistance to inductance
+
+(c) the product of the resistance and reactance (either capacitive or inductive).
+
+13. The attenuation of an RF signal in a coaxial cable:
+
+(a) increases with frequency
+
+(b) decreases with frequency
+
+(c) stays the same regardless of frequency.
+
+14. If a transmission line is perfectly matched to an aerial load it will:
+
+(a) have no impedance
+
+(b) be able to carry an infinite current
+
+(c) appear to be infinitely long.
+
+15. The characteristic impedance of an RF coaxial cable is:
+
+(a) usually between 50 and 75 Ω
+
+(b) either 300 or 600 Ω
+
+(c) greater than 600 Ω.
+
+16. The beamwidth of an antenna is measured:
+
+(a) between the 50% power points
+
+(b) between the 70% power points
+
+(c) between the 90% power points.
+

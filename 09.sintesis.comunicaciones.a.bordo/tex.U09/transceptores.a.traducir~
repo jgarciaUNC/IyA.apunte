@@ -1,0 +1,63 @@
+Transmitters and receivers
+
+
+Transmitters and receivers are used extensively in aircraft communication and navigation systems.
+
+In conjunction with one ore more antennas, they are responsible for implementing the vital link between the aircraft, ground stations, other aircraft and satellites. This chapter provides a general introduction to the basic principles and operation of transmitters and receivers. These themes are further developed in Chapters 4 and 5.
+
+3.1 A simple radio system
+
+
+Figure 31 shows a simple radio communication system comprising a transmitter and receiver for use with continuous wave (CW) signals. Communication is achieved by simply switching (or 'keying') the radio frequency signal on and off. Keying can be achieved by interrupting the supply to the power amplifier stage or even the oscillator stage; however, it is normally applied within the driver stage that operates at a more modest power level. Keying the oscillator stage usually results in impaired frequency stability. On the other hand, attempting to interrupt the appreciable currents and/or voltages that appear in the power amplifier stage can also prove to be somewhat problematic.
+
+The simplest form of CW receiver consists of nothing more than a radio frequency amplifier (which provides gain and selectivity) followed by a detector and an audio amplifier. The detector stage mixes a locally generated radio frequency signal produced by the beat frequency oscillator (BFO) with the incoming signal to produce a signal that lies within the audio frequency range (typically between 300 Hz and 3.4 kHz).
+
+As an example, assume that the incoming signal is at a frequency of 1 00 kHz and that the BFO is producing a signal at 99 kHz. A signal at the difference between these two frequencies ( 1 kHz) will appear at the output of the detector stage. This will then be amplified within the audio stage before being fed to the loudspeaker.
+
+Example 3.1.1
+
+A radio wave has a frequency of 1 62 . 5 kHz. If a beat frequency of 1 .25 kHz is to be obtained, determine the two possible BFO frequencies.
+
+
+The B FO can b e above o r below the incoming signal frequency by an amount that is equal to the beat frequency (i.e. the audible signal that results from the 'beating' of the two frequencies and which appears at the output of the detector stage). 
+
+Hence, ]sFO = !RF ± ]AF from which:
+
+fsFO = ( 1 62.5 ± 1 .25) kHz = 1 60.75 or 1 63 .25 kHz
+
+Test your understanding 3.1
+
+An audio frequency signal of 850 Hz is produced when a BFO is set to 455.5 kHz. What is the input signal frequency to the detector?
+
+3.1 .1 Morse code
+
+Transmitters and receivers for CW operation are extremely simple but nevertheless they can be extremely efficient. This makes them particularly useful for disaster and emergency communication or for any situation that requires optimum use of low power equipment. Signals are transmitted using the code invented by Samuel Morse (see Figures 3 .2 and 3 . 3 ) .
+
+Figure 3.3 Morse code signal for the letter C
+
+3.2 Modulation and demodulation
+
+In order to convey information using a radio frequency carrier, the signal information must be superimposed or 'modulated' onto the carrier.
+
+Modulation is the name given to the process of changing a particular property of the carrier wave in sympathy with the instantaneous voltage (or current) signal.
+
+The most commonly used methods of modulation are amplitude modulation (AM) and frequency modulation (FM). In the former case, the carrier amplitude (its peak voltage) varies according to the voltage, at any instant, of the modulating signal. In the latter case, the carrier frequency is varied in accordance with the voltage, at any instant, of the modulating signal.
+
+Figure 3 .4 shows the effect of amplih1de and frequency modulating a sinusoidal carrier (note that the modulating signal is in this case also sinusoidal). In practice; many more cycles of the RF carrier would occur in the time-span of one cycle of the modulating signal. The process of modulating a carrier is undertaken by a modulator circuit, as shown in Figure 3.5. The input and output waveforms for amplitude and frequency modulator circuits are shown in Figure 3.6.
+
+Demodulation is the reverse of modulation and is the means by which the signal information is recovered from the modulated carrier.
+
+Demodulation is achieved by means of a demodulator (sometimes also called a detector). 
+
+The output of a demodulator consists of a reconstructed version of the original signal information present at the input of the modulator stage within the transmitter. The input and output waveforms for amplitude and frequency modulator circuits are shown in Figure 3 .6. We shall see how this works a little later.
+
+3.3. AM transmitters
+
+Figure 3.7 shows the block schematic of a simple AM transmitter. An accurate and stable RF oscillator generates the radio frequency carrier signal. The output of this stage is then amplified and passed to a modulated RF power amplifier stage. The inclusion of an amplifier between the RF oscillator and the modulated stage also helps to improve frequency stability.
+
+The low-level signal from the microphone is amplified using an AF amplifier before it is passed to an AF power amplifier. The output of the power amplifier is then fed as the supply to the modulated RF power amplifier stage.
+
+Increasing and reducing the supply to this stage is instrumental in increasing and reducing the amplitude of its RF output signal. 
+
+The modulated RF signal is then passed through an antenna coupling unit. This unit matches the antenna to the RF power amplifier and also helps to reduce the level of any unwanted harmonic components that may be present. The AM transmitter shown in Figure 3.7 uses high-level modulation in which the modulating signal is applied to the final RF power amplifier stage.
+

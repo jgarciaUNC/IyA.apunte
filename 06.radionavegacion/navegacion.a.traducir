@@ -1,0 +1,373 @@
+Aircraft navigation
+
+Navigation is the science of conducting journeys over land and/or sea. Whether the journey is to be made across deserts or oceans, we need to know the ultimate destination and how the journey’s progress will be checked along the way. Finding a position on the earth’s surface and  deciding on the direction of travel can be simply made by observations or by mathematical calculations. 
+
+Aircraft navigation is no different, except that the speed of travel is much faster! Navigation systems for aircraft have evolved with the nature and role of the aircraft itself. Starting with visual references and the basic compass, leading on to radio ground aids and self-contained systems, many techniques and methods are employed.
+
+Although the basic requirement of a navigation system is to guide the crew from point A to point B, increased traffic density and airline economics means that more than one aircraft is planning a specific route. Flight planning takes into account such things as favourable winds, popular destinations and schedules. Aircraft navigation is therefore also concerned with the management of traffic and safe separation of aircraft. This chapter reviews some basic features of the earth’s geometry as it relates to navigation and introduces some basic aircraft navigation terminology. The chapter concludes by reviewing a range of navigation systems used on modern transport and military aircraft (a full description of these systems follows in subsequent chapters).
+
+8.1 The earth and navigation
+
+Before looking at the technical aspects of navigation systems, we need to review some basic features of the earth and examine how these features are employed for aircraft navigation purposes. Although we might consider the earth to be a perfect sphere, this is not the case. There is a flattening at both the poles such that the earth is shaped more like an orange. For short distances, this is not significant; however, for long-range (i.e. global) navigation we need to know some accurate facts about the earth. The mathematical definition of a sphere is where the distance (radius) from the centre to the surface is equidistant. This is not the case for the earth, where the actual shape is referred to as an oblate spheroid.
+
+8.1.1 Position
+
+To define a unique two-dimensional position on the earth’s surface, a coordinate system using imaginary lines of latitude and longitude is drawn over the globe, see Figure 8.1. Lines of longitude join the poles in great circles or meridians. A great circle is defined as the intersection of a sphere by a plane passing through the centre of the sphere; this has a radius measured from the centre to the surface of the earth. These north–south lines are spaced around the globe and measured in angular distance from the zero (or prime) meridian, located in Greenwich, London. Longitude referenced to the prime-meridian extends east or west up to 180 degrees. Note that the distance between lines of longitude converges at the poles. Latitude is the
+angular distance north or south of the equator; the poles are at latitude 90 degrees.
+
+For accurate navigation, the degree (symbol ° after the value, e.g. 90° north) is divided by 60 giving the unit of minutes (using the symbol ' after numbers), e.g. one half of a degree will be 30'. This can be further refined into smaller units by dividing again by 60 giving the unit of seconds (using the symbol " after numbers), e.g. one half of a minute will be 30". A second of latitude (or longitude at the equator) is approximately 31 meters, just over 100 feet.
+
+Defining a unique position on the earth’s surface, e.g. Land’s End in Cornwall, UK, using latitude and longitude, is written as:
+
+Latitude N 50° 04' 13" Longitude W 5° 42' 42"
+
+Key point
+
+Horizontal magnetic lines of flux are only of use to a compass between latitudes of 70 degrees.
+
+Between latitudes of 50 degrees, the strength of horizontal field lines have decreased by up to 50%.
+
+8.1.2 Direction
+
+Direction to an observed point (bearing) can be referenced to a known point on the earth’s surface, e.g. magnetic north. Bearing is defined as the angle between the vertical plane of the reference point through to the vertical plane of the observed point. Basic navigational information is expressed in terms of compass points from zero referenced to north through 360° in a clockwise direction, see Figure 8.2(b). For practical navigation purposes, north has been taken from the natural feature of the earth’s magnetic field; however; magnetic north is not at 90° latitude; the latter defines the position of true north. The location of magnetic north is in the Canadian Arctic, approximately 83° latitude and 115° longitude west of the prime meridian, see Figure 8.3. 
+
+Magnetic north is a natural feature of the earth’s geology; it is slowly drifting across the Canadian Arctic at approximately 40 km northwest per year.
+
+Over a long period of time, magnetic north describes an elliptical path. The Geological Survey of Canada keeps track of this motion by periodically carrying out magnetic surveys to re-determine the pole’s location. In addition to this long-term change, the earth’s magnetic field is also affected on a random basis by the weather, i.e. electrical storms.
+
+Navigation charts based on magnetic north have to be periodically updated to consider this gradual drift. Compass-based systems are referenced to magnetic north; since this is not at 90° latitude, there is an angular difference between magnetic and true north. This difference will be zero if the aircraft’s position happens to be on the same longitude as magnetic north, and maximum at longitudes 90° either side of this longitude. The angular difference between magnetic north and true north is called magnetic variation. It is vital that when bearings or headings are used, we are clear on what these are referenced to.
+
+The imaginary lines of latitude and longitude described above are curved when superimposed on the earth’s surface; they also appear as straight lines when viewed from above. The shortest distance between points A and B on a given route is a straight line. When this route is examined, the projection of the path (the track) flown by the aircraft over the earth’s surface is described by a great circle.
+
+Flying in a straight line implies that we are maintaining a constant heading, but this is not the case. Since the lines of longitude converge, travelling at a constant angle at each meridian yields a track that actually curves as illustrated in Figure 8.4. A track that intersects the lines of longitude at a constant angle is referred to as a rhumb line. Flying a rhumb line is readily achieved by reference to a fixed point, e.g. magnetic north. The great circle route; however, requires that the direction flown (with respect to the meridians) changes at any given time, a role more suited to a navigation computer.
+
+Aircraft communications and navigation systems Figure 8.3 Approximate location of magnetic north
+
+8.1.3 Distance and speed
+
+The standard unit of measurement for distance used by most countries around the world (the  exceptions being the UK and USA) is the kilometer (km). This quantity is linked directly to the earth’s geometry; the distance between the poles and equator is 10,000 km. The equatorial radius of the earth is 6378 km; the polar radius is 6359 km.
+
+For aircraft navigation purposes, the quantity of distance used is the nautical mile (nm). This quantity is defined by distance represented by one minute of arc of a great circle (assuming the earth
+to be a perfect sphere). The nautical mile (unlike the statute mile) is therefore directly linked to the geometry of the earth. Aircraft speed, i.e. the rate of change of distance with respect to time, is given by the quantity ‘knots’; nautical miles per hour.
+
+Calculating the great circle distance between two positions defined by an angle is illustrated in Figure 8.5. The distance between two positions defined by their respective latitudes and longitudes, (lat1, lon1) and (lat2, lon2), can be calculated from the formula:
+
+d = cos −1 (sin(lat1) sin(lat2) + cos(lat1)
+(lat2) cos(lon1−lon2))
+
+Test your understanding 8.1
+
+Explain each of the following terms:
+
+1.
+2.
+3.
+4.
+Latitude
+Longitude
+Great circle
+Rhumb line.
+
+Key point
+
+The nautical mile (unlike the statute mile) is directly linked to the geometry of the earth. This quantity is defined by distance represented by one degree of arc of a great circle (assuming the earth to be a perfect sphere).
+
+One nautical mile = 1.15 statute miles; 1852 meters; 6076 feet
+
+Key point
+
+Although we might consider the earth to be a perfect sphere, this is not the case. The actual shape of the earth is referred to as an oblate spheroid.
+
+Key point
+
+Longitude referenced to the prime-meridian extends east or west up to 180 degrees. Latitude is the angular distance north or south of the equator; the poles are at a latitude of 90 degrees.
+
+Key point
+
+The nautical mile (unlike the statute mile) is directly linked to the geometry of the earth. This quantity is defined by distance represented by one minute of arc of a great circle (assuming the earth to be a perfect sphere).
+
+
+Key point
+Both latitude and longitude are angular quantities measured in degrees. For accurate navigation, degrees can be divided by 60, giving the unit of ‘minutes’; this can be further divided by 60, giving the unit of ‘seconds’.
+
+8.2 Dead reckoning
+
+Estimating a position by extrapolating from a known position and then keeping note of the direction, speed and elapsed time is known as dead reckoning. An aircraft passing over a given point on a heading of 90° at a speed of 300 knots will be five miles due east of the given point after one minute. If the aircraft is flying in zero wind conditions, this simple calculation holds true. In realistic terms, the aircraft will almost certainly be exposed to wind at some point during the flight and this will affect the navigation calculation. 
+
+With our aircraft flying on a heading of 90° at a speed of 300 knots, let’s assume that the wind is blowing from the south at 10 knots, see Figure 8.6. In a one-hour time period, the air that the aircraft is flying in will have moved north by ten nautical miles. This means that the aircraft’s path (referred to as its track) over the earth’s surface is not due east. In other words, the aircraft track is not the same as the direction in which the aircraft is heading. This leads to a horizontal displacement (drift) of the aircraft from the track it would have followed in zero wind conditions.
+
+The angular difference between the heading and track is referred to as the drift angle (quoted as being to port/left or starboard/right of the heading). If the wind direction were in the same direction as the aircraft heading, i.e. a tail wind, the aircraft speed of 300 knots through the air would equate to a ground speed of 310 knots.
+
+Likewise, if the wind were from the east (a headwind) the ground speed would be 290 knots. 
+
+Knowledge of the wind direction and speed allows the crew to steer the aircraft into the wind such that the wind actually moves the aircraft onto the desired track. For dead reckoning purposes, we can resolve these figures in mathematical terms and determine a position by triangulation as illustrated in Figure 8.7. Although the calculation is straightforward, the accuracy of navigation by dead reckoning will depend on up to date knowledge of wind speed and direction. 
+
+Furthermore, we need accurate measurements of speed and direction. Depending on the accuracy of measuring these parameters, positional error will build up over time when navigating by dead reckoning. We therefore need a means of checking our calculated position on a periodic basis; this is the process of position fixing.
+
+Key point
+
+Dead reckoning is used to estimate a position by extrapolating from a known position and then keeping note of the direction and distance travelled.
+
+Key point
+
+The angular difference between the heading and track is referred to as the drift angle. 
+
+8.3 Position fixing
+
+When travelling short distances over land, natural terrestrial features such as rivers, valleys, hills, etc., can be used as direct observation to keep a check on (pinpointing) the journey’s progress. If the journey is by sea, then we can use the coastline and specific features such as lighthouses to confirm our position. If the journey is now made at night or out of sight of the coast, we need other means of fixing our position.
+
+The early navigators used the sun, stars and planets very effectively for navigation purposes; if the position of these celestial objects is known, then the navigator can confirm a position anywhere on the earth’s surface. Celestial navigation (or astronavigation) was used very effectively in the early days of long distance aircraft navigation. Indeed, it has a number of distinct advantages when used by the military: the aircraft does not radiate any signals; navigation is independent of ground equipment; the references cannot be jammed; and navigation references are available over the entire globe. The disadvantage of celestial navigation for aircraft is that the skies are not always clear and it requires a great deal of skill and knowledge to be able to fix a position whilst travelling at high speed. Although automated celestial navigation systems were developed for use by the military, they are expensive; modern avionic equipment has now phased out the use of celestial navigation for commercial aircraft.
+
+The earliest ground-based references (navigation aids) developed for aircraft navigation are based on radio beacons. These beacons can provide angular and/or distance information; when using this information to calculate a position fix, the terms are referred to mathematically as theta (θ) and rho (ρ). By utilising the directional properties of radio waves, the intersection of signals from two or more navigation aids can be used to fix a position (theta–theta), see Figure 8.8. Alternatively, if we know the distance and direction (bearing) to a navigation aid, the aircraft position can be confirmed (rho–theta). Finally, we can establish our position if we know the aircraft’s distance (rho–rho) from any two navigation aids, i.e. without knowledge of the bearing.
+
+8.4 Maps and charts
+
+Maps provide the navigator with a representative diagram of an area that contains a variety of physical features, e.g. cities, roads and topographical information. Charts contain lines of latitude and longitude together with essential data such as the location of navigation aids. Creating charts and maps requires that we transfer distances and geographic features from the earth’s spherical surface onto a flat piece of paper. This is not possible without some kind of compromise in geographical shape, surface area, distance or direction. Many methods of producing charts have been developed over the centuries; the choice of projection depends on the intended purpose. 
+
+In the sixteenth century Gerhardus Mercator, the Flemish mathematician, geographer and cartographer, developed what was to become the standard chart format for nautical navigation: the Mercator projection. This is a cylindrical map projection where the lines of latitude and longitude are projected from the earth’s centre, see Figure 8.9. Imagine a cylinder of paper wrapped around the globe and a light inside the globe; this projects the lines of latitude and longitude onto the paper. 
+
+When the cylinder is unwrapped, the lines of latitude appear incorrectly as having equal length. 
+
+Directions and the shape of geographic features remain true; however, distances and sizes become distorted. The advantage of using this type of chart is that the navigator sets a constant heading to
+reach the destination. The meridians of the Mercator projected chart are crossed at the same angle; the track followed is referred to as a rhumb line (see Figure 8.4).
+
+For aircraft navigation the Mercator projection might be satisfactory; however, if we want to  navigate by great circle routes then we need true directions. An alternative projection used for aircraft navigation, and most popular maps and charts, is the Lambert azimuthal equal-area projection. This projection was developed by Johann Heinrich Lambert (1728–77) and is particularly useful in high latitudes. The projection is developed from the centre point of the geographic feature to be surveyed and charted. Using true north as an example, Figure 8.10 illustrates the Lambert projection.
+
+8.5 Navigation terminology
+
+The terms shown in Table 8.1 are used with numerous navigaton systems including INS and RNAV; computed values are displayed on a control display unit (CDU) and/or primary flight instruments. These terms are illustrated in Figure 8.11, all terms are referenced to true north.
+
+8.6 Navigation systems development
+
+This section provides a brief overview of the development of increasingly sophisticated navigation systems used on aircraft.
+
+8.6.1 Gyro-magnetic compass
+
+The early aviators used visual aids to guide them along their route; these visual aids would have included rivers, roads, rail tracks, coastlines, etc. 
+
+This type of navigation is not possible at high altitudes or in low visibility and so the earth’s magnetic field was used as a reference, leading to the use of simple magnetic compasses in aircraft. 
+
+We have seen that magnetic variation has to be taken into account for navigation; there are additional considerations to be addressed for compasses in aircraft. The earth’s magnetic field around the aircraft will be affected by:
+
+Term
+
+Abbreviation
+
+Description
+
+Cross track distance 
+
+XTK 
+
+Shortest distance between the present position and desired track
+
+Desired track angle 
+
+DSRTK 
+
+Angle between north and the intended flight path of the aircraft 
+
+Distance 
+
+DIS 
+
+Great circle distance to the next waypoint or destination
+
+Drift angle 
+
+DA 
+
+Angle between the aircraft’s heading and ground track
+
+Ground track angle 
+
+TK 
+
+Angle between north and the flight path of the aircraft
+
+Heading 
+
+HDG 
+
+Horizontal angle measured clockwise between the aircraft’s centreline (longitudinal axis) and a specified reference
+
+Present position 
+
+POS 
+
+Latitude and longitude of the aircraft’s position
+
+Track angle error 
+
+TKE 
+
+Angle between the actual track and desired track (equates to the desired track angle minus the ground track angle)
+
+Wind direction 
+
+WD 
+
+Angle between north and the wind vector
+
+True airspeed 
+
+TAS 
+
+True airspeed measured in knots
+
+Wind speed 
+
+WS 
+
+Measured in knots
+
+Ground speed 
+
+GS 
+
+Measured in knots
+
+the aircraft’s own ‘local’ magnetic fields, e.g. those caused by electrical equipment
+
+sections of the aircraft with high permeability causing the field to be distorted.
+
+Magnetic compasses are also unreliable in the short term, i.e. during turning manoeuvres.
+
+Directional gyroscopes are reliable for azimuth guidance in the short term but drift over longer time periods. A combined magnetic compass stabilised by a directional gyroscope (referred to as a gyro-magnetic compass) can overcome these deficiencies. The gyro-magnetic compass (see Figure 8.12), together with an airspeed indicator, allowed the crew to navigate by dead reckoning, i.e. estimating their position by extrapolating from a known position and then keeping note of the direction and distance travelled.
+
+In addition to directional references, aircraft also need an attitude reference for navigation, typically from a vertical gyroscope. Advances in sensor technology and digital electronics have led to combined attitude and heading reference systems (AHRS) based on laser gyros and microelectromechanical sensors (see Chapter 17).
+
+Instrumentation errors inevitably lead to deviations between the aircraft’s actual and calculated positions; these deviations accumulate over time. Crews therefore need to be able to confirm and update their position by means of a fixed ground-based reference, e.g. a radio navigation aid.
+
+8.6.2 Radio navigation
+
+Early airborne navigation systems using ground-based navigation aids consisted of a loop antenna in the aircraft tuned to amplitude modulation (AM) commercial radio broadcast stations transmitting in the low/medium frequency (LF/MF) bands. Referring to Figure 8.13, pilots would know the location of the radio station (indeed, it would invariably have been located close to or even in the town/city that the crew wanted to fly to), and this provided a means of fixing a position. Although technology has moved on, these automatic direction finder (ADF) systems are still in use today.
+
+Operational problems are encountered using low frequency (LF) and medium frequency (MF) transmissions. During the mid to late 1940s, it was evident to the aviation world that an accurate and reliable short-range navigation system was needed. Since radio communication systems based on very high frequency (VHF) were being successfully deployed, a decision was made to develop a radio navigation system based on VHF.
+
+This system became the VHF omnidirectional range (VOR) system, see Figure 8.14; a system that is in widespread use throughout the world today. VOR is the basis of the current network of ‘airways’ that are used in navigation charts. 
+
+The advent of radar in the 1940s led to the development of a number of navigation aids including distance measuring equipment (DME). This is a short/medium-range navigation system, often used in conjunction with the VOR system to provide accurate navigation fixes. The system is based on secondary radar principles, see Figure 8.15.
+
+Navigation aids such as automatic direction finder (ADF), VOR and DME are used to define airways for en route navigation, see Figure 8.16. They are also installed at airfields to assist with approaches to those airfields. These navigation aids cannot, however, be used for precision approaches and landings. The standard approach and landing system installed at airfields around the world is the instrument landing system
+(ILS), see Figure 8.17. The ILS uses a combination of VHF and UHF radio waves and has been in operation since 1946. There are a number of shortcomings with ILS; in 1978 the microwave landing system (MLS) was adopted as the long-term replacement. The system is based on the principle of time referenced scanning beams and provides precision navigation guidance for approach and landing. MLS provides three-dimensional approach guidance, i.e. azimuth, elevation and range. The system provides multiple approach angles for both azimuth and elevation guidance. Despite the advantages of MLS, it has not yet been introduced on a worldwide basis for commercial aircraft. Military operators of MLS often use mobile equipment that can be deployed within hours.
+
+The aforementioned radio navigation aids have one disadvantage in that they are land based and  only extend out beyond coastal regions. Long-range radio navigation systems based on hyperbolic navigation were introduced in the 1940s to provide for en route operations over oceans and unpopulated areas. Several hyperbolic systems have been developed since, including Decca, Omega and Loran. The operational use of Omega and Decca navigation systems ceased in 1997 and 2000 respectively. Loran systems are still very much available today as stand-alone systems; they are also being proposed as a complementary navigation aid for global navigation satellite systems. The Loran-C system is based on a master station and a number of secondary stations; the use of VLF radio provides an increased area of coverage, see Figure 8.18. 
+
+The advent of computers, in particular the increasing capabilities of integrated circuits using digital techniques, has led to a number of advances in aircraft navigation. One example of this is the area navigation system (RNAV); this is a means of combining, or filtering, inputs from one or more navigation sensors and defining positions that are not necessarily colocated with ground-based navigation aids. 
+
+ Typical navigation sensor inputs to an RNAV system can be from external ground-based navigation aids such as VHF omni directional range (VOR) and distance measuring equipment (DME), see Figure 8.19.
+
+8.6.3 Dead reckoning systems
+
+Dead reckoning systems require no external inputs or references from ground stations. Doppler navigation systems were developed in the mid-1940s and introduced in the mid-1950s as a primary navigation system. Ground speed and drift can be determined using a fundamental scientific principle called Doppler shift. Being self-contained, the system can be used for long-distance navigation over oceans and undeveloped
+areas of the globe. 
+
+A major advance in aircraft navigation came with the introduction of the inertial navigation system (INS). This is an autonomous dead reckoning system, i.e. it requires no external inputs or references from ground stations. The system was developed in the 1950s for use by the US military and subsequently the space programmes. INS were introduced into commercial aircraft service during the early 1970s. The system is able to compute navigation data such as present position, distance to waypoint, heading, ground speed, wind speed, wind direction, etc. It does not need radio navigation inputs and it does not transmit radio frequencies. Being self-contained, the system can be used for long distance navigation over oceans and undeveloped areas of the globe.
+
+
+8.6.4 Satellite navigation
+
+Navigation by reference to the stars and planets has been employed since ancient times; commercial aircraft used to have periscopes to take celestial fixes for long distance navigation. 
+
+An artificial constellation of navigation aids was initiated in 1973 and referred to as Navstar (navigation system with timing and ranging).  The global positioning system (GPS) was developed for use by the US military; the first satellite was launched in 1978 and the full constellation was in place and operating by 1994. GPS is now widely available for use by many applications including aircraft navigation; the system calculates the aircraft position by triangulating the distances from a number of satellites, see Figure 8.20.
+
+8.6.5 Radar navigation
+
+The planned journey from A to B could be affected by adverse weather conditions. Radar was introduced onto passenger aircraft during the 1950s to allow pilots to identify weather conditions (see Figure 8.21) and subsequently re-route around these conditions for the safety and comfort of passengers. A secondary use of weather radar is a terrain-mapping mode that allows the pilot to identify features on the ground, e.g. rivers, coastlines and mountains.
+
+8.6.6 Air traffic control
+
+Increasing traffic density, in particular around airports, means that we need a method of  air traffic control (ATC) to manage the flow of traffic and maintain safe separation of aircraft. The ATC system is based on secondary surveillance radar (SSR) facilities located at strategic sites, at or near airfields. 
+
+Ground controllers use the SSR system to identify individual aircraft on their screens, see Figure 8.22. With ever increasing air traffic congestion, and the subsequent demands on ATC resources, the
+risk of a mid-air collision increases. The need for improved traffic flow led to the introduction of  the traffic alert and collision avoidance system (TCAS). This is an automatic surveillance system
+that helps aircrews and ATC maintain safe separation of aircraft. It is an airborne system (see Figure 8.23) based on secondary radar that interrogates and replies directly with aircraft via a high-integrity datalink. The system is functionally independent of ground stations and alerts the crew if another aircraft comes within a predetermined time to a potential collision. It is important to note that TCAS is a backup system, i.e. it provides warnings when other navigation systems (including ATC) have failed to maintain safe separation of aircraft that could lead to a collision. 
+
+8.6.7 Instrument approaches
+
+An instrument approach comprises a series of predetermined manoeuvres by reference to the on-board navigation systems and flight instruments. Approaches are documented in hard or electronic format, informing the pilot with specific information, e.g. the transition from en route navigation to the landing, and (if the landing cannot be completed) a missed approach procedure. There are three classes of instrument approach, as defined by ICAO: 
+
+non-precision approach (NPA) 
+
+approach procedures vertical guidance (APV)
+
+precision approach (PA).
+
+NPA provides lateral guidance only, i.e. no vertical information, using VOR, ADF and DME or GPS. APV provides both lateral and vertical guidance information, using a localizer directional aid (LDA) with glide path. LDA is an ILS type installation that does not meet precision approach standards, e.g. because the localiser is offset. PA provides lateral and vertical guidance information, using an instrument landing system (ILS), microwave landing system (MLS) or GNSS landing system (GLS).
+
+8.6.8 Low range radio altimeter
+
+The low range radio altimeter (LRRA) is a self-contained, vertically directed primary radar system operating in the 4.2 to 4.4 GHz band. Airborne equipment comprises a transmitting/receiving antenna, transmitter/receiver and a flight deck indicator/display. Radar energy is directed via a transmitting antenna to the ground; some of this energy is reflected back from the ground and is collected in the receiving antenna, see Figure 8.24(a). A radio altimeter is more accurate and responsive than an air pressure altimeter at low altitudes, typically 2500 feet. Radio altitude is either incorporated into an electronic display, as in
+Figure 8.24(b), or displayed on a dedicated instrument, as in Figure 8.24(c). 
+
+Two types of LRRA methods are used to determine the aircraft’s radio altitude. The pulse modulation method measures the elapsed time taken for the signal to be transmitted and received; this time delay is directly proportional to altitude. The frequency-modulated, continuous wave (FM/CW) method uses a changeable FM signal where the rate of change is fixed. A proportion of the transmitted signal is mixed with
+the received signal; the resulting beat signal frequency is proportional to altitude. The LRRA is utilised as a sensor for ILS - Chapter 12, and terrain awareness warning systems (TAWS)*; LRRA can also be a self-contained system for low-level rotorcraft operations. A secondary safety system derived from the LRRA is the automatic voice alert device (AVAD). This is a voice alerting system that stores pre-recorded human speech in digital form, e.g. ‘Low height’ or ‘One hundred feet’. 
+
+*TAWS is covered in a separate title in this series, Aircraft Electrical and Electronic Systems (AEES).
+
+8.6.9 Reduced vertical separation minimums
+
+The majority of flights over the North Atlantic are by aircraft operating between flight levels FL290 – FL410 (29,000 – 41,000 feet). To ensure adequate airspace capacity and provide for safe vertical separations, reduced vertical separation minimums (RVSM) is applied throughout the region. RVSM allows aircraft to fly with a vertical separation of 1000 feet between FL290 and FL410 inclusive.
+
+Entry/exit and movement along these tracks is controlled by Oceanic Control Centres air traffic controllers to maintain aircraft separation. 
+
+To fly in this airspace, an aircraft must be equipped with at least two fully serviceable long  range navigation systems (LRNS); these will be either an inertial navigation system (INS) or global navigation satellite system (GNSS).
+
+8.6.10 Minimum navigation performance specifications
+
+
+Minimum navigation performance specifications (MNPS) are required for remote areas, e.g. in the North Atlantic. The requirements are specified in ICAO document North Atlantic Operations and Airspace Manual (NAT Doc 007). 
+
+The North Atlantic airspace linking Europe and North America is the busiest oceanic airspace in the world; in 2012 approximately 460,000 flights crossed the North Atlantic. For the majority of this airspace, direct controller pilot communications (DCPC) and air traffic system (ATS) surveillance are unavailable. Aircraft separation therefore requires the highest standards of horizontal and vertical navigation performance and accuracy together with operating discipline.
+
+8.6.11 Electronic flight bag
+
+An electronic flight bag (EFB) is an electronic display system, replacing information and data traditionally based on paper documents and manuals, e.g. navigation charts. The EFB may also support other functions that have no paper equivalent, e.g. data communication systems. A basic EFB can perform flight planning calculations and display a variety of navigational charts, operations manuals, aircraft checklists, etc.
+
+Advanced EFBs are fully certified and integrated with aircraft systems. EFBs are classified in one of three ways; Class 1, 2 or 3. The Class 1 EFB is typically a standard commercial off-the-shelf (COTS) item such as a laptop or handheld electronic device. These devices are deemed as portable or loose equipment and are typically stowed during critical phases of flight. Class 2 EFB can either be COTS or designed for the purpose. They are typically mounted in the aircraft with the display being viewable to the pilot during all phases of flight. Under certain conditions, they can be certified to interface with aircraft systems. They do not share any display or other input/output device (e.g. keyboard, pointing device) with certified aircraft systems. Class 2 EFBs do not require any installation/removal tools. Class 3 EFBs are neither Class 1 nor 2; they are installed items of equipment with certified operating system software. A Class 3 EFB is part of the certified aircraft configuration including installed applications, database, resources, etc.
+
+A typical Class 1/2 EFB is the Garmin GPSMAP® 696; this is an all-in-one EFB designed exclusively for aviation. Featuring a 7" diagonal high-definition, sunlight-readable display screen, detailed electronic charts and weather data, the 696 is a pilot’s personal avionics system. Referring to Figure 8.25, the bezel around the screen includes soft keys and a joystick control. The internal GPS provides position updates five times per second, allowing the 696 to present flight data smoothly and continuously. With optional modes, the 696 provides key functions of a Class 1/Class 2 EFB, reducing the use of paper charts in the cockpit.
+
+The 696 can display victor airways, jet routes, minimum en route altitudes and leg distance, standard terminal arrival routes (STARs), approach charts and airport diagrams replicating traditional en route charts.
+
+8.7 Navigation systems summary
+
+Navigation systems for aircraft have evolved with the nature and role of the aircraft itself. These individual systems are described in detail in the following chapters. Each system has been developed to meet specific requirements within the available technology and cost boundaries. Whatever the requirement, all navigation systems are concerned with several key factors:
+
+Accuracy: conformance between calculated and actual position of the aircraft 
+
+Integrity: ability of a system to provide timely warnings of system degradation
+
+Availability: ability of a system to provide the required function and performance
+
+Continuity: probability that the system will be available to the user
+
+Coverage: geographic area where each of the above are satisfied at the same time.
+
+Test your understanding 8.2
+
+The nautical mile is directly linked to the geometry of the earth; how is a nautical mile defined?
+
+Test your understanding 8.3
+
+Explain the difference between dead reckoning and position fixing.
+
+Test your understanding 8.4
+
+For a given airspeed, explain how tailwinds and headwinds affect groundspeed.
+
+Test your understanding 8.5
+
+Explain the following terms: accuracy, integrity, availability.
+
+Test your understanding 8.6
+
+Describe three ways that bearings and ranges can be used for position fixing.
+
+1. Explain the difference between Mercator and Lambert projections.
+
+2. Where on the earth’s surface is the difference between a rhumb line and great circle route
+the greatest?
+
+

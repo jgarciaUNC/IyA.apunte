@@ -1,0 +1,261 @@
+Instrument landing system
+
+The instrument landing system (ILS) is used for precision approaches and landings. The system uses a combination of VHF and UHF radio waves and has been in operation since 1946. In this chapter we will look at ILS principles and hardware in detail, concluding with how the ILS combines with the automatic flight control system (AFCS) to provide fully automatic approach and landing.
+
+12.1 ILS overview
+
+The instrument landing system is used for the final approach and is based on directional beams propagated from two transmitters at the airfield, see Figure 12.1. One transmitter (the glide slope) provides guidance in the vertical plane and has a range of approximately 10 nm. 
+
+The second transmitter (the localizer) guides the aircraft in the horizontal plane. In addition to the directional beams, two or three marker beacons are located at key points on the extended runway centreline defined by the localizer, see Figure 12.4.
+
+12.2 ILS ground equipment
+
+12.2.1 Localizer transmitter
+
+The localizer transmits in the VHF frequency range, 108–112 MHz in 0.5 MHz increments. Note that this is the same frequency range as used by the VOR system (see Chapter 10). Although the two systems are completely independent and work on totally different principles, they often share the same receiver. The two systems are differentiated by their frequency allocations within this range. ILS frequencies are allocated to the odd tenths of each 0.5 MHz increment, e.g. 109.10 MHz, 109.15 MHz, 109.30 MHz, etc.
+
+VOR frequencies are allocated to the even tenths of each 0.5 MHz increment, e.g. 109.20 MHz, 109.40 MHz, 109.60 MHz, etc. Table 12.1 provides an illustration of how these frequencies are allocated within the 109 MHz range. This pattern applies from 108 to 111.95 MHz.
+
+The localizer antenna is located at the far end of the runway and transmits two lobes to the left and right of the runway centreline modulated at 90 Hz and 150 Hz respectively. On the extended runway centreline, see Figure 12.2, the combined depth of modulation is equal. Either side of the centreline will produce a difference in depth of modulation (DDM); this difference is directly proportional to the deviation on either side of the extended centreline of the runway. The localizer also transmits a two- or three-letter Morse code identifier that the crew can hear on their audio panels.
+
+Key point
+
+The instrument landing system is based on directional beams propagated from two transmitters at the airfield: localizer and glide slope.
+
+Test your understanding 12.1
+
+What frequency bands do the localizer and glide slope use?
+
+12.2.2 Glide slope antenna
+
+The glide slope antenna transmits in the UHF frequency band, 328.6 to 335 MHz at 150 kHz spacing. Upper and lower lobes are modulated at 90 HZ and 150 Hz respectively. When viewed from the side, see Figure 12.3, the two lobes overlap and produce an approach path inclined at a fixed angle between 2.5 and 3.5 degrees. Glide slope frequency is automatically selected when the crew tunes the localizer frequency.
+
+12.2.3 Marker beacons
+
+Two or three beacons are sited on the extended runway centreline at precise distances; these are specified in the approach charts for specific runways. These beacons operate at 75 MHz and radiate approximately 3–4 W of power. The beacons provide visual and audible cues to the crew to confirm their progress on the ILS, see Figure 12.4. The outer marker is located between four and seven miles from the runway threshold; it transmits Morse code dashes at a tone frequency of 400 Hz and illuminates a blue light (or cyan ‘OM’ icon for electronic displays) when the aircraft passes over the beacon.
+
+The outer marker provides the approximate point at which an aircraft on the localizer will intercept the glide slope. Some airfields use non-directional beacons (NDBs) in conjunction with (or in place of) the outer marker. These are referred to as locator beacons (compass locator in the USA).
+
+
+The middle marker is located approximately 3500 feet from the runway threshold. When passing over the middle marker, the crew receive an alternating Morse code of dots/dashes modulated at 1300 Hz, and a corresponding amber light (or yellow ‘MM’ icon for electronic displays) is illuminated. The middle marker coincides with the aircraft being 200 feet above the runway touchdown point. 
+
+Runways that are used for low visibility approach and landings (see later in this chapter) have a third inner marker. When passing over the inner marker, the crew receive Morse code dots modulated at 3000 Hz on the audio system, and a corresponding white light (or ‘IM’ icon for electronic displays) is illuminated. The marker beacon system is currently being phased out with the introduction of DME and GPS approaches. 
+
+12.3 ILS airborne equipment
+
+The airborne equipment comprises localizer and glide slope antennas, ILS receiver, marker receiver and flight deck controls and displays. Most aircraft are fitted with two or three independent ILS systems (typically named left, centre and right).
+
+The localizer and glide slope frequencies are in different wave bands; the crew tunes the localizer frequency (via the ‘Nav’ control panel) and this automatically tunes a paired glide slope frequency for a particular runway.
+
+12.3.1 Antennas
+
+The typical ILS antenna installation on a transport aircraft is illustrated in Figure 12.5. In this installation, two dual channel antennas are used for localizer and two dual channel antennas for the glide slope. One channel from each of the antennas is not used; the received  signals are fed to the corresponding ILS receiver.
+
+12.3.2 Receivers
+
+ILS receivers are often combined with other radio navigation functions, e.g. VHF omni directional range (VOR); these are located in the avionic equipment bay, see Figure 12.6. ILS receivers are based on the super-heterodyne principle with remote tuning from the control panel. The signal received from the localizer antenna is modulated with 90 and 150 Hz tones for left/right deviation; a 1020 Hz tone contains the navigation aid identification in Morse code. Filters in the ILS receiver separate out the 90 and 150 Hz tones for both localizer and glide slope. The identification signal is integrated with the audio system.
+
+The marker beacon function is often incorporated with other radio navigation receivers, e.g. a combined VOR and marker beacon unit, as illustrated in Figure 12.6(b). The marker beacon receiver filters out the 75 MHz tone and sends the signal to an RF amplifier.
+
+Three bandpass filters are then employed at 400 Hz, 1300 Hz and 3000 Hz to identify the specific marker beacon. The resulting signals are sent to an audio amplifier and then integrated into the audio system. Discrete outputs drive the visual warning lights (or PFD icons). 
+
+12.3.3 Controls and displays
+
+A control panel is typically located on the centre pedestal on larger aircraft, see Figure 12.7(a); this is used to select the runway heading and ILS frequency. Alternatively, on General Aviation (GA) aircraft, it can be a combined navigation/controller and display, see Figure 12.7(b). Outputs from the marker receiver are sent to three indicator lights (or PFD icons) and the crew’s audio system, as described in the previous section.
+
+The method of selecting and displaying the selected runway heading depends on the type of avionic fit. Electromechanical instruments include the omni-bearing selector (OBS), course deviation indicator (CDI), horizontal situation indicator (HSI) and electronic horizontal situation indicator (EHSI), see Figure 12.8. These instruments vary slightly in their design and layout; however they have some common features. The omni-bearing selector is used to rotate the course card. This card is calibrated from 0 to 360° and indicates the selected runway heading. Each dot on the scale represents a 2º deviation from the selected runway heading. 
+A second pointer displays glide slope deviation; flags are used to indicate when the: localizer and/or glide slope signals are beyond reception range pilot has not selected an ILS frequency ILS system is turned off, or is inoperative.
+
+(a) ILS control panel (centre pedestal) Note that these indicators can also be used with the VOR navigation system; refer to Chapter 10 for a detailed description of this system. 
+
+A pointer moves left/right over a deviation scale to display lateral guidance information. The glide slope deviation pointer moves up/down over a scale to indicate vertical deviation. The strength of the 90 Hz and 150 Hz tones is summed to confirm the presence of the localizer and glide slope transmissions; this summed output is  displayed in the form of a ‘flag’. If either of the two transmissions is not present, the warning flag is displayed.
+
+Key point
+
+ILS frequencies are selected by tuning the localizer, which automatically selects the glide slope.
+
+Key point
+
+The marker beacon system is being phased out and replaced by GPS/DME approaches.
+
+Key point
+
+The ILS glide slope is inclined at a fixed angle between 2.5 and 3.5 degrees from the ground.
+
+12.4 Low range radio altimeter
+
+The low range radio altimeter (LRRA) described in Chapter 8 is an integral part of the ILS; most aircraft are fitted with two or more independent systems. The LRRA incorporates an adjustable altitude bug that creates a visual or aural warning to the pilot when the aircraft reaches the selected altitude. Typically, the pilot will abort the approach if the runway is not visible when the decision height is reached.
+
+Test your understanding 12.2
+Where are the localizer and glide slope antennas located?
+
+Test your understanding 12.3
+What type of radar system is used for the low range radio altimeter (LRRA)?
+
+Test your understanding 12.4
+
+(a) When flying overhead ILS marker beacons, what indications are provided to the crew?
+
+(b) What is the preferred sequence to capture the localizer and glide slope?
+
+(c) What are the decision heights for Category 1, 2 and 3 landings?
+
+
+12.5 ILS approach
+
+The normal procedure is to capture the localizer first and then the glide slope. The crew select the ILS frequency on the navigation control panel as described above. Runway heading also needs to be sent to the ILS receiver; the way of achieving this depends on the avionic fit of the aircraft. 
+
+Desired runway heading can either be selected on a CDI/HSI or via a remote selector located on a separate control panel. Deviation from the localizer and glide slope is monitored throughout the approach together with confirmation of position from the marker beacons. The ILS can be used to guide the crew on the approach using instruments when flying in good visibility.
+
+In the event that visibility is not good, then the approach is flown using the AFCS. The crew select localizer and glide slope as the respective roll and pitch modes on the AFCS mode control panel (MCP), see Figure 12.9. With approved ground and airborne equipment, qualified crew can continue the approach through to an automatic landing. To complete an automatic landing (autoland) the pitch and roll modes need precise measurement of altitude above the ground; this is provided by the LRRA. A typical approach and landing scenario is illustrated in Figure 12.10.
+
+An alternative ILS approach is the localizer back-beam, or back-course (BC). All localizer antennas actually transmit in two directions; with primary (forward-course) and secondary (back-course) lobes, see Figure 12.11. Instead of having a separate ILS for each runway direction, back-course approaches utilise the same localizer beam. For back course approaches, the localizer displays are reversed; this is identified on the navigation display with a ‘BC’ flag. Note that most back course approaches do not have glide slopes.
+
+12.6 Autoland
+
+The development of airborne and ground equipment, together with crew training, led to trials being carried out on the effectiveness and reliability of fully automatic landings using the ILS. In 1947, the Blind Landing Experimental Unit (BLEU) was established within the UK’s Royal Aircraft Establishment. The world’s first fully automatic landing was achieved in 1950. Equipment and procedures were further developed, leading to the world’s first automatic landing in a passenger carrying aircraft (the HS121 Trident) in July 1965.
+
+Automatic approach and landings are categorised by the certifying authorities as a function of ground equipment, airborne equipment and crew training. The categories are quoted in terms of decision height (DH) and runway visual range (RVR). These categories are summarised in Table 12.2; JAR OPS provides further details and notes. Category 3 figures depend on aircraft type and airfield equipment, e.g. quality of ILS signals and runway lighting (centreline, edges, taxi ways, etc.).
+
+
+An operator has to have approval from the regulatory authorities before being permitted to operate their aircraft with automatic Category 2 and 3 approach and landings. This applies in particular to Category 3 decision heights.
+
+Automatic approaches are usually made by first capturing the localizer (LOC) and then capturing the glide slope (GS), see Figure 12.10. The localizer is intercepted from a heading hold mode on the AFCS, with LOC armed on the system. The active pitch mode at this point will be altitude hold, with the GS mode armed.
+
+Once established on the localizer, the glide slope is captured and becomes the active pitch mode. The approach continues with deviations from the centreline and glide slope being sensed by the ILS receiver; these deviations are sent to roll and pitch channels of the AFCS, with sensitivity of pitch and roll modes being modified by radio altitude. The auto throttle controls desired airspeed. Depending on aircraft type, two or three AFCS channels will be engaged for fully automatic landings, thus providing levels of Although the glide slope antenna is located adjacent to the touchdown point on the runway, it departs from the straight-line guidance path below 100 feet. The approach continues with radio altitude/descent rate being the predominant control input into the pitch channel. At approximately 50 feet, the throttles are retarded and the aircraft descent rate and airspeed are reduced by the ‘flare’ mode, i.e. a gradual nose-up attitude that is maintained until touchdown. The final pitch manoeuvre is to put the nose of the aircraft onto the runway. Lateral guidance is still provided by the localizer at
+this point until such time as the crew take control of the aircraft.
+
+
+12.7 Operational aspects of the ILS
+
+ILS remain installed throughout the world and are the basis of automatic approach and landing for many aircraft types. Limitations of ILS are the single approach paths from the glide slope and localizer; this can be a problem for airfields located in mountainous regions.
+
+Furthermore, any vehicle or aircraft approaching or crossing the runway can cause a disturbance to the localizer beam, which could be interpreted by the airborne equipment as an unreliable signal. This often causes an AFCS channel to disconnect, with the possibility of a missed approach. The local terrain can also have an effect on ILS performance, e.g. multi-path errors can be caused by reflections of the localizer; the three-degree glide slope angle may not be possible in mountainous regions or in cities with tall buildings. These limitations led to the development of the Microwave Landing System (MLS); see Chapter 13. 
+
+ILS approaches, together with autoland, are described further in Aircraft Flight Instruments and Guidance Systems (AFIGS).
+
+Key point
+
+Positive touchdown can be achieved by the Low Range Radio Altimeter (LRRA) being programmed to ‘aim’ for minus 20 feet. ‘Flare’ mode is initiated at 50 feet (typical), followed by the auto throttle reducing to idle at 15 feet. In a typical system, when the LRRA reduces to zero feet, the weight-on-wheel switches take over, modifying the control laws to alleviate ground affect. (Autoland is covered in more detail in Aircraft Flight Instruments and Guidance Systems – refer to
+Preface notes.)
+
+Key point
+
+When the aircraft has touched down with an automatic landing, the ILS continues to provide lateral Guidance via the localizer.
+
+
+12.8 Multiple choice questions
+
+1. Frequency bands for ILS are:
+
+(a) localizer (UHF) and glide slope (VHF)
+
+(b) localizer (VHF) and glide slope (VHF)
+
+(c) localizer (VHF) and glide slope (UHF).
+
+2. Localizer transmitters are located:
+
+(a) at the threshold of the runway, adjacent to the touchdown point
+
+(b) at the stop end of the runway, on the centreline
+
+(c) at three locations on the extended centreline of the runway.
+
+3. The LRRA provides:
+
+(a) deviation from the runway centreline
+
+(b) deviation from the glide path angle
+
+(c) altitude in feet above the ground.
+
+4. Some airfields use NDBs in conjunction with
+
+(or in place of) the:
+
+(a) localizer
+
+(b) glide slope
+
+(c) outer marker.
+
+5. When viewed from the antenna, the localizer is characterised by two lobes modulated:
+
+(a) 90 Hz to the right, 150 Hz to the left of the centreline
+
+(b) 150 Hz to the right, 90 Hz to the left of the centreline
+
+(c) equally either side of the centreline.
+
+6. ILS frequencies are selected by tuning:
+
+(a) the glide slope which automatically selects the localizer
+
+(b) the localizer which automatically selects the glide slope
+
+(c) the localizer and glide slope frequencies independently.
+
+7. The ILS glide slope is inclined at a fixed angle between:
+
+(a) 2.5 and 3.5 degrees
+
+(b) zero and 2.5 degrees
+
+(c) 2.5 degrees and above.
+
+8. The glide slope is characterised by two lobes modulated:
+
+(a) 90 Hz above, 150 Hz below the glide slope angle
+
+(b) 150 Hz above, 90 Hz below the glide slope angle
+
+(c) equally either side of the glide slope angle.
+
+9. Marker beacons transmit on which frequency?
+
+(a) 75 MHz
+
+(b) 1300 Hz
+
+(c) 400 Hz.
+
+10. With three marker beacons installed in an ILS system, they will be encountered along the approach as:
+
+(a) outer, middle, inner
+
+(b) inner, middle, outer
+
+(c) outer, inner, middle.
+
+11. Marker beacon outputs are given by:
+
+(a) coloured lights and Morse code tones
+
+(b) deviations from the runway centreline
+
+(c) deviations from the glide slope.
+
+12. The decision height and runway visual range for a Category 2 automatic approach are:
+
+(a) 100 ft. and 300 m respectively
+
+(b) 200 ft. and 550 m respectively
+
+(c) less than 100 ft. and 200 m respectively.
+
+13. The outer marker is displayed on the primary flying display as a coloured icon that is:
+
+(a) yellow
+
+(b) white
+
+(c) cyan.
+
+14. When the aircraft has touched down with an automatic landing, the ILS continues to provide:
+
+(a) lateral control via the localizer
+
+(b) lateral control via the glide slope
+
+(c) vertical control via the LRRA.

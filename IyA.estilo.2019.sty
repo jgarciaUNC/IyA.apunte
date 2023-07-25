@@ -1,0 +1,169 @@
+%
+%   ESTILO PARA Instrumentos y Avionica
+%
+%   Version 01-2018
+%
+%------------------------------------------
+
+\usepackage{pdflscape}  
+
+%------- Paquetes caracteres -------%
+\usepackage{ucs}
+
+%------- Paquetes identificacion------%
+\usepackage[list=off]{caption}	%Para poder colocar itemize o enumerate en \caption
+
+%\usepackage{acronym}		
+
+\usepackage{acro}	% sustituye al paquete acronym
+
+
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[greek,spanish]{babel}  % Al poner varios idiomas, el ultimo es el default del documento
+%\usepackage[ansinew]{inputenc} %Acentos y carácteres especiales
+\usepackage{multicol} %Permite escribir en varios formatos de columnas
+
+\usepackage{amsmath} 
+\usepackage{amsfonts}
+\usepackage{amssymb} 
+\usepackage{latexsym}
+
+%------- Paquetes graficos ----------%
+\usepackage[pdftex]{graphicx}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{epic,eepic,latexsym,rotating}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{epstopdf}  % convierte archivos eps a pdf
+
+\epstopdfDeclareGraphicsRule{.gif}{png}{.png}{% para incorporar archivos .gif
+  convert gif:#1 png:\OutputFile
+}
+\AppendGraphicsExtensions{.gif}
+
+
+
+%------- Paquetes inclusion archivos ----------%
+\usepackage[final]{pdfpages}	% \includepdf[ key=val ]{ filename }
+\usepackage[pdftex]{thumbpdf} 	% in case of pdfLaTeX incluye thumbnails 
+				% en el archivo pdf
+
+%------- Paquetes hiperreferencias------------%
+\usepackage[colorlinks]{hyperref}
+
+%\usepackage{floatflt} %Falta cargar en la AMILO
+
+%------- Paquetes glosarios-------------------%
+\usepackage[spanish]{translator}
+%\usepackage[acronym]{glossaries}
+%\usepackage{glossaries}			%debe estar despues de hyperref
+\usepackage[toc,style=altlistgroup,hyperfirst=false,translate=babel]{glossaries}
+%\makeglossaries
+%\input{tex/glosario.tex}
+
+%\usepackage[refpages]{gloss}		% + simple de usar. Compilar latex, luego bibtex .gls.aux, luego latex
+					% hacer archivo .bib con las palabras del glosario
+
+
+%------- Paquetes COLOR ------------%
+\usepackage{color}
+\definecolor{rosa}{rgb}{1,0.5,0.5} % valores de las componentes roja, verde y azul (RGB)
+\definecolor{rojo}{rgb}{1,0,0} % valores de las componentes roja, verde y azul (RGB)
+\definecolor{azul}{rgb}{0,0,1}
+
+%\usepackage{color,soul}		%Paquete para subrayado en color
+%\setulcolor{red}
+
+\usepackage{colortbl}		%Paquete para colorear tablas
+
+%\pagecolor{black} % Color de fondo
+
+%I think I'm in \textcolor{rosa}{love} with \LaTeX\.
+% "love" será escrito en rosa, el resto en el color por defecto (definido con \color)
+%\color{white} % Color del texto a partir de ese punto
+
+
+%------- Paquetes disenio pagina ----------%
+\usepackage[left=2cm,right=1cm,top=3.5cm,head=2cm,bottom=2cm]{geometry}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{appendix}
+
+\usepackage{shadow}		% Para recuadrar y sombrear parrafos
+\usepackage{fancybox}
+\setlength\headheight{60pt}
+
+%------- Paquetes disenio tablas ----------%
+\usepackage{longtable}
+\usepackage{multirow}
+
+%------- Paquetes dibujo--------------%
+\usepackage{tikz}
+\usetikzlibrary{shapes,snakes}
+
+
+%------- Paquetes listas--------------%
+\usepackage{enumerate}
+
+\usepackage{verbatim}
+
+%------- Paquetes matematicos---------%
+\usepackage{sagetex}
+
+%------- Paquetes bibliografia-------------%
+\usepackage{apacite}
+
+
+
+\pagestyle{fancy}
+
+\fancyhf{} % borrar todos los ajuste
+% En lo siguiente, fancyhead sirve para conFigurar la cabecera, fancyfoot para el pie.
+% Justificación: C=centered, R=right, L=left, (nada)=LRC
+% Página: O=odd, E=even, (nada)=OE
+
+% \fancyhead[RE,LO]{
+% 	\includegraphics[height=2cm]{../imagenes/UNC-400-anios.png}
+% 	\includegraphics[height=1.5cm]{../imagenes/logo.jpg}
+% 	\includegraphics[height=1.5cm]{../imagenes/fcefyn.png}
+% 	\includegraphics[height=1.5cm]{../imagenes/dpto-aero-logo.jpg}
+% }
+
+
+%/home/jgarcia/Dropbox/logos/logoUNC.png
+%}
+
+ % \fancyfoot[CO,CE]{Av. V\'elez Sarsfield 1611-C.P: X5016GCA - Ciudad Universitaria - C\'ordoba - Argentina \\
+ % TEL.: +54-351-433-4419 - Fax: +54-351-433-4139 - email: jgarcia@efn.uncor.edu
+ % }
+
+% Modifica el ancho de las líneas de cabecera y pie
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\frenchspacing
+%\parindent{0pt}
+
+% sangríÌa y separacióÌn entre páÌrrafos
+   \setlength{\parindent}{0pt}
+
+\setcounter{MaxMatrixCols}{10}
+
+%\renewcommand{\tablename}{Tabla}
+%\newcommand{\ESPACIO}{\rule{0in}{3ex}}
+
+
+%------------------Define box and box title style
+\tikzstyle{mybox} = [draw=red, fill=yellow!20, very thick,
+    rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
+\tikzstyle{fancytitle} =[fill=blue!80, text=white]
+
+\tikzstyle{grupos} = [draw=blue, fill=green!20, very thick,
+    rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
+\tikzstyle{fancytitle.grupos} =[fill=blue, text=white, ellipse]
+
+%-----------------------------------Nuevos comandos
+
+\newcommand{\TextoRojo}[1]{\textcolor{red}{\bf #1}}

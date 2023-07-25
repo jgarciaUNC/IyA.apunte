@@ -1,0 +1,15 @@
+8.7.4
+TACAN
+Tactical air navigation (TACAN) is military omnibearing and distance-measuring equipment with similar techniques for distance measurement as DME. The bearing information is accomplished by amplitude modulation achieved within the beacon which imposes 15 and 135 Hz modulated patterns and transmits this data together with 15 and 135 Hz reference pulses. The airborne equipment is therefore able to measure distance using DME interrogation techniques while using the modulated data to establish bearing.
+
+TACAN beacons operate in the frequency band 960–1215 MHz as opposed to the 108–118 MHz used by DME. This means that the beacons are smaller, making them suitable for shipborne and mobile tactical use. Some airborne equipment have the ability to offset to a point remote from the beacon which facilitates recovery to an airfield when the TACAN beacon is not co-located. TACAN is reportedly accurate to within +/-1% in azimuth and +/-0.1 nm in range, so it offers accuracy improvements over VOR/DME.
+
+TACAN also has the ability to allow aircraft to home on to another aircraft, a feature that is used in air-to-air refuelling to enable aircraft to home on to the donor tanker. 
+
+8.7.5
+VORTAC
+
+As most military aircraft are equipped with TACAN, some countries provide VORTAC beacons which combine VOR and TACAN beacons. This allows interoperability of military and civil air traffic. Military operators use the TACAN beacon while civil operators use the VOR bearing and TACAN (DME) distance-measuring facilities. This is especially helpful for large military aircraft, such as transport or surveillance aircraft, since they are able to use civil air lanes and operational procedures during training or on transit between theatres of operations.
+
+
+

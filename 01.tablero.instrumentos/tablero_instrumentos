@@ -1,0 +1,334 @@
+Requerimientos RAR 
+
+Requerimientos normas FAR
+-------------------------
+
+FAR PART 91 SECTION 205
+http://www.flightsimaviation.com/data/FARS/part_91-205.html
+
+http://rgl.faa.gov/Regulatory_and_Guidance_Library/rgAdvisoryCircular.nsf/list/AC%2091-67/$FILE/Chap1-2.pdf
+
+
+Tablero para aviones caseros
+----------------------------
+
+http://www.eaa.org/en/eaa/aviation-communities-and-interests/homebuilt-aircraft-and-homebuilt-aircraft-kits/resources-for-while-youre-building/building-articles/instruments-and-avionics/cockpit-standardizing-for-homebuilts
+
+
+Instrumentos de vuelo: 
+Instrumentos que se utilizan para mostrar informaci\'on de la aeronave
+y controlar la orientaci\'on de la misma durante el vuelo
+
+Necesidades:
+
+\item Permitir volar en condiciones de clima desfavorables y durante la noche
+
+\item Asegurar una operaci\'on segura y confiable
+
+\item Dar avisos tempranos sobre cualquier falla en los sistemas de la 
+	aeronave o partes de la misma, de forma que los pilotos
+	puedan tomar una acci\'on inmediata
+
+
+Instrumentos b\'asicos de vuelo
+-------------------------------
+
+Seis (6) instrumentos b\'asicos
+
+Veloc\'imetro		Indicador de actitud		Alt\'imetro
+
+Indicador de		Indicador de direcci\'on	Vari\'ometro
+giro y viraje
+
+
+
+
+Sistema de pitot-est\'atica
+
+Instalando un sistema de pitot-est\'atica
+http://www.eaa.org/en/eaa/aviation-communities-and-interests/homebuilt-aircraft-and-homebuilt-aircraft-kits/resources-for-while-youre-building/building-articles/instruments-and-avionics/installing-a-pitot-static-system
+
+
+Un tablero de instrumentos vidriado
+(glass cockpit)
+-----------------------------------
+
+http://es.slideshare.net/quimrubau/efis-022-01-05-00-1438733
+
+http://www.escuadron69.net/v20/foro/index.php?/page/index.html/_/simulacion-aerea/tutoriales-ala-lomac/avionica-general-en-el-sukhoi-su-27-i-r485
+
+http://www.taringa.net/comunidades/militares-en-t/6371895/La-avionica-del-C-130J-Super-Hercules.html
+
+Historia
+
+1970	NASA investigaci\'on en como mostrar instrumentos de vuelo
+
+1982	Boeing 767 con pantallas electr\'onicas de datos
+
+1990	Fines de la d\'ecada, pantallas LCD reemplazan pantallas CRT
+
+Actualidad	La mayor\'ia de las aeronaves equipadas con pantallas LCD
+
+
+EFIS (Electronic Flight Instrument System)
+
+Hasta
+seis (6) pantallas LCD o CRT,
+en aviones grandes,
+ mostrando la informaci\'on
+de vuelo necesaria de la forma m\'as conveniente,
+cada pantalla integra varios instrumentos
+
+En aviones peque\~nos una (1) pantalla
+
+Ejemplos:
+
+\item Tablero helic\'optero Apache
+
+F18
+
+Boeing 777
+
+Bell 430
+
+Airbus A 320
+
+Una instalaci\'on EFIS sigue la secuencia siguiente:
+
+\item Pantallas
+
+\item Controles
+
+\item Procesadores de datos
+
+
+
+Una instalaci\'on EFIS tiene los siguientes componentes
+
+\begin{itemize}
+\item {\bf PDF}: Primary Flight Display\\
+	Presenta los siguientes instrumentos
+	\begin{itemize}
+	\item Airspeed Indicator
+	\item Altimeter
+	\item HSI (Horizontal Situation Indicator)
+	\item VSI (Vertical Speed Indicator)
+	\end{itemize}
+
+	El PFD reemplaza a los seis (6) instrumentos tradicionales
+
+	Muestra la informaci\'on cr\'itica de vuelo 
+	incluyendo velocidad, altitud,direcci\'on (heading)
+	actitud y velocidad vertical
+
+	Est\'a dise\~nado para mejorar las alertas al piloto
+	al integrar informaci\'on en una sola pantalla
+
+	Reduce el tiempo para monitorear otros instrumentos
+
+	Alerta a los pilotos de condiciones potencialmente peligrosas
+	cambiando el color o la forma en el display o mediante
+	alertas de sonido. (baja velocidad, alta tasa de descenso)
+
+\item {\bf MDF}: MultiFunction Display o ND (Navigation Display)
+
+	Informaci\'on para navegaci\'on (VOR, DME, ILS)
+
+	Informaci\'on clim\'atica de m\'ultiples sistemas
+	(radar a bordo, sensores de detecci\'on de rel\'ampagos)
+
+	Idem al PFD el MDF puede cambiar color, forma y dar
+	alertas sonoras
+
+\item {\bf ECAM} : Electronic Centralized Aircraft Monitor
+
+¿o EICAS ?
+
+	Monitorear los sistemas de la aeronave: p.e. combustible,
+	sistemas el\'ectricos y del motor
+
+	Usualmente dos (2) pantallas, una arriba de la otra
+
+	Pantalla superior muestra sistemas motores, posici\'on flaps
+	cantidad de combustible e informaci\'on de alerta
+
+	Pantalla inferior muestra diversos par\'ametros de sistemas
+
+	Brinda alarmas en caso de malfuncionamiento
+
+	P.e. en caso de p\'erdida de presi\'on de aceite
+	en un motor, el ECAM hace sonar una alerta, 
+	cambia la pantalla a una que muestra el sistema
+	de aceite y se\~nala la baja presi\'on con
+	una caja roja.
+
+
+\item {\bf FMS}: Flight Management System
+
+	Instrumentos para mantener el plan de vuelo (flight plan)
+	permite a los pilotos modificarlo en vuelo
+
+	Dada la posici\'on y el plan de vuelo, el FMS se encarga
+	de guiar el avi\'on a lo largo del mismo
+
+	Usualamente se presenta como una pantalla peque\~na y 
+	un teclado
+	
+\item	Autopiloto (AP)
+
+	Computadora que permite que una aeronave se vuele a s\'i misma.
+
+	Se utiliza habitualmente en vuelos de larga duraci\'on
+
+	El piloto se encuentra presente siempre para monitorear
+	y chequear que el vuelo se desarrolle seg\'un el plan
+
+
+\end{itemize}
+
+Avances recientes que han abaratado la tecnolog\'ia
+permiten utilizar EFIS en aviaci\'on general.
+Ejemplos Garmin G1000 y Chelton Flight Systems EFIS-SV
+
+Tipos de pantallas
+------------------
+
+\item CRT (Cathode Ray Tube)
+
+	\item Tres (3) ca\~nones electr\'onicos, para rojo, verde y azul
+	\item rayos electr\'onicos
+	\item imanes para enfoque
+	\item \'Anodo
+	\item 
+
+	CONSEGUIR DETALLES DE PANTALLAS CRT
+
+\item LCD (Liquid Crystal Display)
+
+	\item 
+	CONSEGUIR DETALLES DE PANTALLAS LCD
+
+\item TOUCH SCREEN
+
+\item HUD (Head Up Display)
+
+\item HMD (Helmet Mounted Display)
+
+	ejemplos Scorpion HMCS o IHADSS o JHMCS
+
+\item Live Wire
+
+Striker II BAE Systems Striker II 
+
+Cascos tipos "Terminator"
+
+http://www.dailymail.co.uk/sciencetech/article-492631/The-Terminator-style-helmets-allow-fighter-pilots-planes.html
+	
+
+Preguntas
+---------
+
+Nombre y explique las funciones de cuatro (4) modernas tecnolog\'ias
+de instrumentos de aviaci\'on
+
+
+
+
+ENSAYO DE INSTRUMENTOS
+----------------------
+http://avstop.com/maint/altimeter/
+
+
+Certain aircraft are required by Section 91.170 of the FAR to have altimeter and static system tests. These tests are described in Appendix E of Part 43 of the FAR. Equipment, materials, and required tests for test equipment are specified in Section 145.47 of the FAR. Persons authorized to perform altimeter and static systems tests are identified in Section 91.170 of the FAR.
+
+
+
+-----------------Chistes-------------
+
+What is the difference between mechanical engineers and civil engineers?
+
+Mechanical engineers build weapons.
+
+Civil engineers build targets.
+
+----------------------
+Normal people believe that if it ain’t broke, don’t fix it.
+
+Engineers believe that if it ain’t broke, it doesn’t have enough features yet.
+
+--------------------
+
+Two engineers were standing at the base of a flagpole, looking at its top. A woman walked by and asked what they were doing.
+
+“We’re supposed to find the height of this flagpole,” said Sven, “but we don’t have a ladder.”The woman took a wrench from her purse, loosened a couple of bolts, and laid the pole down on the ground. Then she took a tape measure from her pocketbook, took a measurement,  announced,
+
+“Twenty one feet, six inches,” and walked away.
+
+One engineer shook his head and laughed, “A lot of good that does us. We ask for the height and she gives us the length!”
+
+Both engineers have since quit their engineering jobs and are currently serving in the United States Congress.
+
+-------------------------------
+
+Takes Only a High School Diploma to Fix a Plane
+Posted on June 22, 2013	by ah69
+
+Clip_147It takes a college degree to fly a plane, but only a high school diploma to fix one; that’s reassurance to those of us who fly routinely.
+
+After every flight, UPS pilots fill out a form, called a ‘gripe sheet,’ which tells mechanics about problems with the aircraft.
+
+The mechanics correct the problems, document their repairs on the form, and then pilots review the gripe sheets before the next flight.
+
+Never let it be said that ground crews lack a sense of humor. Here are some actual maintenance complaints submitted by UPS pilots (marked with a P) and the solutions recorded (marked with an S) by maintenance engineers.
+
+By the way, UPS is the only major airline that has never, ever, had an accident….
+
+P: Left inside main tire almost needs replacement.
+S: Almost replaced left inside main tire.
+
+P: Test flight OK, except auto-land very rough.
+S: Auto-land not installed on this aircraft.
+
+P: Something loose in cockpit
+S: Something tightened in cockpit
+
+P: Dead bugs on windshield.
+S: Live bugs on back-order.
+
+P: Autopilot in altitude-hold mode produces a 200 feet per minute descent
+S: Cannot reproduce problem on ground.
+
+P: Evidence of leak on right main landing gear.
+S: Evidence removed.
+
+P: DME volume unbelievably loud.
+S: DME volume set to more believable level.
+
+P: Friction locks cause throttle levers to stick.
+S: That’s what friction locks are for.
+
+P: IFF inoperative in OFF mode.
+S: IFF always inoperative in OFF mode.
+
+P: Suspected crack in windshield.
+S: Suspect you’re right.
+
+P: Number 3 engine missing.
+S: Engine found on right wing after brief search
+
+P: Aircraft handles funny. (I love this one!)
+S: Aircraft warned to straighten up, fly right and be serious.
+
+P: Target radar hums.
+S: Reprogrammed target radar with lyrics.
+
+P: Mouse in cockpit.
+S: Cat installed.
+
+And the best one for last
+
+P: Noise coming from under instrument panel. Sounds like a midget pounding on something with a hammer.
+S: Took hammer away from the midget
+
+
+

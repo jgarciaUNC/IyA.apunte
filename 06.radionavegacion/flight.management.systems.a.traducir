@@ -1,0 +1,270 @@
+Flight management systems
+
+The term ‘navigation’ can be applied in both the lateral and vertical senses for aircraft applications. Lateral navigation (LNAV) is effectively the area navigation function described in Chapter 16. Vertical navigation (VNAV) can be used to supplement or replace approach and landings using radio navigation aids; it can also be used to optimise the performance of the aircraft to reduce operating costs. This has been traditionally achieved by the flight crew (particularly the flight engineer) making reference to data contained within charts, tables and performance manuals.
+
+Aircraft performance data is based on a number of factors including aircraft weight, altitude and outside air temperature. Since these factors are constantly changing, the task of calculating optimum engine thrust limits, aircraft speed and altitude has gradually been automated with the advent of digital systems. During the 1980s, lateral and vertical navigation functions were combined into a single system known as the flight management system (FMS). Various tasks previously performed by the crew can now be automated with the intention of reducing crew workload. In this chapter we will review the principles of FMS and explore some the key features and benefits.
+
+19.1 FMS overview
+
+The flight management system (FMS) combines area navigation and performance management into a single system. The two primary components of the system are the flight management computer (FMC) and control display unit (CDU). Primary aircraft interfaces with the FMC are the inertial reference system and automatic flight control system, including the autothrottle. Flight management systems were introduced at a time of rising operating costs; the contributing factors to these costs include fuel and time. The cost of fuel is self-evident; the cost of time includes aircraft utilisation, e.g. if the aircraft is being leased on a cost per flying hour basis. Reducing aircraft speed will decrease fuel burn, but this leads to a longer flight time and increased ‘cost of time’. Flying faster will reduce the cost of time but increase fuel burn.
+
+Four-dimensional navigation is possible with flight management systems. The aircraft’s latitude, longitude, altitude and arrival time requirements can be planned, calculated and subsequently predicted on an ongoing basis. Each airline will have its own financial model in terms of fuel and time costs; the FMS can be customised accordingly and expressed as a cost-index; this is entered into system within the range 0–100 to represent the extremes of minimum fuel through to minimum time. In order to perform the key functions of area navigation and performance management, the system interfaces with many other systems on the aircraft.
+
+Flight management systems were the first examples of integrated multi-mode avionics. On transport category aircraft, the FMS integrates many systems including radio navigation systems, inertial navigation systems, global positioning systems, and centralised maintenance monitoring.
+
+19.2 Flight management computer system (FMCS)
+
+The two primary components of the system are the FMC and CDU; these are a subset of the FMS referred to as the flight management computer system (FMCS).
+
+19.2.1 Flight management computer 
+
+The FMC contains an operational program, navigation database and performance database.
+
+We have already come across the navigation database (NDB) in Chapter 16. The FMC’s navigation database (see Table 19.1) is a comprehensive version of what has already been discussed in area navigation systems. The performance database (PDB) contains a detailed model of the aircraft’s aerodynamic characteristics. This includes the aircraft’s speed and altitude capabilities together with operating  limits for both normal operation and abnormal conditions, e.g. engine failure. Engine parameters are also stored in the PDB, these include fuel flow and thrust models for the type of engine installed on the aircraft. Note that aircraft can be certified to fly with more than one engine type; these are all stored in the PDB. 
+
+An important feature of the FMC are the program pins. Rather than producing many  different FMC software configurations for each aircraft type and each engine combination, one FMC part number can be installed with software covering a number of aircraft and engine types in the PDB. The FMC (like most avionic computers) is installed in the equipment rack and connects to the wiring looms via pins/sockets at the rear of the computer.
+
+Program pins are used to select various software options within the computer; these are connections that are made to the connector either to ground, 28 V DC power supply or not connected. Logic circuits inside the computer are thereby set into predetermined configurations depending on how the program pins are configured. For example, a program pin could be connected to ground for one engine type, and set to 28 V DC for another engine type. When the FMC is installed, it effectively recognises which engine type is installed and the relevant engine software is used. The same FMC installed on another aircraft with different engine type will recognise this via the program pin(s) and utilise the relevant engine software.
+
+Certain functions are fixed and cannot be changed, e.g. the aircraft type/model. Other program pins are airline options; examples of these options are the use of metric or imperial units, e.g. Centigrade or Fahrenheit, pounds ( 1000) or kilograms ( 1000).
+
+19.2.2 Control display unit
+
+The CDU is the primary interface between the crew and FMC. It is designed such that data entry and displays are in the language used by ATC. The location of a CDU on a typical transport aircraft is shown in Figure 19.1. The CDU comprises a variety of features, referring to Figure 19.2 these include the:
+
+data display area (typically a cathode ray tube—CRT)
+
+line-select keys (LSK)
+
+function and mode keys
+
+alpha-numeric key pad
+
+warning annunciators.
+
+The display area is arranged in the form of chapters and pages of a book. When the system is first powered up, the CDU displays the IDENT page, see Figure 19.3.
+
+The ‘IDENT’ page contains basic information as stored in the FMC including aircraft model, engine types, etc. Other pages are accessed from this page on a menu basis using the line-select keys, or directly from one of the function or mode select keys.
+
+19.3 System initialisation
+
+Before the system can be used for lateral and vertical navigation, the FMC needs some basic initialisation data. Certain information required by the system has to be entered by the crew; other information  is stored as a default and can be overwritten by the crew. To simplify the process, information to be entered by the crew is displayed in box prompts. Information displayed as default information is displayed as dash prompts. There are a number of ways that individual pages can be accessed, and there is a variety of information on each page. The description below illustrates an initialisation procedure, starting with position initialisation through to performance initialisation, following a logical process. During this initialisation description, we will be making reference to 
+fields; these are specific areas on the CDU screen where data is either displayed and/or entered. In the following text, each line-select key (LSK) will be referred to by its location: left/right of the display and 1–6 from top to bottom.
+
+19.3.1 Position initialisation
+
+When the system is powered up, the IDENT page is displayed, see Figure 19.4 (more details about this page are provided after this section). Pressing LSK-6R, identified POS INIT for position initialisation, displays the POS INIT page, see Figure 19.4. The information needed at this point (indicated by box prompts) is present position for inertial reference system (IRS) alignment. Position can be entered in a number of ways, but  let’s assume at this point that we want to load present position by manually keying in latitude and longitude. Using the alphanumeric keys, latitude and longitude are entered via the key pad, entries appear in the bottom of the display (referred to as the scratch pad). When this data is confirmed in the scratch pad, LSK-4R (adjacent to the position boxes) is pressed and the scratch pad data replaces the ‘Set IRS position’ boxes. Present position is automatically transferred to the IRS and the next stage of initialisation is prompted by LSK-6R; this leads to the next
+section of initialisation for the desired ROUTE.
+
+
+19.3.2 Route selection
+
+The ROUTE page requires that an origin and destination be entered; these are entered (via the scratch pad) to replace the box prompts adjacent to LSK-1L (origin) and LSK-1R (destination), see figure 19.6(a). Origins and destinations are identified using the International Civil Aviation Organisation (ICAO) four-letter codes, e.g. London Heathrow is EGLL, New York Kennedy international airport is coded KJFK. This system is used in preference to the International Air Transport Association (IATA) three-letter codes, e.g. LHR and JFK, since some of these three-letter codes are duplicated for some airfields.
+Note that most airlines have predetermined company routes, these are stored in the navigation database and can be entered (as a code) via LSK-2L. There may be more than one route between the origin and destination; when the company route code is entered into an appropriate field, this will automatically enter the origin and destination together with all en route waypoints.
+
+Specific departure details, e.g. runway and initial departure fix, can also be contained within the company route as illustrated in Figure 19.6(b).
+
+Once the route is activated (LSK-6R), the bottom right field changes to PERF performance initialisation. 
+
+INIT 
+
+for
+
+19.3.3 Performance initialisation 
+
+The system requires gross weight (GW) or zero fuel weight (ZFW), reserve fuel, cost index and cruise altitude. Required entries are indicated as before with box prompts, see Figure 19.7. Note that since the total fuel onboard (52.3 tonnes in this example) is known by the FMC (via an input from the fuel quantity system) entering ZFW will automatically calculate GW and vice versa. Cost index can be entered manually, or it may be contained within the company route. All other entries on the page are optional; entry of data in these fields will enhance system performance. 
+
+Once the performance initialisation details are confirmed, the system is ready for operation. Further refinement of the flight profile can be made by entering other details, e.g. take-off settings, standard instrument departures, wind forecasts, etc.
+
+19.4 FMCS operation
+
+The flight management computer system (FMCS) calculates key performance data and makes predictions for optimum operation of the aircraft based on the cost-index. We have already reviewed the system initialisation process, and this will have given the reader an appreciation of how data is entered and displayed. The detailed operation of a flight management system is beyond the scope of this book; however, the key features and benefits of the system will be reviewed via some typical CDU pages. Note that these are described in general terms; aircraft types vary and updated systems are introduced on
+a periodic basis. CDU pages can be accessed at any time as required by the crew; some pages can be accessed via the line-select keys as described in section 19.3; some pages are accessed via function/mode keys. The observant reader may have already noticed that in the top right of each CDU page is an indication of how many sub-pages are available per selected function.
+
+19.4.1 Identification page (‘IDENT’)
+
+This page is automatically displayed upon power-up; aside from displaying a familiar page each time the system is used, this also serves as confirmation that the FMC has passed a sequence of built-in test equipment (BITE) self-tests including: memory device checks, interface checks, program pin configuration, power supplies, software configurations and microprocessor operation. Information displayed on this page includes aircraft and engine types, navigation database references and the operational program number. By reference to the relevant aircraft documentation, one FMC part number could be fitted to a number of different aircraft types. Each aircraft type will have different aerodynamic characteristics and these differences will be stored in the FMC’s memory. 
+
+The FMC recognises specific aircraft types by program pins contained within the aircraft connector, see Figure 19.8. Given aircraft types can be operated with different engine models; these are recognised by using specific program pins. Furthermore, airlines have the option on the units used within the system, e.g. temperature in Centigrade or Fahrenheit, weights in kilograms or pounds, etc. These are also determined by program pins.
+
+The navigation database (NDB) is identified by when it becomes effective, and when it expires. Referring to Figure 19.4, the active (current) database is adjacent to LSK-2R. The updated database is adjacent to LSK-3R; this is selected on the changeover date (April 18 in this illustration). A comprehensive range of information is contained in the NDB as detailed in Table 19.1; note that this is an indicative list since databases are usually customised for individual airlines. The synergy of integrated avionic systems can be demonstrated by FMC database information also being displayed on the
+EHSI (Figure 19.9 is displaying a number of airports contained in the database).
+
+19.4.2 Progress page
+
+There are many pages available to the crew for managing and modifying data required by the system depending on circumstances. One of the pages used to monitor key flight information is the progress page, see Figure 19.10. By describing the information on the progress pages, the reader will gain an appreciation of the features and benefits of the flight management computer system.
+
+The progress page can be accessed via the PROG key on the CDU. There are no entries required on this page; it is used for information only. The top line of the page displays details for the previous waypoint (CYN) in the active flight plan; name, altitude, actual time of arrival and fuel. The next three lines display details for the active waypoint (ENO), next waypoint (GVE) and final destination (KATL). Details include: distance to go (DTG), estimated time of arrival (ETA) and predicted fuel. The fifth line gives selected speed, predicted time and distance to an altitude change point, e.g. top of climb (T/C) as illustrated in Figure 19.10. The last line of the page is providing navigation source information. 
+
+In this case, the FMC selected inertial reference system (number 3) is being updated by two DME navigation aids ENO and MLC; these are being tuned manually and automatically as indicted by the letters M and A next to the navigation aid identifier.
+
+The second progress page contains a variety of useful information, e.g. wind speed and direction (displayed with associated head, tail and cross-wind components), cross track (XTK) error, vertical track (VTK) error, true airspeed (TAS), static air temperature (SAT) and various fuel quantity indications.
+
+19.4.3 Legs page
+
+Figure 19.11 provides an illustration of how en route lateral and vertical profiles are integrated within the FMC. In this example, the aircraft is flying towards waypoint CYN on a track of 312 o . There is an altitude constraint of 6000 feet over CYN, climb speed is 250 knots. This combined lateral and vertical profile is depicted by the tracks, distances, speeds and altitudes for each waypoint. This level of detail also applies for standard instrument departures (SIDs) and standard terminal arrival procedures (STARs), see Figures 19.12 and 19.13.
+
+19.4.4 Other CDU pages
+
+
+
+
+A detailed review of every page available on the CDU is beyond the scope of this book; however, a summary of typical pages is provided in Table 19.2. Note that this table is provided for illustration purposes. Aircraft types vary together with the type and model of FMC installed.
+
+Key point
+
+The highlighted waypoint on the progress page is the active waypoint.
+
+Key point
+
+Alerting messages require attention from the crew before guided flight can be continued.
+
+19.5 General Aviation FMS
+
+General Aviation FMS include Avidyne’s IFD Series; these are touch screen navigators, see Figure 19.14. Each provides SBAS/LPV precision navigation and are designed to meet the accuracy and integrity  requirements for ADS-B as part of the Next Generation airspace initiative (refer to Chapter 21 for more on these subjects)
+
+In addition to the dedicated knobs and buttons that many pilots prefer for frequent pilot actions, the IFD Hybrid Touch capability allows pilots to perform virtually all of those same functions via the  touch screen interface. Additionally, the IFD range offers Multi-Touch functionalities such as pinch-zoom, map panning, and graphical flight plan editing. This can be done with the Multi-Touch screen, or knobs and buttons depending on the pilot’s phase of flight. This provides ease-of-use, especially during single-pilot IFR operations.
+
+Graphical flight planning capability allows for easy editing of the flight plan with the touch of the screen. The convenient ‘rubber banding’ feature, Figure 19.15, allows the pilot to “stretch” any leg in the flight plan, e.g. to deviate for weather or to accommodate an amendment from ATC.
+
+19.6 FMS summary
+
+As we have seen, the FMCS performs all the calculations and predictions required to determine the most economical flight profile, either for minimum fuel, or minimum time (or indeed some point in between  depending on the operator’s financial and commercial models).
+
+Test your understanding 19.1
+
+(a) What is the meaning of four-dimensional navigation?
+
+(b) How can you confirm that the FMC has passed its power-up test?
+
+(c) What is the significance of box and dash prompts on the CDU?
+
+Test your understanding 19.2
+
+What is the purpose of program pins?
+
+Test your understanding 19.3
+
+Where would you confirm details of each of the following: navigation database, operational program, aircraft and engine type?
+
+19.7 Multiple choice questions
+
+1. To define the destination airport on the FMC route page requires entry of the airfield’s:
+
+(a) three-character identifier
+
+(b) four-character identifier
+
+(c) latitude and longitude.
+
+2. The page automatically displayed upon FMC power-up is the:
+
+(a) identification page
+
+(b) navigation database
+
+(c) position initialisation page.
+
+3. Program pins are defined by the:
+
+(a) FMC operational program
+
+(b) navigation database
+
+(c) aircraft wiring at the FMC connector.
+
+4. Information entered into the CDU scratch pad is displayed in the:
+
+(a) lowest section of the display
+
+(b) box prompts
+
+(c) dash prompts.
+
+5. Minimum flight time would be achieved with a cost-index of:
+
+(a) zero
+
+(b) 100
+
+(c) 50.
+
+6. Aircraft and engine type can be confirmed on the:
+
+(a) progress page
+
+(b) identification page
+
+(c) position initialisation page.
+
+7. The use of metric/imperial units is determined by:
+
+(a) the part number of the FMC
+
+(b) program pins
+
+(c) dashed line entries.
+
+8. Required entries into the CDU are indicated by:
+
+(a) box prompts
+
+(b) dashed lines
+
+(c) highlighted text.
+
+9. ‘Not in database’ is an example of an:
+
+(a) alert message
+
+(b) advisory message
+
+(c) active waypoint.
+
+10. Display of the identification page after power- up confirms the:
+
+(a) IRS is aligned
+
+(b) navigation sources in use
+
+(c) FMC has passed its BITE check.
+
+11. The FMC recognises specific aircraft types by:
+
+(a) CDU entry
+
+(b) program pins
+
+(c) the navigation database.
+
+12. SIDs in the navigation database refer to:
+
+(a) arrivals
+
+(b) en route navigation
+
+(c) departures.
+
+13. The EXEC key lights up when:
+
+(a) data is entered for initialisation/ changes
+
+(b) advisory messages are displayed
+
+(c) incorrect data has been entered.
+
+14. Alerting messages require attention from the crew:
+
+(a) before guided flight can be continued
+
+(b) when time is available
+
+(c) at the completion of the flight.
+
+15. The highlighted waypoint on the progress page is the:
+
+(a) previous waypoint
+
+(b) active waypoin
+
+(c) destination.

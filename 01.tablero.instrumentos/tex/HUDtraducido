@@ -1,0 +1,213 @@
+2.2.2 Principios básicos
+
+La configuración básica de un HUD se muestra esquemáticamente en la Figura 2.4. El piloto ve el mundo exterior a través del vidrio combinador HUD (y el parabrisas). El vidrio del combinador es efectivamente un espejo "transparente" con una alta eficiencia de transmisión óptica para que haya poca pérdida de visibilidad mirando a través del combinador y el parabrisas. Se llama combinador porque combina ópticamente la simbología de visualización colimada con la escena del mundo exterior que se ve a través de ella. Haciendo referencia a la Figura 2.4, la simbología de visualización generada a partir de los sensores y sistemas de la aeronave (como el INS y el sistema de datos aéreos) se muestra en la superficie de un tubo de rayos catódicos (CRT).
+
+A continuación, las imágenes de la pantalla se transmiten a través de un sistema de lentes de relé que amplía la pantalla y corrige algunos de los errores ópticos que, de otro modo, estarían presentes en el sistema. Las imágenes de la pantalla transmitidas luego se reflejan a través de un ángulo de cerca de 90° por el espejo plegable y de ahí a la lente colimadora que colima las imágenes de la pantalla que luego se reflejan desde el vidrio combinador hacia el campo de visión delantero del piloto. Al piloto le parece que las imágenes virtuales de la simbología de la pantalla están en el infinito y se superponen a la escena del mundo distante, ya que están colimadas. La función del espejo plegable es permitir lograr una configuración óptica compacta para que el HUD ocupe el mínimo espacio posible en la cabina.
+
+La importancia fundamental de la colimación para cualquier sistema HUD merece una explicación más detallada para el beneficio de los lectores cuyo conocimiento de la óptica necesita refrescarse. Un colimador se define como un sistema óptico de distancia focal finita con una fuente de imagen en el plano focal. Los rayos de luz que emanan de un punto particular en el plano focal salen del sistema de colimación como un grupo de rayos paralelos, como si vinieran de una fuente en el infinito. Las figuras 2.5(a) y (b) muestran un sistema de lente colimadora simple con los rayos trazados desde una fuente en el centro, O, y un punto, D, en el plano focal, respectivamente. Un rayo procedente de un punto del plano focal que pasa por el centro de la lente no se refracta y se denomina "rayo no desviado". Los otros rayos que emanan del punto son todos paralelos al rayo no desviado después de salir del colimador.
+
+Cabe señalar que la lente colimadora, en la práctica, estaría hecha de varios elementos para minimizar las deficiencias inaceptables de un solo elemento.
+
+En la Figura 2.5(a) se puede ver que un observador que mire paralelo al eje óptico verá el punto O en las posiciones del ojo A, B y C, y el ángulo de la mirada para ver O es independiente del desplazamiento del ojo desde el eje óptico. De manera similar, se puede ver en la Figura 2.5(b) que el ángulo de la mirada del observador para ver el punto D es el mismo para las posiciones del ojo A, B y C y es independiente de la traslación.
+
+El sistema óptico refractivo HUD, de hecho, es básicamente similar al sistema de colimación óptica simple que se muestra en la Figura 2.6. Los rayos se trazan para que el observador vea los puntos D, O y E en la pantalla con las posiciones de los ojos en los puntos A, B y C. Se puede ver que los ángulos de mirada para ver los puntos D, O y E son los mismos desde puntos A, B o C. La apariencia de la pantalla colimada es, por lo tanto, independiente de la posición (o traslación) del ojo y solo depende del ángulo de la mirada. También debido a la colimación, la pantalla parece estar en el infinito ya que los rayos que emanan de cualquier punto de la pantalla son todos paralelos después de salir del sistema de colimación.
+
+Cabe señalar que las imágenes de visualización deben estar correctamente colimadas. La decolimación es el término que se utiliza cuando la luz procedente de un punto determinado de la pantalla no deja el sistema óptico paralelo en toda la superficie de la lente. La luz puede converger, divergir o "comportarse mal" de otra manera, lo que resulta en una "natación" de las imágenes de la pantalla cuando la cabeza del piloto se mueve. A veces esto crea molestias y en el caso de la convergencia puede incluso causar náuseas.
+
+Un parámetro muy importante con cualquier HUD es el campo de visión (FOV), que debe ser lo más grande posible dentro de las severas limitaciones de espacio impuestas por la geometría de la cabina. Un FOV horizontal grande es particularmente importante para permitir que el piloto "observe los giros" cuando el HUD forma parte de un sistema de visión nocturna y la única visibilidad que tiene el piloto del mundo exterior es la imagen FLIR que se muestra en el HUD.
+
+Es importante distinguir entre el campo de visión instantáneo (IFOV) y el campo de visión total (TFOV) de un HUD, ya que los dos no son iguales en el caso del HUD de tipo refractivo.
+
+El campo de visión instantáneo es la cobertura angular de las imágenes que el observador puede ver en cualquier instante específico y se muestra en el diagrama simplificado de la figura 2.7(a). Está determinado por el diámetro de la lente colimadora, D, y la distancia, L, de los ojos del observador a la lente colimadora.
+
+El campo de visión total es la cobertura angular total de las imágenes CRT que se pueden ver moviendo la posición del ojo del observador. El TFOV está determinado por el diámetro de la pantalla, A, y la distancia focal efectiva de la lente colimadora, F.
+
+Reducir el valor de L aumenta el IFOV, como se puede ver en la Figura 2.7(b), que muestra la posición normal del ojo del observador lo suficientemente cerca de la lente colimadora para que el IFOV sea igual al TFOV. Sin embargo, esto no es práctico con el tipo convencional de HUD que usa óptica refractiva. Esto se debe a las limitaciones de la geometría de la cabina en la posición del ojo del piloto y las limitaciones de espacio en el diámetro de la lente colimadora. El IFOV generalmente es solo alrededor de dos tercios del TFOV.
+
+En la Figura 2.7(c) se puede ver que al mover la cabeza hacia arriba o hacia abajo o de lado a lado, el observador puede ver una parte diferente del TFOV, aunque el IFOV no cambia.
+
+El efecto es como mirar a través y alrededor de un ojo de buey formado por la imagen virtual de la lente colimadora, como se puede ver en la Figura 2.8. El diagrama muestra el IFOV visto por ambos ojos (rayado), el IFOV visto por los ojos izquierdo y derecho respectivamente y el TFOV.
+
+Se puede hacer la analogía de ver un partido de fútbol a través de un agujero de nudo en la cerca y esta característica FOV de un HUD a menudo se denomina "efecto de agujero de nudo".
+
+Las restricciones involucradas en el diseño de HUD se describen brevemente a continuación. Para un TFOV dado, las principales variables son el diámetro de la pantalla CRT y la distancia focal efectiva del sistema de lentes de colimación. Para un tamaño y peso físicos mínimos, se desea un CRT de diámetro pequeño y una distancia focal corta. Estos parámetros generalmente se equilibran con la necesidad de una lente colimadora de gran diámetro para brindar el máximo IFOV y una gran distancia focal que permite la máxima precisión. El diámetro de la lente colimadora generalmente está limitado a entre 75 mm y 175 mm (3 pulgadas y 7 pulgadas aproximadamente) por limitaciones de espacio en la cabina y consideraciones prácticas. Las lentes grandes son muy pesadas y pueden romperse bajo un choque térmico.
+
+El combinador HUD ocupa la ubicación principal de la cabina justo en el centro de la línea de visión delantera del piloto en la parte superior del protector antideslumbrante. El tamaño del combinador está determinado por el FOV deseado y la geometría de la cabina, especialmente la posición del asiento del piloto. El cuerpo principal del HUD que contiene la óptica y la electrónica debe hundirse detrás del panel de instrumentos para brindar una vista sin restricciones sobre el morro de la aeronave durante las maniobras de actitud alta (consulte la Figura 2.8).
+
+La posición del ojo de diseño del piloto para el HUD está determinada por la comodidad del piloto y la capacidad de ver los instrumentos de la cabina y las pantallas con la cabeza hacia abajo y, al mismo tiempo, lograr la máxima visibilidad del mundo exterior. En el caso de un avión de combate, también existe el espacio libre de la línea de eyección para evitar que el HUD golpee al piloto en la eyección, lo que restringe aún más la posición del ojo de diseño.
+
+Los IFOV típicos varían de aproximadamente 13 ◦ a 18 ◦ con un TFOV correspondiente de aproximadamente 20 a 25. El FOV vertical total de un HUD se puede aumentar a aproximadamente 18 mediante el uso de una configuración de combinador dual como una persiana veneciana. Efectivamente, se proporcionan dos ojos de buey superpuestos, desplazados verticalmente. El efecto del espacio de la cabina y las restricciones geométricas es que el diseño del HUD tiene que ser "hecho a medida" para cada tipo de aeronave y un "HUD estándar" que sería intercambiable en una gama de diferentes tipos de aeronaves no es una propuesta práctica.
+
+El vidrio combinador convencional en un HUD refractivo tiene revestimientos multicapa que reflejan una proporción de las imágenes de visualización colimadas y transmiten una gran proporción del mundo exterior, de modo que la pérdida de visibilidad es bastante pequeña. Un piloto que mira a través del combinador de dicho HUD ve el mundo real con un brillo del 70% sobre el cual se superpone la pantalla colimada con un brillo del 30% del CRT (tomando las eficiencias típicas de transmisión y reflexión). La situación se muestra en la Figura 2.9 y es esencialmente un sistema bastante con pérdidas con el 30% del brillo del mundo real desperdiciado (equivalente a usar anteojos de sol) al igual que el 70% del brillo de la pantalla CRT.
+
+Para lograr una relación de contraste adecuada para que la pantalla se pueda ver contra el cielo a gran altura o contra una nube iluminada por el sol, es necesario lograr un brillo de pantalla de 30 000 Cd/m 2 (10 000 pies L) del CRT. De hecho, es el requisito de brillo en particular lo que asegura el uso del CRT como fuente de visualización durante un tiempo considerable, incluso con las eficiencias ópticas mucho más altas que se pueden lograr explotando elementos ópticos holográficos.
+
+El uso de elementos ópticos generados holográficamente puede permitir que el FOV se incremente en un factor de dos o más, siendo el FOV instantáneo igual al FOV total. También se pueden lograr pantallas mucho más brillantes junto con una pérdida insignificante en la visibilidad del mundo exterior, como se explicará en la siguiente sección. Se requiere una alta transmisión óptica a través del combinador para no degradar la adquisición de objetivos pequeños a largas distancias.
+
+Cabe señalar, sin embargo, que el desarrollo de revestimientos dieléctricos 'Rugate' aplicados a los combinadores de los HUD refractivos convencionales ha permitido lograr pantallas muy brillantes con una alta transmisión del mundo exterior, comparable, de hecho, con los HUD holográficos. Un revestimiento dieléctrico de Rugate es un revestimiento multicapa que tiene un índice de refracción que varía sinusoidalmente con un espesor que puede sintetizar un revestimiento de reflexión de banda de longitud de onda estrecha muy definido, normalmente alrededor de 15 nm en la emisión del pico de fósforo CRT. El revestimiento presenta valores altos de reflexión y transmisión similares a los de los revestimientos holográficos, pero no es capaz de generar potencia óptica.
+
+El IFOV de un HUD refractivo que usa un combinador con un revestimiento dieléctrico de Rugate todavía sufre las mismas limitaciones y no se puede aumentar como un HUD holográfico. No obstante, puede proporcionar una solución muy competitiva para aplicaciones en las que es aceptable un IFOV máximo de hasta 20.
+
+2.2.3 HUD holográficos
+
+El requisito de un FOV grande se basa en el uso del HUD para mostrar una imagen de TV colimada de la salida del sensor FLIR para permitir que el piloto "vea" a través del FOV del HUD en condiciones de poca visibilidad, especialmente en operaciones nocturnas. Cabe señalar que el sensor FLIR también puede penetrar a través de la neblina y muchas condiciones de nubes y proporcionar una "visión mejorada" ya que la pantalla FLIR se superpone con precisión uno a uno con el mundo real. La necesidad de un FOV amplio al maniobrar de noche a bajo nivel se puede ver en las Figuras 2.10 y 2.11. El FOV de azimut más amplio es esencial para que el piloto vea el giro. (Se ha hecho la analogía de tratar de conducir un automóvil alrededor de Hyde Park Corner con un parabrisas opaco hecho añicos con su visión restringida a un agujero perforado en la ventana).
+
+En un moderno HUD holográfico de FOV amplio, la colimación de la pantalla se lleva a cabo por el combinador al que se le da potencia óptica (curvatura) de modo que realiza la colimación de la imagen de la pantalla. La Figura 2.12 muestra la configuración básica de un moderno HUD holográfico de combinador único. La pantalla CRT es enfocada por el sistema de lentes de relé para formar una imagen intermedia en el foco del combinador motorizado. Luego, la imagen intermedia se refleja desde el espejo plegable al combinador. Este actúa como un colimador, ya que el revestimiento holográfico sintonizado en la superficie esférica del combinador refleja la luz verde de la pantalla CRT y forma una imagen de pantalla colimada en la posición del ojo de diseño del piloto.
+
+La Figura 2.13 ilustra la acción de colimación de una superficie reflectora esférica. La acción de colimación es, de hecho, el recíproco óptico del telescopio reflector de Newton.
+
+Debido a que el elemento de colimación está ubicado en el combinador, el ojo de buey está considerablemente más cerca del piloto que un diseño de HUD refractivo comparable. El elemento de colimación también se puede hacer mucho más grande que la lente de colimación de un HUD refractivo, dentro de las mismas limitaciones de la cabina. Por lo tanto, el IFOV se puede aumentar por un factor de dos o más y los FOV instantáneos y totales son generalmente los mismos, ya que el piloto está efectivamente dentro del ojo de buey.
+
+Este tipo de HUD a veces se denomina "HUD de ojo de buey proyectado" y la imagen es lo que se conoce como formación de pupila. De hecho, las imágenes de la pantalla solo se pueden ver dentro del "cuadro de movimiento de la cabeza". Si los ojos o la cabeza se mueven fuera de un cuadro tridimensional ubicado en el espacio alrededor de la posición normal de la cabeza del piloto, la pantalla se desvanece. Literalmente se convierte en un caso de "ahora lo ves, ahora no lo ves" en los límites del cuadro de movimiento de la cabeza. Los HUD holográficos modernos están diseñados para tener un cuadro de movimiento de la cabeza de tamaño razonable para que el piloto no esté indebidamente limitado.
+
+La figura 2.14 ilustra el concepto de caja de movimiento de la cabeza.
+
+El combinador comprende un sándwich de caras paralelas de placas de vidrio plano-convexas y plano-cóncavas con un revestimiento holográfico en la interfaz esférica entre ellas. El revestimiento holográfico se forma sobre la superficie esférica de la placa de vidrio plano-convexa y el vidrio de superficie cóncava forma una placa de cubierta para que el revestimiento holográfico pueda sellarse herméticamente dentro del combinador. El revestimiento holográfico está ajustado con precisión para que refleje la luz verde de una longitud de onda particular de la pantalla CRT con más del 80 % de reflectividad, pero transmita la luz en todas las demás longitudes de onda con una eficiencia de alrededor del 90 %. (Los fósforos CRT generalmente utilizados son fósforos P43 o P53 que emiten luz verde con una longitud de onda predominante de alrededor de 540 nm, y el holograma está sintonizado a esta longitud de onda). Esto brinda una transmisión extremadamente buena del mundo exterior a través del combinador. (Las caras exteriores del vidrio del combinador son paralelas para que no haya distorsión óptica de la escena exterior). El mundo exterior visto a través del combinador aparece muy ligeramente rosado ya que el contenido verde del mundo exterior con una longitud de onda de alrededor de 540 nm no es transmitido a través del combinador. Los HUD holográficos, de hecho, son reconocibles por el tinte verde del combinador.
+
+La superficie reflectora esférica del combinador colima las imágenes de la pantalla, pero se introducen grandes errores de aberración óptica que deben corregirse.
+
+Estos errores de aberración se deben al gran ángulo fuera del eje entre la línea de visión del piloto y el eje óptico del combinador que resulta de la configuración del HUD.
+
+Se pueden hacer algunas correcciones para estas aberraciones mediante el sistema de lentes de relé, pero existe un límite práctico para la cantidad de corrección que se puede lograr con elementos ópticos convencionales sin recurrir a superficies esféricas. Aquí es donde se utiliza una propiedad única de los recubrimientos generados holográficamente, a saber, la capacidad de introducir potencia óptica dentro del recubrimiento para que pueda corregir los errores de aberración restantes. El recubrimiento holográfico alimentado produce un efecto equivalente a variaciones locales en la curvatura de la superficie reflectora esférica del combinador para corregir los errores de aberración al difractar la luz en los puntos apropiados. El revestimiento holográfico recibe potencia óptica para que se comporte como una lente mediante el uso de un sistema óptico auxiliar para registrar una distribución de fase compleja en la superficie del combinador durante el proceso de fabricación. Esto se explicará en breve.
+
+A continuación se presenta una descripción muy breve de los elementos ópticos holográficos para dar una idea de los principios básicos y la tecnología.
+
+La holografía fue inventada en 1947 por Denis Gabor, un científico húngaro que trabajaba en el Reino Unido. Las aplicaciones prácticas tuvieron que esperar hasta la década de 1960, cuando dos científicos estadounidenses, Emmet Leith y Joseph Upatnieks, utilizaron la luz coherente del láser recientemente desarrollado para grabar el primer holograma.
+
+Los HUD holográficos utilizan hologramas de reflexión que dependen, para su funcionamiento, de las variaciones del índice de refracción producidas dentro de una fina película de gelatina intercalada entre dos láminas de vidrio. Esto es realmente una rejilla de difracción y, por lo tanto, un nombre más preciso para tales HUD es HUD difractivo. Se forma una capa de reflexión holográfica al exponer una película delgada de gelatina bicromada fotosensible a dos haces de luz láser coherente. Debido a la naturaleza coherente de los haces incidentes, se forman una serie de franjas de interferencia en toda la profundidad de la película de gelatina. Durante el proceso de revelado, estas franjas se convierten en planos de alto y bajo índice de refracción paralelos a la superficie de la película. En una primera aproximación, el cambio del índice de refracción entre planos adyacentes es sinusoidal en oposición a la función escalonada asociada con los revestimientos multicapa. Durante el proceso de revelado la gelatina se hincha, produciendo un aumento en la longitud de onda sintonizada. La reconfiguración del holograma se logra horneando la película, lo que reduce el grosor y, por lo tanto, el espacio entre los planos de índice de refracción constante. Por lo tanto, el diseñador especifica una longitud de onda de construcción en un ángulo de incidencia dado después del horneado. La figura 2.15 ilustra los planos o capas de índice de refracción variable formados en el holográfico.
+revestimiento.
+
+El ancho de banda del rango de reflexión angular está determinado por la magnitud del cambio en el índice de refracción. Esta variable se puede controlar durante el proceso de revelado y se especifica como la modulación del holograma.
+
+En cualquier punto de la superficie, el recubrimiento solo reflejará una determinada longitud de onda en un pequeño rango de ángulos de incidencia. Fuera de este rango de ángulos, la reflectividad cae muy rápidamente y la luz de esa longitud de onda se transmitirá a través del recubrimiento.
+
+El efecto se ilustra en las Figuras 2.16 y 2.17. Los rayos 1 y 3 no están lo suficientemente cerca del ángulo de reflexión, θ, para que se reflejen, mientras que el rayo 2 incide en el ángulo de diseño y se refleja.
+
+Existe otra característica más sutil de los hologramas que brinda ventajas particulares en un sistema óptico. Esa es la capacidad de cambiar la longitud de onda sintonizada de manera uniforme en la superficie del reflector. La figura 2.12 muestra que el revestimiento de reflexión
+debe reflejar la longitud de onda de la pantalla en un ángulo de incidencia diferente en la parte inferior del combinador que en la parte superior. Es posible lograr este efecto con un holograma porque se puede construir desde la posición del ojo de diseño.
+
+El proceso para producir el combinador holográfico motorizado se describe muy brevemente a continuación.
+
+El proceso tiene tres etapas clave:
+
+Diseñar y fabricar el holograma generado por computadora (CGH).
+
+Producir holograma maestro.
+
+Copias replicadas para los elementos del combinador holográfico.
+
+El CGH y la óptica de construcción crean el frente de onda complejo necesario para producir el holograma maestro. El CGH permite el control de la potencia de la rejilla de difracción sobre el combinador, lo que permite la corrección de algún nivel de distorsión óptica que da como resultado un sistema de lentes de relé simplificado.
+
+El diseño de CGH comienza con el rendimiento de la especificación y el diseño detallado de la óptica de la lente del relé. Esto se usa para definir el rendimiento del combinador y luego el de la óptica de construcción, lo que finalmente conduce a un conjunto de polinomios de frente de onda que definen el CGH. Todo el proceso es iterativo hasta lograr una solución práctica a todas las etapas. El CGH es en realidad una rejilla de difracción grabada en una capa de cromo sobre un sustrato de vidrio por un haz de electrones.
+
+El holograma maestro se crea usando este frente de onda complejo grabado en una capa de gelatina sobre un sustrato de vidrio esférico y se usa como plantilla para producir los elementos combinadores.
+
+El proceso de replicación utiliza una técnica de exposición de escaneo en la que un rayo láser se escanea en forma de trama a través del sustrato de replicación que se ha emparejado con el sustrato maestro para producir una copia de contacto del holograma maestro.
+Debe señalarse que el diseño de sistemas ópticos holográficos es una operación que requiere un uso intensivo de la computadora y no sería posible sin un conjunto muy extenso de software de diseño óptico.
+
+El desarrollo del software de diseño óptico ha requerido muchos años de esfuerzo y el diseño óptico holográfico es en gran medida una tarea para expertos y profesionales. Es esencial un vínculo muy estrecho con el equipo y las instalaciones de fabricación de productos ópticos holográficos.
+
+La figura 2.18 es una fotografía de un moderno HUD holográfico de combinador único fuera del eje de FOV amplio con un combinador holográfico alimentado.
+
+2.2.4 Electrónica HUD
+
+Los elementos funcionales básicos de un sistema electrónico HUD moderno se muestran en la Figura 2.19. Estos elementos funcionales se pueden empaquetar para que el sistema HUD completo esté contenido en una sola unidad, como en el Typhoon HUD anterior.
+
+El sistema también puede configurarse como dos unidades, a saber, la Unidad de visualización y la Unidad electrónica. La unidad de pantalla contiene el ensamblaje óptico HUD, CRT, electrónica de la unidad de pantalla, fuentes de alimentación de alto y bajo voltaje. La Unidad de Electrónica lleva a cabo el procesamiento de la pantalla, la generación de símbolos y la interfaz con los sistemas de la aeronave.
+
+La nueva generación de aeronaves con aviónica modular integrada utiliza tarjetas/módulos estandarizados para llevar a cabo las tareas de procesamiento de visualización HUD y generación de símbolos. Estos están alojados en un estante en uno de los gabinetes ambientalmente controlados.
+
+Los elementos funcionales básicos de la electrónica HUD se describen brevemente a continuación.
+
+La interfaz del bus de datos decodifica los datos digitales en serie del bus de datos de la aeronave (normalmente un bus de datos MIL STD 1553B) para obtener los datos apropiados de los subsistemas de la aeronave e ingresa estos datos al procesador de pantalla.
+
+Los datos de entrada incluyen los datos de vuelo primarios del sistema de datos aéreos y el INS, como la altura, la velocidad aerodinámica, la velocidad vertical, los ángulos de cabeceo y alabeo, el rumbo y el vector de velocidad de la trayectoria de vuelo. Otros datos incluyen señales de guía MLS o ILS, gestión de tiendas y datos de puntería de armas en el caso de un avión de combate, señales discretas como comandos, advertencias, etc.
+
+El procesador de visualización procesa estos datos de entrada para derivar los formatos de visualización apropiados, realizando tareas como la conversión de ejes, la conversión de parámetros y la gestión de formatos. Además, el procesador también controla las siguientes funciones:
+
+Autotest,
+
+Control de brillo (especialmente importante en niveles bajos de brillo),
+
+secuenciación de modos,
+
+Calibración,
+
+Control de la fuente de alimentación.
+
+El generador de símbolos lleva a cabo la tarea de generación de formas de onda de visualización (digitalmente) para permitir que la simbología de visualización adecuada (p. ej., líneas, círculos, alfanuméricos, etc.) se escriba con trazos en el HUD CRT. Los símbolos están formados por segmentos de línea recta que unen los puntos apropiados en la superficie de la pantalla de manera análoga a un libro ilustrado para niños de 'unir los puntos'. Los símbolos fijos, como alfanuméricos, cruces, círculos (de tamaño según sea necesario) se almacenan en la memoria del generador de símbolos y se activan según sea necesario. Las conversiones necesarias de D a A se llevan a cabo en el generador de símbolos que emite las formas de onda de voltaje de deflexión x e y analógicas apropiadas y formas de onda "brillantes" para controlar la unidad de visualización del HUD CRT.
+
+El haz CRT se hace así para trazar el contorno de los símbolos dibujados con líneas, el proceso se conoce como trazo o escritura cursiva. Se requieren sistemas de escritura en pantalla cursiva lentos y rápidos para un HUD de operación en modo diurno y nocturno. El funcionamiento diurno requiere un sistema de escritura cursiva lento para producir una pantalla lo suficientemente brillante que se pueda ver contra un fondo de nube blanca de 30 000 Cd/m 2 (10 000 pies L).
+
+El funcionamiento nocturno requiere una simbología de apariencia idéntica a la simbología diurna para superponerse en la imagen FLIR de TV de trama que se muestra en el HUD.
+
+La apariencia de la simbología generada por trama puede diferir significativamente de la simbología escrita con trazos y los pilotos desean ver una simbología idéntica de día o de noche. Por lo tanto, se utiliza un sistema de visualización de "cursiva rápida" en las operaciones del modo nocturno, en el que la simbología cursiva se dibuja a alta velocidad durante el intervalo de retorno de la trama. La pantalla está escrita a aproximadamente diez veces la velocidad de la letra cursiva lenta y esto exige mucho de los requisitos de ancho de banda y potencia del sistema de deflexión. Tomando un pequeño número de líneas de la parte superior e inferior de la imagen, generalmente unas veinte líneas en total, la simbología completa del día se puede superponer sobre la imagen de TV para uso nocturno.
+
+Debido a las altas velocidades de escritura, el brillo de la pantalla de trama y cursiva rápida inicialmente solo era adecuado para uso nocturno o con poco brillo ambiental. Sin embargo, las mejoras en los CRT, el desarrollo de fósforos más eficientes como el P53 y los combinadores selectivos de longitud de onda de alta eficiencia han permitido aumentar el brillo cursivo rápido y de trama a alrededor de 3000 Cd/m 2 (1000 pies L) que se puede utilizar durante el día.
+
+Es digno de mención la amplia gama de niveles de brillo ambiental sobre los que debe operar un HUD en modo día/noche. Los niveles de luminancia de CRT van desde 30000 Cd/m 2 a 0,3 Cd/m 2 , un rango de 10 5 : 1.
+
+La unidad de control de pantalla contiene toda la electrónica de control de pantalla para HUD CRT, incluidas las unidades de fuente de alimentación de alto y bajo voltaje. Se requieren amplificadores de deflexión x e y de alta linealidad y alto ancho de banda para cumplir con los requisitos de escritura cursiva y precisión de HUD.
+
+La electrónica de la interfaz de video está incorporada en la electrónica de la unidad de pantalla para el modo de trama de TV.
+
+Los sistemas modernos de HUD se utilizan como la pantalla principal de los datos de vuelo primarios, como la altura, la velocidad del aire, la actitud, el rumbo, etc. Por lo tanto, el HUD se convierte en un sistema crítico para la seguridad cuando el piloto vuela con la cabeza hacia arriba a baja altitud y confía en el HUD. Por lo tanto, los sistemas HUD modernos para aeronaves tanto militares como civiles están diseñados para que la probabilidad de mostrar información peligrosa o engañosa sea del orden de menos de 1 × 10-9. El HUD autónomo de una sola unidad lo convierte en una configuración de sistema ideal para un HUD crítico para la seguridad. Se pueden emplear técnicas de monitoreo de trayectoria hacia adelante y hacia atrás para asegurar que lo que está en la pantalla es lo que realmente comandó el sistema de la aeronave. Las características de monitoreo incorporadas en la electrónica HUD se muestran en la Figura 2.19.
+
+2.2.6 HUD de aeronaves civiles
+
+La aplicación de HUD en aeronaves civiles se ha mencionado anteriormente en este capítulo.
+
+Esta sección explica su potencial e importancia con mayor detalle y cubre el progreso que se ha logrado en la producción de sistemas viables para la operación de aeronaves civiles.
+
+El uso de un HUD por parte de los operadores de aviación civil sigue siendo una práctica relativamente novedosa y se estimó en 2009 que había alrededor de 2000 instalaciones de HUD en servicio de pago en todo el mundo. Esto se compara con más de 15 000 sistemas HUD militares en servicio en todo el mundo. Sin embargo, el futuro de los sistemas civiles de HUD se ve bien y los números están creciendo. Se estima que el mercado potencial durante la próxima década será del orden de 5000 sistemas.
+
+Las principales ventajas de un HUD en una aeronave civil son:
+
+1. Mayor seguridad al proporcionar una mejor conciencia de la situación para que el piloto controle la aeronave mediante la presentación con la cabeza levantada de la simbología de información de vuelo principal para que se ajuste a la escena del mundo exterior.
+
+Los problemas de las condiciones severas de cizalladura del viento se mencionaron anteriormente en la introducción de este capítulo. La Figura 2.23 muestra cómo surge la cizalladura del viento y los problemas que crea. Más de 700 pasajeros murieron en los EE. UU. solo en accidentes en los últimos años causados u200bu200bpor la cizalladura del viento.
+
+El HUD también puede proporcionar una pantalla de director de ruta de vuelo que permite el efecto de la cizalladura del viento a partir del conocimiento del vector de velocidad, la velocidad aerodinámica, la altura y el comportamiento aerodinámico de la aeronave.
+
+El HUD también puede aumentar la seguridad durante las maniobras en el terreno o para evitar el tráfico.
+
+Los sistemas de advertencia de proximidad al suelo (GPWS) son una ayuda muy valiosa para evitar el terreno y los GPWS mejorados ampliarán aún más esta protección.
+
+En circunstancias, sin embargo, durante una maniobra de escape del terreno donde el terreno es visible, el vector de trayectoria de vuelo (FPV) que se muestra en el HUD proporciona una presentación inequívoca sobre si se perderá o no el terreno. Si el FPV se superpone al terreno por delante, la aeronave lo golpeará y, en esta situación, la tripulación debe decidir sobre otro curso de acción en lugar de "esperar" para ver qué sucede.
+
+Los sistemas de prevención de colisiones de tráfico (TCAS) brindan orientación sobre conflictos de tráfico y escape y son de gran beneficio para prevenir colisiones en el aire. Sin embargo, la guía se proporciona con la cabeza hacia abajo para que el piloto maniobre con los instrumentos mientras trata de adquirir visualmente el tráfico conflictivo. El HUD permite que la maniobra de escape y la búsqueda de tráfico se realicen con la cabeza hacia arriba.
+
+Las mejoras de seguridad en el transcurso de cada etapa de un vuelo típico se predijeron en un estudio publicado por Flight Safety Foundation (consulte Lecturas adicionales).
+
+El estudio concluyó que un HUD probablemente habría tenido un impacto positivo en el resultado del 30 % de los incidentes fatales de transporte a reacción documentados durante el período de 1958 a 1989.
+
+2. Mayor capacidad de generación de ingresos mediante la ampliación de las operaciones en condiciones climáticas mínimas más bajas. El HUD se usa para monitorear el sistema de aterrizaje automático y para permitir que el piloto tome el control en aeronaves que no están equipadas con los estándares completos de aterrizaje automático de Categoría III (los sistemas de aterrizaje automático se tratan en el Capítulo 8).
+
+3. Uso del HUD como parte de un sistema de visión mejorado para permitir operaciones en mínimos meteorológicos más bajos en aeródromos no equipados con ayudas automáticas para el aterrizaje (ILS/MLS). Por ejemplo, el número de instalaciones ILS Tipo II y Tipo III en los EE. UU. es muy limitado, normalmente menos de 70. El potencial de generación de ingresos de los sistemas de visión mejorados es, por lo tanto, muy considerable. Como se explicó anteriormente, el HUD muestra una imagen de video del mundo real delante de la aeronave derivada de un sensor de radar de longitud de onda milimétrica y un sensor FLIR instalado en la aeronave junto con la información de vuelo principal superpuesta y los parámetros de la ruta de vuelo.
+
+4. El uso del HUD para mostrar la guía de calles de rodaje en tierra se está investigando activamente y se considera una posible extensión de las funciones de los HUD. La guía de calle de rodaje en tierra podría ser proporcionada por GPS diferencial.
+
+La FAA llevó a cabo pruebas muy alentadoras en los EE. UU. en 1992. El sistema de visión mejorado utilizó un radar de longitud de onda milimétrica que operaba a 35 GHz y un sensor de imágenes infrarrojas de 3 a 5 micras (ver Lectura adicional). El sensor infrarrojo proporcionó información de imagen útil en condiciones de neblina y alta humedad en un rango que excedió sustancialmente el rango de los ojos de los pilotos. Sin embargo, al descender a través de condiciones típicas de nubes y niebla, el rango no era mejor de lo que podía verse a simple vista. Sin embargo, el sensor de radar de 35 GHz pudo operar con éxito en todas las condiciones climáticas y permitió generar una imagen sintética de la pista a partir de la imagen de radar procesada en un rango de 2 a 2,5 millas. Los pilotos pudieron identificar la pista en la que pretendían aterrizar en un rango de aproximadamente 1,7 millas. Rutinariamente pudieron volar a mínimos de Categoría IIIa (altura de decisión de 50 pies/alcance visual de la pista de 700 pies) utilizando la pantalla HUD de la imagen de la pista generada por radar y la simbología de vuelo principal superpuesta como su único medio para realizar la aproximación publicada. Se descubrió que la visualización del vector de velocidad de la aeronave en el HUD era particularmente útil durante la aproximación, cuando se usaba junto con la imagen electrónica del mundo exterior, y permitía gestionar con precisión el control de la ruta de vuelo de la aeronave.
+
+Los pilotos de evaluación informaron calificaciones de Cooper-Harper de 3 (satisfactorio sin mejora y con una compensación mínima requerida por el piloto para el desempeño deseado).
+
+También se evaluó un radar de 95 GHz con resultados exitosos similares, sin embargo, la resolución fue mejor que el radar de 35 GHz debido a la longitud de onda más corta. El desarrollo activo de sistemas de sensores de visión mejorados por infrarrojos y radar continúa y se prevé su introducción en el servicio operativo civil en la próxima década. La Figura 2.24 muestra la eficacia de una pantalla HUD de visión mejorada con simbología de información de vuelo principal superpuesta.
+
+Una instalación de HUD montada en el techo es práctica en una aeronave civil y es la configuración generalmente adoptada (aunque los HUD de protección antideslumbrante son prácticos, rara vez hay espacio para adaptar dicho sistema). La figura 2.3 muestra una instalación civil de HUD.
+
+Los elementos HUD están ubicados con precisión en una bandeja de montaje rígida que proporciona la estabilidad mecánica/óptica necesaria y el combinador puede plegarse cuando no se requiere. El campo de visión es de 30 grados por 25 grados.
+
+La configuración óptica del HUD se muestra en la Figura 2.25. El combinador esférico delgado incorpora un revestimiento dieléctrico de Rugate (mencionado anteriormente). Estos recubrimientos selectivos de longitud de onda altamente eficientes son muy duros y no se ven afectados por la atmósfera y permiten realizar un combinador relativamente delgado, en lugar del sándwich grueso necesario con los combinadores que explotan hologramas de base biológica.
+
+La masa del combinador se reduce considerablemente, lo que a su vez reduce la estructura mecánica requerida para soportarlo con suficiente rigidez tanto en funcionamiento normal como para evitar lesiones en la cabeza durante condiciones de colisión. Cabe señalar que el combinador esférico delgado no introduce ninguna distorsión óptica del mundo exterior.
+
+Como se mencionó anteriormente, los valores de transmisión y reflectividad de un recubrimiento Rugate son comparables con los recubrimientos holográficos. El ángulo fuera del eje del combinador es de alrededor de 17 y es considerablemente más pequeño con la instalación aérea que con una cabina militar (consulte la Figura 2.12), que normalmente es de alrededor de 30 . Los errores fuera del eje pueden corregirse con un tren de lentes de relé convencional, y no se requiere la potencia óptica que puede proporcionar un revestimiento holográfico.
+
+El HUD incorpora componentes electrónicos que monitorean el rendimiento tanto en la ruta de avance como en la de retroceso (como se describió anteriormente), de modo que la integridad del sistema, definida en términos de mostrar información peligrosamente engañosa al piloto, es igual a la de las pantallas convencionales con la cabeza hacia abajo en un valor de 10- 9
+
+La guía de aterrizaje ciego se puede derivar del sistema ILS y mejorar mediante la combinación de información posicional derivada de los datos del Sistema de Posicionamiento Global utilizando los algoritmos apropiados. Esta información de orientación se puede dibujar en cursiva en el HUD junto con la información de vuelo principal utilizando la simbología adecuada. Este sistema se conoce como "visión sintética", a diferencia de la visión mejorada. El último sistema utiliza sistemas de exploración por radar o infrarrojos, como se describe, y las imágenes se dibujan en forma de trama (con simbología escrita con trazos superpuesta).
+
+Los aterrizajes completamente ciegos (Cat. IIIa y, en última instancia, Cat. IIIb) se pueden realizar con un sistema HUD que muestre iconos de guía de visión sintética (e información de vuelo principal) siempre que se proporcione la integridad requerida. Esto se puede lograr mediante la adición de un segundo medio de monitoreo que puede ser un segundo canal HUD o, de manera más realista, la adición de un piloto automático pasivo ante fallas. Una combinación de HUD y un piloto automático pasivo a prueba de fallas brinda una solución rentable para extender la operación de poca visibilidad de muchas aeronaves de categoría de transporte aéreo.
+
+
+

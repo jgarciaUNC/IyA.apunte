@@ -1,0 +1,72 @@
+% Version 2018
+
+\subsubsection{Instrumentos de vuelo}
+\label{sec:instrumentos.de.vuelo}
+
+
+\begin{frame}{Instrumentos de vuelo}
+
+  \begin{block}{Definici\'on}
+    Instrumentos que se utilizan para mostrar informaci\'on de la
+    aeronave y controlar la orientaci\'on de la misma durante el vuelo
+  \end{block}
+
+  \begin{columns}{2}
+
+    \begin{column}{0.5\textwidth}
+{\small
+  \begin{block}{    Necesidades a cumplir:}
+    \begin{itemize}
+    \item Permitir volar en condiciones de clim\'aticas desfavorables, 
+	con escasa visibilidad y durante la noche
+    \item Asegurar una operaci\'on segura y confiable
+    \item Dar avisos tempranos sobre cualquier falla en los sistemas
+      de la aeronave o partes de la misma, de forma que los pilotos
+      puedan tomar una acci\'on inmediata
+    \end{itemize}
+  \end{block}
+}
+\end{column}
+    \begin{column}{0.5\textwidth}
+ \includegraphics[width=\linewidth]{imagenes/1.1.introduccion/problema_soft.jpg} \\
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}
+  
+  \begin{alertblock}{}
+    La habilidad de capturar y transmitir toda la informaci\'on que un piloto requiere, de forma segura y f\'acil de entender, ha sido un desaf\'io a trav\'es de la historia de la aviaci\'on.\\
+{\tiny Referencia:  \cite{FAA_hdk_aMThA_v2}}
+  \end{alertblock}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{block}{Sistema de instrumentos}
+        \includegraphics[width=\linewidth]{tikz/01_sistema_instrumentos.png}
+
+        {\tiny Adaptado de: \cite{FAA_hdk_aMThA_v2}}
+      \end{block}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+  % \begin{minipage}[b]{0.5\textwidth}
+    \begin{block}{Transmisi\'on de la informaci\'on}
+      \includegraphics[width=\linewidth]{tikz/01_transmision_informacion.png}
+    \end{block}
+  % \end{minipage}
+  \end{column}
+\end{columns}
+
+\end{frame}
+
+\subsubsection{Ergonom\'ia}
+\label{sec:ergonomia}
+
+\input{tex/01.01.01.ergonomia.tex}
+
+
+\subsubsection{Formas de presentaci\'on de la informaci\'on}
+\label{sec:formas.presentacion.informacion}
+
+\input{tex/01.01.02.formas.presentacion.informacion.tex}

@@ -1,0 +1,55 @@
+Instrument landing system
+
+The instrument landing system (ILS) is used for
+precision approaches and landings. The system
+uses a combination of VHF and UHF radio waves
+and has been in operation since 1946. In this
+chapter we will look at ILS principles and
+hardware in detail, concluding with how the ILS
+combines with the automatic flight control system
+(AFCS) to provide fully automatic approach and
+landing.
+12.1 ILS overview
+The instrument landing system is used for the
+final approach and is based on directional
+beams propagated from two transmitters at the
+airfield, see Figure 12.1. One transmitter (the
+glide slope) provides guidance in the vertical
+plane and has a range of approximately 10 nm.
+The second transmitter (the localizer) guides
+the aircraft in the horizontal plane. In addition
+to the directional beams, two or three marker
+beacons are located at key points on the
+extended runway centreline defined by the
+localizer, see Figure 12.4.
+
+12.2 ILS ground equipment
+
+12.2.1 Localizer transmitter
+
+The localizer transmits in the VHF frequency
+range, 108–112 MHz in 0.5 MHz increments.
+Note that this is the same frequency range as used
+by the VOR system (see Chapter 10). Although
+the two systems are completely independent and
+work on totally different principles, they often
+share the same receiver. The two systems are
+differentiated by their frequency allocations
+within this range. ILS frequencies are allocated to
+the odd tenths of each 0.5 MHz increment, e.g.
+109.10 MHz, 109.15 MHz, 109.30 MHz, etc.
+VOR frequencies are allocated to the even tenths
+of each 0.5 MHz increment, e.g. 109.20 MHz, 109.40 MHz, 109.60 MHz, etc. Table 12.1
+provides an illustration of how these frequencies
+are allocated within the 109 MHz range. This
+pattern applies from 108 to 111.95 MHz.
+The localizer antenna is located at the far end
+of the runway and transmits two lobes to the left
+and right of the runway centreline modulated at
+90 Hz and 150 Hz respectively. On the extended
+runway centreline, see Figure 12.2, the combined
+depth of modulation is equal. Either side of the
+centreline will produce a difference in depth of
+modulation (DDM); this difference is directly
+proportional to the deviation on either side of the
+extended centreline of the runway. The localizer

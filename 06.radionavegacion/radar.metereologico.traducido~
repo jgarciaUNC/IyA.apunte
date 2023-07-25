@@ -1,0 +1,325 @@
+-es
+
+Ver también
+    [1me[22m, [1mser[22m
+Radar meteorológico
+
+El radar meteorológico se introdujo en las aeronaves de pasajeros durante la década de 1950 para que los pilotos identificaran las condiciones climáticas y posteriormente se redirigieran para la seguridad y comodidad de los pasajeros. Las condiciones climáticas extremas son una amenaza importante para la operación segura de una aeronave; las tripulaciones de vuelo deben conocer estas condiciones y comprender las consecuencias. Existen tres tecnologías principales que se usan típicamente en las aeronaves para detectar las condiciones climáticas: radar a bordo, detección de rayos y servicios de enlace de datos. Estos sistemas permiten a los pilotos identificar las condiciones climáticas y, posteriormente, cambiar la ruta para la seguridad y comodidad de los pasajeros. La mayoría de las aeronaves de transporte comercial están equipadas con radar meteorológico, y esto representa la mayoría de este capítulo. Las aeronaves de aviación general que no están equipadas con radar suelen estar equipadas con una tecnología alternativa, es decir, detección de rayos y / o servicios de enlace de datos.
+
+20.1 Resumen del sistema
+
+La palabra radar se deriva de la detección y el alcance de radio; El uso inicial del radar era localizar aeronaves y mostrar su alcance y orientación en un monitor (ya sea en tierra o en otra aeronave). Este tipo de radar se denomina radar primario; la energía se dirige a través de una antena a un "objetivo"; Este objetivo podría ser un avión, el suelo o condiciones climáticas específicas. En el caso del radar meteorológico, queremos detectar la energía reflejada por el contenido de una nube, o por precipitación, ver Figura 20.1. Este último puede definirse como el resultado de la condensación de vapor de agua en la atmósfera que posteriormente cae a la superficie de la tierra. La precipitación puede ocurrir en muchas formas diferentes, incluyendo: lluvia, lluvia helada, nieve, aguanieve y granizo. El radar meteorológico funciona en la banda C (4 a 8 GHz) o en la banda X (8 a 12,5 GHz); Estas dos bandas tienen sus ventajas y desventajas para su uso en aplicaciones de radar meteorológico. Los pulsos de energía de microondas de banda C pueden penetrar a través de fuertes precipitaciones, proporcionando así la detección del clima, permitiendo al piloto determinar más detalles del patrón del clima.
+
+Los pulsos de energía de microondas de banda X pueden proporcionar una buena resolución de imágenes; sin embargo, esto significa que solo pueden usarse para evitar el clima. Las frecuencias más altas requieren una antena más pequeña; Por esta razón, los aviones de pasajeros más grandes usan un radar de banda X.
+
+El alcance de un sistema de radar meteorológico es típicamente de 320 millas. Los pulsos de energía de microondas se reflejan en las gotas de humedad y se devuelven a la antena del radar. El sistema calcula el tiempo necesario para que los pulsos de energía sean devueltos; esto se muestra como una imagen en una pantalla de radar meteorológica dedicada, o la imagen se puede integrar con el sistema electrónico de visualización de vuelo. La fuerza de la energía devuelta se mide y se usa para determinar el tamaño del objetivo. Un mayor contenido de humedad en una nube proporciona una mayor energía de retorno. La antena se escanea en el plano lateral para proporcionar información direccional sobre el objetivo.
+
+20.2 Equipos aerotransportados
+
+El sistema típico de radar meteorológico en un avión grande comprende la antena (cono de nariz); dos transceptores (cono de nariz); dos paneles / pantallas de control (cabina), ver Figura 20.2. Los transceptores están ubicados en el cono de la nariz, lo que minimiza la longitud de la guía de ondas y también evita la necesidad de que la guía de ondas penetre en el mamparo de presión. En un solo motor, un avión GA, la antena puede ubicarse en el ala, en una cápsula autónoma. Figura 20.3 (a) Antena de radar meteorológico
+
+20.2.1 Antena
+
+Las señales de microondas se transmiten y reciben a través de la antena. Las primeras versiones de la antena tenían la forma de un plato parabólico; sin embargo, las versiones actuales son del tipo de placa plana de matriz plana, consulte la Figura 20.3 (a).
+
+La antena de placa plana proyecta un haz más enfocado que el tipo parabólico; Esto se debe a la reducción de los lóbulos laterales como se ilustra en la Figura 20.4. La antena comprende una placa plana orientable con una gran cantidad de ranuras radiantes, cada una equivalente a un dipolo de media onda alimentado en fase. La antena está montada en el mamparo de presión hacia adelante detrás del radomo; Esta es una pieza de estructura aerodinámica construida con materiales que tienen baja atenuación de las señales de radar.
+
+La condición mecánica del radomo es muy importante para la efectividad del sistema de radar meteorológico, p. Ej. la deslaminación afectará la atenuación de la señal.
+
+La antena atraviesa automáticamente de izquierda a derecha de forma repetitiva para poder escanear los patrones climáticos por delante del avión. Para investigar las formaciones de nubes, el piloto también puede inclinar la antena hacia arriba o hacia abajo para proporcionar diferentes perspectivas de visualización.
+
+La posición de referencia es escanear la antena para proporcionar imágenes a través del horizonte; las entradas del sistema de referencia de actitud de la aeronave se utilizan para proporcionar la estabilización.
+
+
+Los motores se utilizan como parte de un mecanismo de accionamiento para atravesar la antena en acimut y para inclinar la antena en tono. Los transmisores sincronizados se utilizan para retransmitir las diversas posiciones de la antena de vuelta al transceptor.
+
+Los pulsos de energía se transportan entre la antena y el transceptor a través de una guía de ondas, ver Figura 20.3
+
+(si). Esto se debe a que las pérdidas en un cable coaxial serían altas en frecuencias superiores a 3 GHz y prohibitivas en frecuencias superiores a 10 GHz. Los cables coaxiales también están limitados en términos de la capacidad máxima de manejo de potencia. Las guías de onda tienen sus desventajas; Son voluminosos, caros y requieren más mantenimiento. Fabricados en aleación de aluminio, en forma rectangular hueca, tienen dimensiones muy parecidas a la longitud de onda del sistema. El Capítulo 2, Sección 2.12 proporciona más detalles sobre las guías de onda.
+
+
+Punto clave
+
+La energía radiada por un sistema de radar meteorológico es peligrosa y puede causar lesiones.
+
+20.2.2 Transceptor
+
+El transceptor es un transmisor y receptor combinados, Figura 20.5; la potencia de salida de la antena es del orden de 5 a 10 kW. Los transceptores modernos son dispositivos de estado sólido, que incorporan procesamiento de video para la pantalla y señales de estabilización para la antena. Dado que la energía recibida de un tamaño dado de gota de agua varía con el rango, los retornos de energía de los rangos más cercanos serán más altos que los recibidos de las gotas más alejadas. El transceptor compensará automáticamente los retornos de objetivos que están cerca o lejos del avión. Esto se logra al alterar la ganancia en función del tiempo desde que se transmite el pulso de energía. Pulsos de energía de radar se transmiten de forma repetitiva; el intervalo entre pulsos depende del rango seleccionado por la tripulación. Debe dejarse tiempo para que el pulso de energía se refleje de las gotas de agua en el límite del rango seleccionado antes de que se transmita el siguiente pulso.
+
+20.2.3 Control panel
+
+En las Figuras 20.6 (a) y (b) se muestra un panel de control de radar meteorológico típico. Esto permite al piloto seleccionar el transceptor izquierdo o derecho, seleccionar el modo de radar meteorológico, inclinar manualmente la antena y seleccionar la ganancia del sistema.
+
+20.2.4 Pantalla
+
+La pantalla básica utilizada para los sistemas de radar primario es el indicador de posición del plan (PPI). A medida que el haz se desplaza de lado a lado, una imagen radial en la pantalla (sincronizada con cada barrido) se mueve a través de la pantalla. La imagen en la pantalla depende de la cantidad de energía devuelta desde el objetivo. Los sistemas de radar meteorológicos originales tenían pantallas monocromáticas dedicadas basadas en un tubo de rayos catódicos (CRT); Estos han evolucionado a lo largo de los años en pantallas a todo color, a menudo integradas con otros instrumentos electrónicos de vuelo. Los beneficios completos de un sistema de radar meteorológico se pueden apreciar cuando el sistema se utiliza en una aeronave con una pantalla de sistema electrónico de instrumentos de vuelo (EFIS), Figura 20.7. Se utiliza un generador de símbolos para proporcionar imágenes de radar meteorológicas específicas según lo determine el transceptor. Un panel de control con pantalla electrónica permite a cada piloto seleccionar el alcance del radar meteorológico en incrementos de 10, 20, 40, 80, 160 y 320 millas.
+
+La pantalla electrónica se superpone al modo de mapa, lo que permite al piloto relacionar el rumbo del avión con las imágenes meteorológicas. Estas imágenes están codificadas por colores para permitir al piloto evaluar la gravedad de las condiciones climáticas. Los colores (que van del negro, verde, amarillo, rojo y magenta) se utilizan para indicar las tasas de lluvia que pueden interpretarse como un nivel de turbulencia.
+
+
+20.3 Precipitaciones y turbulencias
+
+Para una comprensión más detallada de los radares meteorológicos, ahora se consideran los factores que afectan la precipitación, la turbulencia y la formación de nubes.
+
+
+20.3.1 Formación de nubes
+
+Para la comodidad y seguridad de los pasajeros, queremos que el sistema de radar meteorológico detecte la turbulencia resultante de la precipitación que conduce a condiciones climáticas severas, es decir, tormentas eléctricas, de modo que se puedan evitar si es posible. La precipitación puede definirse como el resultado de la condensación de vapor de agua en la atmósfera que posteriormente cae a la superficie de la tierra. Esto puede ocurrir en muchas formas diferentes, incluyendo: lluvia, lluvia helada, nieve, aguanieve y granizo. Las nubes son
+la acumulación visible de partículas de agua y / o hielo en la atmósfera; su formación cambia de manera continua, a menudo resultando en no más que una "lluvia ligera". Bajo ciertas condiciones atmosféricas, las nubes se vuelven grandes e inestables, lo que lleva a condiciones de vuelo peligrosas. La tripulación de vuelo necesita tener pronósticos precisos y actualizados de las condiciones climáticas en ruta; esto incluye detalles de las clasificaciones en la nube como se detalla en la Tabla 20.1.
+
+Dentro de la clasificación anterior, la precipitación varía con cada tipo de nube (ver Figura 20.8):
+Altocúmulos: la precipitación en realidad no llega al suelo
+
+Altostrato: la precipitación es en forma de lluvia o nieve.
+
+Nimbostratus: la base de la nube es difusa con lluvia o nieve continua
+
+Estratocúmulos: lluvia ligera, llovizna o nieve
+
+Estrato: llovizna
+
+Cúmulos: lluvia o nieve
+
+Cumulonimbus: relámpagos, truenos, granizo.
+
+Fuertes lluvias asociadas de lluvia / nieve.
+
+Se puede ver de lo anterior que las formaciones de cumulonimbos presentan la mayor
+peligro para la aeronave y máxima incomodidad para los pasajeros. Necesitamos comprender la naturaleza de las tormentas eléctricas que contienen fuertes lluvias y turbulencias.
+
+20.3.2 Tormentas eléctricas
+
+Se necesitan tres condiciones para crear tormentas eléctricas: inestabilidad en la atmósfera, alto contenido de humedad y un catalizador para comenzar a elevar el aire. El aire puede verse obligado a elevarse en la atmósfera por una serie de causas, como se ilustra en la Figura 20.9:
+
+Frontal: cuando se oponen, se combinan masas de aire cálido y frío
+
+Convectivo: el sol calienta el suelo
+
+Orográfico: movimiento de aire sobre el terreno.
+
+En referencia a la Figura 20.10, el ciclo de vida de una tormenta eléctrica se desarrolla en tres etapas. Durante la primera etapa de cúmulos elevados, el aire cálido y húmedo que contiene vapor de agua se eleva a altitudes más altas. Cuando se alcanza el punto de rocío, se enfría y el contenido de humedad se condensa en gotas de agua creando nubes. Como resultado del proceso de condensación, se libera calor latente y el aire se vuelve más cálido y seco y, por lo tanto, menos denso. Este aire se eleva como una corriente ascendente sobre una o dos millas de diámetro debido a la convección. En esta etapa, el aire ingresa horizontalmente a la celda en todos los niveles, lo que hace que la corriente ascendente se fortalezca con la altitud.
+
+El vapor de agua se transporta a altitudes más altas donde se combina para formar gotas de agua más grandes. Esta primera etapa de una tormenta eléctrica se desarrolla durante aproximadamente 20 minutos. Cuando las gotas de agua son lo suficientemente grandes, son demasiado pesadas para ser sostenidas por la corriente ascendente y se liberan como lluvia. A medida que caen las gotas de agua, atraen el aire circundante causando una corriente descendente. El aire
+la temperatura de la corriente descendente es fría en comparación con la corriente ascendente; fuertes lluvias caen desde la base de la nube. La corriente ascendente continúa transportando las gotas de agua restantes hasta una altitud muy alta; Esto puede ser de hasta 50,000 pies en los trópicos (bien dentro de la troposfera). A estas altitudes, los fuertes vientos en la atmósfera superior (corrientes de chorro) se llevan la parte superior de la nube para formar la característica forma de "yunque". Esta es la etapa madura de la tormenta eléctrica, y puede durar hasta 40 minutos.
+
+Estas dos masas de aire ahora se mueven en direcciones opuestas formando células localizadas de movimiento de aire; El movimiento relativo se conoce como cizalladura del viento y es la base de la turbulencia. Esta cizalladura del viento se caracteriza por la velocidad y dirección relativas de los dos movimientos de aire. La cantidad de aumento en la temperatura y el tamaño de la masa de aire que se calienta determina la velocidad a la que se produce la cizalladura del viento y, por lo tanto, la turbulencia. Estos factores determinarán la naturaleza del límite entre las masas de aire. Cuando estos límites son muy distintos, es cuando la lluvia y la turbulencia son más severas. El tamaño de las gotas en las tormentas eléctricas y otros climas severos es grande en comparación con la lluvia general; esto produce retornos de radar mucho más grandes como se describe en la Sección 20.3.3.
+
+Además del movimiento hacia arriba y hacia abajo del aire dentro de la celda de una tormenta eléctrica, las gotas también viajan lateralmente dependiendo de las condiciones prevalecientes. Se forman nuevas células en los bordes de la nube; Puede que no contengan lluvia, pero a menudo crean turbulencias.
+
+La etapa final de la tormenta eléctrica es cuando las corrientes ascendentes se debilitan, reduciendo así el suministro de aire cálido y húmedo que contiene vapor de agua. Las corrientes descendentes continúan sobre una base más amplia, con menos intensidad y el ciclo comienza a disiparse. Las temperaturas dentro de la nube se equilibran con el aire circundante, y la formación de cumulonimbos una vez imponente se derrumba.
+
+
+20.3.3 Detección de gotas de agua.
+
+La antena escanea hacia adelante y hacia cada lado de la aeronave con un haz cónico o de lápiz de energía de microondas, ver Figura 20.11. Cuando los pulsos de energía del radar meteorológico alcanzan una gota de agua, la energía es absorbida, refractada o reflejada desde la parte convexa delantera de regreso a la antena, como se ilustra en la Figura 20.12. Tenga en cuenta que se supone que la gota de agua es esférica; es poco probable que sea una esfera perfecta dentro de una tormenta eléctrica; sin embargo, los principios ilustrados en la figura 20.12 son buenas aproximaciones. El diámetro de la gota de agua afecta la cantidad de energía devuelta a la antena. Con gotas más grandes, es decir, lluvias más intensas, se refleja más energía en la antena. Las gotas más pequeñas de la nube y la niebla devuelven reflejos significativamente más bajos. Esta relación entre el tamaño individual, la tasa de lluvia y la energía reflejada es la base para detectar la gravedad de la tormenta. Las longitudes de onda del radar meteorológico (25 mm a 12 GHz) son más grandes que cualquier tamaño de gota de agua (consulte la Tabla 20.2). La dispersión de la radiación electromagnética por partículas como las gotas de lluvia, es decir, partículas más pequeñas que la longitud de onda de la energía radiada, se caracteriza por un fenómeno llamado dispersión de Rayleigh.
+
+Esto lleva el nombre de John William Strutt (Lord Rayleigh 1842-1919), un físico inglés. La intensidad de los rendimientos viene dada por la ecuación de dispersión de Rayleigh; En esta ecuación, la intensidad de los rendimientos varía según la sexta potencia del diámetro de la gota. Esto significa que los retornos del vapor de agua dentro de la niebla o las nubes son pequeños en comparación con las gotas de lluvia.
+
+
+20.3.4 Granizo
+
+Los granizos se forman en nubes de cumulonimbos y, además de las turbulencias, causarán daños físicos a la aeronave. Se forman en tormentas eléctricas fuertes con corrientes ascendentes significativas como masas irregulares (o gránulos) de hielo; Esto ocurre cuando el agua sobreenfriada hace contacto con un objeto como polvo o partículas de hielo. El agua súper enfriada existe a temperaturas por debajo del punto de congelación; Esto se debe a que el agua necesita un núcleo para formar cristales de hielo. El agua se congela en la superficie de los núcleos, y luego crece de tamaño formando capas. Cuando la piedra de granizo es demasiado pesada para ser soportada por la tormenta, se caerá de la nube. Con referencia a la Tabla 20.2, los tamaños de las piedras de granizo comienzan a acercarse a la longitud de onda de la energía del radar (25 mm a 12 GHz); Se han registrado granizos de hasta 60 mm de diámetro. Cuando la longitud de onda de la energía del radar es menor que el diámetro del objetivo, el granizo actúa como una lente, enfocando la energía en la superficie interna cóncava y reflejando niveles más altos (en comparación con las gotas de agua) de energía de regreso a la antena.
+
+Punto clave
+
+Los pulsos de energía de banda X (8–12.5 GHz) proporcionan una buena resolución de las imágenes para evitar el clima; requieren una antena más pequeña en comparación con el radar de banda C (4 a 8 GHz).
+
+Punto clave
+
+La antena del radar meteorológico atraviesa automáticamente de izquierda a derecha de forma repetitiva para poder escanear los patrones climáticos por delante del avión.
+
+20.3.5 Turbulencia
+
+La turbulencia se puede inferir de la medición de la precipitación, tanto en términos del tipo de precipitación (lluvia o granizo), el tamaño de gota y la tasa de precipitación. Las dimensiones aproximadas (dadas como su diámetro) de varios objetivos climáticos se dan en la Tabla 20.2.
+
+20.3.6 Cizalladura predictiva del viento
+
+La cizalladura del viento puede ocurrir tanto en dirección vertical como horizontal; Esto es particularmente peligroso para las aeronaves durante el despegue y el aterrizaje. Las condiciones climáticas específicas conocidas como microbursts provocan movimientos rápidos y rápidos de aire desde las nubes hacia el suelo.
+
+Cuando el aire del microburst llega al suelo y se propaga en todas las direcciones, esto tiene un efecto en el avión dependiendo de su posición relativa al microburst. Con referencia a la figura 20.13, cuando se acerca a la micro explosión, crea un aumento en el viento de frente que causa un aumento temporal de la velocidad y elevación para un avión que se aproxima a la nube; Si el piloto no fuera consciente de la condición que crea la mayor velocidad del aire, la reacción normal sería reducir la potencia. Al volar a través de la micro explosión, el avión está sujeto a una corriente descendente. A medida que el avión sale del microburst, la corriente descendente ahora se convierte en un viento de cola, lo que reduce la velocidad del aire y la elevación. Esta secuencia completa de eventos ocurre muy rápidamente y podría conducir a una pérdida repentina de velocidad y altitud. En la fase de vuelo de despegue y ascenso, un avión vuela justo por encima de la velocidad de pérdida; la cizalladura del viento es una amenaza severa. Durante la aproximación y el aterrizaje, el empuje del motor será bajo; Si se encuentra una micro explosión, la tripulación tendrá que reaccionar muy rápidamente para reconocer y compensar estas condiciones.
+
+Los sistemas modernos de radar meteorológico pueden detectar el movimiento horizontal de las gotas utilizando técnicas de cambio Doppler. Doppler generalmente se asocia con sistemas de navegación autónomos, y este tema se describe en un capítulo separado. El efecto Doppler se puede resumir aquí como: "... la frecuencia de una onda aparentemente cambia a medida que su fuente se acerca o se aleja de un observador". Esta característica permite detectar la cizalladura del viento creada por microbursts.
+
+En referencia a la Figura 20.14, los pulsos de energía de microondas de la antena se reflejan en las gotas de agua como en el sistema de radar meteorológico convencional. Usando el principio de cambio Doppler, la frecuencia del pulso de energía devuelta por las gotas (B) que se mueven hacia la aeronave será a una frecuencia más alta que la frecuencia transmitida. La frecuencia del pulso de energía que devuelven las gotas que se alejan del avión (A) tendrá una frecuencia menor que la frecuencia transmitida. Estos cambios Doppler en frecuencia se utilizan para determinar la dirección y la velocidad del movimiento del aire resultante de una micro explosión.
+
+Se proporcionan advertencias visuales y sonoras de las condiciones de cizalladura del viento a la tripulación. Las advertencias visuales se dan en el radar meteorológico y en las pantallas de navegación utilizando un icono y mensaje de cizalladura del viento junto con luces de advertencia en el escudo antideslumbrante. Las advertencias audibles se proporcionan como alertas de voz generadas por computadora a través de los altavoces de la cabina, generalmente "cizalladura del viento por delante". El sistema se configura automáticamente para la fase de vuelo; normalmente se inhibe a menos de 50 pies de altitud de radio durante el despegue y el aterrizaje.
+
+Durante una aproximación, el sistema se activa por debajo de los 2500 pies de altitud de radio.
+
+Pon a prueba tu comprensión 20.1
+
+¿En qué bandas de frecuencias de radar opera el radar meteorológico?
+
+Pon a prueba tu comprensión 20.2
+
+Explica qué sucede cuando la energía del radar llega a una gota de agua.
+
+20.3.7 Mapeo del terreno
+
+Un uso secundario del sistema de radar meteorológico es para el mapeo del terreno, p. identificando ríos,
+costas y montañas. Este modo de operación es seleccionado por la tripulación en el panel de control. Los retornos de las diversas características del suelo son diferentes, tal como lo son para la precipitación. El sistema interpreta estas variaciones y las muestra con varios colores. Dado que la energía de la señal de retorno depende de la reflectividad del terreno y el ángulo en el que el haz se encuentra con el terreno, el control de ganancia se utiliza para proporcionar la visualización óptima. Si la ganancia es demasiado baja o demasiado alta, las imágenes no serán claras.
+
+El rayo lápiz del radar meteorológico no es adecuado para el mapeo del terreno, ya que no cubre un área suficientemente grande. Un haz en forma de abanico (Figura 20.15) proporciona una cobertura óptima del terreno a lo largo de la pista prevista de la aeronave. El sistema puede tener la facilidad de remodelar la viga dependiendo del modo seleccionado. Los sistemas modernos logran el mapeo del terreno barriendo el haz del lápiz en ángulos verticales incrementales de la antena para construir la pantalla general.
+
+Punto clave
+
+Durante una tormenta eléctrica, los efectos de la turbulencia se pueden experimentar hasta a 10 nm del centro de la celda de tormenta; en casos extremos esto puede ser de hasta 20 nm.
+
+Punto clave
+
+Las tormentas eléctricas se desarrollan dentro de las formaciones de nubes de cumulonimbos y presentan riesgos graves para las aeronaves:
+
+Visibilidad reducida desde el nivel del suelo hasta 50,000 pies
+
+Turbulencia y cizalladura del viento que causan problemas de manejo
+
+Granizo de hasta 60 mm de diámetro que causa daños estructurales.
+
+Rayos que causan, entre otros, daños estructurales
+
+Interferencia con equipos de navegación y comunicaciones.
+
+Punto clave
+
+El aumento de temperatura y el tamaño de la masa de aire que se calienta determina la velocidad a la que se produce la cizalladura del viento y, por lo tanto, la turbulencia.
+
+Pon a prueba tu comprensión 20.3
+
+¿Qué efecto tendrá la delaminación del radomo en la señal del radar meteorológico?
+
+Punto clave
+
+La cizalladura predictiva del viento utiliza el principio del desplazamiento Doppler; â € ˜ ... la frecuencia de una onda aparentemente cambia a medida que su fuente se acerca o se aleja de un observadorâ € ™.
+
+
+Punto clave
+
+En las fases de vuelo de despegue y ascenso, un avión vuela justo por encima de la velocidad de pérdida; la cizalladura del viento provoca cambios temporales en la elevación y, por lo tanto, es una amenaza para la seguridad de la aeronave.
+
+20.4 Mejoras del sistema
+
+Se están agregando varias características a los sistemas básicos de radar meteorológico para proporcionar muchos beneficios, incluyendo pantallas mejoradas, detección mejorada de turbulencias e integración con otros sistemas.
+
+El sistema de radar meteorológico descrito hasta ahora es bidimensional, es decir, proporciona información de alcance y direccional. El radar meteorológico tridimensional proporciona información volumétrica relacionada con el patrón meteorológico. La antena escanea 90 grados a ambos lados de la línea central del avión, desde el nivel del suelo hasta 60,000 pies y hasta 320 millas por delante del avión. Los retornos de energía se almacenan en una computadora y se utilizan para construir un modelo volumétrico del espacio aéreo delante del avión. Los retornos de tierra no deseados (desorden) se filtran en la computadora utilizando una base de datos de terreno a bordo; Algunos sistemas refinan este desorden teniendo en cuenta la curvatura de la tierra. El software de radar meteorológico se ha desarrollado con la capacidad de predecir las formaciones de nubes de tormenta mediante el análisis de las características de crecimiento de la nube, proporcionando así una mayor notificación de turbulencia. La imagen tridimensional del patrón meteorológico se presenta en la pantalla tanto en vista frontal como lateral.Esto proporciona una imagen más clara de los patrones climáticos. 
+
+La tasa de desarrollo de tormentas eléctricas también se puede modelar dentro del sistema de radar meteorológico, proporcionando a las tripulaciones un mayor aviso de turbulencias anticipadas.
+
+El conocimiento de cómo se desarrollan las tormentas eléctricas sobre la tierra frente a los océanos se puede incorporar al sistema para modificar la visualización del radar meteorológico. Diferentes áreas geográficas del mundo generan diferentes tipos de tormenta con su turbulencia asociada; Estas características pueden integrarse en el modelo de software del sistema. Estos modelos se utilizan para caracterizar los diferentes tipos de tormentas que se desarrollan en los hemisferios norte y sur, teniendo en cuenta las variaciones que ocurren con la latitud. Las advertencias de turbulencia también se pueden personalizar para tipos de aeronaves específicos y las diversas fases del vuelo.
+
+20.5 Detección de rayos
+
+Una tecnología complementaria utilizada para la detección de tormentas son los detectores de rayos. Estos son económicos y livianos, lo que los hace muy atractivos para la aviación general (especialmente para aviones monomotores, donde no hay espacio para un radomo). El sistema de detección de rayos comprende una antena, procesador y pantalla; el peso del sistema es de aproximadamente 5 kg versus 15 kg para un sistema de radar meteorológico. El sistema monitorea la actividad eléctrica dentro de una tormenta (mientras que el radar meteorológico detecta la precipitación como se describe en este capítulo).
+
+Cuando las nubes se desarrollan como se describió anteriormente, los rayos no se producen en las primeras etapas; el radar meteorológico indicará una tormenta en desarrollo antes de que un detector de rayos pueda. El radar meteorológico puede experimentar atenuación, es decir, donde la precipitación cercana puede enmascarar la precipitación más lejos. Los detectores de rayos proporcionan confirmación cuando una nube se ha convertido en una tormenta eléctrica.
+
+Los rayos pueden ocurrir en áreas fuera del área de precipitación detectada por radar. La actividad eléctrica puede originarse en el yunque de la nube de tormenta o en los bordes exteriores del área de precipitación. Las aeronaves de transporte utilizan el radar meteorológico con preferencia a los detectores de rayos porque no todas las nubes se convierten en tormentas eléctricas; El radar meteorológico detecta tormentas más pequeñas, es decir, sin rayos, que también causan turbulencias.
+
+Un sistema típico de aeronave GA es el TWX670 de Avidyne, que comprende una antena, un procesador, la Figura 20.16 y una pantalla. El TWX670 es un sistema de detección de clima basado en rayos de tercera generación que proporciona una pantalla contorneada en color simple e intuitiva con una imagen instantánea del clima circundante. El sistema proporciona una solución para evitar el clima en tiempo real, táctica y en tiempo real. Detecta con precisión y muestra claramente las descargas eléctricas (el principal indicador de tormentas eléctricas) en tiempo real, independientemente de las maniobras de la aeronave. El sistema proporciona prevención climática táctica en el rango crítico de 0-25 nm, complementando a la estrategia
+beneficios del clima de enlace de datos satelital. Las células de tormenta y sus intensidades se muestran en contornos de color, proporcionando una imagen de la actividad eléctrica de una tormenta eléctrica a lo largo del tiempo, Figura 20.17. Esto le permite al piloto determinar las áreas de mayor intensidad e identificar claramente las áreas con potencial de cizalladura del viento convectivo, turbulencia, micro-ráfagas, granizo y hielo.
+
+En el modo TWxCell, cada cuadrícula de celda se muestra como una matriz hexagonal de pesos de celda (colores). Los hexágonos llenos de color resaltan las regiones más intensas de actividad de tormentas eléctricas, presentando una pantalla a color visualmente contorneada con sectores dinámicos. Esto ayuda al piloto a identificar rápidamente las regiones más intensas de actividad de tormentas eléctricas. En el modo de ataque, se muestran hasta 1024 ataques durante un máximo de tres minutos. Cada golpe transmitido incluye rango, rumbo y peso (color). La actividad regional, no la edad, determina el color de la huelga. Las huelgas que son más recientes pero más lejanas no pueden "desvanecerse" destellos que son más cercanos y menos recientes. Esto proporciona un nivel de comodidad para los pilotos en transición de sistemas menos capaces.
+
+La mejora del color ayuda a identificar áreas de alta intensidad al tiempo que proporciona una vista de los eventos discretos.
+
+20.6 Clima Datalink
+
+El MLX770 de Avidyne es un sistema de tiempo gráfico de enlace de datos para operaciones de aviación general fuera de los Estados Unidos continentales (CONUS). Utilizando la constelación de comunicación satelital Iridium, la tecnología de transmisión de enlace de datos bidireccional incluye imágenes de radar de alta resolución, informes de aeródromo meteorológico (METAR) y pronósticos de aeródromo terminal (TAF). Estos se muestran a todo color en una pantalla multifunción adecuada (MFD). Un TAF de aeródromo es un pronóstico que proporciona las condiciones meteorológicas previstas en un aeródromo, generalmente durante un período de 9 o 24 horas. Un METAR es un informe que proporciona las condiciones climáticas reales en un aeródromo en el momento del informe. Los METAR generalmente se emiten cada 30-60 minutos. El MLX770 ofrece imágenes satelitales infrarrojas (SAT IR) para regiones geográficas seleccionadas; Esta imagen muestra la emisión de la porción infrarroja del espectro solar. Las áreas brillantes representan cimas frías de nubes altas; Las áreas oscuras representan suelos cálidos y superficies oceánicas.
+
+Pon a prueba tu comprensión 20.4
+
+¿Cuál es el significado de las imágenes en negro, verde, amarillo, rojo y magenta en una pantalla de radar meteorológico?
+
+Pon a prueba tu comprensión 20.5
+
+¿Cómo se crea la cizalladura del viento y cómo se detectan los microbursts?
+
+20.7 Preguntas de opción múltiple
+
+1. ¿En qué bandas de frecuencias de radar funciona el radar meteorológico?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

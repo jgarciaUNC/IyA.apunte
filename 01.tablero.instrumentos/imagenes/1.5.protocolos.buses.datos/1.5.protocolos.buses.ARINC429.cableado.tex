@@ -1,0 +1,33 @@
+% ARINC 429 cableado
+\begin{tikzpicture}[node distance=1cm, 
+				font = \footnotesize , 
+               Transmisor/.style ={ fill=cyan!30 , 
+						rectangle ,
+						,
+                          draw,
+                          line width= 0.1 , 
+						text width=1.5cm,
+						align = center
+                        } ,
+               Receptor/.style ={  font = \scriptsize, 
+						circle ,
+                          fill=pink!30 , 
+                          draw,
+%						text width=1.2cm,
+						align = center ,
+                          line width= 0.1 , 
+                        } ,
+			]
+
+% grilla
+  \draw[ green!50!black] (0,0) grid (20,10) ;
+
+\path (1.0 , 4.0) coordinate (Tx)
+             (10. , 4.0) coordinate (Rx1)
+      ;
+
+\draw (Tx) node[Transmisor] {Transmisor}
+			(Rx1) node[Transmisor] {Receptor}
+;
+
+\end{tikzpicture} 

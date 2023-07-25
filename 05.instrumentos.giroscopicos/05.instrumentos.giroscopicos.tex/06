@@ -1,0 +1,85 @@
+% 5.1.      Propiedades giroscópicas aplicadas al instrumental aeronáutico de a bordo.
+% Version 2019
+
+\begin{frame}{Un poco de historia...}
+  
+  \begin{columns}
+    \begin{column}{0.3\textwidth}
+      \includegraphics[width=0.7\linewidth]{05.instrumentos.giroscopicos.imagenes/foucault.jpg}
+
+      \includegraphics[width=0.7\linewidth]{05.instrumentos.giroscopicos.imagenes/foucault_giroscopo_wiki.jpg}\\
+      {\tiny Fuente: Wikipedia}
+    \end{column}
+    \begin{column}{0.7\textwidth}{\small
+
+  \begin{block}{Etimolog\'ia}
+    Gir\'oscopo proviene del griego,
+	{\it gyros}: rotaci\'on y {\it skopein}: vista/
+  \end{block}
+
+      \begin{exampleblock}{Desarrollo del gir\'oscopo}
+        Bernard Le\'on Foucault (1819-1868) invent\'o el gir\'oscopo
+        en 1852 y le permiti\'o observar el giro del planeta Tierra.
+        Mont\'o una masa rotatoria en un soporte de Cardano para un
+        experimento que demostrara la rotaci\'on de la Tierra.  Aunque
+        ya hab\'ia demostrado la rotaci\'on de este cuerpo con el
+        p\'endulo que lleva su nombre, no comprend\'ia por qu\'e la
+        velocidad de rotaci\'on del mismo resultaba m\'as lenta que la
+        velocidad de rotaci\'on de la Tierra por un factor
+        $\sin{\lambda}$, donde $\lambda$ representa la latitud donde
+        se encuentra el p\'endulo.  Por lo anterior, Foucault se di\'o
+        cuenta que necesitaba otro aparato para demostrar la
+        rotaci\'on de la Tierra de forma m\'as simple y utiliz\'o los
+        trabajos del astr\'onomo alem\'an Johann Bohnenberger.
+      \end{exampleblock}
+	}
+    \end{column}
+  \end{columns}
+  
+\end{frame}
+
+\begin{frame}{El gir\'oscopo}
+
+  \begin{columns}
+    \begin{column}{0.2\textwidth}
+
+%\includegraphics{05.instrumentos.giroscopicos.imagenes/05.01.movimientos/Rotating_gimbal-xyz.gif}
+\\ \centering Suspensi\'on cardan
+      
+    \end{column}
+  \begin{column}{0.8\textwidth}
+  Un gir\'oscopo consiste en una masa rotante, con forma de rueda, cuyo eje se sujeta a una armaz\'on o cuna (gimbal) interior y \'esta a otra cuna exterior. Este sistema se encuentra libre de rotar en el espacio.
+
+  El gir\'oscopo posee las siguientes propiedades:
+  \begin{enumerate}
+  \item {\bf Rigidez:} es la que permite que rote siempre en el mismo plano y se opone a cualquier momento que tienda a cambiarlo.
+  \item {\bf Precesi\'on:} consiste en la variaci\'on angular del plano de rotaci\'on bajo el influjo de la aplicaci\'on de un momento. Su valor es proporcional a la intensidad del momento aplicado e inversamente proporcional al momento de inercia y momento cin\'etico del rotor.
+  \end{enumerate}
+\end{column}
+\end{columns}
+
+{\tiny Imagen Suspensi\'on Cardan: Fuente: De Lars H. Rohwedder (User:RokerHRO) - Trabajo propio, Dominio p\'ublico, \url{https://commons.wikimedia.org/w/index.php?curid=1352775}}
+
+
+\end{frame}
+
+\begin{frame}{Rigidez}
+  
+\url{https://www.youtube.com/watch?v=JnKloSdUJLo}
+
+
+\end{frame}
+
+\begin{frame}{Precesi\'on}
+
+  
+  
+\end{frame}
+
+\begin{frame}{Accionamiento del gir\'oscopo}
+  
+
+\url{https://www.youtube.com/watch?v=q2Zgvxn4rSA}
+\end{frame}
+
+

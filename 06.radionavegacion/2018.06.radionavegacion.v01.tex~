@@ -1,0 +1,178 @@
+\documentclass[a4paper,10pt,twoside]{book}
+
+\usepackage{../IyA.estilo.2015}
+
+%------------------Define box and box title style
+\tikzstyle{mybox} = [draw=red, fill=yellow!20, very thick,
+    rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
+\tikzstyle{fancytitle} =[fill=blue!80, text=white]
+
+\tikzstyle{grupos} = [draw=blue, fill=green!20, very thick,
+    rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
+\tikzstyle{fancytitle.grupos} =[fill=blue, text=white, ellipse]
+
+\title{Navegaci\'on A\'erea}
+\author{Jorge O. Garcia}
+\date{2018}
+
+%------------------glosario------------%
+\makeindex
+\input{tex/glosario.tex}
+
+
+\newcommand{\fullref}[1]{\ref{#1} de la p\'agina \pageref{#1}}
+
+\renewcommand{\appendixname}{Apéndices}
+\renewcommand{\appendixtocname}{Apéndices}
+\renewcommand{\appendixpagename}{Apéndices}
+
+\renewcommand{\tablename}{Tabla}
+
+\newcommand{\ESPACIO}{\rule{0in}{3ex}}
+\newcommand{\fullref}[1]{\ref{#1} de la p\'agina \pageref{#1}}
+
+
+\begin{document}
+
+
+% Capítulo 6. Radionavegación
+% 6.1    ADF, función, diagrama en bloque, principio de funcionamiento.
+% 6.2    VOR, función, diagrama en bloque, principio de funcionamiento.
+% 6.3    ILS, función, diagrama en bloque, principio de funcionamiento.
+% 6.4    DME, función, diagrama en bloque, principio de funcionamiento.
+% 6.5    Radio-altímetro
+% 6.6    Radar meteorológico.
+
+
+\thispagestyle{fancy}
+\maketitle
+
+\newpage
+
+\thispagestyle{fancy}
+\tableofcontents
+
+\newpage
+
+%------------------Navegacion----------%
+
+\chapter{Navegaci\'on}
+\label{sec:navegacion}
+
+\input{tex/06.00.navegacion.tex}
+
+%------------------ADF-----------------%
+
+\chapter{ADF}
+\label{sec:adf}
+
+    \input{tex/06.01.adf.tex}
+
+%------------------VOR-----------------%
+
+\chapter{VOR}
+\label{sec:vor}
+
+    \input{tex/06.02.vor.v01.tex}
+
+%------------------ILS-----------------%
+
+\chapter{ILS}
+\label{sec:ils}
+
+    \input{tex/06.03.ils.tex}
+
+%------------------DME-----------------%
+
+\chapter{DME}
+\label{sec:d,e}
+
+    \input{tex/06.04.dme.tex}
+
+%------------------Radio Altimetro-----%
+
+\chapter{Radio Alt\'imetro}
+\label{sec:radio.altimetro}
+
+    \input{tex/06.05.radioaltimetro/06.05.radio.altimetro.tex}
+
+%------------------Radar Metereologico-%
+
+\chapter{Radar Metereol\'ogico}
+\label{sec:radar.metereologico}
+
+    \input{tex/06.06.radar.metereologico.tex}
+
+
+\appendix
+%------------------glosario------------%
+\newpage
+%\printglossary[style=altlist]
+\begin{appendices}
+  \printglossaries
+
+  % ------------------acronimos------------%
+  \newpage
+
+  \section{Lista de Acr\'onimos}
+  \label{sec:lista.acronimos}
+
+    \input{tex/acronimos.tex} %\addcontentsline{toc}{appendix}{Lista de  Acr\'onimos}
+
+\end{appendices}
+
+%------------------bibliografia--------%
+\newpage
+
+\bibliographystyle{plain}
+\bibliography{IyA}
+%\bibliographystyle{plain}
+%\bibliography{sample}
+
+
+
+
+\end{document}
+
+
+
+
+%
+%  Asi se citan las direcciones web
+%
+%Example usage
+%
+%In the preamble:
+%---------------
+%
+%\usepackage{url}
+%
+%% Define a new 'leo' style for the package that will use a smaller font.
+%\makeatletter
+%\def\url@leostyle{
+%  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+%\makeatother
+%
+% Now actually use the newly defined style.
+%
+%\urlstyle{leo}
+%
+%
+%In a BibTeX entry:
+%------------------
+%
+%@misc{
+%    c.elmohamed,
+%    author = "Saleh Elmohamed",
+%    title = "Examples in {H}igh {P}erformance {F}ortran",
+%    howpublished = "Website",
+%    year = {1996},
+%    note = {\url{http://www.npac.syr.edu/projects/
+%                    cpsedu/summer98summary/ examples/hpf/hpf.html}}
+%}
+
+
+%----------------------------links interesante navegacion
+%
+%	http://timeandnavigation.si.edu/navigating-at-sea/navigating-without-a-clock/early-voyages
+%

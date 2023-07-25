@@ -1,0 +1,177 @@
+Automatic direction finder
+
+Radio waves have directional characteristics as we have seen from earlier chapters. This is the basis of the automatic direction finder (ADF); one of earliest forms of radio navigation that is still in use today. ADF is a short/medium-range (200 nm) navigation system providing directional information; it operates within the frequency range 190–1750 kHz, i.e. low and medium frequency bands. The term ‘automatic’ is somewhat misleading in today’s terms; this refers to the introduction of electromechanical equipment to replace manually operated devices. 
+
+In this chapter we will look at the historical background to radio navigation, review typical ADF hardware and conclude with some practical aspects associated with the operational use of ADF.
+
+9.1 Introducing ADF
+
+The early aviators used visual aids to guide them along their route; these visual aids would  have included rivers, roads, rail tracks, coastlines, etc. This type of navigation is not possible in low visibility and so magnetic compasses were introduced. Magnetic compasses are somewhat unreliable in the short term, i.e. during turning manoeuvres. Directional gyroscopes are reliable in the short term, but drift over longer time periods. A combined magnetic compass stabilised by a directional gyroscope (referred to as a gyro-magnetic compass) can overcome these deficiencies. The gyro-magnetic compass, together with an airspeed indicator, allowed the
+crew to navigate by dead reckoning, i.e. estimating their position by extrapolating from a
+known position and then keeping note of the direction and distance travelled. Instrumentation
+errors inevitably lead to deviations between the aircraft’s actual and calculated positions; these deviations accumulate over time. Crews therefore need to be able to confirm and update their position by means of a fixed ground-based reference.
+
+The early airborne navigation systems using ground-based navigation aids consisted of a fixed-loop antenna in the aircraft tuned to an amplitude modulation (AM) commercial radio broadcast station. Pilots would know the location of the radio station (indeed, it would invariably  have been located close to or even in the town/city that the crew wanted to fly to). The fixed-loop antenna was aligned with the longitudinal axis of the aircraft, with the pilot turning the aircraft until he received the minimum signal strength (null reading). By maintaining a null reading, the pilot could be sure that he was flying towards the station. This constant turning was inefficient in terms of fuel consumption and caused inherent navigation problems in keeping
+note of the aircraft’s position during these manoeuvres! The effects of crosswind complicated this process since the aircraft’s heading is not aligned with its track.
+
+9.2 ADF principles
+The introduction of an ‘automatic’ direction finder (ADF) system addresses this problem. A loop antenna that the pilot could rotate by hand solves some of these problems; however, this still requires close attention from the crew. Later developments of the equipment used an electrical motor to rotate the loop antenna. The received  signal strength is a function of the angular
+position of the loop with respect to the aircraft heading and bearing to the station, see Figures  9.1(a) and (b). If a plot is made of loop angle and signal strength, the result is a sine wave, as shown in Figure 9.1(c). The null point is easier to determine than the maximum signal strength since the rate of change is highest. Rotating the antenna (rather than turning the aircraft) to determine the null reading from the radio station was a major advantage of the system. The pilot read the angular difference between the aircraft’s heading and the direction of the radio station, see Figure 9.2(a), from a graduated scale, and a bearing to the station could then be determined.
+
+The industry drive towards solid-state components, i.e. with no moving parts, has led to the equipment described in Section 9.3. Navigation based on ADF (using AM commercial radio stations broadcasting in the frequency range 540–1620 kHz) became an established method of travelling across country.
+
+With the growth of air travel, dedicated radio navigation aids were installed along popular air
+transport routes. These radio stations, known as non-directional beacons (NDB), gradually
+supplemented the commercial radio stations and a network of NDBs sprang up in the nations
+developing their aeronautical infrastructure.
+
+These NDBs broadcast in the low frequency (LF) range 190–415 kHz and medium frequency (MF) range 510–535 kHz. As the quantity of NDBs increased, air navigation charts were produced and the NDBs were identified by a two- or three-letter alpha code linked to the location and frequency. In Figure 9.2(c), the NDB located at Mackel in Belgium transmits on 360.5 kHz and is
+identified as MAK; note the Morse code, latitude and longitude details on the chart. Beacons are
+deployed with varying power outputs classified as high (2 kW), medium (50W to 2 kW) and low (less than 50 W). 
+
+Table 9.1 provides a list of typical NDBs associated with airports and cities in a typical European country (note that these are provided for illustration purposes only). Beacons marked with an asterisk in this table are referred to as locator beacons; they are part of the final approach procedures for an airfield (see Chapter 12).
+
+9.3 ADF equipment
+
+9.3.1 Antenna
+
+The rotating loop antenna was eventually replaced with a fixed antenna consisting of two loops
+combined into a single item; one aligned with the centreline of the fuselage, the other at right angles, as shown in Figure 9.3. This orthogonal antenna is still referred to as the ‘loop’ antenna. Measuring the signal strength from each of the loops, and deriving an angular position in a dedicated ADF receiver, determines the direction to the selected beacon (or commercial radio station). The loop antenna resolves the directional signal; however, this can have two possible solutions 180 degrees apart. A second ‘sense’ antenna is therefore
+required to detect non-directional radio waves directional signals from the loop antenna to
+produce a single directional solution. The polar diagram for a loop and sense antenna is shown in Figure 9.4; when the two patterns are combined, it forms a cardioid. Most commercial transport aircraft are fitted with two independent ADF systems, typically identified as left and right Key point When the ADF loop is at right angles to the transmitter, Figure 9.1, the RF wave is detected simultaneously by both sides of the loop antenna, resulting in zero current, i.e. a null point. When the loop is at an angle to the beacon, the RF wave is detected by one side of the loop first; the other side of the loop will be out of phase, thereby generating
+a current. The null signal point is therefore used to determine the direction of the beacon’s RF wave.
+
+The loop and sense components are combined algebraically, with the magnitude and polarity of the
+sense antenna arranged to be identical to the loop antenna. The resulting polar diagram, Figure 9.4, is a cardioid, i.e. it only has one null point from the beacon; this signal is combined with the directional signals from the loop antenna to produce a single directional solution. The polar diagram for a loop and sense antenna is shown in Figure 9.4; when the two patterns are combined, it forms a cardioid. Most commercial transport aircraft are fitted with two independent ADF systems, typically identified as left and right 
+
+Key point
+
+When the ADF loop is at right angles to the transmitter, Figure 9.1, the RF wave is detected simultaneously by both sides of the loop antenna, resulting in zero current, i.e. a null point. When the loop is at an angle to the beacon, the RF wave is detected by one side of the loop first; the other side of the loop will be out of phase, thereby generating a current. The null signal point is therefore used to  determine the direction of the beacon’s RF wave.
+The loop and sense components are combined algebraically, with the magnitude and polarity of the
+sense antenna arranged to be identical to the loop antenna. The resulting polar diagram, Figure 9.4, is a cardioid, i.e. it only has one null point .
+
+systems; the antenna locations for a typical transport aircraft are shown in Figure 9.5.
+
+9.3.2 Receiver
+
+ADF receivers are located in the avionic equipment bay. The signal received at the antenna is coupled to the receiver in three ways: 
+
+The sense signal 
+
+A loop signal proportional in amplitude to the cosine of the relative angle of the aircraft centreline and received signal 
+
+A loop signal proportional in amplitude to the sine of the relative angle of the aircraft centreline and received signal.
+
+The sense antenna signal is processed in the receiver via a superhet receiver (see page 56) which allows weak signals to be identified together with discrimination of adjacent frequencies. The output of the superhet receiver is  then integrated into the aircraft’s audio system.
+
+Loop antenna signals are summed with the sense antenna signal; this forms a phase-modulated (PM) carrier signal. The superhet intermediate frequency (IF) is coupled with the PM signal into a coherent demodulator stage that senses the presence of a sense antenna signal from the IF stage. The PM component of the signal is recovered from the voltage-controlled oscillator (VCO) phase lock circuit (see page 63). This recovered signal contains the bearing information received by the antenna and is compared to a reference modulation control signal. 
+
+Receivers based on analogue technology send bearing data to the flight deck displays using synchro systems. Digital receivers transmit bearing data to the displays using a data bus system, typically ARINC 429. The ADF receiver is often incorporated into a multi-mode receiver along with other radio navigation systems.
+
+9.3.3 Control panel
+
+Aircraft with analogue (electromechanical) avionics have a dedicated ADF control panel, located on the centre pedestal, see Figure 9.6(a). An alternative panel shown in Figure 9.6(b) enables  the crew to select a range of functions including: frequency selectors/displays and the beat frequency oscillator (BFO). This function is used when they want to create an audio frequency for carrier wave transmissions through their audio panel. 
+
+NDB carrier waves that are not modulated with an audio component use the BFO circuit in the ADF receiver. To produce an audio output, the receiver heterodynes (beats) the carrier wave signal with a separate signal derived from an oscillator in the receiver.
+
+Some ADF panels have an ADF/ANT switch where ‘ADF’ selects normal operation, i.e. combined sense and loop antennas; and ‘ANT’ selects the sense antenna by itself so that the crew can confirm that a station is broadcasting, i.e. without seeking a null. General aviation products combine the control panel and receiver into a single item, see Figure 9.6(c). A changeover switch is used to select the active and standby frequencies. 
+
+9.3.4 ADF bearing display
+
+The output from the ADF receiver is transmitted to a display that provides the pilot with both magnetic heading and direction to the tuned NDB; this can either be a dedicated ADF instrument, as shown in Figure 9.7(a), or a radio magnetic indicator (RMI), see Figure 9.7(b). 
+
+In the RMI, two bearing pointers (coloured red and green) are associated with the two ADF systems and allow the crew to tune into two different NDBs at the same time. RMIs can have a dual purpose; pilots use a switch on the RMI to select either ADF and/or VHF omnidirectional range (VOR) bearings (see Chapter 10 for the latter). Referring to Figure 9.7(c), some aircraft have a bearing source indicator (located adjacent to the RMI) that confirms ADF or VOR selection.
+
+The evolution of digital electronics, together with integration of other systems, has led to the introduction of the flight management system (FMS: see Chapter 19) control display unit (CDU) which is used to manage the ADF system.
+
+Aircraft fitted with electronic flight instrument systems (EFIS) have green NDB icons displayed on the electronic horizontal situation indicator (EHSI), as shown in Figure 9.7(e).
+
+Key point
+
+ADF is a short/medium-range (200 nm) navigation system operating within the frequency range 190
+to 1750 kHz, i.e. low and medium frequency bands. The ADF system uses an orthogonal antenna consisting of two loops; one aligned with the centreline of the fuselage, the other at right angles.
+
+
+Test your understanding 9.1
+
+Why does the ADF system seek a null rather than the maximum signal strength from a transmitting station?
+
+Test your understanding 9.2
+
+Explain the function of the ADF/ANT switch that is present on some ADF panels.
+
+
+Test your understanding 9.3
+
+Explain the purpose of a beat frequency oscillator (BFO) and why it is needed in an ADF receiver.
+
+9.4 Operational aspects of ADF
+
+ADF radio waves are propagated as ground waves and/or sky waves. Problems associated with ADF are inherent in the frequency range that the system uses. ADF transmissions are susceptible to errors from:
+
+Atmospheric conditions: the height and depth of the ionosphere will vary depending on solar activity. The sky waves (see Figure 9.8) will be affected accordingly since their associated skip distances will vary due to refraction in the ionosphere. This is particularly noticeable at sunrise and sunset. 
+
+Physical aspects of terrain: mountains and valleys will reflect the radio waves, causing multi-path reception.Coastal refraction: low frequency waves that are propagated across the surface of the earth as ground waves will exhibit different characteristics when travelling over land versus water. This is due to the attenuation of the ground wave being different over land and water. The direction of a radio wave across land will change (see Figure 9.9) when it reaches the coast and then travels over water.
+
+This effect depends on the angle between the radio wave and the coast.
+
+Quadrantal error (QE): many parts of the aircraft structure, e.g. the fuselage and wings, are closely matched in physical size to the wavelength of the ADF radio transmissions. Radiated energy is absorbed in the airframe and re-radiated, causing interference; this depends on the relative angle between the direction of travel, the physical aspects of the aircraft and the location of the ADF transmitter. Corrections can be made for QE in the receiver.
+
+Interference: this can arise from electrical storms, other radio transmissions, static build-
+up/discharges and other electrical equipment on the aircraft.
+
+The accuracy of an ADF navigation system is in the order of 5 degrees for locator beacons and 10 degrees for en route beacons. Any of the above conditions will lead to errors in the bearing information displayed on the RMI. If these conditions occur in combination then the navigation errors will be significant. Pilots cannot use ADF for precision navigation due to these limitations.
+
+The increased need for more accuracy and reliability of navigation systems led to a new generation of en route radio navigation aids; this is covered in the next chapter. In the meantime, ADF transmitters remain installed throughout the world and the system is used as a secondary radio navigation aid. The equipment remains installed on modern aircraft, albeit integrated with other radio navigation systems.
+
+
+Key point
+
+ADF radio waves are propagated as ground waves and/or sky waves. Problems associated with ADF are inherent in the frequency range that the system uses.
+
+Key point
+
+ADF cannot be used for precision navigation due to inherent performance limitations; it remains as a backup to other navigation systems.
+
+Test your understanding 9.4
+
+Why do ADF antennas need a sense loop?
+
+Test your understanding 9.5
+
+How are NDBs identified on navigation charts?
+
+Test your understanding 9.6
+
+Where would locator beacons be found?
+
+Test your understanding 9.7
+
+Why are there two pointers on the RMI?
+
+Test your understanding 9.8
+
+Describe how ground and sky waves are affected by:
+
+(a) local terrain
+
+(b) the ionosphere
+
+(c) attenuation over land and water
+
+(d) electrical storms.
+
+Test your understanding 9.9
+
+Explain, in relation to an ADF system, what is meant by quadrantal error. What steps can be taken to reduce this error? 
+
+9.5 ADF homing
+
+Homing to an ADF radio station (non-directional beacon – NDB) simply means flying the aircraft in the direction of the station. This is achieved by steering the aircraft directly towards the beacon (Figure 9.10(a)) with the ADF needle pointing to the top of the indicator, i.e. with a null reading. In the event of a crosswind, Figure 9.10(b), the aircraft is driven off-course, away from the intended flight path. To correct for this, the pilot has to constantly change the  aircraft heading to maintain a direct course, resulting in a curved path to the NDB (Figure 9.10(c)). The crosswind requires a constant change of heading to maintain the ADF null reading; however, this has displaced the aircraft from the intended track. This is unacceptable for IFR navigation because the aircraft deviates too far from the intended course, potentially leading to close proximity with other aircraft, terrain and/or obstacles. Homing can be avoided by establishing a wind-correction angle that compensates for the drift caused by any crosswind,  Figure 9.10(d).
+
+C
+
+
+
+
+

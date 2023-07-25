@@ -1,0 +1,18 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Finalidad y operaci\'on}{1}{section.1}
+\contentsline {section}{\numberline {2}Componentes de cabina}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}Indicador y Director de Actitud }{1}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Indicador de Situaci\'on Horizontal}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Control - Computador}{5}{subsection.2.3}
+\contentsline {section}{\numberline {3}Modos de operaci\'on}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Modo Preparado (SBY)}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Modo Ajuste Actitud de Cabeceo (Pitch Attitude Trim, PAT)}{6}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Modo Rumbo Selectado (Heading HDG)}{7}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Modo mantenimiento de altura (ALT)}{7}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Modo Escape (GO AROUND)}{7}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Modo VOR - Localizador (V/L)}{8}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Armado Pendiente de Planeo}{8}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Pendiente de Planeo}{8}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.9}Modo anunciador ampliaci\'on de indicaci\'on en pendiente de planeo (GS EXT)}{8}{subsection.3.9}
+\contentsline {subsection}{\numberline {3.10}Modo Curso Opuesto (REV)}{8}{subsection.3.10}
+\contentsline {section}{\numberline {4}Incorporaci\'on del sistema de radioalt\'imetro}{8}{section.4}

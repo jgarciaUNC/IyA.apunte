@@ -1,0 +1,77 @@
+\newcommand{\minitab}[2][1]{\begin{tabular}{#1}#2\end{tabular}}
+
+Cartas opcionales. Las seis cartas opcionales se producirán si, en opinión de las Autoridades aeronáuticas de los Estados, contribuyen a la seguridad, regularidad y eficacia de las operaciones de las aeronaves.
+
+Cartas condicionales. Las cinco cartas condicionales se producirán solamente si se cumplen determinadas condiciones o circunstancias.
+
+\begin{sidewaystable}%[!h]
+  \centering
+  \caption{Cartas aeron\'auticas OACI}
+  \label{tab:cartas.aeronauticas.OACI}
+  \begin{small}
+    \begin{tabular}{|m{0.12\textwidth}|m{0.4\textwidth}|c|c|c|m{0.35\textwidth}|}
+      \cline{3-5} 
+	\multicolumn{2}{c|}{} & %\multirow{2}*[1.5cm]{
+      \begin{turn}{90}
+        \textbf{Obligatoria}
+      \end{turn}
+      % }
+      &%\multirow{2}*[1.5cm]{
+      \begin{turn}{90}
+        \textbf{Opcional}
+      \end{turn}
+      % }
+      &%\multirow{2}*[1.5cm]{
+      \begin{turn}{90}
+        \textbf{Condicional \,}
+      \end{turn}
+      % } 
+      & \multicolumn{1}{c}{}
+      \\ \cline{1-2}\cline{6-6}
+      \centering \textbf{Grupo} & \centering \textbf{Carta} & 
+      & & &\multicolumn{1}{c|}{\textbf{Requerimientos}}\\ \hline
+      \multirow{4}{0.12\textwidth}{ Planificaci\'on previa al vuelo} &
+      \minitab[l]{1. Plano de obstáculos de aeródromo – Tipo A \\
+      \quad (limitadores de utilización).} &\cellcolor{red} & & &
+       Aeródromos con obstáculos destacados en las áreas de despegue y aterrizaje.
+	\\
+      &
+      2. Plano de obstáculos de aeródromo – Tipo B. & &\cellcolor{blue} & & \\
+      &
+      3. Plano de obstáculos de aeródromo – Tipo C.& & &\cellcolor{green} & \\
+      &
+      4. Carta topográfica para aproximaciones de precisión. &\cellcolor{red} & & & Obligatoria en pistas con aproximaciones de precisión categorías II y III\\ \hline
+      \multirow{4}{0.12\textwidth}{ En vuelo} &
+      5. Carta de navegación en ruta. &\cellcolor{red} & & & 
+	Zonas en las que se hayan establecido Regiones de Información de Vuelo (FIR)	\\
+      &
+      6. Carta de área. & & &\cellcolor{green} & \\
+      &
+      7. Carta de salida normalizada – Vuelo por instrumentos (SID). & & &\cellcolor{green} & \\
+      &
+      8. Carta de llegada normalizada – Vuelo por instrumentos (STAR). & & &\cellcolor{green} & \\
+      &
+      9. Carta de aproximación por instrumentos. &\cellcolor{red} & & &
+Aeródromos en los que se haya establecido tal tipo de aproximación \\
+      &
+      10. Carta de aproximación visual.  & & &\cellcolor{green} & \\ \hline
+      \multirow{4}{0.12\textwidth}{Movimientos en tierra %de 
+        %	las aeronaves en el aeródromo
+      } &
+      11. Plano de aeródromo/helipuerto &\cellcolor{red} & & & 
+En todos los que se utiliza regularmente la aviación civil internacional\\
+      &
+      12. Plano de aeródromo para movimientos en tierra.  & &\cellcolor{blue} & & \\
+      &
+      13. Plano de estacionamiento y atraque de aeronaves.  & &\cellcolor{blue} & & \\ \hline
+      \multirow{4}{0.12\textwidth}{Navegación aérea visual, trazado de posiciones, planificación} &
+      14. Carta aeronáutica mundial (escala 1:1.000.000). & \cellcolor{red}& & & En todas las zonas especificadas por la OACI\\
+      &
+      15. Carta aeronáutica (escala 1:500.000).  & &\cellcolor{blue} & & \\
+      &
+      16. Carta de navegación aeronáutica (escala pequeña). & &\cellcolor{blue} & & \\
+      &
+      17. Carta de posición.  & &\cellcolor{blue} & & \\ \hline
+    \end{tabular}
+  \end{small}
+\end{sidewaystable}
