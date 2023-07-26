@@ -1,0 +1,80 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: 2023.Instrumentos.y.Avionica.V01.A.aux
+The style file: apacite.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: IyA.bib
+I was expecting a `,' or a `}'---line 12 of file IyA.bib
+ : 
+ : @book{eismin1994aircraft,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Database file #2: IyA.01.cabina+instrumental.bib
+Database file #3: IyA.06.radionavegacion.bib
+Database file #4: IyA.07.vuelo.automatico.bib
+Database file #5: IyA.08.navegadores.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Name 2 in "HUIDOBRO, J. M. and ORD{\'o}{\~n]EZ, J. L.}, publisher = {{RA-MA Editorial}}, year = 2014," has a comma at the end for entry moyacomunicaciones
+while executing---line 5062 of file apacite.bst
+Name 2 in "HUIDOBRO, J. M. and ORD{\'o}{\~n]EZ, J. L.}, publisher = {{RA-MA Editorial}}, year = 2014," has a comma at the end for entry moyacomunicaciones
+while executing---line 5072 of file apacite.bst
+Name 2 in "HUIDOBRO, J. M. and ORD{\'o}{\~n]EZ, J. L.}, publisher = {{RA-MA Editorial}}, year = 2014," has a comma at the end for entry moyacomunicaciones
+while executing---line 5075 of file apacite.bst
+Name 2 in "HUIDOBRO, J. M. and ORD{\'o}{\~n]EZ, J. L.}, publisher = {{RA-MA Editorial}}, year = 2014," has a comma at the end for entry moyacomunicaciones
+while executing---line 5076 of file apacite.bst
+Name 2 in "HUIDOBRO, J. M. and ORD{\'o}{\~n]EZ, J. L.}, publisher = {{RA-MA Editorial}}, year = 2014," has a comma at the end for entry moyacomunicaciones
+while executing---line 5079 of file apacite.bst
+Name 2 in "HUIDOBRO, J. M. and ORD{\'o}{\~n]EZ, J. L.}, publisher = {{RA-MA Editorial}}, year = 2014," has a comma at the end for entry moyacomunicaciones
+while executing---line 5079 of file apacite.bst
+Name 2 in "HUIDOBRO, J. M. and ORD{\'o}{\~n]EZ, J. L.}, publisher = {{RA-MA Editorial}}, year = 2014," has a comma at the end for entry moyacomunicaciones
+while executing---line 5079 of file apacite.bst
+You've used 48 entries,
+            6951 wiz_defined-function locations,
+            1545 strings with 19817 characters,
+and the built_in function-call counts, 76254 in all, are:
+= -- 9545
+> -- 466
+< -- 3410
++ -- 3216
+- -- 83
+* -- 4549
+:= -- 13529
+add.period$ -- 191
+call.type$ -- 48
+change.case$ -- 709
+chr.to.int$ -- 0
+cite$ -- 96
+duplicate$ -- 1838
+empty$ -- 3616
+format.name$ -- 730
+if$ -- 15232
+int.to.chr$ -- 0
+int.to.str$ -- 148
+missing$ -- 0
+newline$ -- 1066
+num.names$ -- 300
+pop$ -- 2592
+preamble$ -- 1
+purify$ -- 202
+quote$ -- 0
+skip$ -- 4369
+stack$ -- 0
+substring$ -- 3495
+swap$ -- 924
+text.length$ -- 130
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 4232
+warning$ -- 0
+while$ -- 289
+width$ -- 0
+write$ -- 1247
+(There were 8 error messages)
