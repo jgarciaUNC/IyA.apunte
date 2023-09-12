@@ -1,0 +1,17 @@
+﻿\begin{tikzpicture}[
+                         node distance = 2 cm 
+                         ]    
+
+\draw[  green!70!black , step = 1cm  ] ( 0 , 0 ) grid ( 20  , 20 ) ;      % grilla
+
+\node at ( 1 , 19 )  (OrigenOmni)  {} ;
+\node[rectangle  , draw , rounded corners , font = \Huge ,  
+text width= 4 cm , 
+text height= 1.5 cm , 
+text centered , 
+fill = green!60 ] at ( 7 , 15 )  (ReceptorOmni)  {Receptor} ;
+
+\draw [ line width= 0.1 cm ,  black ]  (OrigenOmni) node [above] {\Large Antena Referencia }   |- (ReceptorOmni)  -- ++( 4 , 0 );
+
+
+\end{tikzpicture}

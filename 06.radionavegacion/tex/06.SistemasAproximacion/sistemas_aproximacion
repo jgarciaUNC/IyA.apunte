@@ -1,0 +1,724 @@
+Introducción
+El Sistema de Aterrizaje Instrumental (ILS, Instrument Landing System) es un sistema de control
+que permite que un avión sea guiado con precisión durante la aproximación a la pista de aterrizaje
+y, en algunos casos, a lo largo de la misma.
+Los sistemas de aproximación de aterrizaje son aquellos que proporcionan una guía al piloto de
+una aeronave que desciente, para facilitarle la aproximación y aterrizaje a la pista del aeropuerto que
+desea.
+Para fijar conceptos, se ha de diferenciar entre aproximación y aterrizaje. La primera es una fase
+de vuelo que comienza en el momento que se deja el vuelo de crucero para iniciar la maniobra de
+acercamiento con descenso y finaliza en el momento en que se llega al punto de decisión, definido
+como aquel en que se debe determinar si se aterriza o se frustra la maniobra, para elevarse de nuevo.
+El aterrizaje, al contrario, es la operación que empieza en el punto de decisión, cuando ya se ha
+decidido tomar tierra y no se puede frustrar el aterrizaje y finaliza cuando el avión se ha posado en
+la pista, disminuyendo su velocidad hasta el punto de no poder abandonarla.
+Una aproximación correcta conduce a un aterrizaje exitoso, por lo que son interdependientes uno
+del otro. Por esto la denominación ILS no es adecuada, ya que es un sistema de aproximación y no
+de aterrizaje.
+La maniobra de aproximación se divide en tres (3) fases:
+Aproximación inicial: establece la transición entre vuelo de crucero y configuración de descenso. Se modifican los parámetros de velocidad y altura a la aproximación, los sistemas de
+navegación empleados son VOR, TACAN o ADF.Desde el control de tierra se puede ordenar
+modificar la trayectoria.
+Aproximación intermedia: se siguen empleando los sistemas de navegación en el crucero,
+per la altitud, velocidad y distancia de separación con otras aeronaves cobran una relevancia
+especial. Esta fase termina en el punto en que se puede empezar a emplear el sistema de
+navegación de aproximación (PAR, ILS y MLS) con seguridad.
+Aproximación final: en esta fase la aeronave ha interceptdo los haces del sistema de aproximación y está prácticamente alineada con la pista. La fase finaliza con el avión, ya posado en
+la pista, se encuentra con velocidad segura para abandonarla.
+Analicemos brevemente los distintos sistemas existentes, los cuales pueden ser clasificados según
+la forma de transmitir la información:
+Las ayudas visuales
+Las ayudas radioeléctricas
+
+Ayudas visuales
+Las ayudas visuales utilizan la energía electromagnética como portadora de información y permiten realizar con mayor eficacia el contacto visual con la pista de aterrizaje y con la trayectoria
+correcta de la senda de descenso. Son dispositivos luminosos cromáticos que emplean el contraste para
+transmitir la información al piloto. Como es lógico, estas ayudas son indispensables en aterrizajes
+nocturnos o diurnos de baja visibilidad.
+
+Sistema de Luces de Aproximación - ALS
+
+El Sistema de Luces de Aproximación (ALS = Approach Light Systems) se utiliza en aeródromos
+con alta frecuencia de uso. Se ubican en las cercanías de la cabecera de la pista como parte a las
+ayudas electrónicas de navegación para la parte final de aproximaciones precisas y no precisas de un
+vuelo IFR; y también como una guía visual en vuelos VFR nocturnos.
+El ALS suministra al piloto con entradas visuales respecto a la alineación de la aeronave, el
+balance, el horizonte, el ancho y la posición con respecto a la cabecera de la pista. Desde que los
+sistemas de iluminación aeroportuarios relevaron a las necesariamente rápidas acciones mentales
+sobre la información visual que encabezaban las decisiones, un sistema visual es ideal para una guía
+durante los últimos segundos críticos del movimiento descendente sobre el patrón de planeo.
+El sistema de luces de aproximación se creó en base al ángulo del patrón de planeo, el rango visual,
+el ángulo de visibilidad cortada en la cabina y de las velocidades de aterrizaje. Esto es esencial para
+que los pilotos estén propensos a utilizar e identificar ALS y de interpretar el sistema sin confusión.
+El sistema comienza en el umbral de cabecera de pista y se extiende hacia el frente de la misma por,
+aproximadamente, 900 m (3000 pies). En caso de que esta longitud no pueda ser utilizada, se emplea
+la mayor posible. Una columna de luces estroboscópicas de alta intensidad luminosa, alimentadas
+mediante una descarga de condensador e igulamente espaciadas, se coloca alineada con el eje de la
+pista y al ser accionadas producen un efecto de flash que indica a los pilotos la ubicación del centro
+de la pista en condiciones de baja visibilidad.
+En los Estados Unidos de América los ALS poseen una Fila de Decisión (Decision Bar), ubicada
+a 1000 pies (300 m) de la cabecera de pista, la cual sirve como un horizonte visible para facilitar
+la transición de IFR a VFR. También se la ubica de forma que coincida con la Altura de Decisión
+(Decision Altitude).
+Diversas configuraciones de ALS son reconocidas por la OACI, sin embargo, configuraciones no
+normalizadas se encuentran instaladas en diversos aeropuertos. Los ALS son sistemas de luces de alta
+intensidad y varios se complementan con otros ubicados sobre la senda de aproximación, tal como el
+Runway End Identifier Lights (REIL), Touchdown Zone Lights (TDZL), and High Intensity Runway
+Lights (HIRL). Entre las configuraciones más usuales se tienen:
+MALSR: Medium-intensity Approach
+Lighting System with Runway Alignment
+Indicator Lights
+MALSF: Medium-intensity Approach
+Lighting System with Sequenced Flashing
+lights
+SALS: Simple Approach Lighting System
+SSALS: Simplified Short Approach Lighting System
+SSALR: Simplified Short Approach Lighting System with Runway Alignment Indicator Lights
+SSALF: Simplified Short Approach Lighting System with Sequenced Flashing Lights
+
+ODALS: Omnidirectional Approach Lighting System
+ALSF-1: Approach Lighting System with
+Sequenced Flashing Lights configuration 1
+ALSF-2: Approach Lighting System with
+Sequenced Flashing Lights configuration 2
+CALVERT I/ICAO-1 HIALS: ICAOcompliant configuration 1 High Intensity
+Approach Lighting System
+CALVERT II/ICAO-2 HIALS: ICAOcompliant configuration 2 High Intensity
+Approach Lighting System
+LDIN: Lead-in lighting
+REIL: Runway End Identification Lights
+
+RAIL: Runway Alignment Indicator Lights
+En las configuraciones que poseen luces secuenciadas (sequenced flashing lights), estas son de tipo
+estroboscópicas y se ubican de frente a la cabecera de pista, sobre el eje de la misma. Estas luces
+se encienden en secuencia, comenzando con la luz maś distante de la cabecera y terminando en la
+Fila de Decisión (Decision Bar). Esto se justifica para no distraer al piloto durante la fase crítica de
+cambiar de IFR a VFR. El sistema de luces secuenciadas es comunmente conocido como “el conejo”
+(the rabbit) o “correr al conejo” (the running rabbit).
+
+Sistema Indicador de Pendiente de Aproximación Visual - VASIS
+El Sistema Indicador de Pendiente de Aproximación Visual (o VASIS, por las siglas de Visual
+Approach Slope Indicator System) es un sistema de luces al costado de la pista que provee información
+de guía visual para el aterrizaje durante la aproximación a una pista. Estas luces pueden ser avistadas
+desde una distancia de hasta 8 km (5 millas) durante el día y desde hasta 32 km (20 millas) o más
+de noche.
+VASIS Estándar: consiste en varios conjuntos de 2, 4, 6, 12 o 16 luces dispuestas en filas y
+
+(a)
+
+(c)
+
+(b)
+
+(d)
+
+Figura 1: Sistema de Luces de Aproximación
+
+Figura 2: Layout del Sistema de Luces de Aproximación
+
+Figura 3: Sistemas ALS
+denominadas near, middle y far. La mayoría de las instalaciones VASIS consisten en conjuntos
+de 2 filas, near y far, y poseen conjuntos de 2, 4 o 12 luces. Otros VASIS tienen 3 filas, near,
+middle y far, lo que permite al piloto con diferentes pendientes de aproximación. Esta última
+instalación puede tener de 6 a 16 luces. Las instalaciones VASIS de 2, 4 o 6 luces se ubican a un
+lado de la pista, usualmente la izquierda desde el punto de vista del piloto. Las instalaciones
+de 12 a 16 luces se colocan en cantidades iguales a ambos lados de la pista.
+Las instalaciones VASIS de 2 filas proveen una única pendiente de aproximación, usualmente,
+a 3 grados. Las instalaciones de 3 filas proveen dos pendientes de aproximación. La pendiente
+inferior es indicada por la fila near y middle, usualmente, a 3 grados; la pendiente superior
+es guiada por las filas middle y far, y es, aproximadamente, 1/4 grado mayor. Esta última
+pendiente se utiliza en aviones con cabina alta. La pendiente normal del dispositivo es de tres
+grados, en algunos lugares se indican pendientes de 4,5 grados para evitar obstaculos en la
+aproximación. El uso de pendientes superiores a 3,5 grados puede causar un incremento en la
+longitud de pista requerida.
+Cada conjunto de luces está diseñado de tal manera que las luces se ven o blancas o rojas, dependiendo del ángulo al cual las luces son vistas. Cuando el piloto está aterrizando en el ángulo
+
+de aproximación apropiado, lo que significa que se encuentra en la trayectoria de aproximación
+correcta, el primer conjunto de luces se ven blancas y el segundo conjunto, rojas. Cuando ambos conjuntos se ven blancos, esto significa que está volando demasiado alto; y demasiado bajo
+cuando ambos se ven rojos. Este es el tipo más común de sistema de indicación de pendiente
+de aproximación visual.
+
+(a) VASIS
+
+(b) VASIS, vista desde la cabina. Runway 35, Pensacola Regional Airport
+
+(c) Layout de un sistema VASIS de 2 filas
+
+Figura 4: Sistema VASIS
+PVASIS (Indicadores de Pendiente de Aproximación Visual Oscilantes): Es una
+luz única al costado de la pista de aterrizaje. Se ve blanco fijo cuando se está en la correcta
+trayectoria de aproximación, parpadeante blanco por encima y rojo fijo cuando se encuentra
+por debajo de la trayectoria de aproximación. Esta última empieza a parpadear cada vez más
+rápido cuanto más se aleja la aeronave de la trayectoria de aproximación ideal. Este tipo de
+
+Indicador de Pendiente de Aproximación Visual es raramente utilizado, en parte porque son
+facilmente confundidos con otras luces de la pista.
+VASIS Tricolor: Consiste en una luz única que se ve de color ámbar por sobre la trayectoria
+de aproximación ideal, blanca en la trayectoria correcta y roja debajo de él. También es muy
+poco utilizada, en cierta medida debido a que se sabe que los pilotos que no están familiarizados
+con él han malinterpretado las luces, provocando una “corrección” en la dirección equivocada.
+T-VASIS y AT-VASIS: El sistema T-VASIS (Visual Approach Slope Indicator - Indicador
+visual de pendiente de aproximación) consiste en una barra perpendicular al eje de la pista
+con 4 luces y una barra paralela al eje de la pista con 6 luces, y que intersecta a la anterior en
+el punto medio. La única diferencia entre ambos sistemas es que este conjunto se encuentra a
+ambos lados de la pista en el T-VASIS y de un solo lado en el AT-VASIS.
+El funcionamiento es el siguiente: Cuando el avión va con la inclinación correcta solamente se
+verá la barra transversal y su color será blanco. Si va por encima de la senda de planeo correcta,
+verá la barra transversal y también algunas de las luces centrales que están por encima de la
+barra transversal, todas ellas de color blanco. Mientras se vuele más por arriba, más luces
+centrales se verán.
+Si la aeronave va por debajo de la senda, se verá la barra transversal y algunas de las luces
+centrales que están por debajo de la barra, todas ellas de color blanco. Si está MUY por debajo,
+verá estas mismas luces pero de color rojo.
+
+Indicador de Trayectoria de Aproximación de Precisión - PAPI
+El sistema visual más moderno es el PAPI (Precision Approach Path Indicator), que son las siglas
+en inglés de Trayectoria de Aproximación de Precisión.
+Consiste en cuatro conjuntos de luces alineados en forma perpendicular a la pista de aterrizaje.
+Funciona básicamente del mismo modo en que lo hace el VASIS Estándar, pero las luces adicionales
+indican al piloto que tan alejado de la trayectoria de aproximación ideal se encuentra la aeronave.
+Cuando los dos conjuntos de luces más alejados se ven rojos y los más cercanos blancos, la aeronave está exactamente en la trayectoria de aproximación. Cuando los tres conjuntos de luces más
+alejados se ven rojos, se encuentra apenas por debajo; mientras que si los tres conjuntos de luces
+más próximos se ven blancos, la aeronave está apenas por encima de la trayectoria de aproximación.
+Cuatro conjuntos de luces rojas indican que está muy por debajo de la trayectoria de aproximación,
+y cuatro conjuntos de luces blancas indican que está muy por encima. La mayoría de los aeropuertos
+importantes utilizan este sistema.
+El PAPI es colocado generalmente del lado izquierdo de la pista de aterrizaje/despegue y puede
+ser visto desde una distancia máxima de 8 km (5 millas) durante el día y a una distancia máxima de
+32 km (20 millas) de noche. Tiene dos o cuatro cajas de luces colocadas en una única fila, lo que lo
+diferencia del VASIS que tiene dos filas: una más próxima y otra más alejada.
+Cada caja de luces está equipada con un mecanismo óptico que divide la luz emitida en dos
+segmentos, rojo y blanco. Dependiendo del ángulo de aproximación, las luces se verán o rojas o
+blancas desde la posición del piloto. Lo ideal sería que las luces visibles se muevan entre el rango de
+todas blancas y de la mitad rojas, cambiando a rojo sucesivamente de derecha a izquierda. El piloto
+alcanza la normal trayectoria de aproximación (generalmente de 3 grados) cuando la mitad de las
+
+(a) VASIS Estándar 2 filas
+
+(b) VASIS Estándar 3 filas
+
+(c) PVASIS
+
+(d) VASIS Tricolor
+
+(e) AT-VASIS
+
+(f) T-VASIS
+
+Figura 5: Tipos de sistema VASIS
+luces sean rojas y la otra mitad blancas. Si está por debajo de la trayectoria de aproximación, las
+luces rojas sobrepasarán en cantidad a las blancas; si está por encima, observará más luces blancas.
+El PAPI se basa en el principio de la Lente de Fresnel. El estándar para el PAPI de la Administración Federal de Aviación es el mismo que corresponde al VASIS OACI.
+
+Ayudas Radioelectricas
+Entre las ayudas radioeléctricas, la que se ha utilizado por los últimos sesenta años y se encuentra
+normalizada por la OACI, es el ILS. En algunos aeropuertos, sobretodo militares, es complementado
+con un sistema radárico denominado PAR, que casi no tiene uso en la actualidad. El ILS esta siendo
+sustituido por el MLS que proporciona prestaciones superiores.
+
+(a) Instalación PAPI
+
+(b) Instalación PAPI
+
+(c) Instalación PAPI
+
+(d) Indicaciones del sistema PAPI
+
+Figura 6: Sistema PAPI
+
+Precision Approach Radar - PAR
+El sistema de aproximación PAR, conocido en algunos aeropuertos como GCA (Ground Control
+Approach), tiene una aplicación muy reducida en la actualidad, usualmente militares.
+Consiste en un radar que proporciona la localización relativa de la aeronave respecto al sistema
+emisor. La posición del avión la proporciona en telemetría, ángulo acimutal y cenital. En aplicaciones
+militares se utilizan equipos como AN/FPN-63, AN/MPN, o AN/TPN-22. El alcance del sistema es
+de 10 a 20 Nm (18,52 - 37,04 km).
+El piloto no recibe indicación alguna en la cabina, la información para la corrección de la trayectoria la recibe por radio desde la estación terrestre, que es la única que dispone de información visual
+en sus pantallas.
+Durante muchos años la maniobra de aproximación a un aeródromo ha sido realizada utilizando
+varios sistemas: por un lado observando las indicaciones de cabina del sistema ILS y por otro, escuchando las órdenes de corrección detalladas por el personal de servicio en el GCA o PAR. Según
+la OACI, el PAR no es un sistema certificado, sino que puede servir como sistema de ayuda complementario al ILS, el cual es el sistema reconocido internacionalmente.
+
+(a) Reflejo de un operador de tráfico (b) Equipo AN/TPN-31 ATNAVICS. Este equipo
+aéreo, en un escaneador Beta de un sis- provee control de tráfico aéreo, radar de exploración
+tema PAR.
+aérea y PAR en aeropuertos militares
+
+Figura 7: Sistema PAR
+
+Sistema de Aterrizaje Instrumental - ILS
+Introducción
+El sistema de aterrizaje instrumental (o ILS, del inglés: Instrument Landing System) es un sistema
+de control que permite que un avión sea guiado con precisión durante la aproximación a la pista de
+aterrizaje y, en algunos casos, a lo largo de la misma.
+Transcurridos pocos años desde el primer vuelo realizado por los hermanos Wright en diciembre
+de 1903, y con los primeros pasos de la aviación comercial, empezó a sentirse la necesidad de disponer
+de sistemas que permitiesen volar en condiciones meteorológicas adversas y de esta forma aprovechar
+la ventaja de velocidad que tenían los aviones.
+El rápido desarrollo que durante los primeros años del siglo XX tuvieron los sistemas de radiodifusión, permitió la puesta en marcha de los primeros sistemas de radionavegación.
+En el año 1907 se concede en Alemania una patente a Otto Scheller, director técnico de la
+compañía C. Lorenz (más tarde Standard Elektrik Lorenz), para un sistema de radionavegación
+direccional. Este sistema estaba formado por dos transmisores direccionales transmitiendo en la
+misma frecuencia y con la misma potencia, pero con las antenas colocadas formando un cierto ángulo
+una respecto a la otra y emitiendo señales de forma alternativa. Eligiendo adecuadamente el ángulo
+entre las antenas, se produce una línea de igual intensidad de señal (equiseñal) en el corte de los dos
+diagramas de radiación. Si las señales emitidas eran rayas cortas para un transmisor y rayas largas
+para el otro, un receptor situado en la línea de igual señal recibiría un tono continuo. Al desplazarse
+de esa línea predominaría la señal de uno de los transmisores dependiendo de a que lado se encontrase
+el receptor.
+
+En el año 1919 en Estados Unidos, F. H. Engel y F. Dunmore utilizaron el principio de “zona de
+equiseñal” para realizar una prueba de vuelo alineado con la pista. Los transmisores radiaban en la
+frecuencia de 300 Khz. y las señales de manipulación consistían en las letras “A” (.-) y “N” (-.) en
+código Morse.
+
+Figura 8: Zonas de equiseñal
+Durante la década de 1920 pueden encontrarse diversos artículos en Europa y América describiendo sistemas experimentales de “aterrizaje automático”.
+Bajo la responsabilidad de la Oficina de Normas del Departamento de Comercio de Estados
+Unidos y con el apoyo de la Fundación Guggenhein, durante el año 1929 se instaló en Mitchel Field
+un localizador consistente en un sistema equiseñal alineado con el eje de la pista, en el que se habían
+añadido a las letras en código Morse dos señales de modulación de frecuencias establecidas en 65 Hz
+y 86.7 Hz, y una radiobaliza de baja potencia para señalar el punto a partir del cual podía iniciarse
+el descenso seguro a la pista.
+Para las pruebas en vuelo se utilizó un avión biplano de entrenamiento Consolidated PT-3 equipado con tres instrumentos especiales: un horizonte artificial, un giróscopo y un altimetro barométrico
+graduado en intervalos de 3 m. Ademas se instaló el receptor del localizador cuyas emisiones se
+mostraban por medio de dos lengüetas vibrantes mecánicamente ajustadas a las frecuencias de modulación de la estación de tierra y manipuladas por pequeños electroimanes conectados al circuito de
+salida del receptor.
+Cuando se recibían las señales del localizador, las lengüetas vibraban con una amplitud proporcional a la intensidad de las señales recibidas. Cuando se volaba en la prolongación del eje de pista
+(curso) las vibraciones de las dos lengüetas tenían igual amplitud. Al desplazarse del curso, vibraba
+con mayor amplitud la lengüeta ajustada a la frecuencia que predominaba en ese lado.
+El 24 de septiembre de 1929, el Teniente James Doolittle realizó en este avión una serie de aterrizajes sentado en el asiento trasero con la cabina completamente cubierta y guiándose exclusivamente
+con los instrumentos de abordo. Había comenzado el aterrizaje instrumental.
+
+(a) James Doolittle
+
+(b) Vuelo de Doolittle en 1929
+
+Figura 9: Doolitlle 1929
+
+Estos trabajos iniciales dieron un nuevo impulso a la investigación en Europa. Así en el año 1932
+el Dr. Ernst Kramer de Lorenz patentó un sistema combinado de localizador (información de azimut)
+y senda de planeo (información de elevación) verticalmente polarizado que operaba en la frecuencia
+de 33.3 Mhz. En el localizador, instalado en el extremo de la pista y de tipo equiseñal, la portadora
+estaba modulada por una señal de 1.150 Hz que se manipulaba con las letras “E” ( . ) y “T” ( - ) en
+código Morse. Además de la información acústica, en el panel de instrumentos del avión se introdujo
+una indicación visual de la posición respecto al eje de pista por medio de una aguja.
+La senda de planeo era del tipo “intensidad constante” y originalmente consistía en el borde
+inferior del lóbulo formado por la superposición de los diagramas del localizador. El piloto tenía que
+seguir la trayectoria determinada por los puntos del espacio en los que detectaba una intensidad
+constante indicada en un instrumento.
+Durante el invierno del año 1932-33 Lufthansa realizó varios vuelos de prueba utilizando este
+sistema instalado en el aeropuerto de Berlin – Tempelhof.
+Con el fin de mejorar la información de la trayectoria de planeo, en 1937 la compañía Lorenz dio
+forma a una patente del Dr. Kramar consistente en un transmisor en UHF conectado a dos antenas
+colocadas una encima de la otra y que radiaban alternativamente. De esta forma se generaban en el
+
+espacio dos lóbulos cuya intersección formaba un haz en la trayectoria de descenso de 3o . Esta era
+la senda de planeo equiseñal que se reinventó en Estados Unidos en 1940.
+En Estados Unidos se probaron distintas versiones entre los años 1931 a 1937. En la Figura
+10 puede verse el esquema de un sistema que estaba formado por un transmisor como localizador
+en la frecuencia de 300 Khz. y otro como senda de planeo de intensidad constante a 93.7 Mhz. A
+este sistema instalado en varios aeropuertos de Estados Unidos y Europa se le encontraron grandes
+limitaciones debido principalmente a problemas por reflexiones.
+
+Figura 10: 1938
+En el año 1938 se desarrollo otro sistema de aterrizaje sin visibilidad por Irving Metcalf de la
+Oficina de Comercio Aéreo de Estados Unidos con el apoyo del Massachusetts Institute of Technology.
+Este tipo de sistema de aterrizaje por instrumentos basaba en un transmisor situado en el aeropuerto
+que producía un blanco en una pantalla de rayos catódicos situada en la aeronave. También se
+presentaban en la pantalla otros blancos que se obtenían de un giróscopo direccional y de un horizonte
+artificial. Así, al aproximarse el avión a tierra, la pantalla presentaba el cambio aparente de posición
+del transmisor con respecto al horizonte. Tras las primeras pruebas, este sistema fue abandonado.
+También en 1938, Lorenz junto con la International Telephon and Telegraph (ITT) inició un
+proyecto, financiado por la Civil Aviation Administration (CAA) de Estados Unidos, para desarrollar
+un sistema formado por un localizador horizontalmente polarizado radiando en la frecuencia de 110
+Mhz, una senda de planeo de intensidad constante a 93,9 Mhz que proporcionaba una trayectoria de
+decenso de tipo parábola y una radiobaliza de 75 Mhz. En este sistema ya se habian adoptado las
+frecuencias de 90 Hz y 150 Hz para los tonos que, por medio de un modulador mecánico consistente
+en dos ruedas con 3 y 5 álabes respectivamente y que giraban movidas por un motor sincrono,
+modulaban a la portadora. En 1939 el sistema se completó con supervisión y control remoto y se
+instaló en el aeropuerto de Indianapolis, llevandose a cabo un programa de pruebas con un Boeing 247D equipado con receptores y registradores para evaluar las señales. El localizador y las radiobalizas
+eran en principio iguales a las utilizadas hoy en día.
+Alentados por los resultados obtenidos con la senda de planeo de intensidad constante, la CAA
+llegó a un acuerdo con ITT para desarrollar un sistema de senda de planeo equiseñal en la frecuencia
+de 330 Mhz consiguiendolo en 1941.
+En esta Senda de Planeo equiseñal, la portadora de 330 Mhz se separaba en dos canales cada uno
+de los cuales se modulaba con un tono de 90 Hz o de 150 Hz. El sistema radiante estaba formado por
+dos antenas montadas en un mástil vertical. La antena inferior se colocaba a una altura de 1.8 m del
+
+suelo y se alimentaba con la señal modulada con 90 Hz, la antena superior estaba a aproximadamente
+8 m del suelo y se alimentaba con la señal modulada con 150 Hz.
+
+Figura 11: 1941
+
+Utilizando la reflexión en el terreno se producian dos diagramas de radiación de tal forma que,
+modificando las alturas y las amplitudes de las señales que alimentaban a las antenas, se variaban
+estos diagramas para obtener una linea de puntos de equiseñal en el ángulo de la trayectoria de
+descenso. Por debajo de la trayectoria predominaba la señal de 150 Hz y por encima la de 90 Hz.
+Durante los años de la II Guerra Mundial, se realizaron diversos desarrollos de sistemas militares
+portatiles basados en el sistema civil de ITT.
+También hubo otros desarrollos como el realizado por Sperry en Estados Unidos y consistente en
+un localizador y senda de planeo equiseñal en la frecuencia de 3000 Mhz.
+Finalmente en el año 1943 se tomó una decisión para estandarizar un sistema de aterrizaje por
+instrumentos (ILS: Instrument Landing System) y la opción seleccionada fue la presentada por ITT
+trabajando en VHF y UHF y denominada SCS-51.
+El SCS-51, como el sistema de Lorenz, estaba basado en una radiación en VHF formada por dos
+diagramas de onda continua (CW: continous wave) que se superponian y formaban un haz en acimut
+conocido como Localizador (LLZ). Había otra segunda radiación en UHF formada por otros dos
+diagramas que formaban un haz en el plano vertical llamado Senda de Planeo (GP). Por tanto el ILS
+no solo proporcionaba información de guiado acimutal, sino que también daba información de guiado
+en la trayectoria de descenso. La diferencia básica entre el ILS y el sistema de Lorenz era que sus dos
+diagramas estaban polarizados horizontalmente y modulados por tonos en vez de manipulados con
+señales Morse. El ILS tenía la ventaja de dar una indicación del grado de divergencia respecto al eje
+en vez de solo indicar si el avión se encontraba a un lado o a otro del eje como hacían los primeros
+sistemas.
+En 1944 mientras en Gran Bretaña se realizaban pruebas con un prototipo de SCS-51, se modificaba un sistema de radar Rebecca-Eureka para convertirlo en un Equipo Medidor de Distancias
+(DME :Distance Measuring Equipment).
+Al final de la II Guerra Mundial se realizaron esfuerzos para adaptar las experiencias y equipos
+desarrollados en el campo militar a un uso civil. Fruto de estos trabajos el ILS se convirtió en el
+sistema normalizado de aterrizaje por instrumentos cuando se celebró la reunión de la Organización
+de Aviación Civil Internacional (OACI) en Chicago en el año 1946. incluyéndolo en su Anexo 10 al
+
+Figura 12: 1943
+Convenio sobre Aviación Civil Internacional titulado “Telecomunicaciones Aeronáuticas”. En 1949
+fue aceptado por la OACI como sistema de aproximación.
+Desde entonces los principios básicos de funcionamiento del ILS no se han modificado, si bien se
+han realizado grandes avances tanto en la electrónica de los equipos que generan las señales como en
+los sistemas de antenas utilizados para generar los diagramas de radiación.
+Y así este sistema cuyos antecedentes empezaron a establecerse hace más de 70 años, sigue
+operativo en los aeropuertos de todo el mundo posibilitando que las más modernas aeronaves realicen
+aproximaciones y aterrizajes seguros y fiables en cualquier condición meteorológica.
+Componentes
+El sistema ILS se divide en tres partes bien diferenciadas:
+1. Información de guía: se proporciona por medio del Localizador (LLZ), que proporciona guía
+lateral, y la Senda de Planeo (GS), para la guía vertical.
+2. Información de distancia: la brindan las Balizas o el DME (Distance Measurement Equipment).
+3. Información visual: la compone el sistema ALS (ver ).
+Varios de estos componentes pueden verse en la Figura 13.
+Información de guía
+Para la información de guía, el ILS posee dos subsistemas independientes: uno sirve para proporcionar guía lateral (Localizador) y el otro para proporcionar guía vertical.
+Localizador - LLZ: una serie de antenas localizadoras (LLZ, LOC o localizer) están situadas
+normalmente a unos 1000 pies (305 m) del final de la pista y suelen consistir en 8 ó 14 antenas
+direccionales, ver Figura 15. Se transmiten señales portadoras entre los 108 MHz y 112MHz
+definidas para cada localizador. Estas portadoras se modulan con 90 Hz y 150 Hz y con distintas
+
+Figura 13: Señales del localizador, senda de planeo y radiobalizas
+
+Figura 14: Patrones de emisión de las señales del localizador y de senda de planeo. [?]
+fases. En la Figura 15 pueden observarse algunas antenas utilizadas en las aeronaves para recibir
+la señal del LLZ.
+Esto produce el efecto que la señal de 150 Hz predomine en el lado derecho de pista y la de 90
+Hz en el izquierdo, desde el punto de vista del piloto, ver Figura 14. El receptor del localizador
+en el avión mide la diferencia entre la modulación entre las señales de 90 Hz y 150 Hz: cuando
+la diferencia es de cero, la antena receptora está en la línea central del localizador, lo que
+
+(a) Disposición del localizador y luces de aproximación en la base de la USAF Whiteman, Johnson County, Missouri
+
+(b)
+
+(c) Algunas antenas de recepción de LLZ en el avión (también recibe la senal del VOR, que es un sistema de radionavegación)
+
+Figura 15: Antenas del Localizador
+normalmente coincide con el centro de la pista.
+Senda de Planeo - GS: una antena transmisora de la senda de planeo (GS, del inglés:
+glideslope) se sitúa a un lado de la zona de la pista donde se produce la toma, Figura 16.
+La señal GS se transmite a una frecuencia de entre 328.6 MHz y 335.4 MHz, usando una
+técnica similar a la del localizador; la señal está situada para marcar una senda de planeo de
+aproximadamente 3o sobre la horizontal. También se usan 2 tonos de audio de 90 y 150 Hz, en
+este caso el de 90 Hz arriba y el de 150 Hz abajo. Cuando en el avión las señales de 90 y 150
+Hz tienen el mismo nivel, significa que el avión desciende en el ángulo correcto, ver Figura 14.
+En la Figura 16 pueden observarse algunas antenas utilizadas en las aeronaves para recibir la
+
+señal del GS.
+Las frecuencias del localizador y la senda de planeo están empareajadas de manera que sólo se
+requiere seleccionar una frecuencia para sintonizar ambos receptores. El localizador proporciona
+una señal de código morse transmitida a 1020 Hz para permitir la identificación. Por ejemplo,
+en el aeropuerto de Barajas, se transmitiría MAA para la pista 33L. Esto permite saber si el
+ILS está operando con normalidad o si está correctamente sintonizado. La señal de senda de
+planeo no transmite ninguna señal de identificación, por lo que se depende del localizador.
+Instrumental en cabina: las señales del localizador y la senda de planeo se muestran en un
+instrumento de la cabina, llamado Indicador de Desviación de Curso (CDI, del inglés: Course
+Deviation Indicator), como agujas horizontales y verticales (o un instrumento electrónico que las
+simule), en la Figura 17 pueden verse algunos modelos de este instrumento. El piloto controla
+el avión de manera que las agujas permanezcan centradas en el indicador, pues es entonces
+cuando el avión sigue la senda de planeo y la dirección correctas. Las señales también pueden
+pasarse a los sistemas de piloto automático para permitir que éste vuele la aproximación.
+
+Radiobalizas
+Las radiobalizas operan a 75 MHz y se utilizan para indicar la altura y posición aproximadas a
+las que se encuentra el avión durante su aproximación.
+Son tres:
+Radiobaliza exterior (OM, del inglés: outer marker): localizada a 3,9 millas náuticas
+(7,2 km) del umbral de la pista. Emite dos rayas (morse) por segundo con un tono de 400 Hz; su
+indicador es azul. Se utiliza esta radiobaliza para ayudar a los chequeos de altura, distancia y
+funcionamiento del equipamiento. Se puede combinar con un NDB para crear una Radiobaliza
+Exterior de Localizador (LOM, del inglés: Locator Outer Marker).
+Radiobaliza intermedia (MM, del inglés: middle marker): se localiza para que, en
+condiciones de baja visibilidad informe que el contacto con la pista es inminente. Está modulada
+con un tono de 1300 Hz y emite puntos y rayas (morse) alternativos. Su color es ámbar.
+Radiobaliza interior (IM, del inglés: inner marker): cuando está instalada, se localiza
+para que en condiciones de baja visibilidad se indique que se está a punto de cruzar el umbral de
+la pista. En esta posición un avión normalmente llega a las condiciones mínimas de la Categoría
+II. La modulación es de puntos a 3000 Hz, 6 por segundo. Su color es blanco.
+En la actualidad la radiobaliza interior resulta rara de encontrar en las instalaciones de ILS. En
+la Figura 13 puede observarse la disposición de las mismas.
+
+Categorías (CAT) de ILS
+El mayor enemigo de la navegación aérea es la baja visibilidad y especialmente en las operaciones
+de aproximación, aterrizaje y despegue ya que en esos momentos es imprescindible tener referencias
+visuales del entorno próximo y en particular del terreno. Cuando se conduce un automóvil con
+niebla es fácil entender la sensación de un piloto realizando una aproximación a 300 o 400 km/h en
+condiciones de baja visibilidad y sabiendo que el terreno cada vez está más cerca. De ahí la necesidad
+
+(a) Antenas de tierra
+
+(b) Algunas antenas de recepción de GS en el avión
+
+Figura 16: Antenas GS
+
+Figura 17: Diversos tipos de CDI
+
+(a) Indicador en tablero de radiobalizas
+
+(b) Antena de radiobaliza
+
+Figura 18: Radiobalizas
+de disponer de un procedimiento y unas ayudas visuales e instrumentales que le permitan terminar
+el vuelo con total seguridad.
+Por todo ello uno de los primeros trabajos encomendados a OACI después de su creación en
+1947, fue establecer lo que se denomina como “Operaciones Todo Tiempo” (AWO: All Wheather
+Operations) y que la propia OACI define como: “Todo despegue o aterrizaje realizado en condiciones
+meteorológicas que reduzcan la referencia visual ”.
+En lo referente a la aproximación y el aterrizaje, las operaciones de baja visibilidad se dividen
+en categorías dependiendo de los mínimos meteorológicos y de los objetivos operacionales que se
+pretendan conseguir. OACI en el Adjunto C al Anexo 10 “Telecomunicaciones aeronáuticas” da las
+siguientes definiciones para estas categorías:
+
+• Operación de Categoría I : Aproximación y aterrizaje de precisión por instrumentos hasta una
+altura de decisión no inferior a 60 m y con una visibilidad no inferior a 800 m o un alcance visual en
+la pista (RVR: Runway Visual Range) no inferior a 550 m.
+• Operación de Categoría II : Aproximación y aterrizaje de precisión por instrumentos hasta una
+altura de decisión inferior a 60 m pero no inferior a 30 m y un RVR no inferior a 350 m.
+• Operación de Categoría IIIA: Aproximación y aterrizaje de precisión por instrumentos: hasta
+una altura de decisión inferior a 30 m, o sin altura de decisión; y con un RVR no inferior a 200 m.
+• Operación de Categoría IIIB: Aproximación y aterrizaje de precisión por instrumentos: hasta
+una altura de decisión inferior a 15 m, o sin altura de decisión; y un RVR inferior a 200m pero no
+inferior a 50 m.
+• Operación de Categoría IIIC: Aproximación y aterrizaje por instrumentos sin limitaciones de
+altura de decisión ni de RVR:
+
+En las definiciones anteriores se entiende como altura de decisión a la del punto de la aproximación
+final en el que el piloto debe decidir continuar el aterrizaje si tiene referencias visuales externas (luces
+de aproximación o de pista) o iniciar una maniobra de aproximación frustrada si no las tiene. Por
+otra parte el alcance visual en la pista o RVR se define como la distancia a la que un piloto situado
+a 5 m de altura sobre el eje de pista, puede ver las señales de la superficie de la pista o las luces que
+la delimitan o identifican su eje.
+
+De las definiciones anteriores y en el extremo de una operación en Categoría IIIC se deduce que
+un piloto podría realizar una maniobra de aproximación a un aeropuerto convenientemente equipado,
+aterrizar y rodar por la pista hasta detener el avión y abandonarla, sin tener ninguna referencia visual
+y guiándose únicamente por los instrumentos.
+
+Un ILS estándar se considera de Categoría I, lo que permite aterrizajes con una visibilidad
+mínima de 2.400 pies (732 m) o 1.800 pies (549 m) en caso de que haya iluminación de la línea
+central y zonas de toma de la pista y un mínimo de techo de nubes de 200 pies (61 m).
+Los sistemas más avanzados de Categoría II y Categoría III permiten operaciones en visiblidad
+de casi cero, pero requieren una certificación adicional del avión y el piloto.
+Las aproximaciones de Categoría II permiten aterrizar con una altura de decisión de 100 pies
+(30 m) y una visibilidad de tan solo 1.200 pies (366 m).
+
+La Categoría III opera con el sistema de aterrizaje automático del aparato, y permite operaciones sin incluso altitudes de decisión y una visibilidad mejor a 700 pies (213 m) —CAT IIIa— o
+entre 150 (46 m) y 700 pies (213 m) —CAT IIIb—.
+Cada aparato certificado para operaciones CAT III tiene una altitud de decisión y mínimos de
+visibilidad establecidos, únicos para cada certificación.
+Algunos operadores pueden aterrizar en condiciones cero/cero —CAT IIIc—. Las instalaciones
+CAT II/III incluyen iluminación de la línea central de la pista y zona de contacto, así como otras
+ayudas y mejoras.
+
+Sistema de Aterrizaje por Microondas - MLS
+
+Un poco de historia...
+El MLS (Microwave Landing System) es un sistema similar al ILS en cuanto a su presentación en
+instrumental, es decir en su utilización para los pilotos, proveyendo guía lateral y vertical a través
+de los instrumentos convencionales resultando una cobertura similar a la del ILS.
+
+(a) Condiciones Meterologicas Visuales
+
+(b) Categoría I
+
+(c) Categoría II
+
+(d) Categoría IIIa
+
+(e) Categoría IIIb
+
+Figura 19: Categorías de visibilidad en aproximación
+Estaba predestinado a ser el ILS del futuro pero, en actualidad existen muy pocos instalados y
+lo están a modo de prueba, pues su tecnología aun esta en desarrollo, de hecho la FAA ha retrasado
+mucho sus planes de instalación a punto tal que su tecnología se vio superada por la del GPS.
+En 1967, una comisión técnica de los Estados Unidos creó un comité para definir las especificaciones técnicas y operativas de un nuevo sistema de aproximación que superara los inconvenientes
+que presentaba el ILS. El trabajo finalizó en 1972 otorgando la banda “C” de microondas (5030 4090Mhz) al nuevo sistema. En 1974 la OACI solicitó a sus Estados miembros reemplazar el sistema
+ILS por nuevo sistema MLS, convocando un concurso internacional para proponer un sistema de
+implementación. Fue en 1978 cuando un equipo australiano diseño el sistema “TRSB” (Time Reference Scanning Beam), conocido en Australia como INTERSCAN (time INTERval SCANning), que
+
+(a) MMLS modelo AN/TRN-45
+
+(b) MMLS en el aeropuerto de la Universidad
+de Ohio (EEUU)
+
+(c) MMLS estación experimental INTERSCAN
+(Aeropuerto Tullamarine Melbourne, Australia,
+1977)
+
+Figura 20: Estaciones terrestres de MLS
+finalmente sería elegido.
+En 1985 la OACI adoptó el estandard MLS recomendando la transición de ILS a MLS para
+1998, sin embargo, la etapa de pruebas a la que estaba sometido fue alargando poco a poco su
+implementación definitiva. Como consecuencia de la aparición de los sistemas de navegación por
+satélite, y el resultado de algunas pruebas realizadas para facilitar la maniobra de aterrizaje, el MLS
+entró en una crisis que casi lo hizo desaparecer. No obstante, la falta de precisión del GPS en el
+momento de la toma le ha vuelto a otorgar al MLS un hueco dentro del panorama de los sistemas
+de navegación.
+Así, la OACI, que estaba al corriente de los acontecimientos, decidió recomendar en 1995 que
+los estandares ILS y MLS convivieran durante 15 o 20 años más, hasta que los sistemas por satélite
+confirieran la seguridad y precisión necesarias. Hoy en día, aeronaves de última generación como el
+Airbus A380 o el A400M han sustituido el ILS por el MLS. En otras aeronaves se integran el ILS
+con el MLS.
+Existen diversas variedades de MLS, se tiene un equipo móvil militar denominado MMLS (Mobile
+MLS), que se despliega en tiempo record para los emplazamientos que carezcan del sistema. Igualmente se dispone de otra variedad militar del MLS que transmite en la banda Ku de 15 GHz, cuyas
+antenas son de menor diámetro y, por lo tanto, más portables.
+Las transmisiones se realizan en SHF (banda de microondas) en frecuencias comprendidas entre
+
+5031 y 5091 MHz por lo que en principio no podrán ser captados por los receptores del ILS, esto
+espera ser superado de alguna forma, principalmente por modificación de dichos receptores. Además
+esta equipado con un nuevo DME denominado DME-P.
+El sistema se basa en el barrido del sector de entrada de la pista por medio de una antena de
+barrido horizontal, la onda portadora esta modulada en frecuencia variable de acuerdo al ángulo, para
+que luego el receptor en el avión en base a la frecuencia de la portadora pueda calcular mediante una
+relación matemática.
+La diferencia mas notoria respecto del ILS es que ademas de proveer una trayectoria rectilínea
+como el ILS puede también marcar una trayectoria en curva.
+Equipo de tierra
+El equipo de tierra se compone de varios subconjuntos:
+Equipo de acimut: proporciona el guiado horizontal y la posición de la aeronave respecto al
+eje de la pista. El piloto puede seleccionar el ángulo por el que desea ingresar en la pista.
+Equipo de elevación: Realiza el guiado vertical durante la aproximación, pudiendo el piloto
+seleccionar el ángulo de descenso.
+Equipo de azimut posterior: informa al piloto de la trayectoria que ha de seguir durante la
+aproximación frustrada para volver a intentar un nuevo aterrizaje.
+Equipo de transmisión de palabras de datos: notifica al equipo de abordo toda la información necesaria para calcular la maniobra a realizar.
+Equipo DME: es el equipo medidor de distancia que, para este caso, se considera como
+subconjunto del MSL. Entre las modificaciones que se le han hecho se encuentra la incorporación
+del nuevo DME-P.
+Todos los subconjuntos se localizan en cinco posiciones diferentes del aeropuerto. Por un lado
+cuatro radiofaros y por el otro, separada del resto, la estación central que sincroniza los radiofaros
+anteriores y transmite las señales de identificación, los datos básicos y auxiliares, las señales de
+indicación de “fuera de cobertura”.
+Los cuatro radiofaros emiten a la misma frecuencia empleando la técnica “TDM” de multiplexación por división de tiempo. En las dos prolongaciones de pista se sitúan dos radiofaros, uno
+de acimut frontal, que se encarga de guiar a la aeronave horizontalmente en la maniobra de aproximación, y otro de acimut trasero, cuya tarea radica en indicar al piloto la guía de despegue o la
+maniobra de reincorporación tras una aproximación frustrada. Los otros dos radiofaros se sitúan en
+un lateral de la pista, y se encargan de proporcionar la guía de elevación durante el descenso y la
+maniobra de enderezamiento cuando se va a tocar tierra, respectivamente.
+Principio de funcionamiento
+El sistema MSL emite con una potencia entre 10 a 20 W y la frecuencia de transmisión está en la
+banda de microondas SHF, entre 5,031 a 5,0907 GHz. La polarización de la señal es vertical. Dentro
+de este margen de frecuencias, cada estación terrestre puede elegir entre 200 canales de transmisión
+separados entre sí cada 300 kHz.
+
+El equipo a bordo de la aeronave suele ser un receptor multimodo MMR (Multi Mode Receiver),
+que puede recibir señales de ILS y GPS.
+Cada transmisión comienza con un preámbulo modulado en fase y codificado en sistema binario
+diferencial. En el equipo receptor se utiliza este preámbulo para establecer la fase de la portadora y
+poder decodificar el mensaje enviado.
+
+Figura 21: Señales emitidas por MLS
+La técnica empleada en el MLS se denomina TRSB, tal como se indicó anteriormente. El equipo
+de azimut emite un haz vertical en forma de abanico de dos o tres grados de ancho, que barre el
+espacio horizontalmente con movimiento de ida y vuelta.
+En el momento en que el haz intercepta al avión, se produce la emisión de una señal que activa un
+contador, mientras que el haz sigue barriendo hasta llegar al final, cuyo tiempo es conocido. Después
+vuelve, hasta que detecta de nuevo a la aeronave, momento en el cual envía otra señal que detien al
+contador. El tiempo transcurrido es proporcional al ángulo que forma la trayectoria seguida por el
+avión con el eje.
+El barrido se divide en dos búsquedas:
+TO: Travel Order
+FRO: Flexible Response Option
+Denominando T0 al tiempo transcurrido entre dos pasadas consecutivas del haz por el eje y ω a
+la velocidad angular del haz, el ángulo de situación de la aeronave se deduce directamente:
+T0 − t
+ω
+2
+Para comprender mejor el funcionamiento del equipo, se analizan tres casos posibles de situación
+de la aeronave:
+θ=
+
+Caso 1: t < T0 =⇒ θ < 0, por lo cual la aeronave se encuentra a la derecha.
+Caso 2: t = T0 =⇒ θ = 0, por lo cual la aeronave se encuentra en el centro.
+
+Figura 22: Técnica de barrido
+Caso 3: t > T0 =⇒ θ > 0, por lo cual la aeronave se encuentra a la izquierda.
+El equipo de elevación radia un haz horizontal, también con forma de abanico, pero que barre el
+espacio de forma vertical.
+El MLS amplía la cobertura de sus haces con respecto al sistema ILS. El barrido en los sectores
+de entrada o frontal y de salida o trasero es diferente.
+Sector frontal: forma un abanico que se extiende en azimut hasta 40o a cada lado de la pista.
+En elevación cubre entre 0o y 15o de pendiente. Alcanza hasta 20 millas náuticas (≈ 37 km)
+desde el umbral de pista y la elevación llega a los 20000 pies (6000 m).
+
+Figura 23: Cobertura de las señales del MLS
+Sectir trasero: en acimut sólo se extiende 20o a cada lado, con una pendiente de 0o a 15o . Su
+alcance llega hasta 5 millas náuticas (9,26 km) desde el umbral de pista, con una altitud de
+5000 pies (1500 m).
+Se puede representar el diagrama de radiación desde una vista en planta, segùn la Figura xxxx.
+Ventajas y desventajas del MLS
+Se considera al MLS tecnológicamente más avanzado que el ILS, al superar varias de sus deficiencias y proporcionar más seguridad. Pero también posee serie de ventajas y desventajas, las cuales se
+presentan en la Tabla 1.
+
+Los equipos componentes son muy costosos.
+
+Mayor número de canales. Tiene 200 canales separados 300
+MHz, en comparación con los 40 canales del ILS.
+
+La aparición de los sistemas de navegación por
+satélite cuestionan su implantación, ya que la
+precisión que proporcionan va en aumento.
+
+Cuadro 1: Ventajas y desventajas del sistema MLS
+
+Información de aproximación frustrada. El equipo de azimut
+posterior proporciona información de guiado en la maniobra
+de salida frustrada.
+
+Transición entre radioayudas. El sistema MLS presenta una
+mayor flexibilidad.
+
+Instalable en cualquier aeropuerto. El ILS no se puede instalar en zonas montañosas y abruptas.
+
+Múltiples trayectorias. Las proporciona tanto en ángulo de
+descenso como en desviación respecto al eje de la pista.
+
+Áreas críticas y sensibles reducidas. Todo ello es debido a la
+utilización de microondas.
+
+No interfiere en FM. Las emisiones de FM no deterioran la
+información, ya que la frecuencia de trabajo es elevada, del
+orden de 5 GHz.
+
+La lluvia provoca serias atenuaciones de las
+señales a tan alta frecuencia
+
+Utilización por cualquier tipo de aeronave, incluso helicópteros.
+
+Las compañías privadas son reticentes a sustituirlo en sus flotas porque el equipo de a bordo
+es más caro que el del ILS.
+
+Necesita mayor número de antenas a bordo que
+el ILS.
+
+Desventajas
+
+Poca importancia por el terreno. El diagrama de radiación
+se ve menos afectado.
+
+Ventajas
+

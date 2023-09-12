@@ -1,0 +1,120 @@
+% Version 2023.V01.
+
+\documentclass[a4page,12pt,twoside, spanish]{book}
+
+\usepackage{IyA.estilo.2021}
+
+%\usepackage[spanish]{translator}
+
+\title{Instrumentos y Avi\'onica \\ 2023. Versi\'on 01.B}
+\author{Ing. JORGE O. GARCIA, Ing. ANGEL GALEASSO, Ing. PEDRO GIRAUDO , Ing. Luis Mario SORIA CASTRO}
+\date{Setiembre 2023}
+
+\setlength{\parskip}{1.1ex}   % separacion entre parrafos
+
+%--------------------Multicol--------%
+\setlength{\columnsep}{5mm}
+
+\frenchspacing
+
+
+\fancyhead[LE,RO]{{\bf \small Instrumentos y Avi\'onica }}
+
+\fancyhead[LO,RE]{ 
+	\includegraphics[height=1.7cm]{imagenes/400-anios.png} \hspace{3mm}
+	\includegraphics[height=1.22cm]{imagenes/logo-reforma.png} \hspace{3mm}	
+	\includegraphics[height=1.2cm]{imagenes/logo.jpg} 
+        \includegraphics[height=1.2cm]{imagenes/fcefyn.png}
+        \includegraphics[height=1.2cm]{imagenes/dpto-aero-logo.jpg}
+                   }
+
+
+\fancyfoot[LE,RO]{\small
+                    P\'agina \thepage \ de \pageref{LastPage}
+ }
+
+\fancyfoot[RE,LO]{\small
+  A\~no 2023. Versi\'on 01.B
+}
+
+
+
+\makeglossaries
+\input{IyA.glosario}
+
+\input{IyA.acronimos.2021}	% Archivo de acronimos
+
+
+\begin{document}
+
+\renewcommand{\listtablename}{\'Indice de tablas} 
+\renewcommand{\tablename}{Tabla}  % para que figure como título Tabla en lugar de Cuadro
+
+\renewcommand{\appendixtocname}{Ap\'endices}
+\renewcommand{\appendixpagename}{Ap\'endices}
+
+\renewcommand{\baselinestretch}{1.5}       % interlineado factor 1.5
+
+\setlength{\parindent}{0pt}      % que la sangria sea 0 (cero)
+
+\clearpage
+\thispagestyle{fancy}
+
+\maketitle
+
+\tableofcontents
+
+\input{00.Datos.IyA/U0.2023.Datos.IyA.tex}
+
+\input{01.tablero.instrumentos/U01.2023.tablero.instrumentos.tex}
+
+\input{02.medicion.datos.aire/U02.2021.Medicion.datos.aire.tex}
+
+\input{03.instrumentos.motores/U03.2021.instrumentos.motores.tex}
+
+\input{04.instrumentos.ctrol/U04.2021.instrumentos.ctrol.tex}
+
+\input{05.instrumentos.giroscopicos/U05.2021.instrumentos.giroscopicos.tex}
+
+\input{06.radionavegacion/U06.2023.radionavegacion.tex}
+
+\input{07.directores.y.ctrol.automatico.vuelo/U07.2021.director.vuelo.tex}
+
+\input{08.navegadores/U08.2021.C.navegadores.tex}
+
+\input{09.sintesis.comunicaciones.a.bordo/U09.2020.comunicaciones.tex}
+
+\clearpage	% Imprimir acronimos
+\printacronyms[name = Acr\'onimos, heading = chapter*]
+  \addcontentsline{toc}{chapter}{Acr\'onimos}
+
+
+\clearpage
+\printglossaries	% Imprimir glosario
+
+\clearpage
+%\appendix
+%\appendixpage
+%\addappheadtotoc
+
+
+\clearpage
+\renewcommand\bibname{Bibliograf\'ia} %Para que aparezca Bibliografia en lugar de Referencias
+
+\bibliography{IyA,IyA.01.cabina+instrumental,IyA.06.radionavegacion,IyA.07.vuelo.automatico,IyA.08.navegadores}
+
+%\addbibresource{IyA.01.cabina+instrumental}
+\bibliographystyle{apacite}
+
+%\bibliographystyle{plain}
+%\bibliography{sample}
+
+\begin{appendices}
+
+%\input{Apendices/Apendice.A.Ondas.electromagneticas.tex}
+%\input{Apendices/Apendice.B.proyecciones.cartograficas.tex}
+
+\end{appendices}
+
+
+\end{document}
