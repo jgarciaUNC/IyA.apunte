@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: 2024.Instrumentos.y.Avionica.V01.A.aux
+The style file: apacite.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: IyA.bib
+Database file #2: IyA.01.cabina+instrumental.bib
+Database file #3: IyA.06.radionavegacion.bib
+Database file #4: IyA.07.vuelo.automatico.bib
+Database file #5: IyA.08.navegadores.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+You've used 50 entries,
+            6951 wiz_defined-function locations,
+            1557 strings with 20097 characters,
+and the built_in function-call counts, 78661 in all, are:
+= -- 9867
+> -- 462
+< -- 3495
++ -- 3262
+- -- 85
+* -- 4673
+:= -- 13874
+add.period$ -- 197
+call.type$ -- 50
+change.case$ -- 758
+chr.to.int$ -- 0
+cite$ -- 100
+duplicate$ -- 1877
+empty$ -- 3789
+format.name$ -- 720
+if$ -- 15780
+int.to.chr$ -- 0
+int.to.str$ -- 154
+missing$ -- 0
+newline$ -- 1099
+num.names$ -- 300
+pop$ -- 2730
+preamble$ -- 1
+purify$ -- 213
+quote$ -- 0
+skip$ -- 4528
+stack$ -- 0
+substring$ -- 3542
+swap$ -- 944
+text.length$ -- 140
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 4440
+warning$ -- 0
+while$ -- 296
+width$ -- 0
+write$ -- 1284

@@ -1,0 +1,199 @@
+\babel@toc {spanish}{}
+\babel@toc {spanish}{}
+\contentsline {chapter}{Datos de la Asignatura}{9}{chapter*.2}%
+\contentsline {section}{\numberline {0.1}Días y horarios de clases}{16}{section.0.1}%
+\contentsline {section}{Adecuación transitoria de la metodología de cursada y evaluación segundo semestre 2023}{16}{section*.3}%
+\contentsline {section}{Cronograma para el dictado a\~no 2023}{17}{section*.8}%
+\contentsline {section}{Docentes}{18}{section*.9}%
+\contentsline {chapter}{\numberline {1}Paneles de Instrumentos}{19}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introducci\'on al estudio del instrumental}{19}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Ergonom\'ia}{23}{subsection.1.1.1}%
+\contentsline {subsubsection}{Ergonom\'ia Cognitiva}{23}{section*.12}%
+\contentsline {subsubsection}{ Ergonom\'ia F\'isica}{24}{section*.14}%
+\contentsline {subsubsection}{Ergonom\'ia Visual}{24}{section*.16}%
+\contentsline {subsection}{\numberline {1.1.2}Formas de presentaci\'on de la informaci\'on}{25}{subsection.1.1.2}%
+\contentsline {subsubsection}{Head Up Display }{27}{section*.20}%
+\contentsline {section}{\numberline {1.2}Clasificaci\'on de los Instrumentos}{32}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Distribuci\'on Normalizada del Instrumental en el Tablero}{32}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Presentaci\'on en Pantalla Electr\'onica}{38}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1} \ac {EIS}}{42}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}EFIS}{42}{subsection.1.4.2}%
+\contentsline {subsubsection}{\ac {PFD}}{42}{section*.32}%
+\contentsline {subsubsection}{\ac {ND}}{44}{section*.34}%
+\contentsline {subsubsection}{\ac {FMS}}{44}{section*.36}%
+\contentsline {subsection}{\numberline {1.4.3}EICAS y ECAM}{48}{subsection.1.4.3}%
+\contentsline {section}{\numberline {1.5}Buses de Datos en Avi\'onica}{51}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Conceptos generales}{52}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Protocolos de bus}{53}{subsection.1.5.2}%
+\contentsline {subsubsection}{ARINC 429}{54}{section*.44}%
+\contentsline {subsubsection}{Otros protocolos de la familia ARINC}{57}{section*.46}%
+\contentsline {subsubsection}{Avionics Full-Duplex Switched Ethernet (AFDX)}{58}{section*.47}%
+\contentsline {subsubsection}{MIL-STD-1553}{58}{section*.48}%
+\contentsline {subsubsection}{STANAG 3838}{59}{section*.50}%
+\contentsline {subsubsection}{STANAG 3910 }{60}{section*.51}%
+\contentsline {subsubsection}{CSDB y ASCB}{60}{section*.52}%
+\contentsline {subsubsection}{FDDI}{61}{section*.53}%
+\contentsline {chapter}{\numberline {2}Medici\'on de datos de aire}{63}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Instrumentos de motores}{119}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introducci\'on}{119}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Taquímetros mecánicos , eléctricos, electrónicos}{119}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Flujómetros, diferentes tipos, totalizadores}{137}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Termocuplas. Medición de la temperatura en motores}{146}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Instrumentos de Control}{161}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Indicadores de posición a distancia de CC y CA}{161}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Instrumentos girosc\'opicos}{177}{chapter.5}%
+\contentsline {subsection}{\numberline {5.0.1}Videos sobre instrumentos girosc\'opicos}{280}{subsection.5.0.1}%
+\contentsline {chapter}{\numberline {6}Radionavegaci\'on}{281}{chapter.6}%
+\contentsline {section}{\numberline {6.1}M\'etodos de Navegaci\'on A\'erea}{281}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Radionavegaci\'on}{283}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1} Ondas Electromagn\'eticas }{283}{subsection.6.2.1}%
+\contentsline {subsubsection}{Caracter\'isticas generales}{283}{section*.55}%
+\contentsline {subsection}{\numberline {6.2.2}El espectro electromagn\'etico}{286}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Propagaci\'on de ondas electromagn\'eticas}{288}{subsection.6.2.3}%
+\contentsline {subsubsection}{Tipos de ondas electromagn\'eticas seg\'un la forma de propagaci\'on}{292}{section*.64}%
+\contentsline {subsection}{\numberline {6.2.4}Modulaci\'on}{293}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}Antenas}{295}{subsection.6.2.5}%
+\contentsline {subsubsection}{Parámetros de una antena}{296}{section*.70}%
+\contentsline {section}{\numberline {6.3}Sistemas de Navegaci\'on Hiperb\'olicos}{297}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Introducci\'on}{297}{subsection.6.3.1}%
+\contentsline {subsubsection}{T\'ecnicas de navegaci\'on hiperb\'olica}{300}{section*.74}%
+\contentsline {subsection}{\numberline {6.3.2}LORAN}{302}{subsection.6.3.2}%
+\contentsline {section}{\numberline {6.4}ADF}{310}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Antena de cuadro}{310}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Radiogoni\'ometro}{311}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}ADF}{313}{subsection.6.4.3}%
+\contentsline {subsubsection}{NDB}{316}{section*.89}%
+\contentsline {subsubsection}{Presentaci\'on de la informaci\'on}{318}{section*.91}%
+\contentsline {subsubsection}{Errores ADF-NDB}{318}{section*.93}%
+\contentsline {section}{\numberline {6.5}VOR}{321}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Un poco de historia....}{321}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Introducci\'on}{325}{subsection.6.5.2}%
+\contentsline {subsection}{\numberline {6.5.3}Principio de funcionamiento}{326}{subsection.6.5.3}%
+\contentsline {subsection}{\numberline {6.5.4}Equipo de tierra}{328}{subsection.6.5.4}%
+\contentsline {subsubsection}{Principios de funcionamiento }{328}{section*.97}%
+\contentsline {subsubsection}{Cono de silencio}{330}{section*.99}%
+\contentsline {subsubsection}{Clasificación y tipos de estaciones VOR}{330}{section*.100}%
+\contentsline {subsubsection}{Volumenes de Servicio}{331}{section*.101}%
+\contentsline {subsubsection}{Identificación de las estaciones VOR}{332}{section*.103}%
+\contentsline {subsection}{\numberline {6.5.5}Equipo de a bordo}{332}{subsection.6.5.5}%
+\contentsline {subsubsection}{Antena }{333}{section*.104}%
+\contentsline {subsubsection}{Receptor }{333}{section*.105}%
+\contentsline {subsubsection}{On/off-volumen}{333}{section*.106}%
+\contentsline {subsubsection}{Selector de frecuencias}{333}{section*.107}%
+\contentsline {subsubsection}{Ventanilla selectora}{334}{section*.108}%
+\contentsline {subsubsection}{Interruptor filtro de identificación (Ident)}{334}{section*.109}%
+\contentsline {subsection}{\numberline {6.5.6}Servoamplificador}{334}{subsection.6.5.6}%
+\contentsline {subsection}{\numberline {6.5.7}Indicador VOR}{335}{subsection.6.5.7}%
+\contentsline {subsection}{\numberline {6.5.8}Interpretación de las presentaciones VOR}{336}{subsection.6.5.8}%
+\contentsline {subsection}{\numberline {6.5.9}HSI (Horizontal Situation Indicator) Indicador de situación horizontal}{338}{subsection.6.5.9}%
+\contentsline {subsubsection}{Rosa de rumbos (compass card) }{339}{section*.114}%
+\contentsline {subsubsection}{CDI (Course Deviation Indicator, Indicador Desviación de Curso)}{339}{section*.115}%
+\contentsline {subsubsection}{Indicador TO-FROM}{340}{section*.116}%
+\contentsline {subsubsection}{Puntos de referencia}{340}{section*.117}%
+\contentsline {subsubsection}{Indicaci\'on de senda de planeo}{340}{section*.118}%
+\contentsline {section}{\numberline {6.6}Distance Measurement Equiptment (DME)}{342}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Principio de funcionamiento}{342}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Equipo de tierra}{346}{subsection.6.7.1}%
+\contentsline {subsection}{\numberline {6.7.2}Equipo de a bordo }{347}{subsection.6.7.2}%
+\contentsline {subsubsection}{Indicador DME}{347}{section*.125}%
+\contentsline {subsubsection}{Localizaci\'on de la antena en la aeronave}{348}{section*.127}%
+\contentsline {subsection}{\numberline {6.7.3}Mediciones err\'oneas}{348}{subsection.6.7.3}%
+\contentsline {section}{\numberline {6.8}Exactitud del sistema}{351}{section.6.8}%
+\contentsline {section}{\numberline {6.9}Ventajas y desventajas del sistema}{351}{section.6.9}%
+\contentsline {section}{\numberline {6.10}Sistemas de aproximaci\'on}{352}{section.6.10}%
+\contentsline {subsection}{\numberline {6.10.1}Introducción}{352}{subsection.6.10.1}%
+\contentsline {subsection}{\numberline {6.10.2}Requerimientos normativos}{355}{subsection.6.10.2}%
+\contentsline {subsection}{\numberline {6.10.3}Ayudas visuales}{357}{subsection.6.10.3}%
+\contentsline {subsubsection}{Sistemas de Luces de Aproximación}{359}{section*.133}%
+\contentsline {subsubsection}{Sistema Indicador de Pendiente de Aproximación Visual }{362}{section*.135}%
+\contentsline {subsubsection}{Indicador de Trayectoria de Aproximación de Precisión}{365}{section*.138}%
+\contentsline {subsection}{\numberline {6.10.4}Ayudas radioeléctricas}{368}{subsection.6.10.4}%
+\contentsline {subsection}{\numberline {6.10.5}Precision Approach Radar - PAR}{369}{subsection.6.10.5}%
+\contentsline {subsection}{\numberline {6.10.6}Sistema de Aterrizaje Instrumental - ILS}{370}{subsection.6.10.6}%
+\contentsline {subsubsection}{Un poco de historia...}{370}{section*.142}%
+\contentsline {subsubsection}{Componentes sistema ILS}{375}{section*.147}%
+\contentsline {subsubsection}{Radiobalizas}{377}{section*.152}%
+\contentsline {subsubsection}{Categorías (CAT) de ILS}{380}{section*.154}%
+\contentsline {subsection}{\numberline {6.10.7}Sistema de Aterrizaje por Microondas (MLS)}{381}{subsection.6.10.7}%
+\contentsline {subsubsection}{Un poco de historia...}{381}{section*.156}%
+\contentsline {subsubsection}{Equipo de tierra}{384}{section*.158}%
+\contentsline {subsubsection}{Principio de funcionamiento}{385}{section*.159}%
+\contentsline {subsubsection}{Ventajas y desventajas del MLS}{386}{section*.163}%
+\contentsline {section}{\numberline {6.11}Radar y Sensores de radar}{390}{section.6.11}%
+\contentsline {subsection}{\numberline {6.11.1}Un poco de Historia....}{390}{subsection.6.11.1}%
+\contentsline {subsection}{\numberline {6.11.2}Tipos de Radar}{391}{subsection.6.11.2}%
+\contentsline {subsection}{\numberline {6.11.3}Radio-alt\'imetro}{392}{subsection.6.11.3}%
+\contentsline {subsection}{\numberline {6.11.4}Radar meteorol\'ogico}{396}{subsection.6.11.4}%
+\contentsline {chapter}{\numberline {7}Directores y control autom\'atico de vuelo}{399}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introducci\'on}{399}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Componentes de cabina}{399}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Indicador y Director de Actitud }{400}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Indicador de Situaci\'on Horizontal}{402}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Computadora de Control}{404}{subsection.7.2.3}%
+\contentsline {section}{\numberline {7.3}Modos de operaci\'on}{405}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Modo Preparado (SBY)}{406}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Modo Ajuste Actitud de Cabeceo (Pitch Attitude Trim, PAT)}{406}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Modo Rumbo Selectado (Heading HDG)}{406}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}Modo mantenimiento de altura (ALT)}{407}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.3.5}Modo Escape (GO AROUND)}{407}{subsection.7.3.5}%
+\contentsline {subsection}{\numberline {7.3.6}Modo VOR - Localizador (V/L)}{408}{subsection.7.3.6}%
+\contentsline {subsection}{\numberline {7.3.7}Armado Pendiente de Planeo}{408}{subsection.7.3.7}%
+\contentsline {subsection}{\numberline {7.3.8}Pendiente de Planeo}{408}{subsection.7.3.8}%
+\contentsline {subsection}{\numberline {7.3.9}Modo anunciador ampliaci\'on de indicaci\'on en pendiente de planeo (GS EXT)}{408}{subsection.7.3.9}%
+\contentsline {subsection}{\numberline {7.3.10}Modo Curso Opuesto (REV)}{408}{subsection.7.3.10}%
+\contentsline {section}{\numberline {7.4}Incorporaci\'on del sistema de radioalt\'imetro}{408}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Integraci\'on con el Sistema de Piloto Autom\'atico}{409}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1} Attitude and Heading Reference Systems (AHRS) }{409}{subsection.7.5.1}%
+\contentsline {chapter}{\numberline {8}Navegadores}{413}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Introducci\'on}{413}{section.8.1}%
+\contentsline {section}{\numberline {8.2}El planeta Tierra}{414}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Forma, tama\~no y movimientos}{414}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Coordenadas geogr\'aficas}{417}{subsection.8.2.2}%
+\contentsline {section}{\numberline {8.3}Distancia, direcci\'on, tiempo, el Norte}{418}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Distancia}{418}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Direcci\'on}{420}{subsection.8.3.2}%
+\contentsline {subsubsection}{Definiciones}{420}{section*.176}%
+\contentsline {subsection}{\numberline {8.3.3}Tiempo}{422}{subsection.8.3.3}%
+\contentsline {subsubsection}{Tiempo solar}{423}{section*.179}%
+\contentsline {subsubsection}{ Greenwich Mean Time}{425}{section*.181}%
+\contentsline {subsubsection}{Tiempo Universal (UT)}{425}{section*.182}%
+\contentsline {subsubsection}{ Temps Atomique International (TAI)}{425}{section*.183}%
+\contentsline {subsubsection}{Tiempo Universal Coordinado (UTC)}{426}{section*.184}%
+\contentsline {subsubsection}{Tiempo GPS (GPST)}{426}{section*.185}%
+\contentsline {subsubsection}{Tiempo Loran-C}{427}{section*.186}%
+\contentsline {subsection}{\numberline {8.3.4}El Norte}{427}{subsection.8.3.4}%
+\contentsline {section}{\numberline {8.4}Cartas de navegaci\'on aeron\'autica}{430}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Proyecciones cartogr\'aficas}{431}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Las cartas OACI \cite {Salazar_nav_aerea}}{433}{subsection.8.4.2}%
+\contentsline {subsubsection}{Cartas OACI obligatorias}{435}{section*.196}%
+\contentsline {subsubsection}{Cartas OACI condicionales}{436}{section*.197}%
+\contentsline {subsubsection}{Cartas OACI opcionales}{437}{section*.198}%
+\contentsline {subsubsection}{La carta OACI 1:500 000}{437}{section*.199}%
+\contentsline {subsection}{\numberline {8.4.3}Cartas de aproximaci\'on instrumental (IAC = Instrumental Approach Charts) }{439}{subsection.8.4.3}%
+\contentsline {subsection}{\numberline {8.4.4}Cartas de salida normalizada (SID = Standar Instrument Departure )}{439}{subsection.8.4.4}%
+\contentsline {subsection}{\numberline {8.4.5}Cartas de llegada normalizada - (STAR - Standar Terminal Arrival Chart)}{441}{subsection.8.4.5}%
+\contentsline {subsection}{\numberline {8.4.6}Navegaci\'on Aut\'onoma}{441}{subsection.8.4.6}%
+\contentsline {subsubsection}{Navegaci\'on Observada }{441}{section*.202}%
+\contentsline {section}{\numberline {8.5}Navegadores, prestaciones que originan, mediciones presentadas}{442}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Navegadores inerciales, plataforma inercial}{442}{section.8.6}%
+\contentsline {section}{\numberline {8.7}Navegadores GPS}{467}{section.8.7}%
+\contentsline {chapter}{\numberline {9}S\'intesis de comunicaciones a bordo}{483}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Introducci\'on}{483}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Espectro de frecuencias}{485}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Transceptor}{488}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Un sistema simple de radio}{488}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Transmisor}{490}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.3}Receptor}{490}{subsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.3.4}Equipos integrados}{490}{subsection.9.3.4}%
+\contentsline {subsection}{\numberline {9.3.5}Otros sistemas de comunicaciones}{491}{subsection.9.3.5}%
+\contentsline {section}{\numberline {9.4}Otros equipos del sistema de radio}{491}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Caja de control}{491}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}Antena}{491}{subsection.9.4.2}%
+\contentsline {subsection}{\numberline {9.4.3}Caja de audio}{493}{subsection.9.4.3}%
+\contentsline {section}{\numberline {9.5}Sistemas avanzados}{493}{section.9.5}%
+\contentsline {subsection}{\numberline {9.5.1}Sistema CAMU}{493}{subsection.9.5.1}%
+\contentsline {subsection}{\numberline {9.5.2}Sistema DVI}{494}{subsection.9.5.2}%
+\contentsline {subsection}{\numberline {9.5.3}Sistema MIDS}{494}{subsection.9.5.3}%
+\contentsline {chapter}{Acr\'onimos}{501}{chapter*.215}%
+\contentsline {section}{Referencias}{503}{section*.216}%
+\contentsline {chapter}{Ap\'endices}{507}{section*.217}%

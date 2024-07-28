@@ -22,68 +22,8 @@ except:
  _st_.goboom(172)
 _st_.blockend()
 try:
- _st_.current_tex_line = 178
- _st_.inline(0, latex(round(long_onda_01,0)))
-except:
- _st_.goboom(178)
-try:
- _st_.current_tex_line = 185
- _st_.inline(1, latex(round(velocidad_luz,0)))
-except:
- _st_.goboom(185)
-try:
- _st_.current_tex_line = 185
- _st_.inline(2, latex(round(long_onda_01,0)))
-except:
- _st_.goboom(185)
-try:
- _st_.current_tex_line = 186
- _st_.inline(3, latex(round(frecuencia_01,0)))
-except:
- _st_.goboom(186)
-try:
- _st_.current_tex_line = 187
- _st_.inline(4, latex(round(frecuencia_01 / 10**6,0)))
-except:
- _st_.goboom(187)
-try:
- _st_.current_tex_line = 191
- _st_.inline(5, latex(round(frecuencia_02,0)))
-except:
- _st_.goboom(191)
-try:
- _st_.current_tex_line = 198
- _st_.inline(6, latex(round(velocidad_luz,0)))
-except:
- _st_.goboom(198)
-try:
- _st_.current_tex_line = 198
- _st_.inline(7, latex(round(frecuencia_02,0)))
-except:
- _st_.goboom(198)
-try:
- _st_.current_tex_line = 199
- _st_.inline(8, latex(round(velocidad_luz,0)))
-except:
- _st_.goboom(199)
-try:
- _st_.current_tex_line = 199
- _st_.inline(9, latex(round(frecuencia_02 * 10**6 ,0)))
-except:
- _st_.goboom(199)
-try:
- _st_.current_tex_line = 200
- _st_.inline(10, latex(round(long_onda_02,0)))
-except:
- _st_.goboom(200)
-try:
- _st_.current_tex_line = 310
- _st_.inline(11, latex(round(4 * 10**{-7} ,\protect \protect \unhbox \voidb@x \hbox {)}))
-except:
- _st_.goboom(310)
-try:
  _st_.current_tex_line = 243
- _st_.inline(12, latex(round(1852 * 25,0)))
+ _st_.inline(0, latex(round(1852 * 25,0)))
 except:
  _st_.goboom(243)
 _st_.endofdoc()

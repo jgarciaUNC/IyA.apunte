@@ -1,0 +1,27 @@
+Major avionic systems generally comprise a number of smaller sub-systems whichare combined to form an overall system. The combination, interconnection and con-
+trol of the individual sub-systems so that the overall system can carry out its tasks
+effectively is referred to as ‘systems integration’. The number of sub-systems which
+need to be integrated to form a major system can be appreciated from the previous
+chapter on flight management systems.
+It is instructive to review the development of avionic systems and their integration
+into overall systems in the light of the technology available and the circumstances
+prevailing at the time. The object is to put the development of today’s advanced
+systems and the even more advanced systems currently under development in per-
+spective. In many cases the current concepts and philosophy are not new – often the
+originators of particular system developments in the past were far sighted in their
+concepts, but, as always, were limited by the technology available at the time.
+World War 2 (WW2) resulted in a major growth in the electronic equipment
+installed in aircraft and the birth of avionics, with the very rapid development of
+airborne radar systems and associated displays, radar warning systems and ECM,
+and more advanced autopilot systems exploiting electronics. Installation of the elec-
+tronic equipment (or ‘black boxes’), however, was very much on an ad hoc basis due
+to the very rapid developments and time scale pressures in war time. Some very lim-
+ited degree of integration between sub-systems was introduced, for example coup-
+ling the bomb sight to the autopilot – as readers who have seen the film ‘Memphis
+Belle’ may have noted. In general, however, the systems were ‘stand alone’ sys-
+tems and their integration into an overall system was carried out by specific crew
+members such as the navigator, bomb aimer or radar operator.
+The 1950s period saw the emergence of a number of avionic sub-systems (some
+of which were initiated during WW2) which have since undergone continual devel-
+opment and now form part of the avionic equipment suite of most civil and military
+jet aircraft and helicopters. For example, auto-stabilisers (or stability augmentation

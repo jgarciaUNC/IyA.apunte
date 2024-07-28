@@ -1,0 +1,212 @@
+Major avionic systems generally comprise a number of smaller sub-systems whichare combined to form an overall system. The combination, interconnection and control of the individual sub-systems so that the overall system can carry out its tasks effectively is referred to as ‘systems integration’. The number of sub-systems which need to be integrated to form a major system can be appreciated from the previous
+chapter on flight management systems.
+
+It is instructive to review the development of avionic systems and their integration into overall systems in the light of the technology available and the circumstances prevailing at the time. The object is to put the development of today’s advanced systems and the even more advanced systems currently under development in perspective. In many cases the current concepts and philosophy are not new – often the originators of particular system developments in the past were far sighted in their concepts, but, as always, were limited by the technology available at the time.
+
+World War 2 (WW2) resulted in a major growth in the electronic equipment installed in aircraft and the birth of avionics, with the very rapid development of airborne radar systems and associated displays, radar warning systems and ECM, and more advanced autopilot systems exploiting electronics. Installation of the electronic equipment (or ‘black boxes’), however, was very much on an ad hoc basis due to the very rapid developments and time scale pressures in war time. Some very limited degree of integration between sub-systems was introduced, for example coupling the bomb sight to the autopilot – as readers who have seen the film ‘Memphis Belle’ may have noted. In general, however, the systems were ‘stand alone’ systems and their integration into an overall system was carried out by specific crew members such as the navigator, bomb aimer or radar operator.
+
+The 1950s period saw the emergence of a number of avionic sub-systems (some of which were initiated during WW2) which have since undergone continual development and now form part of the avionic equipment suite of most civil and military jet aircraft and helicopters. For example, auto-stabilisers (or stability augmentation
+
+
+
+The basic building blocks for any computer system are silicon wafers manufactured to contain millions of microscopic transistors. These transistors are combined with resistors, diodes, and other electronic components to create logic gates, which are mass-produced into a single unit, known as a microprocessor. A typical microprocessor (Figure 2-2-22) is a collection of complex digital circuits, which perform specific functions. In general, microprocessors can be thought of as miniature computers, such as a handheld calculator. Aircraft computers contain one or more microprocessors and the related control circuitry need for the operation of the system or subsystems. For the most part all computers can be broken into four basic elements: central control unit (CCU), arithmetic logic unit (ALU), central procesing unit (CPU), and memory.
+
+The central control unit (CCU) connects each section of the computer to coordinate control of all activities of that system. The CCU is typically designed to operate in steps, or stages according to the software programming for that computer. The CCU completes one task then moves to the next, and eventually completes each operation through a series of smaller steps-
+
+The CCU receives its instructions from the central processing unit (CPU). Computer technologies have continued to shrink in size with each new generation; with this miniaturization comes the ability to combine the operations and functions of certain systems. Therefore, the CCU and CPU may be contained within the same element of a given computer and the terms become difficult to distinguish from one another. These two computer elements (CPU and CCU) often share similar functions and in some cases share electronic circuitry.
+
+Other elements of a typical computer worth noting are the arithmetic logic unit (ALU), the clock (or timer), and the memory. The ALU performs the various calculations necessary for manipulating the binary digits that eventually become the outputs for that computer. All complex computers perform thousands of calculations using thousands of digits (binary ones and zeros) to complete their given task. These calculations are performed by the ALU. Each computer must adhere to a strict timing format in order to complete each task; therefore, each computer must contain some type of clock circuitry. The clock or synchronizer allows all sections of the computer to operate in sync, so all operations are performed in the proper sequence and within the correct time limits.
+
+Computer memory comes in two basic types, volatile and nonvolatile. Non-volatile memory is a permanent memory which is not lost if the computer looses power. Nonvolatile memory must provide information for the basic operations of the microprocessor/computer, and may be used for the storage of other lata as well. Volatile memory is used as a "note pad," or short-term storage of data needed during the manipulation of numbers. Volatile memory is lost whenever the computer power is terminated or battery backups deplete their energy.
+
+On most aircraft computer systems both volatile and nonvolatile memory are contained on solid-state integrated circuits.
+
+Two additional computer elements typically contained outside the main computer circuitry are the digital data bus(ses) and the system peripheral device(s). The digital data bus is a pathway for the transmission of data between computer subsystems. Smaller, self-contained, computers may contain an internal data bus built into the unit, installed onto a printed circit cad, or even built into the microprocessor circuitiry. In more practical terms, most aircraft computers are connected to multiple subsystems, which are all connected through one or more digital data busses. In most aircraft, the data bus consists of a pair of 24 gauge copper wire twisted together and shielded to protect the digital signal from interference, Some of the latest aircraft employ fiber optic cable to transmit the digital signal to the various computer systems, however, traditional copper wire is still used for the majority of digital data transmissions. Fiber optic cables will be covered later in this text.
+
+A peripheral device is a component that allows the computer to communicate with humans and/or other electronic devices. Typical peripheral devices include a keyboard, used to input data into the system; or an LCD display on the instrument panel, used to display output data from the computer to the pilots. In many cases a peripheral device is another aircraft LRU or component that operates transparent to the pilots. An example of this type of peripheral is the electronic engine control servos. A servo is a device that receives an instruction signal, often from a computer, and performs a mechanical function, such as adjusting engine fuel flow. The servo is considered a peripheral since it receives information from the computer and performs a mechanical function.
+
+Multiplexing and Demultiplexing
+
+Many avionics systems receive data inputs from a variety of sensors or subsystems located throughout the aircraft. In order for these remote devices to communicate with the avionics' computer circuitry, the input data must be received in the correct format. Most digital data is transmitted in a serial form, that is, only one binary digit at a time. However, many subsystems or individual sensors output data in parallel form. Therefore, some means are needed to convert parallel data into serial data and vice verse.
+
+As discussed earlier in this chapter, transmission of data in serial form means each binary digit is transmitted for only a very short time period. After one bit of information is sent, the next bit follows; this process continues until all the desired information has been transmitted.
+
+This type of system can be thought of as timesharing, because each transmitted signal shares the wires for a short time interval. The time required to transmit the data is also known as bandwidth.
+
+Parallel data transmission is a continuous-type transmission requiring two wires, or one wire and one ground, for each signal to be sent. Parallel transmission receives its name because each circuit would be wired in parallel with respect to the next circuit. One pair of transmitting wires may be used to handle enormous amounts of serial data. If the information signals were transmitted in parallel form, hundreds of wires may be required to perform a similar task.
+
+Serial data transmission requires less wire than a parallel system; however, an interpretation circuit is needed to convert all parallel data to serial-type information prior to transmission. The device that converts parallel data into serial form is called a multiplexer or (MUX) circuit. The unit used to convert serial data into parallel form is called a demultiplexer or (DEMUX) circuit. As illustrated in Figure 2-2­23, parallel data is sent to a multiplexer, where it is converted to serial data and sent to the data transfer bus. The data transfer bus is a two­wire connection between the multiplexer and the demultiplexer. The demultiplexer receives the serial data and reassembles it into parallel form. In this example, the byte 10100 is being received by the multiplexer in parallel form. Starting at the topandworking down, the multiplexer transmits each digit individually. Bit number O is the first to be transmitted. Bit number 1 is the next digit transmitted, bit number 2 next, and so on. This system repeats until all the parallel data are converted to serial form and individually connected to the data transfer bus. The demultiplexer receives a serial data input from the transmission bus and reassembles it into a parallel form. The output of the demultiplexer is identical to the input of the multiplexer (10100).
+
+The circuitry of Figure 2-2-23 contains both a multiplexer and demultiplexer,. This arrangement is used only when both the transmitter and receiver require parallel data formats. If the transmitter uses parallel data and the receiver accepts serial data, Only, a multiplexer would be used (Figure 2-2-24A). If the LRU transmits serial data and the receiver requires parallel data a demultiplexer would be used (Figure 2-2-24B). In most cases, the data sent to the multiplexer is more than one single data bit. In this case, a series of data packets (data words) are sent to each input connection ofthe multiplexer. Figure 2-2-24 shows the multiplexer inputs as data words containing six bits each.
+
+These packets of data are then sent, one bit at a time, through the serial bus to the receiver. The multiplexer converts the incoming data into  a series of data packets with each bit lasting only a fraction of a second. Each data packet is then transmitted to the receiver through the serial bus. The receiver software contains the program information needed to reassemble the data into useful information.
+
+On systems that share a serial data bus, some means of control must be used to coordinate the MUX/DEMUX arrangement. As shown in Figure 2-2-23, a central control unit (CCU) can be used to aooudinate the transmission and reception of data. This control is essential to ensure all serial data is transmitted and received at the proper, time intervals. This system of serial data transmission may seem somewhat complex; however, the alternative, parallel data transmission would require one wire for each data bit to be transmitted. Since thousands of bits of information are transferred among various airborne systems, serial data transmission techniques are the obvious choice for modernaircraft.
+
+The use of multiplexers and demultiplexers is only necessary when a change from serial to parallel (or vice versa) is required. In many cases, serial data is transmitted to another component, which can "read" serial data. In this case, no change in format is required. When multiplexers or demultiplexers are required for operation of a system, they are typically contained within anobher unit. For example, Figure 2-2-25 (top left and top right side of diagram) shows the data from the radio sensor system (RSS)  to the sensor display driver (SDD) is sent directly into a multiplexer (MUX) circuit. In troubleshootin this system, the line technician may never know the MUX circuit exists. If the internal multiplexer falls, the line technician may dete._ct a defective SDD, the bench technician, on the other hand, could determine the MUX circuit insicle the LRU was inoperative.
+
+MUX/DEMUX Systems for In-Flight Entertainment
+
+On many transport category aircraft, MUX/DEMUX circuits are use:d «'>'ti the control of passenger entertainment. Each passenger has a control (installed in the armrest of the seat) used to select the audio and video for in-flight entertainment, In this case, multiplexers are often stand-alone units and can be replaced individually by the line technician. Each individual armrest control would transmit parallel data. A group of controllers would be sent to an area multiplexer where the data is assembled and transmitted to the passenger entertainment control center, or main multiplexer.
+
+Data from the entertainment control center is transmitted in serial form and demultiplexed for a group of seats. 
+On some aircraft, the multiplex system controls passenger entertainment, passenger reading lights, and flight attendant call lights. The MUX/DEMUX units are often located beneath a group of seats or in the headliners above the seats. Figure 2-2-26 shows a diagram of the passenger entertainment system on a Boeing 767. Notice, this system contains both zone and main multiplexers.
+
+Section 3
+
+Analog to Digital Converters
+
+As the popularity of digital avionics grows, many aircraft employ both analog and digital systems. llihis creates communication problems because pure digital systems are incapable of reading analog data and viae versa. To allow communication between analog and). digital systems, analog to digital and digital to analog circuits were developed. Often referred to as A{,11), or D/A converters, these circuits can be found on virtually any system employing both analog and digital devices. Many sensors on modern aircraft create only analog outputs. A temperature monitor is a typical example of a device creating an analog signal. This output must then be converted to a digital format in order to communicate with modern computerized control systems.
+
+A/D converters utilize microprocessor circuitry to convert a given analog signal into a digital format. A/D converters are typically designed for a specific purpose. That is, the conversion circuitry must be programmed to analyze a given analog input and produce a specific digital output. Figure 2-3-1 shows the conversion of an analog signal from a temperature transducer. This A/D converter must be programmed to accept the analog signal with voltage limits of O to +20 VDC and output a digital signal of +5 VDC for logic 1 and O VDC for logic 0.
+
+Like multiplexers, A/D converters are most often found incorporated into the circuitry of  various LRUs. For example, the inputs to a digital autopilot may include some analog signals. These signals would be converted to a digital format inside the autopilot computer (LRIUJ). Since the outputs from the digital autopilot to the servomotors are analog signals, the autopilot circuitry must also inoorpovatc a D/A converter.
+
+For the most part, a line technician would not replace a specific A/D or D/A converter. These units are typically incorporated into a given LRU. If the output signal from an LRU is not correct, replace the unit, including  the A/D and D/A converter.
+
+
+Section 7
+
+ARINC Standards
+
+ARINC Incorporated is a global corporation consisting of various U.S. and international airlines and aircraft operators and their subsidiaries. The company provides services related to a variety of aviation communication and navigation systems. Both U.S. and international aircraft and component manufacturers have accepted ARINC technical standards. ARINC also provides standardization guidelines for engineering and development of both software and hardware systems for a variety of military and civilian aviation electronic systems. One of the most important facets of ARINC, from a technician's point of view, would have to be the standards set for various avionics systems. As the avionics industry was beginning to emerge, it became clear that some type of commonality was needed to ensure systems were compatible. As avionics became even more interactive, the need for commonality grew. ARINC has documented characteristics and specifications or standards for a multitude of communication and navigation systems.
+
+Most of these standards are focused on transport category avionics; however, many of the general aviation avionics systems also adhere to ARINC specifications. Individual system specifications and their related interfaces are addressed by ARINC. ARINC equipment specifications include: (#579) airborne VOR receivers, (#578) airborne !LS receivers, (#594) ground proximity warning systems, (#566) VHF communication transceivers, (#542) digital flight data recorders, (#741) aviation satellite communications, (#738) air data and inertial reference systems, (#728) analog and discrete data converter systems, (#725) electronic flight instrument (EFI), (#724) aircraft communication and reporting systems, and (#708) airborne distance measuring equipment. As discussed below, ARINC is also responsible for three of the most common data bus standards used on transport category aircraft (ARINC 429, 629 and 664).
+
+Section 8
+
+Digital Data Bus Systems
+
+Many aircraft currently employ avionics systems that operate using digital electronics. Although these systems range in complexity from a simple radio receiver/transmitter to a complete autoflight system, they all adhere to some type of data bus standard. Adherence to an established standard is extremely important to ensure commonality of data transfer. A data bus standard can be thought of as a common language that allows several different units to communicate. Without a data bus standard, communication between various avionics systems would be impossible.
+
+Several digital data bus standards are currently in use on modern aircraft. Agencies such as ARINC Incorporated and the General Aviation Manufacturers Association (GAMA) set standards for various data bus systems. The three commonly used ARINC data bus standards are: ARINC 429, ARINC 629 and ARNC 664. In industry, these standards are often referred to by their number only; for example, ARINC 664 might be called simply 664. This text will refer to these standards in both configurations. ARINC 429 is a one-way data bus also known as Mark 33 Digital Information Transfer Systems (DITS). ARINC 629 is a faster, two-way, multi-transmitter data bus system found on the B-777. ARINC 429, 629, and/or 664 data bus systems are found on virtually all transport category aircraft that employ digital systems. ARINC 429 data bus systems are also found on many corporate and commuter aircraft. Several manufacturers employ proprietary data bus systems designed specifically for use by that manufacturer only. These proprietary data bus systems are typically considered trade secrets and used only within a given system where that manufacturer designs all components. Whenever systems must communicate between varieties of LRUs (designed by many different manufacturers), a standard ARINC data bus is typically employed.
+
+The ASCB (Avionics Standard Communication Bus) and the CSDB (Commercial Standard Digital Bus) are two data bus systems used extensively on corporate-type general aviation aircraft, such as, the Beechcraft King Air, Cessna Citation, or Falcon 20. The ASCB format is used solely on Sperry or Honeywell avionics equipment. Sperry and Honeywell have since merged and are currently referred to solely as Honeywell. The CSDB format is used on aircraft that employ systems manufactured by Collins Avionics. Collins is a subsidiary of Rockwell International and manufactures avionics for both general aviation, mainly corporate and commuter aircraft, and transport category aircraft. Manchester data is also common to many corporate- and commercial-type aircraft and is adaptable to a variety of formats. In many cases two or more data bus standards may be used on the same aircraft. It is extremely important that all avionics technicians become familiar with these data bus specifications if they intend to repair and maintain digital systems.
+
+A point of clarification: a data bus is typically thought of as the wires that transmit digital signals between two LRUs, not the wiring inside the LRU. The data bus standard applies only to the data transferred on the external data bus, not to the data manipulated inside the LRU. For example, a system may employ the ARINC 429 data bus standards for communication between the flight management computer (FMC) and the thrust management computer (TMC). However, inside the FMC and TMC the data may be manipulated in a completely dif­ ferent format as specified by the LRU software. Each data bus is dedicated to a specific data format. For example, a technician will never find a data bus that transmits ARINC 429 and then changes format to transmit ARINC 629. These two different formats would require two different data bus cables.
+
+A common digital bus is a pair of solid copper wires, approximately 24-gauge. Each wire is coated with a thin plastic insulation, twisted together, wrapped in a foil shield, and covered again with insulation. It is important that the shield be grounded at each end of the cable. Many data bus systems are polarity sensitive and it is therefore very important that the two conductors never be switched. That is, wire A must always be connected to terminal A; wire B to terminal B (Figure 2-8-1). The digital sig nals can be measured between wires A and B using an oscilloscope or data bus analyzer.
+
+ARINC429
+
+An ARINC 429 data bus is a one-way communication link between a single transmitter and one or more receivers. The 429 data bus standard is by far the most common data bus format in use today on civilian aircraft. The AR!NC 429 system provides for the transmission of 32 bits of information in each data word. A data word is sometimes referred to as a byte. Each word is separated by four bits of bus silence known as a four-bit null. A null is a signal, which is equal to neither binary 1 nor binary 0. For an AR!NC 429 transmitter the nominal voltage values are as follows: a digital 1 requires a signal of +10 ± 1.0 V; a digital 0 requires a -10 ±1.0 \I signal. The null signal is equal to 0.0 ± 0.5 \I. Figure 2-8-12 shows the basic digital signal format for an ARINC 429 transmitter. As seen in the expanded view of this diagram, each bit actually consists of two voltage values, the data signal (+10 volts or -10 volts)  and the null signal (0 volts). The null signal is always transmitted immediately after the data and makes up one half of the bit. The null signal is used for timing, or synchronizing, the data bus. Each 429 transmitter contains an internal clock; the timing signal is then transmitted through the data bus to each receiver via the null voltages. This type of data transmission is referred to as return to zero (RZ). Using RZ format allows ARINC 429 to be "self clocking." The ARINC 429 signal is also a bipolar format. Bipolar means the data signal actually reverses polarity (two-polarity) when it changes from binary 1 to binary 0. Binary 1 is equal to +10 volts; binary O equals -10 volts. Since the data bus consists of two shielded wires, reversing polarity of these wires changes the data signal from binary 1 to binary O (Figure 2-8-13), The ARINC 429 signals use a bipolar, return-to-zero format. This means the bus voltage must reverse polarity to change from binary 1 to binary O and each bit must return lo zero to provide the synchronizing pulse. There can be a maximum of 20 receivers for any one ARINC 429 transmitter. Each receiver must have an input impedance of 12000 ohms or greater to keep signal loss to a minimum. The trans­ mitter impedance should be 75 +/-5 ohms, match ing the impedance of the data bus cable, which shou Id also be approximately 75 ohms.
+
+An ARINC 429  receiver will recognize a binary 1 as any value +6.5 to +13 V; and binary 0 as -6,5 to -13 V. The null voltage must be +2.5 yo -2.5 V to be accepted the receiver. Values outside of these limits are often caused by poor electrical conexions or faulty RLUs. The receiver has a voltage tolerance than the transmitter-transmitter tolerance binary 1 = +10 V +/- 1
+
+
+
+
+
+
+Fiber Optic Data Bus
+
+Many aircraft today employ fiber optic cable to distribute data between various computer-based systems throughout the aircraft. Both the ARINC 629 and ARINC 664 (A FOX) data bus standards arc designed for data transmission using fiber optics, as well as trod itional copper data busses, Fiber optics is a term used to describe the process of transmitting data signals using light. This tronsmission is based on the principle of total internal reflection discovered in 1841. This concept basically says that light will travel through water and will reflect internally following the contour of the water stream. Total internal reflection also applies to light traveling through glass fibers. Fiber optic cables employ glass fibers to direct the light from one place to another.
+
+Fiber optic cable can be found on many military aircraft, on the B-777 to connect various LRUs, and on the B-787 that employs fiber optics for information sent to the flight deck displays, as well as various other systems. The B-777 employs optical cable using the ARINC 629 standard; the B-787 employs optical cable using the ARINC 664 standard. In the future, fiber optic data transmission will most likely become more widespread on aircraft since it has several advantages over traditional copper cable. These advantages include:
+
+• Greater bandwidth capability.
+
+• Lower signal loss (attenuation).
+
+• Signals are immune to electromagnetic interference.
+
+• Optical fiber does not radiate any electromagnetic signal that could interfere in other systems.
+
+• Fiber cable is lighter than copper (a big advantage on aircraft).
+
+• Optical cable is immune to corrosion.
+
+• Less signal loss and therefore fiber requires less power during transmissions.
+
+Some disadvantages of fiber cable are the specialized tools and technical training needed to work with fiber optics. Another disadvantage is that an optical signal converter must be used to change all electrical signals into light signals for transmission and then back into electrical signals at the receiver. This requires additional circuitry and adds complexity to equipment. In order to understand the optical transmission of light using glass fiber, one must first have a basic understanding of the properties of light. Two terms to understand: reflection, a change of direction of a light beam; and refraction, the bending of light as it passes through two different materials. The glass fiber within a fiber optic cable is surrounded by an outer reflective coating (cladding), which reflects the light beam inward along the fiber. This cladding material must have a very low refractive index in order to keep the light beamconsistent. Light travels in waves, similar towaves on the water or electromagnetic radio waves, Each color of the light spectrum is a different wavelength / frequency of the electromagnetic spectrum. Fiber optics typically use frequencies that extend beyond the visible range of humans.
+
+Using these infrared wavelengths increases the efficiency of the system as it passes through the glass fiber. Typical wavelengths employed in fiber optic transmissions are 800 or 1,550 nanometers. Light traveling through a medium (like glass fiber) is called propagation. The basic concept of moving data signals with light includes three steps:
+
+1. The transmitting unit converts electrical information into a modulated light signal.
+
+2. The light wave modulated with digital information, connected to a fiber cable, propagates through that cable.
+
+3. The receiving unit converts the incoming light signal from the fiber into an electrical information signal for processing,
+
+Properties of a typical glass fiber used in the construction of an optic data bus can be found in Figure 2-10-8, this glass fiber is often referred to as the optical fiber. Here it can be seen that optical fiber that carries the data signal is made up of three essential layers: the core, the cladding and the coating. The core material is the light conductor and carries the signal. The cladding is an ultra thin layer around the core, similar to a mirror finish, used to reflect the light inward. The cladding prohibits the light from escaping the core while traveling through  the fiber optic data bus cable. The coating is a hard outer layer used to protect the glass core and coating of the cable. There are three basic types of glass fiber in common use today: single mode, step index multi mode, and graded index multimode. Each of these optical fibers has different refraction characteristics and may be found in various applications. The more practical example of an actual fiber optic data bus cable is shown in Figure 2-10-9 where it can be seen that there are typically at least three additional layers surrounding the optical fiber. The inner layer is known as the ETFE buffer. ETFE is polymer known as  ethylene-tetrafluoroethylene made by DuPont under the trade name Tefzel. This layer is surrounded by the Aramid Yarn Braid which is a strong, heat-resistant synthetic fiber constructed into a braid to help provide structural  support. The external layer is another coating of ETFE, forming an extremely hard, yet flexible, protective layer very similar to modern copper wire found on aircraft.
+
+The light source used for the transmission of data can be one of two types: a laser or a light emitting diode (LED). It is essential thathe optical fiber and the light source match in order to ensure signal propagation. For long runs of cable or large quantities of data transfer, the laser source is preferred. Lasers are matched with a single-mode optical fiber typically having a nine-micron diameter coreSingle-mode cable has only one data path and requires a laser with a 1,310 or 1,550 nm wavelength. Transmission of data using light from an LED employs a fiber cable having hundreds of light paths and each carries the same data.
+
+This is known as multimode cable and uses an LED with an output wavelength of 950 or 1,300 nm.
+
+ Safety When Using Fiber Optic Cable
+ 
+ It is very important to remember the following safety precautions whenever working with  fiber optics. Fiber optic cable is constructed  of extremely fine strands of glass fiber, which  can penetrate the skin and are very difficult  to remove. These glass fibers are referred to as  shards and are a byproduct whenever installing fiber optic cable terminations. It is therefore very important to follow all manufactures safety precautions whenever working with fiber optics. Common precautions when working with fiber optics include:
+
+• Always wear safety glasses.
+
+ • Never touch the end of the fiber cable.
+ 
+• Never eat or drink when glass fibers (shards) might be present.
+
+ • Never look directly into the fiber unless  there is no light source connected.
+ 
+• Wear aprons that can be removed after work is completed.
+
+ • Always dispose of all glass shards properly.
+ 
+Installation and Testing of Optical Cable
+
+
+Installation and testing of fiber optics have many similarities to that of copper wire and for the most part fiber cable can be routed through the aircraft along the routes with standard wire bundles or along a separate path for fiber only. In either case, it is important to follow all manufacturers' recommendations. Fiber optic cable installed in most aircraft is typically a unique color in order that it may be identified easily during maintenance activities. Fiber cable should be clamped in specific spacing and often with special clamps. Whenever clamping fiber cable it is important not to apply too much pressure to the cable. Incorrect clamping an create micro-bends that "kink" the fiber. A  kinked fiber will distort the signal propagation hrough the cable as shown in Figure 2-10-10. Standard tie wraps can be used for securing ber optic cable, but only if they are installed with limited pressure. Fiber cable must also e installed using a bend radius that will not istort the light signal. A tighter bend creates  greater signal loss in the cable. Typically a end of greater than approximately 50 mm is cceptable. The fiber optic core may also be distorted if too much tension is applied to the cable. Whenever routing cable never exceed a pull tension of 100 pounds. During installation or maintenance it is also very important never step on, kink, or subject the cable to a heavy impact due to a sudden force; this could damage the fiber. To help protect the fiber core, the cable is often routed inside additional protection, such as a conduit. For the most part, fiber optic cable is very reliable. Many of the problems that occur are due to signal loss created at the cable connector. This area is extremely sensitive to misalignment or contamination from dirt. To understand the problems that can occur in a fiber connector,
+
+it is important to understand how connectors function. In general, a fiber connector is simply any location where the end of an optical fiber meets another fiber or optical sensor. Since the fiber core is extremely small, the connectors must be held to an extremely tight tolerance. There are four common connector problems that can typically occur on an aircraft: (Figure 2-10-11):
+
+• Loose connectors causing an excessive end separation
+
+• Extreme bend radius causing an angular misalignment
+
+• Too tight of a clamp, which might cause lateral misalignment
+
+• Dirt, oil, or other contaminants located at the end of the fiber, which can distort or eliminate the optical signal.
+
+From a practical stand point, any time a optical connector is suspected as being a problem area, the technician should clean the optical surface using an approved cleaner (typically alcohol) and reconnect the fiber using proper techniques. Typically connectors are secured with a relatively low torque and may require safety wire.
+
+Whenever troubleshooting a fiber optic data bus system, if the receiving LRU fails to obtain an appropriate light signal, the fiber cable may be at fault. One of the first steps in the process would be to verify that the transmitting LRU is functioning properly and supplying the correct light signal. This test can often be performed using the aircraft's built-in-test equipment, or it may require carry-on test equipment to measure the light signal output of the transmitter. Once the transmitter operation has been verified, the cable should be tested to verify that the fibers and connectors are without damage. 
+There are three essential properties that must meet minimum standards for a functioning fiber cable: continuity, attenuation and proper cleaving.
+
+Fiber cables must also have complete continuity between the transmitter and the receiver. This means that the fiber core must create a continuous light circuit (path) from the transmitter to the receiver. It is important to know that fiber optic cable can appear undamaged on the outside and yet the internal glass fiber can be cracked or broken. If the fiber is broken the light circuit is not continuous. A common method used to test fiber cable for continuity is through a visual inspection, where a laser is applied to one end of the fiber and the technician inspects the length of the suspect cable. If the cable is cracked or experiences too much bend loss, the jacket of the cable will glow red from the applied laser.
+
+Attenuation is critical to the proper operation of optical fiber. Attenuation is the signal loss from the transmitter to the receiver. If this loss is too great, the light signals at the receiving LRU will be too weak for the optical sensors to read the digital information. Attenuation is measured in a unit known as the decibel (dB). A decibel is a logarithmic unit of measure used to express a power ratio. In the case of fiber optics, attenuation is the ratio of the power (light) transmitted and the power (light) lost through the cable. Typically attenuation of 3.5 dB or less is acceptable for proper light transmission using fiber cable. An optical loss test set (OLTS) is typically used to detect fiber cable attenuation. This test set consists of two units, the light source and the optical power meter. The light source is a calibrated unit connected to one end of the cable; the power meter is connected to the other. Prior to testing, the light source must be set for the correct cable type, multimode or single mode, since they operate at different wavelengths. The light source simply transmits a signal and the power meter records the attenuation. If the attenuation exceeds the specified limits for the aircraft, the fiber cable must be replaced.
+
+Cleaving is the process used to terminate the fiber at each connector. This process is similar to the cutting of copper wire; however, special tools and procedures are required in order to achieve the optical clarity at the end of the glass fiber. It is vital that the very end tip of the fiber be clean and free of any scratches or cracks that may distort the light signal. This is also an area of the cable that is easy to damage during the cleaving process or during installation/removal of fiber connectors. Figure 2-10-12  shows typical problems, which may occur at the end of a fiber cable. For the most part, the naked eye is not sensitive enough to find cleaving defects. A specialized inspection scope designed for fiber is typically used to view the cable end. The inspection tool will typically magnify the fiber 400 times or more in order to identify any possible defects.
+
+Another test instrument often used for detecting faults in fiber optic cable is known as the optical time domain reflectometer (OTDR). The OTDR transmits a light signal into the fiber and measures the backscatter that returns to a sensor on the same end of the cable. Through measurements of the backscatter, the test instrument can calculate the location of the fault within the cable. The OTDR has limitations when used on short cable runs and is typically not suitable for aircraft fiber optic testing.
+
+Terminating Fiber Optics
+
+Fiber optic cable is always run between two LRUs containing an optical transmitter and / or sensor. The transmitting LRU contains the circuitry, which changes an electrical signal into a digital light signal; the receiving LRU contains an optical sensor and the conversion circuitry needed to reproduce the original electrical signal. Special optical fiber connectors must be used to terminate the cable at both ends. Fiber cable is typically run directly between end users without any splice connections. The termination of any fiber cable requires practice, patience and special tools (Figure 2-10-13). The function of the optical connector is to accurately position the fiber optic core adjacent to the receiver/transmitter connector. The connector must also offer physical protection and security of the cable. The aircraft maintenance manual will outline all procedures used for the termination of fiber cable. In most cases, this procedure will be similar to those established by the NASA standard 8739.5 for fiber optic terminations, cable assemblies and installations. Although all fiber connectors are very similar, there may be slight differences. It is therefore imperative to ensure you have the proper instructions and tools necessary for the specific connector and cable for the aircraft. One commonality for all fiber optic termination is cleanliness. It is vital that the work area, connector components, the termination tools and the optical fiber remain dirt free.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
